@@ -1,2 +1,2 @@
 # latex-project.org
-latex-project.org Website
+The latex-project.org Website.
