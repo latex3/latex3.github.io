@@ -1,0 +1,46 @@
+---
+layout: default
+menu: Home
+title: LaTeX - A document preparation system
+description: "LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation."
+---
+
+<div class="home">
+  <h1>LaTeX – A document preparation system</h1>
+  <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="{{ "/lppl/" | prepend: site.baseurl }}">free software</a>.</p>
+
+  <h2>LaTeX the product</h2>
+  <dl>
+    <dt><a href="{{ "/about/" | prepend: site.baseurl }}">What is LaTeX?</a></dt>
+    <dd>If you do not yet know what LaTeX is all about, have a look at our shortintroduction to LaTeX.</dd>
+    <dt><a href="{{ "/news/latex2e-news/" | prepend: site.baseurl }}">The latest version of LaTeX</a></dt>
+    <dd>We provide a newsletter (as a PDF file) about each release of LaTeX createdsince 1994.</dd>
+    <dt><a href="{{ "/help/documentation/" | prepend: site.baseurl }}">Documentation</a></dt>
+    <dd>Each release of LaTeX provides a number of guides for users.</dd>
+    <dt><a href="{{ "/get/" | prepend: site.baseurl }}">Getting LaTeX</a></dt>
+    <dd>If you need to know how and where to get LaTeX, please have a look atour instructions.</dd>
+    <dt><a href="{{ "/help/" | prepend: site.baseurl }}">Getting help</a></dt>
+    <dd>If you are in trouble and need to get some help, please read ourhints on where you might find help.</dd>
+  </dl>
+
+  <h2>The LaTeX3 project</h2>
+  <dl>
+    <dt><a href="{{ "/latex3/" | prepend: site.baseurl }}">The LaTeX3 project</a></dt>
+    <dd>Do you want to know more about the LaTeX3 project? If so, then please havea look at a (short) description of the LaTeX3 Project.</dd>
+    <dt><a href="{{ "/publications/" | prepend: site.baseurl }}">Ongoing work of the LaTeX3 project</a></dt>
+    <dd>Over the years a number of publications (articles, conference papers, etc.), havebeen produced and published by the LaTeX3 project. A selection ofthese are available as PDF files.</dd>
+    <dt><a href="{{ "/latex3/code/" | prepend: site.baseurl }}">Experimental, new products</a></dt>
+    <dd>We would also like to make development code available to you via this site. We are continuing to add new material at this location so as to stimulate further discussion of the underlying concepts.</dd>
+    <dt><a href="https://www.tug.org/donate.html">Donations</a></dt>
+    <dd>If you want to support LaTeX development by a donation, the best way to do this is donating to the TeX Users Group (LaTeX Project Contribution).</dd>
+  </dl>
+
+  <h2>News</h2>
+  <ul class="posts">
+    {% for post in site.posts %}<li>  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

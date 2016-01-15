@@ -1,0 +1,143 @@
+/* Cascading Style Sheet for HTML export */
+/* MODULE: STATIC OUTLINE */
+
+/* Light Blue style */
+
+/* This stylesheet expects the following HTML structure
+		  
+  left column in page body
+		  #pageBody .left
+		  
+		  td.outlineColumn
+		     div.staticOutline
+			     div.maintopic
+				     span.select or splan.unselect
+			     div.subtopic
+				     span.select or splan.unselect
+					  
+*/
+
+
+/* visual highlight the sidebar navigation */
+.outlineColumn {
+	vertical-align: top;	
+	/*border-right: 1px dashed Silver;	*/	/* STYLE */
+	background-color: White;					/* STYLE */
+	margin: 0px;
+	padding-bottom: 20px; 
+	font-family: Arial;
+}
+
+.staticOutline {
+	white-space: nowrap; 		
+	vertical-align: top;
+}
+
+.staticOutline a:link {
+	color: #336666;								/* STYLE */
+	text-decoration: none;
+}
+
+.staticOutline a:active {
+	color: #669999;							/* STYLE */
+	text-decoration: none;
+}
+
+.staticOutline a:visited {
+	color: #336666;								/* STYLE */
+	text-decoration: none;
+}
+
+.staticOutline a:hover {
+   color: #669999;							/* STYLE */
+	text-decoration: none;
+}
+
+.staticOutline .hometopic a:link {
+	color: #336666;								/* STYLE */
+}
+
+.staticOutline .hometopic a:visited {
+	color: #336666;								/* STYLE */
+}
+
+.staticOutline .hometopic a:hover {
+   color: #669999;							/* STYLE */
+}
+
+.staticOutline .hometopic img {
+	display: none;								/* STYLE */   /* show/hide image */
+}
+
+.staticOutline .hometopic {
+	/*background : #0062BF; 	*/			/* STYLE */
+   margin-left:  4px;
+   margin-right:  4px;
+	margin-top:   0em;						/* STYLE */
+	margin-bottom: 1em;					/* STYLE */
+	font-size: 8pt;
+	font-weight: bold;						/* STYLE */
+   /*padding-top: 5px;*/					/* STYLE */
+}
+
+.staticOutline .maintopic a:link {
+	color: White;								/* STYLE */
+}
+
+.staticOutline .maintopic a:visited {
+	color: White;								/* STYLE */
+}
+
+.staticOutline .maintopic a:hover {
+   color: #CCFFFF;							/* STYLE */
+}
+
+.staticOutline .maintopic img {
+	display: none;								/* STYLE */   /* show/hide image */
+}
+
+.staticOutline .maintopic {
+   margin-left:  4px;
+   margin-right:  4px;
+	margin-top:   0.8em;						/* STYLE */
+	margin-bottom: 0.2em;					/* STYLE */
+	font-size: 8pt;
+	font-weight: bold;						/* STYLE */
+	background-color: #336666;
+	padding-top:  2px;
+	padding-bottom:  2px;
+	border: 1px solid Gray;
+}
+
+.staticOutline .subtopic a:link {
+	color: #336666;								/* STYLE */
+}
+
+.staticOutline .subtopic a:visited {
+	color: #336666;								/* STYLE */
+}
+
+.staticOutline .subtopic a:hover {
+	color: black;
+}
+
+.staticOutline .subtopic img {
+	display: none;							/* STYLE */   /* show/hide image */
+}
+
+.staticOutline .subtopic {
+   text-indent: 0px;
+   margin-left:  4px;			/* use same margin as in .maintopic*/			/* STYLE */
+   margin-right:  4px;
+	margin-bottom: 0.2em;					/* STYLE */
+	font-size: 8pt;
+	border-left: 1px dotted #7F9DB9;
+	border-bottom: 1px dotted #7F9DB9;
+	border-right: 1px dotted #7F9DB9;
+}
+
+.staticOutline .select {
+}
+
+.staticOutline .unselect {
+}

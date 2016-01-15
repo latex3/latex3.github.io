@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Disallow: /papers/eurotex-2005-notes/
+Disallow: /papers/pdfTeX-meeting-2005-09-24/
