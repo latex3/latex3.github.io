@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Issue 21 of LaTeX2e news released"
-date: 2015-10-13 00:00:00
+date: 2014-10-16 00:00:00
 description: "Issue 21 of LaTeX2e news released."
 categories: news
 tags: [latex2e, latex-news]

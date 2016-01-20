@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Jan 2016 18:40:24 +0100</pubDate>
-    <lastBuildDate>Fri, 15 Jan 2016 18:40:24 +0100</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2016 18:27:29 +0100</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2016 18:27:29 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -18,25 +18,6 @@
         <pubDate>Tue, 13 Oct 2015 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2015/10/13/issue-23-of-latex2e-news-released/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2015/10/13/issue-23-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 21 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;issue-21-of-latex2e-news-released&quot;&gt;Issue 21 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;For some reason we forgot to add issue number 21 to the web site. It has now been added to [LaTeX2e news page]((/news/latex2e-news/) and documents the changes that have been made to the LaTeX2e release in 2014.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Oct 2015 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2015/10/13/issue-21-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2015/10/13/issue-21-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
@@ -100,6 +81,25 @@
         <category>latex2e</category>
         
         <category>papers</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Issue 21 of LaTeX2e news released</title>
+        <description>&lt;h1 id=&quot;issue-21-of-latex2e-news-released&quot;&gt;Issue 21 of LaTeX2e news released&lt;/h1&gt;
+
+&lt;p&gt;For some reason we forgot to add issue number 21 to the web site. It has now been added to [LaTeX2e news page]((/news/latex2e-news/) and documents the changes that have been made to the LaTeX2e release in 2014.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Oct 2014 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2014/10/16/issue-21-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2014/10/16/issue-21-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
         
         
         <category>news</category>

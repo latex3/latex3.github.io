@@ -1,6 +1,5 @@
 ---
 layout: page
-menu: Contact
 title: "Contact"
 description: "Contact details of Frank Mittelbach and the LaTeX project. Mailing address and email addresses of the LaTeX project team and the web team."
 ---

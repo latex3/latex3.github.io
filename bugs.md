@@ -1,6 +1,5 @@
 ---
 layout: page
-menu: Bugs
 title: "Bugs - How to report a bug"
 description: "LaTeX is a developing piece of software, and therefore has bugs. Learn how and where to report a bug in LaTeX or in third party packages."
 ---

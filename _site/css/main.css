@@ -26,7 +26,7 @@ html, body {
   line-height: 1.5;
 }
 body {
-  color: #545454;
+  color: #000;
   font-family: 'open-sans_regular', sans-serif;
   font-size: 0.86em;
   background-color: #efefef;
@@ -116,8 +116,7 @@ p img {
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 800px;
-  padding: 0 30px;
+  padding: 0 1em;
   margin: 0 auto;
   zoom: 1;
 }

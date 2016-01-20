@@ -3,6 +3,7 @@ layout: post
 title: "Papers on \"Float Placement\" and \"Regression Tests\""
 date: 2015-02-23 00:00:00
 description: "Two new articles have been uploaded: a paper describing the mysteries of LaTeX's float placement algorithm and a paper about the new regression test."
+excerpt: "Two new articles have been uploaded: a paper describing the mysteries of LaTeX's float placement algorithm and a paper about the new regression test."
 categories: news
 tags: [latex2e, papers]
 ---

@@ -1,9 +1,7 @@
 ---
 layout: page
-menu: LPPL
 title: "The LaTeX project public license"
 description: "Home of the LaTeX project public license (LPPL), which is a free software license. How to use LPPL, versions of LPPL."
-permalink: /lppl/
 ---
 
 # Current version of the LPPL

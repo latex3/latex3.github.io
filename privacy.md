@@ -1,6 +1,5 @@
 ---
 layout: page
-menu: Privacy
 title: "Privacy Policy"
 description: "This privacy statement explains to users the nature, extent and purpose, the collection and use of personal data by the LaTeX Project."
 ---

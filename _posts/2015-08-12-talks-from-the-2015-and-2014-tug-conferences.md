@@ -3,6 +3,7 @@ layout: post
 title: "Talks from the 2015 and 2014 TUG conferences"
 date: 2015-08-12 00:00:00
 description: "Video presentations together with some slide show material from the TUG conferences 2014 in Boston and 2015 in Darmstadt. Talks on LaTeX."
+excerpt: "Video presentations together with some slide show material from the TUG conferences 2014 in Boston and 2015 in Darmstadt. Talks on LaTeX."
 categories: news
 tags: [talks, papers]
 ---
