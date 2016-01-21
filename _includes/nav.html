@@ -1,12 +1,10 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="/" title="The LaTeX Project">Home</a></li>
-        {% if page.url == '/about/' %}<li class="active">{% else %}<li>{% endif %}<a href="/about/" title="Introduction to LaTeX">About</a></li>
-        {% if page.url == '/latex3/' %}<li class="active">{% else %}<li>{% endif %}<a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
-        {% if page.url == '/get/' %}<li class="active">{% else %}<li>{% endif %}<a href="/get/" title="Get LaTeX">Get</a></li>
-        {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}<a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
-        {% if page.url == '/news/' %}<li class="active">{% else %}<li>{% endif %}<a href="/news/" title="LaTeX News">News</a></li>
-      </ul>
-    </div>
+<nav class="main">
+  <ul>
+    {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="/" title="The LaTeX Project">Home</a></li>
+    {% if page.url == '/about/' %}<li class="active">{% else %}<li>{% endif %}<a href="/about/" title="Introduction to LaTeX">About</a></li>
+    {% if page.url == '/latex3/' %}<li class="active">{% else %}<li>{% endif %}<a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
+    {% if page.url == '/get/' %}<li class="active">{% else %}<li>{% endif %}<a href="/get/" title="Get LaTeX">Get</a></li>
+    {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}<a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
+    {% if page.url == '/news/' %}<li class="active">{% else %}<li>{% endif %}<a href="/news/" title="LaTeX News">News</a></li>
+  </ul>
+</nav>
