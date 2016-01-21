@@ -153,6 +153,22 @@ nav.main .page-link {
   padding: 0.5em;
   letter-spacing: -.02em;
 }
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+nav li.active {
+  background: #FFF;
+}
+nav a {
+  margin: 0;
+  padding: 0.8em;
+}
 
 /* Site footer */
 
