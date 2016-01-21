@@ -21,7 +21,7 @@
        </g>
       </svg>
     </a>
-    <nav class="site-nav">
+    <nav class="main">
       <a href="#" class="menu-icon">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
@@ -34,9 +34,7 @@
         </svg>
       </a>
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.menu %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu }}</a>{% endif %}
-        {% endfor %}
+      {% include nav.html %}
       </div>
     </nav>
   </div>
