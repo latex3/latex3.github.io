@@ -68,6 +68,7 @@ People involved in the LaTeX3 project are (in more or less chronological order):
     <span class="fa-external-link-square"><a href="http://www.texdev.net/">http://www.texdev.net/</a></span>
     <span class="fa-github-square"><a href="https://github.com/josephwright">https://github.com/josephwright</a></span>
     <span class="fa-stack-exchange"><a href="http://tex.stackexchange.com/users/73/joseph-wright">http://tex.stackexchange.com/users/73</a></span>
+    <span class="fa-linkedin-square"><a href="https://uk.linkedin.com/in/joseph-wright-9302718a">https://uk.linkedin.com/in/joseph-wright-9302718a</a></span>
   </li>
   <li id="bruno-le-floch">
     <b><a href="#bruno-le-floch">Bruno Le Floch</a></b>
