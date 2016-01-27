@@ -1,0 +1,8 @@
+# various
+_various/
+
+# vim
+*.bak
+*.swp
+*.swo
+*.vim
