@@ -136,10 +136,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
   font-family: 'roboto_light';
-  src: url('../fonts/roboto_light.woff')    format('woff');}
+  src: url('../fonts/roboto_light.woff')            format('woff');}
 @font-face {
   font-family: 'roboto_regular';
-  src: url('../fonts/roboto_regular.woff')  format('woff');}
+  src: url('../fonts/roboto_regular.woff')          format('woff');}
 
 
 /* Base Styles
@@ -184,12 +184,21 @@ h6 { font-size:   1em; }
 
 p { line-height: 1.4em; }
 
+strong, b {
+  font-family: 'roboto_regular', sans-serif;
+  font-weight: normal;}
+
+em, i { letter-spacing: .03em; }
+
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
+a         { color: #1A0DAB; text-decoration: none; }
+a:hover   { text-decoration: underline; }
+a:visited { color: #205caa; }
+a:active,
+a:focus   { outline: 0; }
+a:target  { color: #007F00; }
 
 
 /* Lists
@@ -281,10 +290,12 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  clear: both;
+  color: #e3e3e5;
+  background: #e3e3e5;
+  height: 1px;
+  border: 0;
+  margin: 2em 0 2.5em; }
 
 
 /* Clearing
