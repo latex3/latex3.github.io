@@ -1,27 +1,26 @@
-<footer class="site-footer">
-  <div class="wrap">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <div class="footer-col-1 column">
-      <ul>
+<footer>
+  <div class="row">
+		<div class="col cell1of3">
+		  <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/about/team/">Team</a></li>
         <li><a href="/news/">News</a></li>
         <li><a href="/lppl/">LPPL</a></li>
       </ul>
-    </div>
-    <div class="footer-col-2 column">
-      <ul>
+	  </div>
+		<div class="col cell1of3">
+		  <ul>
         <li><a href="/feed.xml">News Feed</a></li>
         <li><a href="/bugs/">Bugs</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-col-3 column">
-      <p class="text">{{ site.description }}</p>
-    </div>
-    <hr>
-    <p>This page was last modified at {{ page.last_modified_at }}</p>
+		<div class="col cell1of3">
+		  <p>Description</p>
+		</div>
   </div>
+  <hr>
+  <p>This page was last modified at {{ page.last_modified_at }}</p>
 </footer>
