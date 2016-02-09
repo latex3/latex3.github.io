@@ -355,5 +355,3 @@ May be difficult to find these days.
 **ISBN-10:** 284177273X   
 **ISBN-13:** 978-2841772735  
 **Pages:** 1012 pages  
-
-*[TTCT]: Tools and Techniques for Computer Typesetting
