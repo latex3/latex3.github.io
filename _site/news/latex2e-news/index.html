@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>LaTeX2e News</title>
   <meta name="description" content="LaTeX2e News. Information on the most recent version of LaTeX and PDF News issues.">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/html5shiv-printshiv.js"></script>
+  <![endif]-->
 </head>
-
-    <body>
-    <header class="site-header">
-  <div class="wrap">
+<body>
+  <header>
+<div class="row">
+  <div class="col cell1of1">
     <a class="site-title" href="/" title="The LaTeX Project">
-      <svg id="svg3045" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="55.54" width="150" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" overflow="scroll">
-       <metadata id="metadata3065">
-        <rdf:RDF>
-         <cc:Work rdf:about="">
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-          <dc:title>LaTeX logo</dc:title>
-         </cc:Work>
-        </rdf:RDF>
-       </metadata>
+      <svg id="svg3045" xmlns="http://www.w3.org/2000/svg" height="55.54" width="150" overflow="scroll">
        <title id="title3047">LaTeX logo</title>
        <g id="g3049" fill="#000" transform="matrix(6.0240964,0,0,6.0240964,0,-0.0021639)">
         <path id="path3051" transform="translate(0,0.17)" d="m5.46,4.23h-0.25c-0.1,1.02-0.24,2.26-2,2.26h-0.81c-0.47,0-0.49-0.07-0.49-0.4v-5.31c0-0.34,0-0.48,0.94-0.48h0.33v-0.3c-0.36,0.03-1.26,0.03-1.67,0.03-0.39,0-1.17,0-1.51-0.03v0.3h0.23c0.77,0,0.79,0.11,0.79,0.47v5.25c0,0.36-0.02,0.47-0.79,0.47h-0.23v0.31h5.19s0.27-2.57,0.27-2.57z"/>
@@ -34,23 +29,39 @@
        </g>
       </svg>
     </a>
-    <nav class="main">
-  <ul>
-    <li><a href="/" title="The LaTeX Project">Home</a></li>
-      <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
+  </div>
+</div>
+    <nav>
+  <div class="row">
+    <div class="col cell1of1">
+      <ul>
+        <li><a href="/" title="The LaTeX Project">Home</a></li>
+        <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
         <li><a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
-          <li><a href="/get/" title="Get LaTeX">Get</a></li>
-            <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
-              <li><a href="/news/" title="LaTeX News">News</a></li>
-  </ul>
+        <li><a href="/get/" title="Get LaTeX">Get</a></li>
+        <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
+        <li><a href="/help/" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
+        <li><a href="/news/" title="LaTeX News">News</a></li>
+      </ul>
+      <script>
+        $(document).ready(function() {
+
+          $('#menu-toggle').click(function () {
+            $('#menu').toggleClass('open');
+            e.preventDefault();
+          });
+                              
+        });
+      </script>
+    </div>
+  </div>
 </nav>
 
-  </div>
 </header>
 
-    <div class="page-content">
-      <div class="wrap">
-      <div class="post">
+  <div class="page-content">
+    <div class="wrap">
+    <div class="post">
   <article class="post-content">
   <h1 id="latex2e-news">LaTeX2e News</h1>
 
@@ -165,12 +176,15 @@
   </article>
 </div>
 
-      </div>
     </div>
-    <footer class="site-footer">
-  <div class="wrap">
-    <h2 class="footer-heading">The LaTeX Project</h2>
-    <div class="footer-col-1 column">
+  </div>
+  <footer>
+  <div class="row">
+    <div class="col cell1of2">
+      <h2>LaTeX Project</h2>
+      <p>Footer contents</p>
+    </div>
+    <div class="col cell1of4">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
@@ -179,7 +193,7 @@
         <li><a href="/lppl/">LPPL</a></li>
       </ul>
     </div>
-    <div class="footer-col-2 column">
+    <div class="col cell1of4">
       <ul>
         <li><a href="/feed.xml">News Feed</a></li>
         <li><a href="/bugs/">Bugs</a></li>
@@ -187,12 +201,9 @@
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-col-3 column">
-      <p class="text"></p>
-    </div>
-    <hr>
-    <p>This page was last modified at </p>
   </div>
+  <hr>
+  <p>This page was last modified at </p>
 </footer>
 
   </body>

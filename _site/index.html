@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>LaTeX - A document preparation system</title>
   <meta name="description" content="LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/html5shiv-printshiv.js"></script>
+  <![endif]-->
 </head>
-
-    <body>
-    <header class="site-header">
-  <div class="wrap">
+<body>
+  <header>
+<div class="row">
+  <div class="col cell1of1">
     <a class="site-title" href="/" title="The LaTeX Project">
-      <svg id="svg3045" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="55.54" width="150" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" overflow="scroll">
-       <metadata id="metadata3065">
-        <rdf:RDF>
-         <cc:Work rdf:about="">
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-          <dc:title>LaTeX logo</dc:title>
-         </cc:Work>
-        </rdf:RDF>
-       </metadata>
+      <svg id="svg3045" xmlns="http://www.w3.org/2000/svg" height="55.54" width="150" overflow="scroll">
        <title id="title3047">LaTeX logo</title>
        <g id="g3049" fill="#000" transform="matrix(6.0240964,0,0,6.0240964,0,-0.0021639)">
         <path id="path3051" transform="translate(0,0.17)" d="m5.46,4.23h-0.25c-0.1,1.02-0.24,2.26-2,2.26h-0.81c-0.47,0-0.49-0.07-0.49-0.4v-5.31c0-0.34,0-0.48,0.94-0.48h0.33v-0.3c-0.36,0.03-1.26,0.03-1.67,0.03-0.39,0-1.17,0-1.51-0.03v0.3h0.23c0.77,0,0.79,0.11,0.79,0.47v5.25c0,0.36-0.02,0.47-0.79,0.47h-0.23v0.31h5.19s0.27-2.57,0.27-2.57z"/>
@@ -34,69 +29,113 @@
        </g>
       </svg>
     </a>
-    <nav class="main">
-  <ul>
-    <li class="active"><a href="/" title="The LaTeX Project">Home</a></li>
-      <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
+  </div>
+</div>
+    <nav>
+  <div class="row">
+    <div class="col cell1of1">
+      <ul>
+        <li class="active"><a href="/" title="The LaTeX Project">Home</a></li>
+        <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
         <li><a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
-          <li><a href="/get/" title="Get LaTeX">Get</a></li>
-            <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
-              <li><a href="/news/" title="LaTeX News">News</a></li>
-  </ul>
+        <li><a href="/get/" title="Get LaTeX">Get</a></li>
+        <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
+        <li><a href="/help/" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
+        <li><a href="/news/" title="LaTeX News">News</a></li>
+      </ul>
+      <script>
+        $(document).ready(function() {
+
+          $('#menu-toggle').click(function () {
+            $('#menu').toggleClass('open');
+            e.preventDefault();
+          });
+                              
+        });
+      </script>
+    </div>
+  </div>
 </nav>
 
-  </div>
 </header>
 
-    <div class="page-content">
-      <div class="wrap">
-      <div class="home">
-  <h1>LaTeX – A document preparation system</h1>
-  <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="/lppl/">free software</a>.</p>
-
-  <h2>LaTeX the product</h2>
-  <dl>
-    <dt><a href="/about/">What is LaTeX?</a></dt>
-    <dd>If you do not yet know what LaTeX is all about, have a look at our shortintroduction to LaTeX.</dd>
-    <dt><a href="/news/latex2e-news/">The latest version of LaTeX</a></dt>
-    <dd>We provide a newsletter (as a PDF file) about each release of LaTeX createdsince 1994.</dd>
-    <dt><a href="/help/documentation/">Documentation</a></dt>
-    <dd>Each release of LaTeX provides a number of guides for users.</dd>
-    <dt><a href="/get/">Getting LaTeX</a></dt>
-    <dd>If you need to know how and where to get LaTeX, please have a look atour instructions.</dd>
-    <dt><a href="/help/">Getting help</a></dt>
-    <dd>If you are in trouble and need to get some help, please read ourhints on where you might find help.</dd>
-  </dl>
-
-  <h2>The LaTeX3 project</h2>
-  <dl>
-    <dt><a href="/latex3/">The LaTeX3 project</a></dt>
-    <dd>Do you want to know more about the LaTeX3 project? If so, then please havea look at a (short) description of the LaTeX3 Project.</dd>
-    <dt><a href="/publications/">Ongoing work of the LaTeX3 project</a></dt>
-    <dd>Over the years a number of publications (articles, conference papers, etc.), havebeen produced and published by the LaTeX3 project. A selection ofthese are available as PDF files.</dd>
-    <dt><a href="/latex3/code/">Experimental, new products</a></dt>
-    <dd>We would also like to make development code available to you via this site. We are continuing to add new material at this location so as to stimulate further discussion of the underlying concepts.</dd>
-    <dt><a href="https://www.tug.org/donate.html">Donations</a></dt>
-    <dd>If you want to support LaTeX development by a donation, the best way to do this is donating to the TeX Users Group (LaTeX Project Contribution).</dd>
-  </dl>
-
-  <h2>News</h2>
-  <ul class="posts">
-    
-    <li><span class="post-date">Oct 13, 2015</span>  <a class="post-link" href="/news/2015/10/13/issue-23-of-latex2e-news-released/">Issue 23 of LaTeX2e news released</a></li>
-    
-  </ul>
-
-<p>Subscribe: <a href="/feed.xml">RSS News Feed</a></p>
-
+  <div class="page-content home">
+    <div class="wrap">
+    <div class="row">
+  <div class="col cell1of2">
+    <h1>LaTeX – A document preparation system</h1>
+    <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="/lppl/">free software</a>.</p>
+  </div>
+  <div class="col cell1of2">
+    <h2>News</h2>
+    <ul class="posts">
+      
+      <li><span class="post-date">Oct 13, 2015</span>  <a class="post-link" href="/news/2015/10/13/issue-23-of-latex2e-news-released/">Issue 23 of LaTeX2e news released</a></li>
+      
+      <li><span class="post-date">Aug 12, 2015</span>  <a class="post-link" href="/news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/">Talks from the 2015 and 2014 TUG conferences</a></li>
+      
+    </ul>
+    <p>Subscribe: <a href="/feed.xml">RSS News Feed</a></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col cell1of2">
+    <h2>LaTeX the product</h2>
+    <dl>
+      <dt><a href="/about/">What is LaTeX?</a></dt>
+      <dd>If you do not yet know what LaTeX is all about, have a look at our shortintroduction to LaTeX.</dd>
+      <dt><a href="/news/latex2e-news/">The latest version of LaTeX</a></dt>
+      <dd>We provide a newsletter (as a PDF file) about each release of LaTeX createdsince 1994.</dd>
+      <dt><a href="/help/documentation/">Documentation</a></dt>
+      <dd>Each release of LaTeX provides a number of guides for users.</dd>
+      <dt><a href="/get/">Getting LaTeX</a></dt>
+      <dd>If you need to know how and where to get LaTeX, please have a look at our instructions.</dd>
+      <dt><a href="/help/">Getting help</a></dt>
+      <dd>If you are in trouble and need to get some help, please read ourhints on where you might find help.</dd>
+    </dl>
+  </div>
+  <div class="col cell1of2">
+    <h2>The LaTeX3 project</h2>
+    <dl>
+      <dt><a href="/latex3/">The LaTeX3 project</a></dt>
+      <dd>Do you want to know more about the LaTeX3 project? If so, then please havea look at a (short) description of the LaTeX3 Project.</dd>
+      <dt><a href="/publications/">Ongoing work of the LaTeX3 project</a></dt>
+      <dd>Over the years a number of publications (articles, conference papers, etc.), havebeen produced and published by the LaTeX3 project. A selection ofthese are available as PDF files.</dd>
+      <dt><a href="/latex3/code/">Experimental, new products</a></dt>
+      <dd>We would also like to make development code available to you via this site. We are continuing to add new material at this location so as to stimulate further discussion of the underlying concepts.</dd>
+      <dt><a href="https://www.tug.org/donate.html">Donations</a></dt>
+      <dd>If you want to support LaTeX development by a donation, the best way to do this is donating to the TeX Users Group (LaTeX Project Contribution).</dd>
+    </dl>
+  </div>
+</div>
+<div class="row">
+  <section class="col cell1of4">
+    <h3>LaTeX Books</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>Documentation</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>Links</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>LPPL</h3>
+    <p>Teaser</p>
+  </section>
 </div>
 
-      </div>
     </div>
-    <footer class="site-footer">
-  <div class="wrap">
-    <h2 class="footer-heading">The LaTeX Project</h2>
-    <div class="footer-col-1 column">
+  </div>
+  <footer>
+  <div class="row">
+    <div class="col cell1of2">
+      <h2>LaTeX Project</h2>
+      <p>Footer contents</p>
+    </div>
+    <div class="col cell1of4">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
@@ -105,7 +144,7 @@
         <li><a href="/lppl/">LPPL</a></li>
       </ul>
     </div>
-    <div class="footer-col-2 column">
+    <div class="col cell1of4">
       <ul>
         <li><a href="/feed.xml">News Feed</a></li>
         <li><a href="/bugs/">Bugs</a></li>
@@ -113,13 +152,10 @@
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-col-3 column">
-      <p class="text"></p>
-    </div>
-    <hr>
-    <p>This page was last modified at </p>
   </div>
+  <hr>
+  <p>This page was last modified at </p>
 </footer>
 
-  </body>
+</body>
 </html>
