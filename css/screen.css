@@ -11,6 +11,7 @@
 - Tables
 - Spacing
 - Utilities
+- Navigation
 - Clearing
 - Media Queries
 */
@@ -50,9 +51,7 @@
 
 /* columns */
 .col {
-  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    inset 0px 0px 4px 0px rgba(50, 50, 50, 0.5);
-  box-shadow:         inset 0px 0px 4px 0px rgba(50, 50, 50, 0.5);
+  background: #EEE;
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
@@ -164,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: -.03em;
   line-height: 1;
-  margin: 1em 0 0.8em; }
+  margin: 1em 0 .8em; }
 h1 { font-size:   2em; }
 h2 { font-size: 1.8em; }
 h3 { font-size: 1.6em; }
@@ -217,7 +216,7 @@ ol ul {
   margin: 1.5em 0 1.5em 3em;
   font-size: 90%; }
 li {
-  margin-bottom: 1em; }
+  margin-bottom: 0.3em; }
 
 
 /* Code
@@ -285,6 +284,17 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav { width:100%; border-bottom: 1px solid #CCC; }
+nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+nav ul li { display: inline-block; text-align: left; }
+nav ul li.active { background: #FFF;}
+nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
+nav ul li a:hover { background: #F5F5F5; text-decoration: none; }
 
 
 /* Misc

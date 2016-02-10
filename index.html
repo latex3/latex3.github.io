@@ -6,13 +6,20 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
 ---
 
 <div class="row">
-  <div class="col cell1of1">
+  <div class="col cell1of2">
     <h1>LaTeX – A document preparation system</h1>
     <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="{{ "/lppl/" | prepend: site.baseurl }}">free software</a>.</p>
   </div>
+  <div class="col cell1of2">
+    <h2>News</h2>
+    <ul class="posts">
+      {% for post in site.posts offset: 0 limit: 2 %}
+      <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <p>Subscribe: <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS News Feed</a></p>
+  </div>
 </div>
-
-
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX the product</h2>
@@ -24,7 +31,7 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
       <dt><a href="{{ "/help/documentation/" | prepend: site.baseurl }}">Documentation</a></dt>
       <dd>Each release of LaTeX provides a number of guides for users.</dd>
       <dt><a href="{{ "/get/" | prepend: site.baseurl }}">Getting LaTeX</a></dt>
-      <dd>If you need to know how and where to get LaTeX, please have a look atour instructions.</dd>
+      <dd>If you need to know how and where to get LaTeX, please have a look at our instructions.</dd>
       <dt><a href="{{ "/help/" | prepend: site.baseurl }}">Getting help</a></dt>
       <dd>If you are in trouble and need to get some help, please read ourhints on where you might find help.</dd>
     </dl>
@@ -43,14 +50,21 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
     </dl>
   </div>
 </div>
-
-  <h2>News</h2>
-  <ul class="posts">
-    {% for post in site.posts offset: 0 limit: 1 %}
-    <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-<p>Subscribe: <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS News Feed</a></p>
-
+<div class="row">
+  <section class="col cell1of4">
+    <h3>LaTeX Books</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>Documentation</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>Links</h3>
+    <p>Teaser</p>
+  </section>
+  <section class="col cell1of4">
+    <h3>LPPL</h3>
+    <p>Teaser</p>
+  </section>
 </div>

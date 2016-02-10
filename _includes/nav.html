@@ -1,11 +1,25 @@
-<nav class="main">
-  <ul>
-    {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/" | prepend: site.baseurl }}" title="The LaTeX Project">Home</a></li>
-    {% if page.url == '/about/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/about/" | prepend: site.baseurl }}" title="Introduction to LaTeX">About</a></li>
-    {% if page.url == '/latex3/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/latex3/" | prepend: site.baseurl }}" title="LaTeX3">LaTeX3</a></li>
-    {% if page.url == '/get/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/get/" | prepend: site.baseurl }}" title="Get LaTeX">Get</a></li>
-    {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/publications/" | prepend: site.baseurl }}" title="Publications of the LaTeX Project">Publications</a></li>
-    {% if page.url == '/help/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/help/" | prepend: site.baseurl }}" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
-    {% if page.url == '/news/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/news/" | prepend: site.baseurl }}" title="LaTeX News">News</a></li>
-  </ul>
+<nav>
+  <div class="row">
+    <div class="col cell1of1">
+      <ul>
+        {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/" | prepend: site.baseurl }}" title="The LaTeX Project">Home</a></li>
+        {% if page.url == '/about/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/about/" | prepend: site.baseurl }}" title="Introduction to LaTeX">About</a></li>
+        {% if page.url == '/latex3/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/latex3/" | prepend: site.baseurl }}" title="LaTeX3">LaTeX3</a></li>
+        {% if page.url == '/get/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/get/" | prepend: site.baseurl }}" title="Get LaTeX">Get</a></li>
+        {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/publications/" | prepend: site.baseurl }}" title="Publications of the LaTeX Project">Publications</a></li>
+        {% if page.url == '/help/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/help/" | prepend: site.baseurl }}" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
+        {% if page.url == '/news/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/news/" | prepend: site.baseurl }}" title="LaTeX News">News</a></li>
+      </ul>
+      <script>
+        $(document).ready(function() {
+
+          $('#menu-toggle').click(function () {
+            $('#menu').toggleClass('open');
+            e.preventDefault();
+          });
+                              
+        });
+      </script>
+    </div>
+  </div>
 </nav>
