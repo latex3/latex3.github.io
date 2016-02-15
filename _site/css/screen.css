@@ -291,7 +291,7 @@ form {
 
 nav { width:100%; border-bottom: 1px solid #CCC; }
 nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
-nav ul li { display: inline-block; text-align: left; }
+nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
 nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
 nav ul li a:hover { background: #F5F5F5; text-decoration: none; }

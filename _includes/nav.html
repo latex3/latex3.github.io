@@ -1,6 +1,5 @@
 <nav>
-  <div class="row">
-    <div class="col cell1of1">
+    <div class="col cell3of4">
       <ul>
         {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/" | prepend: site.baseurl }}" title="The LaTeX Project">Home</a></li>
         {% if page.url == '/about/' %}<li class="active">{% else %}<li>{% endif %}<a href="{{ "/about/" | prepend: site.baseurl }}" title="Introduction to LaTeX">About</a></li>
@@ -21,5 +20,4 @@
         });
       </script>
     </div>
-  </div>
 </nav>
