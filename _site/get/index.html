@@ -13,38 +13,29 @@
     <script src="/js/html5shiv-printshiv.js"></script>
   <![endif]-->
 </head>
-<body>
-  <div class="row">
-<header>
-  <div class="col cell1of4">
-    <a class="site-title" href="/" title="The LaTeX Project">LaTeX Project Logo</a>
-  </div>
-    <nav>
-    <div class="col cell3of4">
-      <ul>
-        <li><a href="/" title="The LaTeX Project">Home</a></li>
-        <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
-        <li><a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
-        <li class="active"><a href="/get/" title="Get LaTeX">Get</a></li>
-        <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
-        <li><a href="/help/" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
-        <li><a href="/news/" title="LaTeX News">News</a></li>
-      </ul>
-      <script>
-        $(document).ready(function() {
-
-          $('#menu-toggle').click(function () {
-            $('#menu').toggleClass('open');
-            e.preventDefault();
-          });
-                              
-        });
-      </script>
+<body class="container">
+  <header>
+    <div class="row">
+      <div class="col cell1of1">
+        <a class="site-title" href="/" title="The LaTeX Project">LaTeX Project Logo</a>
+      </div>
     </div>
-</nav>
-
-  </header>
-</div>
+  <div class="row">
+    <div class="col cell1of1">
+      <nav>
+        <ul>
+          <li><a href="/" title="The LaTeX Project">Home</a></li>
+          <li><a href="/about/" title="Introduction to LaTeX">About</a></li>
+          <li><a href="/latex3/" title="LaTeX3">LaTeX3</a></li>
+          <li class="active"><a href="/get/" title="Get LaTeX">Get</a></li>
+          <li><a href="/publications/" title="Publications of the LaTeX Project">Publications</a></li>
+          <li><a href="/help/" title="LaTex Help. Documentation, Books, Tutorials, Links">Help</a></li>
+          <li><a href="/news/" title="LaTeX News">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
   <div class="page-content">
     <div class="wrap">
@@ -176,8 +167,6 @@ which I plan to add to <a href="ftp://ftp.tug.org/historic">ftp://ftp.tug.org/hi
       </ul>
     </div>
   </div>
-  <hr>
-  <p>This page was last modified at </p>
 </footer>
 
   </body>

@@ -1,5 +1,6 @@
 # various
-
+_site/
+ci/
 
 # vim
 *.bak

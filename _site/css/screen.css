@@ -12,6 +12,7 @@
 - Spacing
 - Utilities
 - Navigation
+- Footer
 - Clearing
 - Media Queries
 */
@@ -31,7 +32,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0.8em;
   box-sizing: border-box; 
 }
 
@@ -51,7 +52,6 @@
 
 /* columns */
 .col {
-  background: #EEE;
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
@@ -144,15 +144,15 @@
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 html { 
+  background: url("img/bg.png") repeat scroll 0% 0%, #F5F1E8 none repeat scroll 0% 0%;
   font-size: 100%; height: 100%; 
   line-height: 1.5; }
-body {
-  padding: 1em 1.5em; }
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
+  background: #fdfcf7;
   color: #000;
   font-family: 'roboto_light', sans-serif;
   font-size: 1em;
@@ -163,23 +163,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: -.03em;
   line-height: 1;
-  margin: 1em 0 .8em; }
-h1 { font-size:   2em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.4em; }
+  margin: 0 0 .8em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
 h5 { font-size: 1.2em; }
-h6 { font-size:   1em; }
-
-/* Larger than phablet 
-@media (min-width: 550px) {
-  h1 { font-size: ; }
-  h2 { font-size: ; }
-  h3 { font-size: ; }
-  h4 { font-size: ; }
-  h5 { font-size: ; }
-  h6 { font-size: ; }
-} */
+h6 { font-size: 1.1em; }
+.home h1 {font-size: 1.5em}
 
 p { line-height: 1.4em; }
 
@@ -192,7 +183,7 @@ em, i { letter-spacing: .03em; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-a         { color: #1A0DAB; text-decoration: none; }
+a         { color: #0073AA; text-decoration: none; }
 a:hover   { text-decoration: underline; }
 a:visited { color: #205caa; }
 a:active,
@@ -288,13 +279,38 @@ form {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-nav { width:100%; border-bottom: 1px solid #CCC; }
 nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
 nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
 nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
 nav ul li a:hover { background: #F5F5F5; text-decoration: none; }
+
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul.posts {
+  list-style: none;
+  margin: 0 0 1em;
+}
+ul.posts span.post-date {
+  color: #555;
+  display: block;
+  font-size: 0.8em;
+}
+ul.posts li {
+  margin: 0 0 0.6em;
+}
+.home .news span {
+  color: #fe9900;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background: #999;
+  margin: 0 -0.8em -3em -0.8em;
+  padding: 0 0.8em;
+}
 
 
 /* Misc
