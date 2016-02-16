@@ -32,7 +32,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1%;
+  padding: 0 0.8em;
   box-sizing: border-box; 
 }
 
@@ -300,6 +300,11 @@ nav ul li a:hover { background: #F5F5F5; text-decoration: none; }
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background: #999;
+  margin: 0 -0.8em;
+  padding: 0 0.8em;
+}
 
 
 /* Misc
