@@ -10,14 +10,14 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
     <h1>LaTeX – A document preparation system</h1>
     <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="{{ "/lppl/" | prepend: site.baseurl }}">free software</a>.</p>
   </div>
-  <div class="col cell1of2">
-    <h2>News</h2>
+  <div class="col cell1of2 news">
+    <h2>Recent News</h2>
     <ul class="posts">
       {% for post in site.posts offset: 0 limit: 2 %}
       <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-    <p>Subscribe: <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS News Feed</a></p>
+    <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span> subscribe</a></p>
   </div>
 </div>
 <div class="row">

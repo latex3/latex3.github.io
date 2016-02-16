@@ -169,16 +169,7 @@ h3 { font-size: 1.4em; }
 h4 { font-size: 1.3em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.1em; }
-
-/* Larger than phablet 
-@media (min-width: 550px) {
-  h1 { font-size: ; }
-  h2 { font-size: ; }
-  h3 { font-size: ; }
-  h4 { font-size: ; }
-  h5 { font-size: ; }
-  h6 { font-size: ; }
-} */
+.home h1 {font-size: 1.5em}
 
 p { line-height: 1.4em; }
 
@@ -293,6 +284,24 @@ nav ul li.active { background: #FFF;}
 nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
 nav ul li a:hover { background: #F5F5F5; text-decoration: none; }
 
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul.posts {
+  list-style: none;
+  margin: 0 0 1em;
+}
+ul.posts span.post-date {
+  color: #555;
+  display: block;
+  font-size: 0.8em;
+}
+ul.posts li {
+  margin: 0 0 0.6em;
+}
+.home .news span {
+  color: #fe9900;
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
