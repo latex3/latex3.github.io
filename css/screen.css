@@ -152,6 +152,7 @@ html {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
+  background: #fdfcf7;
   color: #000;
   font-family: 'roboto_light', sans-serif;
   font-size: 1em;
