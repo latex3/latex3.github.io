@@ -28,23 +28,29 @@ You can also edit/commit directly to the gh-pages branch [on github](https://git
 In the vast majority of cases the only upstream branch that you should need to care about is `gh-pages`. If you see other branches in the repository, you can generally safely ignore them.
 
 ### Requirements
-In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](http://sass-lang.com), [Markdown](http://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](http://www.ruby-lang.org/en/downloads/)* installed on your machine.
+In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](http://sass-lang.com), [Markdown](http://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](http://www.ruby-lang.org/en/downloads/)* installed on your machine.
+
+***
+
+## Local Development
 
 ### Gem Installation
 Use the ``bundle`` command to install the necessary gems for the **LaTeX Project**. If you don't have [bundler](http://gembundler.com) installed you'll need to run ``gem install bundler`` before using ``bundle``.
 
     $ bundle install
 
-### Local Development
+### Preview
 Trigger the local server by executing the ``jekyll serve`` task.
 
     $ jekyll serve
 
 Your local copy will now be accessible at `http://localhost:4000`. Then use `CTRL` + `C` to stop the server.
 
+***
+
 ## Resources
 
-* [git Documentation](https://git-scm.com/docs/)
+* [Git Documentation](https://git-scm.com/docs/)
 * [Jekyll Documentation](http://jekyllrb.com/docs/home/)
 * [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [SASS Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
