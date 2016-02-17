@@ -30,8 +30,6 @@ In the vast majority of cases the only upstream branch that you should need to c
 ### Requirements
 In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](http://sass-lang.com), [Markdown](http://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](http://www.ruby-lang.org/en/downloads/)* installed on your machine.
 
-***
-
 ## Local Development
 
 ### Gem Installation
@@ -45,8 +43,6 @@ Trigger the local server by executing the ``jekyll serve`` task.
     $ jekyll serve
 
 Your local copy will now be accessible at `http://localhost:4000`. Then use `CTRL` + `C` to stop the server.
-
-***
 
 ## Resources
 
