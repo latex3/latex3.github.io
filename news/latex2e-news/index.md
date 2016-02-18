@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "LaTeX2e News"
-description: "LaTeX2e News. Information on the most recent version of LaTeX and PDF News issues."
+description: "LaTeX2e Release Newsletters. Information on the most recent version of LaTeX and PDF News issues."
 ---
 
-# LaTeX2e News
+# LaTeX2e Release Newsletters
 
-The most recent version of LaTeX is nominally dated 2015/10/01 (it may additionally have a patch-level associated with it).
+The most recent version of LaTeX is nominally dated 2016/02/01 (it may additionally have a patch-level associated with it).
 
 Due to the small number of changes these days new releases will appear at irregular intervals, at most once a year. If you are in need of some immediate bug fix you may try the [svn version]({{site.baseurl}}/get/#subversion-repository) of the source code.
 
@@ -16,6 +16,7 @@ Starting with the 2015/01/01 release we provide a "latexrelease" package that al
 
 | Release date | Latex2e News issue (PDF) |
 |:-------------|-------------------------:|
+| 2016/02/01 | [LaTeX2e News Issue 24]({{site.baseurl}}/news/latex2e-news/ltnews24.pdf) |
 | 2015/10/01 | [LaTeX2e News Issue 23]({{site.baseurl}}/news/latex2e-news/ltnews23.pdf) |
 | 2015/01/01 | [LaTeX2e News Issue 22]({{site.baseurl}}/news/latex2e-news/ltnews22.pdf) |
 | 2014/05/01 | [LaTeX2e News Issue 21]({{site.baseurl}}/news/latex2e-news/ltnews21.pdf) |
