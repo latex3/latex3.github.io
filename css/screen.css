@@ -313,7 +313,7 @@ footer {
   margin: 0 -2.2em -3em;
   padding: 1.5em 2em 1em 2em;
 }
-footer a { color: #00aeff; }
+footer a, footer a:visited { color: #00aeff; }
 footer svg { margin: 0 0 0.7em; }
 footer ul { list-style: none; }
 footer li { border-bottom: 1px solid #555; }
