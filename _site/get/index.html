@@ -41,102 +41,62 @@
     <div class="wrap">
     <div class="post">
   <article class="post-content">
-  <h1 id="getting-latex">Getting LaTeX</h1>
+  <h1>Getting LaTeX</h1>
+<p>LaTeX is <a href="http://www.debian.org/intro/free">free software</a> under the terms of the <a href="/latex-project.org/lppl/">LaTeX Project Public License (LPPL)</a>. LaTeX is distributed through <a href="#ctan">CTAN servers</a> or comes as part of many easily installable and usable <a href="http://www.tug.org/interest.html#free">TeX distributions provided by the TeX User Group (TUG)</a> or third parties. If you run into trouble, visit the <a href="/latex-project.org/help/">help section</a>.</p>
+<hr>
+<div class="row">
+  <div class="col cell1of3">
+    <h2><span class="fa fa-linux"></span> Linux</h2>
+    <p>Check your distributions software source for a TeX system including LaTeX; it is probably included. If not, install <a href="http://www.tug.org/texlive">TeX Live</a> directly.</p>
+  </div>
+  <div class="col cell1of3">
+    <h2><span class="fa fa-apple"></span> Mac OS X</h2>
+    <p>The <a href="http://www.tug.org/mactex/">MacTeX</a> distribution contains everything you need, including a complete TeX system with LaTeX itself and editors to write your documents.</p>
+  </div>
+  <div class="col cell1of3">
+    <h2><span class="fa fa-windows"></span> Windows</h2>
+    <p>Check out the <a href="http://www.tug.org/protext/">proTeXt</a> system; this allows you to install a full TeX system, including LaTeX, while reading about the basics of the installation.</p>
+  </div>
+  <hr>
+</div>
 
-<h2 id="latex-for-the-impatient">LaTeX for the impatient</h2>
-
-<h3 id="linux">Linux</h3>
-
-<p>Your system distribution or vendor has probably provided a TeX system including LaTeX. Check your usual software source for a TeX package; otherwise install <a href="http://www.tug.org/texlive">TeX Live</a> directly. </p>
-
-<h3 id="mac-os-x">Mac OS X</h3>
-
-<p>The <a href="http://www.tug.org/mactex/">MacTeX</a> distribution contains everything you need, including a complete TeX system with LaTeX itself and editors to write your documents.</p>
-
-<h3 id="windows">Windows</h3>
-
-<p>Check out the <a href="http://www.tug.org/protext/">proTeXt</a> system; this allows you to install a full TeX system, including LaTeX, while reading about the basics of the installation.</p>
-
-<h2 id="general-aspects">General aspects</h2>
-
-<p>First of all, don’t panic if you leave this site following any of the download links on this page. This is only the project site, the LaTeX software is distributed through the <a href="#ctan">CTAN</a> servers. It also comes as part of many easily installable and usable <a href="#distributions">TeX distributions</a> provided by the TeX User Group or third parties.</p>
-
-<p>LaTeX is available as <a href="http://www.debian.org/intro/free">free software</a> (under the terms of the <a href="/latex-project.org/lppl/">LaTeX Project Public License (LPPL)</a>). </p>
-
-<h3 id="distributions">Distributions</h3>
-
-<p>LaTeX as part of a TeX distribution.</p>
-
-<p>If you’re new to TeX and LaTeX or just want an easy installation, get a full TeX distribution. LaTeX is not a stand-alone typesetting program in itself, but document preparation software that runs on top of Donald E. Knuth’s TeX typesetting system. TeX distributions usually bundle together all the parts needed for a working TeX system and they generally add to this both configuration and maintenance utilities. Nowadays LaTeX, and many of the packages built on it, form an important component of any major TeX distribution.</p>
-
-<p>Following are some pointers to TeX distributions recommended by the <a href="http://www.tug.org/">TeX Users Group</a>. They are all available under a Free Software license. The list is by no means supposed to be authoritative or exhaustive. </p>
-
-<ul>
-  <li><strong>TeX Live</strong><br />
-TeX Live is an easy way to get up and running with TeX. It provides a ready-to-run TeX system for most types of Unix, Mac OS X, and Windows, and includes all major TeX-related programs. It also includes a complete tree of fonts and macros, with support for many languages.</li>
-  <li><strong>Unix, Linux</strong><br />
-Please see TeX Live above. (There used to be another standard distribution for Unix-like systems which was maintained by Thomas Esser and called teTeX, but it is no longer maintained and essentially was replaced with TeX Live.)</li>
-  <li><strong>Mac OS X</strong><br />
-<a href="http://www.tug.org/mactex/">MacTeX</a> is a TeX distribution for Mac OS X; it is TeX Live with the addition of a native Mac installer and some Mac-specific programs.</li>
-  <li><strong>Windows</strong><br />
-<a href="http://www.tug.org/protext/">proTeXt</a> is a TeX distribution for Windows, maintained by Thomas Feuerstack and based on <a href="http://www.tug.org/protext/">MiKTeX</a>. proTeXt guides the MiKTeX installation via a short PDF document. It also adds a few tools on top of MiKTeX.</li>
-</ul>
-
-<p>More distributions are <a href="http://www.tug.org/interest.html#free">listed by the TeX Users Group (TUG)</a>. </p>
-
-<p>The LaTeX team cannot guarantee that TeX distributions, even recent ones, contain the most recent version of LaTeX. It may happen that you need a more recent LaTeX than the one that your favourite TeX distribution carries, e.g., in order to get a particular bug fix. In that case you will need to fetch LaTeX from CTAN and install it on top of your distribution. See below for details. </p>
+<h3 id="distributions">TeX Distributions</h3>
+<p>If you're new to TeX and LaTeX or just want an easy installation, get a full TeX distribution. The TeX Users Group (TUG) has a <a href="http://www.tug.org/interest.html#free">list of notable distributions</a> that are entirely, or least primarily, free software.</p> 
+<div class="row">
+  <div class="col cell1of2">
+    <p>LaTeX is not a stand-alone typesetting program in itself, but document preparation software that runs on top of <a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald E. Knuth</a>'s <a href="https://en.wikipedia.org/wiki/TeX">TeX typesetting system</a>. TeX distributions usually bundle together all the parts needed for a working TeX system and they generally add to this both configuration and maintenance utilities. Nowadays LaTeX, and many of the packages built on it, form an important component of any major TeX distribution.</p>
+  </div>
+  <div class="col cell1of2">
+    <p>The LaTeX team cannot guarantee that TeX distributions, even recent ones, contain the most recent version of LaTeX. It may happen that you need a more recent LaTeX than the one that your favourite TeX distribution carries, e.g., in order to get a particular bug fix. In that case you will need to fetch LaTeX from CTAN and install it on top of your distribution. See below for details.</p>
+  </div>
+</div>
 
 <h3 id="ctan">CTAN</h3>
-
-<p>You can obtain LaTeX by anonymous FTP from the Comprehensive TeX Archive Network (CTAN), which is the primary source of distribution for LaTeX. It provides copies of the LaTeX system on servers in several countries:</p>
-
-<ul>
-  <li><a href="ftp://ctan.tug.org/tex-archive/macros/latex/">Download LaTeX from the US</a></li>
-  <li><a href="ftp://ftp.tex.ac.uk/tex-archive/macros/latex/">Download LaTeX from the UK</a></li>
-  <li><a href="ftp://ftp.dante.de/tex-archive/macros/latex/">Download LaTeX from Germany</a></li>
-</ul>
+<div class="row">
+  <div class="col cell1of2">
+    <p>You can obtain LaTeX by anonymous FTP from the Comprehensive TeX Archive Network (CTAN), which is the primary source of distribution for LaTeX. It provides copies of the LaTeX system on servers in several countries:</p>
+  </div>
+  <div class="col cell1of2">
+    <ul class="lsn">
+      <li><span class="fa fa-download"></span> <a href="ftp://ctan.tug.org/tex-archive/macros/latex/">Download LaTeX from the US</a></li>
+      <li><span class="fa fa-download"></span> <a href="ftp://ftp.tex.ac.uk/tex-archive/macros/latex/">Download LaTeX from the UK</a></li>
+      <li><span class="fa fa-download"></span> <a href="ftp://ftp.dante.de/tex-archive/macros/latex/">Download LaTeX from Germany</a></li>
+    </ul>
+  </div>
+</div>
 
 <p>In order for your downloaded LaTeX to be of any use, you have to obtain and set up a TeX system first. You can either install a TeX distribution as described above or get a TeX system by FTP from the same CTAN servers. If you use a TeX distibution then it will include a version of LaTeX so this will probably make things easier for you; but you may have a reason not to do this.</p>
+<hr>
 
-<h3 id="subversion-repository">Subversion Repository</h3>
-
-<p>The LaTeX sources are kept in a subversion repository. Anyone can access it and download them, but submission is restricted to team members. The Subversion repository is located here:<br />
-<a href="https://latex-project.org/svnroot/latex2e-public/">https://latex-project.org/svnroot/latex2e-public/</a>.</p>
-
-<p>You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements: </p>
-
-<p><code class="highlighter-rouge">mkdir latex2e-svn</code><br />
-<code class="highlighter-rouge">svn co https://latex-project.org/svnroot/latex2e-public/ latex2e-svn</code></p>
-
-<h2 id="caveat">Caveat</h2>
-
-<p>We are unable to support you in getting and installing the software. If you do run into trouble you should visit the <a href="/latex-project.org/help/">help section</a> we provide on this site.</p>
-
-<h2 id="historic-latex">Historic LaTeX</h2>
-
-<p>Ulrik Vieth has collected historic versions of LaTeX. He says:</p>
-
-<blockquote>
-  <p>I finally managed to install a collection of historic LaTeX
-distributions from 1983 on</p>
-
-  <p><a href="ftp://ftp.tug.org/historic/macros/latex-saildart/">ftp://ftp.tug.org/historic/macros/latex-saildart/</a></p>
-
-  <p>If you ever wanted to have a look at LaTeX 2.0 for TeX 1.0
-(released on 11 December 1983) or even some earlier versions,
-here’s where you can find it.</p>
-
-  <p>All files have been pulled from the SAILDART archive site at</p>
-
-  <p>http://z.baumgart.org/saildart/prog/SYS/index.html</p>
-
-  <p>which is based on archive tapes from SAIL at Stanford.</p>
-
-  <p>More historic material is still waiting there to be processed, 
-which I plan to add to <a href="ftp://ftp.tug.org/historic">ftp://ftp.tug.org/historic</a> from time to time.</p>
-
-  <p>Have fun and enjoy!</p>
-</blockquote>
+<h2>LaTeX Subversion Repository</h2>
+<p>The LaTeX sources are kept in a subversion repository. Anyone can access it and download them, but submission is restricted to team members. The Subversion repository is located at <a href="https://latex-project.org/svnroot/latex2e-public/">https://latex-project.org/svnroot/latex2e-public/</a>. You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements:</p>
+<pre>
+  <code>mkdir latex2e-svn<br>svn co https://latex-project.org/svnroot/latex2e-public/ latex2e-svn</code>
+</pre>
+<hr>
+<h3>Historic LaTeX</h3>
+<p>Ulrik Vieth has collected historic versions of LaTeX from LaTeX 2.0 for TeX 1.0 (released on 11 December 1983) onwards. You can find them at <a href="ftp://ftp.tug.org/historic/macros/latex-saildart/">ftp://ftp.tug.org/historic/macros/latex-saildart/</a>. There might even be some earlier versions. All files have been pulled from the SAILDART archive site at <code>http://z.baumgart.org/saildart/prog/SYS/index.html</code> which is based on archive tapes from SAIL at Stanford.</p>
+<p>More historic material can be found at <a href="ftp://ftp.tug.org/historic">ftp://ftp.tug.org/historic</a>.</p>
 
   </article>
 </div>
