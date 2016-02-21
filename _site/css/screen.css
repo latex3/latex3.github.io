@@ -286,11 +286,14 @@ span.fa { color: #555; margin: 0 0.5em 0 0;}
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+nav { background: #565A5E; margin: 0 0 1.5em; }
+nav ul { list-style: none; padding: 0px; margin: 0px; text-align: center; }
 nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
-nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
-nav ul li a:hover { background: #F5F5F5; text-decoration: none; }
+nav ul li.active a,
+nav ul li.active a:hover { color: #565A5E; }
+nav ul li a { display: block; padding: .4em .8em; text-decoration: none; color: #00c0ff; }
+nav ul li a:hover { color: #FFF; text-decoration: none; }
 
 
 /* Home
@@ -320,7 +323,7 @@ footer {
   margin: 0 -2.2em -3em;
   padding: 1.5em 2em 1em 2em;
 }
-footer a, footer a:visited { color: #00aeff; }
+footer a, footer a:visited { color: #00c0ff; }
 footer svg { margin: 0 0 0.7em; }
 footer ul { list-style: none; }
 footer li { border-bottom: 1px solid #555; }
