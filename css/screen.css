@@ -303,7 +303,7 @@ nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
 nav ul li.active a,
 nav ul li.active a:hover { color: #565A5E; }
-nav ul li a { display: block; padding: .4em .8em; text-decoration: none; color: #00c0ff; }
+nav ul li a, nav ul li a:visited { display: block; padding: .4em .8em; text-decoration: none; color: #00c0ff; }
 nav ul li a:hover { color: #FFF; text-decoration: none; }
 
 
@@ -314,7 +314,6 @@ ul.posts { list-style: none; margin: 0 0 1em; }
 ul.posts span.post-date { color: #555; display: block; font-size: 0.8em; }
 ul.posts li { margin: 0 0 0.6em; }
 .home .news span { color: #fe9900; }
-
 .home dt { margin: 1em 0 .3em; }
 
 
@@ -348,6 +347,12 @@ hr {
 
 /* Various
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* teaser */
+.teaser a:hover { display: inline-block; text-decoration: none; }
+.teaser section a h3 { color: #0095DD; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0;}
+.teaser section a p { color: #000; }
+.teaser section a:hover p { color: #0095DD; }
+
 /* team */
 .team h2 { font-size: 1em; margin: 1.3em 0 .5em; }
 .team h2 .role { color: #999; font-size: 0.7em; }

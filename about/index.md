@@ -54,19 +54,24 @@ Or, in English:
 + Inclusion of artwork, and process or spot colour.
 + Using PostScript or Metafont fonts.
 
-***
-
-<div class="row">
+<hr>
+<div class="row teaser">
   <section class="col cell1of3">
-    <h3><a href="{{ "/help/documentation" | prepend: site.baseurl }}">LaTeX Documentation</a></h3>
-    <p>More instructions and information on how to use LateX can be found at the <a href="{{ "/help/documentation/" | prepend: site.baseurl }}">documentation section</a>.</p>
+    <a href="{{ "/help/documentation" | prepend: site.baseurl }}">
+      <h3>Documentation</h3>
+      <p>The official LaTeX help and documentation section.</p>
+    </a>
   </section>
   <section class="col cell1of3">
-    <h3><a href="{{ "/get/" | prepend: site.baseurl }}">Getting LaTeX</a></h3>
-    <p>If you need to know how and where to get LaTeX, please have a look at our <a href="{{ "/get/" | prepend: site.baseurl }}">instructions</a>.</p>
+    <a href="{{ "/get/" | prepend: site.baseurl }}">
+      <h3>Getting LaTeX</h3>
+      <p>Get LaTeX for Linux, Mac OS X, Windows and Online.</p>
+    </a>
   </section>
   <section class="col cell1of3">
-    <h3><a href="{{ "/about/team/" | prepend: site.baseurl }}">LaTeX Team</a></h3>
-    <p>If you want to learn more about the people behind LaTeX, you should visit the <a href="{{ "/about/team/" | prepend: site.baseurl }}">team page</a>.</p>
+    <a href="{{ "/about/team/" | prepend: site.baseurl }}">
+      <h3>LaTeX Team</h3>
+      <p>Learn more about the people behind the LaTeX project.</p>
+    </a>
   </section>
 </div>
