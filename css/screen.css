@@ -211,6 +211,11 @@ li {
   margin-bottom: 0.3em; }
 .lsn { list-style: none; }
 
+ul.team, ul.team ul { list-style: inside none; margin: .5em 0 2em;}
+ul.team ul { margin: 0 0 0 .2em; }
+ul.team ul li { margin: 0; }
+ul.team ul li a { margin: 0 0 0 .5em }
+
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -344,6 +349,14 @@ hr {
   height: 1px;
   border: 0;
   margin: 2em 0 2.5em; }
+
+
+/* Various
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* team */
+.team h2 { font-size: 1em; margin: 1.3em 0 .5em; }
+.team h2 .role { color: #999; font-size: 0.7em; }
+
 
 
 /* Clearing

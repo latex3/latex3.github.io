@@ -45,8 +45,6 @@ Or, in English:
 
 ## LaTeX Features
 
-LaTeX contains features for: 
-
 + Typesetting journal articles, technical reports, books, and slide presentations.
 + Control over large documents containing sectioning, cross-references, tables and figures.
 + Typesetting of complex mathematical formulas.
