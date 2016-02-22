@@ -184,7 +184,7 @@ em, i { letter-spacing: .03em; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-a         { color: #0095DD; text-decoration: none; }
+a         { color: #0086c4; text-decoration: none; }
 a:hover   { text-decoration: underline; }
 a:visited { color: #205caa; }
 a:active,
@@ -303,7 +303,7 @@ nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
 nav ul li.active a,
 nav ul li.active a:hover { color: #565A5E; }
-nav ul li a, nav ul li a:visited { display: block; padding: .4em .8em; text-decoration: none; color: #00c0ff; }
+nav ul li a, nav ul li a:visited { display: block; padding: .4em .8em; text-decoration: none; color: #80e0ff; }
 nav ul li a:hover { color: #FFF; text-decoration: none; }
 
 
@@ -326,7 +326,7 @@ footer {
   margin: 0 -2.2em -3em;
   padding: 1.5em 2em 1em 2em;
 }
-footer a, footer a:visited { color: #00c0ff; }
+footer a, footer a:visited { color: #80e0ff; }
 footer svg { margin: 0 0 0.7em; }
 footer ul { list-style: none; }
 footer li { border-bottom: 1px solid #555; }
@@ -342,7 +342,7 @@ hr {
   background: #e3e3e5;
   height: 1px;
   border: 0;
-  margin: 2em 0 2.5em; }
+  margin: 0 0 2.5em; }
 
 
 /* Various
