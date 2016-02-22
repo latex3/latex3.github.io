@@ -7,7 +7,7 @@ description: "An introduction to LaTeX, a document preparation system for high-q
 
 # An introduction to LaTeX
 
-LaTeX is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
+LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
 
 LaTeX is not a word processor! Instead, LaTeX encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content. For example, consider this document: 
 
@@ -43,6 +43,8 @@ Or, in English:
 + It was written in September 1994.
 + The document consists of a title followed by the text Hello world!
 
+## LaTeX Features
+
 LaTeX contains features for: 
 
 + Typesetting journal articles, technical reports, books, and slide presentations.
@@ -54,12 +56,19 @@ LaTeX contains features for:
 + Inclusion of artwork, and process or spot colour.
 + Using PostScript or Metafont fonts.
 
-Learn how to [get LaTeX]({{site.baseurl}}/get/).
+***
 
-The best source for news on TeX and LaTeX is the [TeX Users Group](http://www.tug.org/).
-
-A lot of documentation, and references to even more material, can be found in this [documentation section]({{site.baseurl}}/help/documentation/).
-
-And in case you were wondering, «LaTeX» is pronounced «Lah-tech» or «Lay-tech», to rhyme with «blech» or «Bertolt Brecht» (almost). 
-
-Visit the [LaTeX project team]({{site.baseurl}}/about/team/) page to learn more about the people behind LaTeX.
+<div class="row">
+  <section class="col cell1of3">
+    <h3><a href="{{ "/help/documentation" | prepend: site.baseurl }}">LaTeX Documentation</a></h3>
+    <p>More instructions and information on how to use LateX can be found at the <a href="{{ "/help/documentation/" | prepend: site.baseurl }}">documentation section</a>.</p>
+  </section>
+  <section class="col cell1of3">
+    <h3><a href="{{ "/get/" | prepend: site.baseurl }}">Getting LaTeX</a></h3>
+    <p>If you need to know how and where to get LaTeX, please have a look at our <a href="{{ "/get/" | prepend: site.baseurl }}">instructions</a>.</p>
+  </section>
+  <section class="col cell1of3">
+    <h3><a href="{{ "/about/team/" | prepend: site.baseurl }}">LaTeX Team</a></h3>
+    <p>If you want to learn more about the people behind LaTeX, you should visit the <a href="{{ "/about/team/" | prepend: site.baseurl }}">team page</a>.</p>
+  </section>
+</div>
