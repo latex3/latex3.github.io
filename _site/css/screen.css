@@ -184,7 +184,7 @@ em, i, .italic { font-style: italic; letter-spacing: .03em; }
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 a         { color: #0086c4; text-decoration: none; }
 a:hover   { text-decoration: underline; }
-a:visited { color: #205caa; }
+a:visited { color: #0086c4; }
 a:active,
 a:focus   { outline: 0; }
 a:target  { color: #007F00; }
