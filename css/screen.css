@@ -175,11 +175,9 @@ h6 { font-size: 1.1em; }
 
 p { line-height: 1.4em; }
 
-strong, b, dt {
-  font-family: 'roboto_regular', sans-serif;
-  font-weight: normal;}
+strong, b, .bold, dt { font-family: 'roboto_regular', sans-serif; font-weight: normal;}
 
-em, i { letter-spacing: .03em; }
+em, i, .italic { letter-spacing: .03em; }
 
 
 /* Links
