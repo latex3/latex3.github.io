@@ -291,6 +291,7 @@ span.fa { color: #555; margin: 0 0.5em 0 0;}
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 header { margin: 0 -2em; }
+header svg { display: block; margin: 1em auto; }
 
 
 /* Navigation
