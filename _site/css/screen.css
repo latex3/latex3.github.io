@@ -290,13 +290,13 @@ span.fa { color: #555; margin: 0 0.5em 0 0;}
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-header { margin: 0 -2em; }
+header { margin: 0 -2em 1.5em; }
 header svg { display: block; margin: 1em auto; }
 
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav { background: #565A5E; margin: 0 0 1.5em; }
+nav { background: #565A5E; margin: 0; }
 nav ul { list-style: none; padding: 0px; margin: 0px; text-align: center; }
 nav ul li { display: inline-block; margin: 0; text-align: left; }
 nav ul li.active { background: #FFF;}
