@@ -1,24 +1,29 @@
 ---
-layout: page
+layout: links
 title: "TeX and LaTeX Links"
 description: "Links to TeX and LaTeX documentation, forums, communities and question and answer websites."
 ---
 
-# Links
+<h1>Links</h1>
+<div class="row">
+  <div class="col cell1of2">
+    <p>There's a lot of documentation, tutorials, etc. out there that was not written by the LaTeX team themselves. We've started a list pointing to some of it (the order is fairly arbitrary and no indication of quality).</p>
+    <p>If you know about a great resource for TeX and related documentation not listed here, please <a href="{{site.baseurl}}/contact/">contact us</a>.</p>
+  </div>
+  <div class="col cell1of2">
+    <ul class="toc">
+      <li><a href="#contributed-documentation">Contributed Documentation</a></li>
+      <li><a href="#faqs">FAQ's</a></li>
+      <li><a href="#question-and-anwser-websites">Question & Anwser Websites</a></li>
+      <li><a href="#tutorials">Tutorials</a></li>
+      <li><a href="#directories">Web Directories</a></li>
+      <li><a href="#user-groups">User Groups</a></li>
+      <li><a href="#news-groups">News Groups</a></li>
+    </ul>
+  </div>
+</div>
 
-There's a lot of documentation, tutorials, etc. out there that was not written by the LaTeX team themselves. We've started a list pointing to some of it (the order is fairly arbitrary and no indication of quality). If you know about a great resource for TeX and related documentation not listed here, please [contact us]({{site.baseurl}}/contact/).
-
-## Table of Contents
-
-+ [Contributed Documentation](#contributed-documentation)
-+ [FAQ's](#faqs)
-+ [Question & Anwser Websites](#question-and-anwser-websites)
-+ [Tutorials](#tutorials)
-+ [Web Directories](#directories)
-+ [User Groups](#user-groups)
-+ [News Groups](#news-groups)
-
-***
+<hr>
 
 ## Contributed Documentation
 + [TeXdoc Online - TeX and LaTeX Documentation](http://www.texdoc.net/)  
