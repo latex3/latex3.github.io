@@ -16,15 +16,10 @@
             <a href="{{ "/latex3/" | prepend: site.baseurl }}">LaTeX3</a></li>
           {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}
             <a href="{{ "/publications/" | prepend: site.baseurl }}">Publications</a></li>
-          {% if page.url == '/help/' %}<li class="active">
-            {% elsif page.url == '/help/documentation/' %}<li class="active">
-            {% elsif page.url == '/help/books/' %}<li class="active">
-            {% elsif page.url == '/help/links/' %}<li class="active">
+          {% if page.url contains '/help/' %}<li class="active">
             {% else %}<li>{% endif %}
             <a href="{{ "/help/" | prepend: site.baseurl }}">Help</a></li>
-          {% if page.url == '/news/' %}<li class="active">
-            {% elsif page.url == '/news/latex2e-news/' %}<li class="active">
-            {% elsif page.url == '/news/latex3-news/' %}<li class="active">
+          {% if page.url contains '/news/' %}<li class="active">
             {% else %}<li>{% endif %}
             <a href="{{ "/news/" | prepend: site.baseurl }}">News</a></li>
         </ul>
