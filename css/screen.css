@@ -221,13 +221,13 @@ ul.team ul li a { margin: 0 0 0 .5em }
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2em .5em;
-  margin: 0 .2em;
-  font-size: 90%;
-  white-space: nowrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
-  border-radius: 4px; }
+  border-radius: 4px;
+  font-size: 90%;
+  margin: 0 .2em;
+  padding: .2em .5em;
+  white-space: nowrap; }
 pre > code {
   display: block;
   overflow: auto;
