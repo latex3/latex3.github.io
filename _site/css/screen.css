@@ -319,8 +319,8 @@ nav ul li a:hover + .sub, .sub:hover { display: block; }
 
 .show-menu { text-decoration: none; color: #fff; background: #008080; text-align: center; padding: .5em 0; display: none; }
 
-nav input[type=checkbox]{ display: none; -webkit-appearance: none; }
-nav input[type=checkbox]:checked ~ #menu{ display: block; }
+nav input[type=checkbox] { display: none; -webkit-appearance: none; }
+nav input[type=checkbox]:checked ~ ul { display: block; }
 
 @media screen and (max-width : 700px){
   nav ul {
