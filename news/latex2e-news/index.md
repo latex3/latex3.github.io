@@ -1,18 +1,21 @@
 ---
 layout: page
-title: "LaTeX2e News"
-description: "LaTeX2e Release Newsletters. Information on the most recent version of LaTeX and PDF News issues."
+title: "LaTeX2e Release Newsletters"
+description: "LaTeX2e Release Newsletters. Information on the most recent version of LaTeX2e - LaTeX2e PDF News issues."
 ---
 
 # LaTeX2e Release Newsletters
 
-The most recent version of LaTeX is nominally dated 2016/02/01 (it may additionally have a patch-level associated with it).
-
-Due to the small number of changes these days new releases will appear at irregular intervals, at most once a year. If you are in need of some immediate bug fix you may try the [svn version]({{site.baseurl}}/get/#subversion-repository) of the source code.
-
-Starting with the 2015/01/01 release we provide a "latexrelease" package that allows you to emulate older (or newer) versions of the format without regenerating it from scratch; see ltnews22 for further details.
-
-**Note:** _ltnews18_ doesn't exist. By mistake we incremented the issue number twice moving directly from 17 to 19. 
+<div class="row">
+  <div class="col cell1of2">
+    <p>The most recent version of LaTeX is nominally dated 2016/02/01 (it may additionally have a patch-level associated with it).</p>
+    <p>Due to the small number of changes these days new releases will appear at irregular intervals, at most once a year. If you are in need of some immediate bug fix you may try the [svn version]({{site.baseurl}}/get/#subversion-repository) of the source code.</p>
+  </div>
+  <div class="col cell1of2">
+    <p>Starting with the 2015/01/01 release we provide a "latexrelease" package that allows you to emulate older (or newer) versions of the format without regenerating it from scratch; see ltnews22 for further details.</p>
+    <p><span class="bold">Note:</span> <span class="italic">ltnews18</span> doesn't exist. <br>By mistake we incremented the issue number twice moving directly from 17 to 19. </p>
+  </div>
+</div>
 
 | Release date | Latex2e News issue (PDF) |
 |:-------------|-------------------------:|
