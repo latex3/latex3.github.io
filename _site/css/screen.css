@@ -77,16 +77,16 @@
 .cell3of3 {	width: 100%; }
 .cell2of3 {	width: 65.33%; }
 .cell1of3 {	width: 30.66%; }
-@media only screen and (max-width: 480px) {
-	.cell1of3, .cell2of3, .cell3of3 { width: 100%; }
+@media only screen and (max-width: 600px) {
+	.cell1of3, .cell2of3, .cell3of3 { margin: 0; width: 100%; }
 }
 
 .cell4of4 { width: 100%; }
 .cell3of4 { width: 74%; }
 .cell2of4 {	width: 48%; }
 .cell1of4 {	width: 22%; }
-@media only screen and (max-width: 480px) {
-	.cell1of4, .cell2of4, .cell3of4, .cell4of4 { width: 100%; }
+@media only screen and (max-width: 700px) {
+	.cell1of4, .cell2of4, .cell3of4, .cell4of4 { margin: 0; width: 100%; }
 }
 
 .cell5of5 { width: 100%; }
