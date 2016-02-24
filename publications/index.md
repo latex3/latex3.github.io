@@ -9,7 +9,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 Below you will find links to Portable Document Format (PDF) versions of various articles and papers published by the LaTeX3 project and links to videos of their conference presentations. Some of this list has been assembled 'after the fact'; please inform us if you notice anything missing.
 
-**[TUG 2015 Conference](http://tug.org/tug2015/)**
+##[TUG 2015 Conference](http://tug.org/tug2015/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
   + [Twenty-one is only half the truth (video via River Valley TV)](http://www.river-valley.zeeba.tv/twenty-one-is-only-half-the-truth/)
@@ -28,7 +28,7 @@ Hidden behind this title is a presentation of the new LaTeX kernel compatibility
 
 ***
 
-**[The box-glue-penalty algebra of TeX and its use of \prevdepth]({{site.baseurl}}/publications/tb112mitt-prevdepth.pdf)**
+##[The box-glue-penalty algebra of TeX and its use of \prevdepth]({{site.baseurl}}/publications/tb112mitt-prevdepth.pdf)
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=…3A%2F%2Flatex-project.org%2Fpapers%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
@@ -38,7 +38,7 @@ This article discusses certain aspects of TeX's approach to line breaking and it
 
 ***
 
-**[How to influence the position of float environments like figure and table in LaTeX?]({{site.baseurl}}/publications/tb111mitt-float.pdf)**
+##[How to influence the position of float environments like figure and table in LaTeX?]({{site.baseurl}}/publications/tb111mitt-float.pdf)
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
@@ -48,7 +48,7 @@ In 2012, a question "How to influence the float placement in LaTeX" was asked on
 
 ***
 
-**[l3build --- A modern Lua test suite for TeX programming]({{site.baseurl}}/publications/tb111mitt-l3build.pdf)**
+##[l3build --- A modern Lua test suite for TeX programming]({{site.baseurl}}/publications/tb111mitt-l3build.pdf)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014
@@ -57,7 +57,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-**[TUG 2014 conference](http://tug.org/tug2014/)**
+##[TUG 2014 conference](http://tug.org/tug2014/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
   + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.river-valley.zeeba.tv/regression-testing-latex-packages-with-lua/)
@@ -68,7 +68,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-**[TUG 2013 conference](http://tug.org/tug2013/)**
+##[TUG 2013 conference](http://tug.org/tug2013/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
   + [The stony road to complex layout](http://youtu.be/jcY1zLJNqX0) (Digital Camera recording of the talk on YouTube)
@@ -79,7 +79,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-**[TUG 2012 conference](http://tug.org/tug2012/)**
+##[TUG 2012 conference](http://tug.org/tug2012/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
   + [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) (Digital Camera recording of the talk on YouTube)
@@ -90,7 +90,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-**[TUG 2011 conference](http://tug.org/tug2011/)**
+##[TUG 2011 conference](http://tug.org/tug2011/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
   + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
@@ -99,7 +99,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-**[Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more]({{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf)**
+##[Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more]({{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf)
 
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
@@ -111,7 +111,7 @@ In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the
 
 ***
 
-**[TUG 2010 conference](http://tug.org/tug2010/)**
+##[TUG 2010 conference](http://tug.org/tug2010/)
 
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.river-valley.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
@@ -124,7 +124,7 @@ In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the
 
 ***
 
-**[From \newcommand to \DocumentNewCommand with xparse](http://tug.org/TUGboat/tb31-3/tb99wright.pdf)**
+##[From \newcommand to \DocumentNewCommand with xparse](http://tug.org/TUGboat/tb31-3/tb99wright.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 31 (2010), No. 3
@@ -133,7 +133,7 @@ An discussion by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) of 
 
 ***
 
-**[Beyond \newcommand with xparse](http://tug.org/TUGboat/tb31-1/tb97wright-xparse.pdf)**
+##[Beyond \newcommand with xparse](http://tug.org/TUGboat/tb31-1/tb97wright-xparse.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 31 (2010), No. 1
@@ -142,7 +142,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) t
 
 ***
 
-**[Programming key-value in expl3](http://tug.org/TUGboat/tb31-1/tb97wright-l3keys.pdf)**
+##[Programming key-value in expl3](http://tug.org/TUGboat/tb31-1/tb97wright-l3keys.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 31 (2010), No. 1
@@ -151,7 +151,7 @@ In this paper [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) discus
 
 ***
 
-**[TUG 2009 conference](http://tug.org/tug2009/)**
+##[TUG 2009 conference](http://tug.org/tug2009/)
 
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.river-valley.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.river-valley.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
@@ -169,7 +169,7 @@ In this paper [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) discus
 
 ***
 
-**[LaTeX3 programming: External perspectives](http://www.tug.org/TUGboat/tb30-1/tb94wright-latex3.pdf)**
+##[LaTeX3 programming: External perspectives](http://www.tug.org/TUGboat/tb30-1/tb94wright-latex3.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 30 (2009), No. 1
@@ -178,7 +178,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
-**[TUG 2008 conference](http://tug.org/tug2008/)**
+##[TUG 2008 conference](http://tug.org/tug2008/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
   + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.river-valley.zeeba.tv/two-decades-of-latex-development/)
@@ -187,7 +187,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
-**[TUG 2007 conference](http://tug.org/tug2007/)**
+##[TUG 2007 conference](http://tug.org/tug2007/)
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
   + [LaTeX3 project update (Video via River Valley TV)](http://www.river-valley.zeeba.tv/conferences/tug2007/media/Morten_Hoegholm_1/)
@@ -198,19 +198,19 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
-**[pdfTeX workshop 2005/09/24-26]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/)**
+##[pdfTeX workshop 2005/09/24-26]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/)
 
 HTML presentation of the material from the September 2005 pdfTeX workshop between Thanh The Han, [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), and [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach). The main topic of the workshop was grid typesetting. The material is available both for [on-line browsing]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/) and [download as a zip]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24.zip) file (1364 kB).
 
 ***
 
-**[EuroTeX 2005 notes](#fixme - https://latex-project.org/papers/eurotex-2005-notes/)**
+##[EuroTeX 2005 notes](#fixme - https://latex-project.org/papers/eurotex-2005-notes/)
 
 HTML presentation of the work done by the LaTeX project team during EuroTeX 2005. It is available both for [on-line browsing]({{site.baseurl}}/publications/eurotex-2005-notes/) and [download as a zip]({{site.baseurl}}/publications/eurotex-2005-notes.zip) file (923 kB).
 
 ***
 
-**[Some note on templates]({{site.baseurl}}/publications/template-notes.pdf)**
+##[Some note on templates]({{site.baseurl}}/publications/template-notes.pdf)
 
 + Unpublished paper, 2001
 + Keywords: LaTeX3, designer-interface, evaluation report
@@ -219,7 +219,7 @@ A discussion by Lars Hellström of the current implementation of the concept of 
 
 ***
 
-**[Formatting documents with floats – A new algorithm for LaTeX2e]({{site.baseurl}}/publications/xo-pfloat.pdf)**
+##[Formatting documents with floats – A new algorithm for LaTeX2e]({{site.baseurl}}/publications/xo-pfloat.pdf)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
 + Published paper, 2000
@@ -229,7 +229,7 @@ At the GUTenberg meeting in Toulouse, Frank presented a paper about a new output
 
 ***
 
-**[TUG99 talk]({{site.baseurl}}/publications/tug99.pdf)**
+##[TUG99 talk]({{site.baseurl}}/publications/tug99.pdf)
 
 + Published paper, 1999
 + Keywords: LaTeX3, models, concepts, user-interface, designer-interface, proto-types
@@ -238,11 +238,11 @@ The talk given by project team members at the TUG conference in Vancouver on mod
 
 ***
 
-**[Notes on Oldenburg e-TeX/LaTeX3/ConTeXt meeting]({{site.baseurl}}/publications/etex-meeting-notes.pdf)**
+##[Notes on Oldenburg e-TeX/LaTeX3/ConTeXt meeting]({{site.baseurl}}/publications/etex-meeting-notes.pdf)
 
 ***
 
-**[Ideas for e-TeX/NTS]({{site.baseurl}}/publications/etex-math-notes.pdf)**
+##[Ideas for e-TeX/NTS]({{site.baseurl}}/publications/etex-math-notes.pdf)
 
 + Meeting notes, 1998
 + Keywords: TeX extensions, LaTeX3
@@ -251,7 +251,7 @@ Early in 1998 a meeting was held between the e-TeX project and the LaTeX3 projec
 
 ***
 
-**[Default docstrip headers]({{site.baseurl}}/publications/docstrip-header.pdf)**
+##[Default docstrip headers]({{site.baseurl}}/publications/docstrip-header.pdf)
 
 + Published paper, 1998
 + Keywords: documentation of LaTeX2e packages
@@ -260,7 +260,7 @@ An article about docstrip headers appeared in TUGboat volume 19, number 2. It de
 
 ***
 
-**[A regression test suite for LaTeX2e]({{site.baseurl}}/publications/regression-test-suite.pdf)**
+##[A regression test suite for LaTeX2e]({{site.baseurl}}/publications/regression-test-suite.pdf)
 
 + Published paper, 1997
 + Keywords: maintaining LaTeX2e
@@ -269,7 +269,7 @@ An article describing the regression test suite that has been built for LaTeX ov
 
 ***
 
-**[The LaTeX3 Programming Language—A syntax proposal for TeX macro programming]({{site.baseurl}}/publications/expl3-tb18-4.pdf)**
+##[The LaTeX3 Programming Language—A syntax proposal for TeX macro programming]({{site.baseurl}}/publications/expl3-tb18-4.pdf)
 
 + Published paper, 1997
 + Keywords: general research, proposed model for LaTeX programming
@@ -278,7 +278,7 @@ An article giving a brief overview of the first release of expl3: a proposed LaT
 
 ***
 
-**[Language information in structured documents: a model for mark-up and rendering]({{site.baseurl}}/publications/language-tug97-paper-revised.pdf)**
+##[Language information in structured documents: a model for mark-up and rendering]({{site.baseurl}}/publications/language-tug97-paper-revised.pdf)
 
 + Published paper, 1997
 + Keywords: general research, proposed model for LaTeX (current and future version)
@@ -288,7 +288,7 @@ In a conference on multilingual typesetting in Japan and later at a TUG conferen
 
 ***
 
-**[Application-independent representation of text for document processing – will Unicode suffice?]({{site.baseurl}}/publications/unicode5.pdf)**
+##[Application-independent representation of text for document processing – will Unicode suffice?]({{site.baseurl}}/publications/unicode5.pdf)
 
 + Published paper, 1996
 + Keywords: general research, language, text representation
@@ -297,7 +297,7 @@ A paper about application-independent representation of text for document proces
 
 ***
 
-**[LaTeX2e encoding interfaces]({{site.baseurl}}/publications/encoding-concepts.pdf)**
+##[LaTeX2e encoding interfaces]({{site.baseurl}}/publications/encoding-concepts.pdf)
 
 + Presentation, 1995
 + Keywords: LaTeX2e interface, input encoding, font encoding

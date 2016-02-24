@@ -380,6 +380,8 @@ ul.news-posts a:hover p { color: #0095DD; }
 .team h2 { font-size: 1em; margin: 1.3em 0 .5em; }
 .team h2 .role { color: #999; font-size: 0.7em; }
 
+/* flattr */
+a[href*="flattr"] { float: right; }
 
 
 /* Clearing
