@@ -10,4 +10,4 @@ tags: [latex2e, latex-news]
 
 # Issue 24 of LaTeX2e news released
 
-Beginning of Februrary a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in ltnews24.pdf. It can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/).
+Beginning of Februrary a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in [ltnews24.pdf]({{site.baseurl}}/news/latex2e-news/ltnews24.pdf). It can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/).

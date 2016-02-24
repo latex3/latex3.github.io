@@ -177,7 +177,7 @@ p { line-height: 1.4em; }
 
 strong, b, .bold, dt { font-family: 'roboto_regular', sans-serif; font-weight: normal;}
 
-em, i, .italic { letter-spacing: .03em; }
+em, i, .italic { font-style: italic; letter-spacing: .03em; }
 
 
 /* Links
@@ -307,11 +307,6 @@ nav ul li a:hover { color: #FFF; text-decoration: none; }
 
 /* Home
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* news */
-ul.posts { list-style: none; margin: 0 0 1em; }
-ul.posts span.post-date { color: #555; display: block; font-size: 0.8em; }
-ul.posts li { margin: 0 0 0.6em; }
-.home .news span { color: #fe9900; }
 .home dt { margin: 1em 0 .3em; }
 
 
@@ -347,9 +342,22 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* teaser */
 .teaser a:hover { display: inline-block; text-decoration: none; }
+.teaser section a h2,
 .teaser section a h3 { color: #0095DD; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0;}
 .teaser section a p { color: #000; }
 .teaser section a:hover p { color: #0095DD; }
+
+/* news */
+span.fa-rss-square { color: #fe9900;}
+small span.fa-rss-square { margin: 0 .2em; }
+ul.news-posts { list-style: none; margin: 0 0 1em; }
+ul.news-posts li { margin: 0 0 0.6em; }
+ul.news-posts a { display: block; }
+ul.news-posts a:hover { text-decoration: none; }
+ul.news-posts span.post-date { color: #555; display: block; font-size: 0.8em; }
+ul.news-posts h3 { color: #0086c4; font-size: 1.2em; margin: 0; padding: 0 0 .6em; }
+ul.news-posts p { color: #000; }
+ul.news-posts a:hover p { color: #0095DD; }
 
 /* team */
 .team h2 { font-size: 1em; margin: 1.3em 0 .5em; }

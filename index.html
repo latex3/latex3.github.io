@@ -12,14 +12,15 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
   </div>
   <div class="col cell1of2 news">
     <h2>Recent News</h2>
-    <ul class="posts">
+    <ul class="news-posts">
       {% for post in site.posts offset: 0 limit: 2 %}
       <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-    <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span> subscribe</a></p>
+    <small>Subscribe to our <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span>RSS News Feed</a></small>
   </div>
 </div>
+<hr>
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX the product</h2>

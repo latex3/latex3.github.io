@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "LaTeX3 News"
-description: "LaTeX3 News. Information on the most recent version of LaTeX3 and PDF News issues."
+description: "LaTeX3 Release Newsletters. Information on the most recent version of LaTeX3. The LaTeX3 PDF news issues. Updated twice yearly."
 ---
 
-# LaTeX3 News
+# LaTeX3 Release Newsletters
 
 The most recent LaTeX3 news is dated 2014/03/24. We will be providing status updates twice yearly. 
 

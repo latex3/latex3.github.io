@@ -5,15 +5,15 @@
     <description></description>
     <link>https://latex-project.org//latex-project.org/</link>
     <atom:link href="https://latex-project.org//latex-project.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Feb 2016 23:48:11 +0100</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 23:48:11 +0100</lastBuildDate>
+    <pubDate>Wed, 24 Feb 2016 13:47:39 +0100</pubDate>
+    <lastBuildDate>Wed, 24 Feb 2016 13:47:39 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
         <title>Issue 24 of LaTeX2e news released</title>
         <description>&lt;h1 id=&quot;issue-24-of-latex2e-news-released&quot;&gt;Issue 24 of LaTeX2e news released&lt;/h1&gt;
 
-&lt;p&gt;Beginning of Februrary a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in ltnews24.pdf. It can be found on the &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Beginning of Februrary a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in &lt;a href=&quot;/latex-project.org/news/latex2e-news/ltnews24.pdf&quot;&gt;ltnews24.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 11 Feb 2016 01:00:00 +0100</pubDate>
         <link>https://latex-project.org//latex-project.org/news/2016/02/11/issue-24-of-latex2e-news-released/</link>
@@ -30,9 +30,9 @@
     
       <item>
         <title>Issue 23 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;issue-23-of-latex2e-news-released&quot;&gt;Issue 23 of LaTeX2e news released&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;issue-23-of-latex2e-news-released&quot;&gt;Issue 23 of LaTeX2e news released&lt;/h2&gt;
 
-&lt;p&gt;Beginning of October a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in ltnews23.pdf. It can be found on the &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Beginning of October a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in &lt;a href=&quot;/latex-project.org/news/latex2e-news/ltnews23.pdf&quot;&gt;ltnews23.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Oct 2015 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//latex-project.org/news/2015/10/13/issue-23-of-latex2e-news-released/</link>
@@ -49,7 +49,7 @@
     
       <item>
         <title>Talks from the 2015 and 2014 TUG conferences</title>
-        <description>&lt;h1 id=&quot;talks-from-the-2015-and-2014-tug-conferences&quot;&gt;Talks from the 2015 and 2014 TUG conferences&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;talks-from-the-2015-and-2014-tug-conferences&quot;&gt;Talks from the 2015 and 2014 TUG conferences&lt;/h2&gt;
 
 &lt;p&gt;During the TUG conferences 2014 in Boston and 2015 in Darmstadt we gave a number of talks on several topics related to LaTeX. These are now online as video presentations together with some slide show material.&lt;/p&gt;
 
@@ -58,16 +58,16 @@
 &lt;ul&gt;
   &lt;li&gt;2015
     &lt;ul&gt;
-      &lt;li&gt;LaTeX compatibility policy change (Frank)&lt;/li&gt;
-      &lt;li&gt;Unicode math update (Will)&lt;/li&gt;
-      &lt;li&gt;Unicode characters in LaTeX (Joseph)&lt;/li&gt;
-      &lt;li&gt;\parshape woes (Joseph)&lt;/li&gt;
+      &lt;li&gt;LaTeX compatibility policy change (&lt;a href=&quot;/latex-project.org/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Unicode math update (&lt;a href=&quot;/latex-project.org/about/team/#will-robertson&quot;&gt;Will&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Unicode characters in LaTeX (&lt;a href=&quot;/latex-project.org/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;\parshape woes (&lt;a href=&quot;/latex-project.org/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt;)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;2014
     &lt;ul&gt;
-      &lt;li&gt;l3build a new regression test suite, also available as TUB paper (Frank)&lt;/li&gt;
-      &lt;li&gt;Recent development around expl3 and LaTeX3 (Will/Frank)&lt;/li&gt;
+      &lt;li&gt;l3build a new regression test suite, also available as TUB paper (&lt;a href=&quot;/latex-project.org/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Recent development around expl3 and LaTeX3 (&lt;a href=&quot;/latex-project.org/about/team/#will-robertson&quot;&gt;Will&lt;/a&gt;/&lt;a href=&quot;/latex-project.org/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -89,7 +89,7 @@
     
       <item>
         <title>Papers on &quot;Float Placement&quot; and &quot;Regression Tests&quot;</title>
-        <description>&lt;h1 id=&quot;papers-on-float-placement-and-regression-tests&quot;&gt;Papers on “Float Placement” and “Regression Tests”&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;papers-on-float-placement-and-regression-tests&quot;&gt;Papers on “Float Placement” and “Regression Tests”&lt;/h2&gt;
 
 &lt;p&gt;Two new articles have been uploaded: a paper describing in detail the mysteries of LaTeX’s float placement algorithm (and how to influence it) and a paper presenting an overview about the new regression test concepts that can be used to manage LaTeX code. Both papers have been first published in TUGboat 35#3.&lt;/p&gt;
 </description>

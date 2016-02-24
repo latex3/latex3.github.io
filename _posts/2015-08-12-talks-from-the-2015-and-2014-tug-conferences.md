@@ -8,19 +8,19 @@ categories: news
 tags: [talks, papers]
 ---
 
-# Talks from the 2015 and 2014 TUG conferences
+## Talks from the 2015 and 2014 TUG conferences
 
 During the TUG conferences 2014 in Boston and 2015 in Darmstadt we gave a number of talks on several topics related to LaTeX. These are now online as video presentations together with some slide show material.
 
 They cover topics such as
 
 + 2015
-  + LaTeX compatibility policy change (Frank)
-  + Unicode math update (Will)
-  + Unicode characters in LaTeX (Joseph)
-  + \parshape woes (Joseph)
+  + LaTeX compatibility policy change ([Frank]({{site.baseurl}}/about/team/#frank-mittelbach))
+  + Unicode math update ([Will]({{site.baseurl}}/about/team/#will-robertson))
+  + Unicode characters in LaTeX ([Joseph]({{site.baseurl}}/about/team/#joseph-wright))
+  + \parshape woes ([Joseph]({{site.baseurl}}/about/team/#joseph-wright))
 + 2014
-  + l3build a new regression test suite, also available as TUB paper (Frank)
-  + Recent development around expl3 and LaTeX3 (Will/Frank)
+  + l3build a new regression test suite, also available as TUB paper ([Frank]({{site.baseurl}}/about/team/#frank-mittelbach))
+  + Recent development around expl3 and LaTeX3 ([Will]({{site.baseurl}}/about/team/#will-robertson)/[Frank]({{site.baseurl}}/about/team/#frank-mittelbach))
             
 They can be found on the project [article page]({{site.baseurl}}/publications/). Enjoy! 

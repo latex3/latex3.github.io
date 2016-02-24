@@ -8,6 +8,6 @@ categories: news
 tags: [latex2e, latex-news]
 ---
 
-# Issue 23 of LaTeX2e news released
+## Issue 23 of LaTeX2e news released
 
-Beginning of October a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in ltnews23.pdf. It can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/).
+Beginning of October a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in [ltnews23.pdf]({{site.baseurl}}/news/latex2e-news/ltnews23.pdf). It can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/).
