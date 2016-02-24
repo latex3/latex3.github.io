@@ -407,7 +407,7 @@ ul.news-posts a:hover p { color: #0095DD; }
 .books img { float: left; margin: .3em 1em .2em 0; padding: .1em; border: 1px solid #DDD; }
 
 /* team */
-.team h2 { font-size: 1em; margin: 1.3em 0 .5em; }
+.team h2 { font-size: 1.2em; margin: 1.3em 0 .5em; }
 .team h2 .role { color: #999; font-size: 0.7em; }
 
 /* flattr */
