@@ -230,8 +230,10 @@ code {
   border-radius: 4px; }
 pre > code {
   display: block;
+  overflow: auto;
   padding: 1rem 1.5em;
-  white-space: pre; }
+  white-space: pre;
+  word-wrap: normal; }
 
 
 /* Tables
@@ -297,11 +299,42 @@ header { margin: 0 -2em 1.5em; }
 header svg { display: block; margin: 1em auto 1.2em; }
 
 
-
-
-/* Home
+/* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.home dt { margin: 1em 0 .3em; }
+nav { position: relative; }
+nav ul { background: #008080; list-style: none; margin: 0; text-align: center; width: 100%; }
+nav ul li { display: inline-block; margin: -1px 0 0 0; }
+nav ul li a, 
+nav ul li a:visited,
+nav ul li a:hover { color: #FFF; display: block; padding: .4em .8em; text-align: center; text-decoration: none; }
+nav ul li a:hover { text-decoration: underline; }
+nav ul li.active a,
+nav ul li.active a:hover { background: #FFF; color: #000; }
+nav li:hover ul a { background: #FFF; color: #0086c4; }
+nav li ul a:hover { color: #000; }
+nav li ul { display: none; position: absolute; width: auto; }
+nav li ul li { display: block; float: none; }
+nav li ul li a { min-width: 8em; width: auto; }
+nav ul li a:hover + .sub, .sub:hover { display: block; }
+
+.show-menu { text-decoration: none; color: #fff; background: #008080; text-align: center; padding: .5em 0; display: none; }
+
+nav input[type=checkbox]{ display: none; -webkit-appearance: none; }
+nav input[type=checkbox]:checked ~ #menu{ display: block; }
+
+@media screen and (max-width : 700px){
+  nav ul {
+    position: static;
+    display: none;
+  }
+  nav ul li, li a {
+    display: block;
+    width: auto;
+  }
+  .show-menu {
+    display:block;
+  }
+}
 
 
 /* Footer
@@ -334,6 +367,9 @@ hr {
 
 /* Various
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* home */
+.home dt { margin: 1em 0 .3em; }
+
 /* teaser */
 .teaser a:hover { display: inline-block; text-decoration: none; }
 .teaser section a h2,
