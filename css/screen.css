@@ -291,19 +291,19 @@ span.fa { color: #555; margin: 0 0.5em 0 0;}
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 header { margin: 0 -2em 1.5em; }
-header svg { display: block; margin: 1em auto; }
+header svg { display: block; margin: 1em auto 1.2em; }
 
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav { background: #565A5E; margin: 0; }
-nav ul { list-style: none; padding: 0px; margin: 0px; text-align: center; }
-nav ul li { display: inline-block; margin: 0; text-align: left; }
-nav ul li.active { background: #FFF;}
+nav ul { background: #008080; list-style: none; margin: 0; overflow: hidden; text-align: center; }
+nav ul li { display: inline-block; margin: -1px 0 0 0; text-align: left; }
+nav ul li a, 
+nav ul li a:visited,
+nav ul li a:hover { display: block; padding: .4em .8em; text-decoration: none; color: #FFF; }
+nav ul li a:hover { background: #088c8e; }
 nav ul li.active a,
-nav ul li.active a:hover { color: #565A5E; }
-nav ul li a, nav ul li a:visited { display: block; padding: .4em .8em; text-decoration: none; color: #80e0ff; }
-nav ul li a:hover { color: #FFF; text-decoration: none; }
+nav ul li.active a:hover { background: #FFF; color: #000; }
 
 
 /* Home
