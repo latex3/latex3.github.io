@@ -393,7 +393,7 @@ ul.news-posts a:hover p { color: #0095DD; }
 .toc { list-style: none; }
 .toc li:before { content: "\27A4 \2002 \2005"; color: #777;}
 .toc li { border-bottom: 1px dotted #999; margin: 0; padding: .2em .5em;}
-.toc a { display: inline-block; width: 90%;}
+.toc a { display: inline-block; width: auto; }
 .toc a:hover { color: #000; text-decoration: none; }
 
 /* links */
