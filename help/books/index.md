@@ -1,22 +1,28 @@
 ---
-layout: page
+layout: books
 title: "TeX and LaTeX Books"
 description: "List of books on TeX and LaTeX and related topics. List book in English, French, German, and Spanish. TeX and LaTeX books list."
 ---
 
 # TeX and LaTeX Books
 
-## Table of Contents
-+ [LaTeX books]()
-  + [English](#english)
-  + [French](#french)
-  + [German](#german)
-  + [Spanish](#spanish)
-+ [Related reading](#related-reading)
-  + [English](#english-1)
-  + [French](#french-1)
-
-***
+<div class="row">
+  <div class="col cell1of2">
+    <p>A comprehensive list of books on LaTeX and related topics in English, French, German, and Spanish. All books are useful resources for everybody from new users who wish to learn, to experienced users who are looking for a reference.</p>
+    <p>This page lists <a href="#latex-books">books on LaTeX</a> and <a href="related-reading">books on related topics</a> like TeX, Fonts, and Encoding.</p>
+  </div>
+  <div class="col cell1of2">
+    <ul class="toc">
+      <li><a href="#english">LaTeX Books in English</a></li>
+      <li><a href="#french">LaTeX Books in French</a></li>
+      <li><a href="#german">LaTeX Books in German</a></li>
+      <li><a href="#spanish">LaTeX Books in Spanish</a></li>
+      <li><a href="#english-1">Related Books in English</a></li>
+      <li><a href="#french-1">Related Books in French</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
 
 ## LaTeX Books
 
@@ -36,7 +42,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 
 There is an [errata file](manual.err) for this book.
 
-***
+<hr>
 
 #### [The LaTeX Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000314&type=3&subid=0)
 
@@ -60,7 +66,7 @@ There are some extracts from the book as PDF files available from this site:
 
 There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of TLC2 provide a number of prizes for people finding errors in the book. 
 
-***
+<hr>
 
 #### [The LaTeX Graphics Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000313&type=3&subid=0)
 
@@ -80,7 +86,7 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 
 There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of LGC2 provide a number of prizes for people finding errors in the book.
 
-***
+<hr>
 
 #### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
 
@@ -94,7 +100,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) w
 **ISBN-13:** 978-0201433111  
 **Pages:** 560 pages  
 
-***
+<hr>
 
 #### [Guide to LaTeX (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850)
 
@@ -110,12 +116,11 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) w
 
 Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850) consisting of PDF, mobi and ePub format without DRM.
 
-***
+<hr>
 
 #### [The LaTeX Companions Third Revised Boxed Set](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000312&type=3&subid=0)
 
 ![The LaTeX Companions Third Revised Boxed Set, A Complete Guide and Reference for Preparing, Illustrating and Publishing Technical Documents](frank-mittelbach_-_the-latex-companions-3rd-revised-set.jpg){:width="150" height="134"}
-
 **Edition:** 3rd revised box set  
 **Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Michel Goossens, Sebastian Rahtz, Denis Roegel, Herbert Voss, Helmut Kopka, Patrick W. Daly  
 **Language:** English  
@@ -132,7 +137,7 @@ A Complete Guide and Reference for Preparing, Illustrating and Publishing Techni
 + The LaTeX Graphics Companion, 2nd edition
 + The LaTeX Web Companion
 
-***
+<hr>
 
 #### [LaTeX Beginner's Guide](https://www.packtpub.com/latex-beginners-guide/book)
 
@@ -148,7 +153,7 @@ A Complete Guide and Reference for Preparing, Illustrating and Publishing Techni
 
 The LaTeX Beginner's Guide is packed with useful examples and explanations. 
 
-***
+<hr>
 
 #### [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)
 
@@ -164,7 +169,7 @@ The LaTeX Beginner's Guide is packed with useful examples and explanations.
 
 From Wikibooks, this open-content textbook is intended to serve new users who wish to learn as well as old hands who need a quick reference. The book has a collection providing an on-demand PDF version as well as a printed book. It is available under a [Creative Commons Attribution-Share Alike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/).
 
-***
+<hr>
 
 ### French
 
@@ -180,15 +185,11 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **ISBN-13:** 978-2-7440-7182-9  
 **Pages:** 1116 pages  
 
-Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
+Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site: [texte complet de l'annexe B, «Détecter et résoudre; les problèmes»](lc2fr-apb.pdf) (463 kB)
 
-+ [texte complet de l'annexe B, «Détecter et résoudre; les problèmes»](lc2fr-apb.pdf) (463 kB)
+This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site: [full text of appendix B, «Tracing and resolving problems»](lc2fr-apb.pdf) (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:
-
-+ [full text of appendix B, «Tracing and resolving problems»](lc2fr-apb.pdf) (463 kB)
-
-***
+<hr>
 
 ### German
 
@@ -216,7 +217,7 @@ There is an [errata file](lb2.err) (along with a [PDF version](lb2-err.pdf)) whi
 
 Jürgen Fenn has written a review for the german TeX magazine "Die TeXnische Komödie". It is available as a [PDF file](fenn_lb2.pdf) (473 kB). 
 
-***
+<hr>
 
 #### [Einführung in LaTeX: unter Berücksichtigung von pdfLaTeX, XLaTeX und LuaLaTeX](http://www.amazon.de/gp/product/3865414621/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3865414621&linkCode=as2&tag=wwwlatexproje-21)
 
@@ -232,7 +233,7 @@ Jürgen Fenn has written a review for the german TeX magazine "Die TeXnische Kom
 
 Herbert has written several other books on LaTeX topics, check out his [author page on amazon.de](http://www.amazon.de/Herbert-Vo%C3%9F/e/B0045AA4DO/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=wwwlatexproje-21) and on [amazon.com](http://www.amazon.com/Herbert-Voss/e/B0045AA4DO/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20). 
 
-***
+<hr>
 
 #### [Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional)](http://www.amazon.de/gp/product/3826694864/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3826694864&linkCode=as2&tag=wwwlatexproje-21)
 
@@ -246,7 +247,7 @@ Herbert has written several other books on LaTeX topics, check out his [author p
 **ISBN-13:** 978-3826694868  
 **Pages:** 328 pages  
 
-***
+<hr>
 
 ### Spanish
 
@@ -264,7 +265,7 @@ Herbert has written several other books on LaTeX topics, check out his [author p
 
 Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)
 
-***
+<hr>
 
 #### [El libro de LaTeX](http://www.latex.um.es/libro/index.html)
 
@@ -280,7 +281,7 @@ Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
 
 May be difficult to find these days.
 
-***
+<hr>
 
 ## Related Reading
 
@@ -298,7 +299,7 @@ May be difficult to find these days.
 **ISBN-13:** 978-0-201-13447-6  
 **Pages:** 496 pages  
 
-***
+<hr>
 
 #### [The TeXbook](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Ftexbook-9780201134483)
 
@@ -312,7 +313,7 @@ May be difficult to find these days.
 **ISBN-13:** 978-0-201-13448-3  
 **Pages:** 496 pages  
 
-***
+<hr>
 
 #### [Fonts & Encodings](http://www.amazon.com/Fonts-Encodings-Yannis-Haralambous/dp/0596102429/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20)
 
@@ -326,7 +327,7 @@ May be difficult to find these days.
 **ISBN-13:** 978-0596102425  
 **Pages:** 1040 pages  
 
-***
+<hr>
 
 ### French
 
@@ -342,7 +343,7 @@ May be difficult to find these days.
 **ISBN-13:** 978-2711748198  
 **Pages:** 555 pages  
 
-***
+<hr>
 
 #### [Fontes et Codages](http://www.amazon.fr/Fontes-Codages-Yannis-Haralambous/dp/284177273X)
 
@@ -355,3 +356,7 @@ May be difficult to find these days.
 **ISBN-10:** 284177273X   
 **ISBN-13:** 978-2841772735  
 **Pages:** 1012 pages  
+
+<hr>
+
+
