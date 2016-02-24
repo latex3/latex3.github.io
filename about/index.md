@@ -56,22 +56,7 @@ Or, in English:
 
 <hr>
 <div class="row teaser">
-  <section class="col cell1of3">
-    <a href="{{ "/help/documentation" | prepend: site.baseurl }}">
-      <h3>Documentation</h3>
-      <p>The official LaTeX help and documentation section.</p>
-    </a>
-  </section>
-  <section class="col cell1of3">
-    <a href="{{ "/get/" | prepend: site.baseurl }}">
-      <h3>Getting LaTeX</h3>
-      <p>Get LaTeX for Linux, Mac OS X, Windows and Online.</p>
-    </a>
-  </section>
-  <section class="col cell1of3">
-    <a href="{{ "/about/team/" | prepend: site.baseurl }}">
-      <h3>LaTeX Team</h3>
-      <p>Learn more about the people behind the LaTeX project.</p>
-    </a>
-  </section>
+  <section class="col cell1of3">{% include teaser.documentation.html %}</section>
+  <section class="col cell1of3">{% include teaser.get.html %}</section>
+  <section class="col cell1of3">{% include teaser.team.html %}</section>
 </div>

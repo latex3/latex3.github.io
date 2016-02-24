@@ -38,4 +38,9 @@ There is a lot of documentation in languages other than English. Lists of books 
 + [A collection of french LaTeX documentation](http://www.framasoft.net/rubrique266.html) maintained by [Framasoft](http://www.framasoft.net/)
 + [Apprends LaTeX!](http://www.babafou.eu.org/Apprends_LaTeX/)
 
-
+<hr>
+<div class="row teaser">
+  <section class="col cell1of3">{% include teaser.books.html %}</section>
+  <section class="col cell1of3">{% include teaser.links.html %}</section>
+  <section class="col cell1of3">{% include teaser.get.html %}</section>
+</div>

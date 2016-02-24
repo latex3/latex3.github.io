@@ -359,6 +359,23 @@ ul.news-posts h3 { color: #0086c4; font-size: 1.2em; margin: 0; padding: 0 0 .6e
 ul.news-posts p { color: #000; }
 ul.news-posts a:hover p { color: #0095DD; }
 
+/* toc */
+.toc { list-style: none; }
+.toc li:before { content: "\27A4 \2002 \2005"; color: #777;}
+.toc li { border-bottom: 1px dotted #999; margin: 0; padding: .2em .5em;}
+.toc a { display: inline-block; width: 90%;}
+.toc a:hover { color: #000; text-decoration: none; }
+
+/* links */
+.links ul { list-style: none; }
+.links ul li { margin: 0 0 1em; }
+.links ul li a:first-child { font-weight: bold; }
+.links .toc li a:first-child { font-weight: normal; }
+.links .toc li { margin: 0; }
+
+/* books */
+.books img { float: left; margin: .3em 1em .2em 0; padding: .1em; border: 1px solid #DDD; }
+
 /* team */
 .team h2 { font-size: 1em; margin: 1.3em 0 .5em; }
 .team h2 .role { color: #999; font-size: 0.7em; }
