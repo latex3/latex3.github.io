@@ -5,7 +5,7 @@ title: "Articles published by the LaTeX project"
 description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations."
 ---
 
-# Papers
+# Publications
 
 Below you will find links to Portable Document Format (PDF) versions of various articles and papers published by the LaTeX3 project and links to videos of their conference presentations. Some of this list has been assembled 'after the fact'; please inform us if you notice anything missing.
 
