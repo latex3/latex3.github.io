@@ -29,7 +29,7 @@ Hidden behind this title is a presentation of the new LaTeX kernel compatibility
 ***
 
 ## [The box-glue-penalty algebra of TeX and its use of \prevdepth]({{site.baseurl}}/publications/tb112mitt-prevdepth.pdf)
-<a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=…3A%2F%2Flatex-project.org%2Fpapers%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+<a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
 + Published paper, TUGboat volume 36, number 1, 2015
