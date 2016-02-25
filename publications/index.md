@@ -190,11 +190,11 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 ## [TUG 2007 conference](http://tug.org/tug2007/)
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
-  + [LaTeX3 project update (Video via River Valley TV)](http://www.river-valley.zeeba.tv/conferences/tug2007/media/Morten_Hoegholm_1/)
+  + [LaTeX3 project update (Video via River Valley TV)](http://river-valley.zeeba.tv/latex3-project-update/)
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
-  + [The breqn package: revised and revived (Video via River Valley TV)](http://www.river-valley.zeeba.tv/conferences/tug2007/media/Morten_Hoegholm_2/)
+  + [The breqn package: revised and revived (Video via River Valley TV)](http://river-valley.zeeba.tv/the-breqn-package-revised-and-revived/)
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley)
-  + [Vistas for TeX (Video via River Valley TV)](http://www.river-valley.zeeba.tv/conferences/tug2007/media/Chris_Rowley/)
+  + [Vistas for TeX (Video via River Valley TV)](http://river-valley.zeeba.tv/vistas-for-tex/)
 
 ***
 

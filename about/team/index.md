@@ -21,7 +21,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li class="fa-envelope-square"><a href="mailto:frank.mittelbach@latex-project.org">frank.mittelbach@latex-project.org</a></li>
       <li class="fa-github-square"><a href="https://github.com/FrankMittelbach">https://github.com/FrankMittelbach</a></li>
       <li class="fa-stack-exchange"><a href="http://tex.stackexchange.com/users/10109/frank-mittelbach">http://tex.stackexchange.com/users/10109</a></li>
-      <li class="fa-linkedin-square"><a href="http://www.linkedin.com/in/frankmittelbach">http://www.linkedin.com/in/frankmittelbach</a></li>
+      <li class="fa-linkedin-square"><a href="https://de.linkedin.com/in/frankmittelbach">https://de.linkedin.com/in/frankmittelbach</a></li>
     </ul>
   </li>
   <li id="rainer-schoepf">
