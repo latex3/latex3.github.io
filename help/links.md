@@ -14,7 +14,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
     <ul class="toc">
       <li><a href="#contributed-documentation">Contributed Documentation</a></li>
       <li><a href="#faqs">FAQ's</a></li>
-      <li><a href="#question-and-anwser-websites">Question & Anwser Websites</a></li>
+      <li><a href="#question-and-answer-websites">Question & Answer Websites</a></li>
       <li><a href="#tutorials">Tutorials</a></li>
       <li><a href="#directories">Web Directories</a></li>
       <li><a href="#user-groups">User Groups</a></li>
@@ -50,7 +50,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [A Visual LaTeX FAQ](http://www.ctan.org/tex-archive/info/visualFAQ/visualFAQ.pdf)  
   Having trouble finding the answer to a LaTeX question? The Visual LaTeX FAQ is an innovative new search interface that presents over a hundred typeset samples of frequently requested document formatting. Simply click on a hyperlinked piece of text and the Visual LaTeX FAQ will send your Web browser to the appropriate page in the UK TeX FAQ. By Scott Pakin.
   
-## Question and Anwser Websites
+## Question and Answer Websites
 
 ### English
 
