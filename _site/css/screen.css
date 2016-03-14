@@ -185,9 +185,9 @@ em, i, .italic { font-style: italic; letter-spacing: .03em; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-a         { color: #0086c4; text-decoration: none; }
+a         { color: #005DB7; text-decoration: none; }
 a:hover   { text-decoration: underline; }
-a:visited { color: #0086c4; }
+a:visited { color: #005DB7; }
 a:active,
 a:focus   { outline: 0; }
 a:target  { color: #007F00; }
@@ -311,7 +311,7 @@ nav ul li a:hover { color: #FFF; display: block; padding: .4em .8em; text-align:
 nav ul li a:hover { text-decoration: underline; }
 nav ul li.active a,
 nav ul li.active a:hover { background: #FFF; color: #000; }
-nav li:hover ul a { background: #FFF; color: #0086c4; }
+nav li:hover ul a { background: #FFF; color: #005DB7; }
 nav li ul a:hover { color: #000; }
 nav li ul { display: none; position: absolute; width: auto; }
 nav li ul li { display: block; float: none; }
@@ -374,9 +374,9 @@ hr {
 /* teaser */
 .teaser a:hover { display: inline-block; text-decoration: none; }
 .teaser section a h2,
-.teaser section a h3 { color: #0095DD; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0;}
+.teaser section a h3 { color: #005DB7; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0;}
 .teaser section a p { color: #000; }
-.teaser section a:hover p { color: #0095DD; }
+.teaser section a:hover p { color: #005DB7; }
 
 /* news */
 span.fa-rss-square { color: #fe9900;}
@@ -386,7 +386,7 @@ ul.news-posts li { margin: 0 0 0.6em; }
 ul.news-posts a { display: block; }
 ul.news-posts a:hover { text-decoration: none; }
 ul.news-posts span.post-date { color: #555; display: block; font-size: 0.8em; }
-ul.news-posts h3 { color: #0086c4; font-size: 1.2em; margin: 0; padding: 0 0 .6em; }
+ul.news-posts h3 { color: #005DB7; font-size: 1.2em; margin: 0; padding: 0 0 .6em; }
 ul.news-posts p { color: #000; }
 ul.news-posts a:hover p { color: #0095DD; }
 
