@@ -4,14 +4,12 @@
         <ul>
           {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}
             <a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-          {% if page.url == '/about/' %}<li class="active">
-            {% elsif page.url == '/about/team/' %}<li class="active">
+          {% if page.url contains '/about/' %}<li class="active">
             {% else %}<li>{% endif %}
             <a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
           {% if page.url == '/get/' %}<li class="active">{% else %}<li>{% endif %}
             <a href="{{ "/get/" | prepend: site.baseurl }}">Get</a></li>
-          {% if page.url == '/latex3/' %}<li class="active">
-            {% elsif page.url == '/latex3/code/' %}<li class="active">
+          {% if page.url contains '/latex3/' %}<li class="active">
             {% else %}<li>{% endif %}
             <a href="{{ "/latex3/" | prepend: site.baseurl }}">LaTeX3</a></li>
           {% if page.url == '/publications/' %}<li class="active">{% else %}<li>{% endif %}
