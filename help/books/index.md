@@ -9,7 +9,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 <div class="row">
   <div class="col cell1of2">
     <p>A comprehensive list of books on LaTeX and related topics in English, French, German, and Spanish. All books are useful resources for everybody from new users who wish to learn, to experienced users who are looking for a reference.</p>
-    <p>This page lists <a href="#latex-books">books on LaTeX</a> and <a href="related-reading">books on related topics</a> like TeX, fonts, and encoding.</p>
+    <p>This page lists <a href="#latex-books">books on LaTeX</a> and <a href="#related-reading">books on related topics</a> like TeX, fonts, and encoding.</p>
   </div>
   <div class="col cell1of2">
     <ul class="toc">
