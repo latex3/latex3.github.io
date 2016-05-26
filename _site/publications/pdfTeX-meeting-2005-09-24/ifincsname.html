@@ -4,7 +4,7 @@
 <head>
    <!-- saved from url=(0011)http://www.mindjet.com -->
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <title>new implemented primitive</title>
+   <title>\ifincsname</title>
    <script language="JavaScript" type="text/JavaScript" src="Res/code/shared.js"></script>
    <script language="JavaScript" type="text/JavaScript" src="Res/code/boxController.js"></script>
    <script language="JavaScript" type="text/JavaScript" src="Res/code/boxSettings.js"></script>
@@ -81,7 +81,7 @@
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="programminglanguage.html">&nbsp;1. programming language&nbsp;</a></span>
   </div>
   <div class="subtopic">
-	<img src="Res/images/arrow.gif"><span class="unselect"><a href="ifincsname.html">&nbsp;1.1 \ifincsname&nbsp;</a></span>
+	<img src="Res/images/arrow.gif"><span class="select"><a href=".ifincsname.html">&nbsp;1.1 \ifincsname&nbsp;</a></span>
   </div>
   <div class="subtopic">
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="Oldenburgnotes.html">&nbsp;1.2 Oldenburg notes&nbsp;</a></span>
@@ -105,7 +105,7 @@
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="unjustifiedparagraphs.html">&nbsp;3.2 unjustified paragraphs&nbsp;</a></span>
   </div>
   <div class="subtopic">
-	<img src="Res/images/arrow.gif"><span class="unselect"><a href="everyleftline.html">&nbsp;3.3 \everyleftline&nbsp;</a></span>
+	<img src="Res/images/arrow.gif"><span class="unselect"><a href=".everyleftline.html">&nbsp;3.3 \everyleftline&nbsp;</a></span>
   </div>
   <div class="maintopic">
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="topicsnotdiscussed.html">&nbsp;4. topics not discussed&nbsp;</a></span>
@@ -129,7 +129,7 @@
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="summaryofresults.html">&nbsp;5. summary of results&nbsp;</a></span>
   </div>
   <div class="subtopic">
-	<img src="Res/images/arrow.gif"><span class="select"><a href="newimplementedprimitive.html">&nbsp;5.1 new implemented primitive&nbsp;</a></span>
+	<img src="Res/images/arrow.gif"><span class="unselect"><a href="newimplementedprimitive.html">&nbsp;5.1 new implemented primitive&nbsp;</a></span>
   </div>
   <div class="subtopic">
 	<img src="Res/images/arrow.gif"><span class="unselect"><a href="prioritysortingOldenburgnotes.html">&nbsp;5.2 priority sorting Oldenburg not... &nbsp;</a></span>
@@ -162,9 +162,17 @@
 
         </td>
         <td class="topicLineColumn">
-          <a name="Zweig19"></a>
-          <span class=outlineNumberFirst>5.1 </span><span class=topicLineFirst>new implemented primitive</span>
+          <a name="Zweig3"></a>
+          <span class=outlineNumberFirst>1.1 </span><span class=topicLineFirst>\ifincsname</span>
           <span class="topicIcons">
+<!-- BEGIN SNIPPET ICONS (Page_Icons,Page_Box_CalloutNotes_Item) --> 
+ <img class="topicIcon" width="16" height="16" alt="" 
+      src="MapMarkers/StockIcon-45.gif">
+<!-- END SNIPPET ICONS--> 
+<!-- BEGIN SNIPPET ICONS (Page_Icons,Page_Box_CalloutNotes_Item) --> 
+ <img class="topicIcon" width="16" height="16" alt="" 
+      src="MapMarkers/StockIcon-62.gif">
+<!-- END SNIPPET ICONS--> 
 
           </span>
         </td>
@@ -172,7 +180,26 @@
     </table>
 
 
-     <div class="topicTextNotes"><div align="left">A missing control structure: <a href="ifincsname.html#Zweig3" ><span>\ifincsname</span></a><span> to solve an important general problem with TeX.</span><span></span></div></div>
+     <div class="topicTextNotes"><div align="left">Allow testing if we are inside a \csname .. \endcsname construct as there a number of operations 
+are not allowed.</div>
+<div align="left"><br/></div>
+<div align="left">This is actually one area of TeX where you really can't provided a programmed alternative that would 
+still have acceptable running time. So having such a primitive would be more than useful. Thanh 
+kindly programmed it for us while we talked about it.</div>
+<div align="left"><br/></div>
+<div align="left">Recent comment by Morten:</div>
+<div align="left">I gave stuff like \ifincsname some thought a couple of weeks ago and discovered that what Thanh 
+implemented that day isn't safe enough. What if someone does \csname xxx \csname 
+yyy\endcsname zzz\endcsname? Then the second \csname will set the switch false. So we must 
+add a temporary boolean to record the value of if_in_csname when we enter the function and then 
+set if_in_csname to that when we exit.  Plus we also have to do something similar for if_in_csname 
+(\ifcsname in eTeX).</div>
+<div align="left"><br/></div>
+<div align="left">Reply by Thanh:</div>
+<div align="left"><br/></div>
+<div align="left">the new primitive \ifincsname is included in the alpha version of pdftex 
+<a href="http://sarovar.org/projects/pdftex/"><span>http://sarovar.org/projects/pdftex/</span></a><span></span></div>
+<div align="left">I will have a look at your patch and submit it.</div></div>
 
 
 
