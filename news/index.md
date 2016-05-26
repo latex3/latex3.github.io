@@ -40,3 +40,24 @@ permalink: /news/
   </li>
   {% endfor %}
 </ul>
+
+## All News
+
+<ul class="all-news-posts">
+  {% for post in site.posts offset: 4 %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<hr>
+<div class="row teaser">
+  <section class="col cell1of3">{% include teaser.documentation.html %}</section>
+  <section class="col cell1of3">{% include teaser.books.html %}</section>
+  <section class="col cell1of3">{% include teaser.links.html %}</section>
+</div>

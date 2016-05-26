@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//latex-project.org/</link>
     <atom:link href="https://latex-project.org//latex-project.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 May 2016 11:54:02 +0200</pubDate>
-    <lastBuildDate>Thu, 26 May 2016 11:54:02 +0200</lastBuildDate>
+    <pubDate>Thu, 26 May 2016 12:36:51 +0200</pubDate>
+    <lastBuildDate>Thu, 26 May 2016 12:36:51 +0200</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -110,7 +110,7 @@
         <title>Issue 21 of LaTeX2e news released</title>
         <description>&lt;h1 id=&quot;issue-21-of-latex2e-news-released&quot;&gt;Issue 21 of LaTeX2e news released&lt;/h1&gt;
 
-&lt;p&gt;For some reason we forgot to add issue number 21 to the web site. It has now been added to [LaTeX2e news page](/latex-project.org(/news/latex2e-news/) and documents the changes that have been made to the LaTeX2e release in 2014.&lt;/p&gt;
+&lt;p&gt;For some reason we forgot to add issue number 21 to the web site. It has now been added to &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt; and documents the changes that have been made to the LaTeX2e release in 2014.&lt;/p&gt;
 </description>
         <pubDate>Thu, 16 Oct 2014 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//latex-project.org/news/2014/10/16/issue-21-of-latex2e-news-released/</link>
