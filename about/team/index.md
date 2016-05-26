@@ -88,10 +88,10 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="jonas-jacek">
-    <h2>Jonas Jared Jacek <br><span class="role">Webmaster</span></h2>
+    <h2>Jonas Jared Jacek <br><span class="role">Web Development, Webmaster</span></h2>
     <ul class="team">
       <li class="fa-external-link-square"><a href="http://jonas.me/">http://jonas.me/</a></li>
-      <li class="fa-github-square"><a href="https://github.com/jonasjacek/">https://github.com/jonasjacek/</a></li>
+      <li class="fa-github-square"><a href="https://github.com/jonasjacek">https://github.com/jonasjacek</a></li>
     </ul>
   </li>
 </ul>
