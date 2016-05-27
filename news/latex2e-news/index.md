@@ -8,8 +8,8 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 <div class="row">
   <div class="col cell1of2">
-    <p>The most recent version of LaTeX is nominally dated 2016/02/01 (it may additionally have a patch-level associated with it).</p>
-    <p>Due to the small number of changes these days new releases will appear at irregular intervals, at most once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#svn">SNV version</a> of the source code.</p>
+    <p>The most recent version of LaTeX is nominally dated 2016/03/31 (it may additionally have a patch-level associated with it).</p>
+    <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#svn">SNV version</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
     <p>Starting with the 2015/01/01 release we provide a "latexrelease" package that allows you to emulate older (or newer) versions of the format without regenerating it from scratch; see ltnews22 for further details.</p>
@@ -19,6 +19,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 | Release date | Latex2e News issue (PDF) |
 |:-------------|-------------------------:|
+| 2016/03/31 | [LaTeX2e News Issue 25]({{site.baseurl}}/news/latex2e-news/ltnews25.pdf) |
 | 2016/02/01 | [LaTeX2e News Issue 24]({{site.baseurl}}/news/latex2e-news/ltnews24.pdf) |
 | 2015/10/01 | [LaTeX2e News Issue 23]({{site.baseurl}}/news/latex2e-news/ltnews23.pdf) |
 | 2015/01/01 | [LaTeX2e News Issue 22]({{site.baseurl}}/news/latex2e-news/ltnews22.pdf) |
