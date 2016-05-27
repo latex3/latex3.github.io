@@ -9,7 +9,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 <div class="row">
   <div class="col cell1of2">
     <p>The most recent version of LaTeX is nominally dated 2016/03/31 (it may additionally have a patch-level associated with it).</p>
-    <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#svn">SNV version</a> of the source code.</p>
+    <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#svn">SVN version</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
     <p>Starting with the 2015/01/01 release we provide a "latexrelease" package that allows you to emulate older (or newer) versions of the format without regenerating it from scratch; see ltnews22 for further details.</p>
