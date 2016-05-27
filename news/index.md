@@ -41,7 +41,7 @@ permalink: /news/
   {% endfor %}
 </ul>
 
-## All News
+## Older News
 
 <ul class="all-news-posts">
   {% for post in site.posts offset: 4 %}
