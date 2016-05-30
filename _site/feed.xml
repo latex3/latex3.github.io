@@ -5,9 +5,28 @@
     <description></description>
     <link>https://latex-project.org//latex-project.org/</link>
     <atom:link href="https://latex-project.org//latex-project.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 May 2016 12:48:11 +0200</pubDate>
-    <lastBuildDate>Thu, 26 May 2016 12:48:11 +0200</lastBuildDate>
+    <pubDate>Mon, 30 May 2016 10:06:05 +0200</pubDate>
+    <lastBuildDate>Mon, 30 May 2016 10:06:05 +0200</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Issue 25 of LaTeX2e news released</title>
+        <description>&lt;h1 id=&quot;issue-24-of-latex2e-news-released&quot;&gt;Issue 24 of LaTeX2e news released&lt;/h1&gt;
+
+&lt;p&gt;The most important changes and additions are documented in &lt;a href=&quot;/latex-project.org/news/latex2e-news/ltnews25.pdf&quot;&gt;ltnews25.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/latex-project.org/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Mar 2016 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//latex-project.org/news/2016/03/25/issue-25-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//latex-project.org/news/2016/03/25/issue-25-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Issue 24 of LaTeX2e news released</title>
@@ -201,41 +220,6 @@
         <guid isPermaLink="true">https://latex-project.org//latex-project.org/news/2014/02/05/talk-from-symposium-on-multilingual-information-processing-tsukuba/</guid>
         
         <category>talk</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Knuth books on Typesetting on sale</title>
-        <description>&lt;h1 id=&quot;knuth-books-on-typesetting-on-sale&quot;&gt;Knuth books on Typesetting on sale&lt;/h1&gt;
-
-&lt;p&gt;Not directly related to LaTeX but at least volume A of “Computer &amp;amp; Typesetting” is a very valuable resource for anybody who wants to write LaTeX code (e.g., packages) or anybody who really wants to understand the inner workings of TeX.&lt;/p&gt;
-
-&lt;p&gt;All 5 books in the series are now &lt;a href=&quot;http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&amp;amp;subid=&amp;amp;offerid=163217.1&amp;amp;type=10&amp;amp;tmpid=3559&amp;amp;RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fpromotions%252Fwarehouse-sale-save-up-to-75-off-139578%2526link%253Dimage%253FWT.mc_id%253D2013_12_05_IT_PBM_WarehouseSale&quot;&gt;on sale at InformIt&lt;/a&gt; for $24 per book until the end of the year. The miniseries includes the following titles: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Volume A: The TeXbook&lt;/li&gt;
-  &lt;li&gt;Volume B: TeX the Program (the program code)&lt;/li&gt;
-  &lt;li&gt;Volume C: The METAFONT book&lt;/li&gt;
-  &lt;li&gt;Volume D: METAFONT the Program (the program code)&lt;/li&gt;
-  &lt;li&gt;Volume B: Computer Modern Typefaces (the METAFONT code for the main font family used by TeX)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;All books in the series are hardcover. $24 is about 40% to 50% off the street price for the individual books, so that is a good bargain if interested in some of them.&lt;/p&gt;
-
-&lt;p&gt;However, better check out the shipping costs! In the US they ship for free, but to other countries it may become quite expensive. In that case (but only if you are interested in all of them) the boxed set might be more interesting, e.g., from &lt;a href=&quot;http://www.amazon.com/Computers-Typesetting-Volumes-A-E-Boxed/dp/0201734168/?_encoding=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;linkCode=ur2&amp;amp;tag=lapr05-20&quot;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 Dec 2013 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//latex-project.org/news/2013/12/06/knuth-books-on-typesetting-on-sale/</link>
-        <guid isPermaLink="true">https://latex-project.org//latex-project.org/news/2013/12/06/knuth-books-on-typesetting-on-sale/</guid>
-        
-        <category>planet</category>
-        
-        <category>books</category>
-        
-        <category>tex</category>
         
         
         <category>news</category>
