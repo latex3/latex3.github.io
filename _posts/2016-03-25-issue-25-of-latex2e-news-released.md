@@ -8,6 +8,6 @@ categories: news
 tags: [latex2e, latex-news]
 ---
 
-# Issue 24 of LaTeX2e news released
+# Issue 25 of LaTeX2e news released
 
 The most important changes and additions are documented in [ltnews25.pdf]({{site.baseurl}}/news/latex2e-news/ltnews25.pdf). It can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/).
