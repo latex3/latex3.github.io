@@ -18,8 +18,8 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
   <li id="frank-mittelbach">
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><i class="fa fa-envelope-square"></i><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span> frank.mittelbach@latex-project.org</a></li>
-      <li><i class="fa fa-github-square"></i><a href="https://github.com/FrankMittelbach">https://github.com/FrankMittelbach</a></li>
+      <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
+      <li><a href="https://github.com/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/FrankMittelbach</a></li>
       <li><i class="fa fa-stack-exchange"></i><a href="http://tex.stackexchange.com/users/10109/frank-mittelbach">http://tex.stackexchange.com/users/10109</a></li>
       <li><i class="fa fa-linkedin-square"></i><a href="https://de.linkedin.com/in/frankmittelbach">https://de.linkedin.com/in/frankmittelbach</a></li>
     </ul>
