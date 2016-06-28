@@ -4,7 +4,7 @@
 [https://latex-project.org/](https://latex-project.org/)
 
 **The latex-project.org staging**  
-[http://latex3.github.io/latex-project.org/](http://latex3.github.io/latex-project.org/)
+[http://latex3.github.io/](http://latex3.github.io/)
 
 ## Contributing
 
@@ -16,7 +16,7 @@ If you want to develop locally first, this is the way to contribute:
 * Commit locally and push that to your repo.
 * Send in a pull request based on the above.
 
-You can also edit/commit directly to the gh-pages branch [on github](https://github.com/latex3/latex-project.org/):
+You can also edit/commit directly to the gh-pages branch [on github](https://github.com/latex3/latex3.github.io):
 
 * Go to the file/directory you want to edit.
 * Make your changes.
