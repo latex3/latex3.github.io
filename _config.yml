@@ -1,6 +1,6 @@
 # Site settings
 title: The LaTeX Project
-baseurl: "/latex-project.org"
+baseurl: ""
 url: "https://latex-project.org/"
 
 # Build settings
