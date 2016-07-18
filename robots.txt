@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /
+Disallow: /cgi-bin/
 Disallow: /papers/eurotex-2005-notes/
 Disallow: /papers/pdfTeX-meeting-2005-09-24/
+Disallow: /svnroot/
