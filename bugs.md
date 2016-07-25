@@ -10,7 +10,7 @@ LaTeX is a developing piece of software, and therefore has bugs. Since LaTeX has
 
 ## How to Report a Bug?
 
-If you think you've found a bug with core LaTeX, then please report it to us! You can report it by going to [the bug information upload page]({{site.baseurl}}/bugs-upload.html).
+If you think you've found a bug with core LaTeX, then please report it to us! You can report it by going to [the bug information upload page]({{site.baseurl}}/bugs-upload/).
 
 If you do submit a report, thanks for taking the time! 
 
