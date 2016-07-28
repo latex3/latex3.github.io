@@ -93,6 +93,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="http://jonas.me/"><span class="fa fa-external-link-square"></span>http://jonas.me/</a></li>
       <li><a href="https://github.com/jonasjacek"><span class="fa fa-github-square"></span>https://github.com/jonasjacek</a></li>
       <li><a href="https://twitter.com/jonasjacek"><span class="fa fa-twitter-square"></span>https://twitter.com/jonasjacek</a></li>
+      <li><a href="https://www.linkedin.com/in/jonasjacek"><span class="fa fa-linkedin-square"></span>https://www.linkedin.com/in/jonasjacek</a></li>
     </ul>
   </li>
 </ul>
