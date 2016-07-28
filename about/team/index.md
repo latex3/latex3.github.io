@@ -25,7 +25,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="rainer-schoepf">
-    <h2>Rainer Schöpf <br><span class="role">LaTeX3 Team</span></h2>
+    <h2>Rainer Schöpf <br><span class="role">LaTeX3 Team, Webmaster</span></h2>
     <ul class="team">
       <li><a href="https://www.ctan.org/"><span class="fa fa-external-link-square"></span>https://www.ctan.org/</a></li>
     </ul>
@@ -92,6 +92,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <ul class="team">
       <li><a href="http://jonas.me/"><span class="fa fa-external-link-square"></span>http://jonas.me/</a></li>
       <li><a href="https://github.com/jonasjacek"><span class="fa fa-github-square"></span>https://github.com/jonasjacek</a></li>
+      <li><a href="https://twitter.com/jonasjacek"><span class="fa fa-twitter-square"></span>https://twitter.com/jonasjacek</a></li>
     </ul>
   </li>
 </ul>
