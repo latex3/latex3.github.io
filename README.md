@@ -1,10 +1,14 @@
 # latex-project.org
 
-**The latex-project.org website**  
-[https://latex-project.org/](https://latex-project.org/)
+Changes to the `master` branch can be viewed at [http://latex3.github.io/](http://latex3.github.io/), which is the staging environment. If everything looks fine, you can merge `master` with `live` to have the server running [https://latex-project.org/](https://www.latex-project.org/) pick up the changes.
+
+## Branches
 
 **The latex-project.org staging**  
-[http://latex3.github.io/](http://latex3.github.io/)
+[http://latex3.github.io/](http://latex3.github.io/) - `master` branch
+
+**The latex-project.org website**  
+[https://latex-project.org/](https://www.latex-project.org/) - `live` branch
 
 ## Contributing
 
@@ -22,10 +26,6 @@ You can also edit/commit directly to the gh-pages branch [on github](https://git
 * Make your changes.
 * Add a message describing your edit.
 * Commit directly to the gh-pages branch / Create a new branch for this commit and start a pull request.
-
-### Branches
-
-In the vast majority of cases the only upstream branch that you should need to care about is `gh-pages`. If you see other branches in the repository, you can generally safely ignore them.
 
 ### Requirements
 In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](http://sass-lang.com), [Markdown](http://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](http://www.ruby-lang.org/en/downloads/)* installed on your machine.
