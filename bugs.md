@@ -20,4 +20,4 @@ There are many add-on packages and unfortunately not all of them are compatible 
 
 ## Website Bug
 
-If you think you've found a bug on our new website you can report it to the [website team]({{site.baseurl}}/contact/#website-team). If you do submit a report, thanks for taking the time!
+If you think you've found a bug on our website you can report it to the [website team]({{site.baseurl}}/contact/#website-team). If you do submit a report, thanks for taking the time!

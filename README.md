@@ -52,3 +52,7 @@ Your local copy will now be accessible at `http://localhost:4000`. Then use `CTR
 * [SASS Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 * [Markdown Documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 * [Kramdown Documentation](http://kramdown.gettalong.org/documentation.html)
+
+## Reporting Website Bugs
+
+If you think you've found a bug on our website you can report it to the website team at <mailto:webmaster@latex-project.org>. If you do submit a report, thanks for taking the time!
