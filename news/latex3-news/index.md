@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "LaTeX3 News"
-description: "LaTeX3 Release Newsletters. Information on the most recent version of LaTeX3. The LaTeX3 PDF news issues. Updated twice yearly."
+description: "LaTeX3 Newsletters. Information on important activities and topics of interest around LaTeX3 develoment. The LaTeX3 PDF news issues."
 ---
 
-# LaTeX3 Release Newsletters
+# LaTeX3 Project Newsletters
 
-The most recent LaTeX3 news is dated 2014/03/24. We will be providing status updates twice yearly. 
+Newsletters by the LaTeX3 project team covering topics of interest in the area of LaTeX3/expl3 development. They appear in irregular intervals and are not necessarily tied to individual releases of the software (as the LaTeX3 kernel code is updated rather often).
 
 | Release date | Latex3 News issue (PDF) |
 |:-------------|------------------------:|

@@ -18,8 +18,8 @@ permalink: /news/
   </section>
   <section class="col cell1of2">
     <a href="{{site.baseurl}}/news/latex3-news/">
-      <h2>LaTeX3 Release Newsletters</h2>
-      <p>LaTeX3 release newsletters for each release of LaTeX3 created since 2009.</p>
+      <h2>LaTeX3 Newsletters</h2>
+      <p> Newsletters covering important topics related to LaTeX3/expl3 development.</p>
     </a>
   </section>
 </div>
