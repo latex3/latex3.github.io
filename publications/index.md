@@ -12,8 +12,8 @@ Below you will find links to Portable Document Format (PDF) versions of various 
 ## [TUG 2016 Conference](http://tug.org/tug2016/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
-  + [Alice goes floating (video via River Valley TV)](to appear)
-  + [Slides]({{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf) (pdf)
+  + Alice goes floating (video via River Valley TV)  - to appear soon
+  + [Slides with speaker notes intermixed]({{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf) (pdf)
 
 
 In this talk a framework for globally optimizing pagination of

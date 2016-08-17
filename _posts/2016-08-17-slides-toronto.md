@@ -15,7 +15,6 @@ tags: [latex2e, latex3, luatex, research]
 At the TUG 2016 conference in Toronoto Frank gave a presentation on
 globally optimized paginiation using LuaTeX as the processing
 engine.
-
 The presentation demonstrated a framework for automatically producing
 an optimal pagination for documents (containing floats) such as Alice
 in Wonderland.
