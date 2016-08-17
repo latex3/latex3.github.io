@@ -9,6 +9,26 @@ description: "Selection of links to PDF versions of various articles published b
 
 Below you will find links to Portable Document Format (PDF) versions of various articles and papers published by the LaTeX3 project and links to videos of their conference presentations. Some of this list has been assembled 'after the fact'; please inform us if you notice anything missing.
 
+## [TUG 2016 Conference](http://tug.org/tug2016/)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
+  + [Alice goes floating (video via River Valley TV)](to appear)
+  + [Slides]({{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf) (pdf)
+
+
+In this talk a framework for globally optimizing pagination of
+documents containing floats is demonstrated. As the main example Alice
+in Wonderland by Lewis Carroll was choosen. If such a document is
+formatting using standard LaTeX it will result in a pagination [with
+many issues as demonstrated
+here]({{site.baseurl}}/publications/2016-07-phase0-stdlatex-with-floats-smaller.pdf).
+If the same document is formattedusing the new framework then one will
+get a globally [optimized solution as shown
+here]({{site.baseurl}}/publications/2016-07-phase4-strict-texflex-firstpagedrop-smaller.pdf).
+At the moment the framework is still in its early stages and not yet
+publically available as further research and development is needed.
+
+
 ## [TUG 2015 Conference](http://tug.org/tug2015/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
