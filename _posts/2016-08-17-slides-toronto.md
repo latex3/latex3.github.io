@@ -3,16 +3,16 @@ layout: post
 title: "Globally optimized pagination"
 date: 2016-08-17 00:00:00
 description: "Talk presented at the TUG 2016 conference in Toronto. Automatically formatting Alice in Wonderland and other stories containting floats."
-excerpt: "At the TUG 2016 conference in Toronoto Frank gave a presentation on
+excerpt: "At the TUG 2016 conference in Toronto Frank gave a presentation on
 globally optimized paginiation using LuaTeX as the processing
-engine."
+engine..."
 categories: news
 tags: [latex2e, latex3, luatex, research]
 ---
 
 # Globally optimized pagination with LaTeX
 
-At the TUG 2016 conference in Toronoto Frank gave a presentation on
+At the TUG 2016 conference in Toronto Frank gave a presentation on
 globally optimized paginiation using LuaTeX as the processing
 engine.
 The presentation demonstrated a framework for automatically producing
