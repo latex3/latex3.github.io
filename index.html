@@ -6,18 +6,30 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
 ---
 
 <div class="row">
-  <div class="col cell1of2">
+  <div class="col cell1of3">
     <h1>LaTeX – A document preparation system</h1>
     <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="{{ "/lppl/" | prepend: site.baseurl }}">free software</a>.</p>
   </div>
-  <div class="col cell1of2 news">
+  <div class="col cell1of3 news">
     <h2>Recent News</h2>
     <ul class="news-posts">
-      {% for post in site.posts offset: 0 limit: 2 %}
+      {% for post in site.posts offset: 0 limit: 3 %}
       <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
     <small><a href="{{ "/news/" | prepend: site.baseurl }}">All News</a> &middot; Subscribe to our <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span>RSS News Feed</a></small>
+  </div>
+  <div class="col cell1of3 news">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive A -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8455398809969217"
+     data-ad-slot="1764738082"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
   </div>
 </div>
 <hr>
@@ -49,17 +61,6 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
     </dl>
   </div>
 </div>
-<hr>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive A -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8455398809969217"
-     data-ad-slot="1764738082"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <hr>
 <div class="row teaser">
   <section class="col cell1of3">{% include teaser.books.html %}</section>
