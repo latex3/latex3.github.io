@@ -58,7 +58,11 @@ This article discusses certain aspects of TeX's approach to line breaking and it
 
 ***
 
-## [How to influence the position of float environments like figure and table in LaTeX?]({{site.baseurl}}/publications/tb111mitt-float.pdf)
+## <a href="/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">TRIAL: How to influence the position of float environments like figure and table in LaTeX?</a>
+
+<div id="div_vgwpixel"></div>
+
+## [How to influence the position of float environments like figure and table in LaTeX?](https://ssl-vg03.met.vgwort.de/na/f722ab0955c94459bf7cd9e0ef041df4?l={{site.url}}/publications/tb111mitt-float.pdf)
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
