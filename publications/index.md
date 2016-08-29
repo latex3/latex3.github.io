@@ -58,7 +58,7 @@ This article discusses certain aspects of TeX's approach to line breaking and it
 
 ***
 
-## [How to influence the position of float environments like figure and table in LaTeX?]({{site.baseurl}}/publications/tb111mitt-float.pdf)
+## <a href="{{site.baseurl}}/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a>
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
@@ -68,7 +68,7 @@ In 2012, a question "How to influence the float placement in LaTeX" was asked on
 
 ***
 
-## [l3build --- A modern Lua test suite for TeX programming]({{site.baseurl}}/publications/tb111mitt-l3build.pdf)
+## <a href="{{site.baseurl}}/publications/tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014
@@ -323,3 +323,6 @@ A paper about application-independent representation of text for document proces
 + Keywords: LaTeX2e interface, input encoding, font encoding
 
 A presentation held at Brno about the encoding interfaces that LaTeX offers. It discusses the various issues related to input and output encodings.
+
+
+<div id="div_vgwpixel"></div>
