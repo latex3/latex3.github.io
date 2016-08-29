@@ -1,3 +1,7 @@
+# google.com landing page quality check
+User-agent: AdsBot-Google
+Disallow: 
+
 User-agent: *
 Disallow: /
 Disallow: /cgi-bin/
