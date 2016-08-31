@@ -11,9 +11,9 @@ Below you will find links to Portable Document Format (PDF) versions of various 
 
 ## [TUG 2016 Conference](http://tug.org/tug2016/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + Alice goes floating (video via River Valley TV)  - to appear soon
-  + [Slides with speaker notes intermixed]({{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf) (pdf)
+  + <a href="{{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Slides with speaker notes intermixed</a>  (pdf)
 
 
 In this talk a framework for globally optimizing pagination of
@@ -31,7 +31,7 @@ publically available as further research and development is needed.
 
 ## [TUG 2015 Conference](http://tug.org/tug2015/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [Twenty-one is only half the truth (video via River Valley TV)](http://www.river-valley.zeeba.tv/twenty-one-is-only-half-the-truth/)
   + [Slides]({{site.baseurl}}/publications/2015-07-20-twentyone-details.pdf) (pdf)
 
@@ -48,29 +48,29 @@ Hidden behind this title is a presentation of the new LaTeX kernel compatibility
 
 ***
 
-## [The box-glue-penalty algebra of TeX and its use of \prevdepth]({{site.baseurl}}/publications/tb112mitt-prevdepth.pdf)
+## <a href="{{site.baseurl}}/publications/tb112mitt-prevdepth.pdf" target="_blank" onclick="vgwPixelCall('be7380004b504e3690a5c4c96e8c8d77');">The box-glue-penalty algebra of TeX and its use of \prevdepth</a>
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 36, number 1, 2015
 
 This article discusses certain aspects of TeX's approach to line breaking and its consequences for automatically calculating the right amount of vertical space between lines in more complex layouts.
 
 ***
 
-## [How to influence the position of float environments like figure and table in LaTeX?]({{site.baseurl}}/publications/tb111mitt-float.pdf)
+## <a href="{{site.baseurl}}/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a>
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 35, number 3, 2014
 
 In 2012, a question "How to influence the float placement in LaTeX" was asked on TeX.stackexchange and as there had been many earlier questions around this topic I decided to treat the topic in some depth and explain most of the mysteries that the underlying mechanism poses to people trying to use it successfully. Once my answer appeared on the web, people asked to see this converted into an article and I foolishly replied "only if this answer ends up becoming a `great' answer" (gets 100 votes). At the time of writing this article, the answer stands at 222 votes, so I had better make good on that promise.
 
 ***
 
-## [l3build --- A modern Lua test suite for TeX programming]({{site.baseurl}}/publications/tb111mitt-l3build.pdf)
+## <a href="{{site.baseurl}}/publications/tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a>
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014
 
 Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeXe and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or---in particular for TeX-based code---material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won't re-occur. As TeX-based code operates in at least three different `modes' (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community. 
@@ -79,10 +79,10 @@ Regression tests are an important tool in any moderately complex programming env
 
 ## [TUG 2014 conference](http://tug.org/tug2014/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.river-valley.zeeba.tv/regression-testing-latex-packages-with-lua/)
   + [Slides]({{site.baseurl}}/publications/2014-08-28-regression.pdf) (pdf)
-+ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3 and expl3 in 2014: Recent developments (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-and-expl3-in-2014-recent-developments/)
   + [Slides]({{site.baseurl}}/publications/2014-08-29-l3talk.pdf) (pdf)
 
@@ -90,10 +90,10 @@ Regression tests are an important tool in any moderately complex programming env
 
 ## [TUG 2013 conference](http://tug.org/tug2013/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [The stony road to complex layout](http://youtu.be/jcY1zLJNqX0) (Digital Camera recording of the talk on YouTube)
-  + [Slides]({{site.baseurl}}/publications/2013-10-23-stony-beamer.pdf) (pdf)
-+ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) and [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
+  + <a href="{{site.baseurl}}/publications/2013-10-23-stony-beamer.pdf" target="_blank" onclick="vgwPixelCall('ed9f85d2535846afbbfc4b009a9aa393');">Slides</a> (pdf)
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3: Using the Layers]({{site.baseurl}}/publications/2013-10-24-latex3.pdf) (slides)
   + [Abstract]({{site.baseurl}}/publications/2013-10-24-latex3-abstract.pdf) (pdf)
 
@@ -101,18 +101,18 @@ Regression tests are an important tool in any moderately complex programming env
 
 ## [TUG 2012 conference](http://tug.org/tug2012/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) (Digital Camera recording of the talk on YouTube)
   + [Abstract]({{site.baseurl}}/publications/E-TeX-revisited-2012-abstract.txt) (txt)
-  + [TUB article]({{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf) (pdf) <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb106mittelbach-e-tex-revisited.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
-+ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
+  + <a href="{{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf) <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb106mittelbach-e-tex-revisited.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
++ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3: from local to global---A brief history and recent developments]({{site.baseurl}}/publications/latex3-local-global-2012.pdf) (slides)
 
 ***
 
 ## [TUG 2011 conference](http://tug.org/tug2011/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
   + [Abstract]({{site.baseurl}}/publications/LaTeX3-architecture-2011-abstract.txt) (txt)
   + [Slides]({{site.baseurl}}/publications/LaTeX3-architecture-2011-slides.pdf) (pdf)
@@ -123,7 +123,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2011
 + Keywords: Licenses, LaTeX Project Public License, LPPL, LaTeX history
 
@@ -134,7 +134,7 @@ In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the
 ## [TUG 2010 conference](http://tug.org/tug2010/)
 
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.river-valley.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [Exhuming coffins from the last century (video via River Valley TV)](http://www.river-valley.zeeba.tv/exhuming-coffins-from-the-last-century/)
   + [Slides]({{site.baseurl}}/publications/exhuming-coffins-from-the-last-century.pdf) (pdf)
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson):
@@ -200,7 +200,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ## [TUG 2008 conference](http://tug.org/tug2008/)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
   + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.river-valley.zeeba.tv/two-decades-of-latex-development/)
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
   + [The galley Module or: How I Learned to Stop Worrying and Love the Whatsit (Video via River Valley TV)](http://www.river-valley.zeeba.tv/the-galley-module/)
@@ -220,7 +220,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ## [pdfTeX workshop 2005/09/24-26]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/)
 
-HTML presentation of the material from the September 2005 pdfTeX workshop between Thanh The Han, [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), and [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach). The main topic of the workshop was grid typesetting. The material is available both for [on-line browsing]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/) and [download as a zip]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24.zip) file (1364 kB).
+HTML presentation of the material from the September 2005 pdfTeX workshop between Thanh The Han, [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach). The main topic of the workshop was grid typesetting. The material is available both for [on-line browsing]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/) and [download as a zip]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24.zip) file (1364 kB).
 
 ***
 
@@ -241,7 +241,7 @@ A discussion by Lars Hellström of the current implementation of the concept of 
 
 ## [Formatting documents with floats – A new algorithm for LaTeX2e]({{site.baseurl}}/publications/xo-pfloat.pdf)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#fank-mittelbach)
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2000
 + Keywords: LaTeX3, page makeup, models, concepts, proto-types
 
@@ -323,3 +323,6 @@ A paper about application-independent representation of text for document proces
 + Keywords: LaTeX2e interface, input encoding, font encoding
 
 A presentation held at Brno about the encoding interfaces that LaTeX offers. It discusses the various issues related to input and output encodings.
+
+
+<div id="div_vgwpixel"></div>
