@@ -53,14 +53,14 @@ Your local copy will now be accessible at `http://localhost:4000`. Then use `CTR
 * [Markdown Documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 * [Kramdown Documentation](http://kramdown.gettalong.org/documentation.html)
 
-## Reporting Website Bugs
+# Website
 
-If you think you've found a bug on our website you can report it to the website team at <mailto:webmaster@latex-project.org>. If you do submit a report, thanks for taking the time!
-
-# Webdesign
-
-## License
+## Webdesign License
 
 The latex-project.org webdesign by [Jonas Jacek](http://jonas.me/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/latex3/latex3.github.io](https://github.com/latex3/latex3.github.io).
 
 This is a [Free Culture License](https://creativecommons.org/share-your-work/public-domain/freeworks/)!
+
+## Reporting Website Bugs
+
+If you think you've found a bug on our website you can report it to the website team at <mailto:webmaster@latex-project.org>. If you do submit a report, thanks for taking the time!
