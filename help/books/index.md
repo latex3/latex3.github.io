@@ -28,7 +28,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 
 ### English
 
-#### [LaTeX: A document preparation system, User's guide and reference manual](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-a-document-preparation-system-9780201529838)
+#### [LaTeX: A document preparation system, User's guide and reference manual](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-a-document-preparation-system-9780201529838)
 
 ![LaTeX: A document preparation system, User's guide and reference manual](leslie-lamport_-_latex-a-document-preparation-system-users-guide-and-reference-manual.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -44,7 +44,7 @@ There is an [errata file](manual.err) for this book.
 
 <hr>
 
-#### [The LaTeX Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000314&type=3&subid=0)
+#### [The LaTeX Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992)
 
 ![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -56,12 +56,12 @@ There is an [errata file](manual.err) for this book.
 **ISBN-13:** 978-0201362992  
 **Pages:** 1120 pages  
 
-Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780133387667) consisting of PDF, mobi and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/).
+Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992) consisting of PDF, mobi and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/).
 
 There are some extracts from the book as PDF files available from this site:
 
-+ [tables of contents, figures, and tables and preface](tlc2-ch0.pdf) (176 kB)
-+ [full text of chapter 3, «Basic formatting tools»](tlc2-ch3.pdf) (780 kB)
++ <a href="tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
++ <a href="tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
 + [bibliography and index](tlc2-ap4.pdf) (796 kB)
 
 There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of TLC2 provide a number of prizes for people finding errors in the book. 
@@ -88,7 +88,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) w
 
 <hr>
 
-#### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
+#### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
 
 ![The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](michael-goossens_-_the-latex-web-companion-integrating-tex-html-xml-ttct-series.jpg){:width="150" height="188"}
 **Edition:** 1st edition  
@@ -102,7 +102,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) w
 
 <hr>
 
-#### [Guide to LaTeX (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850)
+#### [Guide to LaTeX (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850)
 
 ![Guide to LaTeX (TTCT series)](helmut-kopka_-_guide-to-latex.jpg){:width="150" height="210"}
 **Edition:** 4th edition  
@@ -263,7 +263,7 @@ Herbert has written several other books on LaTeX topics, check out his [author p
 **ISBN-13:** 978-9977-66-227-5  
 **Pages:** 304 pages  
 
-Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)
+Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)  Download is 17Mb
 
 <hr>
 
@@ -287,7 +287,7 @@ May be difficult to find these days.
 
 ### English
 
-#### [Computers & Typesetting, Volume A: The TeXbook (Hardcover)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fcomputers-typesetting-volume-a-the-texbook-9780201134476)
+#### [Computers & Typesetting, Volume A: The TeXbook (Hardcover)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fcomputers-typesetting-volume-a-the-texbook-9780201134476)
 
 ![Computers & Typesetting, Volume A: The TeXbook (Hardcover)](donald-erwin-knuth_-_computers-&-typesetting-the-texbook-vol-a.jpg){:width="150" height="189"}
 **Edition:** 1st edition  
@@ -301,7 +301,7 @@ May be difficult to find these days.
 
 <hr>
 
-#### [The TeXbook](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Ftexbook-9780201134483)
+#### [The TeXbook](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Ftexbook-9780201134483)
 
 ![The TeXbook](donald-erwin-knuth_-_the-texbook.jpg){:width="150" height="200"}
 **Edition:** 1st edition  
