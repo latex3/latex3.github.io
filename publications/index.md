@@ -19,14 +19,16 @@ Below you will find links to Portable Document Format (PDF) versions of various 
 In this talk a framework for globally optimizing pagination of
 documents containing floats is demonstrated. As the main example Alice
 in Wonderland by Lewis Carroll was choosen. If such a document is
-formatting using standard LaTeX it will result in a pagination [with
-many issues as demonstrated
-here]({{site.baseurl}}/publications/2016-07-phase0-stdlatex-with-floats-smaller.pdf).
+formatting using standard LaTeX it will result in a pagination
+<a href="{{site.baseurl}}/publications/2016-07-phase0-stdlatex-with-floats-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">with many issues as demonstrated here</a>.
 If the same document is formattedusing the new framework then one will
-get a globally [optimized solution as shown
-here]({{site.baseurl}}/publications/2016-07-phase4-strict-texflex-firstpagedrop-smaller.pdf).
+get a
+<a href="{{site.baseurl}}/publications/2016-07-phase4-strict-texflex-firstpagedrop-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">globally optimized solution as shown here</a>.
 At the moment the framework is still in its early stages and not yet
 publically available as further research and development is needed.
+
+
+***
 
 
 ## [TUG 2015 Conference](http://tug.org/tug2015/)
@@ -48,8 +50,7 @@ Hidden behind this title is a presentation of the new LaTeX kernel compatibility
 
 ***
 
-## <a href="{{site.baseurl}}/publications/tb112mitt-prevdepth.pdf" target="_blank" onclick="vgwPixelCall('be7380004b504e3690a5c4c96e8c8d77');">The box-glue-penalty algebra of TeX and its use of \prevdepth</a>
-<a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+## <a href="{{site.baseurl}}/publications/tb112mitt-prevdepth.pdf" target="_blank" onclick="vgwPixelCall('be7380004b504e3690a5c4c96e8c8d77');">The box-glue-penalty algebra of TeX and its use of \prevdepth</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb112mitt-prevdepth.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 36, number 1, 2015
@@ -58,8 +59,7 @@ This article discusses certain aspects of TeX's approach to line breaking and it
 
 ***
 
-## <a href="{{site.baseurl}}/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a>
-<a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+## <a href="{{site.baseurl}}/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 35, number 3, 2014
@@ -68,7 +68,7 @@ In 2012, a question "How to influence the float placement in LaTeX" was asked on
 
 ***
 
-## <a href="{{site.baseurl}}/publications/tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a>
+## <a href="{{site.baseurl}}/publications/tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-l3build.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014
@@ -81,7 +81,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.river-valley.zeeba.tv/regression-testing-latex-packages-with-lua/)
-  + [Slides]({{site.baseurl}}/publications/2014-08-28-regression.pdf) (pdf)
+  +  <a href="{{site.baseurl}}/publications/2014-08-28-regression.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">Slides</a> (pdf)
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3 and expl3 in 2014: Recent developments (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-and-expl3-in-2014-recent-developments/)
   + [Slides]({{site.baseurl}}/publications/2014-08-29-l3talk.pdf) (pdf)
@@ -99,12 +99,26 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
+## <a href="{{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">E-TeX: Guidelines to future TeX extensions --- revisited</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb106mittelbach-e-tex-revisited.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Published paper, TUGboat volume 34, number 1, 2013
+
+In 1990 shortly after Don Knuth announced TeX 3.0 Frank gave a paper analyzing TeX's abilities as a typesetting engine.
+This paper now revisits the findings from more than two decades ago to see  what
+has been achieved since then, and perhaps more importantly, what can
+be achieved now with computer power having multiplied by a huge factor
+and last not least by the arrival of a number of successors to TeX
+which have lifted some of the limitations identified back then.
+
+***
+
 ## [TUG 2012 conference](http://tug.org/tug2012/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) (Digital Camera recording of the talk on YouTube)
   + [Abstract]({{site.baseurl}}/publications/E-TeX-revisited-2012-abstract.txt) (txt)
-  + <a href="{{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf) <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb106mittelbach-e-tex-revisited.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+  + <a href="{{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf) 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3: from local to global---A brief history and recent developments]({{site.baseurl}}/publications/latex3-local-global-2012.pdf) (slides)
 
@@ -119,15 +133,22 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-## [Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more]({{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf)
-
-<a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpapers%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+## [Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more]({{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf) <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2011
 + Keywords: Licenses, LaTeX Project Public License, LPPL, LaTeX history
 
 In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the Open Source Initiative (OSI) web page as a free software license. This marks the endpoint of a long set of discussions around the TeX community's predominant license. This article reflects on the history of the license; the way it came about and the reasons for its development and content. It explains why it was chosen even though alternative free licenses have been available at least from 1990 onwards. It appeared in the aniversary TUGboat issue No.100, TUGboat volume 32, number 1.
+
+***
+
+## [Unicode mathematics in LaTeX: advantages and challenges](https://www.tug.org/TUGboat/tb31-2/tb98robertson.pdf)
+
++ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
++ Published paper, TUGboat, Volume 31 (2010), No. 2
+
+In this paper Will discusses Unicode mathematics in the context of LaTeX with the unicode-math package.
 
 ***
 
@@ -176,16 +197,14 @@ In this paper [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) discus
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.river-valley.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.river-valley.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
 
-[Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Next steps for breqn’:
++ [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Next steps for breqn’:
+  + [Video](http://www.river-valley.zeeba.tv/next-steps-for-breqn/) (via River Valley TV)
+  + [Slides]({{site.baseurl}}/publications/breqn-next-steps.pdf) (pdf)
 
-+ [Video](http://www.river-valley.zeeba.tv/next-steps-for-breqn/) (via River Valley TV)
-+ [Slides]({{site.baseurl}}/publications/breqn-next-steps.pdf) (pdf)
-
-[Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Consolidation of expl3’:
-
-+ [Video](http://www.river-valley.zeeba.tv/consolidation-of-expl3/) (via River Valley TV)
-+ [Slides]({{site.baseurl}}/publications/expl3-consolidation.pdf) (pdf)
-+ [boolexpr code example]({{site.baseurl}}/publications/expl3-boolexpr-example.pdf) (pdf, see page 14 of the slides for context)
++ [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Consolidation of expl3’:
+  + [Video](http://www.river-valley.zeeba.tv/consolidation-of-expl3/) (via River Valley TV)
+  + [Slides]({{site.baseurl}}/publications/expl3-consolidation.pdf) (pdf)
+  + [boolexpr code example]({{site.baseurl}}/publications/expl3-boolexpr-example.pdf) (pdf, see page 14 of the slides for context)
 
 ***
 
