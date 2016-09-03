@@ -31,7 +31,7 @@ publically available as further research and development is needed.
 ***
 
 
-## [TUG 2015 Conference (Darmstadt, Germany](http://tug.org/tug2015/)
+## [TUG 2015 Conference (Darmstadt, Germany)](http://tug.org/tug2015/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [Twenty-one is only half the truth (video via River Valley TV)](http://www.river-valley.zeeba.tv/twenty-one-is-only-half-the-truth/)
