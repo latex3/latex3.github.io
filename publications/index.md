@@ -13,7 +13,7 @@ Below you will find links to Portable Document Format (PDF) versions of various 
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + Alice goes floating (video via River Valley TV)  - to appear soon
-  + <a href="{{site.baseurl}}/publications/2016-07-TUG 2016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (slides with speaker notes intermixed)</a>
+  + <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (slides with speaker notes intermixed)</a>
 
 
 In this talk a framework for globally optimizing pagination of
@@ -73,7 +73,7 @@ In 2012, a question "How to influence the float placement in LaTeX" was asked on
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014
 
-Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeXe and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or---in particular for TeX-based code---material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won't re-occur. As TeX-based code operates in at least three different `modes' (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community. 
+Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeX2e and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or---in particular for TeX-based code---material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won't re-occur. As TeX-based code operates in at least three different `modes' (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community. 
 
 ***
 
@@ -243,7 +243,7 @@ HTML presentation of the material from the September 2005 pdfTeX workshop betwee
 
 ***
 
-## [EuroTeX 2005 notes](#fixme - https://latex-project.org/papers/eurotex-2005-notes/)
+## [EuroTeX 2005 notes]({{site.baseurl}}/publications/eurotex-2005-notes/)
 
 HTML presentation of the work done by the LaTeX project team during EuroTeX 2005. It is available both for [on-line browsing]({{site.baseurl}}/publications/eurotex-2005-notes/) and [download as a zip]({{site.baseurl}}/publications/eurotex-2005-notes.zip) file (923 kB).
 
