@@ -18,10 +18,10 @@ Below you will find links to Portable Document Format (PDF) versions of various 
 
 In this talk a framework for globally optimizing pagination of
 documents containing floats is demonstrated. As the main example Alice
-in Wonderland by Lewis Carroll was choosen. If such a document is
-formatting using standard LaTeX it will result in a 
+in Wonderland by Lewis Carroll was chosen. If such a document is
+formatted using standard LaTeX it will result in a 
 <a href="{{site.baseurl}}/publications/2016-07-phase0-stdlatex-with-floats-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">pagination with many issues as demonstrated here</a>.
-If the same document is formattedusing the new framework then one will
+If the same document is formatted using the new framework then one will
 get a
 <a href="{{site.baseurl}}/publications/2016-07-phase4-strict-texflex-firstpagedrop-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">globally optimized solution as shown here</a>.
 At the moment the framework is still in its early stages and not yet
@@ -139,7 +139,7 @@ which have lifted some of the limitations identified back then.
 + Published paper, 2011
 + Keywords: Licenses, LaTeX Project Public License, LPPL, LaTeX history
 
-In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the Open Source Initiative (OSI) web page as a free software license. This marks the endpoint of a long set of discussions around the TeX community's predominant license. This article reflects on the history of the license; the way it came about and the reasons for its development and content. It explains why it was chosen even though alternative free licenses have been available at least from 1990 onwards. It appeared in the aniversary TUGboat issue No.100, TUGboat volume 32, number 1.
+In August 2010 the LaTeX Project Public License (LPPL) was finally listed on the Open Source Initiative (OSI) web page as a free software license. This marks the endpoint of a long set of discussions around the TeX community's predominant license. This article reflects on the history of the license; the way it came about and the reasons for its development and content. It explains why it was chosen even though alternative free licenses have been available at least from 1990 onwards. It appeared in the anniversary TUGboat issue No.100, TUGboat volume 32, number 1.
 
 ***
 
