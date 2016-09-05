@@ -42,21 +42,30 @@ It is possible that within this online offer content from third parties such as 
 
 Cookies are small files that allow to store device specific information on the user device (PC, smartphone, etc.) They help to improve the usability of websites and thus improve the user experience (e.g., by storing session information). They also often serve to capture statistical data about the website usage that can be analyzed. Users can influence the use of cookies. Most browsers have an option that limits the storage of cookies or prevents it completely. Note, however, that the use of a website and especially the ease of use without cookies is often limited.
 
+
+#### Google services
+
+This site uses a number of Google services, such as a local search facility, linking to YoutTube channels or displaying ads. To facilitate such services cookies are set and data (such as search phrases) is collected.
+How Google uses data collected through such services is described in the [Google privacy statement](https://www.google.com/intl/en/policies/privacy/partners/)
+
+
 #### Flattr
 
-Some pages of this offer integrate "Flattr" buttons of the micropayment service Flattr that is operated by the company Flattr Network Ltd. with seat in 2nd Floor, White bear yard 114A, Clerkenwell Road, London, Middlesex, England, EC1R 5DF, United Kingdom. If you visit these pages a connections to servers operated by Flattr is initiated. If you have a Flattr account and you are logged into the service and interact with the button then information is passed to Flattr for billing purposes in accordance with the Flattr service. Even if you are not logged into the service it is possible the usage data is collected and saved. How your data will be processed precisely when the Flattr button is clicked can be found at Flattr privacy statement.
+Some pages of this offer integrate "Flattr" buttons of the micropayment service Flattr that is operated by the company Flattr Network Ltd. with seat in 2nd Floor, White bear yard 114A, Clerkenwell Road, London, Middlesex, England, EC1R 5DF, United Kingdom. If you visit these pages a connections to servers operated by Flattr is initiated. If you have a Flattr account and you are logged into the service and interact with the button then information is passed to Flattr for billing purposes in accordance with the Flattr service. Even if you are not logged into the service it is possible that usage data is collected and saved. How your data will be processed precisely when the Flattr button is clicked can be found in the [Flattr privacy statement](https://flattr.com/privacy/)
+
 
 #### Amazon associate program
 
 Frank Mittelbach is a participant in the Amazon US and EU associate program through which advertising fees can be earned by placing links to Amazon.com and Amazon.de. Amazon uses cookies to trace the origin of orders. Among other things, Amazon may be able to realize that you have clicked on an affiliate link on this website.
 
-For more information on data usage by Amazon, refer to the privacy policy of the company: Amazon DE and Amazon US
+For more information on data usage by Amazon, refer to the privacy policy of the company: [Amazon DE](http://www.amazon.de/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=3312401) and [Amazon US](http://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-9?ie=UTF8&nodeId=468496)
+
 
 #### Rakuten Linkshare associate program
 
 Frank Mittelbach is a participant in the Rakuten Linkshare associate program through which advertising fees can be earned by placing links to participating third-party offers. Rakuten Linkshare uses cookies to trace the origin of orders initiated in this way. Among other things, Rakuten Linkshare may be able to realize that you have clicked on an affiliate link on this website.
 
-For more information on data usage by Rakuten Linkshare, refer to the privacy policy of the company: Rakuten privacy policy
+For more information on data usage by Rakuten Linkshare, refer to the privacy policy of the company: [Rakuten privacy policy](http://marketing.rakuten.com/affiliate-privacy-policy)
 
 #### Revocation, changes, corrections and updates
 
