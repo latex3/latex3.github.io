@@ -45,3 +45,7 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
     </a>
   </section>
 </div>
+
+<hr>
+
+<div class="row">{% include google.adsense-B.html %}</div><hr> 
