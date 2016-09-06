@@ -88,7 +88,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-## [TUG 2013 Conference (Tokyo, Japan))](http://tug.org/tug2013/)
+## [TUG 2013 Conference (Tokyo, Japan)](http://tug.org/tug2013/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [The stony road to complex layout](http://youtu.be/jcY1zLJNqX0) (Digital Camera recording of the talk on YouTube)
