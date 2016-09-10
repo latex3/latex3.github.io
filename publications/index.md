@@ -77,6 +77,10 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
+<div class="row">{% include google.adsense-B.html %}</div><hr> 
+<hr>
+
+
 ## [TUG 2014 Conference (Portland, USA)](http://tug.org/tug2014/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
