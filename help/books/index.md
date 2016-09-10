@@ -170,6 +170,9 @@ The LaTeX Beginner's Guide is packed with useful examples and explanations.
 From Wikibooks, this open-content textbook is intended to serve new users who wish to learn as well as old hands who need a quick reference. The book has a collection providing an on-demand PDF version as well as a printed book. It is available under a [Creative Commons Attribution-Share Alike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/).
 
 <hr>
+<div class="row">{% include google.adsense-B.html %}</div><hr> 
+<hr>
+
 
 ### French
 
