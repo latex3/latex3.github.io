@@ -296,7 +296,7 @@ span.fa { color: #555; margin: 0 0.5em 0 0;}
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 header { margin: 0 -2em 1.5em; }
-header img { display: block; margin: 1em auto 1.2em; }
+header a img { display: block; margin: 1em auto 1.2em; padding-top: .6em; }
 header span { position: absolute !important; top: -9999em !important; left: -9999em !important; }
 
 
