@@ -421,7 +421,7 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 .team h2 .role { color: #999; font-size: 0.7em; }
 
 /* flattr */
-a[href*="flattr"] { float: right; }
+a[href*="flattr.com/submit/auto"] { float: right; }
 
 
 /* Clearing
