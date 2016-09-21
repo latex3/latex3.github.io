@@ -103,7 +103,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ***
 
-<div class="row">{% include google.adsense-B.html %}</div><hr> 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
 <hr>
 
 
