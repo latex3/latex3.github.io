@@ -1,5 +1,10 @@
 @media print{.cc_banner-wrapper,.cc_container{display:none}}
-.cookieconsent { margin: 0 0 -1%; padding: 0 0 .5em; display: block;}
+.cookieconsent { 
+  background: #FFF; 
+
+  margin: 0 -2em;
+  padding: 0 2em;
+}
 .cookieconsent .btn {
   background: #f1d600;
   border-radius: 4px;
