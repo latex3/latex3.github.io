@@ -372,13 +372,18 @@ hr {
 
 /* Various
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* cookie consent */
+@media print{.cc_banner-wrapper,.cc_container{display:none}}
+.cookieconsent { background: #FFF; margin: 0 -2em; padding: 0 2em; }
+.cookieconsent .btn { background: #f1d600; border-radius: 4px; color: #000; float: right; padding: .2em .4em .1em; text-align: center; }
+
 /* home */
 .home dt { margin: 1em 0 .3em; }
 
 /* teaser */
 .teaser a:hover { display: inline-block; text-decoration: none; }
 .teaser section a h2,
-.teaser section a h3 { color: #005DB7; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0;}
+.teaser section a h3 { color: #005DB7; font-size: 1.2em; margin: 0 0 .5em; padding: .2em 0; }
 .teaser section a p { color: #000; }
 .teaser section a:hover p { color: #005DB7; }
 
