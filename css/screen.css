@@ -377,6 +377,11 @@ hr {
 .cookieconsent { background: #FFF; margin: 0 -2em; padding: 0 2em; }
 .cookieconsent .btn { background: #f1d600; border-radius: 4px; color: #000; float: right; padding: .2em .4em .1em; text-align: center; }
 
+/* search */
+.search { float: right; height: 20px; margin: 0 0 -.5em; padding: .5em 1.8em; overflow: hidden; }
+.search form { text-align: right; }
+
+
 /* home */
 .home { padding: 2.5em 2em 2.5em 2em; }
 .home dt { margin: 1em 0 .3em; }
