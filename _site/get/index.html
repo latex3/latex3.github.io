@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
   <script src="/js/vgwort.js"></script>
+  <script src="/js/cookieconsent.js"></script>
   <!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
     <script src="/js/html5shiv-printshiv.js"></script>
@@ -24,6 +25,23 @@
 </head>
 <body class="container">
   <header>
+<script type="text/javascript">window.cookieconsent_options = {"message":"This website uses cookies. To learn more, read our","dismiss":"OK","learnMore":"privacy policy","link":"/privacy/","theme":"screen"};</script>
+
+<div class="row">
+  <div class="col cell1of2 search">
+      <form action="http://www.google.com" id="cse-search-box">
+        <div>
+          <input type="hidden" name="cx" value="partner-pub-8455398809969217:7128444083" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <input type="text" name="q" size="20" />
+          <input type="submit" name="sa" value="Search" />
+        </div>
+      </form>
+      <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+  </div>
+</div>
+
+ 
   <a class="site-title" href="/"><img src="/img/latex-project-logo.svg" alt="The LaTeX Project logo"><span>The LaTeX Project</span></a>
         <nav>
         <label for="show-menu" class="show-menu">Show Menu</label>
@@ -60,11 +78,9 @@
 -->
 </header>
 
-  <div class="page-content">
-    <div class="wrap">
-    <div class="post">
-  <article class="post-content">
-  <h1>Getting LaTeX</h1>
+  <div class="wrap">
+  <article>
+<h1>Getting LaTeX</h1>
 <p>LaTeX is <a href="http://www.debian.org/intro/free">free software</a> under the terms of the <a href="/lppl/">LaTeX Project Public License (LPPL)</a>. LaTeX is distributed through <a href="#ctan">CTAN servers</a> or comes as part of many easily installable and usable <a href="http://www.tug.org/interest.html#free">TeX distributions provided by the TeX User Group (TUG)</a> or third parties. If you run into trouble, visit the <a href="/help/">help section</a>.</p>
 <hr>
 <div class="row">
@@ -112,10 +128,8 @@
 <p>Ulrik Vieth has collected historic versions of LaTeX from LaTeX 2.0 for TeX 1.0 (released on 11 December 1983) onwards. You can find them at <a href="ftp://ftp.tug.org/historic/macros/latex-saildart/">ftp://ftp.tug.org/historic/macros/latex-saildart/</a>. There might even be some earlier versions. All files have been pulled from the SAILDART archive site at http://z.baumgart.org/ (no longer online) which was based on archive tapes from SAIL at Stanford.</p>
 <p>More historic material can be found at <a href="ftp://ftp.tug.org/historic">ftp://ftp.tug.org/historic</a>.</p>
 
-  </article>
-</div>
+</article>
 
-    </div>
   </div>
   <footer>
   <div class="row">
@@ -156,5 +170,5 @@
 </footer>
 <!-- The latex-project.org webdesign by Jonas Jacek - http://jonas.me/ - is licensed under a Creative Commons Attribution 4.0 International License - http://creativecommons.org/licenses/by/4.0/. Based on a work at https://github.com/latex3/latex3.github.io. -->
 
-  </body>
+</body>
 </html>

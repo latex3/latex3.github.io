@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
   <script src="/js/vgwort.js"></script>
+  <script src="/js/cookieconsent.js"></script>
   <!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
     <script src="/js/html5shiv-printshiv.js"></script>
@@ -24,6 +25,23 @@
 </head>
 <body class="container">
   <header>
+<script type="text/javascript">window.cookieconsent_options = {"message":"This website uses cookies. To learn more, read our","dismiss":"OK","learnMore":"privacy policy","link":"/privacy/","theme":"screen"};</script>
+
+<div class="row">
+  <div class="col cell1of2 search">
+      <form action="http://www.google.com" id="cse-search-box">
+        <div>
+          <input type="hidden" name="cx" value="partner-pub-8455398809969217:7128444083" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <input type="text" name="q" size="20" />
+          <input type="submit" name="sa" value="Search" />
+        </div>
+      </form>
+      <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+  </div>
+</div>
+
+ 
   <a class="site-title" href="/"><img src="/img/latex-project-logo.svg" alt="The LaTeX Project logo"><span>The LaTeX Project</span></a>
         <nav>
         <label for="show-menu" class="show-menu">Show Menu</label>
@@ -60,13 +78,34 @@
 -->
 </header>
 
-  <div class="page-content">
-    <div class="wrap">
-    <div class="post">
-  <article class="post-content">
-  <h1 id="publications">Publications</h1>
+  <div class="wrap">
+  <article>
+<h1 id="publications">Publications</h1>
 
-<p>Below you will find links to Portable Document Format (PDF) versions of various articles and papers published by the LaTeX3 project and links to videos of their conference presentations. Some of this list has been assembled ‘after the fact’; please inform us if you notice anything missing.</p>
+<p>Below you will find links to Portable Document Format (PDF) versions
+of various articles and papers published by the LaTeX3 project and
+links to videos of their conference presentations. Some of this list
+has been assembled ‘after the fact’; please inform us if you notice
+anything missing.</p>
+
+<h2 id="acm-doceng-2016-symposium-vienna-austriahttpdoceng2016caatuwienacat"><a href="http://doceng2016.caa.tuwien.ac.at/">ACM DocEng 2016 Symposium (Vienna, Austria)</a></h2>
+
+<!-- ACM DL Article: A General Framework for Globally Optimized Pagination -->
+<div class="acmdlitem" id="item2960820"><img src="https://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle" /><a href="https://dl.acm.org/authorize?N12887" title="A General Framework for Globally Optimized Pagination" target="_blank" onclick="vgwPixelCall('6d2afdf8821b4c9b9e559380b3bfa46c');">A General Framework for Globally Optimized Pagination</a>
+  <div style="margin-left:25px"><a href="https://dl.acm.org/author_page.cfm?id=81100433073 " target="_blank">Frank Mittelbach</a><br />DocEng '16 Proceedings of the 2016 ACM Symposium on Document Engineering, 2016</div></div>
+<!-- ACM DL Bibliometrics: A General Framework for Globally Optimized Pagination-->
+<div class="acmdlstat" id="stats2960820"><iframe src="http://dl.acm.org/authorizestats?N12887" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
+
+<p>This paper presents an algorithm for globally optimized pagination
+using dynamic programming and discusses its theoretical background. It was
+awarded the “ACM Best Paper Award” at the DocEng 2016 conference. The
+paper is the basis for the work demonstrated at BachoTek and
+TUG 2016 (the order is reversed as submission deadline for DocEng was
+already in March but the conference was in September).</p>
+
+<p>The above link enables free download of the paper from the ACM Digital Library.</p>
+
+<hr />
 
 <h2 id="tug-2016-conference-toronto-canadahttptugorgtug2016"><a href="http://tug.org/tug2016/">TUG 2016 Conference (Toronto, Canada)</a></h2>
 
@@ -153,7 +192,11 @@ publically available as further research and development is needed.</p>
   <li>Published paper, TUGboat volume 35, number 3, 2014</li>
 </ul>
 
+<<<<<<< HEAD
 <p>Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeX2e and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or—in particular for TeX-based code—material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won’t re-occur. As TeX-based code operates in at least three different `modes’ (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community.</p>
+=======
+<p>Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeX2e and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or—in particular for TeX-based code—material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won’t re-occur. As TeX-based code operates in at least three different `modes’ (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community. </p>
+>>>>>>> master
 
 <hr />
 
@@ -229,7 +272,7 @@ which have lifted some of the limitations identified back then.</p>
     <ul>
       <li><a href="http://youtu.be/qXS27F5NxUg">E-TeX: Guidelines to future TeX extensions — revisited</a> (Digital Camera recording of the talk on YouTube)</li>
       <li><a href="/publications/E-TeX-revisited-2012-abstract.txt">Abstract</a> (txt)</li>
-      <li><a href="/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf)</li>
+      <li><a href="/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf) </li>
     </ul>
   </li>
   <li><a href="/about/team/#will-robertson">Will Robertson</a> and <a href="/about/team/#frank-mittelbach">Frank Mittelbach</a>:
@@ -534,10 +577,8 @@ which have lifted some of the limitations identified back then.</p>
 
 <div id="div_vgwpixel"></div>
 
-  </article>
-</div>
+</article>
 
-    </div>
   </div>
   <footer>
   <div class="row">
@@ -578,5 +619,5 @@ which have lifted some of the limitations identified back then.</p>
 </footer>
 <!-- The latex-project.org webdesign by Jonas Jacek - http://jonas.me/ - is licensed under a Creative Commons Attribution 4.0 International License - http://creativecommons.org/licenses/by/4.0/. Based on a work at https://github.com/latex3/latex3.github.io. -->
 
-  </body>
+</body>
 </html>

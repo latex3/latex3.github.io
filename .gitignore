@@ -1,6 +1,5 @@
 # various
 .htaccess
-ci/
 Gemfile.lock
 robots.txt
 
