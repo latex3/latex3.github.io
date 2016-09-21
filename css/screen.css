@@ -154,7 +154,7 @@ html, header {
 .wrap {
   background: #FFF;
   margin: -2.5em -2em -3em;
-  padding: 2.5em 2em 2.5em 2em;
+  padding: 3em 2em 2.5em 2em;
 }
 
 
@@ -378,6 +378,7 @@ hr {
 .cookieconsent .btn { background: #f1d600; border-radius: 4px; color: #000; float: right; padding: .2em .4em .1em; text-align: center; }
 
 /* home */
+.home { padding: 2.5em 2em 2.5em 2em; }
 .home dt { margin: 1em 0 .3em; }
 
 /* teaser */
