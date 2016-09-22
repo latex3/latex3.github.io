@@ -5,17 +5,12 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-<<<<<<< HEAD
-    <pubDate>Sat, 10 Sep 2016 16:02:05 +0200</pubDate>
-    <lastBuildDate>Sat, 10 Sep 2016 16:02:05 +0200</lastBuildDate>
+    <pubDate>Thu, 22 Sep 2016 08:49:08 +0200</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2016 08:49:08 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-=======
-    <pubDate>Wed, 21 Sep 2016 23:13:33 +0200</pubDate>
-    <lastBuildDate>Wed, 21 Sep 2016 23:13:33 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
     
       <item>
-        <title>DocEng &#39;16: A Framework for Globally Optimized Pagination</title>
+        <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
         <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
 
 &lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank presented a paper on “A Framework for Globally Optimized Pagination” that discusses an algorithm and its theoretical foundation for globally optimized pagination using a dynamic programming approach. The paper was awarded best paper of the conference.&lt;/p&gt;
@@ -113,7 +108,6 @@ New York, NY, USA, 2015.&lt;/p&gt;
         <category>news</category>
         
       </item>
->>>>>>> master
     
       <item>
         <title>Globally optimized pagination</title>
@@ -230,7 +224,7 @@ follow in the near future.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy! &lt;/p&gt;
+&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy!&lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Aug 2015 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</link>
