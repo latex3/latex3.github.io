@@ -20,7 +20,7 @@ anything missing.
 <div class="acmdlitem" id="item2960820"><img src="https://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/><a href="https://dl.acm.org/authorize?N12887" title="A General Framework for Globally Optimized Pagination" target="_blank" onclick="vgwPixelCall('6d2afdf8821b4c9b9e559380b3bfa46c');">A General Framework for Globally Optimized Pagination</a>
   <div style="margin-left:25px"><a href="https://dl.acm.org/author_page.cfm?id=81100433073 " target="_blank" >Frank Mittelbach</a><br />DocEng '16 Proceedings of the 2016 ACM Symposium on Document Engineering, 2016</div></div>
 <!-- ACM DL Bibliometrics: A General Framework for Globally Optimized Pagination-->
-  <div class="acmdlstat" id ="stats2960820"><iframe src="http://dl.acm.org/authorizestats?N12887" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
+  <div class="acmdlstat" id ="stats2960820"><iframe src="https://dl.acm.org/authorizestats?N12887" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
 
 This paper presents an algorithm for globally optimized pagination
 using dynamic programming and discusses its theoretical background. It was
