@@ -13,7 +13,7 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
   <div class="col cell1of2 news">
     <h2>Recent News</h2>
     <ul class="news-posts">
-      {% for post in site.posts offset: 0 limit: 2 %}
+      {% for post in site.posts offset: 0 limit: 3 %}
       <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
@@ -50,8 +50,6 @@ description: "LaTeX is a high-quality typesetting system; it includes features d
   </div>
 </div>
 <hr>
-<!--
--->
 <div class="row">{% include google.adsense.html %}</div><hr> 
 <hr>
 <div class="row teaser">
