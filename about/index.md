@@ -55,6 +55,8 @@ Or, in English:
 + Using PostScript or Metafont fonts.
 
 <hr>
+<div class="row">{% include google.adsense.html %}</div><hr> 
+<hr>
 <div class="row teaser">
   <section class="col cell1of3">{% include teaser.documentation.html %}</section>
   <section class="col cell1of3">{% include teaser.get.html %}</section>

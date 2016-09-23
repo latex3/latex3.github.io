@@ -93,3 +93,10 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [comp.text.tex](news:<comp.text.tex>)  
   If you can't find what you need in any of the links above, try a search of past postings to the Usenet news group comp.text.tex. One place where you can do that is [Google Groups](https://groups.google.com/forum/#!forum/comp.text.tex). If you are still puzzled, try posting to comp.text.tex. It's a friendly group.
 
+<hr>
+
+<div class="row teaser">
+  <section class="col cell1of3">{% include teaser.documentation.html %}</section>
+  <section class="col cell1of3">{% include teaser.books.html %}</section>
+  <section class="col cell1of3">{% include teaser.get.html %}</section>
+</div>
