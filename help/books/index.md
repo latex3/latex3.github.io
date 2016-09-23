@@ -362,5 +362,10 @@ May be difficult to find these days.
 
 <hr>
 
+<div class="row teaser">
+  <section class="col cell1of3">{% include teaser.documentation.html %}</section>
+  <section class="col cell1of3">{% include teaser.links.html %}</section>
+  <section class="col cell1of3">{% include teaser.get.html %}</section>
+</div>
 
 <div id="div_vgwpixel"></div>
