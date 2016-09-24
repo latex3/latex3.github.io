@@ -1,6 +1,6 @@
       <nav>
         <label for="show-menu" class="show-menu">Show Menu</label>
-        <input type="checkbox" id="show-menu" role="button">
+        <input type="checkbox" id="show-menu" >
         <ul>
           {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}
             <a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
