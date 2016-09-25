@@ -5,9 +5,40 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Sep 2016 21:54:52 +0200</pubDate>
-    <lastBuildDate>Fri, 23 Sep 2016 21:54:52 +0200</lastBuildDate>
+    <pubDate>Sun, 25 Sep 2016 22:15:24 +0200</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2016 22:15:24 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Remembering Sebastian Rahtz (13.2.1955 - 15.3.2016)</title>
+        <description>&lt;h1 id=&quot;remembering-sebastian-sebastian-rahtzhttpsenwikipediaorgwikisebastianrahtz-1321955---1532016&quot;&gt;Remembering &lt;a href=&quot;https://en.wikipedia.org/wiki/Sebastian_Rahtz&quot;&gt;Sebastian Sebastian Rahtz&lt;/a&gt; (13.2.1955 - 15.3.2016)&lt;/h1&gt;
+
+&lt;p&gt;Earlier this year our good friend and colleague Sebastian Rahtz passed
+away — with him the TeX community lost one of its very influencial
+members.
+On September 27th 2016 the Oxford e-Research Centre will host a memorial
+session for Sebastian at Wolfram College, Oxford titled &lt;a href=&quot;https://www.oerc.ox.ac.uk/sebastian-rahtz&quot;&gt;“SPQR a
+digital legacy: what Sebastian Patrick Quintus Rahtz did for
+us”&lt;/a&gt;. The event is open to anybody after registration.&lt;/p&gt;
+
+&lt;p&gt;Frank wrote a short memorial on Sebastian for the Technische Komödie
+(the newsletter of the German TeX User’s Group (DANTE)). It was also was
+also translated to English as a TUGBoat article. Both articles can be found on the &lt;a href=&quot;/publications/&quot;&gt;Publications
+page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 25 Sep 2016 00:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2016/09/25/SPQR/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/09/25/SPQR/</guid>
+        
+        <category>latex</category>
+        
+        <category>Sebastian Rahtz</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
@@ -300,25 +331,6 @@ follow in the near future.&lt;/p&gt;
         <category>planet</category>
         
         <category>books</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 09 of LaTeX3 news released</title>
-        <description>&lt;h1 id=&quot;ninth-issue-of-latex3-news-released&quot;&gt;Ninth issue of LaTeX3 news released&lt;/h1&gt;
-
-&lt;p&gt;Issue number nine of the &lt;a href=&quot;/news/latex3-news/&quot;&gt;LaTeX3 news&lt;/a&gt; brings info about the use of expl3 in the community, work in progress, and a short article by Frank about “What can you do for the LaTeX3 project?”.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Mar 2014 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2014/03/24/issue-09-of-latex3-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2014/03/24/issue-09-of-latex3-news-released/</guid>
-        
-        <category>latex3</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
