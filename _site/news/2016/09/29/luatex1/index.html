@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LaTeX - A document preparation system</title>
-  <meta name="description" content="LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.">
+  <title>LuaTeX 1.0 announced</title>
+  <meta name="description" content="LuaTeX stable version announced">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -39,7 +39,7 @@
         <label for="show-menu" class="show-menu">Show Menu</label>
         <input type="checkbox" id="show-menu" >
         <ul>
-          <li class="active">
+          <li>
             <a href="/">Home</a></li>
           <li>
             <a href="/about/">About</a></li>
@@ -51,80 +51,81 @@
             <a href="/publications/">Publications</a></li>
           <li>
             <a href="/help/">Help</a></li>
-          <li>
+          <li class="active">
+            
             <a href="/news/">News</a></li>
         </ul>
       </nav>
 </header>
 
-  <div class="wrap home">
-  <div class="row">
-  <div class="col cell1of2">
-    <h1>LaTeX – A document preparation system</h1>
-    <p>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as <a href="/lppl/">free software</a>.</p>
-  </div>
-  <div class="col cell1of2 news">
-    <h2>Recent News</h2>
-    <ul class="news-posts">
-      
-      <li><span class="post-date">Sep 29, 2016</span><a class="post-link" href="/news/2016/09/29/luatex1/">LuaTeX 1.0 announced</a></li>
-      
-      <li><span class="post-date">Sep 25, 2016</span><a class="post-link" href="/news/2016/09/25/SPQR/">Remembering Sebastian Rahtz (13.2.1955 - 15.3.2016)</a></li>
-      
-      <li><span class="post-date">Sep 21, 2016</span><a class="post-link" href="/news/2016/09/21/DocEng-paper/">DocEng '16: A Framework for Globally Optimized Pagination</a></li>
-      
-    </ul>
-    <small><a href="/news/">All News</a> &middot; Subscribe to our <a href="/feed.xml"><span class="fa fa-rss-square"></span>RSS News Feed</a></small>
-  </div>
+  <div class="wrap">
+  <h1>LaTeX News</h1>
+<div class="post">
+  <article class="post-content">
+    <small class="meta"><span class="post-date">Sep 29, 2016</span></small>
+    <h1 id="luatex-10-announced">LuaTeX 1.0 announced</h1>
+
+<p>Big congratulations from us to the LuaTeX Team for achieving this
+hugely important milestone! It was very much awaited and we are
+looking forward to seeing more code in the LaTeX world that makes use
+of the extended possibilities offered by the LuaTeX engine now that it
+has reached a stable state.</p>
+
+<p>Congrats!</p>
+
+<h3 id="here-is-the-original-announcement-from-the-luatex-team">Here is the original announcement from the LuaTeX Team</h3>
+
+<blockquote>
+  <p>Version 1.0.0</p>
+
+  <p>After some ten years of development and testing, today we have released
+ LuaTeX 1.0.0! Instead of staying below one and ending up with versions
+ like 0.99.1234, we decided that the moment is there to show the TeX
+ audience that LuaTeX is stable enough to loose its beta status. Although
+ functionality has evolved and sometimes been replaced, we have been using
+ LuaTeX in production right from the start. Of course there are bugs
+ and for sure we will fix them.</p>
+
+  <p>Our main objective is to provide a variant of TeX that permits user
+ extensions without the need to adapt the inner workings. We did add a few
+ things here and there but they mostly relate to opening up the inner parts
+ and/or the wish to influence some hard coded behaviour. Via Lua we managed
+ to support modern functionality without bloating the code or adding more
+ and more dependencies on foreign code. In the process a stable and flexible
+ MetaPost library became part of the engine.</p>
+
+  <p>The functionality as present now will stay. We might open up some more
+ parts, we will stepwise clean up the code base while staying as close as
+ possible to the Knuthian original, we will try to document bits and pieces.
+ We might also experiment a bit with better isolation of the backend, and
+ simplify some internals. For that we might use the experimental version
+ but if we divert too much we may need to give that another name.</p>
+
+  <p>We want to thank all those who have tested the betas and helped to make
+ LuaTeX better.</p>
+
+  <p>Hans Hagen,
+ Hartmut Henkel,
+ Taco Hoekwater,
+ Luigi Scarso</p>
+</blockquote>
+
+  </article>
 </div>
-<hr>
-<div class="row">
-  <div class="col cell1of2">
-    <h2>LaTeX the product</h2>
-    <dl>
-      <dt><a href="/about/">Introduction</a></dt>
-      <dd>Short introduction to LaTeX. Learn what LaTeX is, which features it has, and how it works.</dd>
-      <dt><a href="/get/">Getting LaTeX</a></dt>
-      <dd>Learn how and where to get LaTeX for Linux, Mac OS X, Windows and Online.</dd>
-      <dt><a href="/news/latex2e-news/">LaTeX2e Release Newsletters</a></dt>
-      <dd>LaTeX2e release newsletters for each release of LaTeX created since 1994.</dd>
-      <dt><a href="/help/">Getting help</a></dt>
-      <dd>Help for issues with TeX and LaTeX: Official documentation, books, and links.</dd>
-    </dl>
-  </div>
-  <div class="col cell1of2">
-    <h2>The LaTeX3 Project</h2>
-    <dl>
-      <dt><a href="/latex3/">LaTeX3 Project</a></dt>
-      <dd>The LaTeX3 project is a long-term research project to develop the next version of the LaTeX typesetting system.</dd>
-      <dt><a href="/publications/">Publications</a></dt>
-      <dd>A selection of articles, slides, conference papers, videos etc. published by the LaTeX3 project.</dd>
-      <dt><a href="/latex3/code/">Development Code</a></dt>
-      <dd>Place to get LaTeX3 development code which is intended only for experimentation and comments.</dd>
-      <dt><a href="https://www.tug.org/donate.html">Donations</a></dt>
-      <dd>Please consider donating to the TeX Users Group to support LaTeX development (LaTeX Project contribution).</dd>
-    </dl>
-  </div>
-</div>
-<hr>
-<div class="row"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8455398809969217"
-     data-ad-slot="1764738082"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div><hr> 
 <hr>
 <div class="row teaser">
-  <section class="col cell1of3"><a href="/help/books/"><h3>LaTeX Books</h3><p>List of books on LaTeX in English, French, German, and Spanish</p></a>
-</section>
-  <section class="col cell1of3"><a href="/help/documentation/"><h3>Documentation</h3><p>The official LaTeX help and documentation section.</p></a>
-</section>
-  <section class="col cell1of3"><a href="/about/team/"><h3>LaTeX Team</h3><p>Learn more about the people behind the LaTeX project.</p></a>
-</section>
+  <section class="col cell1of2">
+    <a href="/news/latex2e-news/">
+      <h2>LaTeX2e Release Newsletters</h2>
+      <p>LaTeX2e release newsletters for each release of LaTeX created since 1994.</p>
+    </a>
+  </section>
+  <section class="col cell1of2">
+    <a href="/news/latex3-news/">
+      <h2>LaTeX3 Release Newsletters</h2>
+      <p>LaTeX3 release newsletters for each release of LaTeX3 created since 2009.</p>
+    </a>
+  </section>
 </div>
 
   </div>
