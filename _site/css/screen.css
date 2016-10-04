@@ -221,6 +221,7 @@ ul.team, ul.team ul { list-style: inside none; margin: .5em 0 2em;}
 ul.team ul { margin: 0 0 0 .2em; }
 ul.team ul li { margin: 0; }
 ul.team a span {color: #000;}
+ul.team a {word-break: break-all; display: inline-block;}
 
 
 /* Code
@@ -342,7 +343,7 @@ nav input[type=checkbox]:checked ~ ul { display: block; }
     position: static;
     display: none;
   }
-  nav ul li, li a {
+  nav ul li {
     display: block;
     width: auto;
   }
@@ -426,9 +427,9 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 
 /* toc */
 .toc { list-style: none; }
-.toc li:before { content: "\27A4 \2002 \2005"; color: #777;}
+.toc li:before { content: "\27A4 \2002 \2005"; color: #777; white-space: nowrap;}
 .toc li { border-bottom: 1px dotted #999; margin: 0; padding: .2em .5em;}
-.toc a { display: inline-block; width: auto; }
+.toc li a { display: inline-block; width: auto; word-break: break-all;}
 .toc a:hover { color: #000; text-decoration: none; }
 
 /* links */
