@@ -8,7 +8,7 @@ description: "References to the official LaTeX documentation and to documentatio
 
 This page contains references to documentation by the [LaTeX
 team]({{site.baseurl}}/about/team/). To find documentation that is
-available elsewhere on the net, vitsit the [links
+available elsewhere on the net, visit the [links
 page]({{site.baseurl}}/help/links/). Also, there's a whole page
 dedicated to [books on LaTeX and related
 topics]({{site.baseurl}}/help/books/).
