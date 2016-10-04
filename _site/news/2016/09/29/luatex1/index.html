@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LaTeX2e Public Source Repository announced</title>
-  <meta name="description" content="The LaTeX3 Project Team is pleased to announce the availability of the complete Standard LaTeX sources in a 'version control repository' similar to the one we have ourselves been using for some time.">
+  <title>LuaTeX 1.0 announced</title>
+  <meta name="description" content="LuaTeX stable version announced">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,29 +62,53 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Jan 25, 2009</span></small>
-    <h1 id="latex2e-public-source-repository-announced">LaTeX2e Public Source Repository announced</h1>
+    <small class="meta"><span class="post-date">Sep 29, 2016</span></small>
+    <h1 id="luatex-10-announced">LuaTeX 1.0 announced</h1>
 
-<p>The LaTeX3 Project Team is pleased to announce the availability of the complete Standard LaTeX sources in a ‘version control repository’ similar to the one we have ourselves been using for some time. Until now, Standard LaTeX (previously known as LaTeX2e) has been released as period snapshots. This has had the effect of delaying the roll-out of small bug fixes.</p>
+<p>Big congratulations from us to the LuaTeX Team for achieving this
+hugely important milestone! It was very much awaited and we are
+looking forward to seeing more code in the LaTeX world that makes use
+of the extended possibilities offered by the LuaTeX engine now that it
+has reached a stable state.</p>
 
-<p>No changes are being made to the way the LaTeX is distributed, so it will still reach the vast majority of users in exactly the same way they have been receiving it for years, e.g., via TeXLive or MiKTeX.</p>
+<p>Congrats!</p>
 
-<p>The addition of this public repository will allow users to track progress of the LaTeX codebase, and install fixes to critical files without waiting for the next major release of the software.</p>
+<h3 id="here-is-the-original-announcement-from-the-luatex-team">Here is the original announcement from the LuaTeX Team</h3>
 
-<p>The Subversion repository is located here: <a href="#fixme">http://www.latex-project.org/svnroot/latex2e-public/</a>.</p>
+<blockquote>
+  <p>Version 1.0.0</p>
 
-<p>You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements: </p>
+  <p>After some ten years of development and testing, today we have released
+ LuaTeX 1.0.0! Instead of staying below one and ending up with versions
+ like 0.99.1234, we decided that the moment is there to show the TeX
+ audience that LuaTeX is stable enough to loose its beta status. Although
+ functionality has evolved and sometimes been replaced, we have been using
+ LuaTeX in production right from the start. Of course there are bugs
+ and for sure we will fix them.</p>
 
-<p><code class="highlighter-rouge">mkdir latex2e-svn</code><br />
-<code class="highlighter-rouge">svn co http://www.latex-project.org/svnroot/latex2e-public/ latex2e-svn</code></p>
+  <p>Our main objective is to provide a variant of TeX that permits user
+ extensions without the need to adapt the inner workings. We did add a few
+ things here and there but they mostly relate to opening up the inner parts
+ and/or the wish to influence some hard coded behaviour. Via Lua we managed
+ to support modern functionality without bloating the code or adding more
+ and more dependencies on foreign code. In the process a stable and flexible
+ MetaPost library became part of the engine.</p>
 
-<p>The repository also contains the extensive test suite used to check changes to the codebase for regressions to known behaviour. The test suite was first introduced in TUGboat 18(4), 1997:
-<a href="http://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf">http://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf</a>
-This is the first time it has been publicly available; some work still needs to be done to organise it into a public build script.</p>
+  <p>The functionality as present now will stay. We might open up some more
+ parts, we will stepwise clean up the code base while staying as close as
+ possible to the Knuthian original, we will try to document bits and pieces.
+ We might also experiment a bit with better isolation of the backend, and
+ simplify some internals. For that we might use the experimental version
+ but if we divert too much we may need to give that another name.</p>
 
-<p>While we have your attention, don’t forget to take a look at the experimental code that we’ve been building as part of the LaTeX3 project:
-http://www.latex-project.org/svnroot/experimental/ (<em>intentionally taken offline in 01-2016</em>).
-The expl3 macro programming suite has reached a state ready for public use and has now been included in TeX Live 2008. LaTeX2e package writers are highly encouraged to investigate the new syntax and the broad functionality that this bundle provides. </p>
+  <p>We want to thank all those who have tested the betas and helped to make
+ LuaTeX better.</p>
+
+  <p>Hans Hagen,
+ Hartmut Henkel,
+ Taco Hoekwater,
+ Luigi Scarso</p>
+</blockquote>
 
   </article>
 </div>
