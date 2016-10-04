@@ -5,9 +5,70 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 29 Sep 2016 16:03:53 +0200</pubDate>
-    <lastBuildDate>Thu, 29 Sep 2016 16:03:53 +0200</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Tue, 04 Oct 2016 17:42:43 +0200</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 17:42:43 +0200</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>LuaTeX 1.0 announced</title>
+        <description>&lt;h1 id=&quot;luatex-10-announced&quot;&gt;LuaTeX 1.0 announced&lt;/h1&gt;
+
+&lt;p&gt;Big congratulations from us to the LuaTeX Team for achieving this
+hugely important milestone! It was very much awaited and we are
+looking forward to seeing more code in the LaTeX world that makes use
+of the extended possibilities offered by the LuaTeX engine now that it
+has reached a stable state.&lt;/p&gt;
+
+&lt;p&gt;Congrats!&lt;/p&gt;
+
+&lt;h3 id=&quot;here-is-the-original-announcement-from-the-luatex-team&quot;&gt;Here is the original announcement from the LuaTeX Team&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Version 1.0.0&lt;/p&gt;
+
+  &lt;p&gt;After some ten years of development and testing, today we have released
+ LuaTeX 1.0.0! Instead of staying below one and ending up with versions
+ like 0.99.1234, we decided that the moment is there to show the TeX
+ audience that LuaTeX is stable enough to loose its beta status. Although
+ functionality has evolved and sometimes been replaced, we have been using
+ LuaTeX in production right from the start. Of course there are bugs
+ and for sure we will fix them.&lt;/p&gt;
+
+  &lt;p&gt;Our main objective is to provide a variant of TeX that permits user
+ extensions without the need to adapt the inner workings. We did add a few
+ things here and there but they mostly relate to opening up the inner parts
+ and/or the wish to influence some hard coded behaviour. Via Lua we managed
+ to support modern functionality without bloating the code or adding more
+ and more dependencies on foreign code. In the process a stable and flexible
+ MetaPost library became part of the engine.&lt;/p&gt;
+
+  &lt;p&gt;The functionality as present now will stay. We might open up some more
+ parts, we will stepwise clean up the code base while staying as close as
+ possible to the Knuthian original, we will try to document bits and pieces.
+ We might also experiment a bit with better isolation of the backend, and
+ simplify some internals. For that we might use the experimental version
+ but if we divert too much we may need to give that another name.&lt;/p&gt;
+
+  &lt;p&gt;We want to thank all those who have tested the betas and helped to make
+ LuaTeX better.&lt;/p&gt;
+
+  &lt;p&gt;Hans Hagen,
+ Hartmut Henkel,
+ Taco Hoekwater,
+ Luigi Scarso&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 29 Sep 2016 00:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2016/09/29/luatex1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/09/29/luatex1/</guid>
+        
+        <category>luatex</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+>>>>>>> master
     
       <item>
         <title>LuaTeX 1.0 announced</title>
@@ -101,7 +162,7 @@ page&lt;/a&gt;.&lt;/p&gt;
       </item>
     
       <item>
-        <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
+        <title>DocEng &#39;16: A Framework for Globally Optimized Pagination</title>
         <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
 
 &lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank presented a paper on “A Framework for Globally Optimized Pagination” that discusses an algorithm and its theoretical foundation for globally optimized pagination using a dynamic programming approach. The paper was awarded best paper of the conference.&lt;/p&gt;
@@ -315,7 +376,7 @@ follow in the near future.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy!&lt;/p&gt;
+&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy! &lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Aug 2015 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</link>
