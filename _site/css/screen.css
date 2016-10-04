@@ -9,6 +9,7 @@
 - Lists
 - Code
 - Tables
+- Blockquotes
 - Spacing
 - Fontawsome
 - Utilities
@@ -253,6 +254,15 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
+
+
+/* Blockquotes
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote {
+  border-left: 2px solid #999;
+  font-style: italic;
+  padding: 0 0 0 .6em;
+}
 
 
 /* Spacing
