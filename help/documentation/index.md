@@ -60,10 +60,11 @@ More advanced documentation about LaTeX, which is available via the net includes
 There is a lot of documentation in languages other than English. Lists of books and other resources in other languages are maintained by TeX user groups in the respective countries. The following are known to us:
 
 ###  German
-+ German LaTeX documentation maintained by [Dante e.V.](http://www.dante.de/)
++ German LaTeX documentation maintained by German TeX User Group [Dante e.V.](http://www.dante.de/)
 
 ### French
 
++ French LaTeX documentation maintained by the Francophone TeX Users Group [GUTenberg](https://www.gutenberg.eu.org/-TeXniques-)  
 + [Tout ce que vous avez toujours voulu savoir sur LaTeX](http://lozzone.free.fr/index.php?vlunch=latex)
 + [A collection of french LaTeX documentation](http://www.framasoft.net/rubrique266.html) maintained by [Framasoft](http://www.framasoft.net/)
 + [Apprends LaTeX!](http://www.babafou.eu.org/Apprends_LaTeX/)
