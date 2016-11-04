@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>New LaTeX release</title>
-  <meta name="description" content="Keeping to our normal non-hasty schedules, the production release for 2005/12/01 is now available on CTAN (after it got somewhat stale during lengthy beta testing).">
+  <title>Future releases of LaTeX will require an eTeX-enabled engine</title>
+  <meta name="description" content="LaTeX2e will require an eTeX-enabled engine">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,12 +62,39 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Apr 27, 2006</span></small>
-    <h1 id="new-latex-release">New LaTeX release</h1>
+    <small class="meta"><span class="post-date">Nov 4, 2016</span></small>
+    <h1 id="future-releases-of-latex-will-require-an-etex-enabled-engine">Future releases of LaTeX will require an eTeX-enabled engine</h1>
 
-<p>Keeping to our normal non-hasty schedules, the production release for 2005/12/01 is now available on CTAN (after it got somewhat stale during lengthy beta testing).</p>
+<p>LaTeX2e was released in 1994 and since then the LaTeX3 Project have
+been committed to keeping it working smoothly for users. That means
+balancing up keeping the code stable with fixing bugs and adding new
+features.</p>
 
-<p>As usual, information regarding release details can be found in <a href="/news/latex2e-news/ltnews17.pdf">ltnews17</a> and the file <code class="highlighter-rouge">changes.txt</code> (containing some technical change info in reverse chronological order).</p>
+<p>Back in 2003 the team
+<a href="/news/latex2e-news/ltnews16.pdf">announced</a> that the
+<a href="http://texdoc.net/texmf-dist/doc/etex/base/etex_man.pdf">eTeX
+extensions</a>
+would be used by the kernel when they were available. The new
+primitives offered by eTeX make many parts of TeX programming easier
+and often there’s no way in ‘classical’ TeX to get the same effect. As
+eTeX was finalised in 1999, starting to use it seriously in around
+2004 meant most people had access to them.</p>
+
+<p>Since then, the availability and use of eTeX has spread, and almost
+all users have them available. Indeed, the standard format-building
+routines for LaTeX have included them for many years. There are also a
+lot of packages on CTAN that use eTeX, most obviously any using the
+<a href="http://ctan.org/pkg/l3kernel">expl3 programming language</a> that the
+LaTeX3 Project have created.</p>
+
+<p>The team had always meant to say at some stage that eTeX was now
+required, and indeed thought we had until we checked over the official
+newsletters! So as of the next LaTeX2e release, scheduled for the
+start of 2017, the kernel will only build if eTeX is enabled. For
+this release, we are likely to add a test for eTeX but no actual use
+directly in the kernel, though in the future there will probably be
+more use of the extensions.</p>
+
 
   </article>
 </div>
