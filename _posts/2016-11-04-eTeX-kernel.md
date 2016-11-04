@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LaTeX2e and eTeX"
+title: "Future releases of LaTeX will require an eTeX-enabled engine"
 Date: 2016-11-04 00:00:00
 description: "LaTeX2e will require an eTeX-enabled engine"
 excerpt: "Back in 2003 we already announced that going forward LaTeX will start making use of the eTeX extensions in packages and eventually in the kernel itself. While already true a long time for packages with the upcoming kernel release this will also be a requirement for LaTeX kernel ..."
