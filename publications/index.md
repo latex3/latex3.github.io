@@ -87,6 +87,9 @@ publically available as further research and development is needed.
 
 ***
 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<hr>
+
 
 ## Publications in 2015
 
@@ -137,9 +140,6 @@ In 2012, a question "How to influence the float placement in LaTeX" was asked on
 Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeX2e and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or---in particular for TeX-based code---material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won't re-occur. As TeX-based code operates in at least three different `modes' (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community. 
 
 ***
-
-<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
-<hr>
 
 
 ### [TUG 2014 Conference (Portland, USA)](http://tug.org/tug2014/)
