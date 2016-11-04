@@ -84,10 +84,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 
 + [TeX Users Group](https://tug.org/)  
   The TeX Users Group web site.
-+ [GUTenberg](https://www.gutenberg.eu.org/)  
-  Francophone TeX Users Group.
 + [TeX user groups around the world](http://www.tug.org/usergroups.html)  
-  Listing of TeX user groups around the world. Maintained by TeX Users Group.
+  Listing of (all/most) TeX user groups around the world. Maintained by TeX Users Group.
 
 
 ## News Groups
