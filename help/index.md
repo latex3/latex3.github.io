@@ -54,7 +54,7 @@ extension package.
 In that case it is best to first check within the TeX community by
 looking through the [Question and Answer
 forums]({{site.baseurl}}/help/links/#question-and-answer-websites) to
-see if your problem is already covered there; if it is not covered
+see if your problem is already covered there. If it is not covered
 post a question in one of those forums. The number of solutions and
 receipes on the [Question and Answer
 forums]({{site.baseurl}}/help/links/#question-and-answer-websites) are
@@ -65,7 +65,7 @@ If the problem doesn't get solved this way then the reason might be
 that you have encountered a  genuine "bug". Or perhaps you get a suggested
 workaround but people tell you, this is really a bug in package
 XYZ. In either case, the next question then is: how can this bug be
-resolved?  The first step in this case is to report the bug to the
+resolved?  The first step for this is to report the bug to the
 right audience, i.e., the maintainers of the code.
 
 As this is a bigger undertaking and it needs a bit of preparation to
