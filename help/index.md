@@ -56,7 +56,7 @@ looking through the [Question and Answer
 forums]({{site.baseurl}}/help/links/#question-and-answer-websites) to
 see if your problem is already covered there. If it is not covered
 post a question in one of those forums. The number of solutions and
-receipes on the [Question and Answer
+recipes on the [Question and Answer
 forums]({{site.baseurl}}/help/links/#question-and-answer-websites) are
 already huge and growing and people on the TeX forums are generally
 very friendly and usually will help you pretty fast.

@@ -14,19 +14,19 @@ maintained by many different people around the world. And like every software
 obscure ones existing for a long time without being discovered and other freshly appearing
 because of new or modified code.
 
-The LaTeX Team is very concious of the fact that stability as well as
+The LaTeX Team is very conscious of the fact that stability as well as
 backwards compatibility are very important assets in the LaTeX
 ecosystem. For that reason we have kept the kernel and the core
 packages largely unchanged over the last decade except for fixing
 bugs. As a result encountering a bug in the core software is a rather
-rare occurence and if it happens then usually it is a pretty obscure
-bug, or it is one occuring in the [most recent additions to the 
+rare occurrence and if it happens then usually it is a pretty obscure
+bug, or it is one occurring in the [most recent additions to the 
 LaTeX core added by us]({{site.baseurl}}/news/).
 
 The situation is somewhat different in the package universe, where far
 more active development happens and new packages appear
 regularly. Furthermore, because the development is in the hand of many
-developers acting indepently from each other (and often with different
+developers acting independently from each other (and often with different
 ideas about features, functionality and interfaces) some combination
 of packages simply do not work together, or only if the packages are
 loaded in some particular order or with a special set of options. So
@@ -106,7 +106,7 @@ this website), everybody will end up being unhappy:
 - **You**, because we will have to close the bug report without fixing anything;
 - **We**, because we have only limited resources and this is draining them without helping anybody;
 - **Others** in the LaTeX community, because they will hit the same bug;
-- **The maintainersof the code with problems**, because they don't learn about the issue in their code.
+- **The maintainers of the code with problems**, because they don't learn about the issue in their code.
 
 We really appreciate if you take the time to prepare a test file and
 submit a bug report and we hope that by requiring the use of
