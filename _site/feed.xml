@@ -5,9 +5,57 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Oct 2016 18:53:57 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 18:53:57 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <pubDate>Fri, 18 Nov 2016 18:08:52 +0100</pubDate>
+    <lastBuildDate>Fri, 18 Nov 2016 18:08:52 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Future releases of LaTeX will require an eTeX-enabled engine</title>
+        <description>&lt;h1 id=&quot;future-releases-of-latex-will-require-an-etex-enabled-engine&quot;&gt;Future releases of LaTeX will require an eTeX-enabled engine&lt;/h1&gt;
+
+&lt;p&gt;LaTeX2e was released in 1994 and since then the LaTeX3 Project have
+been committed to keeping it working smoothly for users. That means
+balancing up keeping the code stable with fixing bugs and adding new
+features.&lt;/p&gt;
+
+&lt;p&gt;Back in 2003 the team
+&lt;a href=&quot;/news/latex2e-news/ltnews16.pdf&quot;&gt;announced&lt;/a&gt; that the
+&lt;a href=&quot;http://texdoc.net/texmf-dist/doc/etex/base/etex_man.pdf&quot;&gt;eTeX
+extensions&lt;/a&gt;
+would be used by the kernel when they were available. The new
+primitives offered by eTeX make many parts of TeX programming easier
+and often there’s no way in ‘classical’ TeX to get the same effect. As
+eTeX was finalised in 1999, starting to use it seriously in around
+2004 meant most people had access to them.&lt;/p&gt;
+
+&lt;p&gt;Since then, the availability and use of eTeX has spread, and almost
+all users have them available. Indeed, the standard format-building
+routines for LaTeX have included them for many years. There are also a
+lot of packages on CTAN that use eTeX, most obviously any using the
+&lt;a href=&quot;http://ctan.org/pkg/l3kernel&quot;&gt;expl3 programming language&lt;/a&gt; that the
+LaTeX3 Project have created.&lt;/p&gt;
+
+&lt;p&gt;The team had always meant to say at some stage that eTeX was now
+required, and indeed thought we had until we checked over the official
+newsletters! So as of the next LaTeX2e release, scheduled for the
+start of 2017, the kernel will only build if eTeX is enabled. For
+this release, we are likely to add a test for eTeX but no actual use
+directly in the kernel, though in the future there will probably be
+more use of the extensions.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 04 Nov 2016 00:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2016/11/04/eTeX-kernel/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/11/04/eTeX-kernel/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>eTeX</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>LuaTeX 1.0 announced</title>
@@ -101,7 +149,7 @@ page&lt;/a&gt;.&lt;/p&gt;
       </item>
     
       <item>
-        <title>DocEng &#39;16: A Framework for Globally Optimized Pagination</title>
+        <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
         <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
 
 &lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank presented a paper on “A Framework for Globally Optimized Pagination” that discusses an algorithm and its theoretical foundation for globally optimized pagination using a dynamic programming approach. The paper was awarded best paper of the conference.&lt;/p&gt;
@@ -315,7 +363,7 @@ follow in the near future.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy! &lt;/p&gt;
+&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy!&lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Aug 2015 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</link>
@@ -343,25 +391,6 @@ follow in the near future.&lt;/p&gt;
         <category>latex2e</category>
         
         <category>papers</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 21 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;issue-21-of-latex2e-news-released&quot;&gt;Issue 21 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;For some reason we forgot to add issue number 21 to the web site. It has now been added to &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt; and documents the changes that have been made to the LaTeX2e release in 2014.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 Oct 2014 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2014/10/16/issue-21-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2014/10/16/issue-21-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
