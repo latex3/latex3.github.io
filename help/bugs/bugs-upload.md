@@ -4,37 +4,46 @@ title: "Bug Upload - Report a bug"
 description: "If you think you’ve found a bug with core LaTeX, then please report it to us! You can report it by going to this bug information upload page."
 ---
 
-# Submit a LaTeX bug report
+# Procedure to submit a LaTeX bug report
 
 Hey, you think you found a bug in LaTeX? Pity! But this page allows you to upload a report to our bugs database.
 
 
 ## Before submitting a LaTeX bug
 
-Some important hints:
- 1. <strong>Check that there really is a bug</strong>, by writing a
-    short, self-contained document that shows the problem. You should
+A few important preparation steps to go through:
+
+ 1. **Check to see if the bug has already been
+    reported.** You can do this by searching
+    the <a href="{{site.baseurl}}/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">LaTeX
+    bugs database</a>. If the bug has already been reported then there
+    may be a documented workaround for your problem.
+ 1. **Check that there really is a bug**, by writing a
+    short, self-contained document that shows the problem. This file should start with the line
+    [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty). Starting with
+    this package will help you to
     make sure that the document doesn't use any third-party packages or
     document classes. If the bug turns out to be with third-party
     software then please contact the developer, and not us!
- 1. <strong>Check to see if the bug has already been
-    reported.</strong> You can do this by searching
-    the <a href="{{site.baseurl}}/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">LaTeX
-    bugs database</a>. If the bug has already been reported then there
-    may be a known solution to your problem.
- 1. <strong>For bugs related to LaTeX3 code</strong> (expl3, xparse
+ 1. **For bugs related to LaTeX3 code** (expl3, xparse
     and so on): Do not report the bug here but instead use
     the <a href="https://github.com/latex3/svn-mirror/issues">GitHub
     issue tracker</a>.
- 1. <strong>Run LaTeX on the test file.</strong> Send the test file
+ 1. **Run LaTeX on the test file.** Send the test file
     and the resulting transcript file using the form below.
 
 Now you are ready to submit a LaTeX bug report.
 
+> But please remember: Bug reports send to us without a
+> [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty) line and/or
+> containing third-party code flagged by the [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty)
+> package are likely to be closed without any
+> comment in our bug tracking system!
 
 
 
-# Submit a LaTeX bug
+
+## Submit a LaTeX bug
 
 <form action="{{site.baseurl}}/cgi-bin/latex-bugs-upload.cgi" method="POST" enctype="multipart/form-data">
   <ol>
@@ -65,7 +74,7 @@ Now you are ready to submit a LaTeX bug report.
       <p>Your email:<br>
         <input type="TEXT" name="email" size="60">
       </p>
-      <p>Summary description:<br>
+      <p>One-line summary description:<br>
         <input type="TEXT" name="summary" size="60">
       </p>
       <p>Short problem description:<br>
