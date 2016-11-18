@@ -103,10 +103,10 @@ is due to code from a contributed third-party package the LaTeX
 Project Team is not able to help or fix the code as that is maintained
 by others.  As a result, if such a bug report is send to us (through
 this website), everybody will end up being unhappy:
-- **You**, because we will have to close the bug report without fixing anything;
-- **We**, because we have only limited resources and this is draining them without helping anybody;
-- **Others** in the LaTeX community, because they will hit the same bug;
-- **The maintainers of the code with problems**, because they don't learn about the issue in their code.
+ - **You**, because we will have to close the bug report without fixing anything;
+ - **We**, because we have only limited resources and this is draining them without helping anybody;
+ - **Others** in the LaTeX community, because they will hit the same bug;
+ - **The maintainers of the code with problems**, because they don't learn about the issue in their code.
 
 We really appreciate if you take the time to prepare a test file and
 submit a bug report and we hope that by requiring the use of
