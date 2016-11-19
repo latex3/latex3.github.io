@@ -53,7 +53,7 @@ Now you are ready to submit a LaTeX bug report.
         <select name="Category">
            <option value="amslatex">AMS LaTeX</option>
            <option value="babel">Babel</option>
-           <option value="graphics">Graphics and colour</option>
+           <option value="graphics">Graphics and color</option>
            <option selected value="latex">LaTeX</option>
           <!-- <option value="mfnfss">Metafont fonts</option> -->
            <option value="psnfss">PostScript fonts</option>
