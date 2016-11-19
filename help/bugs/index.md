@@ -103,7 +103,7 @@ There are thousands of packages and the LaTeX Project Team only
 supports a few dozen core packages beside the kernel code. So if a bug
 is due to code from a contributed third-party package the LaTeX
 Project Team is not able to help or fix the code as that is maintained
-by others.  As a result, if such a bug report is send to us (through
+by others.  As a result, if such a bug report is sent to us (through
 this website), everybody will end up being unhappy:
 
  - **You**, because we will have to close the bug report without fixing anything;
