@@ -6,7 +6,7 @@ description: "LaTeX is a developing piece of software, and therefore has bugs. L
 
 # Bugs in LaTeX software
 
-LaTeX is in existence since the mid-eighties. Beside the kernel of
+LaTeX has been in existence since the mid-eighties. Besides the kernel of
 LaTeX and some core packages that are all maintained by the LaTeX
 Project team there are several thousand add-on packages developed and
 maintained by many different people around the world. And like every software
@@ -20,12 +20,12 @@ ecosystem. For that reason we have kept the kernel and the core
 packages largely unchanged over the last decade except for fixing
 bugs. As a result encountering a bug in the core software is a rather
 rare occurrence and if it happens then usually it is a pretty obscure
-bug, or it is one occurring in the [most recent additions to the 
-LaTeX core added by us]({{site.baseurl}}/news/).
+bug, or it is one occurring in the [most recent additions we have added
+to the  LaTeX core]({{site.baseurl}}/news/).
 
 The situation is somewhat different in the package universe, where far
 more active development happens and new packages appear
-regularly. Furthermore, because the development is in the hand of many
+regularly. Furthermore, because the development is in the hands of many
 developers acting independently from each other (and often with different
 ideas about features, functionality and interfaces) some combination
 of packages simply do not work together, or only if the packages are
@@ -90,7 +90,7 @@ by the LaTeX Team) but the files
 about are needed to demonstrate the problem, then please continue and send
 the bug report to us but explain this explicitly in your description of bug.
 
-> Bug reports send to us without a
+> Bug reports sent to us without a
 > [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty)
 > line and/or containing third-party code flagged by the
 > [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty) package are
