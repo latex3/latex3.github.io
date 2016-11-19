@@ -20,7 +20,7 @@
 
 
 
-\ProvidesPackage{latexbug}[2016/11/15 v1.0a Bug-classification]
+\ProvidesPackage{latexbug}[2016/11/19 v0.9a Bug-classification]
 \def\latexbug@empty{}%
 \def\latexbug@us{us}%
 \def\latexbug@ignore{ignore}%
@@ -32,6 +32,9 @@
 
 
 \latexbug@loop
+%--------------------------------- 
+latexbug.sty = us ,
+%--------------------------------- base
 alltt.sty = us ,
 ansinew.def = us ,
 applemac.def = us ,
@@ -224,7 +227,7 @@ verbtest.tex = us ,
 x.tex = us ,
 xr.sty = us ,
 xspace.sty = us ,
-%--------------------------------- babel (what is supported?)
+%--------------------------------- babel (what is supported by us?)
 UKenglish.sty = us ,
 USenglish.sty = us ,
 afrikaans.sty = us ,
@@ -440,17 +443,16 @@ utopia.sty = us ,
 expl3.sty  = bugtracker github \Email xxxx ,
 xparse.sty = bugtracker github \Email xxxx ,
 expl3-code.tex = us , 
-%--------------------------------- 
-latexbug.sty = us ,
-%--------------------------------- UNSUPPORTED external
+%---------------------------------  EXTERNALLY SUPPORTED
 %
 geometry.sty = Hideo Umeki          \Email <latexgeometry [at] gmail [dot] com> ,
-german.ldf   = Juergen Spitzmueller \Email <juergen [at] spitzmueller [dot] org> ,
-ngerman.ldf  = Juergen Spitzmueller \Email <juergen [at] spitzmueller [dot] org> ,
 pd1enc.def   = ignore ,
 hyperref.cfg = ignore ,
 hpdftex.def  = ignore ,
 hyperref.sty = Heiko Oberdiek ,
+%--------------------------------- babel external
+german.ldf   = Juergen Spitzmueller \Email <juergen [at] spitzmueller [dot] org> ,
+ngerman.ldf  = Juergen Spitzmueller \Email <juergen [at] spitzmueller [dot] org> ,
 %--------------------------------- LAST LINE
 {\latexbug@empty} = {} ,
 

@@ -97,7 +97,7 @@ popular and why you will find a solution for essentially any
 typesetting problem in the LaTeX universe. So this is is a bit of a
 “the glass is half full or half empty” situation.</p>
 
-<h2 id="how-to-report-a-bug">How to Report a Bug?</h2>
+<h2 id="how-do-i-report-a-bug">How do I report a bug?</h2>
 
 <p>If you think you’ve found a bug in LaTeX software then it is important
 to report it to the right people so that it can get fixed (this is, of course, also
@@ -119,6 +119,8 @@ top of any such test file used to report a bug in LaTeX as follows:</p>
 
    ...                          % code showing the problem</code></pre></figure>
 
+<p>If the <a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be always found – how to do that depends on the installation you use).</p>
+
 <p>If you run your test file this package will check if there is any code
 that makes it unlikely that the LaTeX Team can deal with the bug and
 if it finds such code, e.g., a package maintained by a third party, it
@@ -139,9 +141,10 @@ the bug report to us but explain this explicitly in your description of bug.</p>
 
 <blockquote>
   <p>Bug reports send to us without a
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">\RequirePackage{latexbug}</code></a> line and/or
-containing third-party code flagged by <a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> are likely to be closed without any
-comment in our bug tracking system!</p>
+<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">\RequirePackage{latexbug}</code></a>
+line and/or containing third-party code flagged by the
+<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> package are
+likely to be closed without any comment in our bug tracking system!</p>
 </blockquote>
 
 <h3 id="a-bit-of-background">A bit of background</h3>
@@ -170,8 +173,9 @@ resolved.</p>
 
 <p>If <a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
-the LaTeX Team) then please submit your test file by going to <a href="/help/bugs/bugs-upload/">the bug
-upload page</a> and upload your test file.</p>
+the LaTeX Team) then please <a href="/help/bugs/bugs-upload/">submit your test file by going to the bug
+upload page and upload your test
+file.</a></p>
 
 <p>But if your bug involves third-party packages and should be worked on by
 the maintainers of those package then please send your test files to

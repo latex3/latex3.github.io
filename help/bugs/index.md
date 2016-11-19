@@ -42,7 +42,7 @@ typesetting problem in the LaTeX universe. So this is is a bit of a
 "the glass is half full or half empty" situation.
 
 
-## How to Report a Bug?
+## How do I report a bug?
 
 If you think you've found a bug in LaTeX software then it is important
 to report it to the right people so that it can get fixed (this is, of course, also
@@ -70,6 +70,7 @@ top of any such test file used to report a bug in LaTeX as follows:
    ...                          % code showing the problem
 {% endhighlight %}
 
+If the [`latexbug.sty`]({{site.baseurl}}/help/bugs/latexbug.sty) package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local `texmf` tree so that it will be always found -- how to do that depends on the installation you use).
 
 If you run your test file this package will check if there is any code
 that makes it unlikely that the LaTeX Team can deal with the bug and
@@ -90,9 +91,10 @@ about are needed to demonstrate the problem, then please continue and send
 the bug report to us but explain this explicitly in your description of bug.
 
 > Bug reports send to us without a
-> [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty) line and/or
-> containing third-party code flagged by [`latexbug.sty`]({{site.baseurl}}/help/bugs/latexbug.sty) are likely to be closed without any
-> comment in our bug tracking system!
+> [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty)
+> line and/or containing third-party code flagged by the
+> [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty) package are
+> likely to be closed without any comment in our bug tracking system!
 
 
 ### A bit of background
@@ -115,12 +117,14 @@ submit a bug report and we hope that by requiring the use of
 getting the bug report to the right audience so that it can be
 resolved.
 
+
 ### Submitting the bug report
 
 If [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty) has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
-the LaTeX Team) then please submit your test file by going to [the bug
-upload page]({{site.baseurl}}/help/bugs/bugs-upload/) and upload your test file.
+the LaTeX Team) then please [submit your test file by going to the bug
+upload page and upload your test
+file.]({{site.baseurl}}/help/bugs/bugs-upload/)
 
 But if your bug involves third-party packages and should be worked on by
 the maintainers of those package then please send your test files to
