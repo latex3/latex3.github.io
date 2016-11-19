@@ -34,7 +34,7 @@ A few important preparation steps to go through:
 
 Now you are ready to submit a LaTeX bug report.
 
-> But please remember: Bug reports send to us without a
+> But please remember: Bug reports sent to us without a
 > [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty) line and/or
 > containing third-party code flagged by the [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty)
 > package are likely to be closed without any
