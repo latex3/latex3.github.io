@@ -20,7 +20,7 @@ A few important preparation steps to go through:
     may be a documented workaround for your problem.
  1. **Check that there really is a bug**, by writing a
     short, self-contained document that shows the problem. This file should start with the line
-    [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty). Starting with
+    [`\RequirePackage{latexbug}`]({{site.baseurl}}/bugs/latexbug.sty). Starting with
     this package will help you to
     make sure that the document doesn't use any third-party packages or
     document classes. If the bug turns out to be with third-party
@@ -35,8 +35,8 @@ A few important preparation steps to go through:
 Now you are ready to submit a LaTeX bug report.
 
 > But please remember: Bug reports sent to us without a
-> [`\RequirePackage{latexbug}`]({{site.baseurl}}/help/bugs/latexbug.sty) line and/or
-> containing third-party code flagged by the [`latexbug`]({{site.baseurl}}/help/bugs/latexbug.sty)
+> [`\RequirePackage{latexbug}`]({{site.baseurl}}/bugs/latexbug.sty) line and/or
+> containing third-party code flagged by the [`latexbug`]({{site.baseurl}}/bugs/latexbug.sty)
 > package are likely to be closed without any
 > comment in our bug tracking system!
 

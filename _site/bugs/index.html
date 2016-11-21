@@ -49,8 +49,7 @@
             <a href="/latex3/">LaTeX3</a></li>
           <li>
             <a href="/publications/">Publications</a></li>
-          <li class="active">
-            
+          <li>
             <a href="/help/">Help</a></li>
           <li>
             <a href="/news/">News</a></li>
@@ -62,7 +61,7 @@
   <article>
 <h1 id="bugs-in-latex-software">Bugs in LaTeX software</h1>
 
-<p>LaTeX is in existence since the mid-eighties. Beside the kernel of
+<p>LaTeX has been in existence since the mid-eighties. Besides the kernel of
 LaTeX and some core packages that are all maintained by the LaTeX
 Project team there are several thousand add-on packages developed and
 maintained by many different people around the world. And like every software
@@ -76,12 +75,12 @@ ecosystem. For that reason we have kept the kernel and the core
 packages largely unchanged over the last decade except for fixing
 bugs. As a result encountering a bug in the core software is a rather
 rare occurrence and if it happens then usually it is a pretty obscure
-bug, or it is one occurring in the <a href="/news/">most recent additions to the 
-LaTeX core added by us</a>.</p>
+bug, or it is one occurring in the <a href="/news/">most recent additions we have added
+to the  LaTeX core</a>.</p>
 
 <p>The situation is somewhat different in the package universe, where far
 more active development happens and new packages appear
-regularly. Furthermore, because the development is in the hand of many
+regularly. Furthermore, because the development is in the hands of many
 developers acting independently from each other (and often with different
 ideas about features, functionality and interfaces) some combination
 of packages simply do not work together, or only if the packages are
@@ -119,7 +118,7 @@ top of any such test file used to report a bug in LaTeX as follows:</p>
 
    ...                          % code showing the problem</code></pre></figure>
 
-<p>If the <a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be always found – how to do that depends on the installation you use).</p>
+<p>If the <a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be always found – how to do that depends on the installation you use).</p>
 
 <p>If you run your test file this package will check if there is any code
 that makes it unlikely that the LaTeX Team can deal with the bug and
@@ -128,22 +127,22 @@ will report that fact to you and asks you to remove that package from
 the test file. If such a package is needed to exhibit the issue, then the
 problem should be reported to the maintainers of this package.  If we
 know how to reach the maintainer
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> will tell
+<a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> will tell
 you how to reach them, otherwise you have to find out by other means
 (normally the maintenance address is part of the package documentation or the
 package code).</p>
 
 <p>If you think the bug is in core LaTeX (as maintained
 by the LaTeX Team) but the files
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> complains
+<a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> complains
 about are needed to demonstrate the problem, then please continue and send
 the bug report to us but explain this explicitly in your description of bug.</p>
 
 <blockquote>
-  <p>Bug reports send to us without a
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">\RequirePackage{latexbug}</code></a>
+  <p>Bug reports sent to us without a
+<a href="/bugs/latexbug.sty"><code class="highlighter-rouge">\RequirePackage{latexbug}</code></a>
 line and/or containing third-party code flagged by the
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> package are
+<a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> package are
 likely to be closed without any comment in our bug tracking system!</p>
 </blockquote>
 
@@ -153,7 +152,7 @@ likely to be closed without any comment in our bug tracking system!</p>
 supports a few dozen core packages beside the kernel code. So if a bug
 is due to code from a contributed third-party package the LaTeX
 Project Team is not able to help or fix the code as that is maintained
-by others.  As a result, if such a bug report is send to us (through
+by others.  As a result, if such a bug report is sent to us (through
 this website), everybody will end up being unhappy:</p>
 
 <ul>
@@ -165,15 +164,15 @@ this website), everybody will end up being unhappy:</p>
 
 <p>We really appreciate if you take the time to prepare a test file and
 submit a bug report and we hope that by requiring the use of
-<a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> helps with
+<a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> helps with
 getting the bug report to the right audience so that it can be
 resolved.</p>
 
 <h3 id="submitting-the-bug-report">Submitting the bug report</h3>
 
-<p>If <a href="/help/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> has indicated
+<p>If <a href="/bugs/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
-the LaTeX Team) then please <a href="/help/bugs/bugs-upload/">submit your test file by going to the bug
+the LaTeX Team) then please <a href="/bugs/bugs-upload/">submit your test file by going to the bug
 upload page and upload your test
 file.</a></p>
 
@@ -221,7 +220,7 @@ submit a report, thanks for taking the time!</p>
         <li><a href="/help/">Help</a></li>
         <li><a href="/help/documentation">Documentation</a></li>
         <li><a href="/help/books">LaTeX Books</a></li>
-        <li><a href="/help/bugs/">Bugs</a></li>
+        <li><a href="/bugs/">Bugs</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>

@@ -71,7 +71,7 @@ right audience, i.e., the maintainers of the code.
 As this is a bigger undertaking and it needs a bit of preparation to
 report a bug in a useful way to the right people [we have devoted a
 separate page to this; so please continue reading
-here.]({{site.baseurl}}/help/bugs/)
+here.]({{site.baseurl}}/bugs/)
 
 
 ## Website Bugs
