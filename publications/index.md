@@ -96,18 +96,18 @@ publically available as further research and development is needed.
 ### [TUG 2015 Conference (Darmstadt, Germany)](http://tug.org/tug2015/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + [Twenty-one is only half the truth (video via River Valley TV)](http://www.river-valley.zeeba.tv/twenty-one-is-only-half-the-truth/)
+  + [Twenty-one is only half the truth (video via River Valley TV)](http://www.zeeba.tv/twenty-one-is-only-half-the-truth/)
   + [Twenty-one is only half the truth (mindmap of presentation)]({{site.baseurl}}/publications/2015-07-20-twentyone-details.pdf)
 
 Hidden behind this title is a presentation of the new LaTeX kernel compatibility concept that was introduced with 2015 release of LaTeX (42/2 years after the first release).
 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson):
-  + [Reconciling unicode-math with LaTeX2e mathematics (video via River Valley TV)](http://www.river-valley.zeeba.tv/reconciling-unicode-math-with-latex2e-mathematics/)
+  + [Reconciling unicode-math with LaTeX2e mathematics (video via River Valley TV)](http://www.zeeba.tv/reconciling-unicode-math-with-latex2e-mathematics/)
   + [Reconciling unicode-math with LaTeX2e mathematics (slides)]({{site.baseurl}}/publications/2015-07-20-unicode-math.pdf)
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright):
-  + [XeTeX and LuaTeX: Getting Unicode data into the right places (video via River Valley TV)](http://www.river-valley.zeeba.tv/xetex-and-luatex-getting-unicode-data-into-the-right-places/)
+  + [XeTeX and LuaTeX: Getting Unicode data into the right places (video via River Valley TV)](http://www.zeeba.tv/xetex-and-luatex-getting-unicode-data-into-the-right-places/)
   + [XeTeX and LuaTeX: Getting Unicode data into the right places (slides)]({{site.baseurl}}/publications/2015-07-20-Unicode.pdf)
-  + [Through the \parshape, and what Joseph found there (video via River Valley TV)](http://www.river-valley.zeeba.tv/through-the-parshape-and-what-joseph-found-there/)
+  + [Through the \parshape, and what Joseph found there (video via River Valley TV)](http://www.zeeba.tv/through-the-parshape-and-what-joseph-found-there/)
   + [Through the \parshape, and what Joseph found there (slides)]({{site.baseurl}}/publications/2015-07-22-parshape.pdf)
 
 ***
@@ -145,10 +145,10 @@ Regression tests are an important tool in any moderately complex programming env
 ### [TUG 2014 Conference (Portland, USA)](http://tug.org/tug2014/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.river-valley.zeeba.tv/regression-testing-latex-packages-with-lua/)
+  + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.zeeba.tv/regression-testing-latex-packages-with-lua/)
   +  <a href="{{site.baseurl}}/publications/2014-08-28-regression.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">A Modern Regression Test Suite for TeX Programming (slides)</a>
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + [LaTeX3 and expl3 in 2014: Recent developments (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-and-expl3-in-2014-recent-developments/)
+  + [LaTeX3 and expl3 in 2014: Recent developments (video via River Valley TV)](http://www.zeeba.tv/latex3-and-expl3-in-2014-recent-developments/)
   + [LaTeX3 and expl3 in 2014: Recent developments (slides)]({{site.baseurl}}/publications/2014-08-29-l3talk.pdf)
 
 ***
@@ -196,7 +196,7 @@ which have lifted some of the limitations identified back then.
 ### [TUG 2011 Conference (Trivandrum, India)](http://tug.org/tug2011/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.river-valley.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
+  + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
   + [LaTeX3 architecture and current work in progress (abstract)]({{site.baseurl}}/publications/LaTeX3-architecture-2011-abstract.txt)
   + [LaTeX3 architecture and current work in progress (slides)]({{site.baseurl}}/publications/LaTeX3-architecture-2011-slides.pdf)
 
@@ -224,12 +224,12 @@ In this paper Will discusses Unicode mathematics in the context of LaTeX with th
 
 ### [TUG 2010 Conference (San Francisco, USA)](http://tug.org/tug2010/)
 
-+ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.river-valley.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
++ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + [Exhuming coffins from the last century (video via River Valley TV)](http://www.river-valley.zeeba.tv/exhuming-coffins-from-the-last-century/)
+  + [Exhuming coffins from the last century (video via River Valley TV)](http://www.zeeba.tv/exhuming-coffins-from-the-last-century/)
   + [Exhuming coffins from the last century (slides)]({{site.baseurl}}/publications/exhuming-coffins-from-the-last-century.pdf)
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson):
-  + [Unicode mathematics in LaTeX: advantages and challenges (video via River Valley TV)](http://www.river-valley.zeeba.tv/unicode-mathematics-in-latex-advantages-and-challenges/)
+  + [Unicode mathematics in LaTeX: advantages and challenges (video via River Valley TV)](http://www.zeeba.tv/unicode-mathematics-in-latex-advantages-and-challenges/)
   + [Unicode mathematics in LaTeX: advantages and challenges (slides)]({{site.baseurl}}/publications/unicode-mathematics-in-LaTeX.pdf)
   + [TUB article](https://www.tug.org/TUGboat/tb31-2/tb98robertson.pdf) (pdf)
 
@@ -266,15 +266,15 @@ In this paper [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) discus
 
 ### [TUG 2009 Conference (Notre Dame, Indiana, USA)](http://tug.org/tug2009/)
 
-+ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.river-valley.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
-+ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.river-valley.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
++ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
++ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Next steps for breqn’:
-  + [Video](http://www.river-valley.zeeba.tv/next-steps-for-breqn/) (via River Valley TV)
+  + [Video](http://www.zeeba.tv/next-steps-for-breqn/) (via River Valley TV)
   + [Slides]({{site.baseurl}}/publications/breqn-next-steps.pdf) (pdf)
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), ‘Consolidation of expl3’:
-  + [Video](http://www.river-valley.zeeba.tv/consolidation-of-expl3/) (via River Valley TV)
+  + [Video](http://www.zeeba.tv/consolidation-of-expl3/) (via River Valley TV)
   + [Slides]({{site.baseurl}}/publications/expl3-consolidation.pdf) (pdf)
   + [boolexpr code example]({{site.baseurl}}/publications/expl3-boolexpr-example.pdf) (pdf, see page 14 of the slides for context)
 
@@ -292,9 +292,9 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 ### [TUG 2008 Conference (Cork, Irland)](http://tug.org/tug2008/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-  + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.river-valley.zeeba.tv/two-decades-of-latex-development/)
+  + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.zeeba.tv/two-decades-of-latex-development/)
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
-  + [The galley Module or: How I Learned to Stop Worrying and Love the Whatsit (Video via River Valley TV)](http://www.river-valley.zeeba.tv/the-galley-module/)
+  + [The galley Module or: How I Learned to Stop Worrying and Love the Whatsit (Video via River Valley TV)](http://www.zeeba.tv/the-galley-module/)
 
 ***
 
