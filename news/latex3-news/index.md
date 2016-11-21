@@ -10,6 +10,7 @@ Newsletters by the LaTeX3 project team covering topics of interest in the area o
 
 | Release date | Latex3 News issue (PDF) |
 |:-------------|------------------------:|
+| 2016/11/21 | [LaTeX3 News Issue 10]({{site.baseurl}}/news/latex3-news/l3news10.pdf) |
 | 2014/03/24 | <a href="{{site.baseurl}}/news/latex3-news/l3news09.pdf" target="_blank" onclick="vgwPixelCall('d3e00a314a6e4bb0ba7b09a38e0f6d75');">LaTeX3 News Issue 09</a> |
 | 2012/07/29 | [LaTeX3 News Issue 08]({{site.baseurl}}/news/latex3-news/l3news08.pdf) |
 | 2012/02/26 | [LaTeX3 News Issue 07]({{site.baseurl}}/news/latex3-news/l3news07.pdf) |

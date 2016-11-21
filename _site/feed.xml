@@ -5,9 +5,36 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 04 Nov 2016 12:16:36 +0100</pubDate>
-    <lastBuildDate>Fri, 04 Nov 2016 12:16:36 +0100</lastBuildDate>
+    <pubDate>Mon, 21 Nov 2016 11:29:45 +0100</pubDate>
+    <lastBuildDate>Mon, 21 Nov 2016 11:29:45 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Issue 10 of LaTeX3 news released</title>
+        <description>&lt;h1 id=&quot;tenth-issue-of-latex3-news-released&quot;&gt;Tenth issue of LaTeX3 news released&lt;/h1&gt;
+
+&lt;p&gt;It has been a while since we published an issue on LaTeX3 development topics,
+but that doesn’t mean nothing has happened in the meantime. On the
+contrary.&lt;/p&gt;
+
+&lt;p&gt;Issue number ten of the &lt;a href=&quot;/news/latex3-news/&quot;&gt;LaTeX3
+news&lt;/a&gt; brings some info about testing
+LaTeX (or even non-LaTeX) packages using l3build; refinements to expl3; an experimental
+extension to xparse and on globally optimized pagination of
+documents.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2016 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2016/11/21/issue-10-of-latex3-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/11/21/issue-10-of-latex3-news-released/</guid>
+        
+        <category>latex3</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Future releases of LaTeX will require an eTeX-enabled engine</title>
@@ -370,25 +397,6 @@ follow in the near future.&lt;/p&gt;
         <guid isPermaLink="true">https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</guid>
         
         <category>talks</category>
-        
-        <category>papers</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Papers on &quot;Float Placement&quot; and &quot;Regression Tests&quot;</title>
-        <description>&lt;h2 id=&quot;papers-on-float-placement-and-regression-tests&quot;&gt;Papers on “Float Placement” and “Regression Tests”&lt;/h2&gt;
-
-&lt;p&gt;Two new articles have been uploaded: a paper describing in detail the mysteries of LaTeX’s float placement algorithm (and how to influence it) and a paper presenting an overview about the new regression test concepts that can be used to manage LaTeX code. Both papers have been first published in TUGboat 35#3.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Feb 2015 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2015/02/23/papers-on-float-placement-and-regression-tests/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2015/02/23/papers-on-float-placement-and-regression-tests/</guid>
-        
-        <category>latex2e</category>
         
         <category>papers</category>
         
