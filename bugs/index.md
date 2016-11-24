@@ -49,17 +49,15 @@ to report it to the right people so that it can get fixed (this is, of course, a
 important if you know a workaround that works for you).
 We realize that it is not easy for most users to figure out to whom to
 send a bug report to.  We have therefore written a small
-package [`latexbug.sty`]({{site.baseurl}}/help/bugs/latexbug.sty) that
+package [`latexbug.sty`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) that
 should help in this respect.
-
-
 
 
 
 ### Providing a test file showing the issue
 
 To report a bug it is important to provide a short test file that exhibits the issue.
-The [`latexbug.sty`]({{site.baseurl}}/help/bugs/latexbug.sty) package _should_ be loaded at the very
+The [`latexbug.sty`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) package _should_ be loaded at the very
 top of any such test file used to report a bug in LaTeX as follows:
 
 {% highlight text %}
@@ -70,7 +68,7 @@ top of any such test file used to report a bug in LaTeX as follows:
    ...                          % code showing the problem
 {% endhighlight %}
 
-If the [`latexbug.sty`]({{site.baseurl}}/bugs/latexbug.sty) package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local `texmf` tree so that it will be always found -- how to do that depends on the installation you use).
+If the [`latexbug.sty`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local `texmf` tree so that it will be always found -- how to do that depends on the installation you use).
 
 If you run your test file this package will check if there is any code
 that makes it unlikely that the LaTeX Team can deal with the bug and
@@ -79,21 +77,21 @@ will report that fact to you and asks you to remove that package from
 the test file. If such a package is needed to exhibit the issue, then the
 problem should be reported to the maintainers of this package.  If we
 know how to reach the maintainer
-[`latexbug.sty`]({{site.baseurl}}/bugs/latexbug.sty) will tell
+[`latexbug.sty`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) will tell
 you how to reach them, otherwise you have to find out by other means
 (normally the maintenance address is part of the package documentation or the
 package code).
 
 If you think the bug is in core LaTeX (as maintained
 by the LaTeX Team) but the files
-[`latexbug.sty`]({{site.baseurl}}/bugs/latexbug.sty) complains
+[`latexbug.sty`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) complains
 about are needed to demonstrate the problem, then please continue and send
 the bug report to us but explain this explicitly in your description of bug.
 
 > Bug reports sent to us without a
-> [`\RequirePackage{latexbug}`]({{site.baseurl}}/bugs/latexbug.sty)
+> [`\RequirePackage{latexbug}`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty)
 > line and/or containing third-party code flagged by the
-> [`latexbug`]({{site.baseurl}}/bugs/latexbug.sty) package are
+> [`latexbug`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) package are
 > likely to be closed without any comment in our bug tracking system!
 
 
@@ -113,14 +111,14 @@ this website), everybody will end up being unhappy:
 
 We really appreciate if you take the time to prepare a test file and
 submit a bug report and we hope that by requiring the use of
-[`latexbug`]({{site.baseurl}}/bugs/latexbug.sty) helps with
+[`latexbug`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) helps with
 getting the bug report to the right audience so that it can be
 resolved.
 
 
 ### Submitting the bug report
 
-If [`latexbug`]({{site.baseurl}}/bugs/latexbug.sty) has indicated
+If [`latexbug`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
 the LaTeX Team) then please [submit your test file by going to the bug
 upload page and upload your test
@@ -138,3 +136,6 @@ Thank you for your understanding.
 If you think you've found a bug on our website you can report it to
 the [website team]({{site.baseurl}}/contact/#website-team). If you do
 submit a report, thanks for taking the time!
+
+
+<img src="https://ssl-vg03.met.vgwort.de/na/f3144f6c13e442b499326009da2a7ede" width="1" height="1" alt="">
