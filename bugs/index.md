@@ -6,13 +6,38 @@ description: "LaTeX is a developing piece of software, and therefore has bugs. L
 
 # Bugs in LaTeX software
 
-LaTeX has been in existence since the mid-eighties. Besides the kernel of
-LaTeX and some core packages that are all maintained by the LaTeX
-Project team there are several thousand add-on packages developed and
-maintained by many different people around the world. And like every software
-(especially software that is evolving) LaTeX does have bugs: some
-obscure ones existing for a long time without being discovered and other freshly appearing
-because of new or modified code.
+<div class="row">
+  <div class="col cell1of2">
+    <ul class="toc">
+      <li><a href="#introduction" title="Introduction">Introduction</a></li>
+      <li><a href="#searching-through-already-reported-bugs" title="Searching through already reported bugs">Searching through bugs</a></li>
+      <li><a href="#how-do-i-report-a-bug" title="How do I report a bug?">Reporting new bugs</a></li>
+    <ul  class="toc">
+      <li><a href="#providing-a-test-file-showing-the-issue" title="Providing a test file showing the issue">Providing a test file</a></li>
+      <li><a href="#a-bit-of-background" title="A bit of background">Some background</a></li>
+      <li><a href="#submitting-the-bug-report" title="Submitting the bug report">Submitting a bug report</a></li>
+    </ul>
+      <li><a href="#reporting-website-bugs" title="Reporting website bugs">Website bugs</a></li>
+    </ul>
+  </div>
+  <div class="col cell1of2">
+      <h2 id="introduction">Introduction</h2>
+      <p>
+      LaTeX has been in existence since the mid-eighties. Besides the kernel of
+      LaTeX and some core packages that are all maintained by the LaTeX
+      Project team there are several thousand add-on packages developed and
+      maintained by many different people around the world.
+      </p>
+      <p>
+      And like every software
+      (especially software that is evolving) LaTeX does have bugs: some
+      obscure ones existing for a long time without being discovered and other freshly appearing
+      because of new or modified code.
+      </p>
+  </div>
+</div>
+
+
 
 The LaTeX Team is very conscious of the fact that stability as well as
 backwards compatibility are very important assets in the LaTeX
@@ -42,9 +67,19 @@ typesetting problem in the LaTeX universe. So this is is a bit of a
 "the glass is half full or half empty" situation.
 
 
+## Searching through already reported bugs
+
+The LaTeX Project Team maintains <a
+href="{{site.baseurl}}/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">a
+bugs database</a> for the core LaTeX software (LaTeX kernel + packages
+maintained by the team). It is possible to search that database to see
+if a problem has already been reported or perhaps already has a
+solution or workaround.
+
+
 ## How do I report a bug?
 
-If you think you've found a bug in LaTeX software then it is important
+If you think you've found a new bug in LaTeX software then it is important
 to report it to the right people so that it can get fixed (this is, of course, also
 important if you know a workaround that works for you).
 We realize that it is not easy for most users to figure out to whom to
@@ -131,11 +166,14 @@ Thank you for your understanding.
 
 
 
-## Website Bug
+## Reporting website bugs
 
 If you think you've found a bug on our website you can report it to
 the [website team]({{site.baseurl}}/contact/#website-team). If you do
 submit a report, thanks for taking the time!
 
+***
+
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
 
 <img src="https://ssl-vg03.met.vgwort.de/na/f3144f6c13e442b499326009da2a7ede" width="1" height="1" alt="">

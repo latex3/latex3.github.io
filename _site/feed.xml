@@ -5,9 +5,43 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 Nov 2016 14:29:44 +0100</pubDate>
-    <lastBuildDate>Fri, 25 Nov 2016 14:29:44 +0100</lastBuildDate>
+    <pubDate>Sun, 27 Nov 2016 23:10:50 +0100</pubDate>
+    <lastBuildDate>Sun, 27 Nov 2016 23:10:50 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New procedure for reporting LaTeX bugs</title>
+        <description>&lt;h1 id=&quot;new-procedure-for-reporting-latex-bugs&quot;&gt;New procedure for reporting LaTeX bugs&lt;/h1&gt;
+
+&lt;p&gt;The LaTeX Project Team maintains
+&lt;a href=&quot;/cgi-bin/ltxbugs2html?introduction=yes&amp;amp;state=open&quot;&gt;a
+    bugs database&lt;/a&gt; for the core LaTeX software (LaTeX kernel +
+packages maintained by the team).
+Due to the fact that we get more and more bug reports that we can’t
+help with (as they are for one of the many third-party packages out
+there) we have written a small package that helps with classifying
+issues and that identifies the correct addressee for a bug report.
+This package should be used in every test file showing a bug prior to
+reporting that bug to us.&lt;/p&gt;
+
+&lt;p&gt;The new procedure and some helpful information is now described in a
+dedicated &lt;a href=&quot;/bugs&quot;&gt;bugs page that you find here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 27 Nov 2016 00:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2016/11/27/bugs-procedure/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/11/27/bugs-procedure/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>bugs</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Future releases of LaTeX will require an eTeX-enabled engine</title>
@@ -370,25 +404,6 @@ follow in the near future.&lt;/p&gt;
         <guid isPermaLink="true">https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</guid>
         
         <category>talks</category>
-        
-        <category>papers</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Papers on &quot;Float Placement&quot; and &quot;Regression Tests&quot;</title>
-        <description>&lt;h2 id=&quot;papers-on-float-placement-and-regression-tests&quot;&gt;Papers on “Float Placement” and “Regression Tests”&lt;/h2&gt;
-
-&lt;p&gt;Two new articles have been uploaded: a paper describing in detail the mysteries of LaTeX’s float placement algorithm (and how to influence it) and a paper presenting an overview about the new regression test concepts that can be used to manage LaTeX code. Both papers have been first published in TUGboat 35#3.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Feb 2015 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2015/02/23/papers-on-float-placement-and-regression-tests/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2015/02/23/papers-on-float-placement-and-regression-tests/</guid>
-        
-        <category>latex2e</category>
         
         <category>papers</category>
         
