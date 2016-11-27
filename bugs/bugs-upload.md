@@ -4,21 +4,47 @@ title: "Bug Upload - Report a bug"
 description: "If you think you’ve found a bug with core LaTeX, then please report it to us! You can report it by going to this bug information upload page."
 ---
 
-<h1>Submit a LaTeX bug report</h1>
+# Procedure to submit a LaTeX bug report
 
-<p>Hey, you think you found a bug in LaTeX? Pity! But this page allows you to upload a report to our bugs database.</p>
+Hey, you think you found a bug in LaTeX? Pity! But this page allows you to upload a report to our bugs database.
 
-<h2>Before submitting a LaTeX bug</h2>
-<p>Some important hints:</p>
-<ol>
-  <li><strong>Check that there really is a bug</strong>, by writing a short, self-contained document that shows the problem. You should make sure that the document doesn't use any third-party packages or document classes. If the bug turns out to be with third-party software then please contact the developer, and not us!</li>
-  <li><strong>Check to see if the bug has already been reported.</strong> You can do this by searching the <a href="{{site.baseurl}}/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">LaTeX bugs database</a>. If the bug has already been reported then there may be a known solution to your problem.</li>
-  <li><strong>For bugs related to LaTeX3 code</strong> (expl3, xparse and so on): Do not report the bug here but instead use the <a href="https://github.com/latex3/svn-mirror/issues">GitHub issue tracker</a>.</li>
-  <li><strong>Run LaTeX on the test file.</strong> Send the test file and the resulting transcript file using the form below.</li>
-</ol>
-<p>Now you are ready to submit a LaTeX bug report.</p>
 
-<h2>Submit a LaTeX bug</h2>
+## Before submitting a LaTeX bug
+
+A few important preparation steps to go through:
+
+ 1. **Check to see if the bug has already been
+    reported.** You can do this by searching
+    the <a href="{{site.baseurl}}/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">LaTeX
+    bugs database</a>. If the bug has already been reported then there
+    may be a documented workaround for your problem.
+ 1. **Check that there really is a bug**, by writing a
+    short, self-contained document that shows the problem. This file should start with the line
+    [`\RequirePackage{latexbug}`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty). Starting with
+    this package will help you to
+    make sure that the document doesn't use any third-party packages or
+    document classes. If the bug turns out to be with third-party
+    software then please contact the developer, and not us!
+ 1. **For bugs related to LaTeX3 code** (expl3, xparse
+    and so on): Do not report the bug here but instead use
+    the <a href="https://github.com/latex3/svn-mirror/issues">GitHub
+    issue tracker</a>.
+ 1. **Run LaTeX on the test file.** Send the test file
+    and the resulting transcript file using the form below.
+
+Now you are ready to submit a LaTeX bug report.
+
+> But please remember: Bug reports sent to us without a
+> [`\RequirePackage{latexbug}`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty) line and/or
+> containing third-party code flagged by the [`latexbug`](https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty)
+> package are likely to be closed without any
+> comment in our bug tracking system!
+
+
+
+
+## Submit a LaTeX bug
+
 <form action="{{site.baseurl}}/cgi-bin/latex-bugs-upload.cgi" method="POST" enctype="multipart/form-data">
   <ol>
     <li>
@@ -27,7 +53,7 @@ description: "If you think you’ve found a bug with core LaTeX, then please rep
         <select name="Category">
            <option value="amslatex">AMS LaTeX</option>
            <option value="babel">Babel</option>
-           <option value="graphics">Graphics and colour</option>
+           <option value="graphics">Graphics and color</option>
            <option selected value="latex">LaTeX</option>
           <!-- <option value="mfnfss">Metafont fonts</option> -->
            <option value="psnfss">PostScript fonts</option>
@@ -48,7 +74,7 @@ description: "If you think you’ve found a bug with core LaTeX, then please rep
       <p>Your email:<br>
         <input type="TEXT" name="email" size="60">
       </p>
-      <p>Summary description:<br>
+      <p>One-line summary description:<br>
         <input type="TEXT" name="summary" size="60">
       </p>
       <p>Short problem description:<br>

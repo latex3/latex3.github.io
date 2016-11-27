@@ -5,9 +5,43 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Nov 2016 22:15:47 +0100</pubDate>
-    <lastBuildDate>Mon, 21 Nov 2016 22:15:47 +0100</lastBuildDate>
+    <pubDate>Sun, 27 Nov 2016 23:19:36 +0100</pubDate>
+    <lastBuildDate>Sun, 27 Nov 2016 23:19:36 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New procedure for reporting LaTeX bugs</title>
+        <description>&lt;h1 id=&quot;new-procedure-for-reporting-latex-bugs&quot;&gt;New procedure for reporting LaTeX bugs&lt;/h1&gt;
+
+&lt;p&gt;The LaTeX Project Team maintains
+&lt;a href=&quot;/cgi-bin/ltxbugs2html?introduction=yes&amp;amp;state=open&quot;&gt;a
+    bugs database&lt;/a&gt; for the core LaTeX software (LaTeX kernel +
+packages maintained by the team).
+Due to the fact that we get more and more bug reports that we can’t
+help with (as they are for one of the many third-party packages out
+there) we have written a small package that helps with classifying
+issues and that identifies the correct addressee for a bug report.
+This package should be used in every test file showing a bug prior to
+reporting that bug to us.&lt;/p&gt;
+
+&lt;p&gt;The new procedure and some helpful information is now described in a
+dedicated &lt;a href=&quot;/bugs&quot;&gt;bugs page that you find here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 27 Nov 2016 00:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2016/11/27/bugs-procedure/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/11/27/bugs-procedure/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>bugs</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Issue 10 of LaTeX3 news released</title>
@@ -359,46 +393,6 @@ follow in the near future.&lt;/p&gt;
         <category>latex2e</category>
         
         <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Talks from the 2015 and 2014 TUG conferences</title>
-        <description>&lt;h2 id=&quot;talks-from-the-2015-and-2014-tug-conferences&quot;&gt;Talks from the 2015 and 2014 TUG conferences&lt;/h2&gt;
-
-&lt;p&gt;During the TUG conferences 2014 in Boston and 2015 in Darmstadt we gave a number of talks on several topics related to LaTeX. These are now online as video presentations together with some slide show material.&lt;/p&gt;
-
-&lt;p&gt;They cover topics such as&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2015
-    &lt;ul&gt;
-      &lt;li&gt;LaTeX compatibility policy change (&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
-      &lt;li&gt;Unicode math update (&lt;a href=&quot;/about/team/#will-robertson&quot;&gt;Will&lt;/a&gt;)&lt;/li&gt;
-      &lt;li&gt;Unicode characters in LaTeX (&lt;a href=&quot;/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt;)&lt;/li&gt;
-      &lt;li&gt;\parshape woes (&lt;a href=&quot;/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt;)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;2014
-    &lt;ul&gt;
-      &lt;li&gt;l3build a new regression test suite, also available as TUB paper (&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
-      &lt;li&gt;Recent development around expl3 and LaTeX3 (&lt;a href=&quot;/about/team/#will-robertson&quot;&gt;Will&lt;/a&gt;/&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;They can be found on the project &lt;a href=&quot;/publications/&quot;&gt;article page&lt;/a&gt;. Enjoy!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 12 Aug 2015 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2015/08/12/talks-from-the-2015-and-2014-tug-conferences/</guid>
-        
-        <category>talks</category>
-        
-        <category>papers</category>
         
         
         <category>news</category>
