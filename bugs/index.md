@@ -11,12 +11,13 @@ description: "LaTeX is a developing piece of software, and therefore has bugs. L
     <ul class="toc">
       <li><a href="#introduction" title="Introduction">Introduction</a></li>
       <li><a href="#searching-through-already-reported-bugs" title="Searching through already reported bugs">Searching through bugs</a></li>
-      <li><a href="#how-do-i-report-a-bug" title="How do I report a bug?">Reporting new bugs</a></li>
-    <ul  class="toc">
-      <li><a href="#providing-a-test-file-showing-the-issue" title="Providing a test file showing the issue">Providing a test file</a></li>
-      <li><a href="#a-bit-of-background" title="A bit of background">Some background</a></li>
-      <li><a href="#submitting-the-bug-report" title="Submitting the bug report">Submitting a bug report</a></li>
-    </ul>
+      <li><a href="#how-do-i-report-a-bug" title="How do I report a bug?">Reporting new bugs</a>
+	<ul class="toc">
+	  <li><a href="#providing-a-test-file-showing-the-issue" title="Providing a test file showing the issue">Providing a test file</a></li>
+	  <li><a href="#a-bit-of-background" title="A bit of background">Some background</a></li>
+	  <li><a href="#submitting-the-bug-report" title="Submitting the bug report">Submitting a bug report</a></li>
+	</ul>
+      </li>
       <li><a href="#reporting-website-bugs" title="Reporting website bugs">Website bugs</a></li>
     </ul>
   </div>
