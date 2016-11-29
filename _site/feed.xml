@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Nov 2016 13:58:34 +0100</pubDate>
-    <lastBuildDate>Mon, 28 Nov 2016 13:58:34 +0100</lastBuildDate>
+    <pubDate>Tue, 29 Nov 2016 23:31:03 +0100</pubDate>
+    <lastBuildDate>Tue, 29 Nov 2016 23:31:03 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -213,7 +213,12 @@ page&lt;/a&gt;.&lt;/p&gt;
         <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
         <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
 
-&lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank presented a paper on “A Framework for Globally Optimized Pagination” that discusses an algorithm and its theoretical foundation for globally optimized pagination using a dynamic programming approach. The paper was awarded best paper of the conference.&lt;/p&gt;
+&lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank
+presented a paper on “A Framework for Globally Optimized Pagination”
+that discusses an algorithm and its theoretical foundation for
+globally optimized pagination using a dynamic programming
+approach. The paper was awarded with the “ACM Best Paper Award” of the
+conference.&lt;/p&gt;
 
 &lt;p&gt;The full paper can be downloaded from the ACM Digital library through a link on the &lt;a href=&quot;/publications/&quot;&gt;Publications
 page&lt;/a&gt;.&lt;/p&gt;
