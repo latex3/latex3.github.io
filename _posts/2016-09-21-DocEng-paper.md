@@ -10,7 +10,12 @@ tags: [latex, luatex, research, DocEng, dynamic programming]
 
 # A Framework for Globally Optimized Pagination
 
-At DocEng '16 the ACM Symposium on Document Engineering Frank presented a paper on "A Framework for Globally Optimized Pagination" that discusses an algorithm and its theoretical foundation for globally optimized pagination using a dynamic programming approach. The paper was awarded best paper of the conference.
+At DocEng '16 the ACM Symposium on Document Engineering Frank
+presented a paper on "A Framework for Globally Optimized Pagination"
+that discusses an algorithm and its theoretical foundation for
+globally optimized pagination using a dynamic programming
+approach. The paper was awarded with the "ACM Best Paper Award" of the
+conference.
 
 The full paper can be downloaded from the ACM Digital library through a link on the [Publications
 page]({{site.baseurl}}/publications/).
