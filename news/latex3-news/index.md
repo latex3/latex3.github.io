@@ -20,3 +20,6 @@ Newsletters by the LaTeX3 project team covering topics of interest in the area o
 | 2010/01/10 | [LaTeX3 News Issue 03]({{site.baseurl}}/news/latex3-news/l3news03.pdf)<br>[Nouvelles de LaTeX3 03, traduction française]({{site.baseurl}}/news/latex3-news/l3news03-fr.pdf) |
 | 2009/06/10 | [LaTeX3 News Issue 02]({{site.baseurl}}/news/latex3-news/l3news02.pdf)<br>[Nouvelles de LaTeX3 02, traduction française]({{site.baseurl}}/news/latex3-news/l3news02-fr.pdf) |
 | 2009/02/11 | [LaTeX3 News Issue 01]({{site.baseurl}}/news/latex3-news/l3news01.pdf)<br>[Nouvelles de LaTeX3 01, traduction française]({{site.baseurl}}/news/latex3-news/l3news01-fr.pdf) |
+
+
+<div id="div_vgwpixel"></div>

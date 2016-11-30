@@ -44,3 +44,6 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 | 1994/12/01 | [LaTeX2e News Issue 02]({{site.baseurl}}/news/latex2e-news/ltnews02.pdf) |
 | 1994/06/01 | [LaTeX2e News Issue 01]({{site.baseurl}}/news/latex2e-news/ltnews01.pdf) |
 
+
+
+<div id="div_vgwpixel"></div>
