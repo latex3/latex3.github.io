@@ -18,15 +18,15 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 </div>
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
-|:-------------|--------------------------|------------------------------:|
+|:-------------|--------------------------|-------------------------:|
 | 2016/03/31 | [LaTeX2e News Issue 25]({{site.baseurl}}/news/latex2e-news/ltnews25.pdf) | LuaTeX support; `amsmath` maintenance; Small code updates               |
 | 2016/02/01 | [LaTeX2e News Issue 24]({{site.baseurl}}/news/latex2e-news/ltnews24.pdf) | LuaTeX support; Unicode engines; East European accents; `\ShellEscape` |
 | 2015/10/01 | [LaTeX2e News Issue 23]({{site.baseurl}}/news/latex2e-news/ltnews23.pdf) | LuaTeX support; Extra floats; Comma accents; `inputenc` and `multicol` updates |
 | 2015/01/01 | [LaTeX2e News Issue 22]({{site.baseurl}}/news/latex2e-news/ltnews22.pdf) | Bug-fix policy change; `latexrelease` package; Kernel updates; `l3build usage`|
-| 2014/05/01 | [LaTeX2e News Issue 21]({{site.baseurl}}/news/latex2e-news/ltnews21.pdf) |
-| 2011/06/27 | [LaTeX2e News Issue 20]({{site.baseurl}}/news/latex2e-news/ltnews20.pdf) |
-| 2009/10/15 | [LaTeX2e News Issue 19]({{site.baseurl}}/news/latex2e-news/ltnews19.pdf) |
-| 2005/12/01 | [LaTeX2e News Issue 17]({{site.baseurl}}/news/latex2e-news/ltnews17.pdf) |
+| 2014/05/01 | [LaTeX2e News Issue 21]({{site.baseurl}}/news/latex2e-news/ltnews21.pdf) | Bug-fix release; New `fltrace`package; Code updates in several areas |
+| 2011/06/27 | [LaTeX2e News Issue 20]({{site.baseurl}}/news/latex2e-news/ltnews20.pdf) | Bug-fix release; Code updates in several areas |
+| 2009/10/15 | [LaTeX2e News Issue 19]({{site.baseurl}}/news/latex2e-news/ltnews19.pdf) | New SVN code repository for LaTeX |
+| 2005/12/01 | [LaTeX2e News Issue 17]({{site.baseurl}}/news/latex2e-news/ltnews17.pdf) | Small LPPL update; New guide on font encodings; Code updates in several areas |
 | 2003/12/01 | [LaTeX2e News Issue 16]({{site.baseurl}}/news/latex2e-news/ltnews16.pdf) |
 | 2003/12/01 | [LaTeX2e News Issue 15]({{site.baseurl}}/news/latex2e-news/ltnews15.pdf) |
 | 2001/06/01 | [LaTeX2e News Issue 14]({{site.baseurl}}/news/latex2e-news/ltnews14.pdf) |
