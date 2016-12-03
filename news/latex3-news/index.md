@@ -10,16 +10,16 @@ Newsletters by the LaTeX3 project team covering topics of interest in the area o
 
 | Release date | LaTeX3 News issue (PDF) | Important Topics covered |
 |:-------------|-------------------------|-------------------------:|
-| 2016/11/21 | [LaTeX3 News Issue 10]({{site.baseurl}}/news/latex3-news/l3news10.pdf) |
-| 2014/03/24 | <a href="{{site.baseurl}}/news/latex3-news/l3news09.pdf" target="_blank" onclick="vgwPixelCall('d3e00a314a6e4bb0ba7b09a38e0f6d75');">LaTeX3 News Issue 09</a> |
-| 2012/07/29 | [LaTeX3 News Issue 08]({{site.baseurl}}/news/latex3-news/l3news08.pdf) |
-| 2012/02/26 | [LaTeX3 News Issue 07]({{site.baseurl}}/news/latex3-news/l3news07.pdf) |
-| 2011/08/09 | [LaTeX3 News Issue 06]({{site.baseurl}}/news/latex3-news/l3news06.pdf) |
-| 2011/01/28 | [LaTeX3 News Issue 05]({{site.baseurl}}/news/latex3-news/l3news05.pdf) |
-| 2010/08/25 | [LaTeX3 News Issue 04]({{site.baseurl}}/news/latex3-news/l3news04.pdf) |
-| 2010/01/10 | [LaTeX3 News Issue 03]({{site.baseurl}}/news/latex3-news/l3news03.pdf)<br>[Nouvelles de LaTeX3 03, traduction française]({{site.baseurl}}/news/latex3-news/l3news03-fr.pdf) |
-| 2009/06/10 | [LaTeX3 News Issue 02]({{site.baseurl}}/news/latex3-news/l3news02.pdf)<br>[Nouvelles de LaTeX3 02, traduction française]({{site.baseurl}}/news/latex3-news/l3news02-fr.pdf) |
-| 2009/02/11 | [LaTeX3 News Issue 01]({{site.baseurl}}/news/latex3-news/l3news01.pdf)<br>[Nouvelles de LaTeX3 01, traduction française]({{site.baseurl}}/news/latex3-news/l3news01-fr.pdf) |
+| 2016/11/21 | [LaTeX3 News Issue 10]({{site.baseurl}}/news/latex3-news/l3news10.pdf) | `l3build` for testing general LaTeX packages; `expl3` refinements; `xparse` extension; Globally optimized pagination framework |
+| 2014/03/24 | <a href="{{site.baseurl}}/news/latex3-news/l3news09.pdf" target="_blank" onclick="vgwPixelCall('d3e00a314a6e4bb0ba7b09a38e0f6d75');">LaTeX3 News Issue 09</a> |  `expl3` in the comunity; Logo for the LaTeX3 programming language; Article: "What can you do for the LaTeX3 project?" |
+| 2012/07/29 | [LaTeX3 News Issue 08]({{site.baseurl}}/news/latex3-news/l3news08.pdf) | Extended floating point support; More on regex with `expl3`; Separation internal/external code; Code naming conventions |
+| 2012/02/26 | [LaTeX3 News Issue 07]({{site.baseurl}}/news/latex3-news/l3news07.pdf) | After Big Bang; A regex engine for `expl3` |
+| 2011/08/09 | [LaTeX3 News Issue 06]({{site.baseurl}}/news/latex3-news/l3news06.pdf) | Bruno joins the team; Big Bang reimplementations; LaTeX3 code now on GitHub |
+| 2011/01/28 | [LaTeX3 News Issue 05]({{site.baseurl}}/news/latex3-news/l3news05.pdf) | LPPL now OSI-approved; reflections on 2010; plans for 2011 |
+| 2010/08/25 | [LaTeX3 News Issue 04]({{site.baseurl}}/news/latex3-news/l3news04.pdf) | `expl3` in practice; new developments |
+| 2010/01/10 | [LaTeX3 News Issue 03]({{site.baseurl}}/news/latex3-news/l3news03.pdf)<br>[Nouvelles de LaTeX3 03, traduction française]({{site.baseurl}}/news/latex3-news/l3news03-fr.pdf) | `xparse`and `xtemplate` released |
+| 2009/06/10 | [LaTeX3 News Issue 02]({{site.baseurl}}/news/latex3-news/l3news02.pdf)<br>[Nouvelles de LaTeX3 02, traduction française]({{site.baseurl}}/news/latex3-news/l3news02-fr.pdf) | Joseph and Will join the team; Code release for TeX Live; Plans for 2009 |
+| 2009/02/11 | [LaTeX3 News Issue 01]({{site.baseurl}}/news/latex3-news/l3news01.pdf)<br>[Nouvelles de LaTeX3 01, traduction française]({{site.baseurl}}/news/latex3-news/l3news01-fr.pdf) | First newsletter specifically on LaTeX3 development |
 
 
 <div id="div_vgwpixel"></div>
