@@ -5,9 +5,56 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 03 Dec 2016 23:31:37 +0100</pubDate>
-    <lastBuildDate>Sat, 03 Dec 2016 23:31:37 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 20:51:23 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 20:51:23 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Videos from the memorial for Sebastian Rahtz (13.2.1955 - 15.3.2016)</title>
+        <description>&lt;h1 id=&quot;videos-from-the-memorial-for-sebastian-sebastian-rahtzhttpsenwikipediaorgwikisebastianrahtz-1321955---1532016&quot;&gt;Videos from the memorial for &lt;a href=&quot;https://en.wikipedia.org/wiki/Sebastian_Rahtz&quot;&gt;Sebastian Sebastian Rahtz&lt;/a&gt; (13.2.1955 - 15.3.2016)&lt;/h1&gt;
+
+&lt;p&gt;Earlier this year our good friend and colleague Sebastian Rahtz passed
+away — with him the TeX community lost one of its very influencial
+members.&lt;/p&gt;
+
+&lt;p&gt;On September 27th 2016 the Oxford e-Research Centre hosted a memorial
+session for Sebastian at Wolfram College, Oxford titled “SPQR a
+digital legacy: what Sebastian Patrick Quintus Rahtz did for us”.
+Videos of the event have now been made available and they are
+certainly worth watching.&lt;/p&gt;
+
+&lt;p&gt;Phil Taylor talks about &lt;a href=&quot;http://podcasts.ox.ac.uk/tex-and-latex-software&quot;&gt;Sebastian’s contributions to the TeX
+world&lt;/a&gt; and Anne
+Trefethen reads &lt;a href=&quot;http://podcasts.ox.ac.uk/tex-live-don-knuth-remembers-spqr&quot;&gt;a short statement from Don
+Knuth&lt;/a&gt;. I
+very much enjoyed listening to Joe Talbot’s talk about &lt;a href=&quot;http://podcasts.ox.ac.uk/what-sebastian-taught-us&quot;&gt;“What
+Sebastian Taught
+Us”&lt;/a&gt; and there are
+&lt;a href=&quot;http://podcasts.ox.ac.uk/series/sebastian-rahtz-celebration-his-work&quot;&gt;many more presentations that are all worth
+watching&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wrote a short memorial on Sebastian for the Technische Komödie (the
+newsletter of the German TeX User’s Group (DANTE)). It was also was
+also translated to English as a TUGBoat article. Both articles can be
+found on the &lt;a href=&quot;/publications/&quot;&gt;Publications page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sebastian and his legacy will stay with us.&lt;/p&gt;
+
+&lt;p&gt;Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 07 Dec 2016 00:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2016/12/07/SPQR/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2016/12/07/SPQR/</guid>
+        
+        <category>latex</category>
+        
+        <category>Sebastian Rahtz</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New procedure for reporting LaTeX bugs</title>
@@ -375,25 +422,6 @@ follow in the near future.&lt;/p&gt;
         <pubDate>Thu, 11 Feb 2016 01:00:00 +0100</pubDate>
         <link>https://latex-project.org//news/2016/02/11/issue-24-of-latex2e-news-released/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2016/02/11/issue-24-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 23 of LaTeX2e news released</title>
-        <description>&lt;h2 id=&quot;issue-23-of-latex2e-news-released&quot;&gt;Issue 23 of LaTeX2e news released&lt;/h2&gt;
-
-&lt;p&gt;Beginning of October a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in &lt;a href=&quot;/news/latex2e-news/ltnews23.pdf&quot;&gt;ltnews23.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Oct 2015 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2015/10/13/issue-23-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2015/10/13/issue-23-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
