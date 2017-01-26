@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Issue 26 of LaTeX2e news released"
+title: "New LaTeX release --- Issue 26 of LaTeX2e news released"
 date: 2017-01-26 00:00:00
 description: "Issue 26 of LaTeX2e news released. Describing updates and changes made in the new LaTeX maintenance release."
 excerpt: "Issue 26 of LaTeX2e news released. It describes updates and changes made in the new LaTeX maintenance release."

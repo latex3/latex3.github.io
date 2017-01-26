@@ -5,9 +5,36 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Jan 2017 17:31:24 +0100</pubDate>
-    <lastBuildDate>Fri, 13 Jan 2017 17:31:24 +0100</lastBuildDate>
+    <pubDate>Thu, 26 Jan 2017 19:30:48 +0100</pubDate>
+    <lastBuildDate>Thu, 26 Jan 2017 19:30:48 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New LaTeX release --- Issue 26 of LaTeX2e news released</title>
+        <description>&lt;h1 id=&quot;new-latex-release-----issue-26-of-latex2e-news-released&quot;&gt;New LaTeX release — Issue 26 of LaTeX2e news released&lt;/h1&gt;
+
+&lt;p&gt;We have made a new LaTeX distribution with improves the support for
+the Unicode engines and has a number of other updates and
+improvements. Also important: we now officially require the engines to
+support the eTeX primitives in order to build a LaTeX format (all
+major engines do that already for a long time).&lt;/p&gt;
+
+&lt;p&gt;The most important changes and additions are documented in
+ltnews26.pdf. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Jan 2017 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2017/01/26/issue26-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/01/26/issue26-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Videos from the memorial for Sebastian Rahtz (13.2.1955 - 15.3.2016)</title>
@@ -403,25 +430,6 @@ follow in the near future.&lt;/p&gt;
         <pubDate>Fri, 25 Mar 2016 01:00:00 +0100</pubDate>
         <link>https://latex-project.org//news/2016/03/25/issue-25-of-latex2e-news-released/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2016/03/25/issue-25-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 24 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;issue-24-of-latex2e-news-released&quot;&gt;Issue 24 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;Beginning of Februrary a new LaTeX maintenance relase was published and should by now be available for update with all major distributions. The most important changes and additions are documented in &lt;a href=&quot;/news/latex2e-news/ltnews24.pdf&quot;&gt;ltnews24.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 11 Feb 2016 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2016/02/11/issue-24-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/02/11/issue-24-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
