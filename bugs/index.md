@@ -6,10 +6,13 @@ description: "LaTeX is a developing piece of software, and therefore has bugs. L
 
 # Bugs in LaTeX software
 
+
+
 <div class="row">
   <div class="col cell1of2">
     <ul class="toc">
       <li><a href="#introduction" title="Introduction">Introduction</a></li>
+      <li><a href="#policy-on-layout-and-interface-deficiencies" title="Policy on layout and interface deficiencies">Layout and interface deficiencies</a></li>
       <li><a href="#searching-through-already-reported-bugs" title="Searching through already reported bugs">Searching through bugs</a></li>
       <li><a href="#how-do-i-report-a-bug" title="How do I report a bug?">Reporting new bugs</a>
 	<ul class="toc">
@@ -66,6 +69,28 @@ time this model is also one of the reasons why LaTeX is still very
 popular and why you will find a solution for essentially any
 typesetting problem in the LaTeX universe. So this is is a bit of a
 "the glass is half full or half empty" situation.
+
+
+## Policy on layout and interface deficiencies
+
+Upfront we should probably stress that "deficiencies" in the design of
+of the standard document classes (`article`, `report` and `book`) as
+well a questionable but long established interface behavior of
+commands is something that we will normally not change, even if we can
+all agree that a different behavior or a different layout would have
+been a better choice. You are, of course, welcome to report issues in
+these areas, using the procedure explained below, but in all likelihood such
+reports will get suspended.
+
+The reason is is that the kernel interfaces and the document classes
+have been used for many years in essentially all documents (even
+documents using different classes often build them upon the standard
+classes in the background) and thus such changes for would break or as
+a minimum noticeably change nearly all existing documents.  See also
+the file [LaTeX2e News Issue
+07]({{site.baseurl}}/news/latex2e-news/ltnews07.pdf) with regard to
+this policy.
+
 
 
 ## Searching through already reported bugs

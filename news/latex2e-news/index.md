@@ -37,7 +37,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 | 1998/12/01 | [LaTeX2e News Issue 10]({{site.baseurl}}/news/latex2e-news/ltnews10.pdf) | Five years of LaTeX2e |
 | 1998/06/01 | [LaTeX2e News Issue 09]({{site.baseurl}}/news/latex2e-news/ltnews09.pdf) |
 | 1997/12/01 | [LaTeX2e News Issue 08]({{site.baseurl}}/news/latex2e-news/ltnews08.pdf) |
-| 1997/06/01 | [LaTeX2e News Issue 07]({{site.baseurl}}/news/latex2e-news/ltnews07.pdf) |
+| 1997/06/01 | [LaTeX2e News Issue 07]({{site.baseurl}}/news/latex2e-news/ltnews07.pdf) | Bug policy on standard classes; `\normalsfcodes` |
 | 1996/12/01 | [LaTeX2e News Issue 06]({{site.baseurl}}/news/latex2e-news/ltnews06.pdf) |
 | 1996/06/01 | [LaTeX2e News Issue 05]({{site.baseurl}}/news/latex2e-news/ltnews05.pdf) |
 | 1995/12/01 | [LaTeX2e News Issue 04]({{site.baseurl}}/news/latex2e-news/ltnews04.pdf) |
