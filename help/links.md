@@ -28,16 +28,14 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 ## Contributed Documentation
 + [TeXdoc Online - TeX and LaTeX Documentation](http://www.texdoc.net/)  
   Dedicated server for querying and browsing manuals, guides and package documentation. 
-+ [Help On LaTeX Commands](http://www.giss.nasa.gov/tools/latex/ltx-2.html)  
-  Hypertext Help with LaTeX by the National Aeronautics and Space Administration (NASA) at the Goddard Institute for Space Studies.
 + [An Introduction to Using TeX](http://www.math.harvard.edu/texman/)  
   Contains a brief explanation of how to typeset mathematical papers in the LaTeX2e flavor of TeX.
 + [LaTeX: an introduction](http://www.techscribe.co.uk/ta/latex-introduction.pdf)  
-  This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was recently published in 'Communicator', Spring 2006.
+  This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was published in 'Communicator', Spring 2006.
 + [The (Not So) Short Introduction to LaTeX2e](http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf)  
   This document by Tobias Oetiker et al is a good beginner's tutorial. There are a number of [translations](ftp://ctan.tug.org/tex-archive/info/lshort/) available. 
-+ [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](http://texdoc.net/texmf-dist/doc/latex/latex2e-help-texinfo/latex2e.pdf)  
-  This document is an unofficial reference manual for LaTeX, a document preparation system. The document is developed further and you find the current development version and new releases [here](http://home.gna.org/latexrefman/).
++ [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](http://ctan.org/pkg/latex2e-help-texinfo)  
+  This document is an unofficial reference manual for LaTeX, a document preparation system available in several languages. The document is developed further and you find the current development version and new releases [here](http://home.gna.org/latexrefman/).
 + [Formatting information -- An introduction to typesetting with LaTeX](http://latex.silmaril.ie/formattinginformation/)  
   A fairly comprehensive online-book about LaTeX written by Peter Flynn.
 
