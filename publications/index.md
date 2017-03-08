@@ -41,6 +41,10 @@ description: "Selection of links to PDF versions of various articles published b
        target="_blank"
        onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">English
        version</a> published in TUGboat, volume 37 number 2, 2016.
+  + <a href="http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/"
+       target="_blank"
+       onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">Video recorded by River Valley TV
+       version</a> at TUG 2016 conference, Toronto.
 
 A memorial for our friend and colleague Sebastian who passed away far too young.
 
@@ -69,7 +73,8 @@ The above link enables free download of the paper from the ACM Digital Library.
 ### [TUG 2016 Conference (Toronto, Canada)](http://tug.org/tug2016/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + Alice goes floating (video via River Valley TV)  - to appear soon
+  + <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (video recorded by River Valley TV, audio near the end unfortunately failed)</a>
+  
   + <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (slides with speaker notes intermixed)</a>
 
 

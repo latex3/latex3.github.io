@@ -5,9 +5,36 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 24 Feb 2017 21:53:54 +0100</pubDate>
-    <lastBuildDate>Fri, 24 Feb 2017 21:53:54 +0100</lastBuildDate>
+    <pubDate>Wed, 08 Mar 2017 10:06:02 +0100</pubDate>
+    <lastBuildDate>Wed, 08 Mar 2017 10:06:02 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Videos from the 2016 TUG conference</title>
+        <description>&lt;h2 id=&quot;videos-from-the-2016-tug-conference-toronto-are-online&quot;&gt;Videos from the 2016 TUG conference, Toronto are online&lt;/h2&gt;
+
+&lt;p&gt;Most of the talks of the TUG conferences 2016 in Toronto got recorded and are now online at &lt;a href=&quot;http://zeeba.tv/conferences/tug-2016&quot;&gt;Zeeba TV&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Two talks at that conference have been given by &lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2670672cff324b98bafa9be09e193fff');&quot;&gt;Alice goes floating — global optimized pagination&lt;/a&gt; (near the end of the video the audio unfortunately failed)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');&quot;&gt;Honoring the life and work of Sebastian Rahtz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The related articles and slide material can be found on the project &lt;a href=&quot;/publications/&quot;&gt;publication page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Mar 2017 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2017/03/08/videos-from-2016-conference/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/03/08/videos-from-2016-conference/</guid>
+        
+        <category>talks</category>
+        
+        <category>videos</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New LaTeX release --- Issue 26 of LaTeX2e news released</title>
@@ -415,25 +442,6 @@ follow in the near future.&lt;/p&gt;
         <category>luatex</category>
         
         <category>research</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issue 25 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;issue-25-of-latex2e-news-released&quot;&gt;Issue 25 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;The most important changes and additions are documented in &lt;a href=&quot;/news/latex2e-news/ltnews25.pdf&quot;&gt;ltnews25.pdf&lt;/a&gt;. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 25 Mar 2016 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2016/03/25/issue-25-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/03/25/issue-25-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
