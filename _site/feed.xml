@@ -5,9 +5,69 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 08 Mar 2017 10:06:02 +0100</pubDate>
-    <lastBuildDate>Wed, 08 Mar 2017 10:06:02 +0100</lastBuildDate>
+    <pubDate>Thu, 09 Mar 2017 09:10:28 +0100</pubDate>
+    <lastBuildDate>Thu, 09 Mar 2017 09:10:28 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New snapshot (SVN 6984) of LaTeX3 code released to CTAN</title>
+        <description>&lt;h1 id=&quot;latex3-code-snapshot-svn-6984-released-to-ctan&quot;&gt;LaTeX3 code snapshot (SVN 6984) released to CTAN&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt; recently submitted the following updates of LaTeX3 material to CTAN.&lt;/p&gt;
+
+&lt;h2 id=&quot;xparse-package&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; package&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adjustments to xparse to allow document commands to continue
+to function inside csnames: note that the team expect to give
+a clear statement on the scope of use of document commands in
+the near future&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\NewExpandableDocumentCommand&lt;/code&gt; and related commands have been
+added to &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\IfValue(TF)&lt;/code&gt; is now marked as stable&lt;/li&gt;
+  &lt;li&gt;There have been some questions about the (removed) k-type
+argument: see &lt;a href=&quot;http://tex.stackexchange.com/q/357187&quot;&gt;StackExchange question&lt;/a&gt; for
+some transitional code (note that the replacement e-type
+&lt;em&gt;is experimental&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;xfp-package&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xfp&lt;/code&gt; package&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;New package to provide a document level interface to the LaTeX3 FPU:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;\fpeval&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;expl3-programming-interface&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; programming interface&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New &lt;code class=&quot;highlighter-rouge&quot;&gt;\tl_range:nnn&lt;/code&gt; function&lt;/li&gt;
+  &lt;li&gt;Reduction in use of &lt;code class=&quot;highlighter-rouge&quot;&gt;\c_&amp;lt;number&amp;gt;&lt;/code&gt; constants in favour of explicit
+numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;l3build-system&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; system&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Normalisation of lines from &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; added&lt;/li&gt;
+  &lt;li&gt;Better performance of &lt;code class=&quot;highlighter-rouge&quot;&gt;cmdcheck&lt;/code&gt; target when working with
+file bundles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As usual, this may take a day or so to propagate.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Mar 2017 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2017/03/09/new-expl-ctan/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/03/09/new-expl-ctan/</guid>
+        
+        <category>latex3</category>
+        
+        <category>expl3</category>
+        
+        <category>snapshot</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Videos from the 2016 TUG conference</title>
@@ -409,39 +469,6 @@ New York, NY, USA, 2015.&lt;/p&gt;
         <category>DocEng</category>
         
         <category>dynamic programming</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Globally optimized pagination</title>
-        <description>&lt;h1 id=&quot;globally-optimized-pagination-with-latex&quot;&gt;Globally optimized pagination with LaTeX&lt;/h1&gt;
-
-&lt;p&gt;At the TUG 2016 conference in Toronto Frank gave a presentation on
-globally optimized paginiation using LuaTeX as the processing
-engine.
-The presentation demonstrated a framework for automatically producing
-an optimal pagination for documents (containing floats) such as Alice
-in Wonderland.&lt;/p&gt;
-
-&lt;p&gt;The slide deck (or rather the mindmap he used) and the demonstration
-documents are now available on the &lt;a href=&quot;/publications/&quot;&gt;Publications
-page&lt;/a&gt;; the video of the talk will
-follow in the near future.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 17 Aug 2016 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2016/08/17/slides-toronto/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/08/17/slides-toronto/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>luatex</category>
-        
-        <category>research</category>
         
         
         <category>news</category>
