@@ -16,7 +16,6 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
       <li><a href="#faqs">FAQ's</a></li>
       <li><a href="#question-and-answer-websites">Question & Answer Websites</a></li>
       <li><a href="#tutorials">Tutorials</a></li>
-      <li><a href="#directories">Web Directories</a></li>
       <li><a href="#user-groups">User Groups</a></li>
       <li><a href="#news-groups">News Groups</a></li>
     </ul>
@@ -72,11 +71,6 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   A collection of tutorials meant to get people going with LaTeX, by Andrew Roberts.
 + [Using Imported Graphics in LaTeX2e](ftp://ctan.tug.org/tex-archive/info/epslatex.pdf)  
   This article by Keith Reckdahl shows you how to do (almost) anything with graphics: side-by-side, rotated, etc.
-
-## Directories
-
-+ [Open Directory Project (DMOZ)](http://dmoz.org/Computers/Software/Typesetting/TeX/LaTeX/)  
-  An excellent place to start surfing the Web for information about TeX and LaTeX.
 
 ## User Groups
 
