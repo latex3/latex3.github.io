@@ -426,9 +426,10 @@ ul.all-news-posts p {display: none;}
 ul.all-news-posts {margin: 0 0 2.5em;}
 
 /* toc */
-.toc { list-style: none; }
+.toc { background: #f8f9fa; border: 1px solid #999; border-radius: 4px; list-style: none; padding: .6em;}
 .toc li:before { content: "\27A4 \2002 \2005"; color: #777; white-space: nowrap;}
 .toc li { border-bottom: 1px dotted #999; margin: 0; padding: .2em .5em;}
+.toc li:last-child { border: none;}
 .toc li a { display: inline-block; width: auto; word-break: break-all;}
 .toc a:hover { color: #000; text-decoration: none; }
 .toc li ul { margin: 0.5em 0 0.5em 1.2em;}
