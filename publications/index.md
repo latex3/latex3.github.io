@@ -72,10 +72,14 @@ The above link enables free download of the paper from the ACM Digital Library.
 ### [TUG 2016 Conference (Toronto, Canada)](http://tug.org/tug2016/)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (video recorded by River Valley TV; audio near the end unfortunately fails)</a>
-  
-  + <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating (slides with speaker notes intermixed)</a>
-
+  + <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/"
+       target="_blank"
+       onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice
+       goes floating</a> (video recorded by River Valley TV; audio near the end unfortunately fails)
+  + <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf"
+       target="_blank"
+       onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice
+       goes floating</a> (slides with speaker notes intermixed)
 
 In this talk a framework for globally optimizing pagination of
 documents containing floats is demonstrated. As the main example Alice
