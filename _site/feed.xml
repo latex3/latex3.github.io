@@ -5,9 +5,9 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 18 Mar 2017 16:22:04 +0100</pubDate>
-    <lastBuildDate>Sat, 18 Mar 2017 16:22:04 +0100</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <pubDate>Wed, 22 Mar 2017 12:21:23 +0100</pubDate>
+    <lastBuildDate>Wed, 22 Mar 2017 12:21:23 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>New snapshot (SVN 6984) of LaTeX3 code released to CTAN</title>
@@ -75,9 +75,11 @@ file bundles&lt;/li&gt;
 
 &lt;p&gt;Most of the talks of the TUG conferences 2016 in Toronto got recorded and are now online at &lt;a href=&quot;http://zeeba.tv/conferences/tug-2016&quot;&gt;Zeeba TV&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Two talks at that conference have been given by &lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;:
-  + &lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&#39;2670672cff324b98bafa9be09e193fff&#39;);&quot;&gt;Alice goes floating — global optimized pagination&lt;/a&gt; (near the end of the video the audio unfortunately failed)
-  + &lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&#39;b68fdc1c180d4d1197553ed47e83b4fc&#39;);&quot;&gt;Honoring the life and work of Sebastian Rahtz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Two talks at that conference have been given by &lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2670672cff324b98bafa9be09e193fff');&quot;&gt;Alice goes floating — global optimized pagination&lt;/a&gt; (near the end of the video the audio unfortunately failed)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');&quot;&gt;Honoring the life and work of Sebastian Rahtz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;The related articles and slide material can be found on the project &lt;a href=&quot;/publications/&quot;&gt;publication page&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -369,7 +371,7 @@ page&lt;/a&gt;.&lt;/p&gt;
       </item>
     
       <item>
-        <title>DocEng &#39;16: A Framework for Globally Optimized Pagination</title>
+        <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
         <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
 
 &lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank
