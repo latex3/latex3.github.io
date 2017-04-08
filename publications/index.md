@@ -75,7 +75,7 @@ The above link enables free download of the paper from the ACM Digital Library.
   + <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/"
        target="_blank"
        onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice
-       goes floating</a> (video recorded by River Valley TV; audio near the end unfortunately fails)
+       goes floating</a> (video recorded by River Valley TV; audio near the end fails unfortunately)
   + <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf"
        target="_blank"
        onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice
