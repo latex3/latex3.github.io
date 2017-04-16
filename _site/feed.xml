@@ -5,9 +5,33 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 22 Mar 2017 12:21:23 +0100</pubDate>
-    <lastBuildDate>Wed, 22 Mar 2017 12:21:23 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Apr 2017 23:26:08 +0200</pubDate>
+    <lastBuildDate>Sun, 16 Apr 2017 23:26:08 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New LaTeX release --- Issue 27 of LaTeX2e news released</title>
+        <description>&lt;h1 id=&quot;new-latex-release-----issue-27-of-latex2e-news-released&quot;&gt;New LaTeX release — Issue 27 of LaTeX2e news released&lt;/h1&gt;
+
+&lt;p&gt;We have made a new LaTeX distribution in time for the new TeX live
+2017 distribution.&lt;/p&gt;
+
+&lt;p&gt;The most important changes and additions are documented in
+ltnews27.pdf. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Apr 2017 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2017/04/16/issue27-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/04/16/issue27-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New snapshot (SVN 6984) of LaTeX3 code released to CTAN</title>
@@ -77,7 +101,7 @@ file bundles&lt;/li&gt;
 
 &lt;p&gt;Two talks at that conference have been given by &lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2670672cff324b98bafa9be09e193fff');&quot;&gt;Alice goes floating — global optimized pagination&lt;/a&gt; (near the end of the video the audio unfortunately failed)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2670672cff324b98bafa9be09e193fff');&quot;&gt;Alice goes floating — global optimized pagination&lt;/a&gt; (near the end of the video the audio failed unfortunately)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');&quot;&gt;Honoring the life and work of Sebastian Rahtz&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -364,111 +388,6 @@ page&lt;/a&gt;.&lt;/p&gt;
         <category>latex</category>
         
         <category>Sebastian Rahtz</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>DocEng '16: A Framework for Globally Optimized Pagination</title>
-        <description>&lt;h1 id=&quot;a-framework-for-globally-optimized-pagination&quot;&gt;A Framework for Globally Optimized Pagination&lt;/h1&gt;
-
-&lt;p&gt;At DocEng ‘16 the ACM Symposium on Document Engineering Frank
-presented a paper on “A Framework for Globally Optimized Pagination”
-that discusses an algorithm and its theoretical foundation for
-globally optimized pagination using a dynamic programming
-approach. The paper was awarded with the “ACM Best Paper Award” of the
-conference.&lt;/p&gt;
-
-&lt;p&gt;The full paper can be downloaded from the ACM Digital library through a link on the &lt;a href=&quot;/publications/&quot;&gt;Publications
-page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;abstract-of-the-paper&quot;&gt;Abstract of the Paper&lt;/h3&gt;
-
-&lt;p&gt;Pagination problems deal with questions around transforming a source
-text stream into a formatted document by dividing it up into
-individual columns and pages, including adding auxiliary elements that
-have some relationship to the source stream data but may allow a
-certain amount of variation in placement (such as figures or
-footnotes).&lt;/p&gt;
-
-&lt;p&gt;Traditionally the pagination problem has been approached by separating
-it into one of micro-typography (e.g., breaking text into paragraphs,
-also known as h&amp;amp;j) and one of macro-typography (e.g., taking a galley
-of already formatted paragraphs and breaking them into columns and
-pages) without much interaction between the two.&lt;/p&gt;
-
-&lt;p&gt;While early solutions for both problem spaces used simple greedy
-algorithms, Knuth and Plass introduced in the ’80s a global-fit
-algorithm for line breaking that optimizes the breaks across the whole
-paragraph [1]. This algorithm was implemented in TeX’82 [2] and has
-since kept its crown as the best available solution for this
-space. However, for macro-typography there has been no (successful)
-attempt to provide globally optimized page layout: all systems to date
-(including TeX) use greedy algorithms for pagination. Various problems
-in this area have been researched (e.g., [3,4,5,6]) and the literature
-documents some prototype development. But none of these prototypes
-have been made widely available to the research community or ever made
-it into a generally usable and publicly available system.&lt;/p&gt;
-
-&lt;p&gt;This paper presents a framework for a global-fit algorithm for page
-breaking based on the ideas of Knuth/Plass. It is implemented in such
-a way that it is directly usable without additional executables with
-any modern TeX installation. It therefore can serve as a test bed for
-future experiments and extensions in this space. At the same time a
-cleaned-up version of the current prototype has the potential to
-become a production tool for the huge number of TeX users world-wide.&lt;/p&gt;
-
-&lt;p&gt;The paper also discusses two already implemented extensions that
-increase the flexibility of the pagination process: the ability to
-automatically consider existing flexibility in paragraph length (by
-considering paragraph variations with different numbers of lines [7])
-and the concept of running the columns on a double spread a line long
-or short. It concludes with a discussion of the overall approach, its
-inherent limitations and directions for future research.&lt;/p&gt;
-
-&lt;p&gt;[1] D. E. Knuth and M. F. Plass. Breaking Paragraphs into
-Lines. Software-Practice and Experience, 11(11):1119-1184,
-Nov. 1981.&lt;/p&gt;
-
-&lt;p&gt;[2] D. E. Knuth. TeX: The Program, volume B of Computers
-and Typesetting. Addison-Wesley, Reading, MA, USA, 1986.&lt;/p&gt;
-
-&lt;p&gt;[3] A. Brüggemann-Klein, R. Klein, and S. Wohlfeil. Computer science in
-perspective. Chapter On the Pagination of Complex Documents, pages
-49-68. Springer-Verlag New York, Inc., New York, NY, USA, 2003.&lt;/p&gt;
-
-&lt;p&gt;[4] C. Jacobs, W. Li, and D. H. Salesin. Adaptive document layout via
-manifold content. In Second International Workshop on Web Document
-Analysis (wda2003), Liverpool, UK, 2003, 2003.&lt;/p&gt;
-
-&lt;p&gt;[5] A. Holkner. Global multiple objective line breaking. Master’s
-thesis, School of Computer Science and Information Technology, RMIT
-University, Melbourne, Victoria, Australia, 2006.&lt;/p&gt;
-
-&lt;p&gt;[6] P. Ciancarini, A. Di Iorio, L. Furini, and
-F. Vitali. High-quality pagination for publishing. Software-Practice
-and Experience, 42(6):733-751, June 2012.&lt;/p&gt;
-
-&lt;p&gt;[7] T. Hassan and A. Hunter. Knuth-Plass revisited: Flexible
-line-breaking for automatic document layout. In Proceedings of the
-2015 ACM Symposium on Document Engineering, DocEng ‘15, pages 17-20,
-New York, NY, USA, 2015.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 21 Sep 2016 00:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2016/09/21/DocEng-paper/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/09/21/DocEng-paper/</guid>
-        
-        <category>latex</category>
-        
-        <category>luatex</category>
-        
-        <category>research</category>
-        
-        <category>DocEng</category>
-        
-        <category>dynamic programming</category>
         
         
         <category>news</category>
