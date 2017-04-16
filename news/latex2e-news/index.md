@@ -19,6 +19,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2017/04/15 | [LaTeX2e News Issue 27]({{site.baseurl}}/news/latex2e-news/ltnews27.pdf) | ISO Date support;TU encoding improvements; Hyphenation and default language; Small code updates |
 | 2017/01/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews26.pdf" target="_blank" onclick="vgwPixelCall('d609e7f786234a29a7eeab8746cc671e');">LaTeX2e News Issue 26</a> | eTeX support now required; Default encodings for Unicode engines; Updates to `amsmath` and `tools` packages; New `latexbug` package; Vertical spacing in old documents |
 | 2016/03/31 | [LaTeX2e News Issue 25]({{site.baseurl}}/news/latex2e-news/ltnews25.pdf) | LuaTeX support; `amsmath` maintenance now done by the LaTeX Project Team; Small code updates |
 | 2016/02/01 | [LaTeX2e News Issue 24]({{site.baseurl}}/news/latex2e-news/ltnews24.pdf) | LuaTeX support; Unicode engines; East European accents; `\ShellEscape` |
