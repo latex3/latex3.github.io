@@ -19,7 +19,19 @@ These concepts, as well as their implementation, are under discussion on the lis
 
 `SUBSCRIBE LATEX-L Your Name`
 
-Gmane hosts a web interface, including archives, of the LATEX-L list: [http://news.gmane.org/group/gmane.comp.tex.latex.latex3]( http://news.gmane.org/group/gmane.comp.tex.latex.latex3)
+
+### Listserv web interface
+
+There exists a [web interface to the
+list](https://listserv.uni-heidelberg.de/cgi-bin/wa?A0=LATEX-L) that
+can be used to read through the posts sorted by topic and month. By
+default this is available to the general public in a read-only
+mode. If you like to be post using this interface, you have to be
+subscribed to the list and you need to log on (which is an option on
+the page).
+
+
+### Archived posts
 
 This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:
 
@@ -27,6 +39,22 @@ This list is archived and, after subscription, you can retrieve older posts to i
 
 where yy=Year and mm=Month, e.g.
 
-`GET LATEX-L LOG9910`
+`GET LATEX-L LOG1703`
 
-for all messages sent in October 1999. 
+for all messages sent in March 2017.
+
+
+
+### Gmane interface
+
+Gmane also hosted a web interface, including archives, of the LATEX-L
+list but this became unavailable after that site changed ownership:
+[http://news.gmane.org/group/gmane.comp.tex.latex.latex3](http://news.gmane.org/group/gmane.comp.tex.latex.latex3)
+
+If that state continues much longer we may have to give up hoping and
+remove the above link (for now 2017/04) we keep it listed even though
+it doesn't work.
+
+
+
+

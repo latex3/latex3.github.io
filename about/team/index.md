@@ -8,12 +8,12 @@ description: "List of people currently involved in the LaTeX project and a list 
 
 LaTeX is based on [Donald E. Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)'s TeX typesetting language or certain extensions. LaTeX was first developed in 1985 by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), and is now being maintained and developed by the [LaTeX3 Project]({{site.baseurl}}/latex3/). 
 
-<div class="row">
-<div class="col cell1of2">
 <h2>Current Team Members</h2>
 
 People currently involved in the LaTeX3 project are (in more or less chronological order): 
 
+<div class="row">
+<div class="col cell1of2">
 <ul class="team">
   <li id="frank-mittelbach">
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
@@ -53,9 +53,15 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="http://www.cl.cam.ac.uk/users/rf/"><span class="fa fa-external-link-square"></span>http://www.cl.cam.ac.uk/users/rf/</a></li>
     </ul>
   </li>
+
   <li id="morten-høgholm">
     <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
   </li>
+</ul>
+</div>
+
+<div class="col cell1of2">
+<ul class="team">
   <li id="javier-bezos">
     <h2>Javier Bezos <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
@@ -96,9 +102,14 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
 </ul>
-  </div>
+</div>
+</div>
+
+<h2>Former Team Members</h2>
+<p>Former members of the project team were: Denys Duchier, Michael Downes, Alan Jeffrey, Martin Schröder, <a href="http://thomas-lotze.de/">Thomas Lotze</a>.</p>
+
+    
+<div class="row">
   <div class="col cell1of2">
-    <h2>Former Team Members</h2>
-    <p>Former members of the project team were: Denys Duchier, Michael Downes, Alan Jeffrey, Martin Schröder, <a href="http://thomas-lotze.de/">Thomas Lotze</a>.</p>
   </div>
 </div>
