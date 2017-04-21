@@ -19,8 +19,8 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
-      <li><a href="https://github.com/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/FrankMittelbach</a></li>
       <li><a href="http://tex.stackexchange.com/users/10109/frank-mittelbach"><span class="fa fa-stack-exchange"></span>http://tex.stackexchange.com/users/10109</a></li>
+      <li><a href="https://github.com/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/FrankMittelbach</a></li>
       <li><a href="https://de.linkedin.com/in/frankmittelbach"><span class="fa fa-linkedin-square"></span>https://de.linkedin.com/in/frankmittelbach</a></li>
     </ul>
   </li>
@@ -57,17 +57,17 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
   <li id="morten-høgholm">
     <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
   </li>
-</ul>
-</div>
-
-<div class="col cell1of2">
-<ul class="team">
   <li id="javier-bezos">
     <h2>Javier Bezos <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.tex-tipografia.com/"><span class="fa fa-external-link-square"></span>http://www.tex-tipografia.com/</a></li>
     </ul>
   </li>
+</ul>
+</div>
+
+<div class="col cell1of2">
+<ul class="team">
   <li id="will-robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
@@ -101,9 +101,20 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="https://www.linkedin.com/in/jonasjacek"><span class="fa fa-linkedin-square"></span>https://www.linkedin.com/in/jonasjacek</a></li>
     </ul>
   </li>
+  <li id="enrico-gregorio">
+    <h2>Enrico Gregorio <br><span class="role">LaTeX3 Team</span></h2>
+    <ul class="team">
+      <li><a href="http://profs.scienze.univr.it/~gregorio/egtex.html"><span class="fa fa-external-link-square"></span>http://profs.scienze.univr.it/~gregorio/egtex.html</a></li>
+      <li><a href="https://tex.stackexchange.com/users/4427/egreg"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/4427</a></li>
+      <li><a href="https://github.com/eg9"><span class="fa fa-github-square"></span>https://github.com/eg9</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </div>
+
+
+
 
 <h2>Former Team Members</h2>
 <p>Former members of the project team were: Denys Duchier, Michael Downes, Alan Jeffrey, Martin Schröder, <a href="http://thomas-lotze.de/">Thomas Lotze</a>.</p>
