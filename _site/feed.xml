@@ -5,9 +5,35 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 08 Jun 2017 21:27:49 +0200</pubDate>
-    <lastBuildDate>Thu, 08 Jun 2017 21:27:49 +0200</lastBuildDate>
+    <pubDate>Sat, 10 Jun 2017 15:52:33 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Jun 2017 15:52:33 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Talk from the 2017 TUG/Bachotek conference</title>
+        <description>&lt;h2 id=&quot;globally-optimizing-documents-with-floats&quot;&gt;Globally optimizing documents with floats&lt;/h2&gt;
+
+&lt;p&gt;At the TUG/Bachotek conference Frank presented further results (and the
+theoretical background) from his work on globally optimizing the
+pagination of documents. This is a follow up to the DocEng 2016
+article “A Framework for Globally Optimized Pagination”.&lt;/p&gt;
+
+&lt;p&gt;The slide material and handouts from this tak as well as the earlier
+article can be found on the project &lt;a href=&quot;/publications/&quot;&gt;publication
+page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Jun 2017 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2017/06/10/talk-2017-conference/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/06/10/talk-2017-conference/</guid>
+        
+        <category>talks</category>
+        
+        <category>videos</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New LaTeX release --- Issue 27 of LaTeX2e news released</title>
@@ -357,37 +383,6 @@ has reached a stable state.&lt;/p&gt;
         <guid isPermaLink="true">https://latex-project.org//news/2016/09/29/luatex1/</guid>
         
         <category>luatex</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Remembering Sebastian Rahtz (13.2.1955 - 15.3.2016)</title>
-        <description>&lt;h1 id=&quot;remembering-sebastian-sebastian-rahtzhttpsenwikipediaorgwikisebastianrahtz-1321955---1532016&quot;&gt;Remembering &lt;a href=&quot;https://en.wikipedia.org/wiki/Sebastian_Rahtz&quot;&gt;Sebastian Sebastian Rahtz&lt;/a&gt; (13.2.1955 - 15.3.2016)&lt;/h1&gt;
-
-&lt;p&gt;Earlier this year our good friend and colleague Sebastian Rahtz passed
-away — with him the TeX community lost one of its very influencial
-members.
-On September 27th 2016 the Oxford e-Research Centre will host a memorial
-session for Sebastian at Wolfram College, Oxford titled &lt;a href=&quot;https://www.oerc.ox.ac.uk/sebastian-rahtz&quot;&gt;“SPQR a
-digital legacy: what Sebastian Patrick Quintus Rahtz did for
-us”&lt;/a&gt;. The event is open to anybody after registration.&lt;/p&gt;
-
-&lt;p&gt;Frank wrote a short memorial on Sebastian for the Technische Komödie
-(the newsletter of the German TeX User’s Group (DANTE)). It was also was
-also translated to English as a TUGBoat article. Both articles can be found on the &lt;a href=&quot;/publications/&quot;&gt;Publications
-page&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 25 Sep 2016 00:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2016/09/25/SPQR/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/09/25/SPQR/</guid>
-        
-        <category>latex</category>
-        
-        <category>Sebastian Rahtz</category>
         
         
         <category>news</category>
