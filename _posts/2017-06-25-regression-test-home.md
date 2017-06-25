@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New home for the regression test suite"
-date: 2017-06-27 00:00:00
+date: 2017-06-25 00:00:00
 description: "New home for the regression test suite"
 excerpt: "The team have developed l3build starting from the need to support work
 on LaTeX3/expl3 code. We have been using it for other work, most
@@ -10,7 +10,7 @@ categories: news
 tags: [code,l3build]
 ---
 
-## New home for the l3buid regression test suite
+## New home for the `l3build` regression test suite
 
 The team have developed l3build starting from the need to support work
 on LaTeX3/expl3 code. We have been using it for other work, most
@@ -34,19 +34,21 @@ Please report issues, etc., with l3build in this new location.
 
 ## The l3build system can be useful to any package writer
 
-The regression test suite carries "l3" in its name but it was designed
+The regression test suite carries "l3" in its name, but it was designed
 to support any typical TeX code development, i.e., it is in no way
-tied to LaTeX3 development, but very useful to any package writer who
+tied to LaTeX3 development.
+
+It can therefore be very useful to any package writer who
 likes to set up
 
  - automated testing of code
- - autometed generation of documentation
+ - automated generation of documentation
  - automated production of releases suitable for sending to CTAN
 
 You will find an introduction in the TUGboat article "l3build — A
 modern Lua test suite for TeX programming" from 2014 that can be found
-on the project [publication page]({{site.baseurl}}/publications/).
-Check it out if you hear about this test suite for the first time!
+on the project [publication page]({{site.baseurl}}/publications/#publications-in-2014).
+Check it out, in case you hear about this test suite for the first time!
 
 Regards
 
