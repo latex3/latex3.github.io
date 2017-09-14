@@ -21,7 +21,6 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    json (2.0.2)
     kramdown (1.12.0)
     libv8 (3.16.14.15)
     liquid (3.0.6)
@@ -51,7 +50,6 @@ DEPENDENCIES
   jekyll
   jekyll-last-modified-at
   jekyll-watch
-  json
   therubyracer
 
 BUNDLED WITH
