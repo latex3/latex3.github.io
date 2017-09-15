@@ -36,7 +36,7 @@ description: "Selection of links to PDF versions of various articles published b
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 38, number 2, 2017
 
-A short article discussing how to to produce table columns with a fixed width using the array package.
+A short article discussing how to produce table columns with a fixed width using the array package.
 
 ***
 
