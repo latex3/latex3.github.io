@@ -31,6 +31,62 @@ description: "Selection of links to PDF versions of various articles published b
 
 ## Publications in 2017
 
+
+### <a href="https://doceng.org/newsite/doceng2017/" target="_blank">ACM DocEng 2017 Symposium (Valletta, Malta)</a>
+
+
+<!-- ACM DL Article:  Effective Floating Strategies -->
+<div class="acmdlitem" id="item3103015"><img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/><a href="https://dl.acm.org/authorize?N46503" title="Effective Floating Strategies" target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies</a>
+<div style="margin-left:25px"><a href="http://dl.acm.org/author_page.cfm?id=81100433073" >Frank Mittelbach</a><br />DocEng '17 Proceedings of the 2017 ACM Symposium on Document Engineering, 2017</div></div>
+<!-- ACM DL Bibliometrics: Effective Floating Strategies-->
+<div class="acmdlstat" id ="stats3103015"><iframe src="https://dl.acm.org/authorizestats?N46503" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
+
+
+This paper presents an extension to the general framework for globally
+optimized pagination described in Mittelbach (2016). The extended
+algorithm supports automatic placement of floats as part of the
+optimization. It uses a flexible constraint model that allows for the
+implementation of typical typographic rules that can be weighted
+against each other to support different application scenarios.
+
+By "flexible" we mean that the rules of typographic presentation of
+the content of a document element are not fixed---but neither are they
+completely arbitrary; also, some of these rules are absolute whereas
+others are in the form of preferences.
+
+It is easy to see that without restrictions the float placement
+possibilities grow exponentially if the number of floats has a linear
+relation to the document size. It is therefore important to restrict
+the objective function used for optimization in a way that the
+algorithm does not have to evaluate all theoretically possible
+placements while still being guaranteed to find an optimal solution.
+
+Different objective functions are being evaluated against typical
+typographic requirements in order to arrive at a system that is both
+rich in its expressiveness of modeling a large class of pagination
+applications while at the same time is capable of solving the
+optimization problem in an acceptable time frame for realistic input
+data.
+
+
+
+
+The above link enables free download of the paper from the ACM Digital Library.
+
+
++ Presentation of the paper as given in Malta
+  + <a href="{{site.baseurl}}/publications/2017-09-doceng2017-slides.pdf"
+       target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies
+       (slides -- large 23Mb)</a> 
+
+
+
+***
+
+
+
+
+
 ### <a href="{{site.baseurl}}/publications/tb119mitt-tabular-fixed-width.pdf" target="_blank" onclick="vgwPixelCall('44195a435fe84ceeaffcc8850bbeae1a');">LaTeX table columns with fixed widths</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb119mitt-tabular-fixed-width.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
