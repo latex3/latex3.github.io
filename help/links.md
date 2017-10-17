@@ -34,7 +34,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [The (Not So) Short Introduction to LaTeX2e](http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf)  
   This document by Tobias Oetiker et al is a good beginner's tutorial. There are a number of [translations](ftp://ctan.tug.org/tex-archive/info/lshort/) available. 
 + [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](http://ctan.org/pkg/latex2e-help-texinfo)  
-  This document is an unofficial reference manual for LaTeX, a document preparation system available in several languages. The document is developed further and you find the current development version and new releases [here](http://home.gna.org/latexrefman/).
+  This document is an unofficial reference manual for LaTeX developed over many years by various volunteers. It is available in several languages, i.e., English, French and Spanish. The document is developed further and you find the current development versions and new releases [here](https://puszcza.gnu.org.ua/software/latexrefman/).
 + [Formatting information -- An introduction to typesetting with LaTeX](http://latex.silmaril.ie/formattinginformation/)  
   A fairly comprehensive online-book about LaTeX written by Peter Flynn.
 
