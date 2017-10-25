@@ -203,6 +203,21 @@ This article discusses certain aspects of TeX's approach to line breaking and it
 
 ## Publications in 2014
 
+
+### UK-TUG meeting in 2014
+
+Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 development topics. 
+
++ [David Carlisle]({{site.baseurl}}/about/team/#david-carlisle):
+  + [Fixing LaTeX2e](https://vimeo.com/113430065) a talk describing the plans for a better maintenance approach (compared to fixltx2e which doesn't work)
+
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-right):
+  + [Reliable releases: l3build](https://vimeo.com/113834342) a new build environment for LaTeX packages and documentation (works with all flavors)! Unfortunately, the demo session on l3build is not vsisible in the video as it only provides audio and displays of the slides used.
+  + [Case changing in the Unicode world](https://vimeo.com/113830623)
+
+***
+
+
 ### <a href="{{site.baseurl}}/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
@@ -235,6 +250,8 @@ Regression tests are an important tool in any moderately complex programming env
   + [LaTeX3 and expl3 in 2014: Recent developments (slides)]({{site.baseurl}}/publications/2014-08-29-l3talk.pdf)
 
 ***
+
+
 
 ## Publications in 2013
 
