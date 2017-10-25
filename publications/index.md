@@ -215,6 +215,8 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
   + [Reliable releases: l3build](https://vimeo.com/113834342) a new build environment for LaTeX packages and documentation (works with all flavors)! Unfortunately, the demo session on l3build is not vsisible in the video as it only provides audio and displays of the slides used.
   + [Case changing in the Unicode world](https://vimeo.com/113830623)
 
+A companion to Joseph's talk on l3build is the published paper on this topic by Will and Frank below.
+
 ***
 
 
