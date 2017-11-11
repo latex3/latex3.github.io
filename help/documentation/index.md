@@ -20,14 +20,14 @@ If you know about a list of TeX and related documentation not listed here, pleas
 ## Documentation distributed with LaTeX
 
 LaTeX is described in LaTeX2e for authors which is available as a
-<a href="{{site.baseurl}}/help/documentation/usrguide.tex"
++ <a href="{{site.baseurl}}/help/documentation/usrguide.tex"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX source
    document</a>
-or as a
-<a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
+  or as a
+  <a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">PDF
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> compiled PDF
    document</a>.
 
 More advanced documentation about LaTeX, which is available via the net includes: 
