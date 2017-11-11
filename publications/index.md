@@ -32,7 +32,7 @@ description: "Selection of links to PDF versions of various articles published b
 ## Publications in 2017
 
 
-### <a href="https://doceng.org/newsite/doceng2017/" target="_blank">ACM DocEng 2017 Symposium (Valletta, Malta)</a>
+### ACM DocEng 2017 <a href="https://doceng.org/newsite/doceng2017/" target="_blank">Symposium (Valletta, Malta)</a>
 
 
 <!-- ACM DL Article:  Effective Floating Strategies -->
@@ -76,7 +76,7 @@ A short article discussing how to produce table columns with a fixed width using
 
 ***
 
-### <a href="http://tug.org/tug2017/" target="_blank">TUG/GUST 2017 Conference (Bachotek, Poland)</a>
+### TUG/GUST 2017 <a href="http://tug.org/tug2017/" target="_blank">Conference (Bachotek, Poland)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + <a href="{{site.baseurl}}/publications/fmittelbach-1b-2017.pdf"
@@ -119,7 +119,7 @@ A memorial for our friend and colleague Sebastian who passed away far too young.
 
 
 
-### <a href="http://doceng2016.caa.tuwien.ac.at/" target="_blank">ACM DocEng 2016 Symposium (Vienna, Austria)</a>
+### ACM DocEng 2016 <a href="http://doceng2016.caa.tuwien.ac.at/" target="_blank">Symposium (Vienna, Austria)</a>
 
 
 <!-- ACM DL Article: A General Framework for Globally Optimized Pagination -->
@@ -141,7 +141,7 @@ The above link enables free download of the paper from the ACM Digital Library.
 
 
 
-### <a href="http://tug.org/tug2016/" target="_blank">TUG 2016 Conference (Toronto, Canada)</a>
+### TUG 2016 <a href="http://tug.org/tug2016/" target="_blank">Conference (Toronto, Canada)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/"
@@ -173,7 +173,7 @@ publically available as further research and development is needed.
 
 ## Publications in 2015
 
-### <a href="http://tug.org/tug2015/" target="_blank">TUG 2015 Conference (Darmstadt, Germany)</a>
+### TUG 2015 <a href="http://tug.org/tug2015/" target="_blank">Conference (Darmstadt, Germany)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [Twenty-one is only half the truth (video via River Valley TV)](http://www.zeeba.tv/twenty-one-is-only-half-the-truth/)
@@ -242,7 +242,7 @@ Regression tests are an important tool in any moderately complex programming env
 ***
 
 
-### <a href="http://tug.org/tug2014/" target="_blank">TUG 2014 Conference (Portland, USA)</a>
+### TUG 2014 <a href="http://tug.org/tug2014/" target="_blank">Conference (Portland, USA)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [A Modern Regression Test Suite for TeX Programming (video via River Valley TV)](http://www.zeeba.tv/regression-testing-latex-packages-with-lua/)
@@ -257,7 +257,7 @@ Regression tests are an important tool in any moderately complex programming env
 
 ## Publications in 2013
 
-### <a href="http://tug.org/tug2013/" target="_blank">TUG 2013 Conference (Tokyo, Japan)</a>
+### TUG 2013 <a href="http://tug.org/tug2013/" target="_blank">Conference (Tokyo, Japan)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [The stony road to complex layout](http://youtu.be/jcY1zLJNqX0) (Digital Camera recording of the talk on YouTube)
@@ -284,7 +284,7 @@ which have lifted some of the limitations identified back then.
 
 ## Publications between 2012 and 2010
 
-### <a href="http://tug.org/tug2012/" target="_blank">TUG 2012 Conference (Boston, USA)</a>
+### TUG 2012 <a href="http://tug.org/tug2012/" target="_blank">Conference (Boston, USA)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) (Digital Camera recording of the talk on YouTube)
@@ -295,7 +295,7 @@ which have lifted some of the limitations identified back then.
 
 ***
 
-### <a href="http://tug.org/tug2011/" target="_blank">TUG 2011 Conference (Trivandrum, India)</a>
+### TUG 2011 <a href="http://tug.org/tug2011/" target="_blank">Conference (Trivandrum, India)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
@@ -304,7 +304,7 @@ which have lifted some of the limitations identified back then.
 
 ***
 
-### [Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more]({{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf) <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+### <a href="{{site.baseurl}}/publications/tb100mittbach-lppl-history.pdf" target="_blank" onclick="vgwPixelCall('47fddd07482e43119a3460a269650aa8');">Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more</a>  <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2011
@@ -324,7 +324,7 @@ In this paper Will discusses Unicode mathematics in the context of LaTeX with th
 
 ***
 
-### <a href="http://tug.org/tug2010/" target="_blank">TUG 2010 Conference (San Francisco, USA)</a>
+### TUG 2010 <a href="http://tug.org/tug2010/" target="_blank">Conference (San Francisco, USA)</a>
 
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
@@ -366,7 +366,7 @@ In this paper [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) discus
 
 ## Publications in 2009 and earlier
 
-### <a href="http://tug.org/tug2009/" target="_blank">TUG 2009 Conference (Notre Dame, Indiana, USA)</a>
+### TUG 2009 <a href="http://tug.org/tug2009/" target="_blank">Conference (Notre Dame, Indiana, USA)</a>
 
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
@@ -391,7 +391,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
-### <a href="http://tug.org/tug2008/" target="_blank">TUG 2008 Conference (Cork, Irland)</a>
+### TUG 2008 <a href="http://tug.org/tug2008/" target="_blank">Conference (Cork, Irland)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
   + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.zeeba.tv/two-decades-of-latex-development/)
@@ -400,7 +400,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
-### <a href="http://tug.org/tug2007/" target="_blank">TUG 2007 Conference (San Diego, USA)</a>
+### TUG 2007 <a href="http://tug.org/tug2007/" target="_blank">Conference (San Diego, USA)</a>
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
   + [LaTeX3 project update (Video via River Valley TV)](http://river-valley.zeeba.tv/latex3-project-update/)
