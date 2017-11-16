@@ -40,7 +40,10 @@ More advanced documentation about LaTeX, which is available via the net includes
      target="_blank"
      onclick="vgwPixelCall('54a136f9814144fba489022ec511facc');">LaTeX2e
      for class and package writers</a>
-+ [Cyrillic languages support in LaTeX](cyrguide.pdf)
++ <a href="{{site.baseurl}}/help/documentation/cyrguide.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('4db227f3399b4546b97e9f273c16da8e');">Cyrillic
+     languages support in LaTeX</a>
 + <a href="{{site.baseurl}}/help/documentation/fntguide.pdf"
      target="_blank"
      onclick="vgwPixelCall('4db227f3399b4546b97e9f273c16da8e');">LaTeX2e
