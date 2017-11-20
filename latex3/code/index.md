@@ -5,20 +5,43 @@ description: "Home of the LaTeX3 development code. Obtaining LaTeX3 development 
 permalink: /latex3/code/
 ---
 
-# LaTeX3 Development Code
+# LaTeX3 development code
+
+The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named [`latex3`](https://github.com/latex3/latex3).
+
+Notable LaTeX packages part of this repository include `l3kernel/expl3` and `l3packages/xparse`. Full information about the packages included in the repository is documented in the top-level [README](https://github.com/latex3/latex3/blob/master/README.md) of the repository.
+
+The LaTeX3 code is managed using [`l3build`](https://github.com/latex3/l3build) configuration files. `l3build` is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.
+
 
 ## Obtaining it
 
-Some of the current LaTeX3 development code is held under version control in a SVN repository and can be accessed publicly via a web interface, where it can be downloaded as single files. However, you might prefer to get hold of the files via anonymous SVN access in which case you can get a working copy from the repository at [https://latex-project.org/svnroot/experimental/trunk/](#fixme) using a Subversion client.
+Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of `l3kernel`, which provides the programming layer `expl3`, using:
 
-Please remember that this material is intended only for experimentation and comments; thus any aspect of it, e.g., the user interface or the functionality, may change and, in fact, is very likely to change. For this reason it is explicitly forbidden to place this material on CD-ROM distributions or public servers. 
+    tlmgr update l3kernel
+
+If you wish to test using unreleased code in GitHub, you may clone the repository using
+
+    git clone git@github.com:latex3/latex3.git
+
+To install packages from the development repository, using `l3build` as follows:
+
+    cd l3kernel
+    texlua build.lua install
+
+You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to me code and contribute them back via [Pull Requests](https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md).
+
+
+## Bug reports
+
+You may raise any issues in the [Issue Tracker](https://github.com/latex3/latex3/issues). These issues are usually intended to report issues relating to the code, such as documentation clarifications, missed functionality, or bugs.
+
 
 ## Discussing it
 
-These concepts, as well as their implementation, are under discussion on the list LATEX-L. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <mailto:listserv@URZ.UNI-HEIDELBERG.DE> containing the line
+The concepts developed by the LaTeX3 development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <mailto:listserv@URZ.UNI-HEIDELBERG.DE> containing the line
 
-`SUBSCRIBE LATEX-L Your Name`
-
+    SUBSCRIBE LATEX-L Your Name
 
 ### Listserv web interface
 
@@ -35,14 +58,13 @@ the page).
 
 This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:
 
-`GET LATEX-L LOGyymm`
+    GET LATEX-L LOGyymm
 
 where yy=Year and mm=Month, e.g.
 
-`GET LATEX-L LOG1703`
+    GET LATEX-L LOG1703
 
 for all messages sent in March 2017.
-
 
 
 ### Gmane interface
