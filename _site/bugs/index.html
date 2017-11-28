@@ -115,7 +115,7 @@ as such.</p>
 
 <p>While this is somewhat unfortunate, it is a consequence of fairly
 active development with an open model where essentially everybody is
-free to provide add-ons and contribute them to CTAN. But at the same
+free to provide add-ons and contribute them to <a href="https://www.ctan.org">CTAN</a>. But at the same
 time this model is also one of the reasons why LaTeX is still very
 popular and why you will find a solution for essentially any
 typesetting problem in the LaTeX universe. So this is is a bit of a
@@ -143,11 +143,40 @@ this policy.</p>
 
 <h2 id="searching-through-already-reported-bugs">Searching through already reported bugs</h2>
 
-<p>The LaTeX Project Team maintains <a href="/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">a
-bugs database</a> for the core LaTeX software (LaTeX kernel + packages
-maintained by the team). It is possible to search that database to see
+<p>It is possible to search through the  database(s) of reported bugs to see
 if a problem has already been reported or perhaps already has a
-solution or workaround.</p>
+solution or workaround.
+Throughout the last two decades the LaTeX Project Team has maintained
+a bug database using <a href="https://www.gnu.org/software/gnats">GNATS</a>, a free software system from the
+FSF. While this has served us
+well in the past, it has its problems and with our move to Git-based
+source control its workflow doesn’t any longer fit.
+We have therefore decided to switch to a new tracking system and the
+natural choice was to use the one already provided with with new
+source control system, namely the <a href="https://github.com/latex3/latex2e/issues">Issue
+Tracker</a>.</p>
+
+<p>Unfortunately, it is not possible to automatically transfer the old bug
+reports to the new system so we are in a slightly awkward position
+that we have old bugs in one system and the new ones in another. Thus
+for searching through already reported bugs it is necessary to search
+two systems:</p>
+
+<ul>
+  <li><a href="/cgi-bin/ltxbugs2html?introduction=yes&amp;state=open">
+Gnats for LaTeX2e</a>  for bugs reported before 2018;</li>
+  <li><a href="https://github.com/latex3/latex2e/issues">The Github Issue Tracker for LaTeX2e</a>
+   for bugs reported 2018 and later.</li>
+</ul>
+
+<p>Over time we hope that the bugs listed in Gnats will be all only of
+historical interest, but right now it is probably helpful to look in
+both places – sorry for that.</p>
+
+<p>Both database only cover bugs concerning the core LaTeX software
+(LaTeX kernel + packages maintained by the team).  Bugs about packages
+not maintained by us will not be there (or if reported closed) as the
+LaTeX Project Team has no possibilities to do anything about them.</p>
 
 <h2 id="how-do-i-report-a-bug">How do I report a bug?</h2>
 
@@ -161,9 +190,11 @@ should help in this respect.</p>
 
 <h3 id="providing-a-test-file-showing-the-issue">Providing a test file showing the issue</h3>
 
-<p>To report a bug it is important to provide a short test file that exhibits the issue.
-The <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> package <em>should</em> be loaded at the very
-top of any such test file used to report a bug in LaTeX as follows:</p>
+<p>To report a bug it is important to provide a short test file that
+exhibits the issue.  The
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+package <em>should</em> be loaded at the very top of any such test file used
+to report a bug in LaTeX as follows:</p>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">   \RequirePackage{latexbug}    % &lt;- first line
    
@@ -171,25 +202,31 @@ top of any such test file used to report a bug in LaTeX as follows:</p>
 
    ...                          % code showing the problem</code></pre></figure>
 
-<p>If the <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> package is not part of your distribution you can download it from this site. In that case simply place it in the directory next to your test file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be always found – how to do that depends on the installation you use).</p>
+<p>If the
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+package is not part of your distribution you can download it from this
+site. In that case simply place it in the directory next to your test
+file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be
+always found – how to do that depends on the installation you use).</p>
 
 <p>If you run your test file this package will check if there is any code
 that makes it unlikely that the LaTeX Team can deal with the bug and
 if it finds such code, e.g., a package maintained by a third party, it
 will report that fact to you and asks you to remove that package from
-the test file. If such a package is needed to exhibit the issue, then the
-problem should be reported to the maintainers of this package.  If we
-know how to reach the maintainer
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> will tell
-you how to reach them, otherwise you have to find out by other means
-(normally the maintenance address is part of the package documentation or the
-package code).</p>
+the test file. If such a package is needed to exhibit the issue, then
+the problem should be reported to the maintainers of this package.  If
+we know how to reach the maintainer
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+will tell you how to reach them, otherwise you have to find out by
+other means (normally the maintenance address is part of the package
+documentation or the package code).</p>
 
-<p>If you think the bug is in core LaTeX (as maintained
-by the LaTeX Team) but the files
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> complains
-about are needed to demonstrate the problem, then please continue and send
-the bug report to us but explain this explicitly in your description of bug.</p>
+<p>If you think the bug is in core LaTeX (as maintained by the LaTeX
+Team) but the files
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+complains about are needed to demonstrate the problem, then please
+continue and send the bug report to us but explain this explicitly in
+your description of bug.</p>
 
 <blockquote>
   <p>Bug reports sent to us without a
@@ -225,9 +262,20 @@ resolved.</p>
 
 <p>If <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
-the LaTeX Team) then please <a href="/bugs/bugs-upload/">submit your test file by going to the bug
-upload page and upload your test
-file.</a></p>
+the LaTeX Team) then please submit your test file by going
+to the</p>
+
+<ul>
+  <li><a href="https://github.com/latex3/latex2e/issues">Issue Tracker for LaTeX2e</a></li>
+</ul>
+
+<p>open a “New Issue” there and fill out the necessary information in the form.</p>
+
+<blockquote>
+  <p>For the time being it is also still possible to open a bug report in
+the <a href="/bugs/bugs-upload/">old system</a> but we would
+appreciate if you use the new tracking system.</p>
+</blockquote>
 
 <p>But if your bug involves third-party packages and should be worked on by
 the maintainers of those package then please send your test files to

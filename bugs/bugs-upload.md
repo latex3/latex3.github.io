@@ -1,13 +1,23 @@
 ---
 layout: page
-title: "Bug Upload - Report a bug"
-description: "If you think you’ve found a bug with core LaTeX, then please report it to us! You can report it by going to this bug information upload page."
+title: "Bug Upload (old tracking system) - Report a bug"
+description: "This is the bug reporting page for the old tracking system. If possible please use the new tracking system on GitHub instead."
 ---
 
-# Procedure to submit a LaTeX bug report
 
-Hey, you think you found a bug in LaTeX? Pity! But this page allows you to upload a report to our bugs database.
+> This is the upload page for the old bug tracking for LaTeX2e that we wish to retire.
+>
+> For the time being it is also still possible to open a bug report in
+> the old system but we would
+> appreciate if you use the new tracking system instead:
+>
+>  - [Issue Tracker for LaTeX2e](https://github.com/latex3/latex2e/issues)
+>
+> To open a bug report with the new tracking system go to the above link click on "New Issue"
+> there and fill out the necessary information in the form  -- thanks.
 
+
+# Instructions for the old (obsolete) tracking system
 
 ## Before submitting a LaTeX bug
 

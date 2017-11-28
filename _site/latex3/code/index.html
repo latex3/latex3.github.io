@@ -60,19 +60,48 @@
 
   <div class="wrap">
   <article>
-<h1 id="latex3-development-code">LaTeX3 Development Code</h1>
+<h1 id="latex3-development-code">LaTeX3 development code</h1>
+
+<p>The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named <a href="https://github.com/latex3/latex3"><code class="highlighter-rouge">latex3</code></a>.</p>
+
+<p>Notable LaTeX packages part of this repository include <code class="highlighter-rouge">l3kernel/expl3</code> and <code class="highlighter-rouge">l3packages/xparse</code>. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
+
+<p>The LaTeX3 code is managed using <a href="https://github.com/latex3/l3build"><code class="highlighter-rouge">l3build</code></a> configuration files. <code class="highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.</p>
 
 <h2 id="obtaining-it">Obtaining it</h2>
 
-<p>Some of the current LaTeX3 development code is held under version control in a SVN repository and can be accessed publicly via a web interface, where it can be downloaded as single files. However, you might prefer to get hold of the files via anonymous SVN access in which case you can get a working copy from the repository at <a href="#fixme">https://latex-project.org/svnroot/experimental/trunk/</a> using a Subversion client.</p>
+<p>Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="highlighter-rouge">expl3</code>, using:</p>
 
-<p>Please remember that this material is intended only for experimentation and comments; thus any aspect of it, e.g., the user interface or the functionality, may change and, in fact, is very likely to change. For this reason it is explicitly forbidden to place this material on CD-ROM distributions or public servers.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>tlmgr update l3kernel
+</code></pre>
+</div>
+
+<p>If you wish to test using unreleased code in GitHub, you may clone the repository using</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:latex3/latex3.git
+</code></pre>
+</div>
+
+<p>To install packages from the development repository, using <code class="highlighter-rouge">l3build</code> as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd l3kernel
+texlua build.lua install
+</code></pre>
+</div>
+
+<p>You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to me code and contribute them back via <a href="https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md">Pull Requests</a>.</p>
+
+<h2 id="bug-reports">Bug reports</h2>
+
+<p>You may raise any issues in the <a href="https://github.com/latex3/latex3/issues">Issue Tracker</a>. These issues are usually intended to report issues relating to the code, such as documentation clarifications, missed functionality, or bugs.</p>
 
 <h2 id="discussing-it">Discussing it</h2>
 
-<p>These concepts, as well as their implementation, are under discussion on the list LATEX-L. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <a href="mailto:listserv@URZ.UNI-HEIDELBERG.DE">listserv@URZ.UNI-HEIDELBERG.DE</a> containing the line</p>
+<p>The concepts developed by the LaTeX3 development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <a href="mailto:listserv@URZ.UNI-HEIDELBERG.DE">listserv@URZ.UNI-HEIDELBERG.DE</a> containing the line</p>
 
-<p><code class="highlighter-rouge">SUBSCRIBE LATEX-L Your Name</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>SUBSCRIBE LATEX-L Your Name
+</code></pre>
+</div>
 
 <h3 id="listserv-web-interface">Listserv web interface</h3>
 
@@ -88,11 +117,15 @@ the page).</p>
 
 <p>This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:</p>
 
-<p><code class="highlighter-rouge">GET LATEX-L LOGyymm</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>GET LATEX-L LOGyymm
+</code></pre>
+</div>
 
 <p>where yy=Year and mm=Month, e.g.</p>
 
-<p><code class="highlighter-rouge">GET LATEX-L LOG1703</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>GET LATEX-L LOG1703
+</code></pre>
+</div>
 
 <p>for all messages sent in March 2017.</p>
 
