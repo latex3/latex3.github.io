@@ -288,7 +288,7 @@ which have lifted some of the limitations identified back then.
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) (Digital Camera recording of the talk on YouTube)
-  + [Abstract]({{site.baseurl}}/publications/E-TeX-revisited-2012-abstract.txt) (txt)
+  + <a href="{{site.baseurl}}/publications/E-TeX-revisited-2012-abstract.txt" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Abstract</a> (txt) 
   + <a href="{{site.baseurl}}/publications/tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">Published paper, TUGboat volume 34, number 1, 2013</a> (pdf) 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3: from local to global---A brief history and recent developments]({{site.baseurl}}/publications/latex3-local-global-2012.pdf) (slides)
@@ -299,8 +299,8 @@ which have lifted some of the limitations identified back then.
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
   + [LaTeX3 architecture and current work in progress (video via River Valley TV)](http://www.zeeba.tv/latex3-architecture-and-current-work-in-progress/)
-  + [LaTeX3 architecture and current work in progress (abstract)]({{site.baseurl}}/publications/LaTeX3-architecture-2011-abstract.txt)
-  + [LaTeX3 architecture and current work in progress (slides)]({{site.baseurl}}/publications/LaTeX3-architecture-2011-slides.pdf)
+  + <a href="{{site.baseurl}}/publications/LaTeX3-architecture-2011-abstract.txt" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress (abstract)</a>
+  + <a href="{{site.baseurl}}/publications/LaTeX3-architecture-2011-slides.pdf" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress (slides)</a>
 
 ***
 
@@ -432,7 +432,7 @@ A discussion by Lars Hellström of the current implementation of the concept of 
 
 ***
 
-### [Formatting documents with floats – A new algorithm for LaTeX2e]({{site.baseurl}}/publications/xo-pfloat.pdf)
+### <a href="{{site.baseurl}}/publications/xo-pfloat.pdf" target="_blank" onclick="vgwPixelCall('7a2407ba33c445178618822fadd84cf6');">Formatting documents with floats – A new algorithm for LaTeX2e</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2000
@@ -442,7 +442,8 @@ At the GUTenberg meeting in Toulouse, Frank presented a paper about a new output
 
 ***
 
-### [TUG99 talk]({{site.baseurl}}/publications/tug99.pdf)
+
+### <a href="{{site.baseurl}}/publications/tug99.pdf" target="_blank" onclick="vgwPixelCall('2000eb286caf4f3388528d565081bb85');">TUG99 talk</a>
 
 + Published paper, 1999
 + Keywords: LaTeX3, models, concepts, user-interface, designer-interface, proto-types
@@ -473,7 +474,8 @@ An article about docstrip headers appeared in TUGboat volume 19, number 2. It de
 
 ***
 
-### [A regression test suite for LaTeX2e]({{site.baseurl}}/publications/regression-test-suite.pdf)
+
+### <a href="{{site.baseurl}}/publications/regression-test-suite.pdf" target="_blank" onclick="vgwPixelCall('6243765bc0fc415ca9fe91a0958f91a4');">A regression test suite for LaTeX2e</a>
 
 + Published paper, 1997
 + Keywords: maintaining LaTeX2e
@@ -482,7 +484,8 @@ An article describing the regression test suite that has been built for LaTeX ov
 
 ***
 
-### [The LaTeX3 Programming Language—A syntax proposal for TeX macro programming]({{site.baseurl}}/publications/expl3-tb18-4.pdf)
+
+### <a href="{{site.baseurl}}/publications/expl3-tb18-4.pdf" target="_blank" onclick="vgwPixelCall('9af902bd53b044a3a66192fb76764ad8');">The LaTeX3 Programming Language—A syntax proposal for TeX macro programming</a>
 
 + Published paper, 1997
 + Keywords: general research, proposed model for LaTeX programming
@@ -491,7 +494,7 @@ An article giving a brief overview of the first release of expl3: a proposed LaT
 
 ***
 
-### [Language information in structured documents: a model for mark-up and rendering]({{site.baseurl}}/publications/language-tug97-paper-revised.pdf)
+### <a href="{{site.baseurl}}/publications/tb56lang.pdf" target="_blank" onclick="vgwPixelCall('2b77f777778c468a984188f99530fdb5');">Language information in structured documents: a model for mark-up and rendering</a>
 
 + Published paper, 1997
 + Keywords: general research, proposed model for LaTeX (current and future version)
@@ -501,7 +504,9 @@ In a conference on multilingual typesetting in Japan and later at a TUG conferen
 
 ***
 
-### [Application-independent representation of text for document processing – will Unicode suffice?]({{site.baseurl}}/publications/unicode5.pdf)
+
+
+### <a href="{{site.baseurl}}/publications/unicode5.pdf" target="_blank" onclick="vgwPixelCall('09055bd60dae4533ab68e74360006626');">Application-independent representation of text for document processing – will Unicode suffice?</a>
 
 + Published paper, 1996
 + Keywords: general research, language, text representation
@@ -510,7 +515,8 @@ A paper about application-independent representation of text for document proces
 
 ***
 
-### [LaTeX2e encoding interfaces]({{site.baseurl}}/publications/encoding-concepts.pdf)
+
+### <a href="{{site.baseurl}}/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
 
 + Presentation, 1995
 + Keywords: LaTeX2e interface, input encoding, font encoding

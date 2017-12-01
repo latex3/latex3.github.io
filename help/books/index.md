@@ -188,9 +188,11 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **ISBN-13:** 978-2-7440-7182-9  
 **Pages:** 1116 pages  
 
-Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site: [texte complet de l'annexe B, «Détecter et résoudre; les problèmes»](lc2fr-apb.pdf) (463 kB)
+Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
+<a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site: [full text of appendix B, «Tracing and resolving problems»](lc2fr-apb.pdf) (463 kB)
+This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
+
 
 <hr>
 
