@@ -213,7 +213,7 @@ This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflag
 There are some extracts from the book as PDF files available from this site:
 
 + [tables of contents, figures, and tables and preface](lb2-ch0.pdf) (259 kB)
-+ [full text of chapter 4, «Page layout»](lb2-ch4.pdf) (340 kB)
++ <a href="{{site.baseurl}}/help/books/lb2-ch4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">full text of chapter 4, «Page layout»</a> (340 kB)
 + [bibliography and index](lb2-ap4.pdf) (857 kB)
 
 There is an [errata file](lb2.err) (along with a [PDF version](lb2-err.pdf)) which also has details on the bug contest: Pearson Studium and the authors of LB2 provide Pearson text books as prizes for people finding errors in the book.
