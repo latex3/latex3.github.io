@@ -80,7 +80,7 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 **ISBN-13:** 078-5342508925  
 **Pages:** 976 pages  
 
-+ [some excerpts from the book in one PDF file](lgc2-excerpts.pdf) (2.9 MB)
++  <a href="{{site.baseurl}}/help/books/lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
 + [bibliography and index](lgc2-ap3.pdf) (1223 kB)
 + [supplementary material on the web](http://xml.web.cern.ch/XML/lgc2/) maintained by Michel Goossens
 
