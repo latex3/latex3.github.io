@@ -32,7 +32,7 @@ description: "Getting LaTeX. Get to know how and where to get TeX distributions 
     <ul class="toc">
       <li><a href="#tex-distributions">TeX Distributions</a></li>
       <li><a href="#ctan">CTAN</a></li>
-      <li><a href="#tex-latex-git-repository">The LaTeX Git repository</a></li>
+      <li><a href="#the-latex-git-repository">The LaTeX Git repository</a></li>
       <li><a href="#historic-latex">Historic LaTeX</a></li>
     </ul>
 
