@@ -30,10 +30,10 @@ description: "Getting LaTeX. Get to know how and where to get TeX distributions 
   </div>
   <div class="col cell1of2">
     <ul class="toc">
-      <li><a href="#distributions">TeX Distributions</a></li>
+      <li><a href="#tex-distributions">TeX Distributions</a></li>
       <li><a href="#ctan">CTAN</a></li>
-      <li><a href="#svn">LaTeX subversion repository</a></li>
-      <li><a href="#historic">Historic LaTeX</a></li>
+      <li><a href="#tex-latex-git-repository">The LaTeX Git repository</a></li>
+      <li><a href="#historic-latex">Historic LaTeX</a></li>
     </ul>
 
     <p>The LaTeX team cannot guarantee that TeX distributions, even
@@ -109,22 +109,36 @@ you use a TeX distribution then it will include a version of LaTeX so
 this will probably make things easier for you; but you may have a
 reason not to do this.
 
-<hr>
+***
 
-## LaTeX Subversion Repository
+## The LaTeX Git Repository
 
-The LaTeX sources are kept in a subversion repository. Anyone can
-access it and download them, but submission is restricted to team
-members. The Subversion repository is located
-at <a href="https://latex-project.org/svnroot/latex2e-public/">https://latex-project.org/svnroot/latex2e-public/</a>. You
-may check out a working copy of the code with the Subversion front-end
-of your choice or the command line statements:
+These days the LaTeX development sources are kept in a GitHub
+repository. Anyone can access it and download the files, but
+submission is restricted to team members. The repository is located at
+  [https://github.com/latex3/latex2e](https://github.com/latex3/latex2e)
+and from that browser page you may explore the files, clone the
+repository or download the files in a `.zip` archive (roughly 25Mb) by
+using the appropriate buttons.
 
-<pre>
-  <code>mkdir latex2e-svn<br>svn co https://latex-project.org/svnroot/latex2e-public/ latex2e-svn</code>
-</pre>
-<hr>
+If you are familiar with Git you can also clone the repository using the
+command line or your favorite Git fontend tool, e.g.,
 
+```
+git clone  https://github.com/latex3/latex2e.git
+```
+
+which needs about 50Mb of space.
+Alternatively, you can do a Subversion checkout from the command line, i.e.,
+
+```
+svn co https://github.com/latex3/latex2e.git
+```
+
+but be aware that the SVN checkout is is **quite large** as it will download the
+history of all files (back to 2009) and amounts to roughly 1.4Gb.
+
+***
 
 ## Historic LaTeX
 
@@ -138,5 +152,6 @@ online) which was based on archive tapes from SAIL at Stanford.
 
 More historic material can be found at [ftp://ftp.tug.org/historic](ftp://ftp.tug.org/historic).
 
-<hr>
+***
+
 <div class="row">{% include google.adsense.html %}</div><hr> 
