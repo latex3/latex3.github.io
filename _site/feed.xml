@@ -5,9 +5,71 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 Dec 2017 23:16:47 +0100</pubDate>
-    <lastBuildDate>Thu, 07 Dec 2017 23:16:47 +0100</lastBuildDate>
+    <pubDate>Sat, 16 Dec 2017 00:14:08 +0100</pubDate>
+    <lastBuildDate>Sat, 16 Dec 2017 00:14:08 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>LaTeX sources moved from SVN to GitHub / New Bug tracker workflow</title>
+        <description>&lt;h2 id=&quot;latex2e-sources-moved-from-a-private-svn-repository-to-github&quot;&gt;LaTeX2e sources moved from a private SVN repository to GitHub&lt;/h2&gt;
+
+&lt;p&gt;In the past the development version of the LaTeX2e source files has
+been managed in a Subversion source control system with read access
+for the public. This way it was possible to download in an emergency
+the latest version even before it was released to CTAN and made its
+way into the various distributions.&lt;/p&gt;
+
+&lt;p&gt;We have recently changed this setup and now manage the sources using
+Git and placed the master sources on GitHub at
+&lt;a href=&quot;https://github.com/latex3/latex2e&quot;&gt;https://github.com/latex3/latex2e&lt;/a&gt;
+where we already store the sources for expl3 and other work.
+As before, direct write access is restricted to LaTeX Project Team
+members, but everything is publically accessible including the ability
+to download, clone (using Git) or checkout (using SVN).&lt;/p&gt;
+
+&lt;p&gt;More details are given in the article
+“&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;New rules for reporting
+bugs in the LaTeX core software&lt;/a&gt;”
+that has been submitted to TUGboat.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-workflow-for-reporting-bugs&quot;&gt;New workflow for reporting bugs&lt;/h2&gt;
+
+&lt;p&gt;For more than two decades we used GNATS, an open source bug tracking
+system developed by the FSF. While that has served us well in the past
+it started to show its age more and more. So 
+as part of this move we also decided to finally retire the old LaTeX
+bug database and replace it with the standard “Issue Tracker” available at
+Github.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/bugs/&quot;&gt;page on bug reporting on this site&lt;/a&gt; has
+been updated to describe the new workflow and the article
+“&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;New rules for reporting
+bugs in the LaTeX core software&lt;/a&gt;”
+gives a lot of additional information.&lt;/p&gt;
+
+&lt;p&gt;If you happen to encounter a bug (which we hope you will be spared
+from) we strongly suggest you consult both resources to learn how to
+best report your issue and to whom (as that may or may not be the
+LaTeX Project Team).&lt;/p&gt;
+
+&lt;p&gt;With seasonal greetings   – Frank&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Dec 2017 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2017/12/15/github-move/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2017/12/15/github-move/</guid>
+        
+        <category>LaTeX2e</category>
+        
+        <category>SVN</category>
+        
+        <category>Git</category>
+        
+        <category>bug reporting</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Videos from the 2014 UK-TUG conference</title>
@@ -367,40 +429,6 @@ found on the &lt;a href=&quot;/publications/&quot;&gt;Publications page&lt;/a&gt
         <category>latex</category>
         
         <category>Sebastian Rahtz</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New procedure for reporting LaTeX bugs</title>
-        <description>&lt;h1 id=&quot;new-procedure-for-reporting-latex-bugs&quot;&gt;New procedure for reporting LaTeX bugs&lt;/h1&gt;
-
-&lt;p&gt;The LaTeX Project Team maintains
-&lt;a href=&quot;/cgi-bin/ltxbugs2html?introduction=yes&amp;amp;state=open&quot;&gt;a
-    bugs database&lt;/a&gt; for the core LaTeX software (LaTeX kernel +
-packages maintained by the team).
-Due to the fact that we get more and more bug reports that we can’t
-help with (as they are for one of the many third-party packages out
-there) we have written a small package that helps with classifying
-issues and that identifies the correct addressee for a bug report.
-This package should be used in every test file showing a bug prior to
-reporting that bug to us.&lt;/p&gt;
-
-&lt;p&gt;The new procedure and some helpful information is now described in a
-dedicated &lt;a href=&quot;/bugs&quot;&gt;bugs page that you find here&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 27 Nov 2016 00:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2016/11/27/bugs-procedure/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2016/11/27/bugs-procedure/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>bugs</category>
         
         
         <category>news</category>

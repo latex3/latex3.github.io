@@ -415,7 +415,8 @@ ul.news-posts a,
 ul.all-news-posts a { display: block; }
 ul.news-posts a:hover, 
 ul.all-news-posts a:hover { text-decoration: none; }
-ul.news-posts span.post-date { color: #555; display: block; font-size: 0.8em; }
+ul.news-posts span.post-date,
+ul.all-news-posts span.post-date { color: #555; display: block; font-size: 0.8em; }
 ul.news-posts h3 { color: #005DB7; font-size: 1.2em; margin: 0; padding: 0 0 .6em; }
 ul.news-posts p { color: #000; }
 ul.news-posts a:hover p, 

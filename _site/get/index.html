@@ -59,7 +59,7 @@
 
   <div class="wrap">
   <article>
-<h1>Getting LaTeX</h1>
+<h1 id="getting-latex">Getting LaTeX</h1>
 
 <div class="row">
   <div class="col cell1of2">
@@ -72,75 +72,183 @@
     distributions provided by the TeX User Group (TUG)</a> or third
     parties. If you run into trouble, visit
     the <a href="/help/">help section</a>.</p>
+    <p>LaTeX is not a stand-alone typesetting program in itself, but
+    document preparation software that runs on top
+    of <a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald
+    E. Knuth</a>'s <a href="https://en.wikipedia.org/wiki/TeX">TeX
+    typesetting system</a>. TeX distributions usually bundle together
+    all the parts needed for a working TeX system and they generally
+    add to this both configuration and maintenance utilities. Nowadays
+    LaTeX, and many of the packages built on it, form an important
+    component of any major TeX distribution.</p>
   </div>
   <div class="col cell1of2">
     <ul class="toc">
-      <li><a href="#distributions">TeX Distributions</a></li>
+      <li><a href="#tex-distributions">TeX Distributions</a></li>
       <li><a href="#ctan">CTAN</a></li>
-      <li><a href="#svn">LaTeX subversion repository</a></li>
-      <li><a href="#historic">Historic LaTeX</a></li>
+      <li><a href="#the-latex-git-repository">The LaTeX Git Repository</a></li>
+      <li><a href="#a-note-on-git-pull-requests">Git Pull Requests</a></li>
+      <li><a href="#historic-latex">Historic LaTeX</a></li>
     </ul>
+
+    <p>The LaTeX team cannot guarantee that TeX distributions, even
+    recent ones, contain the most recent version of LaTeX. It may
+    happen that you need a more recent LaTeX than the one that your
+    favourite TeX distribution carries, e.g., in order to get a
+    particular bug fix. In that case you will need to fetch LaTeX from
+    CTAN and install it on top of your distribution. See below for
+    details.</p>
   </div>
 </div>
 
+<hr />
 
-<hr>
+<h2 id="tex-distributions">TeX Distributions</h2>
+
+<p>If you’re new to TeX and LaTeX or just want an easy installation, get
+a full TeX distribution. The TeX Users Group (TUG) has a
+  <a href="http://www.tug.org/interest.html#free">list of notable distributions</a>
+that are entirely, or least primarily, free software.</p>
+
+<hr />
+
 <div class="row">
   <div class="col cell1of4">
     <h2><span class="fa fa-linux"></span> Linux</h2>
-    <p>Check your Linux distributions software source for a TeX distribution including LaTeX. You can also install <a href="http://www.tug.org/texlive">TeX Live</a> directly.</p>
+    <p>Check your Linux distributions software source for a TeX
+    distribution including LaTeX. You can also
+    install <a href="http://www.tug.org/texlive">TeX Live</a>
+    directly.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-apple"></span> Mac OS</h2>
-    <p>The <a href="http://www.tug.org/mactex/">MacTeX</a> distribution contains everything you need, including a complete TeX system with LaTeX itself and editors to write documents.</p>
+    <p>The <a href="http://www.tug.org/mactex/">MacTeX</a>
+    distribution contains everything you need, including a complete
+    TeX system with LaTeX itself and editors to write documents.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-windows"></span> Windows</h2>
-    <p>Check out the <a href="http://miktex.org/">MiKTeX</a> or <a href="http://www.tug.org/protext/">proTeXt</a> or <a href="http://www.tug.org/texlive">TeX Live</a> distributions; they contain a complete TeX system with LaTeX itself and editors to write documents.</p>
+    <p>Check out the <a href="http://miktex.org/">MiKTeX</a>
+    or <a href="http://www.tug.org/protext/">proTeXt</a>
+    or <a href="http://www.tug.org/texlive">TeX Live</a>
+    distributions; they contain a complete TeX system with LaTeX
+    itself and editors to write documents.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-globe"></span> Online</h2>
-    <p>LaTeX online services like <a href="http://papeeria.com">Papeeria</a>, <a href="https://www.overleaf.com/">Overleaf</a>, <a href="https://www.sharelatex.com/">ShareLaTeX</a>, <a href="https://www.datazar.com/">Datazar</a>, and <a href="https://latexbase.com/">LaTeX base</a> offer the ability to edit, view and download LaTeX files and resulting PDFs.</p>
+    <p>LaTeX online services
+      like <a href="http://papeeria.com">Papeeria</a>,
+      <a href="https://www.overleaf.com/">Overleaf</a>,
+      <a href="https://www.sharelatex.com/">ShareLaTeX</a>,
+      <a href="https://www.datazar.com/">Datazar</a>,
+    and <a href="https://latexbase.com/">LaTeX base</a> offer the
+    ability to edit, view and download LaTeX files and resulting
+    PDFs.</p>
   </div>
-  <hr>
 </div>
 
-<h2 id="distributions">TeX Distributions</h2>
-<p>If you're new to TeX and LaTeX or just want an easy installation, get a full TeX distribution. The TeX Users Group (TUG) has a <a href="http://www.tug.org/interest.html#free">list of notable distributions</a> that are entirely, or least primarily, free software.</p> 
-<div class="row">
-  <div class="col cell1of2">
-    <p>LaTeX is not a stand-alone typesetting program in itself, but document preparation software that runs on top of <a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald E. Knuth</a>'s <a href="https://en.wikipedia.org/wiki/TeX">TeX typesetting system</a>. TeX distributions usually bundle together all the parts needed for a working TeX system and they generally add to this both configuration and maintenance utilities. Nowadays LaTeX, and many of the packages built on it, form an important component of any major TeX distribution.</p>
-  </div>
-  <div class="col cell1of2">
-    <p>The LaTeX team cannot guarantee that TeX distributions, even recent ones, contain the most recent version of LaTeX. It may happen that you need a more recent LaTeX than the one that your favourite TeX distribution carries, e.g., in order to get a particular bug fix. In that case you will need to fetch LaTeX from CTAN and install it on top of your distribution. See below for details.</p>
-  </div>
-</div>
+<hr />
 
 <h2 id="ctan">CTAN</h2>
-<p>You can <a href="https://www.ctan.org/pkg/latex">obtain LaTeX from <abbr title="Comprehensive TeX Archive Network">CTAN</abbr></a>, which is the primary source of distribution for LaTeX. In order for your downloaded LaTeX to be of any use, you have to obtain and set up a TeX system first. You can either install a TeX distribution (see above) or <a href="https://www.ctan.org/tex-archive/systems">get a TeX system from <abbr title="Comprehensive TeX Archive Network">CTAN</abbr></a>. If you use a TeX distribution then it will include a version of LaTeX so this will probably make things easier for you; but you may have a reason not to do this.</p>
-<hr>
 
-<h2 id="svn">LaTeX Subversion Repository</h2>
-<p>The LaTeX sources are kept in a subversion repository. Anyone can access it and download them, but submission is restricted to team members. The Subversion repository is located at <a href="https://latex-project.org/svnroot/latex2e-public/">https://latex-project.org/svnroot/latex2e-public/</a>. You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements:</p>
-<pre>
-  <code>mkdir latex2e-svn<br>svn co https://latex-project.org/svnroot/latex2e-public/ latex2e-svn</code>
-</pre>
-<hr>
-<h2 id="historic">Historic LaTeX</h2>
-<p>Ulrik Vieth has collected historic versions of LaTeX from LaTeX 2.0 for TeX 1.0 (released on 11 December 1983) onwards. You can find them at <a href="ftp://ftp.tug.org/historic/macros/latex-saildart/">ftp://ftp.tug.org/historic/macros/latex-saildart/</a>. There might even be some earlier versions. All files have been pulled from the SAILDART archive site at http://z.baumgart.org/ (no longer online) which was based on archive tapes from SAIL at Stanford.</p>
+<p>You can <a href="https://www.ctan.org/pkg/latex">obtain LaTeX from <abbr title="Comprehensive TeX Archive Network">CTAN</abbr></a>, which is the
+primary source of distribution for LaTeX. In order for your downloaded
+LaTeX to be of any use, you have to obtain and set up a TeX system
+first. You can either install a TeX distribution (see above) or <a href="https://www.ctan.org/tex-archive/systems">get a
+TeX system from <abbr title="Comprehensive TeX Archive Network">CTAN</abbr></a>.  If
+you use a TeX distribution then it will include a version of LaTeX so
+this will probably make things easier for you; but you may have a
+reason not to do this.</p>
+
+<hr />
+
+<h2 id="the-latex-git-repository">The LaTeX Git Repository</h2>
+
+<p>These days the LaTeX development sources are kept in a GitHub
+repository (previously we used SVN).</p>
+
+<p>Anyone can access it and download the files, but
+submission is restricted to team members. The repository is located at
+  <a href="https://github.com/latex3/latex2e">https://github.com/latex3/latex2e</a>
+and from that browser page you may explore the files, clone the
+repository or download the files in a <code class="highlighter-rouge">.zip</code> archive (roughly 25Mb) by
+using the appropriate buttons.</p>
+
+<p>If you are familiar with Git you can also clone the repository using the
+command line or your favorite Git fontend tool, e.g.,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone  https://github.com/latex3/latex2e.git
+</code></pre>
+</div>
+
+<p>which needs about 50Mb of space.
+Alternatively, you can do a Subversion checkout from the command line, e.g.,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn co https://github.com/latex3/latex2e.git/trunk
+</code></pre>
+</div>
+
+<p>which will just checkout the current files.
+But be aware that a SVN checkout of the form</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>svn co https://github.com/latex3/latex2e.git
+</code></pre>
+</div>
+
+<p>will download all files including their
+history (back to 2009) and amounts to <strong>roughly 1.4Gb</strong> so that is quite large.</p>
+
+<p><em>Note: If you had bookmarked the old SVN repository at
+  <a href="https://www.latex-project.org/svnroot/latex2e-public/">https://www.latex-project.org/svnroot/latex2e-public/</a>
+please update that bookmark to the new GIT repository as the SVN one is
+frozen and no longer up-to-date and may soon vanish!</em></p>
+
+<h3 id="a-note-on-git-pull-requests">A note on Git pull requests</h3>
+
+<p>Git repositories support distributed development and allow people to
+provide change sets that are made available through so called <em>pull
+requests</em>, so that the maintainers of a program can “pull the suggested
+changes” into the main repository.</p>
+
+<p>While we appreciate contributions, we think that for the core LaTeX
+software pull requests are usually not a good approach (unless the
+change has be already discussed and agreed upon).
+The stability of LaTeX is very important and this means that changes to
+the kernel are necessarily very conservative. It also means that a lot
+of discussion has to happen before any changes are made. So if you do
+decide to post a pull request, please bear this in mind: we do
+appreciate ideas, but cannot always integrate them into the kernel and
+it is quite likely that we reject updates made in this way.</p>
+
+<p>If you want to discuss a possible contribution before (or instead of)
+making a pull request, we suggest you raise the topic first on
+<a href="/latex3/code#discussing-it">the LATEX-L list</a> or drop a
+line to the <a href="/about/team">team</a>.</p>
+
+<hr />
+
+<h2 id="historic-latex">Historic LaTeX</h2>
+
+<p>Ulrik Vieth has collected historic versions of LaTeX from LaTeX 2.0
+for TeX 1.0 (released on 11 December 1983) onwards. You can find them
+at
+<a href="ftp://ftp.tug.org/historic/macros/latex-saildart/">ftp://ftp.tug.org/historic/macros/latex-saildart/</a>.
+There might even be some earlier versions. All files have been pulled
+from the SAILDART archive site at http://z.baumgart.org/ (no longer
+online) which was based on archive tapes from SAIL at Stanford.</p>
+
 <p>More historic material can be found at <a href="ftp://ftp.tug.org/historic">ftp://ftp.tug.org/historic</a>.</p>
 
-<hr>
-<div class="row"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8455398809969217"
-     data-ad-slot="1764738082"
-     data-ad-format="auto"></ins>
+<hr />
+
+<div class="row"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8455398809969217" data-ad-slot="1764738082" data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div><hr> 
+</div>
+<hr />
+
 
 </article>
 
