@@ -32,7 +32,8 @@ description: "Getting LaTeX. Get to know how and where to get TeX distributions 
     <ul class="toc">
       <li><a href="#tex-distributions">TeX Distributions</a></li>
       <li><a href="#ctan">CTAN</a></li>
-      <li><a href="#the-latex-git-repository">The LaTeX Git repository</a></li>
+      <li><a href="#the-latex-git-repository">The LaTeX Git Repository</a></li>
+      <li><a href="#a-note-on-git-pull-requests">Git Pull Requests</a></li>
       <li><a href="#historic-latex">Historic LaTeX</a></li>
     </ul>
 
@@ -114,7 +115,9 @@ reason not to do this.
 ## The LaTeX Git Repository
 
 These days the LaTeX development sources are kept in a GitHub
-repository. Anyone can access it and download the files, but
+repository (previously we used SVN).
+
+Anyone can access it and download the files, but
 submission is restricted to team members. The repository is located at
   [https://github.com/latex3/latex2e](https://github.com/latex3/latex2e)
 and from that browser page you may explore the files, clone the
@@ -137,6 +140,38 @@ svn co https://github.com/latex3/latex2e.git
 
 but be aware that the SVN checkout is is **quite large** as it will download the
 history of all files (back to 2009) and amounts to roughly 1.4Gb.
+
+*Note: If you had bookmarked the old SVN repository at
+  [https://www.latex-project.org/svnroot/latex2e-public/](https://www.latex-project.org/svnroot/latex2e-public/)
+please update that bookmark to the new GIT repository as the SVN one is
+frozen and no longer up-to-date and may soon vanish!*
+
+
+
+### A note on Git pull requests
+
+Git repositories support distributed development and allow people to
+provide change sets that are made available through so called *pull
+requests*, so that the maintainers of a program can "pull the suggested
+changes" into the main repository.
+
+While we appreciate contributions, we think that for the core LaTeX
+software pull requests are usually not a good approach (unless the
+change has be already discussed and agreed upon).
+The stability of LaTeX is very important and this means that changes to
+the kernel are necessarily very conservative. It also means that a lot
+of discussion has to happen before any changes are made. So if you do
+decide to post a pull request, please bear this in mind: we do
+appreciate ideas, but cannot always integrate them into the kernel and
+it is quite likely that we reject updates made in this way.
+
+If you want to discuss a possible contribution before (or instead of)
+making a pull request, we suggest you raise the topic first on
+[the LATEX-L list]({{site.baseurl}}/latex3/code#discussing-it) or drop a
+line to the [team]({{site.baseurl}}/about/team).
+
+
+
 
 ***
 
