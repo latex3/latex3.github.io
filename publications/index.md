@@ -17,6 +17,7 @@ description: "Selection of links to PDF versions of various articles published b
   </div>
   <div class="col cell1of3">
     <ul class="toc">
+      <li><a href="#publications-in-2018" title="Publications from 2018">2018</a></li>
       <li><a href="#publications-in-2017" title="Publications from 2017">2017</a></li>
       <li><a href="#publications-in-2016" title="Publications from 2016">2016</a></li>
       <li><a href="#publications-in-2015" title="Publications from 2015">2015</a></li>
@@ -27,6 +28,24 @@ description: "Selection of links to PDF versions of various articles published b
     </ul>
   </div>
 </div>
+
+
+
+## Publications in 2018
+
+### <a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a> (to appear)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Paper submitted for TUGboat 39:1, 2018 
+
+An article discussing the new workflow for reporting bugs in the
+core LaTeX software. It also covers the underlying move of the LaTeX
+sources from an SVN to a Git-based source control system and as a result
+the retirement of the old LaTeX bug database.
+
+***
+
+
 
 
 ## Publications in 2017
@@ -62,9 +81,6 @@ The above link enables free download of the paper from the ACM Digital Library.
 
 
 ***
-
-
-
 
 
 ### <a href="{{site.baseurl}}/publications/tb119mitt-tabular-fixed-width.pdf" target="_blank" onclick="vgwPixelCall('44195a435fe84ceeaffcc8850bbeae1a');">LaTeX table columns with fixed widths</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb119mitt-tabular-fixed-width.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
