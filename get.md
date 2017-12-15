@@ -112,6 +112,7 @@ reason not to do this.
 
 ***
 
+
 ## The LaTeX Git Repository
 
 These days the LaTeX development sources are kept in a GitHub
@@ -132,14 +133,21 @@ git clone  https://github.com/latex3/latex2e.git
 ```
 
 which needs about 50Mb of space.
-Alternatively, you can do a Subversion checkout from the command line, i.e.,
+Alternatively, you can do a Subversion checkout from the command line, e.g.,
+
+```
+svn co https://github.com/latex3/latex2e.git/trunk
+```
+
+which will just checkout the current files.
+But be aware that a SVN checkout of the form
 
 ```
 svn co https://github.com/latex3/latex2e.git
 ```
 
-but be aware that the SVN checkout is is **quite large** as it will download the
-history of all files (back to 2009) and amounts to roughly 1.4Gb.
+will download all files including their
+history (back to 2009) and amounts to **roughly 1.4Gb** so that is quite large.
 
 *Note: If you had bookmarked the old SVN repository at
   [https://www.latex-project.org/svnroot/latex2e-public/](https://www.latex-project.org/svnroot/latex2e-public/)
