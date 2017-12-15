@@ -103,10 +103,13 @@ a bug database using [GNATS](https://www.gnu.org/software/gnats), a free softwar
 FSF. While this has served us
 well in the past, it has its problems and with our move to Git-based
 source control its workflow doesn't any longer fit.
-We have therefore decided to switch to a new tracking system and the
-natural choice was to use the one already provided with with new
-source control system, namely the [Issue
+We have therefore decided to switch
+to a new tracking system and the natural choice was to use the one
+already provided as part of the GitHub setup (the place where the
+sources are now hosted), namely the [Issue
 Tracker](https://github.com/latex3/latex2e/issues).
+
+
 
 Unfortunately, it is not possible to automatically transfer the old bug
 reports to the new system so we are in a slightly awkward position
