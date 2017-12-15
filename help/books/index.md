@@ -80,7 +80,7 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 **ISBN-13:** 078-5342508925  
 **Pages:** 976 pages  
 
-+ [some excerpts from the book in one PDF file](lgc2-excerpts.pdf) (2.9 MB)
++  <a href="{{site.baseurl}}/help/books/lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
 + [bibliography and index](lgc2-ap3.pdf) (1223 kB)
 + [supplementary material on the web](http://xml.web.cern.ch/XML/lgc2/) maintained by Michel Goossens
 
@@ -188,9 +188,11 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **ISBN-13:** 978-2-7440-7182-9  
 **Pages:** 1116 pages  
 
-Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site: [texte complet de l'annexe B, «Détecter et résoudre; les problèmes»](lc2fr-apb.pdf) (463 kB)
+Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
+<a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site: [full text of appendix B, «Tracing and resolving problems»](lc2fr-apb.pdf) (463 kB)
+This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
+
 
 <hr>
 
@@ -213,7 +215,7 @@ This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflag
 There are some extracts from the book as PDF files available from this site:
 
 + [tables of contents, figures, and tables and preface](lb2-ch0.pdf) (259 kB)
-+ [full text of chapter 4, «Page layout»](lb2-ch4.pdf) (340 kB)
++ <a href="{{site.baseurl}}/help/books/lb2-ch4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">full text of chapter 4, «Page layout»</a> (340 kB)
 + [bibliography and index](lb2-ap4.pdf) (857 kB)
 
 There is an [errata file](lb2.err) (along with a [PDF version](lb2-err.pdf)) which also has details on the bug contest: Pearson Studium and the authors of LB2 provide Pearson text books as prizes for people finding errors in the book.
