@@ -30,7 +30,7 @@ permalink: /news/
 <small>Never miss a post. Subscribe to our <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span>RSS News Feed</a></small>
 
 <ul class="news-posts">
-  {% for post in site.posts offset: 0 limit: 4 %}
+  {% for post in site.posts offset: 0 limit: 5 %}
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
       <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -44,7 +44,7 @@ permalink: /news/
 ## Older News
 
 <ul class="all-news-posts">
-  {% for post in site.posts offset: 4 %}
+  {% for post in site.posts offset: 5 %}
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
       <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
