@@ -433,9 +433,8 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 .toc li:last-child { border: none;}
 .toc li a { display: inline-block; width: auto; word-break: break-all;}
 .toc a:hover { color: #000; text-decoration: none; }
-.toc li ul { margin: 0.5em 0 0.5em 1.2em;}
+.toc li ul { list-style: none; margin: 0.5em 0 0.5em 1.2em;}
 .toc li li { border-bottom: none ;}
-
 
 /* links */
 .links ul { list-style: none; }
