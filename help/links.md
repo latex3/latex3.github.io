@@ -4,7 +4,7 @@ title: "TeX and LaTeX Links"
 description: "Links to TeX and LaTeX documentation, forums, communities and question and answer websites."
 ---
 
-<h1>Links</h1>
+<h1>Useful Links</h1>
 <div class="row">
   <div class="col cell1of2">
     <p>There's a lot of documentation, tutorials, etc. out there that was not written by the LaTeX team themselves. We've started a list pointing to some of it (the order is fairly arbitrary and no indication of quality).</p>
@@ -75,9 +75,25 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 ## User Groups
 
 + [TeX Users Group](https://tug.org/)  
-  The TeX Users Group web site.
+  The TeX Users Group web site (International).
+
++ [Dante - **D**eutschsprachige **An**wendervereinigung **Te**X (German)](https://www.dante.de/)  
+  The web site of German TeX Users Group. You will find a lot of information and tutorials.
+
++ [Gutenberg (French)](https://www.gutenberg.eu.org/)  
+  The web site of the French speaking TeX Users Group. You will find publications, tutorials and more.
+
++ [UK-TUG](http://uk.tug.org/)  
+  The web site of the UK TeX Users Group. They publish a lot of their meeting sessions
+  [as videos](https://vimeo.com/uktug/).
+
+
+There are many more user groups on TeX --- most certainly one close to you ...
+
 + [TeX user groups around the world](http://www.tug.org/usergroups.html)  
   Listing of (all/most) TeX user groups around the world. Maintained by TeX Users Group.
+
+
 
 
 ## News Groups
