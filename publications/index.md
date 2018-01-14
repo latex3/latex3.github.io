@@ -474,6 +474,27 @@ prototype level awaiting further development_).
 
 ***
 
+
+
+### <a href="{{site.baseurl}}/publications/1999-grimm.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">TUG99 poster exhibition: Text of the Apocalypse as Graphics</a>
+
++ <a href="{{site.baseurl}}/publications/1999-grimm.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">Paper introducing the exhibition</a> held during the TUG99 conference. It displayed the works of Prof. Alban Grimm using Metafont to generate Graphics out of the text of the Book of Revelation.
++ Meta fonts by Metafont:
+  <a href="{{site.baseurl}}/publications/1999-grimm-apkkke.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">Introduction</a>,
+  <a href="{{site.baseurl}}/publications/1999-grimm-meta-engl1.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">font sample 1</a>,
+  <a href="{{site.baseurl}}/publications/1999-grimm-meta-engl2.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">font sample 2</a>
++ Samples of the Apocalypse Graphics: <a href="{{site.baseurl}}/publications/1999-grimm-oe10-letter.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">sample 1</a>,
+  <a href="{{site.baseurl}}/publications/1999-grimm-voe9-letter.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">sample 2</a>,
+  <a href="{{site.baseurl}}/publications/1999-grimm-xoe2-letter.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">sample 3</a>,
+  <a href="{{site.baseurl}}/publications/1999-grimm-yoe6-letter.pdf" target="_blank" onclick="vgwPixelCall('ff466de05dce4d56ae668e76aa2a4dd3');">sample 4</a>
+
+
+
+***
+
+
+
+
 ### [Notes on Oldenburg e-TeX/LaTeX3/ConTeXt meeting]({{site.baseurl}}/publications/etex-meeting-notes.pdf)
 
 ***
