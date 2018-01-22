@@ -33,7 +33,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 ## Publications in 2018
 
-### <a href="{{site.baseurl}}/publications/2017-CI-Journal-28454894_as_submitted.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">A General LuaTeX Framework for Globally Optimized Pagination</a> (to appear in 2018)
+### <a href="{{site.baseurl}}/publications/2017-CI-Journal-28454894_as_submitted.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">A General LuaTeX Framework for Globally Optimized Pagination</a> (to appear)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Paper submitted to the Computational Intelligence Journal (Wiley) in 2017 
@@ -44,7 +44,7 @@ phase. This article may be used for non-commercial purposes in
 accordance with Wiley Terms and Conditions for Self-Archiving.
 
 The article is an extended version (37 pages) of the 2016 ACM article
-"A General Framework for Globally Optimized Pagination" providing a
+"A General Framework for Globally Optimized Pagination" listed below, providing a
 lot more details and additional research results.
 
 ***
@@ -453,6 +453,15 @@ HTML presentation of the material from the September 2005 pdfTeX workshop betwee
 ### [EuroTeX 2005 notes]({{site.baseurl}}/publications/eurotex-2005-notes/)
 
 HTML presentation of the work done by the LaTeX project team during EuroTeX 2005. It is available both for [on-line browsing]({{site.baseurl}}/publications/eurotex-2005-notes/) and [download as a zip]({{site.baseurl}}/publications/eurotex-2005-notes.zip) file (923 kB).
+
+***
+
+### <a href="{{site.baseurl}}/publications/tb70mit.pdf" target="_blank" onclick="vgwPixelCall('3e392c2134934117af3b2c8fa0eb698e');">The trace package</a>
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Published paper, TUGboat, Volume 22 (2001), No. 1/2
+
+This article describes the trace package that is useful when debugging complex (or not so complex) LaTeX code.
 
 ***
 
