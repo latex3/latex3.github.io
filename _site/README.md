@@ -61,6 +61,10 @@ The latex-project.org webdesign by [Jonas Jacek](http://jonas.me/) is licensed u
 
 This is a [Free Culture License](https://creativecommons.org/share-your-work/public-domain/freeworks/)!
 
+However, the license requires you to give appropriate credit to Jonas, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests Jonas or the LaTeX Project endorses you or your use.
+
+Please credit Jonas with a link to his website (http://jonas.me/) and state the license somewhere on your page. Everything else brings bad karma.
+
 ### Reporting Website Bugs
 
 If you think you've found a bug on our website you can report it to the website team at <mailto:webmaster@latex-project.org>. If you do submit a report, thanks for taking the time!
