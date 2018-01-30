@@ -206,7 +206,7 @@ publically available as further research and development is needed.
 + Published paper, TUGboat, Volume 37 (2016), No. 1
 
 An article by [Joseph
-Wright]({{site.baseurl}}/about/team/#joseph-wright) on a very clever
+Wright]({{site.baseurl}}/about/team/#joseph-wright) on a clever
 use of \romannumeral to trigger controlled expansion. This is used
 extensively in the expl3 sources.
 
@@ -485,7 +485,7 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ### [An exploration of the Latin Modern fonts](https://tug.org/TUGboat/tb28-2/tb89robertson.pdf)
 
-+ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson):
++ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
 + Published paper, TUGboat, Volume 28 (2007), No. 2
 
 [Will Robertson's]({{site.baseurl}}/about/team/#will-robertson) look at the Latin Modern font families and their features.

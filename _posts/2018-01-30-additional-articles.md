@@ -17,7 +17,7 @@ These are:
 
 + A General LuaTeX Framework for Globally Optimized Pagination
 
-The article is an extended version (37 pages) of the 2016 ACM article “A General Framework for Globally Optimized Pagination” listed below, providing a lot more details and additional research results. It was submitted to the Computational Intelligence Journal (Wiley) in 2017.
+*This article is an extended version (37 pages) of the 2016 ACM article “A General Framework for Globally Optimized Pagination”, providing a lot more details and additional research results. It was submitted to the Computational Intelligence Journal (Wiley) in 2017 and accepted January 2018.*
 
 + New rules for reporting bugs in the LaTeX core software (TUGboat 2018)
 
@@ -33,7 +33,7 @@ The article is an extended version (37 pages) of the 2016 ACM article “A Gener
 
 + The xtemplate package: An example (TUGboat 2012)
 
-An external perspective on our ideas for a designer interface by Clemens Niederberger.
+*An external perspective on our ideas for a designer interface by Clemens Niederberger.*
 
 + An exploration of the Latin Modern fonts (TUGboat 2007)
 
@@ -41,3 +41,5 @@ An external perspective on our ideas for a designer interface by Clemens Niederb
 
 + Everything we want to know about Font Resources  (TUGboat 2006)
 
+
+Enjoy - Frank
