@@ -200,11 +200,34 @@ publically available as further research and development is needed.
 
 ***
 
+### [Exploring \romannumeral and expansion](https://tug.org/TUGboat/tb37-1/tb115wright.pdf)
+
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
++ Published paper, TUGboat, Volume 37 (2016), No. 1
+
+An article by [Joseph
+Wright]({{site.baseurl}}/about/team/#joseph-wright) on a very clever
+use of \romannumeral to trigger controlled expansion. This is used
+extensively in the expl3 sources.
+
+***
+
 <div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
 <hr>
 
 
 ## Publications in 2015
+
+### [Automated LaTeX(3) testing](https://tug.org/TUGboat/tb36-3/tb114wright.pdf)
+
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
++ Published paper, TUGboat, Volume 36 (2015), No. 3
+
+A discussion of our Continious
+Integration testing setup for LaTeX3 sources using l3build
+and Travis-CI. These days we also use this to continuously the LaTeX2e sources!
+
+***
 
 ### TUG 2015 <a href="http://tug.org/tug2015/" target="_blank">Conference (Darmstadt, Germany)</a>
 
@@ -220,8 +243,14 @@ Hidden behind this title is a presentation of the new LaTeX kernel compatibility
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright):
   + [XeTeX and LuaTeX: Getting Unicode data into the right places (video via River Valley TV)](http://www.zeeba.tv/xetex-and-luatex-getting-unicode-data-into-the-right-places/)
   + [XeTeX and LuaTeX: Getting Unicode data into the right places (slides)]({{site.baseurl}}/publications/2015-07-20-Unicode.pdf)
+  + [Joseph's Adventures in Unicodeland (TUGboat volume 36 (2015), No. 2)](https://tug.org/TUGboat/tb36-2/tb113wright-unicode.pdf)
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright):
   + [Through the \parshape, and what Joseph found there (video via River Valley TV)](http://www.zeeba.tv/through-the-parshape-and-what-joseph-found-there/)
   + [Through the \parshape, and what Joseph found there (slides)]({{site.baseurl}}/publications/2015-07-22-parshape.pdf)
+  + [Through the \parshape, and what Joseph found there (TUGboat volume 36 (2015), No. 2)](https://tug.org/TUGboat/tb36-2/tb113wright-parshape.pdf)
++ [Enrico Gregorio]({{site.baseurl}}/about/team/#enrico-gregorio):
+  + [Recollections of a spurious space catcher (video via River Valley TV)](http://zeeba.tv/recollections-of-a-spurious-space-catcher/)
+  + [Recollections of a spurious space catcher (TUGboat volume 36 (2015), No. 2)](https://tug.org/TUGboat/tb36-2/tb113gregorio.pdf)
 
 ***
 
@@ -328,6 +357,16 @@ which have lifted some of the limitations identified back then.
 
 ***
 
+### [The xtemplate package: An example](https://tug.org/TUGboat/tb33-3/tb105niederberger.pdf)
+
++ Published paper, TUGboat, Volume 33 (2012), No. 3
++ Keywords: LaTeX3, designer-interface, evaluation report
+
+An evaluation by Clemens Niederberger of the ideas behind the template interface for LaTeX3.
+
+***
+
+
 ### TUG 2011 <a href="http://tug.org/tug2011/" target="_blank">Conference (Trivandrum, India)</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
@@ -375,7 +414,7 @@ In this paper Will discusses Unicode mathematics in the context of LaTeX with th
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 31 (2010), No. 3
 
-An discussion by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) of some of the new possibilities offered by the xparse package compared to those offered by \newcommand.
+A discussion by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) of some of the new possibilities offered by the xparse package compared to those offered by \newcommand.
 
 ***
 
@@ -444,6 +483,32 @@ An introduction by [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright) o
 
 ***
 
+### [An exploration of the Latin Modern fonts](https://tug.org/TUGboat/tb28-2/tb89robertson.pdf)
+
++ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson):
++ Published paper, TUGboat, Volume 28 (2007), No. 2
+
+[Will Robertson's]({{site.baseurl}}/about/team/#will-robertson) look at the Latin Modern font families and their features.
+
+***
+
+### [Page design in LaTeX3](https://tug.org/TUGboat/tb27-2/tb87hoegholm.pdf)
+
++ [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
++ Published paper, TUGboat, Volume 27 (2006), No. 2 --- Proceedings of the 2006 Annual Meeting
+
+In this article [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm) is presenting ideas on page design concepts for LaTeX3.
+
+***
+
+### [Everything we want to know about Font Resources](https://tug.org/TUGboat/tb27-2/tb87rowley.pdf)
+
++ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley)
++ Published paper, TUGboat, Volume 27 (2006), No. 2 --- Proceedings of the 2006 Annual Meeting
+
+***
+
+
 ### [pdfTeX workshop 2005/09/24-26]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/)
 
 HTML presentation of the material from the September 2005 pdfTeX workshop between Thanh The Han, [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm), and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach). The main topic of the workshop was grid typesetting. The material is available both for [on-line browsing]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24/) and [download as a zip]({{site.baseurl}}/publications/pdfTeX-meeting-2005-09-24.zip) file (1364 kB).
@@ -454,6 +519,16 @@ HTML presentation of the material from the September 2005 pdfTeX workshop betwee
 
 HTML presentation of the work done by the LaTeX project team during EuroTeX 2005. It is available both for [on-line browsing]({{site.baseurl}}/publications/eurotex-2005-notes/) and [download as a zip]({{site.baseurl}}/publications/eurotex-2005-notes.zip) file (923 kB).
 
+
+***
+
+### [Some note on templates](https://tug.org/TUGboat/tb24-2/tb77hellstrom.pdf)
+
++ Published paper, TUGboat, Volume 24 (2003), No. 2
++ Keywords: LaTeX3, designer-interface, evaluation report
+
+A discussion by Lars Hellström of the current implementation of the concept of templates. 
+
 ***
 
 ### <a href="{{site.baseurl}}/publications/tb70mitt.pdf" target="_blank" onclick="vgwPixelCall('3e392c2134934117af3b2c8fa0eb698e');">The trace package</a>
@@ -462,15 +537,6 @@ HTML presentation of the work done by the LaTeX project team during EuroTeX 2005
 + Published paper, TUGboat, Volume 22 (2001), No. 1/2
 
 This article describes the trace package that is useful when debugging complex (or not so complex) LaTeX code.
-
-***
-
-### [Some note on templates]({{site.baseurl}}/publications/template-notes.pdf)
-
-+ Unpublished paper, 2001
-+ Keywords: LaTeX3, designer-interface, evaluation report
-
-A discussion by Lars Hellström of the current implementation of the concept of templates. This paper is scheduled for publication in TUGboat.
 
 ***
 
