@@ -19,16 +19,13 @@ If you know about a list of TeX and related documentation not listed here, pleas
 
 ## Documentation distributed with LaTeX
 
-LaTeX is described in LaTeX2e for authors which is available as a
-+ <a href="{{site.baseurl}}/help/documentation/usrguide.tex"
+A short introduction to LaTeX (with some focus on the differences
+between the old LaTeX 2.09 and current standard LaTeX2e) is given in
+the following document:
+
++ <a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX source
-   document</a>
-  or as a
-  <a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
-   target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> compiled PDF
-   document</a>.
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors</a>
 
 More advanced documentation about LaTeX, which is available via the net includes: 
 
@@ -63,13 +60,13 @@ More advanced documentation about LaTeX, which is available via the net includes
 
 The full documentation of the source code with all commands and their
 implementation can be obtained by processing `source2e.tex`
-distributed as part of the LaTeX2e distribution. A compiled (though
-not necessarily the latest) version with a list of all major changes and an
-index of all commands and their usage within the kernel is
+distributed as part of the LaTeX2e distribution. A compiled version
+with a list of all major changes and an index of all commands and
+their usage within the kernel is
 
 + <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources 680+ pages)</a>
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources (680+ pages)</a>
 
 A similar document exists for the implementation of the standard
 classes `article`, `report`, and `book`:
@@ -86,7 +83,7 @@ documented here:
 
 + <a href="{{site.baseurl}}/help/documentation/latexrelease.pdf"
      target="_blank"
-     onclick="vgwPixelCall('ef0b0f945a6148be8c924ed494b726d4');">The `latexrelease` package</a>
+     onclick="vgwPixelCall('ef0b0f945a6148be8c924ed494b726d4');">The latexrelease package</a>
 
 
 
