@@ -61,6 +61,34 @@ More advanced documentation about LaTeX, which is available via the net includes
      onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">The LaTeX3
      Project</a>
 
+The full documentation of the source code with all commands and their
+implementation can be obtained by processing `source2e.tex`
+distributed as part of the LaTeX2e distribution. A compiled (though
+not necessarily the latest) version with a list of all major changes and an
+index of all commands and their usage within the kernel is
+
++ <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources 680+ pages)</a>
+
+A similar document exists for the implementation of the standard
+classes `article`, `report`, and `book`:
+
++ <a href="{{site.baseurl}}/help/documentation/classes.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('f0486f81546c47df9dba6c8e927c256e');">Standard Document Classes for LaTeX2e</a>
+
+In 2015 we introduced a roll-back/roll-forward functionality by which
+it becomes possible to reset the kernel code (though not external
+packages at this stage) to the behavior that it had on a particular
+date. This can be useful when processing older documents. It is
+documented here:
+
++ <a href="{{site.baseurl}}/help/documentation/latexrelease.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('ef0b0f945a6148be8c924ed494b726d4');">The `latexrelease` package</a>
+
+
 
 ## Non-english documentation
 
