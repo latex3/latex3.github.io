@@ -67,12 +67,18 @@ their usage within the kernel is
 + <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
      target="_blank"
      onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources (680+ pages)</a>
+
+As a companion document Martin Scharrer compiled a useful reference
+list with links back into the previous document if both are stored in
+the same directory:
+
 + <a href="http://mirrors.ctan.org/info/macros2e/macros2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">List of internal LaTeX2e Macros useful to Package Authors</a> (a useful reference list compiled by Martin Scharrer with links back into the previous document if both are stored in the same directory)
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">List of internal LaTeX2e Macros useful to Package Authors</a>
 
-A similar document exists for the implementation of the standard
-classes `article`, `report`, and `book`:
+For the implementation of the standard classes `article`, `report`,
+and `book` there also exists a document that contains the complete sources
+with commentary:
 
 + <a href="{{site.baseurl}}/help/documentation/classes.pdf"
      target="_blank"
