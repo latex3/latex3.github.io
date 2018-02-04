@@ -62,7 +62,7 @@ There are some extracts from the book as PDF files available from this site:
 
 + <a href="tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
 + <a href="tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
-+ [bibliography and index](tlc2-ap4.pdf) (796 kB)
++ <a href="tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
 
 There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of TLC2 provide a number of prizes for people finding errors in the book. 
 
@@ -81,7 +81,7 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 **Pages:** 976 pages  
 
 +  <a href="{{site.baseurl}}/help/books/lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
-+ [bibliography and index](lgc2-ap3.pdf) (1223 kB)
++  <a href="{{site.baseurl}}/help/books/lgc2-ap3.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">bibliography and index</a> (1223 kB)
 + [supplementary material on the web](http://xml.web.cern.ch/XML/lgc2/) maintained by Michel Goossens
 
 There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of LGC2 provide a number of prizes for people finding errors in the book.
