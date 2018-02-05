@@ -60,7 +60,7 @@ Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id
 
 There are some extracts from the book as PDF files available from this site:
 
-+ <a href="tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
++ <A href="tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
 + <a href="tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
 + <a href="tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
 
@@ -79,6 +79,8 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 **ISBN-10:** 0321508920  
 **ISBN-13:** 078-5342508925  
 **Pages:** 976 pages  
+
+There are some extracts from the book as PDF files available from this site:
 
 +  <a href="{{site.baseurl}}/help/books/lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
 +  <a href="{{site.baseurl}}/help/books/lgc2-ap3.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">bibliography and index</a> (1223 kB)
