@@ -8,8 +8,11 @@ permalink: /about/logo/
 # LaTeX, LaTeX3 and expl3 Logos and Usage
 
 We’ve put together some assets for those times when you want to show
-off your work as being produced by LaTeX or link back to us. Happy
+off your work as being produced by LaTeX, or link back to us. Happy
 typesetting!
+
+We like to thank [Paulo Cereda](https://github.com/cereda) for
+designing and implementing the initial "hummingbird" logo for LaTeX.
 
 ***
 
@@ -59,7 +62,7 @@ typesetting!
       <li>Use the LaTeX logos to represent your work, e.g., for your
           application’s icon, website, etc.</li>
 
-      <li>Create a modified version of the LaTeX logos</li>
+      <li>Create any modified versions of the LaTeX logos</li>
 
       <li>Integrate any of the LaTeX logos into your own logo (without
           explicit permission)</li>
@@ -68,8 +71,8 @@ typesetting!
 
       <li>Sell any LaTeX logo artwork without permission</li>
 
-      <li>Change the colors, dimensions or add your own
-          text/images</li>
+      <li>Change the colors or dimensions of, or add your own
+      text/images to, any LaTeX logo</li>
 
     </ul>
   </div>
@@ -81,28 +84,27 @@ typesetting!
 
 <div class="row">
   <div class="col cell1of2">
-    <h2>Avoid implicit or explicit endorsement</h2>
+    <h2>Avoid implicit or explicit endorsement of you by us</h2>
     <ul>
    
       <li>Please avoid when naming or describing <em>your projects or
-	  products</em> anything that implies The LaTeX Team’s
-	  endorsement.</li>
+	  products</em> anything that implies endorsement by The LaTeX Team</li>
     
-      <li>In particular please refrain from using the term "The LaTeX
-          Team" or the LaTeX logos except when you are referring to us
-          or the software produced by us.</li>
+      <li>In particular, please refrain from using the term "The LaTeX
+          Team" or the LaTeX logos except when you are referring
+          directly to us or to the software produced by us</li>
 
       <li>Other usages are likely to imply that
           your product is in some way directly or indirectly related
-          to us.</li>
+          to us</li>
 
     </ul>
   </div>
   <div class="col cell1of2">
     <h2>Please contact us if ... </h2>
     <ul>
-      <li> ... if you want to use these images for a purpose not listed or
-      listed as undesirable on this page</li>
+      <li> ... if you want to use these images for a purpose not listed, or
+      listed as undesirable, on this page</li>
     
       <li> ... if you want to base your own logo on these images</li>
     </ul>
@@ -110,7 +112,8 @@ typesetting!
     
     <p>In short, the LaTeX logos (with the hummingbird or the head of
        the hummingbird) represent only the work by "The LaTeX Team"
-       and should not be used to represent <em>your products</em>.</p>
+       and should not be used to represent <em>your products,
+       organisation or services</em>.</p>
 
   </div>
 </div>
