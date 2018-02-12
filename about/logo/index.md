@@ -11,8 +11,8 @@ We’ve put together some assets for those times when you want to show
 off your work as being produced by LaTeX, or link back to us. Happy
 typesetting!
 
-We like to thank [Paulo Cereda](https://github.com/cereda) for
-designing and implementing the initial "hummingbird" logo for LaTeX.
+We are happy to thank [Paulo Cereda](https://github.com/cereda) for
+designing and implementing the "hummingbird" logo for LaTeX.
 
 ***
 
@@ -103,10 +103,10 @@ designing and implementing the initial "hummingbird" logo for LaTeX.
   <div class="col cell1of2">
     <h2>Please contact us if ... </h2>
     <ul>
-      <li> ... if you want to use these images for a purpose not listed, or
+      <li> you want to use these images for a purpose not listed, or
       listed as undesirable, on this page</li>
     
-      <li> ... if you want to base your own logo on these images</li>
+      <li> you want to base your own logo on these images</li>
     </ul>
     <h2>In summary </h2>
     
