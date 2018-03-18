@@ -437,6 +437,12 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 .toc li ul { list-style: none; margin: 0.5em 0 0.5em 1.2em;}
 .toc li li { border-bottom: none ;}
 
+/* logos */
+.endorse, .reject { list-style: none; }
+.endorse li, .reject li { padding: .2em 0; }
+.endorse li:before { content: "\2705 \2002 \2005"; color: #777; white-space: nowrap; }
+.reject li:before { content: "\274E \2002 \2005"; color: #777; white-space: nowrap; }
+
 /* links */
 .links ul { list-style: none; }
 .links ul li { margin: 0 0 1em; }

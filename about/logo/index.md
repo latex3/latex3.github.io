@@ -35,45 +35,23 @@ designing and implementing the "hummingbird" logo for LaTeX.
 <div class="row">
   <div class="col cell1of2">
     <h2>Do these awesome things</h2>
-    <ul>
-   
+    <ul class="endorse">
       <li>Use the LaTeX or expl3 logo to link to this website</li>
-
-      <li>Use the LaTeX or expl3 logo in blog posts or news article
-      when talking about LaTeX, LaTeX3 or expl3</li>
-
-      <li>Use the produced-by-LaTeX logo in your work to indicate that
-      it was produced using this software</li>
-
-      <li>Use the term "The LaTeX Team" or "The LaTeX Project Team"
-      when referring to us, i.e. the group that maintains and develops
-      the core LaTeX software</li>
-
-      <li>Use the term "The LaTeX Project" when referring to the
-      project of maintaining and developing the core LaTeX software
-      including expl3 and LaTeX3</li>
-
+      <li>Use the LaTeX or expl3 logo in blog posts or news article when talking about LaTeX, LaTeX3 or expl3</li>
+      <li>Use the produced-by-LaTeX logo in your work to indicate that it was produced using this software</li>
+      <li>Use the term "The LaTeX Team" or "The LaTeX Project Team" when referring to us, i.e. the group that maintains and develops the core LaTeX software</li>
+      <li>Use the term "The LaTeX Project" when referring to the project of maintaining and developing the core LaTeX software including expl3 and LaTeX3</li>
     </ul>
   </div>
   <div class="col cell1of2">
     <h2>Please don’t do these things</h2>
-    <ul>
-   
-      <li>Use the LaTeX logos to represent your work, e.g., for your
-          application’s icon, website, etc.</li>
-
+    <ul class="reject">
+      <li>Use the LaTeX logos to represent your work, e.g., for your application’s icon, website, etc.</li>
       <li>Create any modified versions of the LaTeX logos</li>
-
-      <li>Integrate any of the LaTeX logos into your own logo (without
-          explicit permission)</li>
-
+      <li>Integrate any of the LaTeX logos into your own logo (without explicit permission)</li>
       <li>Use any LaTeX logo artwork without permission</li>
-
       <li>Sell any LaTeX logo artwork without permission</li>
-
-      <li>Change the colors or dimensions of, or add your own
-      text/images to, any LaTeX logo</li>
-
+      <li>Change the colors or dimensions of, or add your own text/images to, any LaTeX logo</li>
     </ul>
   </div>
 </div>
