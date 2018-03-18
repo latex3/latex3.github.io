@@ -16,6 +16,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
 <div class="col cell1of2">
 <ul class="team">
   <li id="frank-mittelbach">
+    <img src="no-image.jpg" alt="Frank Mittelbach">
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
@@ -25,15 +26,18 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="rainer-schoepf">
+    <img src="no-image.jpg" alt="Rainer Schöpf">
     <h2>Rainer Schöpf <br><span class="role">LaTeX3 Team, Webmaster</span></h2>
     <ul class="team">
       <li><a href="https://www.ctan.org/"><span class="fa fa-external-link-square"></span>https://www.ctan.org/</a></li>
     </ul>
   </li>
   <li id="chris-rowley">
+    <img src="no-image.jpg" alt="Chris Rowley">
     <h2>Chris Rowley <br><span class="role">LaTeX3 Team</span></h2>
   </li>
   <li id="david-carlisle">
+    <img src="no-image.jpg" alt="David Carlisle">
     <h2>David Carlisle <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.dcarlisle.demon.co.uk/"><span class="fa fa-external-link-square"></span>http://www.dcarlisle.demon.co.uk/</a></li>
@@ -42,12 +46,14 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="johannes-braams">
+    <img src="no-image.jpg" alt="Johannes Braams">
     <h2>Johannes Braams <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.xs4all.nl/~jlbraams/"><span class="fa fa-external-link-square"></span>http://www.xs4all.nl/~jlbraams/</a></li>
     </ul>
   </li>
   <li id="robin-fairbairns">
+    <img src="no-image.jpg" alt="Robin Fairbairns">
     <h2>Robin Fairbairns <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.cl.cam.ac.uk/users/rf/"><span class="fa fa-external-link-square"></span>http://www.cl.cam.ac.uk/users/rf/</a></li>
@@ -55,9 +61,11 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
   </li>
 
   <li id="morten-høgholm">
+    <img src="no-image.jpg" alt="Morten Høgholm">
     <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
   </li>
   <li id="javier-bezos">
+    <img src="no-image.jpg" alt="Javier Bezos">
     <h2>Javier Bezos <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.tex-tipografia.com/"><span class="fa fa-external-link-square"></span>http://www.tex-tipografia.com/</a></li>
@@ -69,6 +77,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
 <div class="col cell1of2">
 <ul class="team">
   <li id="will-robertson">
+    <img src="no-image.jpg" alt="Will Robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://willwont.blogspot.com/"><span class="fa fa-external-link-square"></span>http://willwont.blogspot.com/</a></li>
@@ -76,6 +85,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="joseph-wright">
+    <img src="no-image.jpg" alt="Joseph Wright">
     <h2>Joseph Wright <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:joseph.wright@morningstar2.co.uk"><span class="fa fa-envelope-square"></span>joseph.wright@morningstar2.co.uk</a></li>
@@ -86,6 +96,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="bruno-le-floch">
+    <img src="no-image.jpg" alt="Bruno Le Floch">
     <h2>Bruno Le Floch <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:blflatex@gmail.com"><span class="fa fa-envelope-square"></span>blflatex@gmail.com</a></li>
@@ -93,6 +104,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="jonas-jacek">
+    <img src="jonas-jared-jacek.jpg" alt="Jonas Jacek">
     <h2>Jonas Jared Jacek <br><span class="role">Web Development, Webmaster</span></h2>
     <ul class="team">
       <li><a href="http://jonas.me/"><span class="fa fa-external-link-square"></span>http://jonas.me/</a></li>
@@ -102,6 +114,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="enrico-gregorio">
+    <img src="no-image.jpg" alt="Enrico Gregorio">
     <h2>Enrico Gregorio <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://profs.scienze.univr.it/~gregorio/egtex.html"><span class="fa fa-external-link-square"></span>http://profs.scienze.univr.it/~gregorio/egtex.html</a></li>
