@@ -20,7 +20,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
-      <li><a href="http://tex.stackexchange.com/users/10109/frank-mittelbach"><span class="fa fa-stack-exchange"></span>http://tex.stackexchange.com/users/10109</a></li>
+      <li><a href="https://tex.stackexchange.com/users/10109/frank-mittelbach"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/10109</a></li>
       <li><a href="https://github.com/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/FrankMittelbach</a></li>
       <li><a href="https://de.linkedin.com/in/frankmittelbach"><span class="fa fa-linkedin-square"></span>https://de.linkedin.com/in/frankmittelbach</a></li>
     </ul>
@@ -42,21 +42,21 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <ul class="team">
       <li><a href="http://www.dcarlisle.demon.co.uk/"><span class="fa fa-external-link-square"></span>http://www.dcarlisle.demon.co.uk/</a></li>
       <li><a href="https://github.com/davidcarlisle"><span class="fa fa-github-square"></span>https://github.com/davidcarlisle</a></li>
-      <li><a href="http://tex.stackexchange.com/users/1090/david-carlisle"><span class="fa fa-stack-exchange"></span>http://tex.stackexchange.com/users/1090</a></li>
+      <li><a href="https://tex.stackexchange.com/users/1090/david-carlisle"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/1090</a></li>
     </ul>
   </li>
   <li id="johannes-braams">
-    <img src="no-image.jpg" alt="Johannes Braams">
+    <img src="johannes-braams.jpg" alt="Johannes Braams">
     <h2>Johannes Braams <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><a href="http://www.xs4all.nl/~jlbraams/"><span class="fa fa-external-link-square"></span>http://www.xs4all.nl/~jlbraams/</a></li>
+      <li><a href="https://www.xs4all.nl/~jlbraams/"><span class="fa fa-external-link-square"></span>https://www.xs4all.nl/~jlbraams/</a></li>
     </ul>
   </li>
   <li id="robin-fairbairns">
     <img src="robin-fairbairns.jpg" alt="Robin Fairbairns">
     <h2>Robin Fairbairns <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><a href="http://www.cl.cam.ac.uk/users/rf/"><span class="fa fa-external-link-square"></span>http://www.cl.cam.ac.uk/users/rf/</a></li>
+      <li><a href="https://www.cl.cam.ac.uk/users/rf/"><span class="fa fa-external-link-square"></span>https://www.cl.cam.ac.uk/users/rf/</a></li>
     </ul>
   </li>
 
@@ -80,7 +80,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <img src="will-robertson.jpg" alt="Will Robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><a href="http://willwont.blogspot.com/"><span class="fa fa-external-link-square"></span>http://willwont.blogspot.com/</a></li>
+      <li><a href="https://willwont.blogspot.com/"><span class="fa fa-external-link-square"></span>https://willwont.blogspot.com/</a></li>
       <li><a href="https://github.com/wspr"><span class="fa fa-github-square"></span>https://github.com/wspr</a></li>
     </ul>
   </li>
@@ -90,13 +90,13 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <ul class="team">
       <li><a href="mailto:joseph.wright@morningstar2.co.uk"><span class="fa fa-envelope-square"></span>joseph.wright@morningstar2.co.uk</a></li>
       <li><a href="skype:josephawright"><span class="fa fa-skype"></span>josephawright</a></li>
-      <li><a href="http://www.texdev.net/"><span class="fa fa-external-link-square"></span>http://www.texdev.net/</a></li>
+      <li><a href="https://www.texdev.net/"><span class="fa fa-external-link-square"></span>https://www.texdev.net/</a></li>
       <li><a href="https://github.com/josephwright"><span class="fa fa-github-square"></span>https://github.com/josephwright</a></li>
-      <li><a href="http://tex.stackexchange.com/users/73/joseph-wright"><span class="fa fa-stack-exchange"></span>http://tex.stackexchange.com/users/73</a></li>
+      <li><a href="https://tex.stackexchange.com/users/73/joseph-wright"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/73</a></li>
     </ul>
   </li>
   <li id="bruno-le-floch">
-    <img src="no-image.jpg" alt="Bruno Le Floch">
+    <img src="bruno-le-floch.jpg" alt="Bruno Le Floch">
     <h2>Bruno Le Floch <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:blflatex@gmail.com"><span class="fa fa-envelope-square"></span>blflatex@gmail.com</a></li>
