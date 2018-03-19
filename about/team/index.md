@@ -77,7 +77,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
 <div class="col cell1of2">
 <ul class="team">
   <li id="will-robertson">
-    <img src="no-image.jpg" alt="Will Robertson">
+    <img src="will-robertson.jpg" alt="Will Robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://willwont.blogspot.com/"><span class="fa fa-external-link-square"></span>http://willwont.blogspot.com/</a></li>
