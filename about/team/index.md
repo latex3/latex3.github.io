@@ -53,7 +53,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="robin-fairbairns">
-    <img src="no-image.jpg" alt="Robin Fairbairns">
+    <img src="robin-fairbairns.jpg" alt="Robin Fairbairns">
     <h2>Robin Fairbairns <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.cl.cam.ac.uk/users/rf/"><span class="fa fa-external-link-square"></span>http://www.cl.cam.ac.uk/users/rf/</a></li>
