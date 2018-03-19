@@ -220,7 +220,7 @@ li {
 ul.team, ul.team ul { list-style: inside none; margin: .5em 0 2em;}
 ul.team ul { margin: 0 0 2em 1em; }
 ul.team ul li { margin: 0; }
-ul.team li img { border-radius: 50%; float: left; margin: 0 .8em 0 0; height: 45px; width: 45px;}
+ul.team li img { border-radius: 50%; float: left; margin: 0 .8em 0 0; height: 50px; width: 50px;}
 ul.team a span {color: #000;}
 ul.team a {word-break: break-all; display: inline-block;}
 

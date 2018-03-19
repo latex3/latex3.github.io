@@ -16,7 +16,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
 <div class="col cell1of2">
 <ul class="team">
   <li id="frank-mittelbach">
-    <img src="no-image.jpg" alt="Frank Mittelbach">
+    <img src="frank-mittelbach.jpg" alt="Frank Mittelbach">
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
@@ -65,10 +65,10 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
   </li>
   <li id="javier-bezos">
-    <img src="no-image.jpg" alt="Javier Bezos">
+    <img src="javier-bezos.jpg" alt="Javier Bezos">
     <h2>Javier Bezos <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><a href="http://www.tex-tipografia.com/"><span class="fa fa-external-link-square"></span>http://www.tex-tipografia.com/</a></li>
+      <li><a href="http://www.texnia.com/"><span class="fa fa-external-link-square"></span>http://www.texnia.com/</a></li>
     </ul>
   </li>
 </ul>
@@ -114,7 +114,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="enrico-gregorio">
-    <img src="no-image.jpg" alt="Enrico Gregorio">
+    <img src="enrico-gregorio.jpg" alt="Enrico Gregorio">
     <h2>Enrico Gregorio <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://profs.scienze.univr.it/~gregorio/egtex.html"><span class="fa fa-external-link-square"></span>http://profs.scienze.univr.it/~gregorio/egtex.html</a></li>
