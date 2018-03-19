@@ -119,7 +119,9 @@ in case the document is produced with software that
 cannot correctly raise and lower characters.</p>
 
 <p>Please do <em>not</em> use other forms of capitalizations,
-e.g. “LATEX” or “latex” would be incorrect!</p>
+e.g.,
+<code class="highlighter-rouge">LATEX</code> or
+<code class="highlighter-rouge">latex</code> would be incorrect!</p>
 
 
 <hr>
