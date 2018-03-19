@@ -33,11 +33,11 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="chris-rowley">
-    <img src="no-image.jpg" alt="Chris Rowley">
+    <img src="chris-rowley.jpg" alt="Chris Rowley">
     <h2>Chris Rowley <br><span class="role">LaTeX3 Team</span></h2>
   </li>
   <li id="david-carlisle">
-    <img src="no-image.jpg" alt="David Carlisle">
+    <img src="david-carlisle.jpg" alt="David Carlisle">
     <h2>David Carlisle <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="http://www.dcarlisle.demon.co.uk/"><span class="fa fa-external-link-square"></span>http://www.dcarlisle.demon.co.uk/</a></li>
@@ -85,7 +85,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="joseph-wright">
-    <img src="no-image.jpg" alt="Joseph Wright">
+    <img src="joseph-wright.jpg" alt="Joseph Wright">
     <h2>Joseph Wright <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
       <li><a href="mailto:joseph.wright@morningstar2.co.uk"><span class="fa fa-envelope-square"></span>joseph.wright@morningstar2.co.uk</a></li>
