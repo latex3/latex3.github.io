@@ -14,6 +14,9 @@ typesetting!
 We are happy to thank [Paulo Cereda](https://github.com/cereda) for
 designing and implementing the "hummingbird" logo for LaTeX.
 
+
+
+
 ***
 
 <div class="row">
@@ -32,9 +35,10 @@ designing and implementing the "hummingbird" logo for LaTeX.
 
 <hr />
 
+
 <div class="row">
   <div class="col cell1of2">
-    <h2>Do these awesome things</h2>
+    <h2>Feel free to do these things</h2>
     <ul class="endorse">
       <li>Use the LaTeX or expl3 logo to link to this website</li>
       <li>Use the LaTeX or expl3 logo in blog posts or news article when talking about LaTeX, LaTeX3 or expl3</li>
@@ -62,11 +66,12 @@ designing and implementing the "hummingbird" logo for LaTeX.
 
 <div class="row">
   <div class="col cell1of2">
-    <h2>Avoid implicit or explicit endorsement of you by us</h2>
+    <h2>Please avoid misrepresentation ...</h2>
     <ul>
    
       <li>Please avoid when naming or describing <em>your projects or
-	  products</em> anything that implies endorsement by The LaTeX Team</li>
+	  products</em> anything that implies endorsement by The LaTeX Team unless we have
+	  explicitly authorized this</li>
     
       <li>In particular, please refrain from using the term "The LaTeX
           Team" or the LaTeX logos except when you are referring
@@ -95,6 +100,27 @@ designing and implementing the "hummingbird" logo for LaTeX.
 
   </div>
 </div>
+
+
+
+<h2> LaTeX logos used within normal text</h2>
+
+<p>In a document produced by LaTeX you can generate the textual form
+of the LaTeX logo by simply using commands like
+<code class="highlighter-rouge">\LaTeX{}</code> or
+<code class="highlighter-rouge">\LaTeXe{}</code> or
+<code class="highlighter-rouge">\LaTeX3</code> for the different textual logos.</p>
+
+<p>Please use the ASCII form of these logos which are
+<code class="highlighter-rouge">LaTeX</code> or
+<code class="highlighter-rouge">LaTeX 2e</code> or
+<code class="highlighter-rouge">LaTeX3</code>
+in case the document is produced with software that
+cannot correctly raise and lower characters.</p>
+
+<p>Please do <em>not</em> use other forms of capitalizations,
+e.g. “LATEX” or “latex” would be incorrect!</p>
+
 
 <hr>
 
