@@ -40,7 +40,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <img src="david-carlisle.jpg" alt="David Carlisle">
     <h2>David Carlisle <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
-      <li><a href="http://www.dcarlisle.demon.co.uk/"><span class="fa fa-external-link-square"></span>http://www.dcarlisle.demon.co.uk/</a></li>
+      <li><a href="https://davidcarlisle.github.io/dcarlisle/david"><span class="fa fa-external-link-square"></span>https://davidcarlisle.github.io/dcarlisle/david</a></li>
       <li><a href="https://github.com/davidcarlisle"><span class="fa fa-github-square"></span>https://github.com/davidcarlisle</a></li>
       <li><a href="https://tex.stackexchange.com/users/1090/david-carlisle"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/1090</a></li>
     </ul>
