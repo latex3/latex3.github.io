@@ -61,7 +61,7 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
   </li>
 
   <li id="morten-høgholm">
-    <img src="no-image.jpg" alt="Morten Høgholm">
+    <img src="morten-høgholm.jpg" alt="Morten Høgholm">
     <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
   </li>
   <li id="javier-bezos">
