@@ -26,11 +26,8 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     </ul>
   </li>
   <li id="rainer-schoepf">
-    <img src="no-image.jpg" alt="Rainer Schöpf">
+    <img src="rainer-schoepf.jpg" alt="Rainer Schöpf">
     <h2>Rainer Schöpf <br><span class="role">LaTeX3 Team, Webmaster</span></h2>
-    <ul class="team">
-      <li><a href="https://www.ctan.org/"><span class="fa fa-external-link-square"></span>https://www.ctan.org/</a></li>
-    </ul>
   </li>
   <li id="chris-rowley">
     <img src="chris-rowley.jpg" alt="Chris Rowley">
