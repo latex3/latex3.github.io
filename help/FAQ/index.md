@@ -15,10 +15,10 @@ are interested in, It will be grown over time.
 
 
  - [What is the LaTeX default input
-   encoding?](default-inputencoding)
+   encoding?]({{site.baseurl}}/help/FAQ/default-inputencoding/)
 
  - [Why do I get and "Invalid UTF-8 byte sequence" error, what does it mean, and how do I recover from
-   it?](utf8-inputenc)
+   it?]({{site.baseurl}}/help/FAQ/utf8-inputenc/)
 
  - [What is the LaTeX Project Public License (LPPL) and why should I
    care?]({{site.baseurl}}/lppl/)
