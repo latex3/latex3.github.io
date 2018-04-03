@@ -114,7 +114,7 @@ of the LaTeX logo by simply using commands like
 
 <p>Please use the ASCII form of these logos which are
 <code class="highlighter-rouge">LaTeX</code> or
-<code class="highlighter-rouge">LaTeX 2e</code> or
+<code class="highlighter-rouge">LaTeX2e</code> or
 <code class="highlighter-rouge">LaTeX3</code>
 in case the document is produced with software that
 cannot correctly raise and lower characters.</p>
