@@ -2,7 +2,7 @@
 layout: page
 title: "LaTeX Team Logos"
 description: "Information about LaTeX logos and the use of the term LaTeX Team."
-permalink: /about/logo/
+permalink: /about/logos/
 ---
 
 # LaTeX, LaTeX3 and expl3 Logos and Usage
@@ -21,15 +21,16 @@ designing and implementing the "hummingbird" logo for LaTeX.
 
 <div class="row">
   <div class="col cell1of3">
-    <h2>Logo 1</h2>
-    <p>some explanation</p>
+    <a href="latex-project-logo-square.zip"><img src="latex-project-logo_288x288.svg"></a>
   </div>
   <div class="col cell1of3">
     <h2>Logo 2</h2>
+    <a href="foo2.zip"><img src="../team/no-image.jpg"></a>
     <p>some explanation</p>
   </div>
   <div class="col cell1of3">
     <h2>Logo 3</h2>
+    <a href="foo3.zip"><img src="../team/no-image.jpg"></a>
     <p>some explanation</p>
 </div>
 

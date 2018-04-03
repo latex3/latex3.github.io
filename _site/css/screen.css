@@ -218,8 +218,9 @@ li {
 .lsn { list-style: none; }
 
 ul.team, ul.team ul { list-style: inside none; margin: .5em 0 2em;}
-ul.team ul { margin: 0 0 0 .2em; }
+ul.team ul { margin: 0 0 2em 1em; }
 ul.team ul li { margin: 0; }
+ul.team li img { border-radius: 50%; float: left; margin: 0 .8em 0 0; height: 50px; width: 50px;}
 ul.team a span {color: #000;}
 ul.team a {word-break: break-all; display: inline-block;}
 
@@ -436,6 +437,12 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 .toc li ul { list-style: none; margin: 0.5em 0 0.5em 1.2em;}
 .toc li li { border-bottom: none ;}
 
+/* logos */
+.endorse, .reject { list-style: none; }
+.endorse li, .reject li { padding: .2em 0; }
+.endorse li:before { content: "\2705 \2002 \2005"; color: #777; white-space: nowrap; }
+.reject li:before { content: "\274E \2002 \2005"; color: #777; white-space: nowrap; }
+
 /* links */
 .links ul { list-style: none; }
 .links ul li { margin: 0 0 1em; }
@@ -447,7 +454,7 @@ ul.all-news-posts {margin: 0 0 2.5em;}
 .books img { float: left; margin: .3em 1em .2em 0; padding: .1em; border: 1px solid #DDD; }
 
 /* team */
-.team h2 { font-size: 1.2em; margin: 1.3em 0 .5em; }
+.team h2 { font-size: 1.2em; margin: 1.4em 0 .6em; padding: 0.15em 0 0 0; }
 .team h2 .role { color: #999; font-size: 0.7em; }
 
 /* flattr */
