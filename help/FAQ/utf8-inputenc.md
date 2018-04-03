@@ -2,7 +2,6 @@
 layout: page
 title: "Invalid UTF-8 byte sequence error"
 description: ""
-permalink: /help/FAQ/utf8-inputenc
 ---
 
 **draft 0**

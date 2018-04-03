@@ -2,7 +2,6 @@
 layout: page
 title: "UTF-8 default encoding"
 description: ""
-permalink: /help/FAQ/default-inputencoding
 ---
 
 **draft 0**
