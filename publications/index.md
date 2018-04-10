@@ -33,6 +33,21 @@ description: "Selection of links to PDF versions of various articles published b
 
 ## Publications in 2018
 
+### <a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (to appear)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Draft for submission to TUGboat, 2018 
+
+An article discussing the new rollback concept for packages and
+classes. Together with the `latexrelease` package this forms a
+comprehensive release management and compatibility solution for the
+LaTeX universe.
+
+
+***
+
+
+
 ### <a href="{{site.baseurl}}/publications/2017-CI-Journal-28454894_as_submitted.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">A General LuaTeX Framework for Globally Optimized Pagination</a> (to appear)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
@@ -50,10 +65,10 @@ lot more details and additional research results.
 ***
 
 
-### <a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a> (to appear)
+### <a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Paper submitted for TUGboat 39:1, 2018 
++ Paper published in TUGboat 39:1, 2018 
 
 An article discussing the new workflow for reporting bugs in the
 core LaTeX software. It also covers the underlying move of the LaTeX

@@ -18,8 +18,7 @@ TeX Live 2018 DVD. It was uploaded to CTAN and will be
 available on the mirror servers shortly.
 
 The most important changes and additions are documented in
-ltnews28.pdf. This document can be found on the [LaTeX2e news
-page]({{site.baseurl}}/news/latex2e-news/).
+<a href="{{site.baseurl}}/news/latex2e-news/ltnews28.pdf" target="_blank" onclick="vgwPixelCall('e9cdf4e5347a42d29f280b3a53e04614');">"LaTeX2e News Issue 28"</a>. This document can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/) where you will also find release information for earlier LaTeX releases.
 
 Topics are:
 
@@ -31,5 +30,10 @@ Topics are:
  - The testing for undefined command has been changed
  - Some changes to tools packages
  - Some changes to amsmath and update of amsldoc user's guide
+
+Details on the rollback concept is given in
+<a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">"A rollback concept for packages and classes"</a>
+and further information on how to report bugs can be found in the article
+<a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">"New rules for reporting bugs in the LaTeX core software"</a>.
 
 

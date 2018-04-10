@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 10 Apr 2018 17:33:23 +0200</pubDate>
-    <lastBuildDate>Tue, 10 Apr 2018 17:33:23 +0200</lastBuildDate>
+    <pubDate>Tue, 10 Apr 2018 18:04:09 +0200</pubDate>
+    <lastBuildDate>Tue, 10 Apr 2018 18:04:09 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -18,8 +18,7 @@ TeX Live 2018 DVD. It was uploaded to CTAN and will be
 available on the mirror servers shortly.&lt;/p&gt;
 
 &lt;p&gt;The most important changes and additions are documented in
-ltnews28.pdf. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;/news/latex2e-news/ltnews28.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('e9cdf4e5347a42d29f280b3a53e04614');&quot;&gt;“LaTeX2e News Issue 28”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news page&lt;/a&gt; where you will also find release information for earlier LaTeX releases.&lt;/p&gt;
 
 &lt;p&gt;Topics are:&lt;/p&gt;
 
@@ -33,6 +32,11 @@ page&lt;/a&gt;.&lt;/p&gt;
   &lt;li&gt;Some changes to tools packages&lt;/li&gt;
   &lt;li&gt;Some changes to amsmath and update of amsldoc user’s guide&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Details on the rollback concept is given in
+&lt;a href=&quot;/publications/2018-version-rollback.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('f018e721a0fe425899cee633a987ebff');&quot;&gt;“A rollback concept for packages and classes”&lt;/a&gt;
+and further information on how to report bugs can be found in the article
+&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;“New rules for reporting bugs in the LaTeX core software”&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 10 Apr 2018 02:00:00 +0200</pubDate>
