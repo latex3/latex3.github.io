@@ -14,8 +14,7 @@ tags: [latex2e, latex-news]
 
 
 We have released the April 2018 LaTeX distribution in time for the new
-TeX Live 2018 DVD. It was uploaded to CTAN and will be
-available on the mirror servers shortly.
+TeX Live 2018 DVD. It was uploaded to CTAN and is now available on the mirror servers.
 
 The most important changes and additions are documented in
 <a href="{{site.baseurl}}/news/latex2e-news/ltnews28.pdf" target="_blank" onclick="vgwPixelCall('e9cdf4e5347a42d29f280b3a53e04614');">"LaTeX2e News Issue 28"</a>. This document can be found on the [LaTeX2e news page]({{site.baseurl}}/news/latex2e-news/) where you will also find release information for earlier LaTeX releases.
@@ -27,7 +26,7 @@ Topics are:
  - UTF-8 is the new default input encoding
  - We now offer a general rollback concept for packages as well as for the kernel
  - We integrated `remreset` and `chngcntr` packages into the kernel
- - The testing for undefined command has been changed
+ - The testing for an undefined command has been changed
  - Some changes to tools packages
  - Some changes to amsmath and update of amsldoc user's guide
 
