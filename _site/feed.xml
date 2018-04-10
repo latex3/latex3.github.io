@@ -5,9 +5,48 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 03 Apr 2018 13:23:47 +0200</pubDate>
-    <lastBuildDate>Tue, 03 Apr 2018 13:23:47 +0200</lastBuildDate>
+    <pubDate>Tue, 10 Apr 2018 17:33:23 +0200</pubDate>
+    <lastBuildDate>Tue, 10 Apr 2018 17:33:23 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New April 2018 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;april-2018-latex-release-available&quot;&gt;April 2018 LaTeX release available&lt;/h1&gt;
+
+&lt;p&gt;We have released the April 2018 LaTeX distribution in time for the new
+TeX Live 2018 DVD. It was uploaded to CTAN and will be
+available on the mirror servers shortly.&lt;/p&gt;
+
+&lt;p&gt;The most important changes and additions are documented in
+ltnews28.pdf. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Topics are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LaTeX is now on GitHub&lt;/li&gt;
+  &lt;li&gt;Bug database has changed&lt;/li&gt;
+  &lt;li&gt;UTF-8 is the new default input encoding&lt;/li&gt;
+  &lt;li&gt;We now offer a general rollback concept for packages as well as for the kernel&lt;/li&gt;
+  &lt;li&gt;We integrated &lt;code class=&quot;highlighter-rouge&quot;&gt;remreset&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;chngcntr&lt;/code&gt; packages into the kernel&lt;/li&gt;
+  &lt;li&gt;The testing for undefined command has been changed&lt;/li&gt;
+  &lt;li&gt;Some changes to tools packages&lt;/li&gt;
+  &lt;li&gt;Some changes to amsmath and update of amsldoc user’s guide&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 10 Apr 2018 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2018/04/10/issue28-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/04/10/issue28-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New (and older) articles uploaded</title>
@@ -431,33 +470,6 @@ file bundles&lt;/li&gt;
         <category>talks</category>
         
         <category>videos</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New LaTeX release --- Issue 26 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;new-latex-release-----issue-26-of-latex2e-news-released&quot;&gt;New LaTeX release — Issue 26 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;We have made a new LaTeX distribution with improves the support for
-the Unicode engines and has a number of other updates and
-improvements. Also important: we now officially require the engines to
-support the eTeX primitives in order to build a LaTeX format (all
-major engines do that already for a long time).&lt;/p&gt;
-
-&lt;p&gt;The most important changes and additions are documented in
-ltnews26.pdf. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 Jan 2017 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2017/01/26/issue26-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/01/26/issue26-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
