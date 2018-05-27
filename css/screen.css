@@ -225,8 +225,11 @@ ul.team a span {color: #000;}
 ul.team a {word-break: break-all; display: inline-block;}
 
 
-/* Code
+/* Code and code-like
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+pre {white-space: pre-wrap;}
+
 code {
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
