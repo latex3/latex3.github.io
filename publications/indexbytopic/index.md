@@ -1,11 +1,11 @@
 ---
 layout: page
 menu: Publications
-title: "Articles published by the LaTeX project"
-description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations."
+title: "Articles ordered by topic"
+description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations ordered by major topics."
 ---
 
-# Publications
+# Publications by topic
 
 <div class="row">
   <div class="col cell2of3">
@@ -15,16 +15,14 @@ description: "Selection of links to PDF versions of various articles published b
     links to videos of their conference presentations. Some of this list
     has been assembled 'after the fact'; please inform us if you notice
     anything missing.</p>
-    <!--
     <h3>Publications by topic</h3>
     <p>A different view is given on
     <a href="{{site.baseurl}}/publications/indexbytopic/">Publication by Topic page</a> where the Publications 
     are ordered by important topics.</p>
-    -->
   </div>
   <div class="col cell1of3">
     <ul class="toc">
-      <li><a href="#publications-in-2018" title="Publications from 2018">2018</a></li>
+      <li><a href="#publications-in-2018" title="">2018</a></li>
       <li><a href="#publications-in-2017" title="Publications from 2017">2017</a></li>
       <li><a href="#publications-in-2016" title="Publications from 2016">2016</a></li>
       <li><a href="#publications-in-2015" title="Publications from 2015">2015</a></li>
@@ -38,20 +36,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
-## Publications in 2018
-
-### <a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (to appear)
-
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Draft for submission to TUGboat, 2018 
-
-An article discussing the new rollback concept for packages and
-classes. Together with the `latexrelease` package this forms a
-comprehensive release management and compatibility solution for the
-LaTeX universe.
-
-
-***
+## Automated Pagination (document engineering research)
 
 
 
@@ -72,38 +57,6 @@ lot more details and additional research results.
 ***
 
 
-### <a href="{{site.baseurl}}/publications/tb121gregorio-expl3.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">TeX.StackExchange cherry picking: expl3</a>
-
-+ [Enrico Gregorio]({{site.baseurl}}/about/team/#enrico-gregorio)
-+ Paper published in TUGboat 39:1, 2018 
-
-In this article Gregorio presents some examples of macros built with
-expl3 in answer to users’ problems presented on
-[tex.stackexchange.com](https://tex.stackexchange.com) to give a
-flavor of the language and describe its possibilities. Topics include
-list printing, string manipulation, macro creation, and graphics.
-
-***
-
-
-### <a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a>
-
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Paper published in TUGboat 39:1, 2018 
-
-An article discussing the new workflow for reporting bugs in the
-core LaTeX software. It also covers the underlying move of the LaTeX
-sources from an SVN to a Git-based source control system and as a result
-the retirement of the old LaTeX bug database.
-
-***
-
-
-
-
-## Publications in 2017
-
-
 ### ACM DocEng 2017 <a href="https://doceng.org/newsite/doceng2017/" target="_blank">Symposium (Valletta, Malta)</a>
 
 
@@ -121,10 +74,7 @@ optimization. It uses a flexible constraint model that allows for the
 implementation of typical typographic rules that can be weighted
 against each other to support different application scenarios.
 
-
-
 The above link enables free download of the paper from the ACM Digital Library.
-
 
 + Presentation of the paper as given in Malta
   + <a href="{{site.baseurl}}/publications/2017-09-doceng2017-slides.pdf"
@@ -132,18 +82,6 @@ The above link enables free download of the paper from the ACM Digital Library.
        (slides -- large 23Mb)</a> 
 
 
-
-***
-
-
-### <a href="{{site.baseurl}}/publications/tb119mitt-tabular-fixed-width.pdf" target="_blank" onclick="vgwPixelCall('44195a435fe84ceeaffcc8850bbeae1a');">LaTeX table columns with fixed widths</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb119mitt-tabular-fixed-width.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
-
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Published paper, TUGboat volume 38, number 2, 2017
-
-A short article discussing how to produce table columns with a fixed width using the array package.
-
-***
 
 ### TUG/GUST 2017 <a href="http://tug.org/tug2017/" target="_blank">Conference (Bachotek, Poland)</a>
 
@@ -166,28 +104,8 @@ running YOU can do, to keep in the same place. If you want to get
 somewhere else, you must run at least twice as fast as that!”
 This talk explores how fast we must ran to enter that world.
 
-
-## Publications in 2016
-
-### R.I.P. — S.P.Q.R [Sebastian Patrick Quintus Rahtz](https://en.wikipedia.org/wiki/Sebastian_Rahtz)  (13.2.1955–15.3.2016)
-
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
-  + <a  href="{{site.baseurl}}/publications/2016-SPQR-TDK-Mittelbach.pdf"
-	target="_blank"
-	onclick="vgwPixelCall('1da6329f118b48e2ada42883703a8542');">German
-	version</a> published in Die Technische Komödie 2016/2.
-  + <a href="{{site.baseurl}}/publications/tb116rahtz-mitt.pdf"
-       target="_blank"
-       onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">English
-       version</a> published in TUGboat, volume 37 number 2, 2016.
-  + <a href="http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/"
-       target="_blank"
-       onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">Video recorded by River Valley TV</a> at TUG 2016 conference, Toronto.
-
-A memorial for our friend and colleague Sebastian who passed away far too young.
-
-
 ***
+
 
 ### ACM DocEng 2016 <a href="http://doceng2016.caa.tuwien.ac.at/" target="_blank">Symposium (Vienna, Austria)</a>
 
@@ -208,6 +126,156 @@ already in March but the conference was in September).
 The above link enables free download of the paper from the ACM Digital Library.
 
 ***
+
+
+
+
+
+## LaTeX Concepts and Program Design
+
+
+### <a href="{{site.baseurl}}/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
+
++ Presentation, 1995
++ Keywords: LaTeX2e interface, input encoding, font encoding
+
+A presentation held at Brno about the encoding interfaces that LaTeX offers. It discusses the various issues related to input and output encodings.
+
+
+
+
+
+
+## The LaTeX3 Programming Language (expl3)
+
+
+### <a href="{{site.baseurl}}/publications/tb121gregorio-expl3.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">TeX.StackExchange cherry picking: expl3</a>
+
++ [Enrico Gregorio]({{site.baseurl}}/about/team/#enrico-gregorio)
++ Paper published in TUGboat 39:1, 2018 
+
+In this article Gregorio presents some examples of macros built with
+expl3 in answer to users’ problems presented on
+[tex.stackexchange.com](https://tex.stackexchange.com) to give a
+flavor of the language and describe its possibilities. Topics include
+list printing, string manipulation, macro creation, and graphics.
+
+***
+
+### [Exploring \romannumeral and expansion](https://tug.org/TUGboat/tb37-1/tb115wright.pdf)
+
++ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
++ Published paper, TUGboat, Volume 37 (2016), No. 1
+
+An article by [Joseph
+Wright]({{site.baseurl}}/about/team/#joseph-wright) on a clever
+use of \romannumeral to trigger controlled expansion. This is used
+extensively in the expl3 sources.
+
+***
+
+
+
+
+
+
+
+
+## Unicode
+
+
+
+
+
+
+
+
+## Mixed Topics
+
+
+### R.I.P. — S.P.Q.R [Sebastian Patrick Quintus Rahtz](https://en.wikipedia.org/wiki/Sebastian_Rahtz)  (13.2.1955–15.3.2016)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
+  + <a  href="{{site.baseurl}}/publications/2016-SPQR-TDK-Mittelbach.pdf"
+	target="_blank"
+	onclick="vgwPixelCall('1da6329f118b48e2ada42883703a8542');">German
+	version</a> published in Die Technische Komödie 2016/2.
+  + <a href="{{site.baseurl}}/publications/tb116rahtz-mitt.pdf"
+       target="_blank"
+       onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">English
+       version</a> published in TUGboat, volume 37 number 2, 2016.
+  + <a href="http://zeeba.tv/media/conferences/tug-2016/0202-Frank-Mittelbach/"
+       target="_blank"
+       onclick="vgwPixelCall('b68fdc1c180d4d1197553ed47e83b4fc');">Video recorded by River Valley TV</a> at TUG 2016 conference, Toronto.
+
+A memorial for our friend and colleague Sebastian who passed away far too young.
+
+
+
+
+
+
+
+
+
+==================================================================================
+
+
+
+## Publications in 2018
+
+### <a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (to appear)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Draft for submission to TUGboat, 2018 
+
+An article discussing the new rollback concept for packages and
+classes. Together with the `latexrelease` package this forms a
+comprehensive release management and compatibility solution for the
+LaTeX universe.
+
+
+***
+
+
+
+
+### <a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a>
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Paper published in TUGboat 39:1, 2018 
+
+An article discussing the new workflow for reporting bugs in the
+core LaTeX software. It also covers the underlying move of the LaTeX
+sources from an SVN to a Git-based source control system and as a result
+the retirement of the old LaTeX bug database.
+
+***
+
+
+
+
+## Publications in 2017
+
+
+
+
+***
+
+
+### <a href="{{site.baseurl}}/publications/tb119mitt-tabular-fixed-width.pdf" target="_blank" onclick="vgwPixelCall('44195a435fe84ceeaffcc8850bbeae1a');">LaTeX table columns with fixed widths</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb119mitt-tabular-fixed-width.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
++ Published paper, TUGboat volume 38, number 2, 2017
+
+A short article discussing how to produce table columns with a fixed width using the array package.
+
+***
+
+
+## Publications in 2016
+
+
 
 
 
@@ -234,18 +302,6 @@ get a
 At the moment the framework is still in its early stages and not yet
 publically available as further research and development is needed.
 
-
-***
-
-### [Exploring \romannumeral and expansion](https://tug.org/TUGboat/tb37-1/tb115wright.pdf)
-
-+ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
-+ Published paper, TUGboat, Volume 37 (2016), No. 1
-
-An article by [Joseph
-Wright]({{site.baseurl}}/about/team/#joseph-wright) on a clever
-use of \romannumeral to trigger controlled expansion. This is used
-extensively in the expl3 sources.
 
 ***
 
@@ -686,14 +742,6 @@ In a conference on multilingual typesetting in Japan and later at a TUG conferen
 A paper about application-independent representation of text for document processing; it discusses some of the Unicode shortcomings.
 
 ***
-
-
-### <a href="{{site.baseurl}}/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
-
-+ Presentation, 1995
-+ Keywords: LaTeX2e interface, input encoding, font encoding
-
-A presentation held at Brno about the encoding interfaces that LaTeX offers. It discusses the various issues related to input and output encodings.
 
 
 <div id="div_vgwpixel"></div>
