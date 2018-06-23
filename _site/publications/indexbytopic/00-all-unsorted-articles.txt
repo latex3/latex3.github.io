@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Articles ordered by topic</title>
+  <title>Articles ordered by topic: </title>
   <meta name="description" content="Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations ordered by major topics.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
@@ -59,7 +59,7 @@
 
   <div class="wrap">
   <article>
-<h1 id="publications-by-topic">Publications by topic</h1>
+# [Publications by topic](/publications/indexbytopic): 
 
 <div class="row"><div class="col cell1of3">
   <h3><a href="/publications/indexbytopic/">Publications by topic</a></h3>
@@ -104,7 +104,7 @@
     </li>
   </ul>
 </div>
-<hr />
+<hr>
 
 
 
@@ -113,6 +113,100 @@
 	<li><a href="/publications/indexbytopic/" title=""> </a></li>
 -->
 </div>
+
+
+
+
+
+<div id="div_vgwpixel"></div>
+
+
+==================================================================================
+
+
+
+## Publications in 2018
+
+
+
+
+
+
+## Publications in 2017
+
+
+
+
+***
+
+## Publications in 2016
+
+
+
+
+<div class="row"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive B -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8455398809969217"
+     data-ad-slot="3269883682"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><hr> 
+<hr>
+
+
+## Publications in 2015
+
+
+
+## Publications in 2014
+
+
+
+
+## Publications in 2013
+
+
+
+## Publications between 2012 and 2010
+
+
+
+
+
+### TUG 2010 <a href="http://tug.org/tug2010/" target="_blank">Conference (San Francisco, USA)</a>
+
++ [Chris Rowley](/about/team/#chris-rowley): [A brief history of LaTeX --- with a prediction (video via River Valley TV)](http://www.zeeba.tv/a-brief-history-of-latex%e2%80%94with-a-prediction/)
+
+***
+
+
+## Publications in 2009 and earlier
+
+### TUG 2009 <a href="http://tug.org/tug2009/" target="_blank">Conference (Notre Dame, Indiana, USA)</a>
+
++ [Chris Rowley](/about/team/#chris-rowley): [TeX-free LaTeX, an overview](http://www.zeeba.tv/tex-free-latex-an-overview/) (Video via River Valley TV)
++ [Chris Rowley](/about/team/#chris-rowley): [Standards for LaTeX documents and processors](http://www.zeeba.tv/standards-for-latex-documents-and-processors/) (Video via River Valley TV)
+
+
+***
+
+
+
+### TUG 2007 <a href="http://tug.org/tug2007/" target="_blank">Conference (San Diego, USA)</a>
+
++ [Chris Rowley](/about/team/#chris-rowley)
+  + [Vistas for TeX (Video via River Valley TV)](http://river-valley.zeeba.tv/vistas-for-tex/)
+
+***
+
+
+
+
+<div id="div_vgwpixel"></div>
 
 
 </article>

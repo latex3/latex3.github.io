@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Articles published by the LaTeX project by year </title>
+  <title>Articles published by the LaTeX project by year: 2014</title>
   <meta name="description" content="Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
@@ -47,7 +47,7 @@
             <a href="/get/">Get</a></li>
           <li>
             <a href="/latex3/">LaTeX3</a></li>
-          <li class="active">
+          <li>
             <a href="/publications/">Publications</a></li>
           <li>
             <a href="/help/">Help</a></li>
@@ -59,7 +59,74 @@
 
   <div class="wrap">
   <article>
-<h1 id="publications-by-the-latex-project-team">Publications by the LaTeX Project Team</h1>
+<h1 id="publications-in-2014">Publications in 2014</h1>
+
+<h3 id="uk-tug-meeting-in-2014">UK-TUG meeting in 2014</h3>
+
+<p>Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 development topics.</p>
+
+<ul>
+  <li><a href="/about/team/#david-carlisle">David Carlisle</a>:
+    <ul>
+      <li><a href="https://vimeo.com/113430065">Fixing LaTeX2e</a> a talk describing the plans for a better maintenance approach (compared to fixltx2e which doesn’t work)</li>
+    </ul>
+  </li>
+  <li><a href="/about/team/#joseph-right">Joseph Wright</a>:
+    <ul>
+      <li><a href="https://vimeo.com/113834342">Reliable releases: l3build</a> a new build environment for LaTeX packages and documentation (works with all flavors)! Unfortunately, the demo session on l3build is not vsisible in the video as it only provides audio and displays of the slides used.</li>
+      <li><a href="https://vimeo.com/113830623">Case changing in the Unicode world</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>A companion to Joseph’s talk on l3build is the published paper on this topic by Will and Frank below.</p>
+
+<hr />
+
+<h3 id="a-hrefpublicationstb111mitt-floatpdf-targetblank-onclickvgwpixelcallf722ab0955c94459bf7cd9e0ef041df4how-to-influence-the-position-of-float-environments-like-figure-and-table-in-latexa-a-targetblank-hrefhttpsflattrcomsubmitautouseridfrankmittelbachurlhttp3a2f2flatex-projectorg2fpublications2ftb111mitt-floatpdfimg-border0-titleflattr-this-altflattr-this-srcbuttonflattrcomflattr-badge-largepnga"><a href="/publications/tb111mitt-float.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&amp;url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png" /></a></h3>
+
+<ul>
+  <li><a href="/about/team/#frank-mittelbach">Frank Mittelbach</a></li>
+  <li>Published paper, TUGboat volume 35, number 3, 2014</li>
+</ul>
+
+<p>In 2012, a question “How to influence the float placement in LaTeX” was asked on TeX.stackexchange and as there had been many earlier questions around this topic I decided to treat the topic in some depth and explain most of the mysteries that the underlying mechanism poses to people trying to use it successfully. Once my answer appeared on the web, people asked to see this converted into an article and I foolishly replied “only if this answer ends up becoming a `great’ answer” (gets 100 votes). At the time of writing this article, the answer stands at 222 votes, so I had better make good on that promise.</p>
+
+<ul>
+  <li>Translation of the article into Italian language (in ArsTeXnica  in 2015): <a href="/publications/arstexnica19-fmi-article.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">Come si può influenzare la posizione degli ambienti galleggianti come figure e table in LaTeX?</a></li>
+</ul>
+
+<hr />
+
+<h3 id="a-hrefpublicationstb111mitt-l3buildpdf-targetblank-onclickvgwpixelcall1a7c94b5c86849099e006f519e72ccf0l3build-----a-modern-lua-test-suite-for-tex-programminga-a-targetblank-hrefhttpsflattrcomsubmitautouseridfrankmittelbachurlhttp3a2f2flatex-projectorg2fpublications2ftb111mitt-l3buildpdfimg-border0-titleflattr-this-altflattr-this-srcbuttonflattrcomflattr-badge-largepnga"><a href="/publications/tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build — A modern Lua test suite for TeX programming</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&amp;url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-l3build.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png" /></a></h3>
+
+<ul>
+  <li><a href="/about/team/#frank-mittelbach">Frank Mittelbach</a>, <a href="/about/team/#will-robertson">Will Robertson</a> and The LaTeX3 team</li>
+  <li>Published paper, TUGboat volume 35, number 3, 2014</li>
+</ul>
+
+<p>Regression tests are an important tool in any moderately complex programming environment. They allow the programmer to make extensive changes to their code while providing confidence that something that used to work still does. Extensive regression test suites have been an essential component of the maintenance and development of LaTeX2e and LaTeX3. A regression test suite is typically composed of a number of individual files that contain one or more testable units of the code being tested. A testable unit might be either a certain computation with an expected outcome, a series of logic tests, or—in particular for TeX-based code—material that is typeset and intended to achieve some particular formatting. During code development and before any new code is released to the public, this test suite can be compiled to ensure that any changes to the code have not introduced bugs or changed the behaviour compared to previous versions. As bugs in the code are reported, minimal examples demonstrating the bug often form test files of their own, showing that the bug has been fixed and won’t re-occur. As TeX-based code operates in at least three different `modes’ (mouth, stomach, and output), regression testing is more complex than simply asserting the outcome of certain programming logic. As part of the work of the LaTeX3 project, a new Lua-based testing environment has been written to support ongoing development. This testing environment, presented at the 2014 TUG conference in Portland, is suitable for use by the general TeX community.</p>
+
+<hr />
+
+<h3 id="tug-2014-a-hrefhttptugorgtug2014-targetblankconference-portland-usaa">TUG 2014 <a href="http://tug.org/tug2014/" target="_blank">Conference (Portland, USA)</a></h3>
+
+<ul>
+  <li><a href="/about/team/#frank-mittelbach">Frank Mittelbach</a>:
+    <ul>
+      <li><a href="http://www.zeeba.tv/regression-testing-latex-packages-with-lua/">A Modern Regression Test Suite for TeX Programming (video via River Valley TV)</a></li>
+      <li><a href="/publications/2014-08-28-regression.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">A Modern Regression Test Suite for TeX Programming (slides)</a></li>
+    </ul>
+  </li>
+  <li><a href="/about/team/#will-robertson">Will Robertson</a> and <a href="/about/team/#frank-mittelbach">Frank Mittelbach</a>:
+    <ul>
+      <li><a href="http://www.zeeba.tv/latex3-and-expl3-in-2014-recent-developments/">LaTeX3 and expl3 in 2014: Recent developments (video via River Valley TV)</a></li>
+      <li><a href="/publications/2014-08-29-l3talk.pdf">LaTeX3 and expl3 in 2014: Recent developments (slides)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
 
 <div class="row"><div class="col cell2of3">
   <h3><a href="/publications/">Publications by year</a></h3>
@@ -89,7 +156,6 @@
 </div>
 <hr />
 </div>
-
 <div id="div_vgwpixel"></div>
 
 </article>
