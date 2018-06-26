@@ -10,31 +10,8 @@ description: "Selection of links to PDF versions of various articles published b
 ***
 
 
-
-
-### [Automated LaTeX(3) testing](https://tug.org/TUGboat/tb36-3/tb114wright.pdf)
-
-+ [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
-+ Published paper, TUGboat, Volume 36 (2015), No. 3
-
-A discussion of our Continious
-Integration testing setup for LaTeX3 sources using l3build
-and Travis-CI. These days we also use this to continuously the LaTeX2e sources!
-
-***
-
-
-
-
-### <a href="{{site.baseurl}}/publications/regression-test-suite.pdf" target="_blank" onclick="vgwPixelCall('6243765bc0fc415ca9fe91a0958f91a4');">A regression test suite for LaTeX2e</a>
-
-+ Published paper, 1997
-+ Keywords: maintaining LaTeX2e
-
-An article describing the regression test suite that has been built for LaTeX over the past years. It describes some of the history and outlines the results we have had from it.
-
-***
-
+{% include _papers/paper_2015-JAW-TUB-Automated-LaTeX3-testing.md %}
+{% include _papers/paper_1997-FMi-TUB-regression-test-suite.md %}
 
 
 

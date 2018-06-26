@@ -10,25 +10,14 @@ description: "Selection of links to PDF versions of various articles published b
 ***
 
 
+## From the TUG Conference 2008  (Cork, Irland)
 
-### TUG 2008 <a href="http://tug.org/tug2008/" target="_blank">Conference (Cork, Irland)</a>
-
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-  + [Windows of opportunity: A (biased) personal history of two decades of LaTeX development — Are there lessons to be learned? (Video via River Valley TV)](http://www.zeeba.tv/two-decades-of-latex-development/)
+{% include _papers/paper_2008-FMi-TUG-Windows-of-opportunity.md %}
 
 ***
 
 
-
-### <a href="{{site.baseurl}}/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
-
-+ Presentation, 1995
-+ Keywords: LaTeX2e interface, input encoding, font encoding
-
-A presentation held at Brno about the encoding interfaces that LaTeX offers. It discusses the various issues related to input and output encodings.
-
-
-***
+{% include _papers/paper_1995-FMi-talk-LaTeX2e-encoding-interfaces.md %}
 
 
 <div class="row">{% include toc.pubbytopic.html %}</div>

@@ -12,27 +12,8 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
-
-
-
-### [An exploration of the Latin Modern fonts](https://tug.org/TUGboat/tb28-2/tb89robertson.pdf)
-
-+ [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
-+ Published paper, TUGboat, Volume 28 (2007), No. 2
-
-[Will Robertson's]({{site.baseurl}}/about/team/#will-robertson) look at the Latin Modern font families and their features.
-
-***
-
-
-
-### [Everything we want to know about Font Resources](https://tug.org/TUGboat/tb27-2/tb87rowley.pdf)
-
-+ [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley)
-+ Published paper, TUGboat, Volume 27 (2006), No. 2 --- Proceedings of the 2006 Annual Meeting
-
-
-***
+{% include _papers/paper_2007-wspr-TUB-tb89robertson.md %}
+{% include _papers/paper_2006-CAR-TUB-tb87rowley.md %}
 
 
 

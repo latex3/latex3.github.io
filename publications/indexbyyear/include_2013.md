@@ -13,6 +13,5 @@
 ***
 
 
-{% include _papers/paper_2013-FMi-TUB-tb106mittelbach-e-tex-revisited.md %}
 
 
