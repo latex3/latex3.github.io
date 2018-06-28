@@ -14,33 +14,39 @@ description: "Selection of links to PDF versions of various articles published b
 {% include _papers/paper_2016-JAW-TUB-Exploring-romannumeral-and-expansion.md %}
 
 
+<hr class="conference-start">
+
 ## From the TUG Conference 2015 (Darmstadt, Germany)
 
 {% include _papers/paper_2015-egreg-TUG-Recollections-of-a-spurious-space-catcher.md %}
 
-***
+<hr class="conference-end">
+
 
 {% include _papers/paper_2010-JAW-TUB-tb97wright-l3keys.md %}
 
 
 
 
+<hr class="conference-start">
+
 ## From the TUG Conference 2009 (Notre Dame, Indiana, USA)
 
 {% include _papers/paper_2009-MHo-TUG-Consolidation-of-expl3.md %}
 
-***
-
+<hr class="conference-end">
 
 
 {% include _papers/paper_2009-JAW-TUB-LaTeX3-programming-External-perspectives.md %}
 
 
+<hr class="conference-start">
+
 ## From the TUG Conference 2007 (San Diego, USA)
 
 {% include _papers/paper_2007-MHo-TUG-LaTeX3-project-update.md %}
 
-***
+<hr class="conference-end">
 
 
 {% include _papers/paper_1997-DPC-TUB-L3-programming-language.md %}

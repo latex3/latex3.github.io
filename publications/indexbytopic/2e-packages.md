@@ -13,26 +13,32 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+<hr class="conference-start">
+
 ## From the TUG Conference 2013  (Tokyo, Japan)
 
 {% include _papers/paper_2013-FMi-TUG-The-stony-road-to-complex-layout.md %}
 
-***
+<hr class="conference-end">
 
 
+
+<hr class="conference-start">
 ## From the TUG Conference 2009  (Notre Dame, Indiana, USA)
 
 {% include _papers/paper_2009-MHo-TUG-Next-steps-for-breqn.md %}
 
-***
+<hr class="conference-end">
 
 
+
+<hr class="conference-start">
 
 ## From the TUG Conference 2007  (San Diego, USA)
 
 {% include _papers/paper_2007-MHo-TUG-The-breqn-package-revised-and-revived.md %}
 
-***
+<hr class="conference-end">
 
 
 

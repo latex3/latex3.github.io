@@ -1,6 +1,4 @@
 
-### ACM DocEng 2017 <a href="https://doceng.org/newsite/doceng2017/" target="_blank">Symposium (Valletta, Malta)</a>
-
 
 <!-- ACM DL Article:  Effective Floating Strategies -->
 <div class="acmdlitem" id="item3103015"><img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/><a href="https://dl.acm.org/authorize?N46503" title="Effective Floating Strategies" target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies</a>

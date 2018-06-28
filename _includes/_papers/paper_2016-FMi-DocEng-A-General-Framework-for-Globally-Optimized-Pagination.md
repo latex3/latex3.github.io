@@ -16,5 +16,12 @@ already in March but the conference was in September).
 
 The above link enables free download of the paper from the ACM Digital Library.
 
+A greatly extended version of this paper (37 pages) titled ["A General
+LuaTeX Framework for Globally Optimized
+Pagination"]({{site.baseurl}}/publications/indexbytopic/pagination/#a-hrefpublications2017-ci-journal-28454894assubmittedpdf-targetblank-onclickvgwpixelcall76c39a7e25524b9a8b93f680f6f20cbaa-general-luatex-framework-for-globally-optimized-paginationa-pre-peer-reviewed-version)
+was submitted to the Computational Intelligence Journal (Wiley) in
+2017 and accepted January 2018.
+
+
 ***
 

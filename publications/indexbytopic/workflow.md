@@ -13,22 +13,28 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+<hr class="conference-start">
+
 ## From the UK-TUG meeting in 2014
 
 Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 development topics. 
 
 {% include _papers/paper_2014-JAW-UKTUG-Reliable-releases-l3build.md %}
 
-***
+<hr class="conference-end">
+
 
 {% include _papers/paper_2014-FMi-TUB-tb111mitt-l3build.md %}
 
+
+
+<hr class="conference-start">
 
 ## From the TUG Conference 2014 (Portland, USA)
 
 {% include _papers/paper_2014-FMi-TUG-regression.md %}
 
-***
+<hr class="conference-end">
 
 
 

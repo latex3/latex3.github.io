@@ -8,14 +8,15 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Engine development
 
 
-***
 
+
+<hr class="conference-start">
 
 ## From the TUG Conference 2012 (Boston, USA)
 
 {% include _papers/paper_2012-FMi-TUG-tb106mittelbach-e-tex-revisited.md %}
 
-***
+<hr class="conference-end">
 
 
 {% include _papers/paper_2005-workshop-pdftex.md %}

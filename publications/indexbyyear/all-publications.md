@@ -23,7 +23,9 @@ select one of the year entries in the table of contents above.
 {% include_relative include_2015.md %}
 {% include_relative include_2014.md %}
 {% include_relative include_2013.md %}
-{% include_relative include_2012-2010.md %}
+{% include_relative include_2012.md %}
+{% include_relative include_2011.md %}
+{% include_relative include_2010.md %}
 {% include_relative include_2009-and-earlier.md %}
 
 <div class="row">{% include toc.pubbyyear.html %}</div>

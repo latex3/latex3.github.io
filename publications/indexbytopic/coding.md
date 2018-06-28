@@ -18,13 +18,16 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+<hr class="conference-start">
 
 ## From the TUG Conference 2015 (Darmstadt, Germany)
 
 {% include _papers/paper_2015-FMi-TUG-Twenty-one-is-only-half-the-truth.md %}
 
-***
+<hr class="conference-end">
 
+
+<hr class="conference-start">
 
 ## From the UK-TUG meeting in 2014
 
@@ -32,7 +35,8 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
 
 {% include _papers/paper_2014-DPC-UKTUG-Fixing-LaTeX2e.md %}
 
-***
+<hr class="conference-end">
+
 
 {% include _papers/paper_2001-FMi-TUB-The-trace-package.md %}
 {% include _papers/paper_1998-FMi-TUB-docstrip-header.md %}
