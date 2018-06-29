@@ -36,14 +36,20 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
 
 <hr class="conference-start">
 
-## From TUG Conference 2010  (San Francisco, USA)
+## From the TUG Conference 2010  (San Francisco, USA)
 
 {% include _papers/paper_2010-wspr-TUB-Unicode-mathematics-in-LaTeX-advantages-and-challenges.md %}
 
 <hr class="conference-end">
 
 
+<hr class="conference-start">
+
+## From the Unicode Conference 1996 (Mainz, Germany)
+
 {% include _papers/paper_1996-FMi-CAR-Unicode-unicode5.md %}
+
+<hr class="conference-end">
 
 
 <div class="row">{% include toc.pubbytopic.html %}</div>

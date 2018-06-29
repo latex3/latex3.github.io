@@ -33,3 +33,5 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
 <hr class="conference-end">
 
 
+{% include _papers/paper_2014-DPC-W3C-Mathematical-Markup-Language.md %}
+{% include _papers/paper_2014-DPC-W3C-XML-Entity-Definitions-for-Characters.md %}
