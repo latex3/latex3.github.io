@@ -30,7 +30,12 @@ mathematical semantics. We introduce each of these two languages and
 describe their relationships.
 
 
-The above link enables free download of the paper from the ACM Digital Library.
+_The above link enables free download of the paper from the ACM Digital
+Library.  (Due to ACM restrictions it unfortunately doesn't work from
+the "all-publications" page. If you are there please use the one [on the
+topic page]({{site.baseurl}}/publications/indexbytopic/mixed-bag/) instead.)_
+
+
 
 
 

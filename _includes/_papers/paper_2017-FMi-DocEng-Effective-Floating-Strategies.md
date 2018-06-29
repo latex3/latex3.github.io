@@ -7,6 +7,12 @@
 <div class="acmdlstat" id ="stats3103015"><iframe src="https://dl.acm.org/authorizestats?N46503" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
 
 
++ Presentation of the paper as given in Malta: <a href="{{site.baseurl}}/publications/2017-09-doceng2017-slides.pdf"
+       target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies
+       (slides -- large 23Mb)</a> 
+
+
+
 This paper presents an extension to the general framework for globally
 optimized pagination described in Mittelbach (2016). The extended
 algorithm supports automatic placement of floats as part of the
@@ -16,12 +22,13 @@ against each other to support different application scenarios.
 
 
 
-The above link enables free download of the paper from the ACM Digital Library.
+_The above link enables free download of the paper from the ACM Digital
+Library.  (Due to ACM restrictions it unfortunately doesn't work from
+the "all-publications" page. If you are there please use the one [on the
+pagination topic
+page]({{site.baseurl}}/publications/indexbytopic/pagination/) instead.)_
 
 
-Presentation of the paper as given in Malta: <a href="{{site.baseurl}}/publications/2017-09-doceng2017-slides.pdf"
-       target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies
-       (slides -- large 23Mb)</a> 
 
 
 
