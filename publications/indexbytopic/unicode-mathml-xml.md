@@ -1,11 +1,11 @@
 ---
 layout: page
 menu: Publications
-title: "Articles ordered by topic: Unicode"
+title: "Articles ordered by topic: Unicode, MathML, XML ..."
 description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations ordered by major topics."
 ---
 
-# [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Unicode
+# [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Unicode, MathML, XML ...
 
 
 
@@ -32,6 +32,15 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
 <hr class="conference-end">
 
 
+<hr class="conference-start">
+
+## W3C Standards
+
+{% include _papers/paper_2014-DPC-W3C-Mathematical-Markup-Language.md %}
+{% include _papers/paper_2014-DPC-W3C-XML-Entity-Definitions-for-Characters.md %}
+
+<hr class="conference-end">
+
 
 
 <hr class="conference-start">
@@ -39,6 +48,16 @@ Some video footage from the meeting in November 2014 on LaTeX2e and LaTeX3 devel
 ## From the TUG Conference 2010  (San Francisco, USA)
 
 {% include _papers/paper_2010-wspr-TUB-Unicode-mathematics-in-LaTeX-advantages-and-challenges.md %}
+
+<hr class="conference-end">
+
+
+<hr class="conference-start">
+
+## From ACM Journals
+
+{% include _papers/paper_2000-DPC-ACM-OpenMath-MathML-and-XSL.md %}
+{% include _papers/paper_1999-DPC-ACM-OpenMath-and-MathML.md %}
 
 <hr class="conference-end">
 

@@ -9,6 +9,16 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+
+<hr class="conference-start">
+
+## From the TUG Conference 2010  (San Francisco, USA)
+
+{% include _papers/paper_2010-CAR-TUG-A-brief-history-of-LaTeX-with-a-prediction.md %}
+
+<hr class="conference-end">
+
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2008  (Cork, Irland)
