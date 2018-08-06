@@ -2,7 +2,7 @@
 
 ### <a href="{{site.baseurl}}/publications/2016-07-TUG%202016-Mittelbach-slides-with-notes-smaller.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating</a> (slides with speaker notes intermixed)
 
-+ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach):
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + [TUG Conference 2016](http://tug.org/tug2016/) (Toronto, Canada)
 
 In this talk a framework for globally optimizing pagination of

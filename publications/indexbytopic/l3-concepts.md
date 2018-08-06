@@ -12,6 +12,16 @@ description: "Selection of links to PDF versions of various articles published b
 
 <hr class="conference-start">
 
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-JAW-TUG-looking-glass-expl3.md %}
+
+<hr class="conference-end">
+
+
+
+
+<hr class="conference-start">
+
 ## From the TUG Conference  2015 (Darmstadt, Germany)
 
 {% include _papers/paper_2015-JAW-TUG-Through-the-parshape-and-what-Joseph-found-there.md %}

@@ -7,7 +7,14 @@ description: "Selection of links to PDF versions of various articles published b
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/):  Workflow and build support
 
-***
+
+<hr class="conference-start">
+
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-JAW-TUG-fly-me-to-the-moon.md %}
+
+<hr class="conference-end">
+
 
 {% include _papers/paper_2018-FMi-TUB-tb121mitt-bug-reporting.md %}
 

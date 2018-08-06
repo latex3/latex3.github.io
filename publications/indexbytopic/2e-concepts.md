@@ -9,6 +9,14 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+<hr class="conference-start">
+
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-FMi-TUG-compatibility-LaTeX-world.md %}
+
+<hr class="conference-end">
+
+
 
 <hr class="conference-start">
 

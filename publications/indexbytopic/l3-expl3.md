@@ -7,7 +7,17 @@ description: "Selection of links to PDF versions of various articles published b
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): The LaTeX3 Programming Language (expl3)
 
-***
+
+
+
+<hr class="conference-start">
+
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-JAW-TUG-looking-glass-expl3.md %}
+
+<hr class="conference-end">
+
+
 
 
 {% include _papers/paper_2018-egreg-TUB-tb121gregorio-expl3.md %}

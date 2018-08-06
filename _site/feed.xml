@@ -5,9 +5,51 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 30 Jun 2018 16:05:26 +0200</pubDate>
-    <lastBuildDate>Sat, 30 Jun 2018 16:05:26 +0200</lastBuildDate>
+    <pubDate>Mon, 06 Aug 2018 15:12:01 +0200</pubDate>
+    <lastBuildDate>Mon, 06 Aug 2018 15:12:01 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Talks at the 2018 TUG conference in Rio de Janeiro</title>
+        <description>&lt;h2 id=&quot;material-from-the-tug-conference-2018-is-now-online&quot;&gt;Material from the TUG conference 2018 is now online&lt;/h2&gt;
+
+&lt;p&gt;This year’s conference in Rio de Janeiro was worth attending, both
+because of various interesting talks, good discussions between
+participants and, of course, also because of the scenery. Fortunately
+for those who couldn’t make it, nearly all talks have been streamed live in
+excellent quality and have now been &lt;a href=&quot;https://www.youtube.com/playlist?list=PLo4jXE-LdDTSZYnGPAwf3ZTL_CPP24gUV&quot;&gt;uploaded to
+YouTube&lt;/a&gt;. You
+find there, for example,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;an interesting keynote talk by Roberto Ierusalimschy (one of the fathers of
+Lua) on &lt;a href=&quot;https://youtu.be/Nw_GE6yKo8E&quot;&gt;The making of Lua&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the lovely talk by Susanne Raab about &lt;a href=&quot;https://youtu.be/Ps2FK0q6mLc&quot;&gt;ducks made with
+&lt;code class=&quot;highlighter-rouge&quot;&gt;tikz&lt;/code&gt;&lt;/a&gt; presented by Paulo Cereda;&lt;/li&gt;
+  &lt;li&gt;and many others.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the LaTeX Project team Joseph, Will and myself presented talks on
+a number of different topics, ranging from LuaTeX-related work via LaTeX2e to
+LaTeX3.  The abstracts, slides, handouts, etc. from our talks, as
+well as links to the recorded videos can be found as one block on the
+&lt;a href=&quot;/publications/indexbyyear/2018&quot;&gt;project publication pages&lt;/a&gt; so
+check them out if you are interested.&lt;/p&gt;
+
+&lt;p&gt;Enjoy – Frank&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Aug 2018 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2018/08/06/Rio-conference-talks/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/08/06/Rio-conference-talks/</guid>
+        
+        <category>talks</category>
+        
+        <category>videos</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Publications now viewable by topic</title>
@@ -436,66 +478,6 @@ page&lt;/a&gt;.&lt;/p&gt;
         <category>latex2e</category>
         
         <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New snapshot (SVN 6984) of LaTeX3 code released to CTAN</title>
-        <description>&lt;h1 id=&quot;latex3-code-snapshot-svn-6984-released-to-ctan&quot;&gt;LaTeX3 code snapshot (SVN 6984) released to CTAN&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;/about/team/#joseph-wright&quot;&gt;Joseph&lt;/a&gt; recently submitted the following updates of LaTeX3 material to CTAN.&lt;/p&gt;
-
-&lt;h2 id=&quot;xparse-package&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; package&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Adjustments to xparse to allow document commands to continue
-to function inside csnames: note that the team expect to give
-a clear statement on the scope of use of document commands in
-the near future&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\NewExpandableDocumentCommand&lt;/code&gt; and related commands have been
-added to &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\IfValue(TF)&lt;/code&gt; is now marked as stable&lt;/li&gt;
-  &lt;li&gt;There have been some questions about the (removed) k-type
-argument: see &lt;a href=&quot;http://tex.stackexchange.com/q/357187&quot;&gt;StackExchange question&lt;/a&gt; for
-some transitional code (note that the replacement e-type
-&lt;em&gt;is experimental&lt;/em&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;xfp-package&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xfp&lt;/code&gt; package&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;New package to provide a document level interface to the LaTeX3 FPU:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;\fpeval&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;expl3-programming-interface&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; programming interface&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;New &lt;code class=&quot;highlighter-rouge&quot;&gt;\tl_range:nnn&lt;/code&gt; function&lt;/li&gt;
-  &lt;li&gt;Reduction in use of &lt;code class=&quot;highlighter-rouge&quot;&gt;\c_&amp;lt;number&amp;gt;&lt;/code&gt; constants in favour of explicit
-numbers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;l3build-system&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; system&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Normalisation of lines from &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; added&lt;/li&gt;
-  &lt;li&gt;Better performance of &lt;code class=&quot;highlighter-rouge&quot;&gt;cmdcheck&lt;/code&gt; target when working with
-file bundles&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As usual, this may take a day or so to propagate.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Mar 2017 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2017/03/09/new-expl-ctan/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/03/09/new-expl-ctan/</guid>
-        
-        <category>latex3</category>
-        
-        <category>expl3</category>
-        
-        <category>snapshot</category>
         
         
         <category>news</category>

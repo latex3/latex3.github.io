@@ -6,7 +6,7 @@
 
 A discussion of our Continious
 Integration testing setup for LaTeX3 sources using l3build
-and Travis-CI. These days we also use this to continuously the LaTeX2e sources!
+and Travis-CI. These days we also use this to continuously test the LaTeX2e sources!
 
 ***
 

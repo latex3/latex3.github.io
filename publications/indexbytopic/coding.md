@@ -8,7 +8,14 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Coding &amp; Testing
 
 
-***
+
+<hr class="conference-start">
+
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-FMi-TUG-compatibility-LaTeX-world.md %}
+{% include _papers/paper_2018-FMi-TUG-doc.md %}
+
+<hr class="conference-end">
 
 
 

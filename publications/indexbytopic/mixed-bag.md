@@ -7,7 +7,16 @@ description: "Selection of links to PDF versions of various articles published b
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Not fitting any defined category 
 
-***
+
+
+
+<hr class="conference-start">
+
+## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
+{% include _papers/paper_2018-wspr-TUG-canvas-learning-system.md %}
+
+<hr class="conference-end">
+
 
 {% include _papers/paper_2016-FMi-TUB-RIP-SPQR.md %}
 
