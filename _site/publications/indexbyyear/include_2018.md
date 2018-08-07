@@ -17,6 +17,8 @@
 <hr class="conference-end">
 
 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+
 
 {% include _papers/paper_2018-FMi-TUB-version-rollback.md %}
 
@@ -25,6 +27,7 @@
 {% include _papers/paper_2018-egreg-TUB-tb121gregorio-expl3.md %}
 
 {% include _papers/paper_2018-FMi-TUB-tb121mitt-bug-reporting.md %}
+
 
 
 
