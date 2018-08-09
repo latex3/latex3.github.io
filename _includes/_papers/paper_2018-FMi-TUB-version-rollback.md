@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (submitted version)
+### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-version-rollback-preprint.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (submitted version)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Draft for submission to TUGboat, 2018 

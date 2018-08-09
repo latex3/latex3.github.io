@@ -1,5 +1,5 @@
 
-### [Reconciling unicode-math with LaTeX2e mathematics]({{site.baseurl}}/publications/2015-07-20-unicode-math.pdf) (slides)
+### [Reconciling unicode-math with LaTeX2e mathematics]({{site.baseurl}}/publications/2015-07-20-wspr-TUG-unicode-math.pdf) (slides)
 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
 + [TUG Conference 2015](https://tug.org/tug2015/) (Darmstadt, Germany)

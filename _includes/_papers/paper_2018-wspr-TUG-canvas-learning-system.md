@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-wspr-canvas-lms-slides.pdf" target="_blank">Creating teaching material with LaTeXML for the Canvas Learning Management System</a> (slides)
+### <a href="{{site.baseurl}}/publications/2018-07-20-wspr-TUG-canvas-lms-slides.pdf" target="_blank">Creating teaching material with LaTeXML for the Canvas Learning Management System</a> (slides)
 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
 + [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)

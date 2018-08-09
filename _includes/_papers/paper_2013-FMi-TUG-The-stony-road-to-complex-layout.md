@@ -1,5 +1,5 @@
 
-### <a href="{{site.baseurl}}/publications/2013-10-23-stony-beamer.pdf" target="_blank" onclick="vgwPixelCall('ed9f85d2535846afbbfc4b009a9aa393');">The stony road to complex layout</a>  (slides)
+### <a href="{{site.baseurl}}/publications/2013-10-23-FMi-stony-beamer.pdf" target="_blank" onclick="vgwPixelCall('ed9f85d2535846afbbfc4b009a9aa393');">The stony road to complex layout</a>  (slides)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + [TUG Conference 2013](http://tug.org/tug2013/) (Tokyo, Japan)

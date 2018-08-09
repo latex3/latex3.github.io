@@ -44,7 +44,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 ## From the TUG Conference 2013  (Tokyo, Japan)
 
-{% include _papers/paper_2013-JAW-FMi-TUG-LaTeX3-Using-the-Layers.md %}
+{% include _papers/paper_2013-FMi-JAW-TUG-LaTeX3-Using-the-Layers.md %}
 
 <hr class="conference-end">
 

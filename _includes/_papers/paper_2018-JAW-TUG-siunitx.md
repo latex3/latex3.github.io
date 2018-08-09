@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-07-21-JAW-siunitx.pdf" target="_blank">siunitx: Past, present and future</a> (slides)
+### <a href="{{site.baseurl}}/publications/2018-07-21-JAW-TUG-siunitx-slides.pdf" target="_blank">siunitx: Past, present and future</a> (slides)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)

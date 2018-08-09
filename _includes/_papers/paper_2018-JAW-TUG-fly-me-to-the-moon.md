@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-07-20-JAW-Lua.pdf" target="_blank">Fly me to the moon: (La)TeX testing (and more) using Lua</a> (slides)
+### <a href="{{site.baseurl}}/publications/2018-07-20-JAW-TUG-Lua-slides.pdf" target="_blank">Fly me to the moon: (La)TeX testing (and more) using Lua</a> (slides)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)

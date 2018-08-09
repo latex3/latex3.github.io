@@ -1,5 +1,5 @@
 
-### [Twenty-one is only half the truth]({{site.baseurl}}/publications/2015-07-20-twentyone-details.pdf) (mindmap)
+### [Twenty-one is only half the truth]({{site.baseurl}}/publications/2015-07-20-FMi-TUG-twentyone-details.pdf) (mindmap)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + [TUG Conference 2015](https://tug.org/tug2015/) (Darmstadt, Germany)

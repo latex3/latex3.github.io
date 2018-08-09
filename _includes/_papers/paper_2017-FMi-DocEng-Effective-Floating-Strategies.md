@@ -7,7 +7,7 @@
 <div class="acmdlstat" id ="stats3103015"><iframe src="https://dl.acm.org/authorizestats?N46503" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
 
 
-+ Presentation of the paper as given in Malta: <a href="{{site.baseurl}}/publications/2017-09-doceng2017-slides.pdf"
++ Presentation of the paper as given in Malta: <a href="{{site.baseurl}}/publications/2017-09-FMi-doceng2017-effective-floating-strategies-slides.pdf"
        target="_blank" onclick="vgwPixelCall('35d4d8f6a59f45878e47638212413f78');">Effective Floating Strategies
        (slides -- large 23Mb)</a> 
 
