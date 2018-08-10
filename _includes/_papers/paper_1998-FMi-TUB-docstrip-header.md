@@ -1,6 +1,5 @@
 
-
-### [Default docstrip headers]({{site.baseurl}}/publications/docstrip-header.pdf)
+### [Default docstrip headers]({{site.baseurl}}/publications/1998-FMi-TUB-docstrip-header.pdf)
 
 + Published paper, 1998
 + Keywords: documentation of LaTeX2e packages

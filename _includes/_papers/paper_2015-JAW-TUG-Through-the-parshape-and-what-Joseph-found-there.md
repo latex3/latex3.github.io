@@ -9,3 +9,4 @@
 + Slides of the talk: [Through the \parshape, and what Joseph found there]({{site.baseurl}}/publications/2015-07-22-JAW-TUG-parshape.pdf)
 
 ***
+

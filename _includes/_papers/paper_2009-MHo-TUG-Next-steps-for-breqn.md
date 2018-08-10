@@ -1,6 +1,5 @@
 
-
-### [Next steps for breqn]({{site.baseurl}}/publications/breqn-next-steps.pdf) (slides)
+### [Next steps for breqn]({{site.baseurl}}/publications/2009-MHo-TUG-breqn-next-steps.pdf) (slides)
 
 + [Morten Høgholm]({{site.baseurl}}/about/team/#morten-høgholm)
 + [TUG Conference 2009](http://tug.org/tug2009/) (Notre Dame, Indiana, USA)

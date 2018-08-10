@@ -1,6 +1,5 @@
 
-
-### <a href="{{site.baseurl}}/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
+### <a href="{{site.baseurl}}/publications/1995-FMi-CsTUG-encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e encoding interfaces</a>
 
 + Frank Mittelbach
 + Presentation, 1995

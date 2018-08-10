@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/xo-pfloat.pdf" target="_blank" onclick="vgwPixelCall('7a2407ba33c445178618822fadd84cf6');">Formatting documents with floats – A new algorithm for LaTeX2e</a>
+### <a href="{{site.baseurl}}/publications/2000-FMi-TUG-xo-pfloat.pdf" target="_blank" onclick="vgwPixelCall('7a2407ba33c445178618822fadd84cf6');">Formatting documents with floats – A new algorithm for LaTeX2e</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, 2000

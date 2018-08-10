@@ -1,9 +1,9 @@
 
-### <a href="{{site.baseurl}}/publications/LaTeX3-architecture-2011-slides.pdf" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress</a>  (slides)
+### <a href="{{site.baseurl}}/publications/2011-FMi-TUG-LaTeX3-architecture-slides.pdf" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress</a>  (slides)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + [TUG Conference 2011](http://tug.org/tug2011/) (Trivandrum, India)
-+ <a href="{{site.baseurl}}/publications/LaTeX3-architecture-2011-abstract.txt" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress (abstract)</a>
++ <a href="{{site.baseurl}}/publications/2011-FMi-TUG-LaTeX3-architecture-abstract.txt" target="_blank" onclick="vgwPixelCall('bc872dab536e45fe94b57484509aa0d6');">LaTeX3 architecture and current work in progress (abstract)</a>
 + Video of talk: [LaTeX3 architecture and current work in progress](http://www.zeeba.tv/latex3-architecture-and-current-work-in-progress/)  (via River Valley TV)
 
 

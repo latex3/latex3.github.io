@@ -1,5 +1,5 @@
-### [Joseph's Adventures in Unicodeland](https://tug.org/TUGboat/tb36-2/tb113wright-unicode.pdf)
 
+### [Joseph's Adventures in Unicodeland](https://tug.org/TUGboat/tb36-2/tb113wright-unicode.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat volume 36, number 2, 2015
@@ -10,3 +10,5 @@
 
 
 ***
+
+

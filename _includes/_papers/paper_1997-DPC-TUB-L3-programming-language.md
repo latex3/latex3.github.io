@@ -1,7 +1,7 @@
 
 
 
-### <a href="{{site.baseurl}}/publications/expl3-tb18-4.pdf" target="_blank" onclick="vgwPixelCall('9af902bd53b044a3a66192fb76764ad8');">The LaTeX3 Programming Language—A syntax proposal for TeX macro programming</a>
+### <a href="{{site.baseurl}}/publications/1997-DPC-TUB-tb18-4-expl3-proposal.pdf" target="_blank" onclick="vgwPixelCall('9af902bd53b044a3a66192fb76764ad8');">The LaTeX3 Programming Language—A syntax proposal for TeX macro programming</a>
 
 + David Carlisle, Chris Rowley and Frank Mittelbach
 + Published paper, 1997

@@ -1,5 +1,5 @@
 
-### [Exhuming coffins from the last century]({{site.baseurl}}/publications/exhuming-coffins-from-the-last-century.pdf) (slides)
+### [Exhuming coffins from the last century]({{site.baseurl}}/publications/2010-FMi-TUG-exhuming-coffins-from-the-last-century.pdf) (slides)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + [TUG Conference 2010](http://tug.org/tug2010/) (San Francisco, USA)
