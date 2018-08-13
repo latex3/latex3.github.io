@@ -1,5 +1,5 @@
 
-### <a href="{{site.baseurl}}/publications/tb121gregorio-expl3.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">TeX.StackExchange cherry picking: expl3</a>
+### <a href="{{site.baseurl}}/publications/2018-egreg-TUB-tb121gregorio-expl3-cherry-picking.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">TeX.StackExchange cherry picking: expl3</a>
 
 + [Enrico Gregorio]({{site.baseurl}}/about/team/#enrico-gregorio)
 + Paper published in TUGboat 39:1, 2018 

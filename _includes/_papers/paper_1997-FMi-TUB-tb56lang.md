@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/tb56lang.pdf" target="_blank" onclick="vgwPixelCall('2b77f777778c468a984188f99530fdb5');">Language information in structured documents: a model for mark-up and rendering</a>
+### <a href="{{site.baseurl}}/publications/1997-FMi-TUB-tb56lang.pdf" target="_blank" onclick="vgwPixelCall('2b77f777778c468a984188f99530fdb5');">Language information in structured documents: a model for mark-up and rendering</a>
 
 + Frank Mittelbach
 + Multilingual Language Processing Conference 1997 (Tsukuba, Japan)

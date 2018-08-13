@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/tug99.pdf" target="_blank" onclick="vgwPixelCall('2000eb286caf4f3388528d565081bb85');">TUG99 talk: New Interfaces for LaTeX Class Design</a>
+### <a href="{{site.baseurl}}/publications/1999-l3team-TUG-l3-interfaces.pdf" target="_blank" onclick="vgwPixelCall('2000eb286caf4f3388528d565081bb85');">TUG99 talk: New Interfaces for LaTeX Class Design</a>
 
 + David Carlisle, Frank Mittelbach and Chris Rowley
 + TUG Conference 1999 (Vancouver, Canada)

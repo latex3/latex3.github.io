@@ -1,12 +1,12 @@
 
 
-### [Notes on Oldenburg e-TeX/LaTeX3/ConTeXt meeting]({{site.baseurl}}/publications/etex-meeting-notes.pdf)
+### [Notes on Oldenburg e-TeX/LaTeX3/ConTeXt meeting]({{site.baseurl}}/publications/1998-l3team-Oldenburg-etex-meeting-notes.pdf)
 
 + Meeting notes, 1998
 + Keywords: TeX extensions, LaTeX3
 
 
-### [Ideas for e-TeX/NTS math typesetting]({{site.baseurl}}/publications/etex-math-notes.pdf)
+### [Ideas for e-TeX/NTS math typesetting]({{site.baseurl}}/publications/1998-l3team-Oldenburg-etex-math-notes.pdf)
 
 + Meeting notes, 1998
 + Keywords: TeX extensions, LaTeX3

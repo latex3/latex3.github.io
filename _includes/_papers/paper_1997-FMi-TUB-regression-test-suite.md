@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/regression-test-suite.pdf" target="_blank" onclick="vgwPixelCall('6243765bc0fc415ca9fe91a0958f91a4');">A regression test suite for LaTeX2e</a>
+### <a href="{{site.baseurl}}/publications/1997-FMi-TUB-regression-test-suite.pdf" target="_blank" onclick="vgwPixelCall('6243765bc0fc415ca9fe91a0958f91a4');">A regression test suite for LaTeX2e</a>
 
 + Frank Mittelbach
 + Published paper, 1997
