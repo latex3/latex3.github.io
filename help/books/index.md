@@ -63,15 +63,15 @@ There is an [errata file](manual.err) for this book.
 **ISBN-13:** 978-0201362992  
 **Pages:** 1120 pages  
 
-Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992) consisting of PDF, mobi and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/).
+Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992) consisting of PDF, mobi and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/) for more information.
 
 There are some extracts from the book as PDF files available from this site:
 
-+ <A href="tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
-+ <a href="tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
-+ <a href="tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
++ <A href="bookpart_tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
++ <a href="bookpart_tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
++ <a href="bookpart_tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
 
-There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of TLC2 provide a number of prizes for people finding errors in the book. 
+There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)). 
 
 <hr>
 
@@ -89,11 +89,11 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)) w
 
 There are some extracts from the book as PDF files available from this site:
 
-+  <a href="{{site.baseurl}}/help/books/lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
-+  <a href="{{site.baseurl}}/help/books/lgc2-ap3.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">bibliography and index</a> (1223 kB)
++  <a href="{{site.baseurl}}/help/books/bookpart_lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
++  <a href="{{site.baseurl}}/help/books/bookpart_lgc2-ap3.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">bibliography and index</a> (1223 kB)
 + [supplementary material on the web](http://xml.web.cern.ch/XML/lgc2/) maintained by Michel Goossens
 
-There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)) which also has details on the bug contest: Addison-Wesley and the authors of LGC2 provide a number of prizes for people finding errors in the book.
+There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 
 <hr>
 
@@ -198,9 +198,9 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **Pages:** 1116 pages  
 
 Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
-<a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
+<a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/lc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
+This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
 
 
 <hr>
@@ -223,11 +223,11 @@ This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflag
 
 There are some extracts from the book as PDF files available from this site:
 
-+ <a href="{{site.baseurl}}/help/books/lb2-ch0.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">tables of contents, figures, and tables and preface</a> (259 kB)
-+ <a href="{{site.baseurl}}/help/books/lb2-ch4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">full text of chapter 4, «Page layout»</a> (340 kB)
-+ <a href="{{site.baseurl}}/help/books/lb2-ap4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">bibliography and index</a> (857 kB)
++ <a href="{{site.baseurl}}/help/books/bookpart_lb2-ch0.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">tables of contents, figures, and tables and preface</a> (259 kB)
++ <a href="{{site.baseurl}}/help/books/bookpart_lb2-ch4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">full text of chapter 4, «Page layout»</a> (340 kB)
++ <a href="{{site.baseurl}}/help/books/bookpart_lb2-ap4.pdf"  target="_blank"   onclick="vgwPixelCall('5fb32d16fbb747d197e384299658523e');">bibliography and index</a> (857 kB)
 
-There is an [errata file](lb2.err) (along with a [PDF version](lb2-err.pdf)) which also has details on the bug contest: Pearson Studium and the authors of LB2 provide Pearson text books as prizes for people finding errors in the book.
+There is an [errata file](lb2.err) (along with a [PDF version](lb2-err.pdf)).
 
 Jürgen Fenn has written a review for the german TeX magazine "Die TeXnische Komödie". It is available as a [PDF file](fenn_lb2.pdf) (473 kB). 
 
