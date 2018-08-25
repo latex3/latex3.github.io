@@ -67,8 +67,11 @@ that are entirely, or least primarily, free software.
     <h2><span class="fa fa-linux"></span> Linux</h2>
     <p>Check your Linux distributions software source for a TeX
     distribution including LaTeX. You can also
-    install <a href="http://www.tug.org/texlive">TeX Live</a>
-    directly.</p>
+    install the current <a href="https://www.tug.org/texlive">TeX Live distribution</a>
+    directly---in fact this may be advisable as many Linux distributions only contain
+    older versions of TeX Live, see
+    <a href="https://repology.org/metapackage/texlive/versions">Linux TeX Live package status</a>
+    for details.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-apple"></span> Mac OS</h2>
