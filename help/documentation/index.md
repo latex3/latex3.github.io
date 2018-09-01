@@ -104,7 +104,7 @@ Specifically targeting the typesetting of mathematics is:
 
 ### Japanese translations
 
-Fujimurasan Yukitoshi kindly translated two of the above documents to the Japanese language. These are
+Yukitoshi FUJIMURA kindly translated two of the above documents to the Japanese language. These are
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.pdf"
    target="_blank"

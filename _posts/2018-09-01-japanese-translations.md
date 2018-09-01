@@ -3,7 +3,7 @@ layout: post
 title: "Japanese translations of some important documents"
 date: 2018-09-01 00:00:00
 description: "Japanese translations of some important documents"
-excerpt: "Fujimurasan Yukitoshi kindly translated two documents that are distributed with standard
+excerpt: "Yukitoshi FUJIMURA kindly translated two documents that are distributed with standard
 LaTeX to the Japanese language. ..."
 categories: news
 tags: [latex2e,publications,translations]
@@ -11,7 +11,7 @@ tags: [latex2e,publications,translations]
 
 ### Japanese translations of some important documents
 
-Fujimurasan Yukitoshi kindly translated two documents that are distributed with standard
+Yukitoshi FUJIMURA kindly translated two documents that are distributed with standard
 LaTeX to the Japanese language. These are are
 
  - LaTeX2e for authors
