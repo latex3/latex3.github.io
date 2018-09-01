@@ -4,20 +4,55 @@ title: "LaTeX Documentation"
 description: "References to the official LaTeX documentation and to documentation that is available on the net. Also contains a non-English documentation  section."
 ---
 
-# Documentation
-
-This page contains references to documentation by the [LaTeX
-team]({{site.baseurl}}/about/team/). To find documentation that is
-available elsewhere on the net, visit the [links
-page]({{site.baseurl}}/help/links/). Also, there's a whole page
-dedicated to [books on LaTeX and related
-topics]({{site.baseurl}}/help/books/).
-
-If you know about a list of TeX and related documentation not listed here, please [contact us]({{site.baseurl}}/contact/).
+# Core Documentation
 
 ***
 
+<div class="row">
+  <div class="col cell1of2">
+    <p>This page contains references to core documentation about LaTeX written by the
+    <a href="{{site.baseurl}}/about/team/">LaTeX team</a>. Articles on specific topics, talks,
+    etc. can be found on
+    <a href="{{site.baseurl}}/publications/indexbytopic/">the publication page</a> indexed
+    by topic.</p>
+    <p>In addition pointer to
+    documentation in other languages (usually developed and maintained by user groups)
+    is given. To find documentation that is
+    available elsewhere on the net, visit the <a href="{{site.baseurl}}/help/links">links
+    page</a>. Also, there's a whole page
+    dedicated to <a href="{{site.baseurl}}/help/books">books on LaTeX and related
+    topics</a>.</p>
+    <p>If you know about a good resource of TeX and related documentation not listed here or on
+    the <a href="{{site.baseurl}}/help/links">links page</a>,
+    please <a href="{{site.baseurl}}/contact">contact us</a>.</p>
+  </div>
+  <div class="col cell1of2">
+    <ul class="toc">
+      <li><a href="#documentation-distributed-with-latex">Distributed LaTeX documentation</a>
+        <ul>
+	  <li><a href="#general-documentation">General documentation</a></li>
+	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
+	  <li><a href="#source-code-documentation">Source code documentation</a></li>
+	  <li><a href="#japanese-translations">Japanese translations</a></li>
+        </ul>
+     </li>	
+      <li><a href="#other-non-english-documentation">Other non-english documentation resources</a>
+        <ul>
+          <li><a href="#german">German</a></li>
+          <li><a href="#french">French</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+***
+
+
 ## Documentation distributed with LaTeX
+
+
+### General documentation
 
 A short introduction to LaTeX (with some focus on the differences
 between the old LaTeX 2.09 and current standard LaTeX2e) is given in
@@ -58,6 +93,37 @@ More advanced documentation about LaTeX, which is available via the net includes
      onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">The LaTeX3
      Project</a>
 
+### Typesetting complex mathematics
+
+Specifically targeting the typesetting of mathematics is:
+
++ <a href="{{site.baseurl}}/help/documentation/amsldoc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">User's Guide for the amsmath Package (Version 2.1)</a>
+
+
+### Japanese translations
+
+Fujimurasan Yukitoshi kindly translated two of the above documents to the Japanese language. These are
+
++ <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.pdf"
+   target="_blank"
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者のための LaTeX 2e</a> (LaTeX2e for authors)
++ <a href="{{site.baseurl}}/help/documentation/amsldoc_jpn.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">amsmath パッケージユーザガイド（Version2.1）</a>  (User's Guide for the amsmath Package)
+
+
+He also provided a translation of "Short Math Guide for LaTeX" distributed and maintained
+by the American Mathematical Society (AMS):
+
++ <a href="{{site.baseurl}}/help/documentation/short-math-guide_jpn.pdf"
+     target="_blank">はやわかり LaTeX で数式組版 </a>(Short Math Guide for LaTeX)
+
+
+
+### Source code documentation
+
 The full documentation of the source code with all commands and their
 implementation can be obtained by processing `source2e.tex`
 distributed as part of the LaTeX2e distribution. A compiled version
@@ -96,7 +162,8 @@ documented here:
 
 
 
-## Non-english documentation
+
+## Other non-english documentation
 
 There is a lot of documentation in languages other than English. Lists of books and other resources in other languages are maintained by TeX user groups in the respective countries. The following are known to us:
 

@@ -5,9 +5,42 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Aug 2018 16:19:25 +0200</pubDate>
-    <lastBuildDate>Sat, 25 Aug 2018 16:19:25 +0200</lastBuildDate>
+    <pubDate>Sat, 01 Sep 2018 13:25:35 +0200</pubDate>
+    <lastBuildDate>Sat, 01 Sep 2018 13:25:35 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Japanese translations of some important documents</title>
+        <description>&lt;h3 id=&quot;japanese-translations-of-some-important-documents&quot;&gt;Japanese translations of some important documents&lt;/h3&gt;
+
+&lt;p&gt;Fujimurasan Yukitoshi kindly translated two documents that are distributed with standard
+LaTeX to the Japanese language. These are are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LaTeX2e for authors&lt;/li&gt;
+  &lt;li&gt;User’s Guide for the amsmath Package (Version 2.1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You will find them &lt;a href=&quot;/help/documentation/&quot;&gt;on the documentation page&lt;/a&gt;
+which got slightly reorganized at the same time. You will now also find there a compiled
+version of the full LaTeX2e source code (with index etc) and a number of other goodies.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Sep 2018 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2018/09/01/japanese-translations/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/09/01/japanese-translations/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>publications</category>
+        
+        <category>translations</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Talks at the 2018 TUG conference in Rio de Janeiro</title>
@@ -454,30 +487,6 @@ page&lt;/a&gt;.&lt;/p&gt;
         <category>talks</category>
         
         <category>videos</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New LaTeX release --- Issue 27 of LaTeX2e news released</title>
-        <description>&lt;h1 id=&quot;new-latex-release-----issue-27-of-latex2e-news-released&quot;&gt;New LaTeX release — Issue 27 of LaTeX2e news released&lt;/h1&gt;
-
-&lt;p&gt;We have made a new LaTeX distribution in time for the new TeX live
-2017 distribution.&lt;/p&gt;
-
-&lt;p&gt;The most important changes and additions are documented in
-ltnews27.pdf. It can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Apr 2017 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2017/04/16/issue27-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/04/16/issue27-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
