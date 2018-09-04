@@ -1,0 +1,3613 @@
+%
+% Copyright 1995, 2000, 2013 American Mathematical Society.
+% Copyright 2016-2018 LaTeX3 Project and American Mathematical Society.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+% 
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is the LaTeX3 Project.
+%%
+% ご覧の日本語訳は、もともとは私的目的で，上記の機関とは無関係につくりました．
+% 内容の正確性については原文を確認してください．
+%These Japanese translations were originally created for private purposes, regardless of the above organization. 
+% Please check the original about the accuracy of the contents.
+%%
+\documentclass[leqno,titlepage,openany]{amsldoc}[1999/12/13]
+%%
+\setlength{\parindent}{0.98em}%　1字下にします
+%% 元の文章の日本語訳が主な目的なので，日本語の組版規則に従うことを意図しておりません．
+\renewcommand{\errexa}{\par\noindent\textit{例}：\ }
+\renewcommand{\errexpl}{\par\noindent\textit{説明}：\ }
+\def\makeindx/{索引}
+
+%%
+\def\MaintainedByLaTeXTeam#1{%
+%\begin{center}%
+%\fbox{\fbox{\begin{tabular}{@{}l@{}}%
+%This file is maintained by the \LaTeX{} Project team.\\%
+%Bug reports can be opened (category \texttt{#1}) at\\%
+%\url{https://latex-project.org/bugs/}.\end{tabular}}}\end{center}}
+\begin{center}%
+\fbox{\fbox{\begin{tabular}{@{}l@{}}%
+この原語（英語）ファイルは\LaTeX{} Projectが管理しています．\\%
+英語版のバグリポートは，次にお送りください（categoryは \texttt{#1}）です．\\%
+\url{http://latex-project.org/bugs.html}.\end{tabular}}}\end{center}}
+
+\ifx\UndEfiNed\url
+  \ClassError{amsldoc}{%
+    This version of amsldoc.tex must be processed\MessageBreak
+    with a newer version of amsldoc.cls (2.02 or later).}{}
+\fi
+
+%\renewcommand\bibname{References}
+\renewcommand\bibname{参照文献}
+
+%    Definitions that should be moved to amsldoc.cls
+%    when it is next updated
+\makeatletter
+\let\cleardouble@page\cleardoublepage
+\AtBeginDocument{%
+  \ifx\cleardouble@page\cleardoublepage
+    \def\cleardoublepage{\clearpage{\pagestyle{empty}\cleardouble@page}}
+  \fi
+}
+
+% #1 is empty or one of class, environment, option, package
+% could use different font in each case
+\makeatletter
+\def\@category@index#1#2{%
+    \autoindex{%
+        #2\actualchar\string\index#1font{#2}%
+        \ifx\@nil#1\@nil\else\space#1\fi
+    }%
+}
+
+\let\indexpackagefont\textsf
+\let\indexclassfont\textsf
+\let\indexoptionfont\texttt
+\let\indexenvironmentfont\texttt
+\let\indexfont\texttt
+\makeatother
+%    For a package that won't be indexed, i.e. amsmath
+\newcommand{\nipkg}{\textsf}
+\def\tikz/{Ti\textit{k}Z}
+%    End definitions for amsldoc.cls
+
+%\title{User's Guide for the \nipkg{amsmath} Package (Version~2.1)}
+%\author{American Mathematical Society, \LaTeX3 Project}
+%\date{1999-12-13 (revised 2002-02-25, 2016-11-14, 2018-04-05)}
+\title{\nipkg{amsmath}パッケージユーザガイド（Version~2.1）}
+\author{アメリカ数学会, \LaTeX3 Project}
+\date{1999-12-13 （改訂 2002-02-25, 2016-11-14, 2018-04-05）日本語訳は2018-09-04です．}
+\makeatletter
+\def\@thanks{\bigskip\MaintainedByLaTeXTeam{amslatex}}
+\makeatother
+
+%    Use the amsmath package and amscd package in order to print
+%    examples.
+\usepackage{amsmath}
+\usepackage{amscd}
+
+\usepackage{imakeidx}
+%    Need alternate coding for vertical bar to get it into index.
+%    Based on \qcbang and \cnbang in amsldoc.cls, refined by David Carlisle.
+%    Give it a sort field that will be at the end of the symbols;
+%    must avoid " and | which have special meanings.
+\DeclareRobustCommand{\qcvert}{\qc\|\index{{z1}@{\ntt\char'174}}}
+\DeclareRobustCommand{\cnvert}{%
+  \ncn{\|}\index{{z0}@{\ntt\bslchar\char'174}}}
+%    Need alternate index sort field for bang to allow & to sort first
+\DeclareRobustCommand{\altcnbang}{%
+  \ncn{\!}\index{"!b@{\ntt\bslchar\qcbang}}}
+\DeclareRobustCommand{\cnamp}{%
+  \index{"!a@\texttt{\&}}}
+
+\makeindex[intoc] % generate index data
+\providecommand{\see}[2]{\textit{see} #1}
+
+%    The amsldoc class includes a number of features useful for
+%    documentation about TeX, including:
+%
+%    ---Commands \tex/, \amstex/, \latex/, ... for uniform treatment
+%    of the various logos and easy handling of following spaces.
+%
+%    ---Commands for printing various common elements: \cn for command
+%    names, \fn for file names (including font-file names), \env for
+%    environments, \pkg and \cls for packages and classes, etc.
+
+%    Many of the command names used here are rather long and will
+%    contribute to poor linebreaking if we follow the \latex/ practice
+%    of not hyphenating anything set in tt font; instead we selectively
+%    allow some hyphenation.
+\allowtthyphens % defined in amsldoc.cls
+
+\hyphenation{ac-cent-ed-sym-bol add-to-counter add-to-length align-at
+  aligned-at allow-dis-play-breaks ams-art ams-cd ams-la-tex amsl-doc
+  ams-symb ams-tex ams-text ams-xtra bmatrix bold-sym-bol cen-ter-tags
+  eqn-ar-ray idots-int int-lim-its latex med-space neg-med-space
+  neg-thick-space neg-thin-space no-int-lim-its no-name-lim-its
+  over-left-arrow over-left-right-arrow over-right-arrow pmatrix
+  qed-sym-bol set-length side-set small-er tbinom the-equa-tion
+  thick-space thin-space un-der-left-arrow un-der-left-right-arrow
+  un-der-right-arrow use-pack-age var-inj-lim var-proj-lim vmatrix
+  xalign-at xx-align-at}
+
+%    Prepare for illustrating the \vec example
+\newcommand{\vect}[1]{\mathbf{#1}}
+
+\newcommand{\booktitle}[1]{\textit{#1}}
+\newcommand{\journalname}[1]{\textit{#1}}
+\newcommand{\seriesname}[1]{\textit{#1}}
+
+%    Command to insert and index a particular phrase. Doesn't work for
+%    certain kinds of special characters in the argument.
+\newcommand{\ii}[1]{#1\index{#1}}
+
+\newcommand{\vstrut}[1]{\vrule width0pt height#1\relax}
+
+%    An environment for presenting comprehensive address information:
+\newenvironment{infoaddress}{%
+  \par\topsep\medskipamount
+  \trivlist\centering
+  \item[]%
+  \begin{minipage}{.7\columnwidth}%
+  \raggedright
+}{%
+  \end{minipage}%
+  \endtrivlist
+}
+
+\newenvironment{eqxample}{%
+  \par\addvspace\medskipamount
+  \noindent\begin{minipage}{.5\columnwidth}%
+  \def\producing{\end{minipage}\begin{minipage}{.5\columnwidth}%
+    \hbox\bgroup\kern-.2pt\vrule width.2pt%
+      \vbox\bgroup\parindent0pt\relax
+%    The 3pt is to cancel the -\lineskip from \displ@y
+    \abovedisplayskip3pt \abovedisplayshortskip\abovedisplayskip
+    \belowdisplayskip0pt \belowdisplayshortskip\belowdisplayskip
+    \noindent}
+}{%
+  \par
+%    Ensure that a lonely \[\] structure doesn't take up width less than
+%    \hsize.
+  \hrule height0pt width\hsize
+  \egroup\vrule width.2pt\kern-.2pt\egroup
+  \end{minipage}%
+  \par\addvspace\medskipamount
+}
+
+%    Errors in output shouldn't be \texttt, and they may also be longer
+%    than one line, but they should be identified by the "errorbullet".
+%    (They were formerly labeled as aubsections.)
+\newenvironment{erroro}[1]{%
+  \par\addvspace\medskipamount
+  \noindent\hangindent\parindent
+  \hbox to\parindent{\errorbullet\hfil}\ignorespaces
+  #1\par\vspace{\smallskipamount}
+}{%
+  \par\addvspace\medskipamount
+}
+
+%    The chapters are so short, perhaps we shouldn't call them by the
+%    name `Chapter'. We make \chaptername read an argument in order to
+%    remove a following \space or "{} " (both possibilities are present
+%    in book.cls).
+
+\renewcommand{\chaptername}[1]{}
+\newcommand{\chapnum}[1]{\mdash #1\mdash }
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace{1.5\baselineskip}%
+  {\parindent \z@ \raggedright \reset@font
+    \ifnum \c@secnumdepth >\m@ne
+      \large\bfseries \chapnum{\thechapter}%
+      \par\nobreak
+      \vskip.5\baselineskip\relax
+    \fi
+    #1\par\nobreak
+    \vskip\baselineskip
+  }}
+\makeatother
+
+%    A command for ragged-right parbox in a tabular.
+\newcommand{\rp}{\let\PBS\\\raggedright\let\\\PBS}
+
+%    Non-indexed file name
+\newcommand{\nfn}[1]{\texttt{#1}}
+
+%    For the examples in the math spacing table.
+%%\newcommand{\lspx}{\mbox{\rule{5pt}{.6pt}\rule{.6pt}{6pt}}}
+%%\newcommand{\rspx}{\mbox{\rule[-1pt]{.6pt}{7pt}%
+%%  \rule[-1pt]{5pt}{.6pt}}}
+\newcommand{\lspx}{\mathord{\Rightarrow\mkern-1mu}}
+\newcommand{\rspx}{\mathord{\mkern-1mu\Leftarrow}}
+\newcommand{\spx}[1]{$\lspx #1\rspx$}
+
+%    For a list of characters representing document input.
+\newcommand{\clist}[1]{%
+  \mbox{\ntt\spaceskip.2em plus.1em \xspaceskip\spaceskip#1}}
+
+%    Fix weird \latex/ definition of rightmark.
+\makeatletter
+\def\rightmark{\expandafter\@rightmark\botmark{}{}}
+%    Also turn off section marks.
+\let\sectionmark\@gobble
+\renewcommand{\chaptermark}[1]{%
+  \uppercase{\markboth{\rhcn#1}{\rhcn#1}}}
+\newcommand{\rhcn}{\thechapter. }
+\makeatother
+
+%    Include down to \section but not \subsection, in toc:
+\setcounter{tocdepth}{1}
+
+%    Subheadings for the bibliography
+\newif\iffirstbibsubhead \firstbibsubheadtrue
+\newcommand{\bibsubhead}[1]{%
+  \iffirstbibsubhead \firstbibsubheadfalse
+  \else \addvspace{\medskipamount}
+  \fi
+  \item[]\hspace*{-\leftmargin}\textbf{#1}\par
+  \vspace{\smallskipamount}
+}
+
+\DeclareMathOperator{\ix}{ix}
+\DeclareMathOperator{\nul}{nul}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\xxx}{xxx}
+
+\usepackage{hyperref}
+\hypersetup{pdfborder=0 0 0}
+\makeatletter
+\let\oldcs\cs
+\def\cs#1{\texorpdfstring{\oldcs{#1}}{\@backslashchar\@backslashchar#1}}
+\let\cn\cs
+\makeatother
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+\maketitle
+
+\pagestyle{headings}
+\tableofcontents
+\cleardoublepage % for better page number placement
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+%\chapter{Introduction}
+\chapter{イントロダクション}
+
+\index{amsmath@\texttt{amsmath} package|(}
+\index{amsmath@\texttt{amsmath}パッケージ|(}
+
+%The \nipkg{amsmath} package is a \LaTeX{} package that provides
+%miscellaneous enhancements for improving the information structure and
+%printed output of documents that contain mathematical formulas. Readers
+%unfamiliar with \LaTeX{} should refer to \cite{lamport}. If you have an
+%up-to-date version of \LaTeX{}, the \nipkg{amsmath} package is normally
+%provided along with it. Upgrading when a newer version of the
+%\nipkg{amsmath} package is released can be done via
+%\url{http://mirror.ctan.org/macros/latex/required/amsmath.zip}.
+\nipkg{amsmath}は\LaTeX{}のパッケージの一つで，
+数式を含むドキュメントの情報構造と印刷結果を改善するための
+さまざまな機能拡張を提供します．
+読者の方で\LaTeX{}に慣れていないのなら，\cite{lamport}を読んでくささい．
+あなたが\LaTeX{}最新のバージョンをもっているのなら，ここで説明する
+\nipkg{amsmath}は，標準として備わっています．
+新しいバージョンの\nipkg{amsmath}が公開されたら
+\url{http://mirror.ctan.org/macros/latex/required/amsmath.zip}
+から入手できます．
+
+%This documentation describes the features of the \nipkg{amsmath} package
+%and discusses how they are intended to be used. It also covers some
+%ancillary packages:
+今お読みのドキュメントは\nipkg{amsmath}パッケージの機能と，
+その使い方を解説します．
+その他に次のパッケージについても扱います：
+\begin{ctab}{lll}
+\pkg{amsbsy}& \pkg{amsopn}& \pkg{amsxtra}\\
+\pkg{amscd}& \pkg{amstext}\\
+\end{ctab}
+%These all have something to do with the contents of math formulas. For
+%information on extra math symbols and math fonts, see \cite{amsfonts}
+%and \url{https://www.ams.org/tex/amsfonts.html}. For documentation of the
+%\pkg{amsthm} package or AMS document classes (\cls{amsart},
+%\cls{amsbook}, etc.\@) see \cite{amsthdoc} or \cite{amshandbk} and
+%\url{https://www.ams.org/tex/author-info.html}.
+これはらすべて数式を含んだドキュメントの作成に関係します．
+数学記号と数学フォントについては，
+\cite{amsfonts}および\url{https://www.ams.org/tex/amsfonts.html}
+で扱われています．
+\pkg{amsthm}パッケージあるいはAMSドキュメントクラス（\cls{amsart}，
+\cls{amsbook}など）については\cite{amsthdoc}あるいは\cite{amshandbk}，
+および\url{https://www.ams.org/tex/author-info.html}をご覧ください．
+
+%If you are a long-time \latex/ user and have lots of mathematics in what
+%you write, then you may recognize solutions for some familiar problems
+%in this list of \nipkg{amsmath} features:
+これまでに\latex/を使っている方で，たくさん数式を書いている方ならば，
+こうしたいと思ったことが\nipkg{amsmath}の機能の一覧にあるのがわかるでしょう：
+\begin{itemize}
+
+%\item A convenient way to define new `operator name' commands analogous
+%to \cn{sin} and \cn{lim}, including proper side spacing and automatic
+%selection of the correct font style and size (even when used in
+%sub- or superscripts).
+\item \cn{sin}および\cn{lim}のように，作用素の両側には適切な空白（スペース，アキ）を確保して，そして適切なフォントスタイル大きさが（上下付き文字または上付き文字で使用される場合でも）自動的に選ばれる「作用素（演算子）名」コマンドを定義する便利な方法があります．
+
+%\item Multiple substitutes for the \env{eqnarray} environment to make
+%various kinds of equation arrangements easier to write.
+\item \env{eqnarray}環境のかわりになる，さまざまな種類の方程式を簡単に配置するための機能があります．
+
+%\item Equation numbers automatically adjust up or down to avoid
+%overprinting on the equation contents (unlike \env{eqnarray}).
+\item 数式番号は，式と重複しないように自動的に式の上あるいは下へ調整されます（\env{eqnarray}では，そうなっていません）．
+
+%\item Spacing around equals signs matches the normal spacing in the
+%\env{equation} environment (unlike \env{eqnarray}).
+\item 等号の前後の空白は，\env{equation}環境の通常の空白と一致します（\env{eqnarray}では，そうなっていません）．
+
+%\item A way to produce multiline subscripts as are often used with
+%summation or product symbols.
+\item 総和または総乗記号の範囲を示す数式を複数行でも可能にします．
+
+%\item An easy way to substitute a variant equation number for a given
+%equation instead of the automatically supplied number.
+\item 式番号を自動的に振るわかりに目的に合わせて簡単に変更できます．
+
+%\item An easy way to produce subordinate equation numbers of the form
+%(1.3a) (1.3b) (1.3c) for selected groups of equations.
+\item 選択された方程式の集まりに，(1.3a) (1.3b) (1.3c)のような副番号をつけることが簡単にできます．
+
+\end{itemize}
+
+%The \nipkg{amsmath} package is distributed together with some small
+%auxiliary packages:
+\nipkg{amsmath}パッケージはいくつかの小さな補助パッケージとともに配布されています：
+\begin{description}
+%\item[\nipkg{amsmath}] Primary package, provides various features for
+%  displayed equations and other mathematical constructs.
+\item [\nipkg{amsmath}] これが基本となるパッケージで，数式やその他の数学的な構造を表現する様々な機能を与えます．
+
+%\item[\pkg{amstext}] Provides a \cn{text} command for
+%  typesetting a fragment of text inside a display.
+\item[\pkg{amstext}] ディスプレイ数式内に短いテキストをタイプセットする\cn{text}コマンドを与えます．
+
+%\item[\pkg{amsopn}] Provides \cn{DeclareMathOperator} for defining new
+%  `operator names' like \cn{sin} and \cn{lim}.
+\item[\pkg{amsopn}] \cn{sin}や\cn{lim}のような「作用素名」を定義するコマンド\cn{DeclareMathOperator}を与えます．
+
+%\item[\pkg{amsbsy}] For backward compatibility this package continues
+%to exist but use of the newer \pkg{bm} package that comes with \LaTeX{}
+%is recommended instead.
+\item[\pkg{amsbsy}] 以前のバージョンとの互換性のためのものです．
+したがって，これからは\LaTeX{}と一緒に配布される\pkg{bm}を使ってください．
+
+%\item[\pkg{amscd}] Provides a \env{CD} environment for simple
+%  commutative diagrams (no support for diagonal arrows).
+\item[\pkg{amscd}] 単純な可換図式のための\env{CD}環境を提供しています．
+（斜め矢印はサポートしていません）．
+
+%\item[\pkg{amsxtra}] Provides certain odds and ends such as
+%  \cn{fracwithdelims} and \cn{accentedsymbol}, for compatibility with
+%  documents created using version 1.1.
+\item[\pkg{amsxtra}] \cn{fracwithdelims}と\cn{accentedsymbol}のような
+バージョン1.1で作成されたドキュメントの互換性のための，雑多なコマンドを集めたものです．
+
+\end{description}
+
+%The \nipkg{amsmath} package incorporates \pkg{amstext}, \pkg{amsopn}, and
+%\pkg{amsbsy}. The features of \pkg{amscd} and \pkg{amsxtra}, however,
+%are available only by invoking those packages separately.
+\nipkg{amsmath}パッケージは，\pkg{amstext}，\pkg{amsopn}，そして\pkg{amsbsy}が組み込まれています．
+ただし，\pkg{amscd}と\pkg{amsxtra}の機能は，これらのパッケージを個別に呼び出さなければなりません．
+
+%The independent \pkg{mathtools} package \cite{mt} provides some
+%enhancements to \nipkg{amsmath}; \pkg{mathtools} loads \nipkg{amsmath}
+%automatically, so there is no need to separately load \nipkg{amsmath}
+%if \pkg{mathtools} is used.  Some \pkg{mathtools} facilities
+%will be noted below as appropriate.
+独立のパッケージ\pkg{mathtools}\cite{mt}は，\nipkg{amsmath}のいくつかの機能を拡張します；
+\pkg{mathtools}は\nipkg{amsmath}を自動的にロードするので，個別に\nipkg{amsmath}
+をロードする必要はありません．
+いくつかの\pkg{mathtools}の機能については，このあと必要な時に説明します．
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Options for the \nipkg{amsmath} package}\label{options}
+\chapter{\nipkg{amsmath}パッケージのオプション}\label{options}
+
+%The \nipkg{amsmath} package has the following options:
+\nipkg{amsmath}パッケージには，次のオプションがあります：
+\index{options!amsmath@\texttt{amsmath} package options|(}
+\index{オプション!amsmath@\texttt{amsmath}パッケージのオプション|(}
+\begin{description}
+
+%\item[\opt{centertags}] (default) For an equation containing a
+%\env{split} environment, place equation
+%numbers\index{equationn@equation numbers!vertical placement}
+%vertically centered on the total height of the equation.
+\item[\opt{centertags}] （デフォルト）方程式が\env{split}環境の場合，
+式番号を，それらの方程式を合わせた高さ\index{equation numbers!vertical placement}
+の中央に配置します．\index{数式番号!垂直の配置}
+
+%\item[\opt{tbtags}] `Top-or-bottom tags': For an equation containing
+%a \env{split} environment, place equation
+%numbers\index{equationn@equation numbers!vertical placement} level with the last
+%(resp.\ first) line, if numbers are on the right (resp.\ left).
+\item[\opt{tbtags}] `Top-or-bottom tags': 方程式が\env{split}環境の場合，式番号を右に置く時は最後の式の行\index{equationn@equation numbers!vertical placement}に，
+式番号を左に置くときは最初の式の行に配置します．\index{数式@数式番号!垂直の配置}
+
+%\item[\opt{sumlimits}] (default) Place the subscripts and
+%superscripts\index{subscripts and superscripts!placement}\relax
+%\index{limits|see{subscripts and superscripts}} of summation symbols
+%above and below, in displayed equations. This option also affects other
+%symbols of the same type\mdash $\prod$, $\coprod$, $\bigotimes$,
+%$\bigoplus$, and so forth\mdash but excluding integrals (see below).
+\item[\opt{sumlimits}] （デフォルト）ディスプレイ数式（別行立て数式）の場合，総和記号の範囲（limits）を示す上付き下付きの数式は，記号の上下に配置します．\index{下付きと上付き!配置}\relax
+\index{limits|see{subscripts and superscripts}}\index{範囲|see{下付きと上付き}}
+このオプションは，$\prod$，$\coprod$，$\bigotimes$，$\bigoplus$などの
+他の記号にも影響しますが，積分記号には当てはまりません（下記参照）．
+
+%\item[\opt{nosumlimits}] Always place the subscripts and superscripts of
+%summation-type symbols to the side, even in displayed equations.
+\item[\opt{nosumlimits}] ディスプレイ数式でも，総和記号の（和の範囲を示す）下付き文字と上付き数式を記号の右側に配置します．
+
+%\item[\opt{intlimits}] Like \opt{sumlimits}, but for
+%integral\index{integrals!placement of limits} symbols.
+\item[\opt{intlimits}] \opt{sumlimits}記号と同じような処理を
+積分記号でも行ないます．\index{integrals!placement of limits}\index{積分!範囲指定の配置}
+
+%\item[\opt{nointlimits}] (default) Opposite of \opt{intlimits}.
+\item[\opt{nointlimits}] （デフォルト）\opt{intlimits}とは反対の処理をします．
+
+%\item[\opt{namelimits}] (default) Like \opt{sumlimits}, but for certain
+%`operator names' such as $\det$, $\inf$, $\lim$, $\max$, $\min$, that
+%traditionally have subscripts%
+%\index{subscripts and superscripts!placement} placed underneath when
+%they occur in a displayed equation.
+\item[\opt{namelimits}] （デフォルト） \opt{sumlimits}と同じように，
+$\det$，$\inf$，$\lim$，$\max$，$\min$のような特定の「作用素名」に対しては，
+ディスプレイ数式では下付き文字は伝統的に記号の真下に配置されます．
+\index{subscripts and superscripts!placement}\index{下付きと上付き!配置}
+
+
+%\item[\opt{nonamelimits}] Opposite of \opt{namelimits}.
+\item[\opt{nonamelimits}] \opt{namelimits}とは反対の処理をします．
+
+\end{description}
+
+\goodbreak
+
+\begin{description}
+\item[\opt{alignedleftspaceyes}]
+\item[\opt{alignedleftspaceno}]
+\item[\opt{alignedleftspaceyesifneg}]
+\end{description}
+
+%To use one of these package options, put the option name in the optional
+%argument of the \cn{usepackage} command\mdash e.g.,
+%\verb"\usepackage[intlimits]{amsmath}".
+%For AMS document classes and any other classes that preload \nipkg{amsmath}
+%desired options must be specified with the \cn{documentclass}\mdash
+%e.g.,\\
+%\verb+\documentclass[intlimits,tbtags,reqno]{amsart}+.
+これらのパッケージオプションのいずれかを使用するには，
+\cn{usepackage}コマンドのオプション引数を，たとえば\verb"\usepackage[intlimits]{amsmath}"のようにして，オプション名を入れます．
+AMSドキュメントクラスと，\nipkg{amsmath}がロードされている他のクラス
+では，必要なオプションは\cn{documentclass}の際に\\
+\verb+\documentclass[intlimits,tbtags,reqno]{amsart}+
+のように特定します．
+
+%The \nipkg{amsmath} package also recognizes the following options which
+%are normally selected (implicitly or explicitly) through the
+%\cn{documentclass} command, and thus need not be repeated in the option
+%list of the \cn{usepackage}|{amsmath}| statement.
+\nipkg{amsmath}パッケージは，\cn{documentclass}コマンドで（暗黙的または明示的に）
+通常は選択されている，次に示すオプションを認識しています．
+したがって\cn{usepackage}|{amsmath}|ステートメント
+でオプションを繰り返して指定する必要はありません．
+\begin{description}
+
+%\item[\opt{leqno}] Place equation numbers on the left.%
+%\index{equationn@equation numbers!left or right placement}
+\item[\opt{leqno}] 数式番号を左に置きます．%
+\index{equationn@equation numbers!left or right placement}
+\index{数式@数式番号!左あるいは右への配置}
+
+%\item[\opt{reqno}] Place equation numbers on the right.
+\item[\opt{reqno}] 数式番号を右に置きます．
+
+%\item[\opt{fleqn}] Position equations at a fixed indent from the left
+%margin rather than centered in the text column.%
+%\index{displayed equations!centering}
+\item[\opt{fleqn}] 数式の配置を文章幅の左右中央ではなくて，
+左から一定の字下げの後で行います．
+\index{displayed equations!centering}
+\index{ディスプレイ数式!中央揃え}
+
+\end{description}
+
+%Three options have been added to control the space to the left of
+%\env{aligned} and \env{gathered} environments. Prior to the 2017 release
+%a thin space was added to the left but not the right of these constructs.
+%This appears to have been an accidental feature of the implementation and
+%was typically corrected by prefixing the environments with \altcnbang.
+\env{aligned}と\env{gather}環境の左に空白を制御するための3つのオプションが追加されました．
+2017年以前には，これらの構造の左側には空白が追加されていましたが，
+右側には追加されていませんでした．
+これは実装したさいの偶発的な機能であり，通常，環境の先頭に\altcnbang{}を付けることで修正されました．
+
+%The new default behavior is aimed to ensure that the environments do
+%not have a thin space added in most cases, and that existing documents
+%using |\!\begin{aligned}| continue to work as before.
+新しいデフォルトの振る舞いは，ほとんどの場合，
+環境に細い空白が追加されないようにすることを目的としています．
+既存の文章に対しては，|\!\begin{aligned}|とすることで，前と同じように結果になります．
+
+\begin{description}
+%\item[\opt{alignedleftspaceyes}] Always add \cn{\,} to the left of \env{aligned} and \env{gathered}.
+\item[\opt{alignedleftspaceyes}] つねに\cn{\,}を\env{aligned}と\env{gathered}の左に入れる．
+%\item[\opt{alignedleftspaceno}] Never add \cn{\,} to the left of \env{aligned} and \env{gathered}.
+\item[\opt{alignedleftspaceno}] \cn{\,}を\env{aligned}と\env{gathered}の左に入れない．
+%\item[\opt{alignedleftspaceyesifneg}] Only add \cn{\,} if the environment is prefixed by negative space. (New default behavior.)
+\item[\opt{alignedleftspaceyesifneg}] 環境が負の空白で調整されているときに限り\cn{\,}を入れる．（新しい振る舞い．）
+\end{description}
+
+\index{options!amsmath@\texttt{amsmath} package options|)}
+\index{オプション!amsmath@\texttt{amsmath}パッケージのオプション|)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Displayed equations}
+\chapter{ディスプレイ数式}
+
+%\section{Introduction}
+\section{イントロダクション}
+%The \nipkg{amsmath} package provides a number of additional displayed
+%equation structures\index{displayed equations}%
+%\index{equations|see{displayed equations}} beyond the ones
+%provided in basic \latex/. The augmented set includes:
+\nipkg{amsmath}パッケージには，基本の\latex/にはないディスプレイ数式（別行立て数式）の構造が，
+いくつも追加されています．\index{displayed equations}%
+\index{equations|see{displayed equations}}
+\index{ディスプレイ数式}%
+\index{数式|see{ディスプレイ数式}}
+それらは次のものです：
+\begin{verbatim}
+  equation     equation*     align       align*
+  gather       gather*       alignat     alignat*
+  multline     multline*     flalign     flalign*
+  split
+\end{verbatim}
+%(Although the standard \env{eqnarray} environment remains available,
+%it is better to use \env{align} or \env{equation}+\env{split} instead.
+%Within \env{eqnarray}, spacing\index{horizontal spacing} around signs
+%of relation is not the preferred mathematical spacing, and is
+%inconsistent with that spacing as it appears in other environments.
+%Long lines in this environment may result in misplaced or overprinted
+%equation numbers. This environment also does not support the use of
+%\cn{qed} or \cn{qedhere} as provided by theorem packages.)
+（もちろん標準の\env{eqnarray}環境も残っていますが，それを使わずに
+\env{align}と\env{equation}+\env{split}を使ほうが良い結果をえます．）
+\env{eqnarray}では，等号の両側の空白\index{horizontal spacing}\index{水平の配置}が
+数式にふさわしくない幅になっている上に，他の環境との整合性がありません．
+この環境では，長い数式は式番号がふさわしくない位置に置かれたり，式と重なることがあります．
+この環境は，その上，定理環境で提供されている\cn{qed}あるいは\cn{qedhere}をサポートしていません．
+
+%Except for \env{split}, each environment has both starred and unstarred
+%forms, where the unstarred forms have automatic numbering using
+%\latex/'s \env{equation} counter. You can suppress the number on any
+%particular line by putting \cn{notag} before the end of that line;
+%\cn{notag} should not be used outside a display environment as it will
+%mess up the numbering.  You can also
+%override\index{equationn@equation numbers!overriding} a number with a tag
+%of your own using \cn{tag}|{|\<label>|}|, where \<label> means arbitrary
+%text such as |$*$| or |ii| used to \qq{number} the equation.
+%A tag can reference a different tagged display by use of
+%|\tag{\ref{|\<label>|}|\<modifier>|}| where \<modifier> is optional.
+%If you are using \pkg{hyperref}, use \cn{ref*};
+%use of the starred form of \cn{ref} prevents a reference to a modified
+%tag containing a nested link from linking to the original display.
+\env{split}を除いて，これらの環境は星印ありと星印なしがあります．
+星印なしは\latex/の\env{equation}カウンタを使って自動的に数式番号を割り当てます．
+数式番号や特定の行は，その行の終わりに\cn{notag}を置くことで表示させないようにできます．
+さらに\cn{tag}|{|\<label>|}|を使えば\index{equationn@equation numbers!overriding}\index{数式@数式番号!重なり}
+，式番号を上書きできます．ここで\<label>は式番号\qq{number}に使われる|$*$|や|ii|などの任意のテキストです．
+タグは参照形式|\tag{\ref{|\<label>|}|\<modifier>|}|を使えば，それぞれで参照できます．
+ここで\<modifier>はオプションです．
+\pkg{hyperref}を使うときは，\cn{ref*}を使います；
+星印ありの\cn{ref}を使うと，元の表示にリンクされているネストされたリンクを含む変更されたタグへの参照を防ぎます．
+
+There is also a
+%\cn{tag*} command that causes the text you supply to be typeset
+%literally, without adding parentheses around it. \cn{tag} and \cn{tag*}
+%can also be used within the unnumbered versions of all the \nipkg{amsmath}
+%alignment structures. Some examples of the use of \cn{tag} may be found
+%in the sample files \fn{testmath.tex} and \fn{subeqn.tex} provided with
+%the \nipkg{amsmath} package.
+\cn{tag*}コマンドは，丸括弧に囲われない，そのままのテキストの表示に使うことができます．
+\cn{tag}と\cn{tag*}は，\nipkg{amsmath}のすべての整列構造の中で，番号なしのバージョンで使うことができます．
+\cn{tag}の使い方の例は，\nipkg{amsmath}パッケージとともに提供されているサンプルファイルの\fn{testmath.tex}と\fn{subeqn.tex}に与えられています．
+
+%The \env{split} environment is a special subordinate form that is used
+%only \emph{inside} one of the others. It cannot be used inside
+%\env{multline}, however. \env{split} supports only one alignment (|&|)
+%column; if more are needed, \env{aligned} or \env{alignedat} should be
+%used. The width of a \env{split} structure is the full line width.
+\env{split}環境は特別な下部形式で，他のものの\emph{中}でのみで使用されます．
+ただし，\env{multline}の中では使用できません．
+\env{split}は一つだけの整列(|&|)コラムだけをサポートしています；
+さらに必要な場合は\env{aligned}あるいは\env{alignedat}を使うべきです．
+\env{split}構造の幅は，１行の長さいっぱい（全幅）です．
+
+%In the structures that do alignment (\env{split}, \env{align} and
+%variants), relation symbols have an |&| before them but not
+%after\mdash unlike \env{eqnarray}. Putting the |&| after the
+%relation symbol will interfere with the normal spacing; it has to go
+%before.
+整列を行う構造（\env{split}，\env{align}と，その他の類似物）では，
+\env{eqnarray}とは異なり，揃えたい記号の前に\verb'&'を置きます．後ではありません．
+関係記号の後に\verb'&'を置くと，通常の空白取りに干渉します；
+つまり前に置かなければなりません．
+
+%In all multiline environments, lines are divided by \cn{\\}.  The \cn{\\}
+%should \emph{not} be used to end the last line.  Using it there will
+%result in unwanted extra vertical space following the display.
+すべての複数行の環境で，行は\cn{\\}で分けられます．
+\cn{\\}を最後の行で使って\emph{はいけません}．
+そうしてしまうと，意図しない垂直方向の空白が生じます．
+
+%In \emph{all} math environments (inline or display), blank lines
+%(equivalent to \cn{par}) are not permitted, and will result in an error.
+\emph{すべての}数学環境（インラインでもディスプレイでも）
+空白の行（\cn{par}と同値）は許されていないので，エラーとなります．
+
+\begin{table}[p]
+%\caption[]{Comparison of displayed equation environments (vertical lines
+%indicating nominal margins)}\label{displays}
+\caption[]{ディスプレイ数式環境の比較（縦線は通常のマージンを示す）}\label{displays}
+\renewcommand{\theequation}{\arabic{equation}}
+\begin{eqxample}
+\begin{verbatim}
+\begin{equation*}
+a=b
+\end{equation*}
+\end{verbatim}
+\producing
+\begin{equation*}
+a=b
+\end{equation*}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{equation}
+a=b
+\end{equation}
+\end{verbatim}
+\producing
+\begin{equation}
+a=b
+\end{equation}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{equation}\label{xx}
+\begin{split}
+a& =b+c-d\\
+ & \quad +e-f\\
+ & =g+h\\
+ & =i
+\end{split}
+\end{equation}
+\end{verbatim}
+\producing
+\begin{equation}\label{xx}
+\begin{split}
+a& =b+c-d\\
+ & \quad +e-f\\
+ & =g+h\\
+ & =i
+\end{split}
+\end{equation}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{multline}
+a+b+c+d+e+f\\
++i+j+k+l+m+n
+\end{multline}
+\end{verbatim}
+\producing
+\begin{multline}
+a+b+c+d+e+f\\
++i+j+k+l+m+n
+\end{multline}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{gather}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather}
+\end{verbatim}
+\producing
+\begin{gather}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{align}
+a_1& =b_1+c_1\\
+a_2& =b_2+c_2-d_2+e_2
+\end{align}
+\end{verbatim}
+\producing
+\begin{align}
+a_1& =b_1+c_1\\
+a_2& =b_2+c_2-d_2+e_2
+\end{align}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+\end{verbatim}
+\producing
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+\end{eqxample}
+
+\begin{eqxample}
+\begin{verbatim}
+\begin{flalign*}
+a_{11} + b_{11}& = c_{11}&
+  a_{12}& =b_{12}\\
+b_{21}& = c_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{flalign*}
+\end{verbatim}
+\producing
+\begin{flalign*}
+a_{11} + b_{11}& = c_{11}&
+  a_{12}& =b_{12}\\
+b_{21}& = c_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{flalign*}
+\end{eqxample}
+\end{table}
+
+%% ------------------------------------------------------------------ %%
+%\enlargethispage{1\baselineskip}
+
+%\section{Single equations}
+\section{一つだけの数式}
+
+%The \env{equation} environment is for a single equation with an
+%automatically generated number. The \env{equation*} environment is the
+%same except for omitting the number.%
+\env{equation}環境は，自動的に数式番号が生成される単一の方程式に対するものです．
+\env{equation*}環境は，数式番号を表示しないこと以外は同じです．%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\footnote{Basic \latex/ doesn't provide an \env{equation*} environment,
+%but rather a functionally equivalent environment named
+%\env{displaymath}.}
+%The wrapper \verb+\[ ... \]+ is equivalent to \env{equation*}.%
+\index{[@\verb+\[ ... \]+}
+\footnote{\latex/は基本的には\env{equation *}環境を提供していませんが，
+\env{displaymath}という名前の機能が同等の環境を与えています．}
+\verb+\[ ... \]+は，\env{equation*}と同値です．%
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Split equations without alignment}
+\section{式を位置揃えしないで分割}
+
+%The \env{multline} environment is a variation of the \env{equation}
+%environment used for equations that don't fit on a single line. The
+%first line of a \env{multline} will be at the left margin and the last
+%line at the right margin, except for an indention on both sides in the
+%amount of \cn{multlinegap}. Any additional lines in between will be
+%centered independently within the display width (unless the \opt{fleqn}
+%option is in effect).%
+\env{multline}環境は，1行に収まらない方程式に使用される\env{equation}環境のバリエーションです．
+\env{multline}の最初の行は，両側のインデントが\cn{multlinegap}で与えられることを除いて，
+数式の始まりは左マージンから，数式の終わりの行は右マージンなります．
+その間の追加の行は，表示幅内で独立して中央揃えされます（\opt{fleqn}オプションが有効な場合を除く）．
+\index{options!behavior of particular options}
+\index{オプション!特別なオプションの振る舞い}
+
+%Like \env{equation}, \env{multline} has only a single equation number
+%(thus, none of the individual lines should be marked with \cn{notag}).
+%The equation number is placed on the last line (\opt{reqno} option) or
+%first line (\opt{leqno} option); vertical centering as for \env{split}
+%is not supported by \env{multline}.%
+\env{equation}と同様に，\env{multline}には1つの式番号をもちます．
+（個々の行には\cn{notag}と書く必要がありません．）
+式番号は最後の行（\opt{reqno}オプション）または最初の行（\opt{leqno}オプション）に置かれます．
+\env{split}の場合のような上限中央への配置は\env{multline}ではサポートされていません．
+\index{options!behavior of particular options}
+
+%It's possible to force one of the middle lines to the left or right with
+%commands \cn{shoveleft}, \cn{shoveright}. These commands take the entire
+%line as an argument, up to but not including the final \cn{\\}; for
+%example
+\cn{shoveleft}，\cn{shoveright}のコマンドを使えば，中央の行の1つを左または右に動かすことができます．
+これらのコマンドは行全体を引数としてとります．しかし改行の\cn{\\}は含みません．
+たとえば
+\begin{multline}
+\framebox[.65\columnwidth]{A}\\
+\framebox[.5\columnwidth]{B}\\
+\shoveright{\framebox[.55\columnwidth]{C}}\\
+\framebox[.65\columnwidth]{D}
+\end{multline}
+\begin{verbatim}
+\begin{multline}
+\framebox[.65\columnwidth]{A}\\
+\framebox[.5\columnwidth]{B}\\
+\shoveright{\framebox[.55\columnwidth]{C}}\\
+\framebox[.65\columnwidth]{D}
+\end{multline}
+\end{verbatim}
+
+%The value of \cn{multlinegap} can be changed with the usual \latex/
+%commands \cn{setlength} or \cn{addtolength}.
+\cn{multlinegap}の値は\latex/のコマンド\cn{setlength}あるいは\cn{addtolength}で
+変更することができます．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Split equations with alignment}
+\section{式を位置揃して分割}
+
+%Like \env{multline}, the \env{split} environment is for \emph{single}
+%equations that are too long to fit on one line and hence must be split
+%into multiple lines.  Unlike \env{multline}, however, the \env{split}
+%environment provides for alignment among the split lines, using |&| to
+%mark alignment points. Unlike the other \nipkg{amsmath} equation
+%structures, the \env{split} environment provides no numbering, because
+%it is intended to be used \emph{only inside some other displayed
+%  equation structure}, usually an \env{equation}, \env{align}, or
+%\env{gather} environment, which provides the numbering. For example:
+\env{multline}と同様に，\env{split}環境は，1行に収まらない長すぎる\emph{一つの}数式ために
+複数の行に分割する必要があるときに使います．
+しかし\env{split}環境は\env{multline}とは異なり，|&|を使用して整列箇所に印を付けて，数式を分割する位置を合わせます．
+他の\nipkg{amsmath}方程式の構造とは異なり，\env{split}環境は\emph{他のディスプレイ数式構造の内部}でのみ使用されるため，数式番号はつきません．
+通常，\env{equation}，\env{align}，または\env{gather}環境では，番号付けが行われます．たとえば：
+
+\begin{equation}\label{e:barwq}\begin{split}
+H_c&=\frac{1}{2n} \sum^n_{l=0}(-1)^{l}(n-{l})^{p-2}
+  \sum_{l _1+\dots+ l _p=l}\prod^p_{i=1} \binom{n_i}{l _i}\\
+&\quad\cdot[(n-l )-(n_i-l _i)]^{n_i-l _i}\cdot
+  \Bigl[(n-l )^2-\sum^p_{j=1}(n_i-l _i)^2\Bigr].
+  \kern-2em % adjust equation body to the right [mjd,13-Nov-1994]
+\end{split}\end{equation}
+
+\begin{verbatim}
+\begin{equation}\label{e:barwq}\begin{split}
+H_c&=\frac{1}{2n} \sum^n_{l=0}(-1)^{l}(n-{l})^{p-2}
+  \sum_{l _1+\dots+ l _p=l}\prod^p_{i=1} \binom{n_i}{l _i}\\
+&\quad\cdot[(n-l )-(n_i-l _i)]^{n_i-l _i}\cdot
+  \Bigl[(n-l )^2-\sum^p_{j=1}(n_i-l _i)^2\Bigr].
+\end{split}\end{equation}
+\end{verbatim}
+
+%The \env{split} structure should constitute the entire body of the
+%enclosing structure, apart from commands like \cn{label} that produce no
+%visible material.
+\env{split}構造は，\cn{label}のような目に見えないものを生成するコマンドを除いて，
+全体を構成する必要があります．
+
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Equation groups without alignment}
+\section{位置揃えなしの数式の集まり}
+
+%The \env{gather} environment is used for a group of consecutive
+%equations when there is no alignment desired among them; each one is
+%centered separately within the text width (see Table~\ref{displays}).
+%Equations inside \env{gather} are separated by a \cn{\\} command.
+%Any equation in a \env{gather} may consist of a \verb'\begin{split}'
+%  \dots\ \verb'\end{split}' structure\mdash for example:
+\env{gather}環境は，一連の連立方程式の中で位置揃えが望ましくない場合に使用されます．
+それぞれがテキスト幅内で別々に中央揃えされます（表~\ref{displays}参照）．
+\env{gather}内の方程式は，\cn{\\}コマンドで区切られています．
+\env{gather}の中のどのの方程式も，\verb'\begin{split}'
+\dots\ \verb'\end{split}'構造などで構成されます．
+たとえば：
+\begin{verbatim}
+\begin{gather}
+  first equation\\
+  \begin{split}
+    second & equation\\
+           & on two lines
+  \end{split}
+  \\
+  third equation
+\end{gather}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Equation groups with mutual alignment}
+\section{互いに揃える数式の集まり}
+
+%The \env{align} environment is used for two or more equations when
+%vertical alignment is desired; usually binary relations such as equal
+%signs are aligned (see Table~\ref{displays}).
+\env{align}環境は，縦方向に揃えたい2つ以上の式に使用されます．
+通常は等号などの2項関係で揃えます（表~\ref{displays}参照）．
+
+%To have several equation columns side-by-side, use extra ampersands
+%to separate the columns:
+複数の方程式列を並べて使用するには，必要な個数のアンパサンドを使用して列を区切ります：
+\begin{align}
+x&=y       & X&=Y       & a&=b+c\\
+x'&=y'     & X'&=Y'     & a'&=b\\
+x+x'&=y+y' & X+X'&=Y+Y' & a'b&=c'b
+\end{align}
+%
+\begin{verbatim}
+\begin{align}
+x&=y       & X&=Y       & a&=b+c\\
+x'&=y'     & X'&=Y'     & a'&=b\\
+x+x'&=y+y' & X+X'&=Y+Y' & a'b&=c'b
+\end{align}
+\end{verbatim}
+%Line-by-line annotations on an equation can be done by judicious
+%application of \cn{text} inside an \env{align} environment:
+\env{align}環境の中の数式に行単位で注釈をつけるときには，その都度\cn{text}を使います：
+\begin{align}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+                    && \text{by \eqref{eq:C}}\\
+ & = y'\circ y^*    && \text{by \eqref{eq:D}}\\
+ & = y(0) y'        && \text {by Axiom 1.}
+\end{align}
+%
+\begin{verbatim}
+\begin{align}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+                    && \text{by \eqref{eq:C}}\\
+ & = y'\circ y^*    && \text{by \eqref{eq:D}}\\
+ & = y(0) y'        && \text {by Axiom 1.}
+\end{align}
+\end{verbatim}
+%A variant environment \env{alignat} allows the horizontal space between
+%equations to be explicitly specified. This environment takes one argument,
+%the number of \qq{equation columns} (the number of pairs of right-left
+%aligned columns; the argument is the number of pairs): count the maximum
+%number of \verb'&'s in any row, add~1 and divide by~2.
+これの変種環境\env{alignat}は，方程式間の水平の空白を明示的に指定できます．
+この環境は一つの引数を取りますが，これは\qq{数式の列数}（整列された右左の一対の個数；ペアの個数）の数を指定します．
+列の中の\verb'&'の最大の個数を数えて，それに１を足して２で割ります．
+
+\begin{alignat}{2}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+                  &\quad& \text{by \eqref{eq:C}}\\
+ & = y'\circ y^*  && \text{by \eqref{eq:D}}\\
+ & = y(0) y'      && \text {by Axiom 1.}
+\end{alignat}
+%
+\begin{verbatim}
+\begin{alignat}{2}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+                  &\quad& \text{by \eqref{eq:C}}\\
+ & = y'\circ y^*  && \text{by \eqref{eq:D}}\\
+ & = y(0) y'      && \text {by Axiom 1.}
+\end{alignat}
+\end{verbatim}
+%The environment \env{flalign} (``full length alignment'') stretches the
+%space between the equation columns to the maximum possible width, leaving
+%only enough space at the margin for the equation number, if present.
+環境\env{flalign}（``整列する最大の長さ''）は，数式の間の空白を最大の幅まで引き延ばし，
+数式番号の間に可能ならば十分な空白を入れます．
+\begin{flalign}
+x&=y       & X&=Y\\
+x'&=y'     & X'&=Y'\\
+x+x'&=y+y' & X+X'&=Y+Y'
+\end{flalign}
+%
+\begin{verbatim}
+\begin{flalign}
+x&=y       & X&=Y\\
+x'&=y'     & X'&=Y'\\
+x+x'&=y+y' & X+X'&=Y+Y'
+\end{flalign}
+\end{verbatim}
+%
+\begin{flalign*}
+x&=y       & X&=Y\\
+x'&=y'     & X'&=Y'\\
+x+x'&=y+y' & X+X'&=Y+Y'
+\end{flalign*}
+%
+\begin{verbatim}
+\begin{flalign*}
+x&=y       & X&=Y\\
+x'&=y'     & X'&=Y'\\
+x+x'&=y+y' & X+X'&=Y+Y'
+\end{flalign*}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Alignment building blocks}
+\section{構成要素の位置揃え}
+
+%Like \env{equation}, the multi-equation environments \env{gather},
+%\env{align}, and \env{alignat} are designed to produce a structure
+%whose width is the full line width. This means, for example, that one
+%cannot readily add parentheses around the entire structure. But
+%variants\index{ed env@\texttt{-ed} environments|(}
+%\env{gathered}, \env{aligned}, and \env{alignedat} are provided whose
+%total width is the actual width of the contents; thus they can be used
+%as a component in a containing expression. E.g.,
+\env{equation}と同じ様に，複数の方程式環境\env{gather}，\env{align}，\env{alignat}は，ページ幅全体にわたった構造を生成するように設計されています．
+これは，たとえば，構造全体にかっこを簡単に追加できないことを意味します．
+しかし，変種である\env{gathered}, \env{aligned}, および\env{alignedat}は，実際に生成した構造の実際の幅を与えます．\index{ed env@\texttt{-ed} environments|(}\index{ed env@\texttt{-ed}環境|(}
+したがって，含まれる数式を一つの要素として使用することができます．つまり，
+\begin{equation*}
+\left.\begin{aligned}
+  B'&=-\partial\times E,\\
+  E'&=\partial\times B - 4\pi j,
+\end{aligned}
+\right\}
+%\qquad \text{Maxwell's equations}
+\qquad \text{マクスウェルの方程式}
+\end{equation*}
+\begin{verbatim}
+\begin{equation*}
+\left.\begin{aligned}
+  B'&=-\partial\times E,\\
+  E'&=\partial\times B - 4\pi j,
+\end{aligned}
+\right\}
+%\qquad \text{Maxwell's equations}
+\qquad \text{マクスウェルの方程式}
+\end{equation*}
+\end{verbatim}
+%Like the \env{array} environment, these \texttt{-ed} variants also take
+%an optional\index{options!positioning of \texttt{-ed} environments}
+%|[t]|\index{t option@\texttt{t} (top) option},
+%|[b]|\index{b option@\texttt{b} (bottom) option} or the default
+%|[c]|\index{c option@\texttt{c} (center) option}
+%argument to specify vertical
+%positioning.  For maximum interoperability, do not insert a
+%space\index{options!space before \texttt{[}}
+%or line break\index{line break} before the option.  See
+%also the note on page~\pageref{breaknote} regarding page breaking
+%within the \texttt{-ed} environments.
+\env{array}環境と同様に，これらの\texttt{-ed}変種は，オプション引数\verb'[t]'，\verb'[b]'あるいはデフォルトの|[c]|を使用して，縦方向の位置を指定します．
+\index{options!positioning of \texttt{-ed} environments}%
+\index{t option@\texttt{t} (top) option}%
+\index{b option@\texttt{b} (bottom) option}%
+\index{c option@\texttt{c} (center) option}%
+互換性を最大限にするために，オプションの前に空白\index{options!space before \texttt{[}}\index{オプション!\texttt{[}の前の空白}%
+あるいは改行\index{line break}\index{改行}を入れないようにします．
+また\pageref{breaknote}ページの\texttt{-ed}環境における改ページの説明をみてください．
+
+%\qq{Cases} constructions like the following are common in
+%mathematics:
+\qq{場合分け}は，数学ではよく現れます：
+\begin{equation}\label{eq:C}
+P_{r-j}=
+  \begin{cases}
+    0&  \text{if $r-j$ is odd},\\
+    r!\,(-1)^{(r-j)/2}&  \text{if $r-j$ is even}.
+  \end{cases}
+\end{equation}
+%and in the \nipkg{amsmath} package there is a \env{cases} environment to
+%make them easy to write:
+\nipkg{amsmath}パッケージには\env{cases}環境があり，場合分けを簡単に書くことができます：
+\begin{verbatim}
+P_{r-j}=\begin{cases}
+    0&  \text{if $r-j$ is odd},\\
+    r!\,(-1)^{(r-j)/2}&  \text{if $r-j$ is even}.
+  \end{cases}
+\end{verbatim}
+%Notice the use of \cn{text} (cf.~\secref{text}) and the nested math
+%formulas. \env{cases} is set in \cn{textstyle}. If \cn{displaystyle}
+%is wanted, it must be requested explicitly; \pkg{mathtools} provides
+%a \env{dcases} environment for this purpose.
+\cn{text}(cf.~\secref{text})が使われていて，数式がその中にあることに注意してください．
+\env{cases}は\cn{textstyle}に置かれています．
+\cn{displaystyle}が必要なら，明示します；
+そのために\pkg{mathtools}には\env{dcases}環境が用意されています．
+
+%The |-ed|\index{ed env@\texttt{-ed} environments|)} and \env{cases}
+%environments must appear within an enclosing math environment, which can
+%be either in text, between |$...$|, or in any of the display environments.
+|-ed|\index{ed env@\texttt{-ed} environments|)}と\env{cases}環境は，
+数式環境，テキストや|$...$|の間，あるいは任意のディスプレイ環境の中になければなりません．
+\index{ed env@\texttt{-ed}環境|)}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Adjusting tag placement}
+\section{タグの位置を揃える}
+
+%Placing equation numbers can be a rather complex problem in multiline
+%displays. The environments of the \nipkg{amsmath} package try hard to
+%avoid overprinting an equation number on the equation contents, if
+%necessary moving the number down or up to a separate line. Difficulties
+%in accurately calculating the profile of an equation can occasionally
+%result in number movement that doesn't look right.
+%A \cn{raisetag} command is provided to adjust the vertical position of the
+%current equation number, if it has been shifted away from its normal
+%position. To move a particular number up by six points, write
+%|\raisetag{6pt}|. (At the end of a display, this also shifts up the
+%text following the display.)
+%This kind of adjustment is fine tuning like line
+%breaks and page breaks, and should therefore be left undone until your
+%document is nearly finalized, or you may end up redoing the fine tuning
+%several times to keep up with changing document contents.
+複数行のディスプレイ数式では，式番号をどこに置くかということは，かなり複雑な問題になります．
+\nipkg{amsmath}パッケージの環境では，式の内容に式番号を重複して印刷しないようにしています．
+必要であれば，式番号は上か下の別の行に移動してください．
+方程式の長さを正確に計算することが困難な場合は，式番号が正しく表示されないことがあります．
+\cn{raisetag}コマンドは，現在の方程式の番号を通常の位置から垂直方向にずらすために用意されています．
+6ポイント上に移動するには，|\raisetag{6pt}|と書いてください．
+（ディスプレイの終わりで，ディスプレイに続くテキストを持ち上げます．）
+この種の改行や改ページの調整は，ドキュメントが完成したと言えるまでは行わないようにしてください．
+そうでなければ，ドキュメントの内容を変えるたびに微調整をやり直すことになります．
+
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Vertical spacing and page breaks in multiline displays}
+\section{複数行のディスプレイ数式での縦方向の空白と改ページ}
+
+%You can use the \cn{\\}|[|\<dimension>|]|%
+%\index{options!extra vertical space after \cn{\\}}
+%command to get extra vertical
+%space between lines in all the \nipkg{amsmath} displayed equation
+%environments, as is usual in \latex/. Do not type a space between the%
+%\index{options!space before \texttt{[}}
+%\cn{\\} and the following |[|; \emph{only} for display environments
+%defined by \nipkg{amsmath} the space is interpreted to mean that the
+%bracketed material is part of the document content.
+\cn{\\}|[|\<dimension>|]|%
+\index{options!extra vertical space after \cn{\\}}
+コマンドを使えば，通常の\latex/のように，\nipkg{amsmath}のディスプレイ数式の行間に余分な垂直方向のスペースを入れることができます．
+\index{options!space before \texttt{[}}
+\cn{\\}と次の|[|の間にスペースを入れません；
+\nipkg{amsmath}で定義されているディスプレイ環境\emph{だけが}スペースを角カッコ（ブラッケト）で囲まれて部分はドキュメントの一部であると解釈されます．
+
+%When the \nipkg{amsmath} package is
+%in use \ii{page breaks} between equation lines are normally disallowed;
+%the philosophy is that page breaks in such material should receive
+%individual attention from the author. To get an individual page break
+%inside a particular displayed equation, a \cn{displaybreak} command is
+%provided. \cn{displaybreak} is best placed immediately before the
+%\cn{\\} where it is to take effect.  Like \latex/'s \cn{pagebreak},
+%\cn{displaybreak} takes an optional argument%
+%\index{options!behavior of particular options} between 0 and 4 denoting
+%the desirability of the pagebreak. |\displaybreak[0]| means \qq{it is
+%  permissible to break here} without encouraging a break;
+%\cn{displaybreak} with no optional argument is the same as
+%|\displaybreak[4]| and forces a break.
+\nipkg{amsmath}パッケージが使用されている場合，方程式の行間で改ページ\index{pagebreak}\index{改ページ}
+は通常は許可されません．
+ディスプレイ数式の中のある行で改ページすることは著者の責任であると考えます．
+特定の表示式の中で改ページを行うためには，\cn{displaybreak}コマンドが提供されています．
+\cn{displaybreak}は，\cn{\\}の直前に配置するのが最も効果的です．\latex/の\cn{pagebreak}のように，
+\cn{displaybreak}は，改ページの望ましさを示す0から4の任意の引数を取ります．
+|\displaybreak[0]|は，ここでの改ページを勧めないが\qq{必要なら改ページを認める}こととされます．
+オプション引数なしの\cn{displaybreak}は|\displaybreak[4]|場合と同じ意味で，改ページを強制します．
+
+%If you prefer a strategy of letting page breaks fall where they may,
+%even in the middle of a multiline equation, then you might put
+%\cn{allowdisplaybreaks}\texttt{[1]} in the preamble of your document. An
+%optional argument\index{options!behavior of particular options}
+%1\ndash 4 can be used for finer control: |[1]| means
+%allow page breaks, but avoid them as much as possible; values of 2,3,4
+%mean increasing permissiveness. When display breaks are enabled with
+%\cn{allowdisplaybreaks}, the \cn{\\*} command can be used to prohibit a
+%pagebreak after a given line, as usual.
+改ページを，どの場所でも，複数行の式の途中で行ってもよいのなら，ドキュメントのプレアンブルに\cn{allowdisplaybreaks}\texttt{[1]}を置くこと勧めます．\index{options!behavior of particular options}\index{オプション!特別なオプションの振る舞い}
+オプションの引数1\ndash 4は，細かい制御のために使用できます：|[1]|は改ページを許可するが，できるだけ避けたいことを意味します；
+2,3,4の値は許容度を増加させることを意味します．
+\cn{allowdisplaybreaks}で改ページを有効にしておいても，いつものように，\cn{\\*}コマンドはある行の後で改ページを禁止させることができます．
+
+\begin{bfseries}
+%Note:\label{breaknote} Certain equation environments wrap their contents
+%in an unbreakable box, with the consequence that neither \cn{displaybreak}
+%nor \cn{allowdisplaybreaks} will have any effect on them. These include
+%\env{split}, \env{aligned}, \env{gathered}, and \env{alignedat}.
+注意：label{breaknote}ある種の方程式環境は，内容を分割できないボックスで囲むので，
+結果的に\cn{displaybreak}や\cn{allowdisplaybreaks}の影響を受けません．
+それらには\env{split}，\env{aligned}，\env{gathered}，\env{alignedat}などがあります．
+\end{bfseries}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Interrupting a display}
+\section{ディスプレ数式への割り込み}
+
+%The command \cn{intertext} is used for a short interjection of one or
+%two lines of text\index{text fragments inside math} in the middle of a
+%multiple-line display structure (see also the \cn{text} command in
+%\secref{text}). Its salient feature is preservation of the alignment,
+%which would not happen if you simply ended the display and then started
+%it up again afterwards. \cn{intertext} may only appear right after a
+%\cn{\\} or \cn{\\*} command. Notice the position of the word \qq{and} in
+%this example.
+コマンド\cn{intertext}は，複数行のディスプレイ数式の途中で，1行または2行のテキスト\index{text fragments inside math}\index{数式内の短いテキスト}を挿入するために使用されます（\secref{text}の中の\cn{text}コマンドも参照）．
+その顕著な特徴は一揃えが保存されていることです．
+一度ディスプレイ数式を終えて，テキストを挟み新しいディスプレイ数式を使用した場合は，こうなりませ．
+\cn{intertext}は，\cn{\\}や\cn{\\*}コマンドの直後にだけに現れます．
+この例では，単語\qq{and}の位置を確認してください．
+\begin{align}
+  A_1&=N_0(\lambda;\Omega')-\phi(\lambda;\Omega'),\\
+  A_2&=\phi(\lambda;\Omega')-\phi(\lambda;\Omega),\\
+\intertext{and}
+  A_3&=\mathcal{N}(\lambda;\omega).
+\end{align}
+\begin{verbatim}
+\begin{align}
+  A_1&=N_0(\lambda;\Omega')-\phi(\lambda;\Omega'),\\
+  A_2&=\phi(\lambda;\Omega')-\phi(\lambda;\Omega),\\
+\intertext{and}
+  A_3&=\mathcal{N}(\lambda;\omega).
+\end{align}
+\end{verbatim}
+
+%The \pkg{mathtools} package provides a command \cn{shortintertext} that
+%is intended for use when the interjected text is only a few words; it uses
+%less vertical space than \cn{intertext}. This
+%is most effective when equation numbers are on the right.%
+%\index{equationn@equation numbers!left or right placement}
+\pkg{mathtools}パッケージは，短いテキストを挿入するためのコマンド\cn{shortintertext}を与えています；
+これは\cn{intertext}よりも少し狭い垂直のスペースを用います．
+これが便利な場合は，数式番号が右に表示される時です．
+\index{equationn@equation numbers!left or right placement}
+\index{方程式@数式番号!左あるいは右に配置}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Equation numbering}
+\section{数式番号}
+
+%\subsection{Numbering hierarchy}
+\subsection{数式番号の階層構造}
+%In \latex/ if you wanted to have equations numbered within
+%sections\mdash that is, have
+%equation numbers (1.1), (1.2), \dots, (2.1), (2.2),
+%\dots, in sections 1, 2, and so forth\mdash you could redefine
+%\cn{theequation} as suggested in the \latex/ manual \cite[\S6.3, \S
+%C.8.4]{lamport}:
+\latex/では，数式番号を１節なら(1.1)，(1.2)，\dots，２節なら(2.1)，(2.2)，\dots，
+のように節ごとに開始したいなら，
+\latex/のマニュアル\cite[\S6.3, \S C.8.4]{lamport}にあるように\cn{theequation}を再定義して使います:
+\begin{verbatim}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\end{verbatim}
+
+%This works pretty well, except that the equation counter won't be reset
+%to zero at the beginning of a new section or chapter, unless you do it
+%yourself using \cn{setcounter}. To make this a little more convenient,
+%the \nipkg{amsmath} package provides a 
+%command\index{equationn@equation numbers!hierarchy} \cn{numberwithin}.
+%To have equation numbering tied to section numbering, with automatic
+%reset of the equation counter, write
+これで良いのですが，数式番号のカウンタは，\cn{setcounter}で自分で指定しない限り
+新しい節や章の開始がゼロにリセットされません．
+これをもう少し簡単に行うために\nipkg{amsmath}パッケージには\cn{numberwithin}\index{equationn@equation numbers!hierarchy}\index{数式@数式番号!階層}コマンドがあります. 
+数式番号を節の番号に結びつけて，自動的にカウンタをリセットしたいのなら，
+\begin{verbatim}
+\numberwithin{equation}{section}
+\end{verbatim}
+%As its name implies, the \cn{numberwithin} command can be applied to
+%any counter, not just the \texttt{equation} counter.
+と書きます．その名前が意味するように，\cn{numberwithin}コマンドは，
+\texttt{equation}だけでなくどのカウンタにも働きます．
+
+%\subsection{Cross references to equation numbers}
+\subsection{相互参照と数式番号}
+
+%To make cross-references to equations easier, an \cn{eqref}
+%command\index{equationn@equation numbers!cross-references} is provided. This
+%automatically supplies the parentheses around the equation number. I.e.,
+%if \verb'\ref{abc}' produces 3.2 then \verb'\eqref{abc}' produces
+%(3.2). The parentheses around an \cn{eqref} equation number will be
+%set in upright type regardless of type style of the context.
+相互参照の作成は簡単にできます．\cn{eqref}コマンド
+\index{equation numbers!cross-references}\index{数式番号!相互参照}を使います．
+これは，数式番号を自動的に生成して，その周りを丸カッコで囲みます．
+つまり\verb'\ref{abc}'は番号3.2だけを生成しますが，\verb'\eqref{abc}'は
+丸カッコつきの(3.2)を生成します．
+数式番号\cn{eqref}の丸括弧は，文脈のスタイルに関係なく立体で表示されます．
+
+%%\subsection{Subordinate numbering sequences}
+\subsection{数式番号の副番号の割り当て}
+
+%The \nipkg{amsmath} package provides also a wrapper environment,
+%\env{subequations}\index{equationn@equation numbers!subordinate numbering}, to make it
+%easy to number equations in a particular \cn{align} or similar group with
+%a subordinate numbering scheme. For example
+\nipkg{amsmath}パッケージには，
+数式のまとまりに対して副番号を生成するラッパー環境の\env{subequations}という機能もあります．
+\index{equation numbers!subordinate numbering}\index{数式番号!副番号}
+\cn{align}など作られた数式のグループに副番号をつけるのに便利です．
+たとえば
+\begin{verbatim}
+\begin{subequations}
+...
+\end{subequations}
+\end{verbatim}
+%causes all numbered equations within that part of the document to be
+%numbered (4.9a) (4.9b) (4.9c) \dots, if the preceding numbered
+%equation was (4.8). A \cn{label} command immediately after
+%\verb/\begin{subequations}/ will produce a \cn{ref} of the parent
+%number 4.9, not 4.9a. The counters used by the subequations
+%environment are \verb/parentequation/ and \verb/equation/ and
+%\cn{addtocounter}, \cn{setcounter}, \cn{value}, etc., can be applied
+%as usual to those counter names. To get anything other than lowercase
+%letters for the subordinate numbers, use standard \latex/ methods for
+%changing numbering style \cite[\S6.3, \S C.8.4]{lamport}. For example,
+%redefining \cn{theequation} as follows will produce roman numerals.
+とすれば，この前の数式の番号が(4.8)であれば，このグループの数式番号は(4.9a) (4.9b) (4.9c) \dots, となります．
+\cn{label}コマンドは\verb/\begin{subequations}/の直後に置きます．そうすれば
+\cn{ref}が指すのは4.9であり4.9aではありません．
+副番号環境が使うカウンタは\verb/parentequation/と\verb/equation/および
+\cn{addtocounter}, \cn{setcounter}, \cn{value}, などであり，
+通常のカウンタに使われます．
+副番号に小文字のアルファベット以外を使いたい場合は，通常の
+\latex/の番号付の規則を使います\cite[\S6.3, \S C.8.4]{lamport}．
+たとえば，\cn{theequation}を再定義すれば，ローマ数字を使うことができます．
+\begin{verbatim}
+\begin{subequations}
+\renewcommand{\theequation}{\theparentequation \roman{equation}}
+...
+\end{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{Numbering style}
+\subsection{番号付のスタイル}
+
+%The default equation number is set in \cn{normalfont}.  This means that
+%in bold section headings, bold is suppressed; a workaround for this is
+%to use \verb+(\ref{+\ldots\verb+})+ rather than \verb+\eqref{+\ldots\verb+}+.
+デフォルトの数式番号は\cn{normalfont}に設定されています．
+つまり節見出しがボールドでも，節の番号はボールドにならないことを意味しています；
+ボールドにしたければ，\verb+\eqref{+\ldots\verb+}+ではなくて\verb+(\ref{+\ldots\verb+})+を使います．
+
+%If smaller type is specified for a numbered display, the size of the
+%equation number will also be small.  The default size can be ensured
+%throughout a document by applying this patch in the preamble:
+同じような状況は，番号づけられたディスプレイの時に数式番号のサイズも小さくなることがあげられます．
+ドキュメント全体でデフォルトのサイズを強制的に指示するためには，プレアンブルに次のように定義します：
+\begin{verbatim}
+\makeatletter
+\renewcommand{\maketag@@@}[1]{\hbox{\m@th\normalsize\normalfont#1}}%
+\makeatother
+\end{verbatim}
+%(This modification may be included in a future version of
+%\nipkg{amsmath}.)
+（この変更は将来のバージョンの\nipkg{amsmath}に取り入れられます．）
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Miscellaneous mathematical features}
+\chapter{そのほかの数学に現れる構造}
+
+%\section{Matrices}\label{ss:matrix}
+\section{行列}\label{ss:matrix}
+
+%The \nipkg{amsmath} package provides some environments for
+%matrices\index{matrices} beyond the basic \env{array} environment of
+%\latex/. The \env{pmatrix}, \env{bmatrix}, \env{Bmatrix}, \env{vmatrix}
+%and \env{Vmatrix} have (respectively) $(\,)$, $[\,]$, $\lbrace\,\rbrace$,
+%$\lvert\,\rvert$, and $\lVert\,\rVert$ delimiters\index{delimiters}
+%built in. For naming consistency there is a
+%\env{matrix} environment sans delimiters. This is not entirely redundant
+%with the \env{array} environment; the matrix environments all use more
+%economical horizontal spacing than the rather prodigal spacing of the
+%\env{array} environment. Also, unlike the \env{array} environment, you
+%don't have to give column specifications for any of the matrix
+%environments; by default you can have up to 10 centered columns.%
+\nipkg{amsmath}パッケージは，\latex/の基本的な\env{array}環境より高機能の，
+行列\index{matrices}\index{行列}環境を提供します．
+\env{pmatrix}，\env{bmatrix}，\env{Bmatrix}，\env{vmatrix}，\env{Vmatrix}は
+それぞれ$(\,)$, $[\,]$, $\lbrace\,\rbrace$,
+$\lvert\,\rvert$および$\lVert\,\rVert$デリミタ（丸カッコ，縦棒，各カッコなど）が組み込まれています．\index{delimiters}\index{デリミタ}
+命名の一貫性のために，デリミタの無い（要素が整列されただけの）\env{matrix}もあります．
+これは，\env{array}環境があるにも関わらず無駄に作ったわけではありません．
+行列環境はすべて，\env{array}環境の間隔よりも，無駄のないように水平の空白を使用します．
+また，\env{array}環境とは異なり，任意の行列環境に対して列指定を行う必要はありません；
+デフォルトでは，10列まで設定できます．%
+\footnote{%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%More precisely: The maximum number of columns in a matrix is determined
+%by the counter |MaxMatrixCols| (normal value = 10), which you can change
+%if necessary using \latex/'s \cn{setcounter} or \cn{addtocounter}
+%commands.%
+正確には：行列の列の最大値はカウンタ|MaxMatrixCols|（通常は$10$）で
+きめられています．この値は
+\latex/の\cn{setcounter}あるいは\cn{addtocounter}コマンドで増やすことができます．
+}\space%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%(If you need left or right alignment in a column or other special
+%formats you may use \env{array}, or the \pkg{mathtools}
+%package which provides \verb+*+ variants%
+%\index{matrix@\indexenvironmentfont{matrix} environment!\verb+*+ variants}
+%of these environments with
+%an optional argument to specify left or right alignment.)
+（列の左あるいは右を揃えたいときや，ほかの整列基準を使いたい場合は，\env{array}あるいは
+\pkg{mathtools}パッケージで提供されているこれらの環境で左あるいは右の整列を指示するオプション引数をもつ\verb+*+で行なってください．\index{matrix@\indexenvironmentfont{matrix} environment!\verb+*+ variants}）\index{行列@\indexenvironmentfont{行列}環境!\verb+*+ 変種}）
+
+
+
+%To produce a small matrix suitable for use in text, there is a
+%\env{smallmatrix} environment (e.g.,
+本文の中に小さい行列を入れるために
+\env{smallmatrix}環境があります．（つまり
+\begin{math}
+\bigl( \begin{smallmatrix}
+  a&b\\ c&d
+\end{smallmatrix} \bigr)
+\end{math})
+%that comes closer to fitting within a single text line than a normal
+%matrix. Delimiters\index{delimiters} must be provided. (The
+%\pkg{mathtools} package provides |p|,|b|,|B|,|v|,|V| versions of
+%\env{smallmatrix},%
+%\index{smallmatrix@\indexenvironmentfont{smallmatrix} environment!variant delimiters}
+%as well as |*| variants%
+%\index{smallmatrix@\indexenvironmentfont{smallmatrix} environment!\verb+*+ variants}
+%as described above.)
+とすれば，普通サイズの行列とは異なり１行に収まります．
+デリミタ\index{delimiters}\index{デリミタ}は与えなければなりません．
+（\pkg{mathtools}パッケージには\env{smallmatrix}向けの|p|，|b|，|B|，|v|，|V|があります．
+上で説明したような|*|変種もあります．\index{smallmatrix@\indexenvironmentfont{smallmatrix} environment!\verb+*+ variants}\index{小さい行列@\indexenvironmentfont{小さい行列}環境!\verb+*+ variants}）
+%The above example was produced by
+上の例は次のようにして作られました．
+\begin{verbatim}
+\bigl( \begin{smallmatrix}
+  a&b\\ c&d
+\end{smallmatrix} \bigr)
+\end{verbatim}
+
+%\cn{hdotsfor}|{|\<number>|}| produces a row of dots in a
+%matrix\index{matrices!ellipsis dots}\index{ellipsis dots!in
+%matrices}\index{dots|see{ellipsis dots}} spanning the given number of
+%columns. For example,
+\cn{hdotsfor}|{|\<number>|}|は，行列の中に必要な列にまたがるドットだけの列を作ります．
+\index{matrices!ellipsis dots}\index{ellipsis dots!in
+matrices}\index{dots|see{ellipsis dots}}
+\index{行列!省略のドット}\index{省略のドット!行列の中で}\index{ドット|see{省略のドット}} 
+たとえば
+\begin{center}
+\begin{minipage}{.3\columnwidth}
+\noindent$\begin{matrix} a&b&c&d\\
+e&\hdotsfor{3} \end{matrix}$
+\end{minipage}%
+\qquad
+\begin{minipage}{.45\columnwidth}
+\begin{verbatim}
+\begin{matrix} a&b&c&d\\
+e&\hdotsfor{3} \end{matrix}
+\end{verbatim}
+\end{minipage}%
+\end{center}
+%
+%The spacing of the dots can be varied through use of a square-bracket
+%option,\index{options!behavior of particular options}
+%for example, |\hdotsfor[1.5]{3}|.  The number in square brackets
+%will be used as a multiplier (i.e., the normal value is 1.0).
+ドットとドットの間は，各カッコ[]オプションを使って，たとえば|\hdotsfor[1.5]{3}|
+のように指定できます．\index{options!behavior of particular options}\index{オプション!特別なオプションの振る舞い}
+各カッコの中の数値は，ある数字を掛けるのか，1の何倍かという形でしていします
+（つまり，通常の値は$1.0$）．
+\begin{equation}\label{eq:D}
+\begin{pmatrix} D_1t&-a_{12}t_2&\dots&-a_{1n}t_n\\
+-a_{21}t_1&D_2t&\dots&-a_{2n}t_n\\
+\hdotsfor[2]{4}\\
+-a_{n1}t_1&-a_{n2}t_2&\dots&D_nt\end{pmatrix},
+\end{equation}
+\begin{verbatim}
+\begin{pmatrix} D_1t&-a_{12}t_2&\dots&-a_{1n}t_n\\
+-a_{21}t_1&D_2t&\dots&-a_{2n}t_n\\
+\hdotsfor[2]{4}\\
+-a_{n1}t_1&-a_{n2}t_2&\dots&D_nt\end{pmatrix}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Math spacing commands}
+\section{数式の空白を指定するコマンド}
+
+%The \nipkg{amsmath} package slightly extends the set of math
+%spacing\index{horizontal spacing} commands, as shown below.
+%Both the spelled-out and abbreviated forms of these commands are robust,
+%and they can also be used outside of math.
+\nipkg{amsmath}パッケージは，次に示すように数式のための空白コマンドを少し拡張しています．\index{horizontal spacing}省略なし（文字通り）のコマンドもコマンドも省略コマンドもロバストです．
+つまり数式の外でも使用できます．
+\begin{ctab}{lll|lll}
+%Abbrev.& Spelled out& Example & Abbrev.& Spelled out& Example\\
+省略形 & 省略なし& 例 & 省略形& 省略なし& 例\\
+\hline
+\vstrut{2.5ex}
+& no space& \spx{}& & no space & \spx{}\\
+\cn{\,}& \cn{thinspace}& \spx{\,}&
+  \altcnbang& \cn{negthinspace}& \spx{\!}\\
+\cn{\:}& \cn{medspace}& \spx{\:}&
+  & \cn{negmedspace}& \spx{\negmedspace}\\
+\cn{\;}& \cn{thickspace}& \spx{\;}&
+  & \cn{negthickspace}& \spx{\negthickspace}\\
+& \cn{quad}& \spx{\quad}\\
+& \cn{qquad}& \spx{\qquad}
+\end{ctab}
+%For the greatest possible control over math spacing, use \cn{mspace}
+%and `math units'. One math unit, or |mu|, is equal to 1/18 em. Thus to
+%get a negative \cn{quad} you could write |\mspace{-18.0mu}|.
+数式の中の空白を調整するためのコマンドは\cn{mspace}と
+`数学単位（math units）'です．
+1数学単位は|mu|とも呼ばれ，値が1/18 emです．
+つまり負の\cn{quad}が必要なら|\mspace{-18.0mu}|と書けばよいのです．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Dots}
+\section{ドット}
+
+%For preferred placement of ellipsis dots (raised or on-line) in various
+%contexts there is no general consensus. It may therefore be considered a
+%matter of taste. By using the semantically oriented commands
+省略を示すドットの列（右上がり，一列など）は文脈によって異なり，共通した決まりはありません．
+好みの問題となることがあります．
+意味を考慮した名前のコマンドが\cn{ldots}と\cn{cdots}以外に用意されています．
+\begin{itemize}
+%\item \cn{dotsc} for \qq{dots with commas}
+\item \cn{dotsc} は \qq{コンマ付きのドット}
+%\item \cn{dotsb} for \qq{dots with binary operators/relations}
+\item \cn{dotsb} は \qq{二項作用素や二項関係が続くドット}
+%\item \cn{dotsm} for \qq{multiplication dots}
+\item \cn{dotsm} は \qq{複数のドット}
+%\item \cn{dotsi} for \qq{dots with integrals}
+\item \cn{dotsi} は \qq{積分が続くドット}
+%\item \cn{dotso} for \qq{other dots} (none of the above)
+\item \cn{dotso} は \qq{その他} （上のどれにも当てはまらない場合）
+\end{itemize}
+%instead of \cn{ldots} and \cn{cdots}, you make it possible for your
+%document to be adapted to different conventions on the fly, in case (for
+%example) you have to submit it to a publisher who insists on following
+%house tradition in this respect. The default treatment for the various
+%kinds follows American Mathematical Society conventions:
+\cn{ldots}と\cn{cdots}以外は，あなた自身の目的に応じて使い分けてください．
+ただし（たとえば）論文の投稿では発行元の規則があればそれに従います．
+デフォルトの処理は，次の例で示すアメリカ数学会（American Mathematical Society）の規則に従っています：
+\begin{center}
+\begin{tabular}{@{}l@{}l@{}}
+\begin{minipage}[t]{.54\textwidth}
+\begin{verbatim}
+Then we have the series $A_1, A_2,
+\dotsc$, the regional sum $A_1
++A_2 +\dotsb $, the orthogonal
+product $A_1 A_2 \dotsm $, and
+the infinite integral
+\[\int_{A_1}\int_{A_2}\dotsi\].
+\end{verbatim}
+\end{minipage}
+&
+\begin{minipage}[t]{.45\textwidth}
+\noindent
+Then we have the series $A_1,A_2,\dotsc$,
+the regional sum $A_1+A_2+\dotsb$,
+the orthogonal product $A_1A_2\dotsm$,
+and the infinite integral
+\[\int_{A_1}\int_{A_2}\dotsi.\]
+\end{minipage}
+\end{tabular}
+\end{center}
+%For most situations, the undifferentiated \cn{dots} can be used, and
+%\nipkg{amsmath} will output the most suitable form based on the
+%immediate context; if an inappropriate form results, it can be corrected
+%after examining the output.
+多くの場合，ひとつながりの\cn{dots}が使われています．
+\nipkg{amsmath}は，多くの場合状況に応じ適切な形を出力します；
+好ましくない結果を得たら，出力を調べて修正してください．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Nonbreaking dashes}
+\section{分割されないダッシュ}
+
+%A command \cn{nobreakdash} is provided to suppress the possibility of a
+%line break\index{line break|(} after the following hyphen or dash. For
+%example, if you write `pages 1\ndash 9' as |pages 1\nobreakdash--9|
+%then a line break will never occur between the dash and the 9. You can
+%also use \cn{nobreakdash} to prevent undesirable hyphenations in
+%combinations like |$p$-adic|. For frequent use, it's advisable to make
+%abbreviations, e.g.,
+\cn{nobreakdash}コマンドは，ハイフンやダッシュの後に起こり得る改行（行の分割）\index{line break|(}\index{改行|(}を抑制します．
+たとえば，`pages 1\ndash 9'を|pages 1\nobreakdash--9|と書けば，
+このダッシュと9との間で改行は起こりません．
+\cn{nobreakdash}を使っても，|$p$-adic|の間などの望まないハイフネーションを防ぐことができます．
+たびたび使うなら，簡易に入力する方法を勧めます．つまり
+\begin{verbatim}
+\newcommand{\p}{$p$\nobreakdash}% for "\p-adic"
+\newcommand{\Ndash}{\nobreakdash--}% for "pages 1\Ndash 9"
+%    For "\n dimensional" ("n-dimensional"):
+\newcommand{\n}[1]{$n$\nobreakdash-\hspace{0pt}}
+\end{verbatim}
+%The last example shows how to prohibit a line break\index{line break|)}
+%after the hyphen but allow normal hyphenation in the following
+%word. (It suffices to add a zero-width space after the hyphen.)
+とします．最後の例が示している通り，ハイフンの後の改行を抑制されましたが，\index{改行|)}\index{line break|)}
+そのあとの単語には通常のハイフネーションは行っています．
+（ゼロ幅の空白をハイフンの後に入れています．）
+
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Accents in math}
+\section{数式でのアクセント}
+
+%In ordinary \LaTeX{} the placement of the second accent in doubled math
+%accents is often poor. With the \nipkg{amsmath} package you
+%will get improved placement of the second accent:
+通常\LaTeX{}では，数式アクセントに2つ目を加えた時、２つ目の配置は，よくありません．
+\nipkg{amsmath}パッケージでは，2つ目のアクセントをつけたときの配置が改善されています：
+$\hat{\hat{A}}$ (\cn{hat}|{\hat{A}}|).
+
+%The commands \cn{dddot} and \cn{ddddot} are available to produce triple
+%and quadruple dot accents in addition to the \cn{dot} and \cn{ddot}
+%accents already available in \latex/.
+コマンド\cn{dddot}と\cn{ddddot}は，\latex/で用意されている\cn{dot}と\cn{ddot}に続いて
+3重と4重ドットを作ります．
+
+%To get a superscripted hat or tilde character, load the \pkg{amsxtra}
+%package and use \cn{sphat} or \cn{sptilde}. Usage is \verb'A\sphat'
+%(note the absence of the \verb'^' character).
+上付きのハットとチルダを得るためには，
+\pkg{amsxtra}パッケージを読み込み，
+\cn{sphat}あるいは\cn{sptilde}を使います．
+使い方は\verb'A\sphat'です．
+（上付きを指示する\verb'^'を用いないことに注意してくだい．）
+
+%To place an arbitrary symbol in math accent position, or to get under
+%accents, see the \pkg{accents} package by Javier Bezos. (\nipkg{amsmath}
+%must be loaded before \pkg{accents}.)
+数学アクセントとして任意の記号を配置したい場合，あるいは文字の下につけたい場合は，
+Javier Bezosが作成した\pkg{accents}を試してください．（\nipkg{amsmath}はpkg{accents}の前にロードしなければなりません．）
+
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Roots}
+\section{根号}
+
+%In ordinary \latex/ the placement of root indices is sometimes not so
+%good: $\sqrt[\beta]{k}$ (|\sqrt||[\beta]{k}|).  In the
+%\nipkg{amsmath} package \cn{leftroot} and \cn{uproot} allow you to adjust
+%the position of the root:%
+通常の\latex/では根号の指数の位置が，あまり良くないことがあます： $\sqrt[\beta]{k}$ (|\sqrt||[\beta]{k}|).  
+\nipkg{amsmath}パッケージには\cn{leftroot}と\cn{uproot}があり，
+根号の位置を調整できます：
+\index{options!adjust positioning}\index{オプション!位置の調整}
+\begin{verbatim}
+  \sqrt[\leftroot{-2}\uproot{2}\beta]{k}
+\end{verbatim}
+%will move the beta up and to the right:
+%$\sqrt[\leftroot{-2}\uproot{2}\beta]{k}$. The negative argument used
+%with \cn{leftroot} moves the $\beta$ to the right. The units are a small
+%amount that is a useful size for such adjustments.
+は，ベータを上に上げて，右に移動させています：
+$\sqrt[\leftroot{-2}\uproot{2}\beta]{k}$
+\cn{leftroot}に負の引数を与えれば$\beta$は右に寄ります．
+移動単位は，この調整に便利な大きさになっています．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Boxed formulas}
+\section{枠で囲まれた数式}
+
+%The command \cn{boxed} puts a box around its
+%argument, like \cn{fbox} except that the contents are in math mode:
+コマンド\cn{boxed}は引数で与えられた式を箱に入れます．
+\cn{fbox}と同じような働きですが，これは中身が数式モードのときだけに使います：
+\begin{equation}
+\boxed{\eta \leq C(\delta(\eta) +\Lambda_M(0,\delta))}
+\end{equation}
+\begin{verbatim}
+  \boxed{\eta \leq C(\delta(\eta) +\Lambda_M(0,\delta))}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Over and under arrows}
+\section{上につく矢印，下につく矢印}
+
+%Basic \latex/ provides \cn{overrightarrow} and \cn{overleftarrow}
+%commands. Some additional over and under arrow commands are provided
+%by the \nipkg{amsmath} package to extend the set:
+基本の\latex/には\cn{overrightarrow}と\cn{overleftarrow}コマンドがあります．
+\nipkg{amsmath}パッケージには，さらにいろいろな矢印が用意されています：
+
+\begin{tabbing}
+\qquad\=\ncn{overleftrightarrow}\qquad\=\kill
+\> \cn{overleftarrow}    \> \cn{underleftarrow} \+\\
+   \cn{overrightarrow}    \> \cn{underrightarrow} \\
+   \cn{overleftrightarrow}\> \cn{underleftrightarrow}
+\end{tabbing}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Extensible arrows}
+\section{長さが伸びる矢印}
+
+%\cn{xleftarrow} and \cn{xrightarrow} produce
+%arrows\index{arrows!extensible} that extend automatically to accommodate
+%unusually wide subscripts or superscripts. These commands take one
+%optional argument\index{options!behavior of particular options}
+%(the subscript) and one mandatory argument (the
+%superscript, possibly empty):
+\cn{xleftarrow}と\cn{xrightarrow}は，ともて長い下付き添え字あるいは上付きに添え字にも対応した自動的に伸びる矢印を生成します．\index{arrows!extensible}\index{矢印!長い}
+これらのコマンドは一つのオプション引数（添え字）と1つの必須引数（上付き文字，空の場合もあります）
+\index{options!behavior of particular options}\index{オプション!特別なオプションの振る舞い}を取ります．
+
+\begin{equation}
+A\xleftarrow{n+\mu-1}B \xrightarrow[T]{n\pm i-1}C
+\end{equation}
+\begin{verbatim}
+  \xleftarrow{n+\mu-1}\quad \xrightarrow[T]{n\pm i-1}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Affixing symbols to other symbols}
+\section{記号を別の記号に加える}
+
+%\latex/ provides \cn{stackrel} for placing a
+%superscript\index{subscripts and superscripts} above a binary relation.
+%In the \nipkg{amsmath} package there are somewhat more general commands,
+%\cn{overset} and \cn{underset}, that can be used to place one symbol
+%above or below another symbol, whether it's a relation or something
+%else. The input |\overset{*}{X}| will place a superscript-size $*$ above
+%the $X$: $\overset{*}{X}$; \cn{underset} is the analog for adding a
+%symbol underneath.
+\latex/は，二項関係の上に上付き文字を置くための\cn{stackrel}を提供します．\index{subscripts and superscripts}\index{下付きと上付き} 
+\nipkg{amsmath}パッケージには，もっと一般的な
+コマンド\cn{overset}と\cn{underset}があります．これらのコマンドは，記号を別の記号の上あるいは下に置くことができます．
+|\overset{*}{X}|とすれば添字サイズ（superscript-size）の$*$が$X$の上に置かれま：
+$\overset{*}{X}$; \cn{underset}は，これと同じような機能で，記号の下に置きます．
+
+%See also the description of \cn{sideset} in \secref{sideset}.
+\secref{sideset}の\cn{sideset}についての説明も参照してください．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Fractions and related constructions}
+\section{分数，それに関連する構成}
+
+%\subsection{The \cn{frac}, \cn{dfrac}, and \cn{tfrac} commands}
+\subsection{\cn{frac}，\cn{dfrac}，および\cn{tfrac}コマンド}
+
+%The \cn{frac} command, which is in the basic command set of
+%\latex/,\index{fractions|(} takes two arguments\mdash numerator and
+%denominator\mdash and typesets them in normal fraction form. The
+%\nipkg{amsmath} package provides also \cn{dfrac} and \cn{tfrac} as
+%convenient abbreviations for |{\displaystyle\frac| |...| |}|
+%and\indexcs{textstyle}\relax
+\cn{frac}コマンドは，\latex/，\index{fractions|(}\index{分数|(}の基本コマンドですが，
+引数を２つ取り，つまり分母と分子，通常の分数の形を作ります．
+\nipkg{amsmath}パッケージは，さらに便利な追加機能として
+\cn{dfrac}と\cn{tfrac}があります．これらは
+|{\displaystyle\frac| |...| |}|および\indexcs{textstyle}の省略形です．\relax
+\indexcs{displaystyle} |{\textstyle\frac| |...| |}|.
+\begin{equation}
+\frac{1}{k}\log_2 c(f)\quad\tfrac{1}{k}\log_2 c(f)\quad
+\sqrt{\frac{1}{k}\log_2 c(f)}\quad\sqrt{\dfrac{1}{k}\log_2 c(f)}
+\end{equation}
+\begin{verbatim}
+\begin{equation}
+\frac{1}{k}\log_2 c(f)\;\tfrac{1}{k}\log_2 c(f)\;
+\sqrt{\frac{1}{k}\log_2 c(f)}\;\sqrt{\dfrac{1}{k}\log_2 c(f)}
+\end{equation}
+\end{verbatim}
+
+%\subsection{The \cn{binom}, \cn{dbinom}, and \cn{tbinom} commands}
+\subsection{\cn{binom}，\cn{dbinom}および\cn{tbinom}コマンド}
+
+%For binomial expressions\index{binomials} such as $\binom{n}{k}$
+%\nipkg{amsmath} has \cn{binom}, \cn{dbinom} and \cn{tbinom}:
+$\binom{n}{k}$のような二項関係\index{binomials}\index{二項関係}のために
+\nipkg{amsmath}は\cn{binom}，\cn{dbinom}および\cn{tbinom}をもっています：
+\begin{equation}
+2^k-\binom{k}{1}2^{k-1}+\binom{k}{2}2^{k-2}
+\end{equation}
+\begin{verbatim}
+2^k-\binom{k}{1}2^{k-1}+\binom{k}{2}2^{k-2}
+\end{verbatim}
+
+%\subsection{The \cn{genfrac} command}
+\subsection{\cn{genfrac}コマンド}
+
+%The capabilities of \cn{frac}, \cn{binom}, and their variants are
+%subsumed by a generalized fraction command \cn{genfrac} with six
+%arguments. The last two correspond to \cn{frac}'s numerator and
+%denominator; the first two are optional delimiters\index{delimiters} (as
+%seen in \cn{binom}); the third is a line thickness override (\cn{binom}
+%uses this to set the fraction line thickness to 0\mdash i.e., invisible);
+%and the fourth argument is a mathstyle override: integer values 0\ndash 3
+%select respectively \cn{displaystyle}, \cn{textstyle}, \cn{scriptstyle},
+%and \cn{scriptscriptstyle}. If the third argument is left empty, the line
+%thickness defaults to `normal'.
+\cn{frac}，\cn{binom}そして，これらの変種との互換性のために，６つの引数をとる
+分数生成コマンド\cn{genfrac}があります．
+最後の二つは\cn{frac}の分子と分母に対応しています；
+最初の二つはオプションのデリミタ\index{delimiters}\index{デリミタ}です（\cn{binom}で見た通りです）．
+三番目が線の太さ（\cn{binom}は，線の太さをの値を0にして，見えなくしているのです）を与えます；
+そして，四番目の引数は，上に乗る数式のスタイルです；整数の値の0\ndash 3にたいして，それぞれ
+\cn{displaystyle}，\cn{textstyle}，\cn{scriptstyle}，および\cn{scriptscriptstyle}
+になります．
+三番目の値が与えられていないと，線の太さはデフォルトの標準の太さになります．
+\begin{center}\begin{minipage}{.85\columnwidth}
+\raggedright \normalfont\ttfamily \exhyphenpenalty10000
+\newcommand{\ma}[1]{%
+  \string{{\normalfont\itshape#1}\string}\penalty9999 \ignorespaces}
+\string\genfrac \ma{left-delim} \ma{right-delim} \ma{thickness}
+\ma{mathstyle} \ma{numerator} \ma{denominator}
+\end{minipage}\end{center}
+%To illustrate, here is how \cn{frac}, \cn{tfrac}, and
+%\cn{binom} might be defined.
+次に，\cn{frac}，\cn{tfrac}および\cn{binom}の定義を示します．
+\begin{verbatim}
+\newcommand{\frac}[2]{\genfrac{}{}{}{}{#1}{#2}}
+\newcommand{\tfrac}[2]{\genfrac{}{}{}{1}{#1}{#2}}
+\newcommand{\binom}[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}
+\end{verbatim}
+%If you find yourself repeatedly using \cn{genfrac} throughout a document
+%for a particular notation, you will do yourself a favor (and your
+%publisher) if you define a meaningfully-named abbreviation for that
+%notation, along the lines of \cn{frac} and \cn{binom}.
+執筆されているドキュメントで，特別な記号として頻繁に\cn{genfrac}を使うのならば，
+好み（あるいは出版社の要請）に応じた，\cn{frac}と\cn{binom}にならった
+意味のある名前にした省略形を定義するのが便利でしょう．
+
+%The primitive generalized fraction commands \cs{over}, \cs{overwithdelims},
+%\cs{atop}, \cs{atopwithdelims}, \cs{above}, \cs{abovewithdelims} produce
+%warning  messages if used with the \nipkg{amsmath} package, for reasons
+%discussed in \fn{technote.tex}.
+プリミティブで一般化された分数コマンド\cs{over}，\cs{overwithdelims}，
+\cs{atop}，\cs{atopwithdelims}，\cs{above}，\cs{abovewithdelims}の使用は
+警告メッセージを出します．この理由については\fn{technote.tex}に説明されています．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Continued fractions}
+\section{連分数}
+
+%The continued fraction\index{continued fractions}
+次の連分数\index{continued fractions}\index{連分数}
+\begin{equation}
+\cfrac{1}{\sqrt{2}+
+ \cfrac{1}{\sqrt{2}+
+  \cfrac{1}{\sqrt{2}+\cdots
+}}}
+\end{equation}
+%can be obtained by typing
+は，
+{\samepage
+\begin{verbatim}
+\cfrac{1}{\sqrt{2}+
+ \cfrac{1}{\sqrt{2}+
+  \cfrac{1}{\sqrt{2}+\dotsb
+}}}
+\end{verbatim}
+}% End of \samepage
+として生成できます．
+%This produces better-looking results than straightforward use of
+%\cn{frac}. Left or right placement of any of the numerators is
+%accomplished by using \cn{cfrac}|[l]| or \cn{cfrac}|[r]| instead of
+%\cn{cfrac}.\index{options!adjust positioning}%
+%\index{fractions|)}
+この見た目は\cn{frac}を使うよりも綺麗です．
+分子の左あるいは右の配置は\cn{cfrac}ではなくて，\cn{cfrac}|[l]|あるいは\cn{cfrac}|[r]|
+を用いています．\index{options!adjust positioning}%
+\index{fractions|)}\index{オプション!位置の調整}%
+\index{連分数|)}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Smash options}
+\section{スマッシュオプション}
+
+%The command \cn{smash} is used to typeset a subformula with an
+%effective height and depth of zero, which is sometimes
+%useful in adjusting the subformula's position with respect to adjacent
+%symbols. With the \nipkg{amsmath} package \cn{smash} has optional
+%arguments\index{options!behavior of particular options}
+%|[t]|\index{t option@\texttt{t} (top) option} and
+%|[b]|\index{b option@\texttt{b} (bottom) option} because occasionally it is
+%advantageous to be able to \qq{smash} only the top or only the bottom
+%of something while retaining the natural depth or height. For example,
+%when adjacent radical symbols are unevenly sized or positioned because
+%of differences in the height and depth of their contents, \cn{smash}
+%can be employed to make them more consistent. Compare
+%$\sqrt{x}+\sqrt{y}+\sqrt{z}$ and $\sqrt{x}+\sqrt{\smash[b]{y}}+\sqrt{z}$,
+%where the latter was produced by
+%\verb"$\sqrt{x}" \verb"+"
+%\verb"\sqrt{"\5\verb"\smash[b]{y}}" \verb"+" \verb"\sqrt{z}$".
+コマンド\cn{smash}は有効な高さがあり，深さがゼロの部分式を
+タイプセットする時に，部分式の記号と隣の記号の位置の調整をするために便利です．
+\nipkg{amsmath}パッケージの\cn{smash}はオプション引数，
+\index{options!behavior of particular options}
+|[t]|\index{t option@\texttt{t} (top) option}と
+|[b]|\index{b option@\texttt{b} (bottom) option}
+をもっています．自然な深さや高さを保ちながら，ある部分の上あるいは下を広げる（\qq{smash} ）ことができると便利だからです．
+たとえば，構成要素の高さや深さが異なるので，位置やサイズを揃えたいときに
+\cn{smash}は，それらを自然に見せます．
+$\sqrt{x}+\sqrt{y}+\sqrt{z}$と$\sqrt{x}+\sqrt{\smash[b]{y}}+\sqrt{z}$を比べてください．
+あとの方は\verb"$\sqrt{x}" \verb"+"
+\verb"\sqrt{"\5\verb"\smash[b]{y}}" \verb"+" \verb"\sqrt{z}$"
+として作りました．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Delimiters}
+\section{デリミタ}
+
+\index{delimiters|(}
+
+%\subsection{Delimiter sizes}\label{bigdel}
+\subsection{デリミタのサイズ}\label{bigdel}
+
+%The automatic delimiter sizing done by \cn{left} and \cn{right} has two
+%limitations: First, it is applied mechanically to produce delimiters
+%large enough to encompass the largest contained item, and second, the
+%range of sizes is not even approximately continuous but has fairly large
+%quantum jumps. This means that a math fragment that is infinitesimally
+%too large for a given delimiter size will get the next larger size, a
+%jump of 3pt or so in normal-sized text. There are two or three
+%situations where the delimiter size is commonly adjusted, using a set of
+%commands that have `big' in their names.%
+\cn{left}と\cn{right}を使った自動的なデリミタのサイズの生成には，
+二つだけ制限があります：
+一つは，デリミタで囲まれる最大の大きさに対応するものを機械的に作ってしまうことと，
+サイズの変更の範囲が連続的でなく，突然大きすぎるものになることがあることです．
+これは，指定されたデリミタのサイズに対して極端に大きい数式の部分があると，
+普通のテキストモードで次のサイズである3pt程度の，次に大きいサイズを選んでしまうからです．
+二，三の状況でデリミタのサイズが一般的に調整できる名前に`big'を含む
+コマンドのセットがあります．
+\index{delimiters!fixed size|(}\index{デリミタ!固定サイズ|(}
+\begin{ctab}{l|llllll}
+%Delimiter&
+デリミタ&
+%  text& \ncn{left}& \ncn{bigl}& \ncn{Bigl}& \ncn{biggl}& \ncn{Biggl}\\
+  テキスト& \ncn{left}& \ncn{bigl}& \ncn{Bigl}& \ncn{biggl}& \ncn{Biggl}\\
+%size&
+%  size& \ncn{right}& \ncn{bigr}& \ncn{Bigr}& \ncn{biggr}& \ncn{Biggr}\\
+サイズ&
+  サイズ& \ncn{right}& \ncn{bigr}& \ncn{Bigr}& \ncn{biggr}& \ncn{Biggr}\\
+\hline
+Result\vstrut{5ex}&
+  $\displaystyle(b)(\frac{c}{d})$&
+  $\displaystyle\left(b\right)\left(\frac{c}{d}\right)$&
+  $\displaystyle\bigl(b\bigr)\bigl(\frac{c}{d}\bigr)$&
+  $\displaystyle\Bigl(b\Bigr)\Bigl(\frac{c}{d}\Bigr)$&
+  $\displaystyle\biggl(b\biggr)\biggl(\frac{c}{d}\biggr)$&
+  $\displaystyle\Biggl(b\Biggr)\Biggl(\frac{c}{d}\Biggr)$
+\end{ctab}
+%The first kind of situation is a cumulative operator with limits above
+%and below. With \cn{left} and \cn{right} the delimiters usually turn out
+%larger than necessary, and using the |Big| or |bigg|
+%sizes\index{big@\cn{big}, \cn{Big}, \cn{bigg}, \dots\ delimiters}
+%instead gives better results:
+まず最初に考えられる状況は，総和作用素の上下に範囲を示す添え字をおくことでしょう．
+\cn{left}と\cn{right}を使うと，デリミタは必要以上に大きくなります．
+さらに|Big|あるいは|bigg|を\index{big@\cn{big}, \cn{Big}, \cn{bigg}, \dots\ delimiters}
+使うと良い結果を得ます：
+\begin{equation*}
+\left[\sum_i a_i\left\lvert\sum_j x_{ij}\right\rvert^p\right]^{1/p}
+%\quad\text{versus}\quad
+\quad\text{見比べる}\quad
+\biggl[\sum_i a_i\Bigl\lvert\sum_j x_{ij}\Bigr\rvert^p\biggr]^{1/p}
+\end{equation*}
+\begin{verbatim}
+\biggl[\sum_i a_i\Bigl\lvert\sum_j x_{ij}\Bigr\rvert^p\biggr]^{1/p}
+\end{verbatim}
+%The second kind of situation is clustered pairs of delimiters where
+%\cn{left} and \cn{right} make them all the same size (because that is
+%adequate to cover the encompassed material) but what you really want
+%is to make some of the delimiters slightly larger to make the nesting
+%easier to see.
+次に考えられる状況は，複数のデリミタを\cn{left}と\cn{right}を使った場合，（内部の数式には十分なので）同じ大きさになることです．しかし，デリミタのサイズを識別できるように変えたいでしょう．
+\begin{equation*}
+\left((a_1 b_1) - (a_2 b_2)\right)
+\left((a_2 b_1) + (a_1 b_2)\right)
+%\quad\text{versus}\quad
+\quad\text{見比べる}\quad
+\bigl((a_1 b_1) - (a_2 b_2)\bigr)
+\bigl((a_2 b_1) + (a_1 b_2)\bigr)
+\end{equation*}
+\begin{verbatim}
+\left((a_1 b_1) - (a_2 b_2)\right)
+\left((a_2 b_1) + (a_1 b_2)\right)
+%\quad\text{versus}\quad
+\quad\text{見比べる}\quad
+\bigl((a_1 b_1) - (a_2 b_2)\bigr)
+\bigl((a_2 b_1) + (a_1 b_2)\bigr)
+\end{verbatim}
+%The third kind of situation is a slightly oversize object in running
+%text, such as $\left\lvert\frac{b'}{d'}\right\rvert$ where the
+%delimiters produced by \cn{left} and \cn{right} cause too much line
+%spreading. In that case \ncn{bigl} and \ncn{bigr}\index{big@\cn{big},
+%\cn{Big}, \cn{bigg}, \dots\ delimiters} can be used to produce
+%delimiters that are slightly larger than the base size but still able to
+%fit within the normal line spacing:
+%$\bigl\lvert\frac{b'}{d'}\bigr\rvert$.
+三番目の状況はテキストの中にサイズが大きい要素が含まれる場合です．
+たとえば，$\left\lvert\frac{b'}{d'}\right\rvert$ではデリミタは
+\cn{left}と\cn{right}とで作られますが，行間を広げてしまいます．
+このような場合は，\ncn{bigl}と\ncn{bigr}\index{big@\cn{big},
+\cn{Big}, \cn{bigg}, \dots\ delimiters}
+を使うと，通常より大きいデリミタが使われますが，普通のテキストの行間に
+適切な高さです：
+$\bigl\lvert\frac{b'}{d'}\bigr\rvert$
+
+%In ordinary \latex/ \ncn{big}, \ncn{bigg}, \ncn{Big}, and \ncn{Bigg}
+%delimiters aren't scaled properly over the full range of \latex/ font
+%sizes.  With the \nipkg{amsmath} package they are.%
+%\index{delimiters!fixed size|)}
+通常，\latex/の\ncn{big}，\ncn{bigg}，\ncn{Big}，および\ncn{Bigg}
+デリミタは\latex/のフォントの大きさにたいして適切に変換しません．
+\nipkg{amsmath}パッケージを使えば，うまくゆきます．\index{delimiters!fixed size|)}\index{デリミタ!固定サイズ|)}
+
+%\subsection{Vertical bar notations}
+\subsection{垂直棒の記号}
+
+%The \nipkg{amsmath} package provides commands \cn{lvert}, \cn{rvert},
+%\cn{lVert}, \cn{rVert} (compare \cn{langle}, \cn{rangle}) to address the
+%%problem of overloading for the vert bar character \qc{\|}. This
+%problem of overloading for the vert bar character \qcvert. This
+%character is currently used in \latex/ documents to represent a wide
+%variety of mathematical objects: the `divides' relation in a
+%number-theory expression like $p\vert q$, or the absolute-value
+%operation $\lvert z\rvert$, or the `such that' condition in set
+%notation, or the `evaluated at' notation $f_\zeta(t)\bigr\rvert_{t=0}$.
+%The multiplicity of uses in itself is not so bad; what is bad, however,
+%is that fact that not all of the uses take the same typographical
+%treatment, and that the complex discriminatory powers of a knowledgeable
+%reader cannot be replicated in computer processing of mathematical
+%documents. It is recommended therefore that there should be a one-to-one
+%correspondence in any given document between the vert bar character
+%%\qc{\|} and a selected mathematical notation, and similarly for the
+%\qcvert\ and a selected mathematical notation, and similarly for the
+%%double-bar command \ncn{\|}\index{"|@\verb"*+"\"|+}. This immediately
+%double-bar command \cnvert. This immediately
+%rules out the use of \qc{|}
+%%and \ncn{\|}\index{"|@\verb"*+"\"|+} for delimiters, because left and right
+%and \cnvert\ for delimiters, because left and right
+%delimiters are distinct usages that do not relate in the same way to
+%adjacent symbols; recommended practice is therefore to define suitable
+%commands in the document preamble for any paired-delimiter use of vert
+%bar symbols:
+\nipkg{amsmath}パッケージはコマンド\cn{lvert}，\cn{rvert}，
+\cn{lVert}，\cn{rVert}（\cn{langle}，\cn{rangle}比較して）によって
+垂直棒\qc{\|}の上書き問題に対処しています．
+この文字は\latex/ドキュメントでは，さまざまな数学関係式で使われています：
+数論で割り切れる記号は$p\vert q$，あるいは絶対値を表す$\lvert z\rvert$，
+あるいは集合の記号での`such that'条件，あるいは`その点での値'を示す記号$f_\zeta(t)\bigr\rvert_{t=0}$です．
+これらを一つの記号で表すことは，それほど悪いことではありませんが，
+正しい文字としての処理が行えませんし，数学の素養がある読者が識別しにくくしコンピュータを使った数学ドキュメントの再利用に向いていません．
+したがって意味に応じて，それぞれの\qcvert{}を使い分け，数学的に正しい記号を選ぶべきです．
+このことは，二重垂直棒\cnvert{}にも当てはまります．
+すなわちデリミタには\qc{|}を使うのをやめ\cnvert{}を使います．
+なぜなら左右のデリミタは，隣の記号とは関係しない振る舞いが必要です；
+縦棒を使うペアの記号が必要なら，ドキュメントのプリアンブルに適切なコマンドを定義するの実際的です：
+次のようにすれば
+\begin{verbatim}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\end{verbatim}
+%whereupon the document would contain |\abs{z}| to produce $\lvert
+%z\rvert$ and |\norm{v}| to produce $\lVert v\rVert$.
+%The \pkg{mathools} provides the command \cn{DeclarePairedDelimiter}
+%for defining |\abs|-like macros with scaling delimiters.
+絶対値|\abs{z}|は$\lvert z\rvert$となり，
+ノルム|\norm{v}|は$\lVert v\rVert$となります．
+\pkg{mathools}には，|\abs|のようなマクロを定義するためのコマンド\cn{DeclarePairedDelimiter}があります．これはサイズを適切に変えます．
+\index{delimiters|)}\index{デリミタ|)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Operator names}
+\chapter{オペレータの名前}
+
+%\section{Defining new operator names}\label{s:opname}
+\section{新しいオペレータの定義}\label{s:opname}
+
+%Math functions\index{operator names}\relax \index{function
+%names|see{operator names}} such as $\log$, $\sin$, and $\lim$ are
+%traditionally typeset in roman type to make them visually more distinct
+%from one-letter math variables, which are set in math italic. The more
+%common ones have predefined names, \cn{log}, \cn{sin}, \cn{lim}, and so
+%forth, but new ones come up all the time in mathematical papers, so the
+%\nipkg{amsmath} package provides a general mechanism for defining new
+%`operator names'. To define a math function \ncn{xxx} to work like
+%\cn{sin}, you write
+数学関数\index{operator names}\index{作用素の名前}\relax \index{function
+names|see{operator names}}\index{関数の名前|see{作用素の名前}}$\log$，$\sin$，そして$\lim$などは
+普通は立体で描かれ，一つのイタリック文字で表される変数と見た目で区別されます．
+よく使われる関数\cn{log}，\cn{sin}，\cn{lim}などは定義済みですが，
+数学論文では，様々な新しい関数が使われます．そのため\nipkg{amsmath}パッケージでは
+新しい`オペレータ名'を定義する一般的な方法を用意しています．新しい数学関数\ncn{xxx}を
+\cn{sin}にのように定義するなら
+\begin{verbatim}
+\DeclareMathOperator{\xxx}{xxx}
+\end{verbatim}
+%whereupon ensuing uses of \ncn{xxx} will produce {\upshape xxx} in the
+%proper font and automatically add proper spacing\index{horizontal
+%spacing!around operator names} on either side when necessary, so that you
+%get $A\xxx B$ instead of $A\mathrm{xxx}B$. In the second argument of
+%\cn{DeclareMathOperator} (the name text), a pseudo-text mode prevails:
+%the hyphen character \qc{\-} will print as a text hyphen rather than a
+%minus sign and an asterisk \qc{\*} will print as a raised text asterisk
+%instead of a centered math star. (Compare
+%\textit{a}-\textit{b}*\textit{c} and $a-b*c$.) But otherwise the name
+%text is printed in math mode, so that you can use, e.g., subscripts and
+%superscripts there.
+と書きます．こうすれば\ncn{xxx}は{\upshape xxx}を適切なフォントが自動的に選ばれて両側に適切な空白どりで生成します．\index{horizontal spacing!around operator names}\index{水平の空白!作用素の両側の}したがって，$A\mathrm{xxx}B$とせずに
+$A\xxx B$とすればよいわけです．
+\cn{DeclareMathOperator}（名前を示す文字）の二番目の引数は，擬似テキストモードです：
+ハイフン文字\qc{\-}はマイナスではなくてテキストのハイフンとして，そして星印\qc{\*}は
+中央ではなく，やや上に配置されます．
+（比べてみましょう．\textit{a}-\textit{b}*\textit{c}と$a-b*c$）
+しかし，名前を示す文字は数学モードが使われるので，上付きや下付きを使うことができます．
+%%%%xxx%%%\enlargethispage{1\baselineskip}
+%If the new operator should have subscripts and superscripts placed in
+%`limits' position above and below as with $\lim$, $\sup$, or $\max$, use
+%the \qc{\*} form of the \cn{DeclareMathOperator} command:
+新しいオペレータが上付き下付きを$\lim$，$\sup$，あるいは$\max$のように`limit'型の配置をしたいものであれば，
+\cn{DeclareMathOperator}コマンドの\qc{\*}形式を使います：
+\begin{verbatim}
+\DeclareMathOperator*{\Lim}{Lim}
+\end{verbatim}
+%See also the discussion of subscript placement in
+%Section~\ref{subplace}.
+下付き添え字の配置については\ref{subplace}節も参照してください．
+
+\goodbreak
+
+%The following operator names are predefined:
+次のオペレータの名前は定義済みです：
+
+\vspace{-1\baselineskip}
+\begin{ctab}{@{}rlrlrlrl}
+\cn{arccos}& $\arccos$ &\cn{deg}& $\deg$ &      \cn{lg}& $\lg$ &        \cn{projlim}& $\projlim$\\
+\cn{arcsin}& $\arcsin$ &\cn{det}& $\det$ &      \cn{lim}& $\lim$ &      \cn{sec}& $\sec$\\
+\cn{arctan}& $\arctan$ &\cn{dim}& $\dim$ &      \cn{liminf}& $\liminf$ &\cn{sin}& $\sin$\\
+\cn{arg}& $\arg$ &      \cn{exp}& $\exp$ &      \cn{limsup}& $\limsup$ &\cn{sinh}& $\sinh$\\
+\cn{cos}& $\cos$ &      \cn{gcd}& $\gcd$ &      \cn{ln}& $\ln$ &        \cn{sup}& $\sup$\\
+\cn{cosh}& $\cosh$ &    \cn{hom}& $\hom$ &      \cn{log}& $\log$ &      \cn{tan}& $\tan$\\
+\cn{cot}& $\cot$ &      \cn{inf}& $\inf$ &      \cn{max}& $\max$ &      \cn{tanh}& $\tanh$\\
+\cn{coth}& $\coth$ &    \cn{injlim}& $\injlim$ &\cn{min}& $\min$\\
+\cn{csc}& $\csc$ &      \cn{ker}& $\ker$ &      \cn{Pr}& $\Pr$
+\end{ctab}
+\par\nobreak
+\vspace{-1.2\baselineskip}
+\begin{ctab}{rlrl}
+\cn{varinjlim}&  $\displaystyle\varinjlim$&
+\cn{varliminf}&  $\displaystyle\varliminf$\\
+\cn{varprojlim}& $\displaystyle\varprojlim$&
+\cn{varlimsup}&  $\displaystyle\varlimsup$
+\end{ctab}
+
+%There is also a command \cn{operatorname} such that using
+次のように使う\cn{operatorname}コマンド
+\begin{verbatim}
+\operatorname{abc}
+\end{verbatim}
+%in a math formula is equivalent to a use of \ncn{abc} defined by
+%\cn{DeclareMathOperator}. This may be occasionally useful for
+%constructing more complex notation or other purposes. (Use the variant
+%\cn{operatorname*} to get limits.)
+は方程式で使いますが，これは\cn{DeclareMathOperator}で定義された\ncn{abc}と同値です．
+かなり複雑な気泡や他の目的によっては，こちらの方が便利です．
+（変種\cn{operatorname*}はlimit型の添え字をもちます．）
+
+%% ------------------------------------------------------------------ %%
+
+%\section{\cn{mod} and its relatives}
+\section{\cn{mod}とそのなかま}
+
+%Commands \cn{mod}, \cn{bmod}, \cn{pmod}, \cn{pod} are provided to deal
+%with the special spacing conventions of \qq{mod} notation. \cn{bmod} and
+%\cn{pmod} are available in \latex/, but with the \nipkg{amsmath} package
+%the spacing of \cn{pmod} will adjust to a smaller value if it's used in
+%a non-display-mode formula. \cn{mod} and \cn{pod} are variants of
+%\cn{pmod} preferred by some authors; \cn{mod} omits the parentheses,
+%whereas \cn{pod} omits the \qq{mod} and retains the parentheses.
+コマンド\cn{mod}，\cn{bmod}，\cn{pmod}，\cn{pod}は，\qq{mod}記号における特別な空白をもたせるために用意されました．\cn{bmod}と\cn{pmod}は\latex/にもありますが，\nipkg{amsmath}パッケージは
+\cn{pmod}の空白どりをディスプレイ数式では小さい値にします．
+\cn{mod}と\cn{pod}は\cn{pmod}の変種で，これを好む著者のためにあります；
+\cn{mod}は丸括弧無しですが，\cn{pod}は\qq{mod}を残して丸括弧を残します．
+\begin{equation}
+\gcd(n,m\bmod n);\quad x\equiv y\pmod b;
+\quad x\equiv y\mod c;\quad x\equiv y\pod d
+\end{equation}
+\begin{verbatim}
+\gcd(n,m\bmod n);\quad x\equiv y\pmod b;
+\quad x\equiv y\mod c;\quad x\equiv y\pod d
+\end{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\enlargethispage{1\baselineskip}
+
+%\chapter{The \cn{text} command}\label{text}
+\chapter{\cn{text}コマンド}\label{text}
+
+%The main use of the command \cn{text} is for words or
+%phrases\index{text fragments inside math} in a display. It is very
+%similar to the \latex/ command \cn{mbox} in its effects, but has a
+%couple of advantages. If you want a word or phrase of text in a
+%subscript, you can type |..._{\textrm{word or phrase}}|, which is slightly
+%easier than the \cn{mbox} equivalent: |..._{\mbox{\rmfamily\scriptsize| |word|
+%|or| |phrase}}|. Note that the standard \cn{textrm} command will use the
+%\nipkg{amsmath} \cn{text} definition, but ensure the \verb+\rmfamily+
+%font is used.
+コマンド\cn{text}の主な利用は，単語あるいは成句（フレイズ）\index{text fragments inside math}\index{数式の中の短いテキスト}の表示させるためです．
+\latex/コマンドの\cn{mbox}に効果はよく似ていますが，さらに良い機能があります．
+単語や成句を下付き文字にしたい場合，|..._{\textrm{word or phrase}}|と言うようにタイプできます．
+これは\cn{mbox}を使う: |..._{\mbox{\rmfamily\scriptsize| |word||or| |phrase}}|より簡単です．
+標準の\cn{textrm}コマンドは，\nipkg{amsmath}の\cn{text}の定義に使われますが，強制的に\verb+\rmfamily+が使われます．
+\begin{equation}
+f_{[x_{i-1},x_i]} \text{ is monotonic,}
+\quad i = 1,\dots,c+1
+\end{equation}
+\begin{verbatim}
+f_{[x_{i-1},x_i]} \text{ is monotonic,}
+\quad i = 1,\dots,c+1
+\end{verbatim}
+
+%The font used for \cn{text} is the same as that of the surrounding
+%environment; i.e., within a theorem, the contents of \cn{text} will
+%be set in italic.
+\cn{text}に使われるフォントは，囲み環境と同じです；つまり
+定理では，\cn{text}はイタリックになります．
+
+%If a math expression is included in a \cn{text} string, it must be
+%explicitly marked as math (|$...$|).
+数式が\cn{text}の文字列に含まれている場合，明示的に数式であると指定（つまり|$...$|）しなければなりません．
+\[
+\partial_s f(x) = \frac{\partial}{\partial x_0} f(x)\quad
+  \text{for $x= x_0 + I x_1$.}
+\]
+\begin{verbatim}
+\partial_s f(x) = \frac{\partial}{\partial x_0} f(x)\quad
+  \text{for $x= x_0 + I x_1$.}
+\end{verbatim}
+
+%Function names should \emph{not} be entered as \cn{text}.  Instead,
+%use \cn{mathrm} or \cn{DeclareMathOperator} as appropriate.  These are
+%fixed entities that should not change depending on outside content
+%(such as appearing within a theorem that is set in italic), and in the
+%case of declared operators, proper spacing\index{horizontal
+%spacing!around operator names} is applied automatically.
+関数の名前は\cn{text}で入力しては\emph{なりません}．
+その代わりに\cn{mathrm}あるいは\cn{DeclareMathOperator}を適切に使います．
+これらは表現が変更されないので，どこにおいても変わりません（定理環境でイタリックにならない）．
+そしてオペレータの宣言で使われている場合，適切な空白どりが自動的に使われます．\index{horizontal
+spacing!around operator names}\index{水平の空白!作用素の両側の}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Integrals and sums}
+\chapter{積分と総和記号}
+
+%\section{Multiline subscripts and superscripts}
+\section{複数の行で作られる下付き上付き添え字}
+
+%The \cn{substack} command can be used to produce a multiline subscript
+%or superscript:\index{subscripts and superscripts!multiline}\relax
+%\index{superscripts|see{subscripts and superscripts}} for example
+\cn{substack}コマンドは複数の行で作られる下付き上付き添え字に使われます:\index{subscripts and superscripts!multiline}\relax
+\index{superscripts|see{subscripts and superscripts}}たとえば
+\begin{ctab}{ll}
+\begin{minipage}[t]{.6\columnwidth}
+\begin{verbatim}
+\sum_{\substack{
+         0\le i\le m\\
+         0<j<n}}
+  P(i,j)
+\end{verbatim}
+\end{minipage}
+&
+$\displaystyle
+\sum_{\substack{0\le i\le m\\ 0<j<n}} P(i,j)$
+\end{ctab}
+%A slightly more generalized form is the \env{subarray} environment which
+%allows you to specify that each line should be left-aligned instead of
+%centered, as here:
+やや一般的なのは\env{subarray}環境で，それぞれの行を中央揃えでなく，次のように左揃えにします：
+\begin{ctab}{ll}
+\begin{minipage}[t]{.6\columnwidth}
+\begin{verbatim}
+\sum_{\begin{subarray}{l}
+        i\in\Lambda\\ 0<j<n
+      \end{subarray}}
+ P(i,j)
+\end{verbatim}
+\end{minipage}
+&
+$\displaystyle
+  \sum_{\begin{subarray}{l}
+        i\in \Lambda\\ 0<j<n
+      \end{subarray}}
+ P(i,j)$
+\end{ctab}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{The \cn{sideset} command}\label{sideset}
+\section{\cn{sideset}コマンド}\label{sideset}
+
+%There's also a command called \cn{sideset}, for a rather special
+%purpose: putting symbols at the subscript and
+%superscript\index{subscripts and superscripts!on sums} corners of a
+%large operator symbol such as $\sum$ or $\prod$. \emph{Note: this
+%command is not designed to be applied to anything other than sum-class
+%symbols.} The prime
+%example is the case when you want to put a prime on a sum symbol. If
+%there are no limits above or below the sum, you could just use
+%\cn{nolimits}: here's
+特殊な目的のために\cn{sideset}と言う名前のコマンドがあります：
+上付き下付きの文字を\index{subscripts and superscripts!on sums}
+$\sum$や$\prod$などの大きなオペレータ記号の四隅に配置します．
+\emph{注意：このコマンドは，これらのような和を表すような記号以外で使われることを想定していません．}
+総和記号にプライムを配置したことが，典型的な例です．
+総和記号ではインを示す必要がなければ，単に\cn{nolimits}を使えば良いでしょう：つまり
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%|\sum\nolimits' E_n| in display mode:
+ディスプレイ数式で|\sum\nolimits' E_n|は
+\begin{equation}
+\sum\nolimits' E_n
+\end{equation}
+%If, however, you want not only the prime but also something below or
+%above the sum symbol, it's not so easy\mdash indeed, without
+%\cn{sideset}, it would be downright difficult. With \cn{sideset}, you
+%can write
+しかし，総和記号にはプライムだけでなく，下付きの位置にではなくて何かを起きたことがありますが，
+\cn{sideset}を使わないと難しいことです．\cn{sideset}を使えば，簡単に
+\begin{ctab}{ll}
+\begin{minipage}[t]{.6\columnwidth}
+\begin{verbatim}
+\sideset{}{'}
+  \sum_{n<k,\;\text{$n$ odd}} nE_n
+\end{verbatim}
+\end{minipage}
+&$\displaystyle
+\sideset{}{'}\sum_{n<k,\;\text{$n$ odd}} nE_n
+$
+\end{ctab}
+と書くことができます．
+%The extra pair of empty braces is explained by the fact that
+%\cn{sideset} has the capability of putting an extra symbol or symbols at
+%each corner of a large operator; to put an asterisk at each corner of a
+%product symbol, you would type
+空白の中カッコのペアは，\cn{sideset}が大きなオペレータの四隅に記号を配置できることを見せています；
+総乗記号の四隅に星印を配置したいのなら
+\begin{ctab}{ll}
+\begin{minipage}[t]{.6\columnwidth}
+\begin{verbatim}
+\sideset{_*^*}{_*^*}\prod
+\end{verbatim}
+\end{minipage}
+&$\displaystyle
+\sideset{_*^*}{_*^*}\prod
+$
+\end{ctab}
+とします．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Placement of subscripts and limits}\label{subplace}
+\section{添え字と上限下限の配置}\label{subplace}
+
+%The default positioning for subscripts depends on the
+%base symbol involved. The default for sum-class symbols is
+%`displaylimits' positioning: When a sum-class symbol appears
+%in a displayed formula, subscript and superscript are placed in `limits'
+%position above and below, but in an inline formula, they are placed to
+%the side, to avoid unsightly and wasteful spreading of the
+%surrounding text lines.
+%The default for integral-class symbols is to have sub- and
+%superscripts always to the side, even in displayed formulas.
+%(See the discussion of the \opt{intlimits} and related
+%options\index{options!behavior of particular options} in
+%Section~\ref{options}.)
+デフォルトの下付き添え字の位置は，基本となる記号によって変わります．
+総和などの記号ではいわゆる`displaylimits'位置です：
+総和などの記号をディスプレイ数式で表示するとき，上付き下付きは`limits'位置，つまり記号の上と下になります．しかし，インライン（文中）数式の場合は，右上と右下に配置されます．テキストの上下に余分なな空白が出ないようにするためです．
+積分記号のデフォルトは，文中数式であっても，上付き下付きは横（右上，右下）に置きます．
+（\opt{intlimits}と関連するオプションについては
+\ref{options}節\index{options!behavior of particular options}\index{オプション!特別なオプションの振る舞い}を参照してください．）
+
+%Operator names such as $\sin$ or $\lim$ may have either `displaylimits'
+%or `limits' positioning depending on how they were defined. The standard
+%operator names are defined according to normal mathematical usage.
+$\sin$や$\lim$などのオペレータの名前は，それらの定義に従って
+`displaylimits'あるいは`limits'位置が決まっています．
+標準的なオペレータの名前は通常の数学の慣習に従っています．
+
+%The commands \cn{limits} and \cn{nolimits} can be used to override the
+%normal behavior of a base symbol:
+コマンドcn{limits}と\cn{nolimits}は基本となる記号の通常の振る舞いを上書きできます：
+\begin{equation*}
+\sum\nolimits_X,\qquad \iint\limits_{A},
+\qquad\varliminf\nolimits_{n\to \infty}
+\end{equation*}
+%To define a command whose subscripts follow the
+%same `displaylimits' behavior as \cn{sum}, put
+%\cn{displaylimits} at the tail end of the definition. When multiple
+%instances of \cn{limits}, \cn{nolimits}, or \cn{displaylimits} occur
+%consecutively, the last one takes precedence.
+\cn{sum}のようなdisplaylimits'の振る舞いにするようにコマンドを定義するには末尾にcn{displaylimits}をおきます．
+\cn{limits}，\cn{nolimits}，あるいは\cn{displaylimits}が，続いて現れるときは，最後のものが優先されます．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Multiple integral signs}
+\section{多重積分の記号}
+
+%\cn{iint}, \cn{iiint}, and \cn{iiiint} give multiple integral
+%signs\index{integrals!multiple} with the spacing between them nicely
+%adjusted, in both text and display style. \cn{idotsint} is an extension
+%of the same idea that gives two integral signs with dots between them.
+\cn{iint}，\cn{iiint}，および\cn{iiiint}は多重積分の記号を，積分記号の間の空白を適切にして作ります．\index{integrals!multiple}\index{積分!多重}
+\cn{idotsint}は同じ考えを発展させたもので，積分記号の間にドットを表示させます．
+\begin{gather}
+\iint\limits_A f(x,y)\,dx\,dy\qquad\iiint\limits_A
+f(x,y,z)\,dx\,dy\,dz\\
+\iiiint\limits_A
+f(w,x,y,z)\,dw\,dx\,dy\,dz\qquad\idotsint\limits_A f(x_1,\dots,x_k)
+\end{gather}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Commutative diagrams}\label{s:commdiag}
+\chapter{可換図式}\label{s:commdiag}
+\index{commutative diagrams}
+
+%Some commutative diagram commands like the ones in \amstex/ are
+%available as a separate package, \pkg{amscd}. For complex commutative
+%diagrams authors will need to turn to more comprehensive packages like
+%\tikz/\index{TikZ@\tikz/ package} (in particular, \pkg{tikz-cd})
+%or \xypic/\index{XY-pic@\xypic/ package},
+%but for simple diagrams without diagonal
+%arrows\index{arrows!in commutative diagrams} the \pkg{amscd} commands
+%may be more convenient. Here is one example.
+\amstex/にあるいくつかの可換図式は別のパッケージ\pkg{amscd}にあります．
+複雑な可換図式が必要な著者には\tikz/\index{TikZ@\tikz/ package}\index{TikZ@\tikz/パッケージ}（とくに，\pkg{tikz-cd}）
+あるいは\xypic/\index{XY-pic@\xypic/ package}\index{XY-pic@\xypic/パッケージ}が必要です．
+しかし対角線のない簡単な図式であれば，\index{arrows!in commutative diagrams}\index{矢印!可換図図式で使われる}
+\pkg{amscd}コマンドが便利でしょう．次に例を示します．
+\begin{equation*}
+\begin{CD}
+S^{\mathcal{W}_\Lambda}\otimes T   @>j>>   T\\
+@VVV                                    @VV{\End P}V\\
+(S\otimes T)/I                  @=      (Z\otimes T)/J
+\end{CD}
+\end{equation*}
+\begin{verbatim}
+\begin{CD}
+S^{\mathcal{W}_\Lambda}\otimes T   @>j>>   T\\
+@VVV                                    @VV{\End P}V\\
+(S\otimes T)/I                  @=      (Z\otimes T)/J
+\end{CD}
+\end{verbatim}
+%In the \env{CD} environment the commands |@>>>|,
+%|@<<<|, |@VVV|, and |@AAA| give respectively right, left, down, and up
+%arrows. For the horizontal arrows, material between the first and second
+%|>| or |<| symbols will be typeset as a superscript, and material
+%between the second and third will be typeset as a subscript. Similarly,
+%material between the first and second or second and third |A|s or |V|s
+%of vertical arrows will be typeset as left or right \qq{sidescripts}.
+%The commands |@=| and \verb'@|' give horizontal and vertical double lines.
+%A \qq{null arrow} command |@.| can be used instead of a visible arrow
+%to fill out an array where needed.
+\env{CD}環境では，コマンド|@>>>|，|@<<<|，|@VVV|，および|@AAA|は，
+それぞれ右，左，下向き，上むきの矢印を与えます．
+水平の矢印ならば，最初と二番目の要素|>|あるいは|<|記号の間の要素は上付きで表示され，
+二番目と三番目の間の要素は上付きで表示されます．
+同じように，垂直の場合の最初と二番目，あるいは二番目と三番目の要素|A|や|V|は，
+\qq{sidescripts}の左か右に表示されます．
+コマンド|@=|と\verb'@|'は水平と垂直の二重線を与えます．
+\qq{null arrow}コマンド|@.|は目に見える矢印で埋める代わりに必要な配列に使うことができます．
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Using math fonts}
+\chapter{数学フォントを使う}
+
+%\section{Introduction}
+\section{イントロダクション}
+
+%For more comprehensive information on font use in \latex/, see the
+%\latex/ font guide (\fn{fntguide.tex}) or \booktitle{The \latex/
+%Companion} \cite{tlc2}. The basic set of math font commands\index{math
+%fonts}\relax \index{math symbols|see{math fonts}} in \latex/ includes
+%\cn{mathbf}, \cn{mathrm}, \cn{mathcal}, \cn{mathsf}, \cn{mathtt},
+%\cn{mathit}. Additional math alphabet commands such as
+%\cn{mathbb} for blackboard bold, \cn{mathfrak} for Fraktur, and
+%\cn{mathscr} for Euler script are available through the packages
+%\pkg{amsfonts} and \pkg{euscript} (distributed separately).
+\latex/でのフォントの使い方の包括的な議論は\latex/ font guide（\fn{fntguide.tex}）あるいは
+\booktitle{The \latex/ Companion}を参照してください．\cite{tlc2}
+\latex/で数学フォントを指定するコマンドは\index{math fonts}\index{数学フォント}\relax\index{math symbols|see{math fonts}}\index{数学記号|see{数学フォント}}\cn{mathbf}，\cn{mathrm}，\cn{mathcal}，\cn{mathsf}，\cn{mathtt}，\cn{mathit}です．
+これに加えて，数学アルファベットのコマンドは，黒板太字の\cn{mathbb}，
+Frakturフォント\cn{mathfrak}，
+Euler筆記体の\cn{mathscr}が\pkg{amsfonts}パッケージと\pkg{euscript}パッケージにあります（これらは個別に配布されています）．
+
+%% ------------------------------------------------------------------ %%
+%\enlargethispage{1\baselineskip}
+
+%\section{Recommended use of math font commands}
+\section{数学フォントの勧められる使い方}
+
+%If you find yourself employing math font commands frequently in your
+%document, you might wish that they had shorter names, such as \ncn{mb}
+%instead of \cn{mathbf}. Of course, there is nothing to keep you from
+%providing such abbreviations for yourself by suitable \cn{newcommand}
+%statements. But for \latex/ to provide shorter names would actually be a
+%disservice to authors, as that would obscure a much better alternative:
+%defining custom command names derived from the names of the underlying
+%mathematical objects, rather than from the names of the fonts used to
+%distinguish the objects. For example, if you are using bold to indicate
+%vectors, then you will be better served in the long run if you define a
+%`vector' command instead of a `math-bold' command:
+あなたのドキュメントでいろいろ数学フォントを使い分ける必要があるなら，
+それらのフォントを短い名前にして，たとえば\cn{mathbf}の代わりに\ncn{mb}として，
+使いたいでしょう．
+もちろん適切な\cn{newcommand}を使って，略語を提供することを妨げはしません．
+しかし，\latex/は短い名前があり，実際には不便になり，もっと良い方法があります：
+コマンド名を使用するフォントをもとに作るのではなくて，数学オブジェクトの名前をもとにしたコマンド名を定義しましょう．
+たとえば，ベクトルを示すために太字を使用するのなら，
+`math-bold'コマンドではなくて`vector'コマンドを
+\begin{verbatim}
+  \newcommand{\vect}[1]{\mathbf{#1}}
+\end{verbatim}
+のように定義するほうが後々有効です：
+%you can write |\vect{a} + \vect{b}| to produce $\vect{a} +
+%\vect{b}$.
+これを使えば|\vect{a} + \vect{b}|とすれば$\vect{a} +
+\vect{b}$が得られます．
+%If you decide several months down the road that you want to use the bold
+%font for some other purpose, and mark vectors by a small over-arrow
+%instead, then you can put the change into effect merely by changing the
+%definition of \ncn{vect}; otherwise you would have to replace all
+%occurrences of \cn{mathbf} throughout your document, perhaps even
+%needing to inspect each one to see whether it is indeed
+%an instance of a vector.
+しばらくして，太字のフォントを別の目的で使うことになって，ベクトルには矢印をつけることになったとしましょう．そのときは，\ncn{vect}の定義を変えるだけですみます：
+そうできないときはドキュメントに使った\cn{mathbf}を変更しなければならなくなり，
+太字がベクトルなのかそうでないのか，いちいち確認しなければなりません．
+
+%It can also be useful to assign distinct
+%command names for different letters of a particular font:
+異なる文字や特定のフォントに対して適切にコマンド名をを作るのは便利です：
+\begin{verbatim}
+\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}% or use amsfonts package
+\DeclareMathSymbol{\C}{\mathalpha}{AMSb}{"43}
+\DeclareMathSymbol{\R}{\mathalpha}{AMSb}{"52}
+\end{verbatim}
+%These statements would define the commands \cn{C} and \cn{R} to produce
+%blackboard-bold letters from the `AMSb' math symbols font. If you refer
+%often to the\break complex numbers or real numbers in your document, you
+%might find this method more convenient than (let's say) defining a
+%\ncn{field} command and writing\break |\field{C}|, |\field{R}|. But for
+%maximum flexibility and control, define such a \ncn{field} command and
+%then define \ncn{C} and \ncn{R} in terms of that
+%command:\indexcs{mathbb}
+これらの定義によってコマンド\cn{C}と\cn{R}は．`AMSb'数学記号フォントから黒板太字を生成します．
+ドキュメントで複素数あるいは実数を示す記号を度々使うのならば，
+たとえば\ncn{field}コマンドを定義して|\field{C}|，|\field{R}|と書く方が，もっと便利だと思うでしょう．
+しかし，制限がをなくして自由に行うためには\ncn{field}のようなコマンドを定義して，
+それを使って\ncn{C}と\ncn{R}を定義する方が良いでしょう：\indexcs{mathbb}
+\begin{verbatim}
+\usepackage{amsfonts}% to get the \mathbb alphabet
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+\end{verbatim}
+
+%% ------------------------------------------------------------------ %%
+%\enlargethispage{3\baselineskip}
+
+%\section{Bold math symbols}
+\section{太字の数学記号}
+
+%The \cn{mathbf} command is commonly used to obtain bold Latin letters in
+%math, but for most other kinds of math symbols it has no effect, or its
+%effects depend unreliably on the set of math fonts that are in use. For
+%example, writing
+\cn{mathbf}コマンドは，数式で太字のラテン文字を得るために，ひろく使われていますが，
+他の数学記号では太字にならないか，使っているフォントによっては信頼できる結果が得られません．
+たとえば
+\begin{verbatim}
+\Delta \mathbf{\Delta}\mathbf{+}\delta \mathbf{\delta}
+\end{verbatim}
+%produces $\Delta \mathbf{\Delta}\mathbf{+}\delta
+%\mathbf{\delta}$; the \cn{mathbf} has no effect on the plus
+%sign or the small delta.
+とすると，$\Delta \mathbf{\Delta}\mathbf{+}\delta
+\mathbf{\delta}$となります；\cn{mathbf}コマンドは
+プラス記号あるいは小文字のデルタ記号に働いていません．
+%% should be paragraph break; avoid overfull box on next line
+%The \nipkg{amsmath} package therefore provides two additional commands,
+%\cn{boldsymbol} and \cn{pmb}, that can be applied to other kinds of math
+%symbols. \cn{boldsymbol} can be used for a math symbol that remains
+%unaffected by \cn{mathbf} if (and only if) your current math font set
+%includes a bold version of that symbol. \cn{pmb} can be used as a last
+%resort for any math symbols that do not have a true bold version
+%provided by your set of math fonts; \qq{pmb} stands for \qq{poor man's
+%bold} and the command works by typesetting multiple copies of the symbol
+%with slight offsets. The quality of the output is inferior, especially
+%for symbols that contain any hairline strokes. When the standard default set of
+%\latex/ math fonts are in use (Computer Modern), the only symbols that
+%are likely to require \cn{pmb} are large operator symbols like \cn{sum},
+%extended delimiter\index{delimiters} symbols, or the extra math symbols
+%provided by the \pkg{amssymb} package \cite{amsfonts}.
+\nipkg{amsmath}パッケージでは，これに対処するために２つのコマンド
+\cn{boldsymbol}と\cn{pmb}を提供しており，その他の数学記号に働きます．
+\cn{boldsymbol}は\cn{mathbf}では太字にならない数学記号に使うことができます．
+ただし使っているフォントに太字が定義されている場合に限ります．
+\cn{pmb}は，最後の手段といえるもので，太字のフォントが定義されていなくても太字にします；
+\qq{pmb}とは，\qq{poor man's bold}ということで，文字を少しずらして重ねることで太字を作ります．
+この出力結果の品質は，とくに細かい形状をもつ数学記号の場合は，劣ります．
+\latex/の標準の数学フォント（Computer Modern）で\cn{pmb}が必要なるときは，大きな作用素，たとえば
+\cn{sum}，デリミタ\index{delimiters}\index{デリミタ}記号，あるいは\pkg{amssymb}パッケージ\cite{amsfonts}
+で提供されている数学記号などです．
+
+%The following formula shows some of the results that are possible:
+次に示した数式は，いくつかの例を示したものです：
+\begin{verbatim}
+A_\infty + \pi A_0
+\sim \mathbf{A}_{\boldsymbol{\infty}} \boldsymbol{+}
+  \boldsymbol{\pi} \mathbf{A}_{\boldsymbol{0}}
+\sim\pmb{A}_{\pmb{\infty}} \pmb{+}\pmb{\pi} \pmb{A}_{\pmb{0}}
+\end{verbatim}
+\begin{equation*}
+A_\infty + \pi A_0
+\sim \mathbf{A}_{\boldsymbol{\infty}} \boldsymbol{+}
+  \boldsymbol{\pi} \mathbf{A}_{\boldsymbol{0}}
+\sim\pmb{A}_{\pmb{\infty}} \pmb{+}\pmb{\pi} \pmb{A}_{\pmb{0}}
+\end{equation*}
+If you want to use only the \cn{boldsymbol} command without loading the
+whole \nipkg{amsmath} package, the \pkg{bm} package is recommended (this
+is a standard \latex/ package, not an AMS package; you probably have it
+already if you have a 1997 or newer version of \latex/).
+\nipkg{amsmath}ペッケージをロードせずに\cn{boldsymbol}コマンドだけを使いたいのなら，
+\pkg{bm}を勧めます（これはAMSのパッケージではなくて標準の\latex/パッケージです；
+つまり1997年以降に配布されている\latex/には備わっています）．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Italic Greek letters}
+\section{イタリックのギリシア文字}
+
+%For italic versions of the capital Greek letters, the following commands
+%are provided:
+ギリシア文字の大文字のイタリックは，次のコマンドで生成できます：
+\begin{ctab}{rlrl}
+\cn{varGamma}& $\varGamma$& \cn{varSigma}& $\varSigma$\\
+\cn{varDelta}& $\varDelta$& \cn{varUpsilon}& $\varUpsilon$\\
+\cn{varTheta}& $\varTheta$& \cn{varPhi}& $\varPhi$\\
+\cn{varLambda}& $\varLambda$& \cn{varPsi}& $\varPsi$\\
+\cn{varXi}& $\varXi$& \cn{varOmega}& $\varOmega$\\
+\cn{varPi}& $\varPi$
+\end{ctab}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Error messages and output problems}
+\chapter{エラーメッセージと出力の問題}
+
+%\section{General remarks}
+\section{一般的な注意}
+
+%This is a supplement to Chapter~8 of the \latex/ manual \cite{lamport}
+%(first edition: Chapter~6). Appendix~B of the
+%\textit{Companion}~\cite{tlc2} lists all \latex/ errors including those
+%for \nipkg{amsmath} with likely causes for each.  For the reader's
+%convenience, the set of error messages discussed here overlaps
+%somewhat with the set in those references,
+%but please be aware that we don't provide exhaustive coverage here.
+%The error messages are arranged in alphabetical order, disregarding
+%unimportant text such as |! LaTeX Error:| at the beginning, and
+%nonalphabetical characters such as \qc{\\}. Where examples are given, we
+%show also the help messages that appear on screen when you respond to an
+%error message prompt by entering |h|.
+ここで解説する内容は\latex/マニュアル第８章（初犯の場合は第６章）\cite{lamport}の補足です．
+\textit{Companion}~\cite{tlc2}の付録Bは\latex/のエラーがすべて記されています．
+\nipkg{amsmath}に関連することも記されています．
+読者のために，ここでの説明は，上記の参考文献の内容と重複していますが，
+徹底的に解説していません．
+エラーメッセージはアルファベット順に示しました．冒頭に現れる|! LaTeX Error:|やアルファベットではない\qc{\\}など重要でないテキストは示していません．
+例を示す時には，画面に現れるヘルプメッセージ，ユーザが応答するさいのプロンプト|h|も記しました．
+
+%Remember that the important error message is the first for a given line.
+%When running in nonstop mode, errors accumulate, and the first error
+%may create a further error condition from which it is impossible to
+%recover.  In such a situation processing will stop after 100~errors,
+%so the reporting of genuine errors may not be complete, and it may be
+%impossible to determine which reported errors are genuine and which
+%are not.
+重要なエラーメッセージは，一番目の行に示されます．
+ノンストップモードで実行すると，エラーは累積し，最初のエラーが原因で，その後に回避できないエラーが発生する可能性があります．
+このような状況では，エラーの数が100個になった時に終了するため，報告されたエラーは完全ではない可能性があり，本当に重要なエラーとそうでないものとの区別ができません．
+
+%A final section discusses some output errors, i.e., instances where
+%the printed document has something wrong but there was no \latex/
+%error during typesetting.
+最後の節では，出力時のエラーについて解説します．つまり，
+\latex/の処理中のエラーでなくて，印刷結果が何かおかしいという事象です．
+
+%% ------------------------------------------------------------------ %%
+%% **********
+%\enlargethispage{-2\baselineskip}
+
+%\section{Error messages}
+\section{エラーメッセージ}
+
+\begin{error}{\begin{split} won't work here.}
+\errexa
+\begin{verbatim}
+! Package amsmath Error: \begin{split} won't work here.
+ ...
+
+l.8 \begin{split}
+
+? h
+\Did you forget a preceding \begin{equation}?
+If not, perhaps the `aligned' environment is what you want.
+?
+\end{verbatim}
+\errexpl
+%The \env{split} environment does not construct a stand-alone displayed
+%equation; it needs to be used within some other environment such as
+%\env{equation} or \env{gather}.
+\env{split}環境は，これだけではディスプレイ数式を構成しません．
+\env{equation}や\env{gather}のような他の環境で使う必要があります．
+
+\end{error}
+
+\begin{error}{Erroneous nesting of equation structures}
+\errexa
+\begin{verbatim}
+! Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.260 \end{alignat*}
+                    \end{equation*}
+\end{verbatim}
+\errexpl
+%The structures \env{align}, \env{alignat}, etc., are designed
+%for top-level use and for the most part cannot be nested inside some
+%other displayed equation structure. The chief exception is that
+%\env{align} and most of its variants can be used inside the
+%\env{gather} environment.
+数式構造\env{align}，\env{alignat}などはトップレベルで利用するために設計されているので，
+他のディスプレイ数式の構造に入れることはできません．
+重要な例外としては\env{align}とこの変種だけはenv{gather}の中に入れることができます．
+\end{error}
+
+\begin{error}{Extra & on this line}
+\errexa
+\begin{verbatim}
+! Package amsmath Error: Extra & on this line.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.9 \end{alignat}
+
+? h
+\An extra & here is so disastrous that you should probably exit
+ and fix things up.
+?
+\end{verbatim}
+\errexpl
+%In an \env{alignat} structure the number of alignment points per line
+%is dictated by the numeric argument given after |\begin{alignat}|.
+%If you use more alignment points in a line it is assumed that you
+%accidentally left out a newline command \cn{\\} and the above error is
+%issued.
+\env{alignat}構造の中では，1行あたりの整列される個数は，|\begin{alignat}|の後に与えられる数値引数によって決まります．
+行中により多くのアラインメントポイントを使用すると，間違って改行コマンド\cn{\\}を省略したとみなされ，上記のエラーが発行されます．
+\end{error}
+
+%% **********
+%\enlargethispage{1.5\baselineskip}
+
+\begin{error}{Font OMX/cmex/m/n/7=cmex7 not loadable ...}
+\errexa
+\begin{verbatim}
+! Font OMX/cmex/m/n/7=cmex7 not loadable: Metric (TFM) file not found.
+<to be read again>
+                   relax
+l.8 $a
+      b+b^2$
+? h
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+?
+\end{verbatim}
+\errexpl
+%Certain extra sizes of some Computer Modern fonts that were formerly
+%available mainly through the AMSFonts\index{amsfont@AMSFonts collection}
+%distribution are considered part of standard \latex/ (as of June 1994):
+%\fn{cmex7}\ndash \texttt{9}, \fn{cmmib5}\ndash \texttt{9}, and
+%\fn{cmbsy5}\ndash \texttt{9}. If these extra sizes are missing on your
+%system, you should try first to get them from the source where you
+%obtained \latex/. If that fails, you could try getting the fonts from
+%CTAN (e.g., in the form of Metafont\index{Metafont source files} source
+%files, directory \nfn{/tex-archive/fonts/latex/mf}, or in PostScript
+%Type 1 format, directory
+%\nfn{/tex-archive/fonts/cm/ps-type1/bakoma}\index{BaKoMa fonts}\relax
+%\index{PostScript fonts}).
+Computer Modernフォントの大きなサイズのいくつかは， 標準\latex/の一部として（1994年６月までは）AMSFonts\index{amsfont@AMSFonts collection}で配布されていました：
+\fn{cmex7}\ndash \texttt{9}，\fn{cmmib5}\ndash \texttt{9}，および
+\fn{cmbsy5}\ndash \texttt{9}．
+これらの大きなサイズのフォントが手元のシステムに含まれていないなら，まず最初に
+\latex/を入手したところに有無を調べます．
+そこになければ，CTAN（たとえばMetafont\index{Metafont source files}ソースファイルはディレクトリ\nfn{/tex-archive/fonts/latex/mf}，あるはPostScript Type 1フォーマットはディレクトリ\nfn{/tex-archive/fonts/cm/ps-type1/bakoma}\index{BaKoMa fonts}\relax
+\index{PostScript fonts}）から手に入ります．
+
+%If the font name begins with \fn{cmex}, there is a special option%
+%\index{options!behavior of particular options}
+%\opt{cmex10} for the \nipkg{amsmath} package that provides a temporary
+%workaround. I.e., change the \cn{usepackage} to
+フォントの名前が\fn{cmex}ではじまるときは，
+\nipkg{amsmath}のための特別なオプション\fn{cmex10}があります．\index{options!behavior of particular options}\index{オプション!特別なオプションの振る舞い}
+このときは，\cn{usepackage}を次のようにします．
+\begin{verbatim}
+\usepackage[cmex10]{amsmath}
+\end{verbatim}
+%This will force the use of the 10-point size of the \fn{cmex} font in
+%all cases. Depending on the contents of your document this may be
+%adequate.
+これが行なっていることは，\fn{cmex}を使うところでは，
+すべて10ポイントの大きさのフォントを使うということです．
+作成したドキュメントによっては，これで十分な場合があります．
+\end{error}
+
+%\enlargethispage{1\baselineskip}
+\begin{error}{Improper argument for math accent}
+\errexa
+\begin{verbatim}
+! Package amsmath Error: Improper argument for math accent:
+(amsmath)                Extra braces must be added to
+(amsmath)                prevent wrong output.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.415 \tilde k_{\lambda_j} = P_{\tilde \mathcal
+                                               {M}}
+?
+\end{verbatim}
+\errexpl
+%Non-simple arguments for any \LaTeX{} command should be enclosed in
+%braces. In this example extra braces are needed as follows:
+任意の\LaTeX{}コマンドでは単純ではない引数は中括弧で囲む必要があります．
+この例では，次のように中カッコの追加が必要です：
+\begin{verbatim}
+... P_{\tilde{\mathcal{M}}}
+\end{verbatim}
+\end{error}
+
+\begin{error}{Math formula deleted: Insufficient extension fonts}
+\errexa
+\begin{verbatim}
+! Math formula deleted: Insufficient extension fonts.
+l.8 $ab+b^2$
+
+?
+\end{verbatim}
+\errexpl
+%This usually follows a previous error |Font ... not loadable|; see the
+%discussion of that error (above) for solutions.
+これはたいていの場合，その前で示した|Font ... not loadable|に原因があります：
+上で示した解決策をみてください．
+\end{error}
+
+%\enlargethispage{1\baselineskip}
+\begin{error}{Missing number, treated as zero}
+\errexa
+\begin{verbatim}
+! Missing number, treated as zero.
+<to be read again>
+                   a
+l.100 \end{alignat}
+
+? h
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+?
+\end{verbatim}
+\errexpl
+%There are many possibilities that can lead to this error. However, one
+%possibility that is relevant for the \nipkg{amsmath} package is that you
+%forgot to give the number argument of an \env{alignat} environment, as
+%in:
+このエラーの原因は，いろいろ考えられます．
+しかし，適切な\nipkg{amsmath}パッケージでの可能性は，
+\env{alignat}環境で，正しい値を引数に指定していないことです：
+\begin{verbatim}
+\begin{alignat}
+ a&  =b&    c& =d\\
+a'& =b'&   c'& =d'
+\end{alignat}
+\end{verbatim}
+%where the first line should read instead
+この例で，最初の行は次のようにすべきです．
+\begin{verbatim}
+\begin{alignat}{2}
+\end{verbatim}
+
+%Another possibility is that you have a left bracket character |[|
+%following a line break\index{line break} command \cn{\\} in a multiline
+%construction such as \env{array}, \env{tabular}, or \env{eqnarray}.
+%This will be interpreted by \latex/ as the beginning of an `additional
+%vertical space request \cite[\S C.1.6]{lamport}, even if it occurs on the
+%following line and is intended to be part of the contents. For example,
+もう一つの可能性は，\env{array}，\env{tabular}，または\env{eqnarray}のような複数行の構文で
+改行コマンド\cn{\\}の後に左括弧|[|があることです．\index{line break}
+これは，|[|が次の行に記述されていて内容の一部としたい場合でも，
+\latex/によって`追加の垂直の空白'が要求された開始点として解釈されます \cite[\S C.1.6]{lamport}．
+たとえば
+\begin{verbatim}
+\begin{array}{c}
+a+b\\
+[f,g]\\
+m+n
+\end{array}
+\end{verbatim}
+%To prevent the error message in such a case, you can
+%add braces as discussed in the \latex/ manual \cite[\S C.1.1]{lamport}:
+このような場合のエラーメッセージにたいしてできることは，
+\latex/マニュアル\cite[\S C.1.1]{lamport}で示されている通り中かっこで囲むことです：
+\begin{verbatim}
+\begin{array}{c}
+a+b\\
+{[f,g]}\\
+m+n
+\end{array}
+\end{verbatim}
+%or precede the bracketed expression by \cn{relax}.
+あるいは\cn{relax}によって中かっこを前に置きます．
+\end{error}
+
+\goodbreak
+
+\begin{error}{Missing \right. inserted}
+\errexa
+\begin{verbatim}
+! Missing \right. inserted.
+<inserted text>
+                \right .
+l.10 \end{multline}
+
+? h
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+\end{verbatim}
+\errexpl
+%This error typically arises when you try to insert a
+%line break\index{line break} or |&|\cnamp\ between a
+%\cn{left}-\cn{right} pair of delimiters\index{delimiters} in any
+%multiline environment, including \env{split}.
+このエラーは典型的には，複数行の環境で
+改行\index{line break}あるいは|&|\cnamp{}を
+デリミタ\index{delimiters}のペア\cn{left}-\cn{right}の中に置いた時に現れます．
+\env{split}の場合も同様です．
+\begin{verbatim}
+\begin{multline}
+AAA\left(BBB\\
+  CCC\right)
+\end{multline}
+\end{verbatim}
+%There are two possible solutions: (1)~instead of using \cn{left} and
+%\cn{right}, use `big' delimiters\index{delimiters!fixed size} of fixed
+%size (\cn{bigl} \cn{bigr} \cn{biggl} \cn{biggr} \dots; see
+%\secref{bigdel}); or (2)~use null delimiters\index{delimiters!null} to
+%break up the \cn{left}-\cn{right} pair into parts for each line (or cell):
+解決策は２つあります：
+(1)~\cn{left}と\cn{right}を使わずに，サイズが決まっている大きなデリミタ（\cn{bigl} \cn{bigr} \cn{biggl} \cn{biggr} \dots；\secref{bigdel}をみてください）\index{delimiters!fixed size}を使います
+；あるいは
+(2)~\cn{left}-\cn{right}ペアの中にヌルデリミタ\index{delimiters!null}を入れて，各行（あるいはセル）を分けます：
+\begin{verbatim}
+AAA\left(BBB\right.\\
+  \left.CCC\right)
+\end{verbatim}
+%The latter solution may result in mismatched
+%delimiter\index{delimiters!mismatched sizes} sizes;
+%ensuring that they match requires using \cn{vphantom} in the segment
+%that has the smaller delimiter (or possibly \cn{smash} in the segment
+%that has the larger delimiter). In the argument of \cn{vphantom} put a
+%copy of the tallest element that occurs in the other segment, e.g.,
+最後の解決策は，デリミタのサイズが合わないことがあります；\index{delimiters!mismatched sizes}
+小さすぎるデリミタが選ばれたら\cn{vphantom}を使って必要な高さを与えます（あるいは，大きなデリミタが使われている部分に\cn{smash}を入れます）．
+\cn{vphantom}の引数には，他の部分での最大の高さの要素を入れます．つまり，
+\begin{verbatim}
+xxx \left(\int_t yyy\right.\\
+  \left.\vphantom{\int_t} zzz ... \right)
+\end{verbatim}
+\end{error}
+
+\goodbreak
+
+\begingroup
+\lccode`M=`M
+\lccode`@=`\}
+\lowercase{\endgroup
+\begin{error}{Missing @ inserted}}
+
+\errexa
+\begin{verbatim}
+! Missing } inserted.
+<inserted text>
+                \right .
+l.10 \end{multline}
+
+? h
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+\end{verbatim}
+\errexpl
+%This error is often the result of using \verb+$+ within a multiline
+%display environment.  Remove such \verb+$+ signs (except when they
+%appear within \verb+\text{...}+).
+このエラーが発生する多くの場合は，複数行のディスプレイ数式環境の中で\verb+$+を使った結果です．
+そのような\verb+$+記号を取り除きます（ただし\verb+\text{...}+の中にあるものはそのままです）．
+\end{error}
+
+\begin{error}{Old form `\pmatrix' should be \begin{pmatrix}.}
+\errexa
+\begin{verbatim}
+! Package amsmath Error: Old form `\pmatrix' should be
+                         \begin{pmatrix}.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+\pmatrix ->\left (\matrix@check \pmatrix
+                                         \env@matrix
+l.16 \pmatrix
+             {a&b\cr c&d\cr}
+? h
+`\pmatrix{...}' is old Plain-TeX syntax whose use is
+ill-advised in LaTeX.
+?
+\end{verbatim}
+\errexpl
+%When the \nipkg{amsmath} package is used, the old forms of \cn{pmatrix},
+%\cn{matrix}, and \cn{cases} cannot be used any longer because of naming
+%conflicts. Their syntax did not conform with standard \LaTeX{} syntax
+%in any case.
+\nipkg{amsmath}パッケージが使われていると，\cn{pmatrix}，
+\cn{matrix}，および\cn{cases}の古い形は，名前が衝突するために使えません．
+これらのシンタックスは\LaTeX{}のシンタックスと両立しません．
+\end{error}
+
+%\enlargethispage{2\baselineskip}
+\begin{error}{Paragraph ended before \xxx was complete}
+\errexa
+\begin{verbatim}
+Runaway argument?
+
+! Paragraph ended before \multline was complete.
+<to be read again>
+                   \par
+l.100
+
+? h
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+?
+\end{verbatim}
+\errexpl
+%This might be produced by a blank line between the |\begin| and |\end|.
+%Another possibility is a misspelling in the |\end{multline}| command,
+%e.g.,
+これは空白行が|\begin|と|\end|の間にある場合でしょう．
+あるいは他の可能性としては，|\end{multline}|コマンドのスペルを間違えた場合です．
+つまり
+\begin{verbatim}
+\begin{multline}
+...
+\end{multiline}
+\end{verbatim}
+%or by using abbreviations for certain environments, such as |\bal| and
+%|\eal| for |\begin{align}| and |\end{align}|:
+あるいは，環境名の |\begin{align}|と|\end{align}|に|\bal|と|\eal|のように
+省略したコマンドを使っているのでしょう：
+\begin{verbatim}
+\bal
+...
+\eal
+\end{verbatim}
+%For technical reasons that kind of abbreviation does not work with
+%the more complex displayed equation environments of the \nipkg{amsmath} package
+%(\env{gather}, \env{align}, \env{split}, etc.; cf.\ \fn{technote.tex}).
+技術的に理由によって，このような省略名は\nipkg{amsmath}が提供する複雑なディスプレイ数式環境（\env{gather}, \env{align}, \env{split}などでは働きません：詳しくは\fn{technote.tex}を参照してください）．
+\end{error}
+
+\begin{error}{Runaway argument?}
+See the discussion for the error message
+\texttt{Paragraph ended before \ncn{xxx} was complete}.
+\end{error}
+
+\begin{error}{Unknown option `xxx' for package `yyy'}
+\errexa
+\begin{verbatim}
+! LaTeX Error: Unknown option `intlim' for package `amsmath'.
+...
+? h
+The option `intlim' was not declared in package `amsmath', perhaps you
+misspelled its name. Try typing  <return>  to proceed.
+?
+\end{verbatim}
+\errexpl
+%This means that you misspelled the option\index{options!unknown}
+%name, or the package simply does not have an option that you expected
+%it to have. Consult the documentation for the given package.
+これは，オプション名のスペルを間違えたか，\index{options!unknown}
+単にパッケージにはあるはずだと思ったオプションがないことを意味しています．
+使用したいパッケージのドキュメントを調べます．
+\end{error}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Warning messages}
+\section{警告メッセージ}
+
+\begin{error}{Cannot use `split' here}
+\errexa
+\begin{verbatim}
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned'
+\end{verbatim}
+%\errexpl The \env{split} environment is designed to serve as the entire
+%body of an equation, or an entire line of an \env{align} or \env{gather}
+%environment. There cannot be any printed material before or
+%after it within the same enclosing structure:
+\errexpl \env{split}環境は，方程式全体にたいして，
+または\env{align}または\env{gather}環境の行全体にたいして働くように設計されています．
+同じ構造内の前または後に同じような構造を置くことはできません：
+\begin{verbatim}
+\begin{equation}
+\left\{ % <-- Not allowed
+\begin{split}
+...
+\end{split}
+\right. % <-- Not allowed
+\end{equation}
+\end{verbatim}
+\end{error}
+
+\begin{error}{Foreign command \over [or \atop or \above]}
+\errexa
+\begin{verbatim}
+Package amsmath Warning: Foreign command \over; \frac or \genfrac
+(amsmath)                should be used instead.
+\end{verbatim}
+%\errexpl The primitive generalized fraction commands of \tex/\mdash
+%\cs{over}, \cs{atop}, \cs{above}\mdash are deprecated when the
+%\nipkg{amsmath} package is used because their syntax is foreign to \latex/
+%and \nipkg{amsmath} provides native \latex/ equivalents. See
+%\fn{technote.tex} for further information.
+\errexpl \tex/のプリミティブな分数生成コマンド\cs{over}，\cs{atop}，\cs{above}は
+\nipkg{amsmath}では使用できません．これらのシンタックスは\latex/のものでない上に，
+\nipkg{amsmath}パッケージは\latex/にとって自然で同値なコマンドを提供しています．
+さらに詳しいことは\fn{technote.tex}をみてください．
+\end{error}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Wrong output}
+\section{正しくない出力}
+
+%\begin{erroro}{Section numbers 0.1, 5.1, 8.1 instead of 1, 2, 3}
+\begin{erroro}{説番号が正しい1, 2, 3でなくて0.1, 5.1, 8.1のようになってしまう}
+%
+%This most likely means that you have the arguments for \cn{numberwithin}
+%in reverse order:
+この問題は\cn{numberwithin}の引数が逆順に並んでいるからでしょう：
+\begin{verbatim}
+\numberwithin{section}{equation}
+\end{verbatim}
+%That means `print the section number as \textit{equation
+%number}.\textit{section number} and reset to 1 every time an equation
+%occurs' when what you probably wanted was the inverse
+つまり`節の番号を\textit{equation number}.\textit{section number}として出力し，式が出現するたびに1にリセット'されているようなので，次のように数式番号の後ろに節番号入れます．
+\begin{verbatim}
+\numberwithin{equation}{section}
+\end{verbatim}
+\end{erroro}
+
+%\begin{erroro}{The \cn{numberwithin} command had no effect on equation
+%  numbers}
+\begin{erroro}{\cn{numberwithin}コマンドは式番号に対してはなんの効果ない}
+%
+%Are you looking at the first section in your document? Check the section
+%numbers elsewhere to see if the problem is the one described in the
+%previous item.
+あなたの文章の，最初の節をよく見ましたか？\  
+節の番号を確認して，前の項目で説明した問題かどうかを調べましょう．
+\end{erroro}
+
+\begin{erroro}{Bracketed material disappears at the beginning of
+  \env{aligned} or \env{gathered}}
+%
+%For most multiline equation environments, \nipkg{amsmath} disables the
+%\latex/ convention to recognize a [bracketed] expression as an option%
+%\index{ed env@\texttt{-ed} environments}%
+%\index{options!positioning of \texttt{-ed} environments}%
+%\index{options!space before \texttt{[}}
+%when it occurs at the beginning of an environment or immediately
+%following \cn{\\}, provided a space intervenes.  This fails at the
+%beginning of \env{aligned} and \env{gathered}, and is a bug.  Insert
+%\cn{relax} before the opening brace to restore the desired result.
+多くの複数行の数式環境で\nipkg{amsmath}は\latex/の規約は機能せず，
+[bracketed]という表記は，
+これが環境の最初に現れるとき，あるいは\cn{\\}のすぐ後に現れるときには
+オプションとして解釈され，空白が挿入されます．
+\index{ed env@\texttt{-ed} environments}%
+\index{options!positioning of \texttt{-ed} environments}%
+\index{options!space before \texttt{[}}
+これは\env{aligned}と\env{gathered}の冒頭で失敗しますが，バグです．
+開きの中かっこの前に\cn{relax}を挿入することで，目的の結果を得ます．
+\end{erroro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Additional information}
+\chapter{さらなる情報}
+
+%\section{Compatibility with other packages}
+\section{他のパッケージとの互換性}
+
+%Several packages have already been mentioned as providing facilities
+%lacking in \nipkg{amsmath}.
+\nipkg{amsmath}に備わっていない機能は，ほかのパッケージで補われています．
+
+\begin{itemize}
+%\item \pkg{bm} is recommended for specifying bold math symbols.
+\item \pkg{bm}は，太字の数学記号が必要な時には勧められます．
+%\item \pkg{mathtools} provides enhancements to some \nipkg{amsmath}
+%  environments as well as additional compatible features, such as
+%  \env{rcases} (similar to \env{cases} but with the brace on the
+%  right-hand side), \env{multlined} (a subsidiary environment
+%  comparable to \env{multline}), and \cn{shortintertext} (more
+%  compact spacing than \cn{intertext}).  If \pkg{mathtools} is used,
+%  \nipkg{amsmath} is loaded automatically, so it is not necessary
+%  to load it separately.
+\item \pkg{mathtools}は\nipkg{amsmath}環境の機能を拡張を与えているだけでなく，
+互換性のある拡張，
+\env{rcases}（\env{cases}と似ていますが，中かっこが右に表示されます），
+\env{multlined}（\env{multline}と互換性のある副環境），
+\cn{shortintertext}（\cn{intertext}に比べて小さい空白），
+を与えています．
+\pkg{mathtools}を指定すると\nipkg{amsmath}は自動的にロードされるので，個別にロードする必要はありません．
+%\item \pkg{unicode-math} provides commands for (most?)\ math symbols
+%  in Unicode.
+\item \pkg{unicode-math}は，Unicodeの（ほとんどの？）数学記号を与えます．
+%%\item \pkg{empheq}
+\end{itemize}
+
+%These packages have known problems when used with \nipkg{amsmath}.
+これらのパッケージは\nipkg{amsmath}を使った時に問題があることは知られています．
+\begin{itemize}
+%\item \pkg{lineno} may omit numbers before display environments.
+\item \pkg{lineno}はディスプレイ環境の数式番号を省きます．
+%\item \pkg{breqn} redefines a number of commands from other packages,
+%  so is best loaded after \nipkg{amsmath} and other packages with math
+%  facilities.\\ \pkg{breqn} is not yet totally stable, and a number of
+%  bugs have been reported via \texttt{tex.stackexchange} \cite{tex-sx}.
+\item \pkg{breqn}は他のパッケージのたくさんのコマンドを再定義しています．
+\nipkg{amsmath}や他の数式関連パッケージの後でロードするのが良いです．\\ 
+\pkg{breqn}は全体として安定しておらず，たくさんのバグが
+\texttt{tex.stackexchange}\cite{tex-sx}などで報告されています．
+%\item \pkg{wasysym}, \pkg{mathabx} and perhaps other font packages also
+%  define multiple integrals\index{integrals!multiple} using the same
+%  names as \nipkg{amsmath}.
+\item \pkg{wasysym}，\pkg{mathabx}および多分他のフォントパッケージは，
+\nipkg{amsmath}と同じ名前で多重積分\index{integrals!multiple}を定義しています．
+\end{itemize}
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Converting existing documents}
+\section{既存のドキュメントを利用する}
+
+%\subsection{Converting from plain \LaTeX{}}
+\subsection{plain \LaTeX{}からの再利用}
+%
+%A \LaTeX{} document will typically continue to work the same in most
+%respects if \verb'\usepackage{amsmath}' is added in the document
+%preamble. By default, however, the \nipkg{amsmath} package suppresses page
+%breaks inside multiple-line displayed equation structures such as
+%\env{eqnarray}, \env{align}, and \env{gather}. To continue allowing page
+%breaks inside \env{eqnarray} after switching to \nipkg{amsmath}, you will
+%need to add the following line in your document preamble:
+ドキュメントのプリアンブルに\verb'\usepackage{amsmath}'を追加しておけば，
+\LaTeX{}ドキュメントの仕上がりはほとんどの点で同じです．
+ただし，デフォルトでは，\nipkg{amsmath}パッケージは，\env{eqnarray}，\env{align}，\env{gather}などの複数行のディスプレイ数式の構造内での改ページを抑制します．
+\nipkg{amsmath}を使用することにしたら，\env{eqnarray}の中での改ページ許可するには，
+ドキュメントのプリアンブルに次の行を追加する必要があります：
+\begin{verbatim}
+\allowdisplaybreaks[1]
+\end{verbatim}
+%To ensure normal spacing around relation symbols, you might also want to
+%change \env{eqnarray} to \env{align}, \env{multline}, or
+%\env{equation}\slash\env{split} as appropriate.
+関係記号（イコールなど）の両側に通常の空白を入れるためには
+\env{eqnarray}ではなくて，できるだけ\env{align}, \env{multline}, あるいは
+\env{equation}\slash\env{split}を使います．
+
+%Most of the other differences in \nipkg{amsmath} usage can be considered
+%optional refinements, e.g., using
+\nipkg{amsmath}パッケージを使用した場合の大きな違いは
+多くの微調整が出来ることです，たとえば，以前のような
+\verb'\newcommand{\Hom}{\mbox{Hom}}'
+としなくても
+\begin{verbatim}
+\DeclareMathOperator{\Hom}{Hom}
+\end{verbatim}
+%instead of \verb'\newcommand{\Hom}{\mbox{Hom}}'.
+とすれば良いです．
+
+%\subsection{Converting from \texorpdfstring{\amslatex/}{amslatex} 1.1}
+\subsection{\texorpdfstring{\amslatex/}{amslatex} 1.1からの再利用}
+%See \fn{diffs-m.txt}.
+\fn{diffs-m.txt}を参照してください．
+
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Technical notes}
+\section{技術的注意}
+%The file \fn{technote.tex} contains some remarks on miscellaneous
+%technical questions that are less likely to be of general interest.
+\fn{technote.tex}には，あまり一般的ではないのですが，いくつかの技術的な事柄で
+注意すべきことが載っています．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Getting help}
+\section{助けが必要な時}
+
+%The \nipkg{amsmath} collection of packages is maintained by the \latex/
+%team \cite{ltx-team}.  Bugs should be reported using the instructions
+%at \url{https://www.latex-project.org/bugs/}.
+%Please be careful not to confuse \nipkg{amsmath} with the AMS document
+%classes (\cls{amsart}, \cls{amsbook}, and \cls{amsproc}), which
+%automatically incorporate \nipkg{amsmath}; bugs in the classes should
+%be reported directly to AMS, by email to \mail{tech-support@ams.org}.
+\nipkg{amsmath}は，\latex/チームが管理しています．\cite{ltx-team}
+バグを見つけた方は\url{https://www.latex-project.org/bugs/}に従って
+連絡してください．
+\nipkg{amsmath}と関連したAMSの他のドキュメント作成クラス（\cls{amsart}，\cls{amsbook}，および\cls{amsproc}）
+とは異なるので混乱しないでください；
+クラスのバグは直接AMSの\mail{tech-support@ams.org}宛に連絡してください．
+
+%Questions or comments regarding \nipkg{amsmath} and related packages
+%should be sent to:
+%\begin{infoaddress}
+%American Mathematical Society\\
+%Technical Support\\
+%Electronic Products and Services\\
+%P. O. Box 6248\\
+%Providence, RI 02940\\[3pt]
+%Phone: 800-321-4AMS (321-4267) \quad or \quad 401-455-4080\\
+%Internet: \mail{tech-support@ams.org}
+%\end{infoaddress}
+%If you are reporting a problem you should include
+%the following information to make proper investigation possible:
+%\begin{enumerate}
+%\item The source file where the problem occurred, preferably reduced
+%  to minimum size by removing any material that can be removed without
+%  affecting the observed problem.
+%\item A \latex/ log file showing the error message (if applicable) and
+%  the version numbers of the document class and option files being used.
+%\end{enumerate}
+
+%The online forum\index{online Q\,\&\,A forum} \texttt{tex.stackexchange}
+%\cite{tex-sx} is a good source of answers to common questions on usage.
+%Look first in the archive to see if your question has already been asked
+%and answered; if it has not, post your own question.
+オンラインフォーラム\index{online Q\,\&\,A forum} \texttt{tex.stackexchange}
+\cite{tex-sx}は，よくある疑問に対しての答えを見つけるための良い情報源です．
+質問を投稿する前に，自分の疑問がすでに投稿されているかを確認してください；
+見つからなければ，その時があなたが質問をする番です．
+
+%There is an online discussion group called \fn{comp.text.tex} \cite{ctt}
+%that is a fairly good source of information about \latex/ and \tex/ in
+%general. This group, formerly a Unix newsgroup, predates
+%\texttt{tex.stackexchange} by decades, and the archives can be a useful
+%resource for historical investigation.
+ディスカッショングループ\fn{comp.text.tex}\cite{ctt}があります．
+ここは\latex/と\tex/について，なかなか良い情報源です．
+このグループは，\texttt{tex.stackexchange}以前のUnixのニュースグループが始まりですので，
+歴史的な内容を調べるのには便利です．
+
+%% ------------------------------------------------------------------ %%
+
+%\section{Of possible interest}\label{a:possible-interest}
+\section{関心のある方へ}\label{a:possible-interest}
+%Information about obtaining AMSFonts or other \tex/-related
+%software from the AMS web server at \fn{www.ams.org}
+%can be obtained by sending an email request to
+%\mail{tech-support@ams.org}.  This software is also posted on
+%CTAN\index{CTAN (Comprehensive \TeX\ Archive Network)} and included
+%in distributions based on \TeX\,Live\index{TEX Live@\TeX\,Live}.
+AMSFontsあるいは他の\tex/関連ソフトウェアを\fn{www.ams.org}にある
+AMSのウェブサーバーから
+入手したければ
+電子メールで\mail{tech-support@ams.org}あてに問い合わせてください．
+このソフトウェアはCTAN\index{CTAN (Comprehensive \TeX\ Archive Network)}にも提供されており，
+\TeX\,Live\index{TEX Live@\TeX\,Live}として配布されているものの中にあります．
+
+%The \tex/ Users Group\index{TeX Users@\tex/ Users Group} is a nonprofit
+%organization that publishes a journal
+%(\journalname{TUGboat}\index{TUGboat@\journalname{TUGboat}}), holds
+%meetings, and serves as a clearinghouse for general information about
+%\tex/ and \tex/-related software.
+\tex/ Users Group\index{TeX Users@\tex/ Users Group}は非営利団体で，
+会員向けの雑誌（\journalname{TUGboat}\index{TUGboat@\journalname{TUGboat}}）
+を発行し，ミーティングの企画を行い，\tex/と\tex/関連のソフトウェアについての情報を収集して管理しています．
+\begin{infoaddress}
+\tex/ Users Group\\
+PO Box 2311\\
+Portland, OR 97208-2311\\
+USA\\[3pt]
+Phone: +1-503-223-9994\\
+Email: \mail{office@tug.org}
+\end{infoaddress}
+%Membership in the \tex/ Users Group is a good way to support continued
+%development of free \tex/-related software. There are also many local
+%\tex/ user groups in other countries; information about contacting a
+%local user group can be gotten from the \tex/ Users Group.
+\tex/ Users Groupのメンバーになることで\tex/関連の自由なソフトウェアをサポートできます．
+色々な国や地域に\tex/ユーザグループがあるでしょう；それらについても
+\tex/ Users Groupから得ることができます．
+
+\index{amsmath@\texttt{amsmath} package|)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\begin{thebibliography}{10}
+\addcontentsline{toc}{chapter}{\bibname}
+
+\raggedright
+
+%\bibsubhead{References in print}
+\bibsubhead{出版物}
+
+\bibitem{mil} George Gr\"atzer, \booktitle{More Math into \latex/}, fifth ed.,
+Springer, New York, 2016.
+% Deal with a line breaking problem
+%\begin{raggedright}
+%\bibitem{mil} G. Gr\"{a}tzer,
+%\emph{Math into \LaTeX{}: An Introduction to \LaTeX{} and AMS-\LaTeX{}}
+%  \url{https://www.ams.org/cgi-bin/bookstore/bookpromo?fn=91&arg1=bookvideo&itmc=MLTEX},
+%Birkh\"{a}user, Boston, 1995.\par
+%\end{raggedright}
+
+\bibitem{kn} Donald E. Knuth, \booktitle{The \tex/book},
+Addison-Wesley, Reading, MA, 1984.
+
+\bibitem{lamport} Leslie Lamport, \booktitle{\latex/: A document preparation
+system}, 2nd revised ed., Addison-Wesley, Reading, MA, 1994.
+
+\bibitem{tlc2} Frank Mittelbach, Michel Goossens, et al.,
+\booktitle{The \latex/ companion}, second ed., Addison-Wesley, Reading,
+MA, 2004.  %This is now also available as an ebook, in both English and
+%German; see \url{https://www.latex-project.org/help/books/}.
+%The front matter, including the full Table of Contents, can be viewed
+%online, from a link on the same page.
+本書は電子書籍でも入手できます．英語版とドイツ語版があります；詳しくは
+\url{https://www.latex-project.org/help/books/}
+をご覧ください．ここには，各種の書籍の一覧が掲載されています．
+%Michel Goossens, Frank Mittelbach, and Alexander Samarin,
+%\booktitle{The \latex/ companion}, Addison-Wesley, Reading, MA, 1994.
+%  [\emph{Note: The 1994 edition is not a reliable guide for the
+%    \nipkg{amsmath} package unless you refer to the errata for Chapter
+%    8\mdash file \fn{compan.err}, distributed with \LaTeX{}.}]
+
+\bibitem{msf} Frank Mittelbach and Rainer Sch\"opf,
+\textit{The new font family selection\mdash user
+interface to standard \latex/}, \journalname{TUGboat} \textbf{11},
+no.~2 (June 1990), pp.~297\ndash 305.
+
+\bibitem{jt} Michael Spivak, \booktitle{The joy of \tex/}, 2nd revised ed.,
+Amer. Math. Soc., Providence, RI, 1990.
+
+%\bibsubhead{Package documentation}
+\bibsubhead{パッケージ付属のドキュメンテーション}
+
+\bibitem{amshandbk}\booktitle{AMS author handbook}, separate versions
+for journal articles, monographs and proceedings articles, Amer. Math.
+Soc., Providence, RI, 2017;
+\url{https://www.ams.org/publications/authors/tex/author-handbook}.
+
+\bibitem{amsfonts}\booktitle{AMSFonts version \textup{2.2d}\mdash user's guide},
+Amer. Math. Soc., Providence, RI, 2002; distributed
+with the AMSFonts package
+\url{http://mirror.ctan.org/tex-archive/fonts/amsfonts/doc/amsfndoc.pdf}.
+
+\bibitem{amsthdoc}\booktitle{Using the \pkg{amsthm} Package}, version 2.20.3,
+Amer. Math. Soc., Providence, RI, 2017;
+\url{http://mirror.ctan.org/tex-archive/macros/latex/required/amscls/doc/amsthdoc.pdf}.
+
+\bibitem{mt} Morten H{\o}gholm, Lars Madsen, \booktitle{The \pkg{mathtools}
+package}, 2018;
+\url{http://mirror.ctan.org/tex-archive/macros/latex/contrib/mathtools/mathtools.pdf}.
+
+%\bibsubhead{Online resources}
+\bibsubhead{オンラインにある情報}
+
+\bibitem{ltx-team} The \latex/ Project, \url{https://www.latex-project.org}.
+
+\bibitem{ctt} Online discussion group \texttt{comp.text.tex},
+\url{https://groups.google.com/forum/\#!forum/comp.text.tex}.
+
+\bibitem{tex-sx} Online question and answer forum \texttt{tex.stackexchange},
+\url{https://tex.stackexchange.com}.
+
+\end{thebibliography}
+
+\printindex
+
+\end{document}
