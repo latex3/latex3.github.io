@@ -116,6 +116,15 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="https://github.com/eg9"><span class="fa fa-github-square"></span>https://github.com/eg9</a></li>
     </ul>
   </li>
+  <li id="ulrike-fischer">
+    <img src="UBsGR.png" alt="Ulrike Fischer">
+    <h2>Ulrike Fischer <br><span class="role">LaTeX3 Team</span></h2>
+    <ul class="team">
+      <li><a href="https://www.troubleshooting-tex.de/index-en.php"><span class="fa fa-external-link-square"></span>https://www.troubleshooting-tex.de/index-en.php</a></li>
+      <li><a href="https://tex.stackexchange.com/users/2388/ulrike-fischer"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/2388/</a></li>
+      <li><a href="https://github.com/u-fischer"><span class="fa fa-github-square"></span>https://github.com/u-fischer</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </div>
