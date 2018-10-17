@@ -15,7 +15,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
     on related topics</a> like TeX, fonts, and encoding.</p>
     <h4><a href="{{ site.baseurl }}/publications/">Publications by the project team</a></h4>
     <p>The <a href="{{ site.baseurl }}/publications/">publications page</a> lists all articles and
-    other publications by members of the LaTeX Project Team ordered cronologically
+    other publications by members of the LaTeX Project Team ordered chronologically
     or by topic.</p>
   </div>
   <div class="col cell1of2">

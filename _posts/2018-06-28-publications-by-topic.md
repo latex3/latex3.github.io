@@ -20,7 +20,7 @@ and and thus unusable.
 
 Since we believe that a lot of the information there is actually quite
 useful we have restructured this area to provide a view of all
-publications **in cronological order** as well as **by major
+publications **in chronological order** as well as **by major
 topics**. Of course, chosing useful topics is hard and we may still
 have to improve things here and there. For example, we know that we
 should add further notes in some places.
