@@ -9,6 +9,9 @@ description: "Selection of links to PDF versions of various articles published b
 
 
 
+{% include _papers/paper_2018-JAW-TUB-tb122wright-l3graphics.md  %}
+
+
 
 <hr class="conference-start">
 

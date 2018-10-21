@@ -15,6 +15,9 @@
 > is useful, what models we can work from and where the work has taken us
 > so far.
 
+
+Conference paper published in TUGboat 39:2, 2018: <a href="{{site.baseurl}}/publications/2018-JAW-TUB-tb122wright-l3graphics.pdf" target="_blank">Supporting color and graphics in expl3</a>
+
 Video of the talk recorded by IMPA on YouTube:  <a href="https://youtu.be/FwbsFYTBYpQ" target="_blank">Through the looking glass, and what Joseph found there</a> 
 
 

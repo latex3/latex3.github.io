@@ -5,6 +5,8 @@
 
 {% include _papers/paper_2018-FMi-TUB-tb123mitt-widows-orphans.md  %}
 
+{% include _papers/paper_2018-JAW-TUB-tb122wright-l3graphics.md  %}
+{% include _papers/paper_2018-FMi-TUB-tb122mitt-version-rollback.md %}
 
 
 <hr class="conference-start">
@@ -25,7 +27,6 @@
 <div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
 
 
-{% include _papers/paper_2018-FMi-TUB-tb122mitt-version-rollback.md %}
 
 {% include _papers/paper_2018-FMi-CI-Journal-28454894_as_submitted.md %}
 

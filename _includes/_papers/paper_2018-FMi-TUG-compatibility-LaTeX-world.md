@@ -24,7 +24,11 @@
 > apply it to their packages and authors to use when necessary.
 
 
-Video of the talk recorded by IMPA on YouTube:  <a href="https://youtu.be/bR13_gr2ts8" target="_blank"  onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">What’s to stay, what’s to go -- Compatibility in the LaTeX world</a> 
++ Video of the talk recorded by IMPA on YouTube:  <a href="https://youtu.be/bR13_gr2ts8" target="_blank"  onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">What’s to stay, what’s to go -- Compatibility in the LaTeX world</a> 
+
++ Conference published in TUGboat 39:2, 2018 <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a>
+
+
 
 
 

@@ -33,6 +33,8 @@
 > functionality, I also plan to overcome the problems involving use of
 > embedded graphics with text, and mathematical content in general.
 
+Conference paper published in TUGboat 39:2, 2018: <a href="{{site.baseurl}}/publications/2018-wspr-TUB-tb122robertson-canvas.pdf" target="_blank">The Canvas learning management system and LaTeXML</a>
+
 Video of the talk recorded by IMPA on YouTube:  <a href="https://youtu.be/HvNVdPZxDlM" target="_blank">Creating teaching material with LaTeXML for the Canvas Learning Management System</a> 
 
 
