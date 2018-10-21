@@ -8,6 +8,11 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): On LaTeX2e Packages
 
 
+
+{% include _papers/paper_2018-FMi-TUB-tb123mitt-widows-orphans.md  %}
+
+
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
