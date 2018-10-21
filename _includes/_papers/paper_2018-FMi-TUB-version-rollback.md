@@ -1,9 +1,9 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-version-rollback-preprint.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a> (submitted version)
+### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">A rollback concept for packages and classes</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Draft for submission to TUGboat, 2018
++ Paper published in TUGboat 39:2, 2018 
 + Abstract:
 > In 2015 a rollback concept for the LaTeX kernel was
 > introduced. Providing this feature allowed us to make corrections to
