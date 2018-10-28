@@ -5,9 +5,46 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 21 Oct 2018 13:19:36 +0200</pubDate>
-    <lastBuildDate>Sun, 21 Oct 2018 13:19:36 +0200</lastBuildDate>
+    <pubDate>Sun, 28 Oct 2018 13:27:33 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Oct 2018 13:27:33 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Experimental benchmarking functions</title>
+        <description>&lt;h1 id=&quot;experimental-benchmarking-functions&quot;&gt;Experimental benchmarking functions&lt;/h1&gt;
+
+&lt;p&gt;Prompted by a &lt;a href=&quot;https://tex.stackexchange.com/q/456316/&quot;&gt;TeX-sx question&lt;/a&gt; on
+benchmarking, the team have added a new experimental package to &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;:
+&lt;a href=&quot;https://ctan.org/pkg/l3experimental&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3benchmark&lt;/code&gt;&lt;/a&gt;. This new material
+provides a convenient interface for benchmarking: seeing how long it takes for
+blocks of code to run. This uses the underlying ‘timer’ support in modern TeX
+engines (XeTeX at present not included), but adds some handy wrappers so most
+of the hard work is automated.&lt;/p&gt;
+
+&lt;p&gt;The new code is pretty experimental, so we are hoping to get feedback on the
+interfaces. For example, we’ve provided &lt;code class=&quot;highlighter-rouge&quot;&gt;\benchmark:n&lt;/code&gt;, which automatically
+loops code to get enough run time to produce a ‘meaningful’ timing. Do we also
+need to have a &lt;code class=&quot;highlighter-rouge&quot;&gt;\benchmark_once:n&lt;/code&gt; version, or how about a &lt;code class=&quot;highlighter-rouge&quot;&gt;begin/end&lt;/code&gt; pairing
+for code that can’t be run in a loop?&lt;/p&gt;
+
+&lt;p&gt;We’d love to hear from developers on how they see this, either through
+&lt;a href=&quot;/latex3/code/#discussing-it&quot;&gt;a posting on the
+LATEX-L&lt;/a&gt; discussion list,
+by &lt;a href=&quot;mailto:latex-team@latex-project.org&quot;&gt;mail to the team&lt;/a&gt;, as a
+&lt;a href=&quot;https://github.com/latex3/latex3/issues&quot;&gt;GitHub issue&lt;/a&gt;, or otherwise.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Oct 2018 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2018/10/28/benchmarking/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/10/28/benchmarking/</guid>
+        
+        <category>latex3</category>
+        
+        <category>discussion</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New kids on the block</title>
@@ -447,66 +484,6 @@ data.&lt;/p&gt;
         <category>dynamic programming</category>
         
         <category>floats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New home for the regression test suite</title>
-        <description>&lt;h2 id=&quot;new-home-for-the-l3build-regression-test-suite&quot;&gt;New home for the &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; regression test suite&lt;/h2&gt;
-
-&lt;p&gt;The team have developed l3build starting from the need to support work
-on LaTeX3/expl3 code. We have been using it for other work, most
-obviously for testing and releasing the LaTeX2e kernel, for some time.&lt;/p&gt;
-
-&lt;p&gt;Having l3build in the same (Subversion) repository as LaTeX3
-developments did have some advantages for the team, but it meant that
-following the change log could be a bit tricky. Moreover, as it has
-become more general, the need to do releases of l3build to support
-non-LaTeX3 work has increased: for example, for releasing the LaTeX2e
-kernel! We have now spun l3build out to a new (Git) repository:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/latex3/l3build&quot;&gt;https://github.com/latex3/l3build&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The history in this new repository includes all of changes to l3build
-since the team established it as a more than a build script for just the
-LaTeX3 repo.&lt;/p&gt;
-
-&lt;p&gt;Please report issues, etc., with l3build in this new location.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-l3build-system-can-be-useful-to-any-package-writer&quot;&gt;The l3build system can be useful to any package writer&lt;/h2&gt;
-
-&lt;p&gt;The regression test suite carries “l3” in its name, but it was designed
-to support any typical TeX code development, i.e., it is in no way
-tied to LaTeX3 development.&lt;/p&gt;
-
-&lt;p&gt;It can therefore be very useful to any package writer who
-likes to set up&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;automated testing of code&lt;/li&gt;
-  &lt;li&gt;automated generation of documentation&lt;/li&gt;
-  &lt;li&gt;automated production of releases suitable for sending to CTAN&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You will find an introduction in the TUGboat article “l3build — A
-modern Lua test suite for TeX programming” from 2014 that can be found
-on the project &lt;a href=&quot;/publications/#publications-in-2014&quot;&gt;publication page&lt;/a&gt;.
-Check it out, in case you hear about this test suite for the first time!&lt;/p&gt;
-
-&lt;p&gt;Regards&lt;/p&gt;
-
-&lt;p&gt;Joseph, Frank&lt;/p&gt;
-</description>
-        <pubDate>Sun, 25 Jun 2017 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2017/06/25/regression-test-home/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/06/25/regression-test-home/</guid>
-        
-        <category>code</category>
-        
-        <category>l3build</category>
         
         
         <category>news</category>
