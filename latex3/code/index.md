@@ -67,16 +67,4 @@ where yy=Year and mm=Month, e.g.
 for all messages sent in March 2017.
 
 
-### Gmane interface
-
-Gmane also hosted a web interface, including archives, of the LATEX-L
-list but this became unavailable after that site changed ownership:
-[http://news.gmane.org/group/gmane.comp.tex.latex.latex3](http://news.gmane.org/group/gmane.comp.tex.latex.latex3)
-
-If that state continues much longer we may have to give up hoping and
-remove the above link (for now 2017/04) we keep it listed even though
-it doesn't work.
-
-
-
 
