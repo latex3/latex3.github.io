@@ -1,9 +1,9 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb123mitt-widows-orphans-preprint.pdf" target="_blank" onclick="vgwPixelCall('160b2a0b050a45dd809809405db26e90');">Managing forlorn paragraph lines (a.k.a. widows and orphans) in LaTeX</a>
+### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb123mitt-widows.pdf" target="_blank" onclick="vgwPixelCall('160b2a0b050a45dd809809405db26e90');">Managing forlorn paragraph lines (a.k.a. widows and orphans) in LaTeX</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ Paper submitted; to be published in TUGboat 39:3, 2018 
++ TUGboat 39:3, 2018 
 
 
 This article discusses the typographical problem of widows and
