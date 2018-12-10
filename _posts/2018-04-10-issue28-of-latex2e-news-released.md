@@ -31,8 +31,8 @@ Topics are:
  - Some changes to amsmath and update of amsldoc user's guide
 
 Details on the rollback concept is given in
-<a href="{{site.baseurl}}/publications/2018-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">"A rollback concept for packages and classes"</a>
+<a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">"A rollback concept for packages and classes"</a>
 and further information on how to report bugs can be found in the article
-<a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">"New rules for reporting bugs in the LaTeX core software"</a>.
+<a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">"New rules for reporting bugs in the LaTeX core software"</a>.
 
 

@@ -5,9 +5,67 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 Nov 2018 10:42:35 +0100</pubDate>
-    <lastBuildDate>Mon, 19 Nov 2018 10:42:35 +0100</lastBuildDate>
+    <pubDate>Mon, 10 Dec 2018 23:17:40 +0100</pubDate>
+    <lastBuildDate>Mon, 10 Dec 2018 23:17:40 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New December 2018 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;december-2018-latex-release-available&quot;&gt;December 2018 LaTeX release available&lt;/h1&gt;
+
+&lt;p&gt;We have released the December 2018 LaTeX distribution to CTAN. From
+there it will move to the major TeX distributions within a few days.&lt;/p&gt;
+
+&lt;p&gt;This release is a maintenance release in which we fixed a number of
+older and newer issues. The most important ones are documented in &lt;a href=&quot;/news/latex2e-news/ltnews29.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('c200b8c6707a4774b6b97cd616a96ced');&quot;&gt;“LaTeX2e News Issue 29”&lt;/a&gt;. This document
+can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bug reports for LaTeX2e and packages&lt;/li&gt;
+  &lt;li&gt;Changes to the LaTeX kernel&lt;/li&gt;
+  &lt;li&gt;Changes to packages in the tools category&lt;/li&gt;
+  &lt;li&gt;Changes to packages in the amsmath category&lt;/li&gt;
+  &lt;li&gt;Website updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bug-reporting-and-compatibility-mechanism&quot;&gt;Bug reporting and compatibility mechanism&lt;/h3&gt;
+
+&lt;p&gt;We like to take the opportunity to thank everybody who provided
+helpful bug reports using the issue tracker that we are now
+using. Writing up a good issue report including a clear MWE (Minimal
+Working Example) takes some effort, but it is also essential to help
+us identifying and fixing issues. Details on how to report bugs can be
+found in the article &lt;a href=&quot;/publications/2018-FMi-TUB-tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;“New rules
+for reporting bugs in the LaTeX core software”&lt;/a&gt;. Please consult
+this article if you intend to submit a problem.&lt;/p&gt;
+
+&lt;p&gt;While I have the stage I would also like to remind package developers and
+other interested parties to check out the rollback mechanism for
+packages that we introduced already with the last release. The more packages
+embrace this approach the better will it work for the users.  Details
+on the rollback concept is given in &lt;a href=&quot;/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('f018e721a0fe425899cee633a987ebff');&quot;&gt;“A
+rollback concept for packages and classes”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Seasonal Greetings
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 Dec 2018 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2018/12/10/issue29-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/12/10/issue29-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Experimental benchmarking functions</title>
@@ -241,9 +299,9 @@ TeX Live 2018 DVD. It was uploaded to CTAN and is now available on the mirror se
 &lt;/ul&gt;
 
 &lt;p&gt;Details on the rollback concept is given in
-&lt;a href=&quot;/publications/2018-version-rollback.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('f018e721a0fe425899cee633a987ebff');&quot;&gt;“A rollback concept for packages and classes”&lt;/a&gt;
+&lt;a href=&quot;/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('f018e721a0fe425899cee633a987ebff');&quot;&gt;“A rollback concept for packages and classes”&lt;/a&gt;
 and further information on how to report bugs can be found in the article
-&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;“New rules for reporting bugs in the LaTeX core software”&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;/publications/2018-FMi-TUB-tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;“New rules for reporting bugs in the LaTeX core software”&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 10 Apr 2018 02:00:00 +0200</pubDate>
@@ -421,69 +479,6 @@ page&lt;/a&gt; if you scroll down to 2014.&lt;/p&gt;
         <category>talks</category>
         
         <category>videos</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>DocEng '17: Effective Floating Strategies</title>
-        <description>&lt;h1 id=&quot;effective-floating-strategies&quot;&gt;Effective Floating Strategies&lt;/h1&gt;
-
-&lt;p&gt;At DocEng ‘17 the ACM Symposium on Document Engineering Frank
-presented a paper on “Effective Floating Strategies”
-that discusses globally optimizing pagination strategies for documents containing floats.
-The paper was one of the runner-ups for the “ACM Best Paper Award” of the
-conference.&lt;/p&gt;
-
-&lt;p&gt;The full paper can be downloaded from the ACM Digital library through a link on the &lt;a href=&quot;/publications/&quot;&gt;Publications
-page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;abstract-of-the-paper&quot;&gt;Abstract of the Paper&lt;/h3&gt;
-
-&lt;p&gt;This paper presents an extension to the general framework for globally
-optimized pagination described in Mittelbach (2016). The extended
-algorithm supports automatic placement of floats as part of the
-optimization. It uses a flexible constraint model that allows for the
-implementation of typical typographic rules that can be weighted
-against each other to support different application scenarios.&lt;/p&gt;
-
-&lt;p&gt;By “flexible” we mean that the rules of typographic presentation of
-the content of a document element are not fixed—but neither are they
-completely arbitrary; also, some of these rules are absolute whereas
-others are in the form of preferences.&lt;/p&gt;
-
-&lt;p&gt;It is easy to see that without restrictions the float placement
-possibilities grow exponentially if the number of floats has a linear
-relation to the document size. It is therefore important to restrict
-the objective function used for optimization in a way that the
-algorithm does not have to evaluate all theoretically possible
-placements while still being guaranteed to find an optimal solution.&lt;/p&gt;
-
-&lt;p&gt;Different objective functions are being evaluated against typical
-typographic requirements in order to arrive at a system that is both
-rich in its expressiveness of modeling a large class of pagination
-applications while at the same time is capable of solving the
-optimization problem in an acceptable time frame for realistic input
-data.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 18 Sep 2017 00:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2017/09/18/DocEng-paper/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/09/18/DocEng-paper/</guid>
-        
-        <category>latex</category>
-        
-        <category>luatex</category>
-        
-        <category>research</category>
-        
-        <category>DocEng</category>
-        
-        <category>dynamic programming</category>
-        
-        <category>floats</category>
         
         
         <category>news</category>
