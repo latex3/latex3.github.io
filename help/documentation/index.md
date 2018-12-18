@@ -132,6 +132,18 @@ Here are [his comments on the translation](readme_jpn/).
 
 
 
+### Quick summary of changes by release
+
+Changes made to the LaTeX kernel or to core packages maintained by the
+LaTeX team are discussed in some detail in the
+<a href="{{site.baseurl}}/news/latex2e-news/">LaTeX News Newsletters</a>
+that come as part of each release.
+A summary sorted by release is given in the following document:
++ <a href="{{site.baseurl}}/help/documentation/latexchanges.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('a7c07774d9444aa58b6cf007a1a8d349');">Changes to the LaTeX2ε format since 2014</a>
+
+
 ### Source code documentation
 
 The full documentation of the source code with all commands and their
