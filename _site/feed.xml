@@ -5,9 +5,99 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Dec 2018 16:37:36 +0100</pubDate>
-    <lastBuildDate>Tue, 18 Dec 2018 16:37:36 +0100</lastBuildDate>
+    <pubDate>Wed, 19 Dec 2018 11:55:31 +0100</pubDate>
+    <lastBuildDate>Wed, 19 Dec 2018 11:55:31 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Uploading to CTAN with l3build</title>
+        <description>&lt;h1 id=&quot;uploading-to-ctan-with-l3build&quot;&gt;Uploading to CTAN with l3build&lt;/h1&gt;
+
+&lt;p&gt;A new version of &lt;a href=&quot;https://ctan.org/pkg/l3build&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;&lt;/a&gt; has recently been released with the ability
+to use &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; to automatically upload packages to CTAN.&lt;/p&gt;
+
+&lt;p&gt;This functionality has been on our wishlist for some time, with early
+thoughts around the idea of “reverse engineering” the CTAN upload page like the
+(now defunct) &lt;a href=&quot;https://ctan.org/pkg/ctanupload&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctanupload&lt;/code&gt;&lt;/a&gt; tool by Martin Scharrer.
+Luckily for us, the CTAN team added an API to allow developers to interface
+with the CTAN upload process in a well-documented and stable manner.&lt;/p&gt;
+
+&lt;p&gt;This API has been used for some time by the &lt;a href=&quot;https://ctan.org/pkg/ctan-o-mat&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctan-o-mat&lt;/code&gt;&lt;/a&gt; tool by Gerd Neugebauer,
+which provides the ability to send package updates through to CTAN via the command line,
+with metadata for the package loadable via a configuration file.
+While it’s not a cumbersome process to manually upload packages through CTAN, it’s nice
+to be able to automate the process.&lt;/p&gt;
+
+&lt;p&gt;For a tool like &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;, we prefer not to rely on additional tools beyond a standard TeX distribution,
+and as Windows now provides a &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; utility this has allowed us to build a CTAN-uploading tool into &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;
+directly. The mechanics of this tool were written by David Carlisle; thanks!&lt;/p&gt;
+
+&lt;p&gt;Its use is relatively straightforward. In the package’s &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file, add a table
+along the following lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = {
+  pkg          = &quot;vertbars&quot;,
+  version      = &quot;v1.0c&quot;,
+  author       = &quot;Peter R Wilson; Will Robertson&quot;,
+  license      = &quot;lppl1.3c&quot;,
+  summary      = &quot;Mark vertical rules in margin of text&quot;,
+  ctanPath     = &quot;/macros/latex/contrib/vertbars&quot;,
+  repository   = &quot;https://github.com/wspr/herries-press/&quot;,
+  update       = true,
+  announcement = [[
+    This release adds an explicit \par both before and after the environment.
+  ]]
+  note         = [[Uploaded automatically by l3build...]]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Additional fields are possible; this example isn’t intended to be exhaustive.
+The full list of possibilities is available either through the &lt;a href=&quot;https://ctan.org/help/submit&quot;&gt;CTAN API documentation&lt;/a&gt;
+or through the l3build documentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-l3build-upload&quot;&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build upload&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Assuming the above information has been added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; configuration file,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; will check whether any required fields have been omitted and prompt them in
+an interactive terminal.
+In particular, the user will be asked their name and email address for verification purposes;
+in general this information should not be hard-coded into the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file if that file
+is to be stored publicly.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-automation-and-future-plans&quot;&gt;Further automation and future plans&lt;/h2&gt;
+
+&lt;p&gt;The current support does not attempt to automate any aspect of the release process. For instance:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You may wish to have &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build tag&lt;/code&gt; update the package version automatically.&lt;/li&gt;
+  &lt;li&gt;You may wish to query the name and email address from your Git user credentials.&lt;/li&gt;
+  &lt;li&gt;You may wish to populate the &lt;code class=&quot;highlighter-rouge&quot;&gt;announcement&lt;/code&gt; field from an associated &lt;code class=&quot;highlighter-rouge&quot;&gt;CHANGELOG&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And so on. It’s also worth noting that this tool does &lt;em&gt;not&lt;/em&gt; automatically run &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt;
+as this process can be very slow if the test suite needs to be re-run. It is a manual process
+to run the appropriate &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; then &lt;code class=&quot;highlighter-rouge&quot;&gt;ctan&lt;/code&gt; then &lt;code class=&quot;highlighter-rouge&quot;&gt;upload&lt;/code&gt; steps.&lt;/p&gt;
+
+&lt;p&gt;As we gain more experience with how we and others are using the tool we will look into providing
+more functions around automation and/or convenience, especially integration with version control.&lt;/p&gt;
+
+&lt;p&gt;In the mean time, I’m looking forward to having it be just that little bit easier to make
+a quick change to a package and send it through to CTAN.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 19 Dec 2018 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2018/12/19/l3build-upload/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2018/12/19/l3build-upload/</guid>
+        
+        <category>latex3</category>
+        
+        <category>discussion</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New December 2018 LaTeX release available</title>
@@ -449,36 +539,6 @@ LaTeX Project Team).&lt;/p&gt;
         <category>Git</category>
         
         <category>bug reporting</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Videos from the 2014 UK-TUG conference</title>
-        <description>&lt;h2 id=&quot;videos-from-the-2014-uk-tug-conference-available&quot;&gt;Videos from the 2014 UK-TUG conference available&lt;/h2&gt;
-
-&lt;p&gt;Somehow those got lost in some email folder of mine, so I’ll announce them about three years late. However,
-the talks by David and Joseph discuss a number of important topics that are still very relevant, so better late than never:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Fixing LaTeX2e – a new and better plan than using fixltx2e that never worked in practice&lt;/li&gt;
-  &lt;li&gt;Reliable Releases: l3build – a general package and distribution builder for any type of software in the TeX world (not just LaTeX3)&lt;/li&gt;
-  &lt;li&gt;Case Changing in the Unicode world – and the issues related to this.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The links to the videos can be found on the project &lt;a href=&quot;/publications/&quot;&gt;publication
-page&lt;/a&gt; if you scroll down to 2014.&lt;/p&gt;
-
-&lt;p&gt;Enjoy – Frank&lt;/p&gt;
-</description>
-        <pubDate>Tue, 24 Oct 2017 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2017/10/24/videos-from-2014-uktug-conference/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/10/24/videos-from-2014-uktug-conference/</guid>
-        
-        <category>talks</category>
-        
-        <category>videos</category>
         
         
         <category>news</category>

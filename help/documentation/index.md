@@ -32,8 +32,9 @@ description: "References to the official LaTeX documentation and to documentatio
         <ul>
 	  <li><a href="#general-documentation">General documentation</a></li>
 	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
-	  <li><a href="#source-code-documentation">Source code documentation</a></li>
 	  <li><a href="#japanese-translations">Japanese translations</a></li>
+	  <li><a href="#quick-summary-of-changes-by-release">Summary of changes by release</a></li>
+	  <li><a href="#source-code-documentation">Source code documentation</a></li>
         </ul>
      </li>	
       <li><a href="#other-non-english-documentation">Other non-english documentation resources</a>
