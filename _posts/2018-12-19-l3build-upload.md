@@ -37,16 +37,24 @@ along the following lines:
       pkg          = "vertbars",
       version      = "v1.0c",
       author       = "Peter R Wilson; Will Robertson",
+      uploader     = "Will Robertson"
       license      = "lppl1.3c",
       summary      = "Mark vertical rules in margin of text",
       ctanPath     = "/macros/latex/contrib/vertbars",
       repository   = "https://github.com/wspr/herries-press/",
-      update       = true,
       note         = [[Uploaded automatically by l3build...]]
     }
 
-Then to submit a new version of the package to CTAN you would first run `l3build ctan`
-to generate the package zip archive, then execute
+Additional fields to what are listed above are possible; this example isn't intended to be exhaustive.
+The full list of possibilities is available either through the [CTAN API documentation](https://ctan.org/help/submit)
+or through the `l3build` documentation.
+
+
+## Running `l3build upload`
+
+With the `build.lua` configuration file in place, to submit a new version of the package
+to CTAN you would first run `l3build ctan` to generate the package zip archive, then execute
+something like
 
     l3build upload --message "Minor update to fix some erroneous spaces from missing % signs"
 
@@ -55,21 +63,17 @@ contains the release notes for this update. Note, however, that there is a fairl
 character limit on what can be included here; you may wish to maintain a longer, more detailed,
 list of changes in a separate CHANGELOG file.
 
-Additional fields to what are listed above are possible; this example isn't intended to be exhaustive.
-The full list of possibilities is available either through the [CTAN API documentation](https://ctan.org/help/submit)
-or through the l3build documentation.
-
-
-## Running `l3build upload`
-
-Assuming the above information has been added to the `build.lua` configuration file,
-`l3build` will check whether any required fields have been omitted and prompt them in
-an interactive terminal.
-In particular, the user will be asked their name and email address for verification purposes;
+Before the upload process, `l3build` will check whether any required fields have been
+omitted and prompt them in an interactive terminal.
+In particular, the user will be asked their email address for verification purposes;
 in general this information should not be hard-coded into the `build.lua` file if that file
 is to be stored publicly.
 
-For example, you could create a file `build-private.lua` file in your personal `texmf/scripts` directory
+Rather than an interactive query, the email field can also be set as a command line option as in
+
+    l3build upload --email "my.email@mail.com" ...
+
+Alternatively, you could create a file `build-private.lua` file in your personal `texmf/scripts` directory
 containing
 
     uploadconfig = uploadconfig or {}
@@ -83,9 +87,11 @@ And read this into your `build.lua` file with `require('build-private.lua')`.
 
 The current support does not attempt to automate any aspect of the release process. For instance:
 
+* You may wish additional logic to check the status of your version control system
+  before proceeding with tagging or upload.
 * You may wish to have `l3build tag` update the package version automatically.
-* You may wish to query the name and email address from your Git user credentials.
-* You may wish to populate the `announcement` field within `uploadconfig` automatically from an associated `CHANGELOG` file.
+* You may wish to populate the `announcement` field within `uploadconfig` automatically
+  from an associated `CHANGELOG` file.
 
 And so on. It's also worth noting that this tool does *not* automatically run `l3build ctan`
 as that process can be very slow if the test suite needs to be re-run. It is a manual process
