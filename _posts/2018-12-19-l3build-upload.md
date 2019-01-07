@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Uploading to CTAN with l3build"
-date: 2018-12-19 00:00:00
+date: 2019-01-07 00:00:00
 description: "Uploading to CTAN with l3build"
 excerpt: "A new version of l3build has recently been released with the ability
 to use curl to automatically upload packages to CTAN."
@@ -42,13 +42,20 @@ along the following lines:
       ctanPath     = "/macros/latex/contrib/vertbars",
       repository   = "https://github.com/wspr/herries-press/",
       update       = true,
-      announcement = [[
-        This release adds an explicit \par both before and after the environment.
-      ]]
       note         = [[Uploaded automatically by l3build...]]
     }
 
-Additional fields are possible; this example isn't intended to be exhaustive.
+Then to submit a new version of the package to CTAN you would first run `l3build ctan`
+to generate the package zip archive, then execute
+
+    l3build upload --message "Minor update to fix some erroneous spaces from missing % signs"
+
+For a longer message you could use `--file releasenotes-v1.0c.txt` where the listed filename
+contains the release notes for this update. Note, however, that there is a fairly small
+character limit on what can be included here; you may wish to maintain a longer, more detailed,
+list of changes in a separate CHANGELOG file.
+
+Additional fields to what are listed above are possible; this example isn't intended to be exhaustive.
 The full list of possibilities is available either through the [CTAN API documentation](https://ctan.org/help/submit)
 or through the l3build documentation.
 
@@ -62,6 +69,15 @@ In particular, the user will be asked their name and email address for verificat
 in general this information should not be hard-coded into the `build.lua` file if that file
 is to be stored publicly.
 
+For example, you could create a file `build-private.lua` file in your personal `texmf/scripts` directory
+containing
+
+    uploadconfig = uploadconfig or {}
+    uploadconfig.uploader = "My Name"
+    uploadconfig.email    = "my.name@gmail.com"
+
+And read this into your `build.lua` file with `require('build-private.lua')`.
+
 
 ## Further automation and future plans
 
@@ -69,16 +85,16 @@ The current support does not attempt to automate any aspect of the release proce
 
 * You may wish to have `l3build tag` update the package version automatically.
 * You may wish to query the name and email address from your Git user credentials.
-* You may wish to populate the `announcement` field from an associated `CHANGELOG` file.
+* You may wish to populate the `announcement` field within `uploadconfig` automatically from an associated `CHANGELOG` file.
 
 And so on. It's also worth noting that this tool does *not* automatically run `l3build ctan`
-as this process can be very slow if the test suite needs to be re-run. It is a manual process
+as that process can be very slow if the test suite needs to be re-run. It is a manual process
 to run the appropriate `tag` then `ctan` then `upload` steps.
 
 As we gain more experience with how we and others are using the tool we will look into providing
 more functions around automation and/or convenience, especially integration with version control.
 
-In the mean time, I'm looking forward to having it be just that little bit easier to make
+In the mean time, I'm looking forward to having it be a good bit easier to make
 a quick change to a package and send it through to CTAN.
 
 
