@@ -52,6 +52,14 @@
 
 {% include _papers/paper_2001-FMi-TUB-The-trace-package.md %}
 
+<hr class="conference-start">
+
+## From the twentieth annual ACM symposium on Principles of distributed computing, (Newport, Rhode Island, USA)
+
+{% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
+
+<hr class="conference-end">
+
 {% include _papers/paper_2000-FMi-TUB-Formatting-documents-with-floats.md %}
 {% include _papers/paper_2000-DPC-ACM-OpenMath-MathML-and-XSL.md %}
 

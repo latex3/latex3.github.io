@@ -36,6 +36,15 @@ description: "Selection of links to PDF versions of various articles published b
 <hr class="conference-end">
 
 
+<hr class="conference-start">
+
+## From the twentieth annual ACM symposium on Principles of distributed computing, (Newport, Rhode Island, USA)
+
+{% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
+
+<hr class="conference-end">
+
+
 {% include _papers/paper_1995-FMi-talk-LaTeX2e-encoding-interfaces.md %}
 
 

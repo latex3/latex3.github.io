@@ -20,11 +20,20 @@ description: "Selection of links to PDF versions of various articles published b
 
 {% include _papers/paper_2016-FMi-TUB-RIP-SPQR.md %}
 
-<!-- in sorted into topics yet -->
+<!-- not in sorted into topics yet -->
 {% include _papers/paper_2009-CAR-TUG-TeX-free-LaTeX-an-overview.md %}
 {% include _papers/paper_2009-CAR-TUG-Standards-for-LaTeX-documents-and-processors.md %}
 {% include _papers/paper_2007-CAR-TUG-Vistas-for-TeX.md %}
-<!-- in sorted into topics yet -->
+
+<hr class="conference-start">
+
+## From the twentieth annual ACM symposium on Principles of distributed computing, (Newport, Rhode Island, USA)
+
+{% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
+
+<hr class="conference-end">
+
+<!-- not in sorted into topics yet -->
 
 {% include _papers/paper_1999-FMi-TUG-Grimm.md %}
 
