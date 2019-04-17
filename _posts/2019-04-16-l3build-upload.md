@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Uploading to CTAN with l3build"
-date: 2019-01-07 00:00:00
+date: 2019-04-16 00:00:00
 description: "Uploading to CTAN with l3build"
 excerpt: "A new version of l3build has recently been released with the ability
 to use curl to automatically upload packages to CTAN."
 categories: news
-tags: [latex3,discussion]
+tags: [latex3,l3build,discussion]
 ---
 
 # Uploading to CTAN with l3build
