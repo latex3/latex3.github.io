@@ -42,6 +42,8 @@
 
 {% include _papers/paper_2007-wspr-TUB-tb89robertson.md %}
 
+{% include _papers/paper_2006-FMi-FSM-interview.md %}
+
 {% include _papers/paper_2006-MHo-TUB-tb87hoegholm.md %}
 {% include _papers/paper_2006-CAR-TUB-tb87rowley.md %}
 
@@ -54,7 +56,7 @@
 
 <hr class="conference-start">
 
-## From the twentieth annual ACM symposium on Principles of distributed computing, (Newport, Rhode Island, USA)
+## From the twentieth annual ACM symposium on Principles of distributed computing in 2001 (Newport, Rhode Island, USA)
 
 {% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
 

@@ -5,9 +5,96 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Apr 2019 21:40:22 +0200</pubDate>
-    <lastBuildDate>Wed, 17 Apr 2019 21:40:22 +0200</lastBuildDate>
+    <pubDate>Tue, 23 Apr 2019 10:48:44 +0200</pubDate>
+    <lastBuildDate>Tue, 23 Apr 2019 10:48:44 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Two papers on the history of LaTeX</title>
+        <description>&lt;h1 id=&quot;two-papers-on-the-history-of-latex&quot;&gt;Two papers on the history of LaTeX&lt;/h1&gt;
+
+&lt;p&gt;We have added two papers on different aspects of the history of LaTeX
+to the site.  While both are somewhat older they presents interesting
+accounts on the evolution of LaTeX.&lt;/p&gt;
+
+&lt;p&gt;The first was given by Chris Rowley at a conference selebrating Leslie
+Lamport’s 60th birthday and discusses the relvance of LaTeX throughout
+several decades (including some interesting predictions be checked
+against reality.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-latex-legacypublications2001-car-latex-legacypdf&quot;&gt;&lt;a href=&quot;/publications/2001-CAR-LaTeX-legacy.pdf&quot;&gt;The LaTeX Legacy&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Published paper, PODC ‘01 Proceedings of the twentieth annual ACM symposium on Principles of distributed computing, Pages 17-25&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keywords: LaTeX history, LaTeX future&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Abstract
+    &lt;blockquote&gt;
+      &lt;p&gt;The second edition of The LaTeX Manual begins: `LaTeX is a system for
+typesetting documents. Its first widely available version,
+mysteriously numbered 2.09, appeared in 1985.’&lt;/p&gt;
+
+      &lt;p&gt;It is too early for a complete critical assessment of the impact of
+LaTeX 2.09 because its world-wide effects on many aspects of many
+cultures, not least scientific publication, remain strong after 15
+years—and that itself is significant in a technological world where a
+mere 15 months of fame can make and break an idea.&lt;/p&gt;
+
+      &lt;p&gt;Therefore this paper provides simply a review and evaluation of the
+relationship between TeX, LaTeX and some of the major technical
+developments in the world of quality automated formatting since the
+publication of LaTeX 2.09 in 1985. It is is neither definitive nor
+comprehensive but I hope it is informative.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The second is an interview carried out by Dave Walden (for the TUG
+interview corner) and Gianluca Pignalberi (for the Free Software
+Magazine).&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefpublications2006-fmi-fsm-interviewpdf-targetblank-onclickvgwpixelcall8d3e30d44868430f853c7263dd693030interview-of-frank-mittelbach----a-combined-interview-of-the-latex-project-directora&quot;&gt;&lt;a href=&quot;/publications/2006-FMi-FSM-interview.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('8d3e30d44868430f853c7263dd693030');&quot;&gt;Interview of Frank Mittelbach – A combined interview of the LaTeX Project director&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;, Gianluca Pignalberi, Dave Walden&lt;/li&gt;
+  &lt;li&gt;Published paper, 2006, Free Software Magazine&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keywords: LaTeX history, LaTeX future, LPPL, LaTeX3&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Abstract
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.freesoftwaremagazine.com/&quot;&gt;Free Software Magazine (FSM)&lt;/a&gt;
+and the &lt;a href=&quot;https://www.tug.org/&quot;&gt;TeX Users Group (TUG)&lt;/a&gt; both like to publish
+interviews. Recently, Gianluca Pignalberi of Free Software Magazine
+and Dave Walden of TUG both approached Frank Mittelbach about
+interviewing him. Rather than doing two separate interviews,
+Mittelbach, Pignalberi, and Walden decided on a combined interview in
+keeping with the mutual interests already shared by Free Software
+Magazine and TUG.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We hope that both of them will give you some interesting insights into
+the LaTeX evolution.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 23 Apr 2019 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2019/04/23/history-papers/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/04/23/history-papers/</guid>
+        
+        <category>latex history</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Uploading to CTAN with l3build</title>
@@ -507,68 +594,6 @@ page&lt;/a&gt;.&lt;/p&gt;
         <category>dynamic programming</category>
         
         <category>fonts</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>LaTeX sources moved from SVN to GitHub / New Bug tracker workflow</title>
-        <description>&lt;h2 id=&quot;latex2e-sources-moved-from-a-private-svn-repository-to-github&quot;&gt;LaTeX2e sources moved from a private SVN repository to GitHub&lt;/h2&gt;
-
-&lt;p&gt;In the past the development version of the LaTeX2e source files has
-been managed in a Subversion source control system with read access
-for the public. This way it was possible to download in an emergency
-the latest version even before it was released to CTAN and made its
-way into the various distributions.&lt;/p&gt;
-
-&lt;p&gt;We have recently changed this setup and now manage the sources using
-Git and placed the master sources on GitHub at
-&lt;a href=&quot;https://github.com/latex3/latex2e&quot;&gt;https://github.com/latex3/latex2e&lt;/a&gt;
-where we already store the sources for expl3 and other work.
-As before, direct write access is restricted to LaTeX Project Team
-members, but everything is publically accessible including the ability
-to download, clone (using Git) or checkout (using SVN).&lt;/p&gt;
-
-&lt;p&gt;More details are given in the article
-“&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;New rules for reporting
-bugs in the LaTeX core software&lt;/a&gt;”
-that has been submitted to TUGboat.&lt;/p&gt;
-
-&lt;h2 id=&quot;new-workflow-for-reporting-bugs&quot;&gt;New workflow for reporting bugs&lt;/h2&gt;
-
-&lt;p&gt;For more than two decades we used GNATS, an open source bug tracking
-system developed by the FSF. While that has served us well in the past
-it started to show its age more and more. So 
-as part of this move we also decided to finally retire the old LaTeX
-bug database and replace it with the standard “Issue Tracker” available at
-Github.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;/bugs/&quot;&gt;page on bug reporting on this site&lt;/a&gt; has
-been updated to describe the new workflow and the article
-“&lt;a href=&quot;/publications/tb121mitt-bug-reporting.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');&quot;&gt;New rules for reporting
-bugs in the LaTeX core software&lt;/a&gt;”
-gives a lot of additional information.&lt;/p&gt;
-
-&lt;p&gt;If you happen to encounter a bug (which we hope you will be spared
-from) we strongly suggest you consult both resources to learn how to
-best report your issue and to whom (as that may or may not be the
-LaTeX Project Team).&lt;/p&gt;
-
-&lt;p&gt;With seasonal greetings   – Frank&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Dec 2017 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2017/12/15/github-move/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2017/12/15/github-move/</guid>
-        
-        <category>LaTeX2e</category>
-        
-        <category>SVN</category>
-        
-        <category>Git</category>
-        
-        <category>bug reporting</category>
         
         
         <category>news</category>

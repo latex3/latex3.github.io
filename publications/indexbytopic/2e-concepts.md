@@ -36,9 +36,12 @@ description: "Selection of links to PDF versions of various articles published b
 <hr class="conference-end">
 
 
+{% include _papers/paper_2006-FMi-FSM-interview.md %}
+
+
 <hr class="conference-start">
 
-## From the twentieth annual ACM symposium on Principles of distributed computing, (Newport, Rhode Island, USA)
+## From the twentieth annual ACM symposium on Principles of distributed computing in 2001 (Newport, Rhode Island, USA)
 
 {% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
 
