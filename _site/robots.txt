@@ -3,7 +3,6 @@ User-agent: AdsBot-Google
 Disallow: 
 
 User-agent: *
-Disallow: /
 Disallow: /cgi-bin/
 Disallow: /publications/eurotex-2005-notes/
 Disallow: /publications/pdfTeX-meeting-2005-09-24/

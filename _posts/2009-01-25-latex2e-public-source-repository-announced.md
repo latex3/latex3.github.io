@@ -15,7 +15,7 @@ No changes are being made to the way the LaTeX is distributed, so it will still 
 
 The addition of this public repository will allow users to track progress of the LaTeX codebase, and install fixes to critical files without waiting for the next major release of the software.
 
-The Subversion repository is located here: [http://www.latex-project.org/svnroot/latex2e-public/](#fixme).
+The Subversion repository is located here: `http://www.latex-project.org/svnroot/latex2e-public/`. **As of 2019 this is no longer online, the sources are on GitHub for a number of years. Therefore the checkout instructions below are also only of historical interestand no longer accurate!**
 
 You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements: 
 

@@ -156,9 +156,9 @@ will download all files including their
 history (back to 2009) and amounts to **roughly 1.4Gb** so that is quite large.
 
 *Note: If you had bookmarked the old SVN repository at
-  [https://www.latex-project.org/svnroot/latex2e-public/](https://www.latex-project.org/svnroot/latex2e-public/)
-please update that bookmark to the new GIT repository as the SVN one is
-frozen and no longer up-to-date and may soon vanish!*
+  `https://www.latex-project.org/svnroot/latex2e-public/`
+please update that bookmark to the new GIT repository as we have finally removed it.*
+
 
 
 
@@ -199,7 +199,7 @@ There might even be some earlier versions. All files have been pulled
 from the SAILDART archive site at http://z.baumgart.org/ (no longer
 online) which was based on archive tapes from SAIL at Stanford.
 
-More historic material can be found at [ftp://ftp.tug.org/historic](ftp://ftp.tug.org/historic).
+More historic material can be found at [ftp://ftp.tug.org/historic](ftp://ftp.tug.org/historic) (you may not be able to open this in all browsers ---  alternatively try [https://www.math.utah.edu/pub/tex/historic/](https://www.math.utah.edu/pub/tex/historic/)).
 
 ***
 
