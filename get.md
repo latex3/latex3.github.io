@@ -156,9 +156,9 @@ will download all files including their
 history (back to 2009) and amounts to **roughly 1.4Gb** so that is quite large.
 
 *Note: If you had bookmarked the old SVN repository at
-  [https://www.latex-project.org/svnroot/latex2e-public/](https://www.latex-project.org/svnroot/latex2e-public/)
-please update that bookmark to the new GIT repository as the SVN one is
-frozen and no longer up-to-date and may soon vanish!*
+  `https://www.latex-project.org/svnroot/latex2e-public/`
+please update that bookmark to the new GIT repository as we have finally removed it.*
+
 
 
 

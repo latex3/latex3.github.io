@@ -37,7 +37,7 @@ A few important preparation steps to go through:
     software then please contact the developer, and not us!
  1. **For bugs related to LaTeX3 code** (expl3, xparse
     and so on): Do not report the bug here but instead use
-    the <a href="https://github.com/latex3/svn-mirror/issues">GitHub
+    the <a href="https://github.com/latex3/latex3/issues">GitHub
     issue tracker</a>.
  1. **Run LaTeX on the test file.** Send the test file
     and the resulting transcript file using the form below.
