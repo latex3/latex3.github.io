@@ -155,9 +155,8 @@ svn co https://github.com/latex3/latex2e.git
 will download all files including their
 history (back to 2009) and amounts to **roughly 1.4Gb** so that is quite large.
 
-*Note: If you had bookmarked the old SVN repository at
-  `https://www.latex-project.org/svnroot/latex2e-public/`
-please update that bookmark to the new GIT repository as we have finally removed it.*
+*Note: If you had bookmarked the old SVN repository please update that
+bookmark to the new GIT repository as we have finally removed it.*
 
 
 
