@@ -73,7 +73,7 @@ Rather than an interactive query, the email field can also be set as a command l
 
     l3build upload --email "my.email@mail.com" ...
 
-Alternatively, you could create a file `build-private.lua` file in your personal `texmf/scripts` directory
+Alternatively, you could create a `build-private.lua` file in your personal `texmf/scripts` directory
 containing
 
     uploadconfig = uploadconfig or {}

@@ -11,13 +11,13 @@ tags: [latex history]
 # Two papers on the history of LaTeX
 
 We have added two papers on different aspects of the history of LaTeX
-to the site.  While both are somewhat older they presents interesting
+to the site.  While both are somewhat older they present interesting
 accounts on the evolution of LaTeX.
 
-The first was given by Chris Rowley at a conference selebrating Leslie
-Lamport's 60th birthday and discusses the relvance of LaTeX throughout
-several decades (including some interesting predictions be checked
-against reality.
+The first was given by Chris Rowley at a conference celebrating Leslie
+Lamport's 60th birthday and discusses the relevance of LaTeX throughout
+several decades (including some interesting predictions that can be checked
+against reality).
 
 {% include _papers/paper_2001-CAR-ACM-LaTeX-legacy.md %}
 
@@ -28,8 +28,8 @@ Magazine).
 {% include _papers/paper_2006-FMi-FSM-interview.md %}
 
 
-We hope that both of them will give you some interesting insights into
-the LaTeX evolution.
+We hope that both of them will give you some interesting insights
+into the evolution of LaTeX.
 
 
 
