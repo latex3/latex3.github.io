@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 24 Jun 2019 12:44:48 +0200</pubDate>
-    <lastBuildDate>Mon, 24 Jun 2019 12:44:48 +0200</lastBuildDate>
+    <pubDate>Sun, 07 Jul 2019 16:41:05 +0200</pubDate>
+    <lastBuildDate>Sun, 07 Jul 2019 16:41:05 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -14,22 +14,20 @@
         <description>&lt;h1 id=&quot;two-papers-on-the-history-of-latex&quot;&gt;Two papers on the history of LaTeX&lt;/h1&gt;
 
 &lt;p&gt;We have added two papers on different aspects of the history of LaTeX
-to the site.  While both are somewhat older they presents interesting
+to the site.  While both are somewhat older they present interesting
 accounts on the evolution of LaTeX.&lt;/p&gt;
 
-&lt;p&gt;The first was given by Chris Rowley at a conference selebrating Leslie
-Lamport’s 60th birthday and discusses the relvance of LaTeX throughout
-several decades (including some interesting predictions be checked
-against reality.&lt;/p&gt;
+&lt;p&gt;The first was given by Chris Rowley at a conference celebrating Leslie
+Lamport’s 60th birthday and discusses the relevance of LaTeX throughout
+several decades (including some interesting predictions that can be checked
+against reality).&lt;/p&gt;
 
 &lt;h3 id=&quot;the-latex-legacypublications2001-car-latex-legacypdf&quot;&gt;&lt;a href=&quot;/publications/2001-CAR-LaTeX-legacy.pdf&quot;&gt;The LaTeX Legacy&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Published paper, PODC ‘01 Proceedings of the twentieth annual ACM symposium on Principles of distributed computing, Pages 17-25&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Keywords: LaTeX history, LaTeX future&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Keywords: LaTeX history, LaTeX future&lt;/li&gt;
   &lt;li&gt;Abstract
     &lt;blockquote&gt;
       &lt;p&gt;The second edition of The LaTeX Manual begins: `LaTeX is a system for
@@ -62,9 +60,7 @@ Magazine).&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;, Gianluca Pignalberi, Dave Walden&lt;/li&gt;
   &lt;li&gt;Published paper, 2006, Free Software Magazine&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Keywords: LaTeX history, LaTeX future, LPPL, LaTeX3&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Keywords: LaTeX history, LaTeX future, LPPL, LaTeX3&lt;/li&gt;
   &lt;li&gt;Abstract
     &lt;blockquote&gt;
       &lt;p&gt;&lt;a href=&quot;http://www.freesoftwaremagazine.com/&quot;&gt;Free Software Magazine (FSM)&lt;/a&gt;
@@ -81,8 +77,8 @@ Magazine and TUG.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;We hope that both of them will give you some interesting insights into
-the LaTeX evolution.&lt;/p&gt;
+&lt;p&gt;We hope that both of them will give you some interesting insights
+into the evolution of LaTeX.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 23 Apr 2019 02:00:00 +0200</pubDate>
@@ -167,7 +163,7 @@ is to be stored publicly.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Alternatively, you could create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;build-private.lua&lt;/code&gt; file in your personal &lt;code class=&quot;highlighter-rouge&quot;&gt;texmf/scripts&lt;/code&gt; directory
+&lt;p&gt;Alternatively, you could create a &lt;code class=&quot;highlighter-rouge&quot;&gt;build-private.lua&lt;/code&gt; file in your personal &lt;code class=&quot;highlighter-rouge&quot;&gt;texmf/scripts&lt;/code&gt; directory
 containing&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = uploadconfig or {}
@@ -362,7 +358,7 @@ Frank&lt;/p&gt;
         <description>&lt;h3 id=&quot;japanese-translations-of-some-important-documents&quot;&gt;Japanese translations of some important documents&lt;/h3&gt;
 
 &lt;p&gt;Yukitoshi FUJIMURA kindly translated two documents that are distributed with standard
-LaTeX to the Japanese language. These are are&lt;/p&gt;
+LaTeX to the Japanese language. These are&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;LaTeX2e for authors&lt;/li&gt;

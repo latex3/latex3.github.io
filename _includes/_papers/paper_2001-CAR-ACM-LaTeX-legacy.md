@@ -4,7 +4,6 @@
 + [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley)
 + Published paper, PODC '01 Proceedings of the twentieth annual ACM symposium on Principles of distributed computing, Pages 17-25
 + Keywords: LaTeX history, LaTeX future
-
 + Abstract
 >The second edition of The LaTeX Manual begins: `LaTeX is a system for
 >typesetting documents. Its first widely available version,

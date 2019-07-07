@@ -113,7 +113,6 @@ Yukitoshi FUJIMURA kindly translated two of the above documents to the Japanese 
   <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.tex"
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> [source]</a>
-   
 + <a href="{{site.baseurl}}/help/documentation/amsldoc_jpn.pdf"
      target="_blank"
      onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">amsmath パッケージユーザガイド（Version2.1）</a>  (User's Guide for the amsmath Package)

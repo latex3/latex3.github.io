@@ -5,7 +5,6 @@
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Gianluca Pignalberi, Dave Walden 
 + Published paper, 2006, Free Software Magazine
 + Keywords: LaTeX history, LaTeX future, LPPL, LaTeX3
-
 + Abstract
 > [Free Software Magazine (FSM)](http://www.freesoftwaremagazine.com/)
 > and the [TeX Users Group (TUG)](https://www.tug.org/) both like to publish

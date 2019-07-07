@@ -12,7 +12,7 @@ tags: [latex2e,publications,translations]
 ### Japanese translations of some important documents
 
 Yukitoshi FUJIMURA kindly translated two documents that are distributed with standard
-LaTeX to the Japanese language. These are are
+LaTeX to the Japanese language. These are
 
  - LaTeX2e for authors
  - User’s Guide for the amsmath Package (Version 2.1)
