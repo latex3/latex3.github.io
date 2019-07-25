@@ -15,11 +15,13 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX3 Project Team</h2>
-    <p>The current LaTeX3 project team personnel are: <br><a href="{{ "/about/team/#frank-mittelbach" | prepend: site.baseurl }}">Frank Mittelbach</a>, <a href="{{ "/about/team/#rainer-schoepf" | prepend: site.baseurl }}">Rainer Schöpf</a>, <a href="{{ "/about/team/#chris-rowley" | prepend: site.baseurl }}">Chris Rowley</a>, <a href="{{ "/about/team/#david-carlisle" | prepend: site.baseurl }}">David Carlisle</a>, <a href="{{ "/about/team/#johannes-braams" | prepend: site.baseurl }}">Johannes Braams</a>, <a href="{{ "/about/team/#robin-fairbairns" | prepend: site.baseurl }}">Robin Fairbairns</a>, <a href="{{ "/about/team/#morten-høgholm" | prepend: site.baseurl }}">Morten Høgholm</a>, <a href="{{ "/about/team/#javier-bezos" | prepend: site.baseurl }}">Javier Bezos</a>, <a href="{{ "/about/team/#will-robertson" | prepend: site.baseurl }}">Will Robertson</a>, <a href="{{ "/about/team/#joseph-wright" | prepend: site.baseurl }}">Joseph Wright</a>, <a href="{{ "/about/team/#bruno-le-floch" | prepend: site.baseurl }}">Bruno Le Floch</a>,  <a href="{{ "/about/team/#enrico-gregorio" | prepend: site.baseurl }}">Enrico Gregorio</a> and   <a href="{{ "/about/team/#ulrike-fischer" | prepend: site.baseurl }}">Ulrike Fischer</a>.</p>
+    <p>The current LaTeX3 project team personnel with contact details
+    can be found on the <a href="{{ "/about/team" | prepend: site.baseurl }}">Team Page</a>.
+    </p>
   </div>
   <div class="col cell1of2">
     <h2>Support LaTeX Development</h2>
-    <p>If you want to support LaTeX development by a donation, the best way to do this is donating to the <a href="http://www.tug.org/donate.html">TeX Users Group</a>. They will make sure that your contribution will be used according to your intention (LaTeX Project Contribution).</p>
+    <p>If you want to support LaTeX development by a donation, the best way to do this is donating to the <a href="http://www.tug.org/donate.html">TeX Users Group</a>. They will make sure that your contribution will be used according to your intention (use: LaTeX Project Contribution).</p>
   </div>
 </div>
 
@@ -41,7 +43,7 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
   <section class="col cell1of3">
     <a href="https://www.tug.org/donate.html">
       <h3>Donate</h3>
-      <p>To support LaTeX development, donate to the TeX Users Group (TUG).</p>
+      <p>To support LaTeX maintenance and development, donate to the TeX Users Group (LaTeX Project contribution).</p>
     </a>
   </section>
 </div>
