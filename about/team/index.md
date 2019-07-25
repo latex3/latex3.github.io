@@ -68,11 +68,6 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="http://www.texnia.com/"><span class="fa fa-external-link-square"></span>http://www.texnia.com/</a></li>
     </ul>
   </li>
-</ul>
-</div>
-
-<div class="col cell1of2">
-<ul class="team">
   <li id="will-robertson">
     <img src="will-robertson.jpg" alt="Will Robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
@@ -81,6 +76,11 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="https://github.com/wspr"><span class="fa fa-github-square"></span>https://github.com/wspr</a></li>
     </ul>
   </li>
+</ul>
+</div>
+
+<div class="col cell1of2">
+<ul class="team">
   <li id="joseph-wright">
     <img src="joseph-wright.jpg" alt="Joseph Wright">
     <h2>Joseph Wright <br><span class="role">LaTeX3 Team</span></h2>
@@ -124,9 +124,18 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="https://github.com/u-fischer"><span class="fa fa-github-square"></span>https://github.com/u-fischer</a></li>
     </ul>
   </li>
+  <li id="phelype-oleinik">
+    <img src="phelype-oleinik2.png" alt="Phelype Oleinik">
+    <h2>Phelype Oleinik <br><span class="role">LaTeX3 Team</span></h2>
+    <ul class="team">
+      <li><a href="https://tex.stackexchange.com/users/134574/phelype-oleinik"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/134574/</a></li>
+      <li><a href="https://github.com/PhelypeOleinik"><span class="fa fa-github-square"></span>https://github.com/PhelypeOleinik</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </div>
+
 
 
 
