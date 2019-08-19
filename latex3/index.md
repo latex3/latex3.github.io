@@ -21,7 +21,7 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
   </div>
   <div class="col cell1of2">
     <h2>Support LaTeX Development</h2>
-    <p>If you want to support LaTeX development by a donation, the best way to do this is donating to the <a href="http://www.tug.org/donate.html">TeX Users Group</a>. They will make sure that your contribution will be used according to your intention (use: LaTeX Project Contribution).</p>
+    <p>If you want to support LaTeX development and the <b>maintenance efforts for the current version</b> by a donation, the best way to do this is donating to the <a href="http://www.tug.org/donate.html">TeX Users Group</a>. They will make sure that your contribution will be used according to your intention (use: LaTeX Project Contribution).</p>
   </div>
 </div>
 

@@ -132,6 +132,15 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
       <li><a href="https://github.com/PhelypeOleinik"><span class="fa fa-github-square"></span>https://github.com/PhelypeOleinik</a></li>
     </ul>
   </li>
+  <li id="marcel-krueger">
+    <img src="marcel-krueger.jpg" alt="Marcel Krüger">
+    <h2>Marcel Krüger <br><span class="role">LaTeX3 Team</span></h2>
+    <ul class="team">
+      <li><a href="mailto:tex@2krueger.de"><span class="fa fa-envelope-square"></span>tex@2krueger.de</a></li>
+      <li><a href="https://tex.stackexchange.com/users/80496/marcel-kr%c3%bcger"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/80496</a></li>
+      <li><a href="https://github.com/zauguin"><span class="fa fa-github-square"></span>https://github.com/zauguin</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </div>
