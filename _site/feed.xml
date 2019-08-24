@@ -5,9 +5,50 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 24 Aug 2019 16:20:47 +0200</pubDate>
-    <lastBuildDate>Sat, 24 Aug 2019 16:20:47 +0200</lastBuildDate>
+    <pubDate>Sat, 24 Aug 2019 17:20:06 +0200</pubDate>
+    <lastBuildDate>Sat, 24 Aug 2019 17:20:06 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New kids on the block (2)</title>
+        <description>&lt;h1 id=&quot;new-kids-on-the-block-2&quot;&gt;New kids on the block (2)&lt;/h1&gt;
+
+&lt;p&gt;I’m happy to be able to announce that Phelype Oleinik and Marcel Krüger
+have joined the LaTeX Project Team. Contact
+details are on &lt;a href=&quot;/about/team&quot;&gt;the team page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Phelype is a Civil Engineer, a TeX enthusiast and an &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
+advocate—you’ll find him on Stack Exchange answering complex
+questions.  Marcel is an accomplished and well-known LuaTeX expert and
+besides other activities is maintaining &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt;.  With Marcel
+joining we have formally adopted the work on &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; which is a
+core component for making LaTeX available with a LuaTeX engine.  The
+repository for this code is now
+&lt;a href=&quot;https://github.com/latex3/luaotfload&quot;&gt;https://github.com/latex3/luaotfload&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are extremely greateful to have both of them on board and gain from their
+experience and knowledge!&lt;/p&gt;
+
+&lt;p&gt;A warm welcome —
+Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 24 Aug 2019 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2019/08/24/new-kids2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/08/24/new-kids2/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>members</category>
+        
+        <category>luaotfload</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Two papers on the history of LaTeX</title>
@@ -514,82 +555,6 @@ and further information on how to report bugs can be found in the article
         <category>latex2e</category>
         
         <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New (and older) articles uploaded</title>
-        <description>&lt;h1 id=&quot;new-and-older-articles-uploaded&quot;&gt;New (and older) articles uploaded&lt;/h1&gt;
-
-&lt;p&gt;We have added a number of links to new (and a few older) articles on different topics on the &lt;a href=&quot;/publications/&quot;&gt;Publications
-page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;These are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A General LuaTeX Framework for Globally Optimized Pagination&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;This article is an extended version (37 pages) of the 2016 ACM article “A General Framework for Globally Optimized Pagination”, providing a lot more details and additional research results. It was submitted to the Computational Intelligence Journal (Wiley) in 2017 and accepted January 2018.&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;New rules for reporting bugs in the LaTeX core software (TUGboat 2018)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Exploring \romannumeral and expansion (TUGboat 2016)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Automating LaTeX(3) testting (TUGboat 2015)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Joseph’s Adventures in Unicodeland (TUGboat 2015)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Through the \parshape, and what Joseph found there (TUGboat 2015)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Recollections of a spurious space catcher (TUGboat 2015)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The xtemplate package: An example (TUGboat 2012)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;An external perspective on our ideas for a designer interface by Clemens Niederberger.&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;An exploration of the Latin Modern fonts (TUGboat 2007)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Page design in LaTeX3  (TUGboat 2006)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Everything we want to know about Font Resources  (TUGboat 2006)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enjoy - Frank&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 Jan 2018 00:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2018/01/30/additional-articles/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2018/01/30/additional-articles/</guid>
-        
-        <category>latex</category>
-        
-        <category>latex3</category>
-        
-        <category>luatex</category>
-        
-        <category>research</category>
-        
-        <category>dynamic programming</category>
-        
-        <category>fonts</category>
         
         
         <category>news</category>

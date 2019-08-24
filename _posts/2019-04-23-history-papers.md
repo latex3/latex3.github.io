@@ -2,8 +2,9 @@
 layout: post
 title: "Two papers on the history of LaTeX"
 date: 2019-04-23 00:00:00
-description: ""
-excerpt: " ..."
+description: "Two papers on the history of LaTeX"
+excerpt: "We have added two papers on different aspects of the history of LaTeX
+to the site ..."
 categories: news
 tags: [latex history]
 ---
