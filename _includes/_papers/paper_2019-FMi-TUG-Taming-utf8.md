@@ -6,10 +6,10 @@
 + [TUG Conference 2019](http://tug.org/tug2019/) (Palo Alto, USA)
 
 > To understand the concepts in pdflatex for processing UTF-8 encoded
-> files it is helpful to understand the models used by the TeX engine
-> and earlier attempts used by LaTeX on top of TeX. The talk provides
-> a short historical review of that area and gives an overview about
-> the improvements with respect to UTF-8 handling that will be
-> activated in LaTeX within 2019.
+> files it is helpful to first take a look at the models used by the
+> TeX engine and earlier attempts made by LaTeX on top of TeX. The
+> talk provides a short historical review of that area and gives an
+> overview about the improvements with respect to UTF-8 handling that
+> will be activated in LaTeX within 2019.
 
 ***
