@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>New kids on the block (2)</title>
-  <meta name="description" content="New kids on the block (2)">
+  <title>The LaTeX development formats</title>
+  <meta name="description" content="The LaTeX development formats">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,28 +62,99 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Aug 24, 2019</span></small>
-    <h1 id="new-kids-on-the-block-2">New kids on the block (2)</h1>
+    <small class="meta"><span class="post-date">Aug 27, 2019</span></small>
+    <h1 id="important-latex-development-formats-available">Important: LaTeX development formats available</h1>
 
-<p>I’m happy to be able to announce that Phelype Oleinik and Marcel Krüger
-have joined the LaTeX Project Team. Contact
-details are on <a href="/about/team">the team page</a>.</p>
+<p>For user of TeXLive or MikTeX distributions it is now possible to test
+prereleases of upcoming LaTeX releases with ease, simply by selecting a
+different program name (when using the command line) or by selecting a
+menu entry (after setting it up, see below).</p>
 
-<p>Phelype is a Civil Engineer, a TeX enthusiast and an <code class="highlighter-rouge">expl3</code>
-advocate—you’ll find him on Stack Exchange answering complex
-questions.  Marcel is an accomplished and well-known LuaTeX expert and
-besides other activities is maintaining <code class="highlighter-rouge">luaotfload</code>.  With Marcel
-joining we have formally adopted the work on <code class="highlighter-rouge">luaotfload</code> which is a
-core component for making LaTeX available with a LuaTeX engine.  The
-repository for this code is now
-<a href="https://github.com/latex3/luaotfload">https://github.com/latex3/luaotfload</a>.</p>
+<p>If you do this then a special LaTeX development format will be used to
+process your document allowing you to test the upcoming release with
+your own documents. For example, if you run</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>pdflatex-dev myfile
+</code></pre>
+</div>
+<p>then you will be greeted on the screen with</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>LaTeX2e &lt;2019-10-01&gt; pre-release-2
+</code></pre>
+</div>
+<p>(identifying the prerelease) instead of the normal <code class="highlighter-rouge">LaTeX2e
+&lt;2018-12-01&gt;</code> and the new features such as better UTF8-handling as
+described in <a href="/publications/indexbyyear/2019">Taming UTF-8 in
+pdfTeX</a> are available
+to you. Note, that these are not nightly builds that reflect the
+current stage of development, but prerelease versions that we have
+tested and considered suitable for testing by a broader audience prior
+to the final release.</p>
 
-<p>We are extremely greateful to have both of them on board and gain from their
-experience and knowledge!</p>
+<h2 id="our-hopes">Our hopes</h2>
 
-<p>A warm welcome —
+<p>We don’t expect everybody to start using the development formats and
+participate in testing, but we hope that people with a strong interest
+in a stable LaTeX environment (especially developers and maintainers
+of important packages) to use the new facilities and help us ensuring
+that new public releases of LaTeX do not require some immediate
+patches because of issues not identified by our own internal
+regression test suite.</p>
+
+<p>Any issue identified in the development format should be preferably
+logged as an issue on GitHub, following the procedure outlined in
+<a href="https://www.latex-project.org/bugs/">https://www.latex-project.org/bugs/</a>
+including the use of the<code class="highlighter-rouge">latexbugs</code> package as described.</p>
+
+<p>Our bug reporting process normally states that issues involving
+third-party software are out of scope as we can’t correct external
+packages.  However, in case of the development format showing an
+incompatibility with a third-party package it is fine to open an issue
+with us in addition to informing the maintainer of that package, so that
+we know about the problem and can jointly work on resolving it.</p>
+
+<h2 id="details-please-">Details please …</h2>
+
+<p>More details and some background information about the concepts and
+the process is available in an upcoming TUGboat article:</p>
+
+<h3 id="a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall7e50f6b81a7f415eb63057efd9e26d95the-latex-release-workflow-and-the-latex-dev-formatsa"><a href="/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf" target="_blank" onclick="vgwPixelCall('7e50f6b81a7f415eb63057efd9e26d95');">The LaTeX release workflow and the LaTeX dev formats</a></h3>
+
+<ul>
+  <li><a href="/about/team/#frank-mittelbach">Frank Mittelbach</a></li>
+  <li>TUGboat 40:2, 2019 to appear</li>
+  <li>Abstract
+    <blockquote>
+      <p>How do you prevent creating banana software (i.e., software that
+gets ripe at the customer site)? By proper testing! But this is
+anything but easy.</p>
+
+      <p>The paper will give an overview of the efforts made by the LaTeX
+Project Team over the years to provide high-quality software and
+explains the changes that we have made this summer to improve the
+situation further.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="setting-up-menu-items">Setting up menu items</h2>
+
+<p>While the command line call works out of the box if you have a recent
+uptodate TeXLive or MikTeX installation, the use within an integrated
+editing environment doesn’t at this point in time (maybe the
+developers of these editors will include it in the future). However,
+it is normally fairly simple to enable it as most (or even all?) of
+them provide simple ways to call your own setup. How this works in
+detail depends very much on the environment you use, so we can’t give
+much help here. But as an example: to provide an additional menu entry
+for <code class="highlighter-rouge">XeLaTeX-dev</code> all I had to do was to copy the file
+<code class="highlighter-rouge">XeLaTeX.engine</code> to <code class="highlighter-rouge">XeLaTeX-dev.engine</code> and change the call from
+<code class="highlighter-rouge">xelatex</code> to <code class="highlighter-rouge">xelatex-dev</code> inside.</p>
+
+<p>Enjoy —
 Frank</p>
 
+<p><img src="https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332" width="1" height="1" alt="" /></p>
 
   </article>
 </div>

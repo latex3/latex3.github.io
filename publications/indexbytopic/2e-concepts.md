@@ -8,6 +8,8 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX2e Concepts and Design
 
 
+{% include _papers/paper_2019-FMi-TUB-tb125mitt-dev-format.md  %}
+
 
 <hr class="conference-start">
 
