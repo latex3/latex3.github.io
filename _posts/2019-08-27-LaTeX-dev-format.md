@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The LaTeX development formats"
+title: "Important: The LaTeX development formats"
 date: 2019-08-27 00:00:00
-description: "The LaTeX development formats"
+description: "Important: The LaTeX development formats"
 excerpt: "For user of TeXLive or MikTeX distributions it is now possible to test
 prereleases of upcoming LaTeX releases with ease  ..."
 categories: news
