@@ -3,7 +3,7 @@ layout: post
 title: "Important: The LaTeX development formats"
 date: 2019-08-27 00:00:00
 description: "Important: The LaTeX development formats"
-excerpt: "For user of TeXLive or MikTeX distributions it is now possible to test
+excerpt: "For users of TeXLive or MikTeX distributions it is now possible to test
 prereleases of upcoming LaTeX releases with ease  ..."
 categories: news
 tags: [latex2e,regression testing,development formats]
@@ -11,7 +11,7 @@ tags: [latex2e,regression testing,development formats]
 
 # Important: LaTeX development formats available
 
-For user of TeXLive or MikTeX distributions it is now possible to test
+For users of TeXLive or MikTeX distributions it is now possible to test
 prereleases of upcoming LaTeX releases with ease, simply by selecting a
 different program name (when using the command line) or by selecting a
 menu entry (after setting it up, see below).
@@ -40,7 +40,7 @@ to the final release.
 We don't expect everybody to start using the development formats and
 participate in testing, but we hope that people with a strong interest
 in a stable LaTeX environment (especially developers and maintainers
-of important packages) to use the new facilities and help us ensuring
+of important packages) will use the new facilities and help us ensuring
 that new public releases of LaTeX do not require some immediate
 patches because of issues not identified by our own internal
 regression test suite.
@@ -48,7 +48,7 @@ regression test suite.
 Any issue identified in the development format should be preferably
 logged as an issue on GitHub, following the procedure outlined in
 [https://www.latex-project.org/bugs/](https://www.latex-project.org/bugs/)
-including the use of the`latexbugs` package as described.
+including the use of the `latexbug` package as described.
 
 Our bug reporting process normally states that issues involving
 third-party software are out of scope as we can't correct external
