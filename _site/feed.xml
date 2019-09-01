@@ -5,59 +5,74 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Aug 2019 12:53:15 +0200</pubDate>
-    <lastBuildDate>Tue, 27 Aug 2019 12:53:15 +0200</lastBuildDate>
+    <pubDate>Sun, 01 Sep 2019 08:48:25 +0200</pubDate>
+    <lastBuildDate>Sun, 01 Sep 2019 08:48:25 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Important: The LaTeX development formats</title>
-        <description>&lt;h1 id=&quot;important-latex-development-formats-available&quot;&gt;Important: LaTeX development formats available&lt;/h1&gt;
+        <title>Major news: LaTeX development formats are now available</title>
+        <description>&lt;h1 id=&quot;latex-development-formats-are-now-available&quot;&gt;LaTeX development formats are now available&lt;/h1&gt;
 
-&lt;p&gt;For user of TeXLive or MikTeX distributions it is now possible to test
-prereleases of upcoming LaTeX releases with ease, simply by selecting a
-different program name (when using the command line) or by selecting a
-menu entry (after setting it up, see below).&lt;/p&gt;
+&lt;p&gt;We know that many of you, especially developers and maintainers
+of important packages, have a strong interest in a stable LaTeX 
+environment.&lt;/p&gt;
 
-&lt;p&gt;If you do this then a special LaTeX development format will be used to
-process your document allowing you to test the upcoming release with
-your own documents. For example, if you run&lt;/p&gt;
+&lt;p&gt;In order to keep LaTeX very stable for users whilst allowing for
+further development to continue, we now have a development branch of
+LaTeX on GitHub containing development code for the upcoming release.
+When this code is ready for wider consumption and testing, we generate
+a pre-release of LaTeX from this development branch and make it
+available on CTAN.&lt;/p&gt;
+
+&lt;p&gt;For users of the TeXLive and MikTeX distributions it is therefore now
+straightforward to test their documents and code against the upcoming
+LaTeX release with ease, simply by selecting a different program name
+(when using the command line) or by selecting a menu entry (after
+setting it up, see below).&lt;/p&gt;
+
+&lt;p&gt;If you do this then the latest version of the LaTeX development 
+format will be used to process your document, allowing you 
+to test the upcoming release with your own documents and packages.
+For example, if you run&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;then you will be greeted on the screen with&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LaTeX2e &amp;lt;2019-10-01&amp;gt; pre-release-2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;(identifying the prerelease) instead of the normal &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e
-&amp;lt;2018-12-01&amp;gt;&lt;/code&gt; and the new features such as better UTF8-handling as
-described in &lt;a href=&quot;/publications/indexbyyear/2019&quot;&gt;Taming UTF-8 in
-pdfTeX&lt;/a&gt; are available
-to you. Note, that these are not nightly builds that reflect the
-current stage of development, but prerelease versions that we have
-tested and considered suitable for testing by a broader audience prior
-to the final release.&lt;/p&gt;
+&lt;p&gt;then you will be greeted on the screen with
+&lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2019-10-01&amp;gt; pre-release-2&lt;/code&gt; (identifying the pre-release
+format) instead of the normal &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2018-12-01&amp;gt;&lt;/code&gt;.  In this
+pre-release you will find the latest new features that we have
+developed. Here is an example of upcoming features that are currently
+only in the pre-release format: better UTF8-handling as described in
+&lt;a href=&quot;/publications/indexbyyear/2019&quot;&gt;Taming UTF-8 in pdfTeX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note, that these are not `nightly builds’ of the format reflecting the
+very latest stage of development, but pre-release versions that we have
+tested ourselves so that we consider them ready for testing by a 
+broader community, prior to their public release.&lt;/p&gt;
 
 &lt;h2 id=&quot;our-hopes&quot;&gt;Our hopes&lt;/h2&gt;
 
-&lt;p&gt;We don’t expect everybody to start using the development formats and
+&lt;p&gt;We don’t expect everybody to start using the development formats to
 participate in testing, but we hope that people with a strong interest
 in a stable LaTeX environment (especially developers and maintainers
-of important packages) to use the new facilities and help us ensuring
-that new public releases of LaTeX do not require some immediate
-patches because of issues not identified by our own internal
-regression test suite.&lt;/p&gt;
+of important packages) will use the new facilities and help us to
+ensure that future public releases of LaTeX do not (as has happened in
+the past) require some immediate patches because of issues that were
+not identified by our internal regression test suite or by other
+testing that we do.&lt;/p&gt;
 
-&lt;p&gt;Any issue identified in the development format should be preferably
-logged as an issue on GitHub, following the procedure outlined in
-&lt;a href=&quot;https://www.latex-project.org/bugs/&quot;&gt;https://www.latex-project.org/bugs/&lt;/a&gt;
-including the use of the&lt;code class=&quot;highlighter-rouge&quot;&gt;latexbugs&lt;/code&gt; package as described.&lt;/p&gt;
+&lt;p&gt;Any issue identified when using the development format should preferably
+be logged as an issue on GitHub, following the procedure outlined in
+&lt;a href=&quot;/bugs/&quot;&gt;www.latex-project.org/bugs/&lt;/a&gt;
+including the use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;latexbug&lt;/code&gt; package as described.&lt;/p&gt;
 
 &lt;p&gt;Our bug reporting process normally states that issues involving
 third-party software are out of scope as we can’t correct external
-packages.  However, in case of the development format showing an
-incompatibility with a third-party package it is fine to open an issue
-with us in addition to informing the maintainer of that package, so that
-we know about the problem and can jointly work on resolving it.&lt;/p&gt;
+packages.  However, in the particular case of the development 
+format showing an
+incompatibility with a third-party package, it is fine to open an issue
+with us (in addition, please, to informing the maintainer of that package)
+so that we know about the problem and can jointly work on resolving it.&lt;/p&gt;
 
 &lt;h2 id=&quot;details-please-&quot;&gt;Details please …&lt;/h2&gt;
 
@@ -99,14 +114,13 @@ for &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX-dev&lt;/code&gt; all
 &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX.engine&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX-dev.engine&lt;/code&gt; and change the call from
 &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex-dev&lt;/code&gt; inside.&lt;/p&gt;
 
-&lt;p&gt;Enjoy —
-Frank&lt;/p&gt;
+&lt;p&gt;Enjoy — Frank &amp;amp; Chris&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 27 Aug 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/08/27/LaTeX-dev-format/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/08/27/LaTeX-dev-format/</guid>
+        <pubDate>Sun, 01 Sep 2019 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</guid>
         
         <category>latex2e</category>
         
