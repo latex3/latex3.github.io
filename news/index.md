@@ -33,7 +33,7 @@ permalink: /news/
   {% for post in site.posts offset: 0 limit: 5 %}
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
       <h3>{{ post.title }}</h3>
       <p>{{ post.excerpt }}</p>
     </a>
@@ -47,7 +47,7 @@ permalink: /news/
   {% for post in site.posts offset: 5 %}
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
       <h3>{{ post.title }}</h3>
       <p>{{ post.excerpt }}</p>
     </a>
