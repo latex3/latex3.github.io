@@ -8,6 +8,12 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Not fitting any defined category 
 
 
+<hr class="conference-start">
+
+## TUG Conference 2019 (Palo Alto, USA)
+{% include _papers/paper_2019-CAR-TUG-tagged-pdf-slides.md %}
+
+<hr class="conference-end">
 
 
 <hr class="conference-start">

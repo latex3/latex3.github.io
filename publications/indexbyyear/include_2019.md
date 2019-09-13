@@ -8,15 +8,12 @@
 <hr class="conference-start">
 
 ## TUG Conference 2019 (Palo Alto, USA)
-
 {% include _papers/paper_2019-FMi-TUG-Taming-utf8.md %}
+{% include _papers/paper_2019-CAR-TUG-tagged-pdf-slides.md %}
 
 <hr class="conference-end">
 
 
-<br>
-
-_More material from the conference will follow soon._
 
 
 
