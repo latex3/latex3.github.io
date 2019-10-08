@@ -63,7 +63,10 @@ the following document:
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors</a>
 
-More advanced documentation about LaTeX, which is available via the net includes: 
+For more extensive introductory documentation take a look at the [links to
+contributed documentation]({{site.baseurl}}/help/links/) that have their own page.
+
+More advanced documentation about core LaTeX, which is available via the net includes: 
 
 + <a href="{{site.baseurl}}/help/documentation/clsguide.pdf"
      target="_blank"
