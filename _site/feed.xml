@@ -5,9 +5,49 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Oct 2019 18:22:01 +0200</pubDate>
-    <lastBuildDate>Tue, 08 Oct 2019 18:22:01 +0200</lastBuildDate>
+    <pubDate>Tue, 15 Oct 2019 22:28:48 +0200</pubDate>
+    <lastBuildDate>Tue, 15 Oct 2019 22:28:48 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New October 2019 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;october-2019-latex-release-available&quot;&gt;October 2019 LaTeX release available&lt;/h1&gt;
+
+&lt;p&gt;We have recently released the October 2019 LaTeX distribution to CTAN from where it automatically moves (or has moved) to the major TeX distributions.&lt;/p&gt;
+
+&lt;p&gt;This release fixes a small number of bugs and introduces some new features. The most important ones are documented in &lt;a href=&quot;/news/latex2e-news/ltnews30.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('7000e177ed02498cb64066adbedb6d81');&quot;&gt;“LaTeX2e News Issue 30”&lt;/a&gt;. This document
+can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LaTeX development formats now available&lt;/li&gt;
+  &lt;li&gt;Improving Unicode handling in pdfTeX&lt;/li&gt;
+  &lt;li&gt;Improving file name handling in pdfTeX&lt;/li&gt;
+  &lt;li&gt;Improving the filecontents environment&lt;/li&gt;
+  &lt;li&gt;Making more user commands robust&lt;/li&gt;
+  &lt;li&gt;Other changes to the LaTeX kernel, tools and amsmath&lt;/li&gt;
+  &lt;li&gt;Documentation updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Oct 2019 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Major news: LaTeX development formats are now available</title>
@@ -587,56 +627,6 @@ check them out if you are interested.&lt;/p&gt;
         <category>talks</category>
         
         <category>videos</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Publications now viewable by topic</title>
-        <description>&lt;h1 id=&quot;publications-now-sorted-by-topic&quot;&gt;Publications now sorted by topic&lt;/h1&gt;
-
-&lt;p&gt;In the past we collected publications by the project team members on a
-single web page (with a few extra notes added to introduce the
-publication). Over time that page got really more and more lengthly
-and and thus unusable.&lt;/p&gt;
-
-&lt;p&gt;Since we believe that a lot of the information there is actually quite
-useful we have restructured this area to provide a view of all
-publications &lt;strong&gt;in chronological order&lt;/strong&gt; as well as &lt;strong&gt;by major
-topics&lt;/strong&gt;. Of course, chosing useful topics is hard and we may still
-have to improve things here and there. For example, we know that we
-should add further notes in some places.&lt;/p&gt;
-
-&lt;p&gt;But on the whole, this new view gives much better access to the
-material available and brings a number of hidden gems (or so we think
-:-) ) back into focus. So far each publication is sorted only under a
-single topic. However, in some cases multiple topics might be more
-approriate—we’ll have to see.&lt;/p&gt;
-
-&lt;p&gt;Please try it out, the starting points are either&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/publications/indexbytopic&quot;&gt;Publications by Topic&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;or &lt;a href=&quot;/publications/&quot;&gt;Publications by Year&lt;/a&gt; which is
-in fact the main Publication page available from the menu.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you have any comments or suggestions please feel free to &lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;send me a
-note&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 Jun 2018 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2018/06/28/publications-by-topic/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2018/06/28/publications-by-topic/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>publications</category>
         
         
         <category>news</category>

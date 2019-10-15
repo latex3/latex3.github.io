@@ -157,7 +157,7 @@ their usage within the kernel is
 
 + <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2018-12-01 (660+ pages)</a>
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2019-10-01 (660+ pages)</a>
 
 As a companion document Martin Scharrer compiled a useful reference
 list with links back into the previous document if both are stored in

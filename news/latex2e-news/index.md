@@ -8,7 +8,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 <div class="row">
   <div class="col cell1of2">
-    <p>The most recent version of LaTeX is nominally dated 2018/04/01 (it may additionally have a patch-level associated with it).</p>
+    <p>The most recent version of LaTeX is nominally dated 2019/10/01 (it may additionally have a patch-level associated with it).</p>
     <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#the-latex-git-repository">Git Repository</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
@@ -23,6 +23,7 @@ The newletters are individually available below. A document with all available i
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2019/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews30.pdf" target="_blank" onclick="vgwPixelCall('7000e177ed02498cb64066adbedb6d81');">LaTeX2e News Issue 30</a> | Bug fix release with with ; LaTeX development formats; Unicode now allowed in labels, file names and other places; improvements to `filecontents`, robustify many commands; further changes to `base`, `tools`, and `amsmath`|
 | 2018/12/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews29.pdf" target="_blank" onclick="vgwPixelCall('c200b8c6707a4774b6b97cd616a96ced');">LaTeX2e News Issue 29</a> | Bug fix release with with changes to `base`, `tools`, and `amsmath`|
 | 2018/04/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews28.pdf" target="_blank" onclick="vgwPixelCall('e9cdf4e5347a42d29f280b3a53e04614');">LaTeX2e News Issue 28</a> | LaTeX now on GitHub; Bug report policy change; UTF-8: new default input encoding; General rollback concept for packages; Changes to `base`, `tools`, and `amsmath`|
 | 2017/04/15 | [LaTeX2e News Issue 27]({{site.baseurl}}/news/latex2e-news/ltnews27.pdf) | ISO Date support; TU encoding improvements; Hyphenation and default language; Small code updates |
