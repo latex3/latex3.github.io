@@ -67,10 +67,7 @@
 
 <p>A few days ago we have submitted a new LaTeX development format to
 CTAN and by now it should be available to all users using MikTeX or
-TeX Live (on any operating system).`For technical reasons this first
-prerelease is labeled “prerelease 2” (prerelease 1 existed only for a
-few hours on CTAN, as it was missing some files due to a problem in
-the build process).</p>
+TeX Live (on any operating system).</p>
 
 <p>This format allows you to test the upcoming LaTeX release scheduled
 for 2020-02-02 with your documents or packages. Such testing is
@@ -100,6 +97,11 @@ modification should be straight forward.</p>
 
 <h2 id="main-features-of-2020-02-02-prerelease-2">Main features of 2020-02-02 prerelease 2</h2>
 
+<p>For technical reasons this first prerelease is labeled “prerelease 2”.
+Prerelease 1 existed only for a few hours on CTAN, as it was missing
+some files due to a problem in the build process, but because it was
+already on CTAN we had to give it a new number.</p>
+
 <h3 id="a-new-luatex-engine-coming-up-">A new LuaTeX engine coming up …</h3>
 
 <p>In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
@@ -112,12 +114,12 @@ XeTeX.</p>
 
 <p>To simplify the testing of the new engine, binaries have been added to
 MiKTeX and TeXLive 2019 and both have changed the LuaLaTeX-dev format
-to use it. <em>This means you can already now  can test the new engine by using the prerelease!</em></p>
+to use it. <em>This means you can already now test the new engine by using the prerelease!</em></p>
 
-<p>Even if you have no need for the new HarfBuzz functionality, it might
-be worth doing some testing, because going forward this will be the
-only “Lua”TeX engine for which a LaTeX format will be distributed in
-the future in TeXLive and MikTeX.</p>
+<p>Even if you have no need for the new HarfBuzz functionality it might
+be worth to do some testing, because going forward this will be the
+only LuaTeX engine for which a LaTeX format will be distributed in
+TeXLive and MikTeX from 2020 onwards.</p>
 
 <h3 id="improved-load-times-for-expl3">Improved load-times for <code class="highlighter-rouge">expl3</code></h3>
 
@@ -155,10 +157,22 @@ with LuaLaTeX that before would not work correctly.</p>
 <p>Probably early January we expect to distribute another prerelease which
 will most likely contain improvements to the font support for all engines.</p>
 
+<h2 id="the-prereleases-will-never-go-stale-in-the-future-we-hope">The prereleases will never go stale in the future (we hope)</h2>
+
+<p>Starting with this prerelease we will make sure that the prerelease
+in the distributions either matches the main release code or will be
+newer than the current main release. This was not the case in the last
+few weeks when the main release was 2019-10-01 with a few hot fixes
+added, but the <code class="highlighter-rouge">-dev</code> format was still from some day prior to October.</p>
+
+<p>In the future we intend to ensure that this is not happening again and the distributed
+development release is at least equal to the current main release to
+avoid confusion.</p>
+
 <h2 id="more-details-on-prereleases-please-">More details on prereleases please …</h2>
 
 <p>More details and some background information about the concepts and
-the process of the development formats is available in an TUGboat
+the process of the development formats is available in a TUGboat
 article:</p>
 
 <h3 id="a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall7e50f6b81a7f415eb63057efd9e26d95the-latex-release-workflow-and-the-latex-dev-formatsa"><a href="/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf" target="_blank" onclick="vgwPixelCall('7e50f6b81a7f415eb63057efd9e26d95');">The LaTeX release workflow and the LaTeX dev formats</a></h3>
