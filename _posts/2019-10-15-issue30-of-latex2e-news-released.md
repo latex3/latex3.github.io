@@ -3,7 +3,7 @@ layout: post
 title: "New October 2019 LaTeX release available"
 date: 2019-10-15 00:00:00
 description: "The October 2019 release of LaTeX is available. ltnews30 describes updates and changes made in the new LaTeX maintenance release."
-excerpt: "We have released the December 2018 LaTeX distribution ..."
+excerpt: "We have released the October 2019 LaTeX distribution ..."
 categories: news
 tags: [latex2e, latex-news]
 ---
