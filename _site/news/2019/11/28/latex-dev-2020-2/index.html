@@ -77,7 +77,7 @@ code. We try to identify any such problem beforehand, but such an
 undertaking is necessarily incomplete, which is why we ask for user
 testing.</p>
 
-<p>Beside developers we also ask ordinary users to try out the new
+<p>Besides developers we also ask ordinary users to try out the new
 release candidate, because the more people are testing the new
 format, the higher the chances that any hidden problems are identified
 before the final release in February hits the streets.</p>
@@ -91,8 +91,8 @@ you have to do is to replace the invocation command by appending
 </div>
 
 <p>instead of using <code class="highlighter-rouge">pdflatex</code>, <code class="highlighter-rouge">lualatex</code> or <code class="highlighter-rouge">xelatex</code>. If you use an
-integrated editing environment, then it depends on the system how you
-can execute an alternative binary, but in either case the necessary
+integrated editing environment, then it depends on the system 
+how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.</p>
 
 <h2 id="main-features-of-2020-02-02-prerelease-2">Main features of 2020-02-02 prerelease 2</h2>
@@ -100,7 +100,7 @@ modification should be straight forward.</p>
 <p>For technical reasons this first prerelease is labeled “prerelease 2”.
 Prerelease 1 existed only for a few hours on CTAN, as it was missing
 some files due to a problem in the build process, but because it was
-already on CTAN we had to give it a new number.</p>
+already on CTAN we had to increase the prerelease number.</p>
 
 <h3 id="a-new-luatex-engine-coming-up-">A new LuaTeX engine coming up …</h3>
 
@@ -112,40 +112,43 @@ This additional font renderer will greatly improve the shaping of
 various scripts, which are currently handled correctly only by
 XeTeX.</p>
 
-<p>To simplify the testing of the new engine, binaries have been added to
-MiKTeX and TeXLive 2019 and both have changed the LuaLaTeX-dev format
-to use it. <em>This means you can already now test the new engine by using the prerelease!</em></p>
+<p>To simplify the testing of the new engine, the necessary executables
+have been added to MiKTeX and TeXLive 2019 and both have changed the
+LuaLaTeX-dev format to use it. <em>This means you can already now test
+the new engine by using the prerelease!</em></p>
 
 <p>Even if you have no need for the new HarfBuzz functionality it might
-be worth to do some testing, because going forward this will be the
-only LuaTeX engine for which a LaTeX format will be distributed in
-TeXLive and MikTeX from 2020 onwards.</p>
+be worthwhile running some tests, because, from 2020 onwards this will
+be the only LuaTeX engine for which a LaTeX format will be distributed
+in TeXLive and MikTeX from 2020 onwards.</p>
 
 <h3 id="improved-load-times-for-expl3">Improved load-times for <code class="highlighter-rouge">expl3</code></h3>
 
 <p>The LaTeX3 programming layer, <code class="highlighter-rouge">expl3</code>, has over the past decade moved
 from being largely experimental to broadly stable. It is now used in a
-significant number of third-party packages, most notably <code class="highlighter-rouge">xparse</code> for
-defining user command interfaces, so that many documents load
-the <code class="highlighter-rouge">expl3</code> code at some point in the preamble. Most LaTeX documents
-compiled using XeTeX or LuaTeX load <code class="highlighter-rouge">fontspec</code>, which is written using
-<code class="highlighter-rouge">expl3</code> so in these engines it is nearly always used.</p>
+significant number of third-party packages, either explicitly or
+implicitly (e.g., by loading <code class="highlighter-rouge">xparse</code> to define user command
+interfaces), so that many documents load the <code class="highlighter-rouge">expl3</code> code at some
+point in the preamble. Most LaTeX documents compiled using XeTeX or
+LuaTeX load <code class="highlighter-rouge">fontspec</code>, which is written using <code class="highlighter-rouge">expl3</code> so in these
+engines it is nearly always used.</p>
 
-<p>The <code class="highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when used
-with the XeTeX and LuaTeX engines, it loads a large body of Unicode data.
-This means that even on a fast computer, there is a relatively large load time for
-using <code class="highlighter-rouge">expl3</code>.</p>
+<p>The <code class="highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when
+used with the XeTeX and LuaTeX engines, it loads a large body of
+Unicode data.  This means that even on a fast computer, there is a
+relatively large load time penalty whenever <code class="highlighter-rouge">expl3</code> is needed.</p>
 
 <p>For this release, the team have made adjustments in the LaTeX 2e kernel to
-pre-load a significant portion of <code class="highlighter-rouge">expl3</code> as the format is built. This is
+pre-load a significant portion of <code class="highlighter-rouge">expl3</code> when the format is built. This is
 transparent at the user level, other than the significant decrease in document
 processing time: there will be no “pause” for loading Unicode data
 files. Loading of <code class="highlighter-rouge">expl3</code> in documents and packages can be done as usual;
-eventually, it will be possible to omit</p>
+it will, at some future time, become possible to omit</p>
 <div class="highlighter-rouge"><pre class="highlight"><code>\RequirePackage{expl3}
 </code></pre>
 </div>
-<p>entirely, but to support older formats, this is still recommended at present.</p>
+<p>entirely, but, to support older formats, this explicit loading is at
+present still recommended.</p>
 
 <h3 id="please-test-now-----even-though-there-is-more-to-come">Please test now — even though there is more to come</h3>
 
@@ -165,13 +168,13 @@ newer than the current main release. This was not the case in the last
 few weeks when the main release was 2019-10-01 with a few hot fixes
 added, but the <code class="highlighter-rouge">-dev</code> format was still from some day prior to October.</p>
 
-<p>In the future we intend to ensure that this is not happening again and the distributed
-development release is at least equal to the current main release to
-avoid confusion.</p>
+<p>In the future we intend to ensure that this does not happen, so that,
+to avoid confusion, the distributed development release is always
+newer or the same as the current main release.</p>
 
 <h2 id="more-details-on-prereleases-please-">More details on prereleases please …</h2>
 
-<p>More details and some background information about the concepts and
+<p>More details and some background information about these concepts and
 the process of the development formats is available in a TUGboat
 article:</p>
 
