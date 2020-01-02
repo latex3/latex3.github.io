@@ -19,9 +19,9 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <img src="frank-mittelbach.jpg" alt="Frank Mittelbach">
     <h2>Frank Mittelbach <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
+      <li><a href="https://github.com/sponsors/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/sponsors/FrankMittelbach</a></li>
       <li><a href="mailto:frank.mittelbach@latex-project.org"><span class="fa fa-envelope-square"></span>frank.mittelbach@latex-project.org</a></li>
       <li><a href="https://tex.stackexchange.com/users/10109/frank-mittelbach"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/10109</a></li>
-      <li><a href="https://github.com/FrankMittelbach"><span class="fa fa-github-square"></span>https://github.com/FrankMittelbach</a></li>
       <li><a href="https://de.linkedin.com/in/frankmittelbach"><span class="fa fa-linkedin-square"></span>https://de.linkedin.com/in/frankmittelbach</a></li>
     </ul>
   </li>
@@ -37,8 +37,8 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <img src="david-carlisle.jpg" alt="David Carlisle">
     <h2>David Carlisle <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
+      <li><a href="https://github.com/sponsors/davidcarlisle"><span class="fa fa-github-square"></span>https://github.com/sponsors/davidcarlisle</a></li>
       <li><a href="https://davidcarlisle.github.io/dcarlisle/david"><span class="fa fa-external-link-square"></span>https://davidcarlisle.github.io/dcarlisle/david</a></li>
-      <li><a href="https://github.com/davidcarlisle"><span class="fa fa-github-square"></span>https://github.com/davidcarlisle</a></li>
       <li><a href="https://tex.stackexchange.com/users/1090/david-carlisle"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/1090</a></li>
     </ul>
   </li>
@@ -85,10 +85,10 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <img src="joseph-wright.jpg" alt="Joseph Wright">
     <h2>Joseph Wright <br><span class="role">LaTeX3 Team</span></h2>
     <ul class="team">
+      <li><a href="https://github.com/sponsors/josephwright"><span class="fa fa-github-square"></span>https://github.com/sponsors/josephwright</a></li>
       <li><a href="mailto:joseph.wright@morningstar2.co.uk"><span class="fa fa-envelope-square"></span>joseph.wright@morningstar2.co.uk</a></li>
       <li><a href="skype:josephawright"><span class="fa fa-skype"></span>josephawright</a></li>
       <li><a href="https://www.texdev.net/"><span class="fa fa-external-link-square"></span>https://www.texdev.net/</a></li>
-      <li><a href="https://github.com/josephwright"><span class="fa fa-github-square"></span>https://github.com/josephwright</a></li>
       <li><a href="https://tex.stackexchange.com/users/73/joseph-wright"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/73</a></li>
     </ul>
   </li>
