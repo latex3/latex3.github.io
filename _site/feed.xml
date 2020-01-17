@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Jan 2020 17:18:52 +0100</pubDate>
-    <lastBuildDate>Fri, 17 Jan 2020 17:18:52 +0100</lastBuildDate>
+    <pubDate>Fri, 17 Jan 2020 17:42:58 +0100</pubDate>
+    <lastBuildDate>Fri, 17 Jan 2020 17:42:58 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -125,6 +125,15 @@ it will, at some future time, become possible to omit&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;entirely, but, to support older formats, this explicit loading is at
 present still recommended.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-prereleases-will-never-go-stale-in-the-future-we-hope&quot;&gt;The prereleases will never go stale in the future (we hope)&lt;/h2&gt;
+
+&lt;p&gt;The release policy we will follow should ensure that the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt;
+releases are never older than the main release.
+When a full 2020-02-02 release is made, the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; release will be
+updated to be the same format, or possibly
+a pre-release of the next release. It will not be left as a
+pre-release of 2020-02-02 at that point.&lt;/p&gt;
 
 &lt;h2 id=&quot;more-details-on-prereleases-please-&quot;&gt;More details on prereleases please …&lt;/h2&gt;
 
