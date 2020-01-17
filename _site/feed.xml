@@ -5,9 +5,184 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Jan 2020 23:16:33 +0100</pubDate>
-    <lastBuildDate>Thu, 02 Jan 2020 23:16:33 +0100</lastBuildDate>
+    <pubDate>Fri, 17 Jan 2020 14:05:43 +0100</pubDate>
+    <lastBuildDate>Fri, 17 Jan 2020 14:05:43 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Second prerelease of LaTeX 2020-02-02 is available for testing</title>
+        <description>&lt;h1 id=&quot;the-second-and-final-latex-prerelease-for-2020-02-02-is-available-for-testing&quot;&gt;The second (and final) LaTeX prerelease for 2020-02-02 is available for testing&lt;/h1&gt;
+
+&lt;p&gt;A few days ago we have submitted a new LaTeX development format to
+CTAN and by now it should be available to all users using MikTeX or
+TeX Live (on any operating system).&lt;/p&gt;
+
+&lt;p&gt;This format allows you to test the upcoming LaTeX release scheduled
+for 2020-02-02 with your documents or packages. Such testing is
+particularly important for package maintainers to verify that changes
+to the core LaTeX haven’t introduced incompatibilities with existing
+code. We try to identify any such problem beforehand, but such an
+undertaking is necessarily incomplete, which is why we ask for user
+testing.&lt;/p&gt;
+
+&lt;p&gt;Besides developers we also ask ordinary users to try out the new
+release candidate, because the more people are testing the new
+format, the higher the chances that any hidden problems are identified
+before the final release in February hits the streets.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the prerelease is straight forward. All
+you have to do is to replace the invocation command by appending
+&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+integrated editing environment, then it depends on the system 
+how to configure it to use an alternative format; but in any case the necessary
+modification should be straight forward.&lt;/p&gt;
+
+&lt;h2 id=&quot;please-test-now-----this-is-the-final-pre-release-prior-to-the-main-2020-02-02-release&quot;&gt;Please test now — this is the final pre-release prior to the main 2020-02-02 release&lt;/h2&gt;
+
+&lt;p&gt;We ask you to test now, because this pre-release (with the execption
+of some further documentation improvements) is representing the
+2020-02-02 in the way we want to roll it out in February.&lt;/p&gt;
+
+&lt;p&gt;If you encounter any issues with it, please open a bug report at our
+&lt;a href=&quot;https://github.com/latex3/latex2e/issues&quot;&gt;Issue Tracker for LaTeX2e&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-of-2020-02-02-prerelease-3&quot;&gt;Main features of 2020-02-02 prerelease 3&lt;/h2&gt;
+
+&lt;p&gt;For technical reasons this second prerelease is labeled “prerelease 3”.
+Prerelease 1 existed only for a few hours on CTAN, as it was missing
+some files due to a problem in the build process, but because it was
+already on CTAN we had to increase the prerelease number.&lt;/p&gt;
+
+&lt;h3 id=&quot;improvements-for-selecting-and-managing-modern-fonts&quot;&gt;Improvements for selecting and managing modern fonts&lt;/h3&gt;
+
+&lt;p&gt;Many modern fonts available these days offer additional font faces,
+e.g., small caps italics or a condensed font series, etc. To better
+support these such fonts NFSS (the New Font Selection Mechanism for
+LaTeX) was extended by incorporating ideas from the &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; packages.  In addition all symbols formerly
+provided through the &lt;code class=&quot;highlighter-rouge&quot;&gt;textcomp&lt;/code&gt; package are now available out of the
+box and the use of &lt;code class=&quot;highlighter-rouge&quot;&gt;\oldstylenums&lt;/code&gt; got improved.&lt;/p&gt;
+
+&lt;p&gt;We also fixed a number of smaller bugs. A detailed description of the
+new features and the bug fixes can be found in a &lt;em&gt;draft&lt;/em&gt; version of
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ltnews31&lt;/code&gt; which you can access via &lt;code class=&quot;highlighter-rouge&quot;&gt;texdoc ltnews31&lt;/code&gt; if the
+pre-release is installed on your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-already-available-in-the-previous-pre-release&quot;&gt;Main features already available in the previous pre-release&lt;/h2&gt;
+
+&lt;p&gt;Below is a summary of the features that have been made available earlier.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-new-luatex-engine-coming-up-&quot;&gt;A new LuaTeX engine coming up …&lt;/h3&gt;
+
+&lt;p&gt;In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
+engine, which is LuaTeX with an embedded HarfBuzz library.
+HarfBuzz can be used by setting a suitable renderer in the font
+declaration. An interface for that is provided by the &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; package.
+This additional font renderer will greatly improve the shaping of
+various scripts, which are currently handled correctly only by
+XeTeX.&lt;/p&gt;
+
+&lt;p&gt;To simplify the testing of the new engine, the necessary executables
+have been added to MiKTeX and TeXLive 2019 and both have changed the
+LuaLaTeX-dev format to use it. &lt;em&gt;This means you can already now test
+the new engine by using the prerelease!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Even if you have no need for the new HarfBuzz functionality it might
+be worthwhile running some tests, because, from 2020 onwards this will
+be the only LuaTeX engine for which a LaTeX format will be distributed
+in TeXLive and MikTeX from 2020 onwards.&lt;/p&gt;
+
+&lt;h3 id=&quot;improved-load-times-for-expl3&quot;&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The LaTeX3 programming layer, &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;, has over the past decade moved
+from being largely experimental to broadly stable. It is now used in a
+significant number of third-party packages, either explicitly or
+implicitly (e.g., by loading &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; to define user command
+interfaces), so that many documents load the &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code at some
+point in the preamble. Most LaTeX documents compiled using XeTeX or
+LuaTeX load &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;, which is written using &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; so in these
+engines it is nearly always used.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; layer contains a non-trivial number of macros, and when
+used with the XeTeX and LuaTeX engines, it loads a large body of
+Unicode data.  This means that even on a fast computer, there is a
+relatively large load time penalty whenever &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; is needed.&lt;/p&gt;
+
+&lt;p&gt;For this release, the team have made adjustments in the LaTeX 2e kernel to
+pre-load a significant portion of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; when the format is built. This is
+transparent at the user level, other than the significant decrease in document
+processing time: there will be no “pause” for loading Unicode data
+files. Loading of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; in documents and packages can be done as usual;
+it will, at some future time, become possible to omit&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\RequirePackage{expl3}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;entirely, but, to support older formats, this explicit loading is at
+present still recommended.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-prereleases-will-never-go-stale-in-the-future-we-hope&quot;&gt;The prereleases will never go stale in the future (we hope)&lt;/h2&gt;
+
+&lt;p&gt;Starting with this prerelease we will make sure that the prerelease
+in the distributions either matches the main release code or will be
+newer than the current main release. This was not the case in the last
+few weeks when the main release was 2019-10-01 with a few hot fixes
+added, but the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; format was still from some day prior to October.&lt;/p&gt;
+
+&lt;p&gt;In the future we intend to ensure that this does not happen, so that,
+to avoid confusion, the distributed development release is always
+newer or the same as the current main release.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-details-on-prereleases-please-&quot;&gt;More details on prereleases please …&lt;/h2&gt;
+
+&lt;p&gt;More details and some background information about these concepts and
+the process of the development formats is available in a TUGboat
+article:&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall03770697eae2427c8a6bfe7e9b8ab332the-latex-release-workflow-and-the-latex-dev-formatsa&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;TUGboat 40:2, 2019&lt;/li&gt;
+  &lt;li&gt;Abstract
+    &lt;blockquote&gt;
+      &lt;p&gt;How do you prevent creating banana software (i.e., software that
+gets ripe at the customer site)? By proper testing! But this is
+anything but easy.&lt;/p&gt;
+
+      &lt;p&gt;The paper will give an overview of the efforts made by the LaTeX
+Project Team over the years to provide high-quality software and
+explains the changes that we have made this summer to improve the
+situation further.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Jan 2020 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>First prerelease of LaTeX 2020-02-02 is available for testing</title>
@@ -709,39 +884,6 @@ Frank&lt;/p&gt;
         <category>latex3</category>
         
         <category>members</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Japanese translations of some important documents</title>
-        <description>&lt;h3 id=&quot;japanese-translations-of-some-important-documents&quot;&gt;Japanese translations of some important documents&lt;/h3&gt;
-
-&lt;p&gt;Yukitoshi FUJIMURA kindly translated two documents that are distributed with standard
-LaTeX to the Japanese language. These are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;LaTeX2e for authors&lt;/li&gt;
-  &lt;li&gt;User’s Guide for the amsmath Package (Version 2.1)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You will find them &lt;a href=&quot;/help/documentation/&quot;&gt;on the documentation page&lt;/a&gt;
-which got slightly reorganized at the same time. You will now also find there a compiled
-version of the full LaTeX2e source code (with index etc) and a number of other goodies.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Sep 2018 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2018/09/01/japanese-translations/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2018/09/01/japanese-translations/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>publications</category>
-        
-        <category>translations</category>
         
         
         <category>news</category>
