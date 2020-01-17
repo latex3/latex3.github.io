@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Jan 2020 17:04:49 +0100</pubDate>
-    <lastBuildDate>Fri, 17 Jan 2020 17:04:49 +0100</lastBuildDate>
+    <pubDate>Fri, 17 Jan 2020 17:18:52 +0100</pubDate>
+    <lastBuildDate>Fri, 17 Jan 2020 17:18:52 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -76,7 +76,7 @@ pre-release is installed on your computer.&lt;/p&gt;
 
 &lt;h2 id=&quot;main-features-already-available-in-the-previous-pre-release&quot;&gt;Main features already available in the previous pre-release&lt;/h2&gt;
 
-&lt;p&gt;Below is a summary of the features that were made available earlier.&lt;/p&gt;
+&lt;p&gt;Below is a summary of the main features that were made available earlier in the first pre-release.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-new-luatex-engine-coming-up-&quot;&gt;A new LuaTeX engine coming up …&lt;/h3&gt;
 
