@@ -24,14 +24,12 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 
 <hr>
 
-## Contributed Documentation
+## Contributed Documentation and articles on LaTeX
 + [TeXdoc Online - TeX and LaTeX Documentation](http://www.texdoc.net/)  
   Dedicated server for querying and browsing manuals, guides and package documentation. 
-+ [An Introduction to Using TeX](http://www.math.harvard.edu/texman/)  
-  Contains a brief explanation of how to typeset mathematical papers in the LaTeX2e flavor of TeX.
 + [LaTeX: an introduction](http://www.techscribe.co.uk/ta/latex-introduction.pdf)  
   This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was published in 'Communicator', Spring 2006.
-+ [The (Not So) Short Introduction to LaTeX2e](http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf)  
++ [The (Not So) Short Introduction to LaTeX2e](https://ctan.org/tex-archive/info/lshort/english/lshort.pdf)  
   This document by Tobias Oetiker et al is a good beginner's tutorial. There are a number of [translations](ftp://ctan.tug.org/tex-archive/info/lshort/) available. 
 + [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](http://ctan.org/pkg/latex2e-help-texinfo)  
   This document is an unofficial reference manual for LaTeX developed over many years by various volunteers. It is available in several languages, i.e., English, French and Spanish. The document is developed further and you find the current development versions and new releases [here](https://puszcza.gnu.org.ua/software/latexrefman/).
@@ -40,12 +38,13 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 
 ## FAQ's
 
-+ [Meta-FAQ](http://tug.org/tex-ptr-faq)  
-  This is provided by the TeX Users Group. 
-+ [UK TeX Users Group's FAQ](http://www.tex.ac.uk/)  
-  The [Visual LaTeX FAQ](http://ctan.tug.org/tex-archive/info/visualFAQ/visualFAQ.pdf) by Scott Pakin is a PDF document presenting examples of customized LaTeX formatting and formatting problems, hyperlinked to appropriate pages in the UK TUG FAQ.
++ [Frequently Asked Questions (FAQ) for English-speaking users of TeX](https://texfaq.org)
+   The information is maintained by a group of “curators”, with contributions from a very wide range of people over many years. It has its origin in the UK TeX FAQ.
+
+   The questions answered here cover a wide range of topics, but typesetting issues are mostly covered from the viewpoint of a LaTeX user. 
+
 + [A Visual LaTeX FAQ](http://www.ctan.org/tex-archive/info/visualFAQ/visualFAQ.pdf)  
-  Having trouble finding the answer to a LaTeX question? The Visual LaTeX FAQ is an innovative new search interface that presents over a hundred typeset samples of frequently requested document formatting. Simply click on a hyperlinked piece of text and the Visual LaTeX FAQ will send your Web browser to the appropriate page in the UK TeX FAQ. By Scott Pakin.
+  Having trouble finding the answer to a LaTeX question? The Visual LaTeX FAQ is an innovative new search interface that presents over a hundred typeset samples of frequently requested document formatting. Simply click on a hyperlinked piece of text and the Visual LaTeX FAQ will send your Web browser to the appropriate page in the TeX FAQ. By Scott Pakin.
   
 ## Question and Answer Websites
 
