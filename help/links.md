@@ -36,12 +36,13 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [Formatting information -- An introduction to typesetting with LaTeX](http://latex.silmaril.ie/formattinginformation/)  
   A fairly comprehensive online-book about LaTeX written by Peter Flynn.
 
+
 ## FAQ's
++ [Frequently Asked Questions (FAQ) for English-speaking users of TeX](https://texfaq.org)  
+  The information is maintained by a group of “curators”, with contributions from a very wide range of people over
+  many years. It has its origin in the UK TeX FAQ.
 
-+ [Frequently Asked Questions (FAQ) for English-speaking users of TeX](https://texfaq.org)
-   The information is maintained by a group of “curators”, with contributions from a very wide range of people over many years. It has its origin in the UK TeX FAQ.
-
-   The questions answered here cover a wide range of topics, but typesetting issues are mostly covered from the viewpoint of a LaTeX user. 
+  The questions answered here cover a wide range of topics, but typesetting issues are mostly covered from the viewpoint of a LaTeX user. 
 
 + [A Visual LaTeX FAQ](http://www.ctan.org/tex-archive/info/visualFAQ/visualFAQ.pdf)  
   Having trouble finding the answer to a LaTeX question? The Visual LaTeX FAQ is an innovative new search interface that presents over a hundred typeset samples of frequently requested document formatting. Simply click on a hyperlinked piece of text and the Visual LaTeX FAQ will send your Web browser to the appropriate page in the TeX FAQ. By Scott Pakin.
@@ -87,10 +88,10 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   [as videos](https://vimeo.com/uktug/).
 
 
-There are many more user groups on TeX --- most certainly one close to you ...
 
 + [TeX user groups around the world](http://www.tug.org/usergroups.html)  
-  Listing of (all/most) TeX user groups around the world. Maintained by TeX Users Group.
+  There are many more user groups on TeX --- most certainly one close to you ...
+  A listing of (all/most) TeX user groups around the world is maintained by the TeX Users Group.
 
 
 
