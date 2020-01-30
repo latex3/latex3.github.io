@@ -11,13 +11,13 @@ tags: [latex2e, latex-news]
 # The spring 2020 LaTeX release is available
 
 
-When we realized the that the next LaTeX release was scheduled next to
+When we realized that the next LaTeX release was scheduled close to
 a rather memorable day, we decided to delay the release by one day so
 that it will now appear officially on February the 2nd 2020 (or on 20
 20 02 02 if you use the ISO-date and arrange the spaces somewhat
 unconventionally).  This release introduces a number of important
 enhancements and so being able to use this date is a rather nice
-opportunity.
+opportunity to mark its importance.
 
 #### LaTeX now contains the L3 programming layer as part of its format
 

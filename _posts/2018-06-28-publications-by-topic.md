@@ -16,7 +16,7 @@ tags: [latex2e,latex3,publications]
 In the past we collected publications by the project team members on a
 single web page (with a few extra notes added to introduce the
 publication). Over time that page got really more and more lengthly
-and and thus unusable.
+and thus unusable.
 
 Since we believe that a lot of the information there is actually quite
 useful we have restructured this area to provide a view of all

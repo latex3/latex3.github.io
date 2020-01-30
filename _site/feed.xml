@@ -5,21 +5,21 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 30 Jan 2020 19:30:20 +0100</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2020 19:30:20 +0100</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2020 21:50:45 +0100</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2020 21:50:45 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Spring 2020 LaTeX release available</title>
         <description>&lt;h1 id=&quot;the-spring-2020-latex-release-is-available&quot;&gt;The spring 2020 LaTeX release is available&lt;/h1&gt;
 
-&lt;p&gt;When we realized the that the next LaTeX release was scheduled next to
+&lt;p&gt;When we realized that the next LaTeX release was scheduled close to
 a rather memorable day, we decided to delay the release by one day so
 that it will now appear officially on February the 2nd 2020 (or on 20
 20 02 02 if you use the ISO-date and arrange the spaces somewhat
 unconventionally).  This release introduces a number of important
 enhancements and so being able to use this date is a rather nice
-opportunity.&lt;/p&gt;
+opportunity to mark its importance.&lt;/p&gt;
 
 &lt;h4 id=&quot;latex-now-contains-the-l3-programming-layer-as-part-of-its-format&quot;&gt;LaTeX now contains the L3 programming layer as part of its format&lt;/h4&gt;
 
