@@ -5,9 +5,79 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Jan 2020 10:05:34 +0100</pubDate>
-    <lastBuildDate>Sat, 25 Jan 2020 10:05:34 +0100</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2020 19:30:20 +0100</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2020 19:30:20 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Spring 2020 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;the-spring-2020-latex-release-is-available&quot;&gt;The spring 2020 LaTeX release is available&lt;/h1&gt;
+
+&lt;p&gt;When we realized the that the next LaTeX release was scheduled next to
+a rather memorable day, we decided to delay the release by one day so
+that it will now appear officially on February the 2nd 2020 (or on 20
+20 02 02 if you use the ISO-date and arrange the spaces somewhat
+unconventionally).  This release introduces a number of important
+enhancements and so being able to use this date is a rather nice
+opportunity.&lt;/p&gt;
+
+&lt;h4 id=&quot;latex-now-contains-the-l3-programming-layer-as-part-of-its-format&quot;&gt;LaTeX now contains the L3 programming layer as part of its format&lt;/h4&gt;
+
+&lt;p&gt;This results in noticeable speed improvements for many documents
+because these days they often (implicitly) load &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; at some point
+in the preamble. This is the case for virtually all documents
+processed with a Unicode engine, but also true for many pdfTeX
+documents, because more and more packages use &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; or other
+&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based code. Also important (and maybe more so) it will enable
+us to successfully tackle large and difficult problems, such as
+automatically producing tagged and accessible documents, in the near
+future.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-latex-font-selection-scheme-nfss-got-a-face-lift&quot;&gt;The LaTeX Font Selection Scheme (NFSS) got a face lift&lt;/h4&gt;
+
+&lt;p&gt;It now integrates some important enhancements that have been developed
+in the recent years, including ideas from the packages &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;. Beside other improvements this will better
+support the new font families that are made available for use with
+LaTeX, because a large number of them provide additional font faces
+(e.g., small caps italic, or a condensed series) and those could not
+be supported in the old NFSS in a natural way.&lt;/p&gt;
+
+&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
+
+&lt;p&gt;The new features and most the important bug fixes made in this release are documented in &lt;a href=&quot;/news/latex2e-news/ltnews31.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('');&quot;&gt;“LaTeX2e News Issue 31”&lt;/a&gt;. This document
+can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experiences with the LaTeX&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; formats&lt;/li&gt;
+  &lt;li&gt;Concerning this release … (LuaLaTeX engine)&lt;/li&gt;
+  &lt;li&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements to LaTeX font selection: NFSS&lt;/li&gt;
+  &lt;li&gt;Other changes to the LaTeX kernel&lt;/li&gt;
+  &lt;li&gt;Changes to packages in the graphics category&lt;/li&gt;
+  &lt;li&gt;LaTeX requirements on engine primitives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 30 Jan 2020 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2020/01/30/issue31-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/01/30/issue31-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Second prerelease of LaTeX 2020-02-02 is available for testing</title>
@@ -835,52 +905,6 @@ by &lt;a href=&quot;mailto:latex-team@latex-project.org&quot;&gt;mail to the tea
         <category>latex3</category>
         
         <category>discussion</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New kids on the block</title>
-        <description>&lt;h1 id=&quot;new-kids-on-the-block&quot;&gt;New kids on the block&lt;/h1&gt;
-
-&lt;p&gt;I’m happy to be able to announce that Ulrike Fischer and Enrico
-Gregorio have joined the LaTeX Project Team (Enrico already early this
-year, but I never properly announced that, so I’m doing that now). Contact
-details are on &lt;a href=&quot;/about/team&quot;&gt;the team page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/150722-ufi.jpg&quot; alt=&quot;Ulrike&quot; width=&quot;48%&quot; height=&quot;auto&quot; /&gt;
-&lt;img src=&quot;/img/150719-egreg.jpg&quot; alt=&quot;Enrico&quot; width=&quot;48%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ulrike is an accomplished and well-known LaTeX user, developer and TeX consultant,
-known both for her work in various areas of TeX and her thoughtful user
-support on various platforms both national and international.&lt;/p&gt;
-
-&lt;p&gt;Enrico is a professor at the Computer Science department of the
-University of Verona. He will need no introduction either to any TeX
-user who ever visited &lt;a href=&quot;https://tex.stackexchange.com&quot;&gt;TeX
-StackExchange&lt;/a&gt; where Enrico is known
-under the name of &lt;code class=&quot;highlighter-rouge&quot;&gt;egreg&lt;/code&gt;, the person who holds the highest
-reputation rank there (a whooping 200k above the next person, who —
-guess what — is also on the LaTeX Team).&lt;/p&gt;
-
-&lt;p&gt;We are extremely greateful to have both of them on board and gain from their
-experience and knowledge!&lt;/p&gt;
-
-&lt;p&gt;A warm welcome —
-Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 16 Oct 2018 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2018/10/16/new-kids/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2018/10/16/new-kids/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>members</category>
         
         
         <category>news</category>

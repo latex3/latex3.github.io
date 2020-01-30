@@ -17,13 +17,15 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
   </div>
 </div>
 
-The newletters are individually available below. A document with all available issues bundled together in their historical order is
-<a href="{{site.baseurl}}/news/latex2e-news/ltnews.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">ltnews.pdf</a>.
 
+A document with all available issues bundled together in their historical order is
+<a href="{{site.baseurl}}/news/latex3-news/l3news.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">`ltnews.pdf`</a>.
+In addition the newletters are individually available below. 
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
-| 2019/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews30.pdf" target="_blank" onclick="vgwPixelCall('7000e177ed02498cb64066adbedb6d81');">LaTeX2e News Issue 30</a> | Bug fix release with with ; LaTeX development formats; Unicode now allowed in labels, file names and other places; improvements to `filecontents`, robustify many commands; further changes to `base`, `tools`, and `amsmath`|
+| 2020/02/02 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews31.pdf" target="_blank" onclick="vgwPixelCall('');">LaTeX2e News Issue 31</a> | L3 programming layer now part of the 2e kernel; improvements and new features for LaTeX font selection (NFSS); various bug fixes|
+| 2019/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews30.pdf" target="_blank" onclick="vgwPixelCall('7000e177ed02498cb64066adbedb6d81');">LaTeX2e News Issue 30</a> |  LaTeX development formats available; Unicode now allowed in labels, file names and other places; improvements to `filecontents`, robustify many commands; further changes to `base`, `tools`, and `amsmath`|
 | 2018/12/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews29.pdf" target="_blank" onclick="vgwPixelCall('c200b8c6707a4774b6b97cd616a96ced');">LaTeX2e News Issue 29</a> | Bug fix release with with changes to `base`, `tools`, and `amsmath`|
 | 2018/04/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews28.pdf" target="_blank" onclick="vgwPixelCall('e9cdf4e5347a42d29f280b3a53e04614');">LaTeX2e News Issue 28</a> | LaTeX now on GitHub; Bug report policy change; UTF-8: new default input encoding; General rollback concept for packages; Changes to `base`, `tools`, and `amsmath`|
 | 2017/04/15 | [LaTeX2e News Issue 27]({{site.baseurl}}/news/latex2e-news/ltnews27.pdf) | ISO Date support; TU encoding improvements; Hyphenation and default language; Small code updates |
