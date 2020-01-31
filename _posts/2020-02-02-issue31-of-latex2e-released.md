@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spring 2020 LaTeX release available"
-date: 2020-01-30 00:00:00
+date: 2020-02-02 00:00:00
 description: "The February 2020 release of LaTeX is available. ltnews31 describes updates and changes made in the new LaTeX release."
 excerpt: "This release introduces a number of important enhancements ..."
 categories: news
@@ -46,7 +46,7 @@ be supported in the old NFSS in a natural way.
 
 The new features and most the important bug fixes made in this release are documented in <a
 href="{{site.baseurl}}/news/latex2e-news/ltnews31.pdf" target="_blank"
-onclick="vgwPixelCall('');">"LaTeX2e News Issue 31"</a>. This document
+onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">"LaTeX2e News Issue 31"</a>. This document
 can be found on the [LaTeX2e news
 page]({{site.baseurl}}/news/latex2e-news/) where you will also find
 release information for earlier LaTeX releases.

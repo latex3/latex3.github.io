@@ -5,72 +5,43 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 30 Jan 2020 21:50:45 +0100</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2020 21:50:45 +0100</lastBuildDate>
+    <pubDate>Fri, 31 Jan 2020 23:00:34 +0100</pubDate>
+    <lastBuildDate>Fri, 31 Jan 2020 23:00:34 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Spring 2020 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;the-spring-2020-latex-release-is-available&quot;&gt;The spring 2020 LaTeX release is available&lt;/h1&gt;
+        <title>Issues 11 and 12 of LaTeX3 news released</title>
+        <description>&lt;h1 id=&quot;issues-11-and-12-of-latex3-news-released&quot;&gt;Issues 11 and 12 of LaTeX3 news released&lt;/h1&gt;
 
-&lt;p&gt;When we realized that the next LaTeX release was scheduled close to
-a rather memorable day, we decided to delay the release by one day so
-that it will now appear officially on February the 2nd 2020 (or on 20
-20 02 02 if you use the ISO-date and arrange the spaces somewhat
-unconventionally).  This release introduces a number of important
-enhancements and so being able to use this date is a rather nice
-opportunity to mark its importance.&lt;/p&gt;
+&lt;p&gt;There has been quite a gap since the last LaTeX3 News and there is a
+lot to report.  By mistake LaTeX3 News 11 (nominally February 2018)
+did not get published when written and we discovered this only when we
+prepared issue 12.  We have kept the information it contains separate
+as it is a good summary of &lt;a href=&quot;/news/latex3-news/l3news11.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2cf1bc0a478f4e45840d5a3de028200a');&quot;&gt;the work
+that had happened in 2017&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;latex-now-contains-the-l3-programming-layer-as-part-of-its-format&quot;&gt;LaTeX now contains the L3 programming layer as part of its format&lt;/h4&gt;
+&lt;p&gt;LaTeX3 News 12 then covers &lt;a href=&quot;/news/latex3-news/l3news12.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2cf1bc0a478f4e45840d5a3de028200a');&quot;&gt;the work done in 2018 and 2019&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This results in noticeable speed improvements for many documents
-because these days they often (implicitly) load &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; at some point
-in the preamble. This is the case for virtually all documents
-processed with a Unicode engine, but also true for many pdfTeX
-documents, because more and more packages use &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; or other
-&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based code. Also important (and maybe more so) it will enable
-us to successfully tackle large and difficult problems, such as
-automatically producing tagged and accessible documents, in the near
-future.&lt;/p&gt;
+&lt;p&gt;We also added a document that &lt;a href=&quot;/news/latex3-news/l3news.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('06009f5d88d4445cae1ba16872605b92');&quot;&gt;combines
+all twelve LaTeX3 newletters in historical order&lt;/a&gt;. This gives some
+interesting inside into the activities of the last decade and clearly
+shows the increased activities of the team in the recent years, now
+that &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (the programming layer of LaTeX3) gains more and more
+followers.&lt;/p&gt;
 
-&lt;h4 id=&quot;the-latex-font-selection-scheme-nfss-got-a-face-lift&quot;&gt;The LaTeX Font Selection Scheme (NFSS) got a face lift&lt;/h4&gt;
+&lt;p&gt;You will find all newletters as individual PDF files also on &lt;a href=&quot;/news/latex3-news/&quot;&gt;the
+LaTeX3 newletter page&lt;/a&gt; on this
+site.&lt;/p&gt;
 
-&lt;p&gt;It now integrates some important enhancements that have been developed
-in the recent years, including ideas from the packages &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;. Beside other improvements this will better
-support the new font families that are made available for use with
-LaTeX, because a large number of them provide additional font faces
-(e.g., small caps italic, or a condensed series) and those could not
-be supported in the old NFSS in a natural way.&lt;/p&gt;
-
-&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
-
-&lt;p&gt;The new features and most the important bug fixes made in this release are documented in &lt;a href=&quot;/news/latex2e-news/ltnews31.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('');&quot;&gt;“LaTeX2e News Issue 31”&lt;/a&gt;. This document
-can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Experiences with the LaTeX&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; formats&lt;/li&gt;
-  &lt;li&gt;Concerning this release … (LuaLaTeX engine)&lt;/li&gt;
-  &lt;li&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Improvements to LaTeX font selection: NFSS&lt;/li&gt;
-  &lt;li&gt;Other changes to the LaTeX kernel&lt;/li&gt;
-  &lt;li&gt;Changes to packages in the graphics category&lt;/li&gt;
-  &lt;li&gt;LaTeX requirements on engine primitives&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
+&lt;p&gt;—Enjoy
+Frank&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 30 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/30/issue31-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/30/issue31-of-latex2e-released/</guid>
+        <pubDate>Fri, 31 Jan 2020 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
         
-        <category>latex2e</category>
+        <category>latex3</category>
         
         <category>latex-news</category>
         
@@ -394,8 +365,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Nov 2019 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2019/11/28/latex-dev-2020-2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/11/28/latex-dev-2020-2/</guid>
+        <link>https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</guid>
         
         <category>latex2e</category>
         
