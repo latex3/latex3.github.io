@@ -27,7 +27,7 @@ We also added a document that <a
 href="{{site.baseurl}}/news/latex3-news/l3news.pdf" target="_blank"
 onclick="vgwPixelCall('06009f5d88d4445cae1ba16872605b92');">combines
 all twelve LaTeX3 newletters in historical order</a>. This gives some
-interesting inside into the activities of the last decade and clearly
+interesting insights into the activities of the last decade and clearly
 shows the increased activities of the team in the recent years, now
 that `expl3` (the programming layer of LaTeX3) gains more and more
 followers.

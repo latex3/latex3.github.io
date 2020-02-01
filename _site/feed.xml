@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 31 Jan 2020 23:19:21 +0100</pubDate>
-    <lastBuildDate>Fri, 31 Jan 2020 23:19:21 +0100</lastBuildDate>
+    <pubDate>Sat, 01 Feb 2020 01:12:07 +0100</pubDate>
+    <lastBuildDate>Sat, 01 Feb 2020 01:12:07 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -24,7 +24,7 @@ that had happened in 2017&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We also added a document that &lt;a href=&quot;/news/latex3-news/l3news.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('06009f5d88d4445cae1ba16872605b92');&quot;&gt;combines
 all twelve LaTeX3 newletters in historical order&lt;/a&gt;. This gives some
-interesting inside into the activities of the last decade and clearly
+interesting insights into the activities of the last decade and clearly
 shows the increased activities of the team in the recent years, now
 that &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (the programming layer of LaTeX3) gains more and more
 followers.&lt;/p&gt;
