@@ -5,9 +5,79 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Feb 2020 01:12:07 +0100</pubDate>
-    <lastBuildDate>Sat, 01 Feb 2020 01:12:07 +0100</lastBuildDate>
+    <pubDate>Mon, 03 Feb 2020 11:35:56 +0100</pubDate>
+    <lastBuildDate>Mon, 03 Feb 2020 11:35:56 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Spring 2020 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;the-spring-2020-latex-release-is-available&quot;&gt;The spring 2020 LaTeX release is available&lt;/h1&gt;
+
+&lt;p&gt;When we realized that the next LaTeX release was scheduled close to
+a rather memorable day, we decided to delay the release by one day so
+that it will now appear officially on February the 2nd 2020 (or on 20
+20 02 02 if you use the ISO-date and arrange the spaces somewhat
+unconventionally).  This release introduces a number of important
+enhancements and so being able to use this date is a rather nice
+opportunity to mark its importance.&lt;/p&gt;
+
+&lt;h4 id=&quot;latex-now-contains-the-l3-programming-layer-as-part-of-its-format&quot;&gt;LaTeX now contains the L3 programming layer as part of its format&lt;/h4&gt;
+
+&lt;p&gt;This results in noticeable speed improvements for many documents
+because these days they often (implicitly) load &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; at some point
+in the preamble. This is the case for virtually all documents
+processed with a Unicode engine, but also true for many pdfTeX
+documents, because more and more packages use &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; or other
+&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based code. Also important (and maybe more so) it will enable
+us to successfully tackle large and difficult problems, such as
+automatically producing tagged and accessible documents, in the near
+future.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-latex-font-selection-scheme-nfss-got-a-face-lift&quot;&gt;The LaTeX Font Selection Scheme (NFSS) got a face lift&lt;/h4&gt;
+
+&lt;p&gt;It now integrates some important enhancements that have been developed
+in the recent years, including ideas from the packages &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;. Beside other improvements this will better
+support the new font families that are made available for use with
+LaTeX, because a large number of them provide additional font faces
+(e.g., small caps italic, or a condensed series) and those could not
+be supported in the old NFSS in a natural way.&lt;/p&gt;
+
+&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
+
+&lt;p&gt;The new features and most the important bug fixes made in this release are documented in &lt;a href=&quot;/news/latex2e-news/ltnews31.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');&quot;&gt;“LaTeX2e News Issue 31”&lt;/a&gt;. This document
+can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experiences with the LaTeX&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; formats&lt;/li&gt;
+  &lt;li&gt;Concerning this release … (LuaLaTeX engine)&lt;/li&gt;
+  &lt;li&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements to LaTeX font selection: NFSS&lt;/li&gt;
+  &lt;li&gt;Other changes to the LaTeX kernel&lt;/li&gt;
+  &lt;li&gt;Changes to packages in the graphics category&lt;/li&gt;
+  &lt;li&gt;LaTeX requirements on engine primitives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 02 Feb 2020 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Issues 11 and 12 of LaTeX3 news released</title>
@@ -839,43 +909,6 @@ rollback concept for packages and classes”&lt;/a&gt;.&lt;/p&gt;
         <category>latex2e</category>
         
         <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Experimental benchmarking functions</title>
-        <description>&lt;h1 id=&quot;experimental-benchmarking-functions&quot;&gt;Experimental benchmarking functions&lt;/h1&gt;
-
-&lt;p&gt;Prompted by a &lt;a href=&quot;https://tex.stackexchange.com/q/456316/&quot;&gt;TeX-sx question&lt;/a&gt; on
-benchmarking, the team have added a new experimental package to &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;:
-&lt;a href=&quot;https://ctan.org/pkg/l3experimental&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3benchmark&lt;/code&gt;&lt;/a&gt;. This new material
-provides a convenient interface for benchmarking: seeing how long it takes for
-blocks of code to run. This uses the underlying ‘timer’ support in modern TeX
-engines (XeTeX at present not included), but adds some handy wrappers so most
-of the hard work is automated.&lt;/p&gt;
-
-&lt;p&gt;The new code is pretty experimental, so we are hoping to get feedback on the
-interfaces. For example, we’ve provided &lt;code class=&quot;highlighter-rouge&quot;&gt;\benchmark:n&lt;/code&gt;, which automatically
-loops code to get enough run time to produce a ‘meaningful’ timing. Do we also
-need to have a &lt;code class=&quot;highlighter-rouge&quot;&gt;\benchmark_once:n&lt;/code&gt; version, or how about a &lt;code class=&quot;highlighter-rouge&quot;&gt;begin/end&lt;/code&gt; pairing
-for code that can’t be run in a loop?&lt;/p&gt;
-
-&lt;p&gt;We’d love to hear from developers on how they see this, either through
-&lt;a href=&quot;/latex3/code/#discussing-it&quot;&gt;a posting on the
-LATEX-L&lt;/a&gt; discussion list,
-by &lt;a href=&quot;mailto:latex-team@latex-project.org&quot;&gt;mail to the team&lt;/a&gt;, as a
-&lt;a href=&quot;https://github.com/latex3/latex3/issues&quot;&gt;GitHub issue&lt;/a&gt;, or otherwise.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 28 Oct 2018 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2018/10/28/benchmarking/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2018/10/28/benchmarking/</guid>
-        
-        <category>latex3</category>
-        
-        <category>discussion</category>
         
         
         <category>news</category>
