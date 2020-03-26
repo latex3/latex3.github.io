@@ -19,7 +19,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 
 A document with all available issues bundled together in their historical order is
-<a href="{{site.baseurl}}/news/latex3-news/l3news.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">`ltnews.pdf`</a>.
+<a href="{{site.baseurl}}/news/latex2e-news/ltnews.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">`ltnews.pdf`</a>.
 In addition the newletters are individually available below. 
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
