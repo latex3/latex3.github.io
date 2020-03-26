@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 Mar 2020 21:37:33 +0100</pubDate>
-    <lastBuildDate>Thu, 26 Mar 2020 21:37:33 +0100</lastBuildDate>
+    <pubDate>Thu, 26 Mar 2020 22:15:43 +0100</pubDate>
+    <lastBuildDate>Thu, 26 Mar 2020 22:15:43 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -154,7 +154,7 @@ integrated editing environment, then it depends on the system
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.&lt;/p&gt;
 
-&lt;h2 id=&quot;please-test-now-----this-is-the-final-pre-release-prior-to-the-main-2020-02-02-release&quot;&gt;Please test now — this is the final pre-release prior to the main 2020-02-02 release&lt;/h2&gt;
+&lt;h2 id=&quot;please-test-now--this-is-the-final-pre-release-prior-to-the-main-2020-02-02-release&quot;&gt;Please test now — this is the final pre-release prior to the main 2020-02-02 release&lt;/h2&gt;
 
 &lt;p&gt;We ask you to test now, because this pre-release (with the execption
 of some further documentation improvements) is representing the
@@ -252,7 +252,7 @@ pre-release of 2020-02-02 at that point.&lt;/p&gt;
 the process of the development formats is available in a TUGboat
 article:&lt;/p&gt;
 
-&lt;h3 id=&quot;a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall03770697eae2427c8a6bfe7e9b8ab332the-latex-release-workflow-and-the-latex-dev-formatsa&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-latex-release-workflow-and-the-latex-dev-formats&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
@@ -381,7 +381,7 @@ it will, at some future time, become possible to omit&lt;/p&gt;
 &lt;p&gt;entirely, but, to support older formats, this explicit loading is at
 present still recommended.&lt;/p&gt;
 
-&lt;h3 id=&quot;please-test-now-----even-though-there-is-more-to-come&quot;&gt;Please test now — even though there is more to come&lt;/h3&gt;
+&lt;h3 id=&quot;please-test-now--even-though-there-is-more-to-come&quot;&gt;Please test now — even though there is more to come&lt;/h3&gt;
 
 &lt;p&gt;We ask you to test now, because (unless we made some mistakes) the
 above changes should be transparent to the user — other than
@@ -409,7 +409,7 @@ newer or the same as the current main release.&lt;/p&gt;
 the process of the development formats is available in a TUGboat
 article:&lt;/p&gt;
 
-&lt;h3 id=&quot;a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall03770697eae2427c8a6bfe7e9b8ab332the-latex-release-workflow-and-the-latex-dev-formatsa&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-latex-release-workflow-and-the-latex-dev-formats&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
@@ -559,7 +559,7 @@ so that we know about the problem and can jointly work on resolving it.&lt;/p&gt
 &lt;p&gt;More details and some background information about the concepts and
 the process is available in an upcoming TUGboat article:&lt;/p&gt;
 
-&lt;h3 id=&quot;a-hrefpublications2019-fmi-tub-tb125mitt-dev-formatpdf-targetblank-onclickvgwpixelcall03770697eae2427c8a6bfe7e9b8ab332the-latex-release-workflow-and-the-latex-dev-formatsa&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-latex-release-workflow-and-the-latex-dev-formats&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
@@ -667,7 +667,7 @@ Lamport’s 60th birthday and discusses the relevance of LaTeX throughout
 several decades (including some interesting predictions that can be checked
 against reality).&lt;/p&gt;
 
-&lt;h3 id=&quot;the-latex-legacypublications2001-car-latex-legacypdf&quot;&gt;&lt;a href=&quot;/publications/2001-CAR-LaTeX-legacy.pdf&quot;&gt;The LaTeX Legacy&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-latex-legacy&quot;&gt;&lt;a href=&quot;/publications/2001-CAR-LaTeX-legacy.pdf&quot;&gt;The LaTeX Legacy&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
@@ -700,7 +700,7 @@ comprehensive but I hope it is informative.&lt;/p&gt;
 interview corner) and Gianluca Pignalberi (for the Free Software
 Magazine).&lt;/p&gt;
 
-&lt;h3 id=&quot;a-hrefpublications2006-fmi-fsm-interviewpdf-targetblank-onclickvgwpixelcall8d3e30d44868430f853c7263dd693030interview-of-frank-mittelbach----a-combined-interview-of-the-latex-project-directora&quot;&gt;&lt;a href=&quot;/publications/2006-FMi-FSM-interview.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('8d3e30d44868430f853c7263dd693030');&quot;&gt;Interview of Frank Mittelbach – A combined interview of the LaTeX Project director&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;interview-of-frank-mittelbach--a-combined-interview-of-the-latex-project-director&quot;&gt;&lt;a href=&quot;/publications/2006-FMi-FSM-interview.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('8d3e30d44868430f853c7263dd693030');&quot;&gt;Interview of Frank Mittelbach – A combined interview of the LaTeX Project director&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;, Gianluca Pignalberi, Dave Walden&lt;/li&gt;
