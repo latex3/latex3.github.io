@@ -40,6 +40,10 @@ Given such a notice and statement in a file, the conditions given in this licens
 
 **Version 1.3c should be used for all new works distributed under the LPPL**.
 
+> If a work refers to LPPL 1.3 as its license (like the example above)
+> this is interpreted as the latest version of the 1.3 license, i.e.,
+> version 1.3c!
+
 + [Version 1.3c](lppl-1-3c/), also as [plain text](lppl-1-3c.txt), [LaTeX source code](lppl-1-3c.tex), and as a [PDF file](lppl-1-3c.pdf) (~81.3 kB)
 + [Version 1.2](lppl-1-2/), also as [plain text](lppl-1-2.txt)
 + [Version 1.1](lppl-1-1/), also as [plain text](lppl-1-1.txt)
