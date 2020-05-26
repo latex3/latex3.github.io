@@ -26,6 +26,8 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
 </div>
 
 <hr>
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<hr>
 
 <div class="row teaser">
   <section class="col cell1of3">
@@ -50,4 +52,4 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
 
 <hr>
 
-<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+

@@ -102,6 +102,9 @@ that are entirely, or least primarily, free software.
 
 ***
 
+<div class="row">{% include google.adsense.html %}</div><hr>
+
+***
 
 ## CTAN
 

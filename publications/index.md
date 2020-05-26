@@ -10,4 +10,8 @@ description: "Selection of links to PDF versions of various articles published b
 <div class="row">{% include toc.pubbyyear.html %}</div>
 
 
+<hr>
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<hr>
+
 <div id="div_vgwpixel"></div>

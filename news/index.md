@@ -41,6 +41,10 @@ permalink: /news/
   {% endfor %}
 </ul>
 
+<hr>
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<hr>
+
 ## Older News
 
 <ul class="all-news-posts">
