@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 May 2020 23:05:23 +0200</pubDate>
-    <lastBuildDate>Tue, 26 May 2020 23:05:23 +0200</lastBuildDate>
+    <pubDate>Thu, 28 May 2020 15:35:19 +0200</pubDate>
+    <lastBuildDate>Thu, 28 May 2020 15:35:19 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -115,14 +115,14 @@ for LaTeX, so stay tuned.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-6&lt;/code&gt; the earlier prereleases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-6&lt;/code&gt;, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 25 May 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/05/25/latex-dev-2020-10-1a/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/05/25/latex-dev-2020-10-1a/</guid>
+        <pubDate>Thu, 28 May 2020 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</guid>
         
         <category>latex2e</category>
         
