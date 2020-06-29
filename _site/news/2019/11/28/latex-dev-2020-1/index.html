@@ -84,13 +84,12 @@ before the final release in February hits the streets.</p>
 
 <p>Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-<code class="highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
+<code class="language-plaintext highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+</code></pre></div></div>
 
-<p>instead of using <code class="highlighter-rouge">pdflatex</code>, <code class="highlighter-rouge">lualatex</code> or <code class="highlighter-rouge">xelatex</code>. If you use an
+<p>instead of using <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code> or <code class="language-plaintext highlighter-rouge">xelatex</code>. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.</p>
@@ -107,7 +106,7 @@ already on CTAN we had to increase the prerelease number.</p>
 <p>In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
 engine, which is LuaTeX with an embedded HarfBuzz library.
 HarfBuzz can be used by setting a suitable renderer in the font
-declaration. An interface for that is provided by the <code class="highlighter-rouge">fontspec</code> package.
+declaration. An interface for that is provided by the <code class="language-plaintext highlighter-rouge">fontspec</code> package.
 This additional font renderer will greatly improve the shaping of
 various scripts, which are currently handled correctly only by
 XeTeX.</p>
@@ -122,31 +121,30 @@ be worthwhile running some tests, because, from 2020 onwards this will
 be the only LuaTeX engine for which a LaTeX format will be distributed
 in TeXLive and MikTeX from 2020 onwards.</p>
 
-<h3 id="improved-load-times-for-expl3">Improved load-times for <code class="highlighter-rouge">expl3</code></h3>
+<h3 id="improved-load-times-for-expl3">Improved load-times for <code class="language-plaintext highlighter-rouge">expl3</code></h3>
 
-<p>The LaTeX3 programming layer, <code class="highlighter-rouge">expl3</code>, has over the past decade moved
+<p>The LaTeX3 programming layer, <code class="language-plaintext highlighter-rouge">expl3</code>, has over the past decade moved
 from being largely experimental to broadly stable. It is now used in a
 significant number of third-party packages, either explicitly or
-implicitly (e.g., by loading <code class="highlighter-rouge">xparse</code> to define user command
-interfaces), so that many documents load the <code class="highlighter-rouge">expl3</code> code at some
+implicitly (e.g., by loading <code class="language-plaintext highlighter-rouge">xparse</code> to define user command
+interfaces), so that many documents load the <code class="language-plaintext highlighter-rouge">expl3</code> code at some
 point in the preamble. Most LaTeX documents compiled using XeTeX or
-LuaTeX load <code class="highlighter-rouge">fontspec</code>, which is written using <code class="highlighter-rouge">expl3</code> so in these
+LuaTeX load <code class="language-plaintext highlighter-rouge">fontspec</code>, which is written using <code class="language-plaintext highlighter-rouge">expl3</code> so in these
 engines it is nearly always used.</p>
 
-<p>The <code class="highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when
+<p>The <code class="language-plaintext highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when
 used with the XeTeX and LuaTeX engines, it loads a large body of
 Unicode data.  This means that even on a fast computer, there is a
-relatively large load time penalty whenever <code class="highlighter-rouge">expl3</code> is needed.</p>
+relatively large load time penalty whenever <code class="language-plaintext highlighter-rouge">expl3</code> is needed.</p>
 
 <p>For this release, the team have made adjustments in the LaTeX 2e kernel to
-pre-load a significant portion of <code class="highlighter-rouge">expl3</code> when the format is built. This is
+pre-load a significant portion of <code class="language-plaintext highlighter-rouge">expl3</code> when the format is built. This is
 transparent at the user level, other than the significant decrease in document
 processing time: there will be no “pause” for loading Unicode data
-files. Loading of <code class="highlighter-rouge">expl3</code> in documents and packages can be done as usual;
+files. Loading of <code class="language-plaintext highlighter-rouge">expl3</code> in documents and packages can be done as usual;
 it will, at some future time, become possible to omit</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>\RequirePackage{expl3}
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\RequirePackage{expl3}
+</code></pre></div></div>
 <p>entirely, but, to support older formats, this explicit loading is at
 present still recommended.</p>
 
@@ -166,7 +164,7 @@ will most likely contain improvements to the font support for all engines.</p>
 in the distributions either matches the main release code or will be
 newer than the current main release. This was not the case in the last
 few weeks when the main release was 2019-10-01 with a few hot fixes
-added, but the <code class="highlighter-rouge">-dev</code> format was still from some day prior to October.</p>
+added, but the <code class="language-plaintext highlighter-rouge">-dev</code> format was still from some day prior to October.</p>
 
 <p>In the future we intend to ensure that this does not happen, so that,
 to avoid confusion, the distributed development release is always

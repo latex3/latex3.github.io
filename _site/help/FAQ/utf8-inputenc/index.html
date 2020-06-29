@@ -70,34 +70,31 @@ ASCII with no interpretation of character/bytes in the range 128–255
 as was before.</p>
 
 <p>In order to cope with various <em>input encoding</em> (also known as <em>code pages</em>),
-LaTeX has long used the <code class="highlighter-rouge">inputenc</code> package, which should receive an option
+LaTeX has long used the <code class="language-plaintext highlighter-rouge">inputenc</code> package, which should receive an option
 corresponding to the file’s input encoding</p>
 
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code><span class="k">\usepackage</span><span class="na">[latin1]</span><span class="p">{</span>inputenc<span class="p">}</span>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="na">[latin1]</span><span class="p">{</span>inputenc<span class="p">}</span>
 <span class="k">\usepackage</span><span class="na">[ansinew]</span><span class="p">{</span>inputenc<span class="p">}</span>
 <span class="k">\usepackage</span><span class="na">[koi-8r]</span><span class="p">{</span>inputenc<span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The full list of the encodings provided by the LaTeX team is</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ansinew  applemac ascii   cp1250  cp1252  cp1257
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansinew  applemac ascii   cp1250  cp1252  cp1257
 cp437    cp437de  cp850   cp852   cp858   cp865
 decmulti latin1   latin2  latin3  latin4  latin5
 latin9   latin10  macce   next    utf8
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Other packages provide support for additional encodings.</p>
 
 <p>The job of these options is to translate characters represented
-by the text editor as, say, <code class="highlighter-rouge">é</code> or <code class="highlighter-rouge">ü</code> or <code class="highlighter-rouge">ß</code> into the so-called
+by the text editor as, say, <code class="language-plaintext highlighter-rouge">é</code> or <code class="language-plaintext highlighter-rouge">ü</code> or <code class="language-plaintext highlighter-rouge">ß</code> into the so-called
 LaTeX Internal Character Representation (LICR) that for those
 characters would be</p>
 
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code><span class="k">\'</span>e  <span class="k">\"</span>u  <span class="k">\ss</span>
-</code></pre>
-</div>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\'</span>e  <span class="k">\"</span>u  <span class="k">\ss</span>
+</code></pre></div></div>
 
 <p>without you, the user, having to know what happens behind the
 scenes.</p>
@@ -119,9 +116,8 @@ probably incurred in a common error that unfortunately used
 to be advertised in some guides or Web sites, namely to
 use accented letters just along within</p>
 
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code><span class="k">\usepackage</span><span class="na">[T1]</span><span class="p">{</span>fontenc<span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="na">[T1]</span><span class="p">{</span>fontenc<span class="p">}</span>
+</code></pre></div></div>
 
 <p>and your file is quite certainly encoded as Latin-1 (also known
 as ISO-8859-1). Not your fault, probably, just following advice
@@ -132,7 +128,7 @@ sorry.</p>
 added, <em>some</em> accented letters would be printed correctly. Not
 all of them, however:
 see <a href="https://tex.stackexchange.com/questions/44694/">fontenc vs. inputenc</a>.
-For instance, <code class="highlighter-rouge">ß</code> would print incorrectly.</p>
+For instance, <code class="language-plaintext highlighter-rouge">ß</code> would print incorrectly.</p>
 
 <h1 id="what-should-i-do-now">What should I do now?</h1>
 
@@ -141,29 +137,27 @@ to save your file as UTF-8. Most of them have a button somewhere
 telling you what encoding the file is using; try clicking on it
 and, from the drop down menu, choose UTF-8. That should be all.</p>
 
-<p>Or add in the preamble the suitable call to <code class="highlighter-rouge">inputenc</code>,
+<p>Or add in the preamble the suitable call to <code class="language-plaintext highlighter-rouge">inputenc</code>,
 which is just as easy:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>\usepackage[latin1]{inputenc}
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\usepackage[latin1]{inputenc}
+</code></pre></div></div>
 
 <p>If you <em>really</em> want to risk no change in the output (even if
 erroneous from a TeXnical point of view), add</p>
 
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code><span class="k">\UseRawInputEncoding</span>
-</code></pre>
-</div>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\UseRawInputEncoding</span>
+</code></pre></div></div>
 
 <p>as the very first line.</p>
 
-<h1 id="can-i-now-omit-usepackageutf8inputenc-in-my-new-documents">Can I now omit <code class="highlighter-rouge">\usepackage[utf8]{inputenc}</code> in my new documents?</h1>
+<h1 id="can-i-now-omit-usepackageutf8inputenc-in-my-new-documents">Can I now omit <code class="language-plaintext highlighter-rouge">\usepackage[utf8]{inputenc}</code> in my new documents?</h1>
 
 <p>Well, yes and no. First of all, remember to ensure your text editor
 is set up to use UTF-8 for new files.</p>
 
 <p>If you don’t plan to share your LaTeX document, but only the PDF
-output, you don’t need to call the <code class="highlighter-rouge">inputenc</code> package. However,
+output, you don’t need to call the <code class="language-plaintext highlighter-rouge">inputenc</code> package. However,
 if someone you pass the file to is still using an older release
 of LaTeX, they might have problem in running LaTeX over it.</p>
 

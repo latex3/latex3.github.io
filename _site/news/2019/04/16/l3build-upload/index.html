@@ -65,29 +65,29 @@
     <small class="meta"><span class="post-date">Apr 16, 2019</span></small>
     <h1 id="uploading-to-ctan-with-l3build">Uploading to CTAN with l3build</h1>
 
-<p>A new version of <a href="https://ctan.org/pkg/l3build"><code class="highlighter-rouge">l3build</code></a> has recently been released with the ability
-to use <code class="highlighter-rouge">curl</code> to automatically upload packages to CTAN.</p>
+<p>A new version of <a href="https://ctan.org/pkg/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> has recently been released with the ability
+to use <code class="language-plaintext highlighter-rouge">curl</code> to automatically upload packages to CTAN.</p>
 
 <p>This functionality has been on our wishlist for some time, with early
 thoughts around the idea of “reverse engineering” the CTAN upload page like the
-(now defunct) <a href="https://ctan.org/pkg/ctanupload"><code class="highlighter-rouge">ctanupload</code></a> tool by Martin Scharrer.
+(now defunct) <a href="https://ctan.org/pkg/ctanupload"><code class="language-plaintext highlighter-rouge">ctanupload</code></a> tool by Martin Scharrer.
 Luckily for us, the CTAN team added an API to allow developers to interface
 with the CTAN upload process in a well-documented and stable manner.</p>
 
-<p>This API has been used for some time by the <a href="https://ctan.org/pkg/ctan-o-mat"><code class="highlighter-rouge">ctan-o-mat</code></a> tool by Gerd Neugebauer,
+<p>This API has been used for some time by the <a href="https://ctan.org/pkg/ctan-o-mat"><code class="language-plaintext highlighter-rouge">ctan-o-mat</code></a> tool by Gerd Neugebauer,
 which provides the ability to send package updates through to CTAN via the command line,
 with metadata for the package loadable via a configuration file.
 While it’s not a cumbersome process to manually upload packages through CTAN, it’s nice
 to be able to automate the process.</p>
 
-<p>For a tool like <code class="highlighter-rouge">l3build</code>, we prefer not to rely on additional tools beyond a standard TeX distribution,
-and as Windows now provides a <code class="highlighter-rouge">curl</code> utility this has allowed us to build a CTAN-uploading tool into <code class="highlighter-rouge">l3build</code>
+<p>For a tool like <code class="language-plaintext highlighter-rouge">l3build</code>, we prefer not to rely on additional tools beyond a standard TeX distribution,
+and as Windows now provides a <code class="language-plaintext highlighter-rouge">curl</code> utility this has allowed us to build a CTAN-uploading tool into <code class="language-plaintext highlighter-rouge">l3build</code>
 directly. The mechanics of this tool were written by David Carlisle; thanks!</p>
 
-<p>Its use is relatively straightforward. In the package’s <code class="highlighter-rouge">build.lua</code> file, add a table
+<p>Its use is relatively straightforward. In the package’s <code class="language-plaintext highlighter-rouge">build.lua</code> file, add a table
 along the following lines:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>uploadconfig = {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uploadconfig = {
   pkg          = "vertbars",
   version      = "v1.0c",
   author       = "Peter R Wilson; Will Robertson",
@@ -98,50 +98,46 @@ along the following lines:</p>
   repository   = "https://github.com/wspr/herries-press/",
   note         = [[Uploaded automatically by l3build...]]
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Additional fields to what are listed above are possible; this example isn’t intended to be exhaustive.
 The full list of possibilities is available either through the <a href="https://ctan.org/help/submit">CTAN API documentation</a>
-or through the <code class="highlighter-rouge">l3build</code> documentation.</p>
+or through the <code class="language-plaintext highlighter-rouge">l3build</code> documentation.</p>
 
-<h2 id="running-l3build-upload">Running <code class="highlighter-rouge">l3build upload</code></h2>
+<h2 id="running-l3build-upload">Running <code class="language-plaintext highlighter-rouge">l3build upload</code></h2>
 
-<p>With the <code class="highlighter-rouge">build.lua</code> configuration file in place, to submit a new version of the package
-to CTAN you would first run <code class="highlighter-rouge">l3build ctan</code> to generate the package zip archive, then execute
+<p>With the <code class="language-plaintext highlighter-rouge">build.lua</code> configuration file in place, to submit a new version of the package
+to CTAN you would first run <code class="language-plaintext highlighter-rouge">l3build ctan</code> to generate the package zip archive, then execute
 something like</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>l3build upload --message "Minor update to fix some erroneous spaces from missing % signs"
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>l3build upload --message "Minor update to fix some erroneous spaces from missing % signs"
+</code></pre></div></div>
 
-<p>For a longer message you could use <code class="highlighter-rouge">--file releasenotes-v1.0c.txt</code> where the listed filename
+<p>For a longer message you could use <code class="language-plaintext highlighter-rouge">--file releasenotes-v1.0c.txt</code> where the listed filename
 contains the release notes for this update. Note, however, that there is a fairly small
 character limit on what can be included here; you may wish to maintain a longer, more detailed,
 list of changes in a separate CHANGELOG file.</p>
 
-<p>Before the upload process, <code class="highlighter-rouge">l3build</code> will check whether any required fields have been
+<p>Before the upload process, <code class="language-plaintext highlighter-rouge">l3build</code> will check whether any required fields have been
 omitted and prompt them in an interactive terminal.
 In particular, the user will be asked their email address for verification purposes;
-in general this information should not be hard-coded into the <code class="highlighter-rouge">build.lua</code> file if that file
+in general this information should not be hard-coded into the <code class="language-plaintext highlighter-rouge">build.lua</code> file if that file
 is to be stored publicly.</p>
 
 <p>Rather than an interactive query, the email field can also be set as a command line option as in</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>l3build upload --email "my.email@mail.com" ...
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>l3build upload --email "my.email@mail.com" ...
+</code></pre></div></div>
 
-<p>Alternatively, you could create a <code class="highlighter-rouge">build-private.lua</code> file in your personal <code class="highlighter-rouge">texmf/scripts</code> directory
+<p>Alternatively, you could create a <code class="language-plaintext highlighter-rouge">build-private.lua</code> file in your personal <code class="language-plaintext highlighter-rouge">texmf/scripts</code> directory
 containing</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>uploadconfig = uploadconfig or {}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uploadconfig = uploadconfig or {}
 uploadconfig.uploader = "My Name"
 uploadconfig.email    = "my.name@gmail.com"
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>And read this into your <code class="highlighter-rouge">build.lua</code> file with <code class="highlighter-rouge">require('build-private.lua')</code>.</p>
+<p>And read this into your <code class="language-plaintext highlighter-rouge">build.lua</code> file with <code class="language-plaintext highlighter-rouge">require('build-private.lua')</code>.</p>
 
 <h2 id="further-automation-and-future-plans">Further automation and future plans</h2>
 
@@ -150,14 +146,14 @@ uploadconfig.email    = "my.name@gmail.com"
 <ul>
   <li>You may wish additional logic to check the status of your version control system
 before proceeding with tagging or upload.</li>
-  <li>You may wish to have <code class="highlighter-rouge">l3build tag</code> update the package version automatically.</li>
-  <li>You may wish to populate the <code class="highlighter-rouge">announcement</code> field within <code class="highlighter-rouge">uploadconfig</code> automatically
-from an associated <code class="highlighter-rouge">CHANGELOG</code> file.</li>
+  <li>You may wish to have <code class="language-plaintext highlighter-rouge">l3build tag</code> update the package version automatically.</li>
+  <li>You may wish to populate the <code class="language-plaintext highlighter-rouge">announcement</code> field within <code class="language-plaintext highlighter-rouge">uploadconfig</code> automatically
+from an associated <code class="language-plaintext highlighter-rouge">CHANGELOG</code> file.</li>
 </ul>
 
-<p>And so on. It’s also worth noting that this tool does <em>not</em> automatically run <code class="highlighter-rouge">l3build ctan</code>
+<p>And so on. It’s also worth noting that this tool does <em>not</em> automatically run <code class="language-plaintext highlighter-rouge">l3build ctan</code>
 as that process can be very slow if the test suite needs to be re-run. It is a manual process
-to run the appropriate <code class="highlighter-rouge">tag</code> then <code class="highlighter-rouge">ctan</code> then <code class="highlighter-rouge">upload</code> steps.</p>
+to run the appropriate <code class="language-plaintext highlighter-rouge">tag</code> then <code class="language-plaintext highlighter-rouge">ctan</code> then <code class="language-plaintext highlighter-rouge">upload</code> steps.</p>
 
 <p>As we gain more experience with how we and others are using the tool we will look into providing
 more functions around automation and/or convenience, especially integration with version control.</p>

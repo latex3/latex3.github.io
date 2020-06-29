@@ -65,7 +65,7 @@
     <small class="meta"><span class="post-date">May 28, 2020</span></small>
     <h1 id="the-first-latex-prerelease-for-2020-10-01-is-available-for-testing">The first LaTeX prerelease for 2020-10-01 is available for testing</h1>
 
-<p>A few days ago we have submitted a new LaTeX development format<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> to CTAN
+<p>A few days ago we have submitted a new LaTeX development format<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> to CTAN
 and by now it should be available to all users using MiKTeX or TeX
 Live (on any operating system).</p>
 
@@ -84,13 +84,12 @@ before the final release in February hits the streets.</p>
 
 <p>Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-<code class="highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
+<code class="language-plaintext highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+</code></pre></div></div>
 
-<p>instead of using <code class="highlighter-rouge">pdflatex</code>, <code class="highlighter-rouge">lualatex</code> or <code class="highlighter-rouge">xelatex</code>. If you use an
+<p>instead of using <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code> or <code class="language-plaintext highlighter-rouge">xelatex</code>. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.</p>
@@ -99,34 +98,33 @@ modification should be straight forward.</p>
 
 <p>We have been quite busy (did Corona help?) and so already this first
 prerelease contains close to thirty smaller and larger fixes and
-enhancements. A full list is given in a draft version of <code class="highlighter-rouge">ltnews32</code>
+enhancements. A full list is given in a draft version of <code class="language-plaintext highlighter-rouge">ltnews32</code>
 which you should be able to read by running</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>texdoc ltnews32
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>texdoc ltnews32
+</code></pre></div></div>
 
 <p>on the command line (or by any other means available at your operating
-system—somewhere there should be a file called <code class="highlighter-rouge">ltnews32.pdf</code> that
+system—somewhere there should be a file called <code class="language-plaintext highlighter-rouge">ltnews32.pdf</code> that
 you can open with a PDF reader). The draft version is also available from our website as
-<a href="/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">LaTeX2e News Issue 32 draft</a></p>
+<a href="/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">LaTeX2e News Issue 32 draft</a>.</p>
 
 <p>In this post I only touch two of the most important topics, but many
 others are worth exploring too, so please check that documentation out.</p>
 
-<h3 id="providing-xparse-as-part-of-the-format">Providing <code class="highlighter-rouge">xparse</code> as part of the format</h3>
+<h3 id="providing-xparse-as-part-of-the-format">Providing <code class="language-plaintext highlighter-rouge">xparse</code> as part of the format</h3>
 
 <p>In the previous release we added the LaTeX3 programming layer to the
-LaTeX format to improve the loading speed when packages using <code class="highlighter-rouge">expl3</code>
-are used (such as <code class="highlighter-rouge">fontspec</code> or <code class="highlighter-rouge">xparse</code>). In the upcoming release we
-are now extending this support by integrating <code class="highlighter-rouge">xparse</code> so that the extended
+LaTeX format to improve the loading speed when packages using <code class="language-plaintext highlighter-rouge">expl3</code>
+are used (such as <code class="language-plaintext highlighter-rouge">fontspec</code> or <code class="language-plaintext highlighter-rouge">xparse</code>). In the upcoming release we
+are now extending this support by integrating <code class="language-plaintext highlighter-rouge">xparse</code> so that the extended
 interface for defining document-level commands becomes available out of
 the box.</p>
 
 <p>This enables users and most importantly package developers to
 easily define LaTeX commands with multiple optional arguments or
 other syntax features with ease.
-For details, check out the <code class="highlighter-rouge">xparse</code> documentation, e.g., via <code class="highlighter-rouge">texdoc
+For details, check out the <code class="language-plaintext highlighter-rouge">xparse</code> documentation, e.g., via <code class="language-plaintext highlighter-rouge">texdoc
 xparse</code>.</p>
 
 <h3 id="improving-the-font-series-handling">Improving the font series handling</h3>
@@ -140,15 +138,14 @@ the algorithms sometimes selected a wrong font series value. These
 cases have now been resolved and additional support commands have been
 added. For example, with</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>\IfFontSeriesContextTF{〈context〉} {〈true code〉}{〈false code〉}
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\IfFontSeriesContextTF{〈context〉} {〈true code〉}{〈false code〉}
+</code></pre></div></div>
 
 <p>you can now define commands that behave differently depending on the
 current font series context. The 〈context〉 to check has to be specified
-as either <code class="highlighter-rouge">bf</code> or <code class="highlighter-rouge">md</code>. The command then chooses the 〈true code〉
+as either <code class="language-plaintext highlighter-rouge">bf</code> or <code class="language-plaintext highlighter-rouge">md</code>. The command then chooses the 〈true code〉
 or the 〈false code〉 based on where it is used (e.g., inside
-<code class="highlighter-rouge">\textbf</code> (or <code class="highlighter-rouge">\bfseries</code>) or not).</p>
+<code class="language-plaintext highlighter-rouge">\textbf</code> (or <code class="language-plaintext highlighter-rouge">\bfseries</code>) or not).</p>
 
 <h2 id="outlook">Outlook</h2>
 
@@ -164,10 +161,10 @@ for LaTeX, so stay tuned.</p>
 <p>Enjoy — Frank</p>
 
 <p><img src="https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332" width="1" height="1" alt="" /></p>
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>The internal version number for the pre-release is <code class="highlighter-rouge">LaTeX2e &lt;2020-10-01&gt; pre-release-6</code>, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>The internal version number for the pre-release is <code class="language-plaintext highlighter-rouge">LaTeX2e &lt;2020-10-01&gt; pre-release-6</code>, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

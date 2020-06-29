@@ -84,13 +84,12 @@ before the final release in February hits the streets.</p>
 
 <p>Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-<code class="highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
+<code class="language-plaintext highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+</code></pre></div></div>
 
-<p>instead of using <code class="highlighter-rouge">pdflatex</code>, <code class="highlighter-rouge">lualatex</code> or <code class="highlighter-rouge">xelatex</code>. If you use an
+<p>instead of using <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code> or <code class="language-plaintext highlighter-rouge">xelatex</code>. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.</p>
@@ -116,14 +115,14 @@ already on CTAN we had to increase the prerelease number.</p>
 <p>Many modern fonts available these days offer additional font faces,
 e.g., small caps italics or a condensed font series, etc. To better
 support these fonts NFSS (the New Font Selection Mechanism for
-LaTeX) was extended by incorporating ideas from the <code class="highlighter-rouge">mweights</code>,
-<code class="highlighter-rouge">fontaxes</code> and <code class="highlighter-rouge">fontspec</code> packages.  In addition all symbols formerly
-provided through the <code class="highlighter-rouge">textcomp</code> package are now available out of the
-box and the use of <code class="highlighter-rouge">\oldstylenums</code> got improved.</p>
+LaTeX) was extended by incorporating ideas from the <code class="language-plaintext highlighter-rouge">mweights</code>,
+<code class="language-plaintext highlighter-rouge">fontaxes</code> and <code class="language-plaintext highlighter-rouge">fontspec</code> packages.  In addition all symbols formerly
+provided through the <code class="language-plaintext highlighter-rouge">textcomp</code> package are now available out of the
+box and the use of <code class="language-plaintext highlighter-rouge">\oldstylenums</code> got improved.</p>
 
 <p>We also fixed a number of smaller bugs. A detailed description of the
 new features and the bug fixes can be found in a <em>draft</em> version of
-<code class="highlighter-rouge">ltnews31</code> which you can access via <code class="highlighter-rouge">texdoc ltnews31</code> if the
+<code class="language-plaintext highlighter-rouge">ltnews31</code> which you can access via <code class="language-plaintext highlighter-rouge">texdoc ltnews31</code> if the
 pre-release is installed on your computer.</p>
 
 <h2 id="main-features-already-available-in-the-previous-pre-release">Main features already available in the previous pre-release</h2>
@@ -135,7 +134,7 @@ pre-release is installed on your computer.</p>
 <p>In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
 engine, which is LuaTeX with an embedded HarfBuzz library.
 HarfBuzz can be used by setting a suitable renderer in the font
-declaration. An interface for that is provided by the <code class="highlighter-rouge">fontspec</code> package.
+declaration. An interface for that is provided by the <code class="language-plaintext highlighter-rouge">fontspec</code> package.
 This additional font renderer will greatly improve the shaping of
 various scripts, which are currently handled correctly only by
 XeTeX.</p>
@@ -150,39 +149,38 @@ be worthwhile running some tests, because, from 2020 onwards this will
 be the only LuaTeX engine for which a LaTeX format will be distributed
 in TeXLive and MikTeX.</p>
 
-<h3 id="improved-load-times-for-expl3">Improved load-times for <code class="highlighter-rouge">expl3</code></h3>
+<h3 id="improved-load-times-for-expl3">Improved load-times for <code class="language-plaintext highlighter-rouge">expl3</code></h3>
 
-<p>The LaTeX3 programming layer, <code class="highlighter-rouge">expl3</code>, has over the past decade moved
+<p>The LaTeX3 programming layer, <code class="language-plaintext highlighter-rouge">expl3</code>, has over the past decade moved
 from being largely experimental to broadly stable. It is now used in a
 significant number of third-party packages, either explicitly or
-implicitly (e.g., by loading <code class="highlighter-rouge">xparse</code> to define user command
-interfaces), so that many documents load the <code class="highlighter-rouge">expl3</code> code at some
+implicitly (e.g., by loading <code class="language-plaintext highlighter-rouge">xparse</code> to define user command
+interfaces), so that many documents load the <code class="language-plaintext highlighter-rouge">expl3</code> code at some
 point in the preamble. Most LaTeX documents compiled using XeTeX or
-LuaTeX load <code class="highlighter-rouge">fontspec</code>, which is written using <code class="highlighter-rouge">expl3</code> so in these
+LuaTeX load <code class="language-plaintext highlighter-rouge">fontspec</code>, which is written using <code class="language-plaintext highlighter-rouge">expl3</code> so in these
 engines it is nearly always used.</p>
 
-<p>The <code class="highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when
+<p>The <code class="language-plaintext highlighter-rouge">expl3</code> layer contains a non-trivial number of macros, and when
 used with the XeTeX and LuaTeX engines, it loads a large body of
 Unicode data.  This means that even on a fast computer, there is a
-relatively large load time penalty whenever <code class="highlighter-rouge">expl3</code> is needed.</p>
+relatively large load time penalty whenever <code class="language-plaintext highlighter-rouge">expl3</code> is needed.</p>
 
 <p>For this release, the team have made adjustments in the LaTeX 2e kernel to
-pre-load a significant portion of <code class="highlighter-rouge">expl3</code> when the format is built. This is
+pre-load a significant portion of <code class="language-plaintext highlighter-rouge">expl3</code> when the format is built. This is
 transparent at the user level, other than the significant decrease in document
 processing time: there will be no “pause” for loading Unicode data
-files. Loading of <code class="highlighter-rouge">expl3</code> in documents and packages can be done as usual;
+files. Loading of <code class="language-plaintext highlighter-rouge">expl3</code> in documents and packages can be done as usual;
 it will, at some future time, become possible to omit</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>\RequirePackage{expl3}
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\RequirePackage{expl3}
+</code></pre></div></div>
 <p>entirely, but, to support older formats, this explicit loading is at
 present still recommended.</p>
 
 <h2 id="the-prereleases-will-never-go-stale-in-the-future-we-hope">The prereleases will never go stale in the future (we hope)</h2>
 
-<p>The release policy we will follow should ensure that the <code class="highlighter-rouge">-dev</code>
+<p>The release policy we will follow should ensure that the <code class="language-plaintext highlighter-rouge">-dev</code>
 releases are never older than the main release.
-When a full 2020-02-02 release is made, the <code class="highlighter-rouge">-dev</code> release will be
+When a full 2020-02-02 release is made, the <code class="language-plaintext highlighter-rouge">-dev</code> release will be
 updated to be the same format, or possibly
 a pre-release of the next release. It will not be left as a
 pre-release of 2020-02-02 at that point.</p>

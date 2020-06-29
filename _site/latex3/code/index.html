@@ -62,32 +62,29 @@
   <article>
 <h1 id="latex3-development-code">LaTeX3 development code</h1>
 
-<p>The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named <a href="https://github.com/latex3/latex3"><code class="highlighter-rouge">latex3</code></a>.</p>
+<p>The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named <a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a>.</p>
 
-<p>Notable LaTeX packages part of this repository include <code class="highlighter-rouge">l3kernel/expl3</code> and <code class="highlighter-rouge">l3packages/xparse</code>. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
+<p>Notable LaTeX packages part of this repository include <code class="language-plaintext highlighter-rouge">l3kernel/expl3</code> and <code class="language-plaintext highlighter-rouge">l3packages/xparse</code>. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
 
-<p>The LaTeX3 code is managed using <a href="https://github.com/latex3/l3build"><code class="highlighter-rouge">l3build</code></a> configuration files. <code class="highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.</p>
+<p>The LaTeX3 code is managed using <a href="https://github.com/latex3/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> configuration files. <code class="language-plaintext highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.</p>
 
 <h2 id="obtaining-it">Obtaining it</h2>
 
-<p>Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="highlighter-rouge">expl3</code>, using:</p>
+<p>Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="language-plaintext highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="language-plaintext highlighter-rouge">expl3</code>, using:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tlmgr update l3kernel
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tlmgr update l3kernel
+</code></pre></div></div>
 
 <p>If you wish to test using unreleased code in GitHub, you may clone the repository using</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:latex3/latex3.git
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:latex3/latex3.git
+</code></pre></div></div>
 
-<p>To install packages from the development repository, using <code class="highlighter-rouge">l3build</code> as follows:</p>
+<p>To install packages from the development repository, using <code class="language-plaintext highlighter-rouge">l3build</code> as follows:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd l3kernel
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd l3kernel
 texlua build.lua install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to me code and contribute them back via <a href="https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md">Pull Requests</a>.</p>
 
@@ -99,9 +96,8 @@ texlua build.lua install
 
 <p>The concepts developed by the LaTeX3 development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <a href="mailto:listserv@URZ.UNI-HEIDELBERG.DE">listserv@URZ.UNI-HEIDELBERG.DE</a> containing the line</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SUBSCRIBE LATEX-L Your Name
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SUBSCRIBE LATEX-L Your Name
+</code></pre></div></div>
 
 <h3 id="listserv-web-interface">Listserv web interface</h3>
 
@@ -117,15 +113,13 @@ the page).</p>
 
 <p>This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>GET LATEX-L LOGyymm
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET LATEX-L LOGyymm
+</code></pre></div></div>
 
 <p>where yy=Year and mm=Month, e.g.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>GET LATEX-L LOG1703
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET LATEX-L LOG1703
+</code></pre></div></div>
 
 <p>for all messages sent in March 2017.</p>
 

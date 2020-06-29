@@ -124,7 +124,7 @@ typesetting problem in the LaTeX universe. So this is is a bit of a
 <h2 id="policy-on-layout-and-interface-deficiencies">Policy on layout and interface deficiencies</h2>
 
 <p>Upfront we should probably stress that “deficiencies” in the design of
-of the standard document classes (<code class="highlighter-rouge">article</code>, <code class="highlighter-rouge">report</code> and <code class="highlighter-rouge">book</code>) as
+of the standard document classes (<code class="language-plaintext highlighter-rouge">article</code>, <code class="language-plaintext highlighter-rouge">report</code> and <code class="language-plaintext highlighter-rouge">book</code>) as
 well a questionable but long established interface behavior of
 commands is something that we will normally not change, even if we can
 all agree that a different behavior or a different layout would have
@@ -186,14 +186,14 @@ to report it to the right people so that it can get fixed (this is, of course, a
 important if you know a workaround that works for you).
 We realize that it is not easy for most users to figure out to whom to
 send a bug report to.  We have therefore written a small
-package <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a> that
+package <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug.sty</code></a> that
 should help in this respect.</p>
 
 <h3 id="providing-a-test-file-showing-the-issue">Providing a test file showing the issue</h3>
 
 <p>To report a bug it is important to provide a short test file that
 exhibits the issue.  The
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug.sty</code></a>
 package <em>should</em> be loaded at the very top of any such test file used
 to report a bug in LaTeX as follows:</p>
 
@@ -204,10 +204,10 @@ to report a bug in LaTeX as follows:</p>
    ...                          % code showing the problem</code></pre></figure>
 
 <p>If the
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug.sty</code></a>
 package is not part of your distribution you can download it from this
 site. In that case simply place it in the directory next to your test
-file (or place it into your local <code class="highlighter-rouge">texmf</code> tree so that it will be
+file (or place it into your local <code class="language-plaintext highlighter-rouge">texmf</code> tree so that it will be
 always found – how to do that depends on the installation you use).</p>
 
 <p>If you run your test file this package will check if there is any code
@@ -217,23 +217,23 @@ will report that fact to you and asks you to remove that package from
 the test file. If such a package is needed to exhibit the issue, then
 the problem should be reported to the maintainers of this package.  If
 we know how to reach the maintainer
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug.sty</code></a>
 will tell you how to reach them, otherwise you have to find out by
 other means (normally the maintenance address is part of the package
 documentation or the package code).</p>
 
 <p>If you think the bug is in core LaTeX (as maintained by the LaTeX
 Team) but the files
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug.sty</code></a>
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug.sty</code></a>
 complains about are needed to demonstrate the problem, then please
 continue and send the bug report to us but explain this explicitly in
 your description of bug.</p>
 
 <blockquote>
   <p>Bug reports sent to us without a
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">\RequirePackage{latexbug}</code></a>
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">\RequirePackage{latexbug}</code></a>
 line and/or containing third-party code flagged by the
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> package are
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug</code></a> package are
 likely to be closed without any comment in our bug tracking system!</p>
 </blockquote>
 
@@ -255,13 +255,13 @@ this website), everybody will end up being unhappy:</p>
 
 <p>We really appreciate if you take the time to prepare a test file and
 submit a bug report and we hope that by requiring the use of
-<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> helps with
+<a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug</code></a> helps with
 getting the bug report to the right audience so that it can be
 resolved.</p>
 
 <h3 id="submitting-the-bug-report">Submitting the bug report</h3>
 
-<p>If <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="highlighter-rouge">latexbug</code></a> has indicated
+<p>If <a href="https://raw.githubusercontent.com/latex3/latexbug/master/latexbug.sty"><code class="language-plaintext highlighter-rouge">latexbug</code></a> has indicated
 that the bug is with core LaTeX and should be looked at by us (i.e.,
 the LaTeX Team) then please submit your test file by going
 to the</p>

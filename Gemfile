@@ -8,4 +8,5 @@ gem 'colorator'
 gem 'jekyll'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-watch'
-gem 'therubyracer'
+
+# gem 'therubyracer'   # needed why? doesn't work on macos

@@ -3,17 +3,17 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>https://latex-project.org//</link>
-    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 May 2020 15:51:44 +0200</pubDate>
-    <lastBuildDate>Thu, 28 May 2020 15:51:44 +0200</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 29 Jun 2020 21:51:38 +0200</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2020 21:51:38 +0200</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>First prerelease of LaTeX 2020-10-01 is available for testing</title>
         <description>&lt;h1 id=&quot;the-first-latex-prerelease-for-2020-10-01-is-available-for-testing&quot;&gt;The first LaTeX prerelease for 2020-10-01 is available for testing&lt;/h1&gt;
 
-&lt;p&gt;A few days ago we have submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
+&lt;p&gt;A few days ago we have submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
 and by now it should be available to all users using MiKTeX or TeX
 Live (on any operating system).&lt;/p&gt;
 
@@ -32,13 +32,12 @@ before the final release in February hits the streets.&lt;/p&gt;
 
 &lt;p&gt;Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.&lt;/p&gt;
@@ -47,34 +46,33 @@ modification should be straight forward.&lt;/p&gt;
 
 &lt;p&gt;We have been quite busy (did Corona help?) and so already this first
 prerelease contains close to thirty smaller and larger fixes and
-enhancements. A full list is given in a draft version of &lt;code class=&quot;highlighter-rouge&quot;&gt;ltnews32&lt;/code&gt;
+enhancements. A full list is given in a draft version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32&lt;/code&gt;
 which you should be able to read by running&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;texdoc ltnews32
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;texdoc ltnews32
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;on the command line (or by any other means available at your operating
-system—somewhere there should be a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ltnews32.pdf&lt;/code&gt; that
+system—somewhere there should be a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32.pdf&lt;/code&gt; that
 you can open with a PDF reader). The draft version is also available from our website as
-&lt;a href=&quot;/news/latex2e-news/ltnews32.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');&quot;&gt;LaTeX2e News Issue 32 draft&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;/news/latex2e-news/ltnews32.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');&quot;&gt;LaTeX2e News Issue 32 draft&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In this post I only touch two of the most important topics, but many
 others are worth exploring too, so please check that documentation out.&lt;/p&gt;
 
-&lt;h3 id=&quot;providing-xparse-as-part-of-the-format&quot;&gt;Providing &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; as part of the format&lt;/h3&gt;
+&lt;h3 id=&quot;providing-xparse-as-part-of-the-format&quot;&gt;Providing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; as part of the format&lt;/h3&gt;
 
 &lt;p&gt;In the previous release we added the LaTeX3 programming layer to the
-LaTeX format to improve the loading speed when packages using &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
-are used (such as &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt;). In the upcoming release we
-are now extending this support by integrating &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; so that the extended
+LaTeX format to improve the loading speed when packages using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
+are used (such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt;). In the upcoming release we
+are now extending this support by integrating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; so that the extended
 interface for defining document-level commands becomes available out of
 the box.&lt;/p&gt;
 
 &lt;p&gt;This enables users and most importantly package developers to
 easily define LaTeX commands with multiple optional arguments or
 other syntax features with ease.
-For details, check out the &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; documentation, e.g., via &lt;code class=&quot;highlighter-rouge&quot;&gt;texdoc
+For details, check out the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; documentation, e.g., via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
 xparse&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;improving-the-font-series-handling&quot;&gt;Improving the font series handling&lt;/h3&gt;
@@ -88,15 +86,14 @@ the algorithms sometimes selected a wrong font series value. These
 cases have now been resolved and additional support commands have been
 added. For example, with&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\IfFontSeriesContextTF{〈context〉} {〈true code〉}{〈false code〉}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\IfFontSeriesContextTF{〈context〉} {〈true code〉}{〈false code〉}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;you can now define commands that behave differently depending on the
 current font series context. The 〈context〉 to check has to be specified
-as either &lt;code class=&quot;highlighter-rouge&quot;&gt;bf&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt;. The command then chooses the 〈true code〉
+as either &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bf&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;md&lt;/code&gt;. The command then chooses the 〈true code〉
 or the 〈false code〉 based on where it is used (e.g., inside
-&lt;code class=&quot;highlighter-rouge&quot;&gt;\textbf&lt;/code&gt; (or &lt;code class=&quot;highlighter-rouge&quot;&gt;\bfseries&lt;/code&gt;) or not).&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\textbf&lt;/code&gt; (or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bfseries&lt;/code&gt;) or not).&lt;/p&gt;
 
 &lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
 
@@ -112,17 +109,17 @@ for LaTeX, so stay tuned.&lt;/p&gt;
 &lt;p&gt;Enjoy — Frank&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-6&lt;/code&gt;, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-6&lt;/code&gt;, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</guid>
+        <link>http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</guid>
         
         <category>latex2e</category>
         
@@ -150,11 +147,11 @@ opportunity to mark its importance.&lt;/p&gt;
 &lt;h4 id=&quot;latex-now-contains-the-l3-programming-layer-as-part-of-its-format&quot;&gt;LaTeX now contains the L3 programming layer as part of its format&lt;/h4&gt;
 
 &lt;p&gt;This results in noticeable speed improvements for many documents
-because these days they often (implicitly) load &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; at some point
+because these days they often (implicitly) load &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; at some point
 in the preamble. This is the case for virtually all documents
 processed with a Unicode engine, but also true for many pdfTeX
-documents, because more and more packages use &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; or other
-&lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based code. Also important (and maybe more so) it will enable
+documents, because more and more packages use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; or other
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based code. Also important (and maybe more so) it will enable
 us to successfully tackle large and difficult problems, such as
 automatically producing tagged and accessible documents, in the near
 future.&lt;/p&gt;
@@ -162,8 +159,8 @@ future.&lt;/p&gt;
 &lt;h4 id=&quot;the-latex-font-selection-scheme-nfss-got-a-face-lift&quot;&gt;The LaTeX Font Selection Scheme (NFSS) got a face lift&lt;/h4&gt;
 
 &lt;p&gt;It now integrates some important enhancements that have been developed
-in the recent years, including ideas from the packages &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;. Beside other improvements this will better
+in the recent years, including ideas from the packages &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mweights&lt;/code&gt;. Beside other improvements this will better
 support the new font families that are made available for use with
 LaTeX, because a large number of them provide additional font faces
 (e.g., small caps italic, or a condensed series) and those could not
@@ -179,9 +176,9 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 &lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Experiences with the LaTeX&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; formats&lt;/li&gt;
+  &lt;li&gt;Experiences with the LaTeX&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; formats&lt;/li&gt;
   &lt;li&gt;Concerning this release … (LuaLaTeX engine)&lt;/li&gt;
-  &lt;li&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Improved load-times for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Improvements to LaTeX font selection: NFSS&lt;/li&gt;
   &lt;li&gt;Other changes to the LaTeX kernel&lt;/li&gt;
   &lt;li&gt;Changes to packages in the graphics category&lt;/li&gt;
@@ -193,8 +190,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 02 Feb 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</guid>
+        <link>http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -222,7 +219,7 @@ that had happened in 2017&lt;/a&gt;.&lt;/p&gt;
 all twelve LaTeX3 newletters in historical order&lt;/a&gt;. This gives some
 interesting insights into the activities of the last decade and clearly
 shows the increased activities of the team in the recent years, now
-that &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (the programming layer of LaTeX3) gains more and more
+that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (the programming layer of LaTeX3) gains more and more
 followers.&lt;/p&gt;
 
 &lt;p&gt;You will find all newletters as individual PDF files also on &lt;a href=&quot;/news/latex3-news/&quot;&gt;the
@@ -234,8 +231,8 @@ Frank&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 31 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
+        <link>http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
         
         <category>latex3</category>
         
@@ -269,13 +266,12 @@ before the final release in February hits the streets.&lt;/p&gt;
 
 &lt;p&gt;Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.&lt;/p&gt;
@@ -301,14 +297,14 @@ already on CTAN we had to increase the prerelease number.&lt;/p&gt;
 &lt;p&gt;Many modern fonts available these days offer additional font faces,
 e.g., small caps italics or a condensed font series, etc. To better
 support these fonts NFSS (the New Font Selection Mechanism for
-LaTeX) was extended by incorporating ideas from the &lt;code class=&quot;highlighter-rouge&quot;&gt;mweights&lt;/code&gt;,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; packages.  In addition all symbols formerly
-provided through the &lt;code class=&quot;highlighter-rouge&quot;&gt;textcomp&lt;/code&gt; package are now available out of the
-box and the use of &lt;code class=&quot;highlighter-rouge&quot;&gt;\oldstylenums&lt;/code&gt; got improved.&lt;/p&gt;
+LaTeX) was extended by incorporating ideas from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mweights&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontaxes&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; packages.  In addition all symbols formerly
+provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textcomp&lt;/code&gt; package are now available out of the
+box and the use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\oldstylenums&lt;/code&gt; got improved.&lt;/p&gt;
 
 &lt;p&gt;We also fixed a number of smaller bugs. A detailed description of the
 new features and the bug fixes can be found in a &lt;em&gt;draft&lt;/em&gt; version of
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ltnews31&lt;/code&gt; which you can access via &lt;code class=&quot;highlighter-rouge&quot;&gt;texdoc ltnews31&lt;/code&gt; if the
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews31&lt;/code&gt; which you can access via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltnews31&lt;/code&gt; if the
 pre-release is installed on your computer.&lt;/p&gt;
 
 &lt;h2 id=&quot;main-features-already-available-in-the-previous-pre-release&quot;&gt;Main features already available in the previous pre-release&lt;/h2&gt;
@@ -320,7 +316,7 @@ pre-release is installed on your computer.&lt;/p&gt;
 &lt;p&gt;In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
 engine, which is LuaTeX with an embedded HarfBuzz library.
 HarfBuzz can be used by setting a suitable renderer in the font
-declaration. An interface for that is provided by the &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; package.
+declaration. An interface for that is provided by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; package.
 This additional font renderer will greatly improve the shaping of
 various scripts, which are currently handled correctly only by
 XeTeX.&lt;/p&gt;
@@ -335,39 +331,38 @@ be worthwhile running some tests, because, from 2020 onwards this will
 be the only LuaTeX engine for which a LaTeX format will be distributed
 in TeXLive and MikTeX.&lt;/p&gt;
 
-&lt;h3 id=&quot;improved-load-times-for-expl3&quot;&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;improved-load-times-for-expl3&quot;&gt;Improved load-times for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/h3&gt;
 
-&lt;p&gt;The LaTeX3 programming layer, &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;, has over the past decade moved
+&lt;p&gt;The LaTeX3 programming layer, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;, has over the past decade moved
 from being largely experimental to broadly stable. It is now used in a
 significant number of third-party packages, either explicitly or
-implicitly (e.g., by loading &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; to define user command
-interfaces), so that many documents load the &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code at some
+implicitly (e.g., by loading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; to define user command
+interfaces), so that many documents load the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code at some
 point in the preamble. Most LaTeX documents compiled using XeTeX or
-LuaTeX load &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;, which is written using &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; so in these
+LuaTeX load &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;, which is written using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; so in these
 engines it is nearly always used.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; layer contains a non-trivial number of macros, and when
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; layer contains a non-trivial number of macros, and when
 used with the XeTeX and LuaTeX engines, it loads a large body of
 Unicode data.  This means that even on a fast computer, there is a
-relatively large load time penalty whenever &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; is needed.&lt;/p&gt;
+relatively large load time penalty whenever &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; is needed.&lt;/p&gt;
 
 &lt;p&gt;For this release, the team have made adjustments in the LaTeX 2e kernel to
-pre-load a significant portion of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; when the format is built. This is
+pre-load a significant portion of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; when the format is built. This is
 transparent at the user level, other than the significant decrease in document
 processing time: there will be no “pause” for loading Unicode data
-files. Loading of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; in documents and packages can be done as usual;
+files. Loading of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; in documents and packages can be done as usual;
 it will, at some future time, become possible to omit&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\RequirePackage{expl3}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\RequirePackage{expl3}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;entirely, but, to support older formats, this explicit loading is at
 present still recommended.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-prereleases-will-never-go-stale-in-the-future-we-hope&quot;&gt;The prereleases will never go stale in the future (we hope)&lt;/h2&gt;
 
-&lt;p&gt;The release policy we will follow should ensure that the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt;
+&lt;p&gt;The release policy we will follow should ensure that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt;
 releases are never older than the main release.
-When a full 2020-02-02 release is made, the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; release will be
+When a full 2020-02-02 release is made, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; release will be
 updated to be the same format, or possibly
 a pre-release of the next release. It will not be left as a
 pre-release of 2020-02-02 at that point.&lt;/p&gt;
@@ -404,8 +399,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</guid>
+        <link>http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</guid>
         
         <category>latex2e</category>
         
@@ -441,13 +436,12 @@ before the final release in February hits the streets.&lt;/p&gt;
 
 &lt;p&gt;Processing your documents with the prerelease is straight forward. All
 you have to do is to replace the invocation command by appending
-&lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
 integrated editing environment, then it depends on the system 
 how to configure it to use an alternative format; but in any case the necessary
 modification should be straight forward.&lt;/p&gt;
@@ -464,7 +458,7 @@ already on CTAN we had to increase the prerelease number.&lt;/p&gt;
 &lt;p&gt;In TeXLive 2020 the LuaLaTeX format will always use the new LuaHBTeX
 engine, which is LuaTeX with an embedded HarfBuzz library.
 HarfBuzz can be used by setting a suitable renderer in the font
-declaration. An interface for that is provided by the &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; package.
+declaration. An interface for that is provided by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt; package.
 This additional font renderer will greatly improve the shaping of
 various scripts, which are currently handled correctly only by
 XeTeX.&lt;/p&gt;
@@ -479,31 +473,30 @@ be worthwhile running some tests, because, from 2020 onwards this will
 be the only LuaTeX engine for which a LaTeX format will be distributed
 in TeXLive and MikTeX from 2020 onwards.&lt;/p&gt;
 
-&lt;h3 id=&quot;improved-load-times-for-expl3&quot;&gt;Improved load-times for &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;improved-load-times-for-expl3&quot;&gt;Improved load-times for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;&lt;/h3&gt;
 
-&lt;p&gt;The LaTeX3 programming layer, &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;, has over the past decade moved
+&lt;p&gt;The LaTeX3 programming layer, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;, has over the past decade moved
 from being largely experimental to broadly stable. It is now used in a
 significant number of third-party packages, either explicitly or
-implicitly (e.g., by loading &lt;code class=&quot;highlighter-rouge&quot;&gt;xparse&lt;/code&gt; to define user command
-interfaces), so that many documents load the &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code at some
+implicitly (e.g., by loading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; to define user command
+interfaces), so that many documents load the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code at some
 point in the preamble. Most LaTeX documents compiled using XeTeX or
-LuaTeX load &lt;code class=&quot;highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;, which is written using &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; so in these
+LuaTeX load &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontspec&lt;/code&gt;, which is written using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; so in these
 engines it is nearly always used.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; layer contains a non-trivial number of macros, and when
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; layer contains a non-trivial number of macros, and when
 used with the XeTeX and LuaTeX engines, it loads a large body of
 Unicode data.  This means that even on a fast computer, there is a
-relatively large load time penalty whenever &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; is needed.&lt;/p&gt;
+relatively large load time penalty whenever &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; is needed.&lt;/p&gt;
 
 &lt;p&gt;For this release, the team have made adjustments in the LaTeX 2e kernel to
-pre-load a significant portion of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; when the format is built. This is
+pre-load a significant portion of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; when the format is built. This is
 transparent at the user level, other than the significant decrease in document
 processing time: there will be no “pause” for loading Unicode data
-files. Loading of &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt; in documents and packages can be done as usual;
+files. Loading of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; in documents and packages can be done as usual;
 it will, at some future time, become possible to omit&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\RequirePackage{expl3}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\RequirePackage{expl3}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;entirely, but, to support older formats, this explicit loading is at
 present still recommended.&lt;/p&gt;
 
@@ -523,7 +516,7 @@ will most likely contain improvements to the font support for all engines.&lt;/p
 in the distributions either matches the main release code or will be
 newer than the current main release. This was not the case in the last
 few weeks when the main release was 2019-10-01 with a few hot fixes
-added, but the &lt;code class=&quot;highlighter-rouge&quot;&gt;-dev&lt;/code&gt; format was still from some day prior to October.&lt;/p&gt;
+added, but the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; format was still from some day prior to October.&lt;/p&gt;
 
 &lt;p&gt;In the future we intend to ensure that this does not happen, so that,
 to avoid confusion, the distributed development release is always
@@ -561,8 +554,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Nov 2019 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</guid>
+        <link>http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</guid>
         
         <category>latex2e</category>
         
@@ -603,8 +596,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 15 Oct 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</guid>
+        <link>http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
@@ -640,12 +633,11 @@ setting it up, see below).&lt;/p&gt;
 format will be used to process your document, allowing you 
 to test the upcoming release with your own documents and packages.
 For example, if you run&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;then you will be greeted on the screen with
-&lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2019-10-01&amp;gt; pre-release-2&lt;/code&gt; (identifying the pre-release
-format) instead of the normal &lt;code class=&quot;highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2018-12-01&amp;gt;&lt;/code&gt;.  In this
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2019-10-01&amp;gt; pre-release-2&lt;/code&gt; (identifying the pre-release
+format) instead of the normal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2018-12-01&amp;gt;&lt;/code&gt;.  In this
 pre-release you will find the latest new features that we have
 developed. Here is an example of upcoming features that are currently
 only in the pre-release format: better UTF8-handling as described in
@@ -670,7 +662,7 @@ testing that we do.&lt;/p&gt;
 &lt;p&gt;Any issue identified when using the development format should preferably
 be logged as an issue on GitHub, following the procedure outlined in
 &lt;a href=&quot;/bugs/&quot;&gt;www.latex-project.org/bugs/&lt;/a&gt;
-including the use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;latexbug&lt;/code&gt; package as described.&lt;/p&gt;
+including the use of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latexbug&lt;/code&gt; package as described.&lt;/p&gt;
 
 &lt;p&gt;Our bug reporting process normally states that issues involving
 third-party software are out of scope as we can’t correct external
@@ -716,17 +708,17 @@ it is normally fairly simple to enable it as most (or even all?) of
 them provide simple ways to call your own setup. How this works in
 detail depends very much on the environment you use, so we can’t give
 much help here. But as an example: to provide an additional menu entry
-for &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX-dev&lt;/code&gt; all I had to do was to copy the file
-&lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX.engine&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX-dev.engine&lt;/code&gt; and change the call from
-&lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;xelatex-dev&lt;/code&gt; inside.&lt;/p&gt;
+for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-dev&lt;/code&gt; all I had to do was to copy the file
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX.engine&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-dev.engine&lt;/code&gt; and change the call from
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev&lt;/code&gt; inside.&lt;/p&gt;
 
 &lt;p&gt;Enjoy — Frank &amp;amp; Chris&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</guid>
+        <link>http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</guid>
         
         <category>latex2e</category>
         
@@ -747,11 +739,11 @@ for &lt;code class=&quot;highlighter-rouge&quot;&gt;XeLaTeX-dev&lt;/code&gt; all
 have joined the LaTeX Project Team. Contact
 details are on &lt;a href=&quot;/about/team&quot;&gt;the team page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Phelype is a Civil Engineer, a TeX enthusiast and an &lt;code class=&quot;highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
+&lt;p&gt;Phelype is a Civil Engineer, a TeX enthusiast and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
 advocate—you’ll find him on Stack Exchange answering complex
 questions.  Marcel is an accomplished and well-known LuaTeX expert and
-besides other activities is maintaining &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt;.  With Marcel
-joining we have formally adopted the work on &lt;code class=&quot;highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; which is a
+besides other activities is maintaining &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt;.  With Marcel
+joining we have formally adopted the work on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; which is a
 core component for making LaTeX available with a LuaTeX engine.  The
 repository for this code is now
 &lt;a href=&quot;https://github.com/latex3/luaotfload&quot;&gt;https://github.com/latex3/luaotfload&lt;/a&gt;.&lt;/p&gt;
@@ -764,8 +756,8 @@ Frank&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 25 Aug 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/08/25/new-kids2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/08/25/new-kids2/</guid>
+        <link>http://localhost:4000/news/2019/08/25/new-kids2/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/08/25/new-kids2/</guid>
         
         <category>latex2e</category>
         
@@ -853,8 +845,8 @@ into the evolution of LaTeX.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 23 Apr 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/04/23/history-papers/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/04/23/history-papers/</guid>
+        <link>http://localhost:4000/news/2019/04/23/history-papers/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/04/23/history-papers/</guid>
         
         <category>latex history</category>
         
@@ -867,29 +859,29 @@ into the evolution of LaTeX.&lt;/p&gt;
         <title>Uploading to CTAN with l3build</title>
         <description>&lt;h1 id=&quot;uploading-to-ctan-with-l3build&quot;&gt;Uploading to CTAN with l3build&lt;/h1&gt;
 
-&lt;p&gt;A new version of &lt;a href=&quot;https://ctan.org/pkg/l3build&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;&lt;/a&gt; has recently been released with the ability
-to use &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; to automatically upload packages to CTAN.&lt;/p&gt;
+&lt;p&gt;A new version of &lt;a href=&quot;https://ctan.org/pkg/l3build&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;&lt;/a&gt; has recently been released with the ability
+to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; to automatically upload packages to CTAN.&lt;/p&gt;
 
 &lt;p&gt;This functionality has been on our wishlist for some time, with early
 thoughts around the idea of “reverse engineering” the CTAN upload page like the
-(now defunct) &lt;a href=&quot;https://ctan.org/pkg/ctanupload&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctanupload&lt;/code&gt;&lt;/a&gt; tool by Martin Scharrer.
+(now defunct) &lt;a href=&quot;https://ctan.org/pkg/ctanupload&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctanupload&lt;/code&gt;&lt;/a&gt; tool by Martin Scharrer.
 Luckily for us, the CTAN team added an API to allow developers to interface
 with the CTAN upload process in a well-documented and stable manner.&lt;/p&gt;
 
-&lt;p&gt;This API has been used for some time by the &lt;a href=&quot;https://ctan.org/pkg/ctan-o-mat&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctan-o-mat&lt;/code&gt;&lt;/a&gt; tool by Gerd Neugebauer,
+&lt;p&gt;This API has been used for some time by the &lt;a href=&quot;https://ctan.org/pkg/ctan-o-mat&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctan-o-mat&lt;/code&gt;&lt;/a&gt; tool by Gerd Neugebauer,
 which provides the ability to send package updates through to CTAN via the command line,
 with metadata for the package loadable via a configuration file.
 While it’s not a cumbersome process to manually upload packages through CTAN, it’s nice
 to be able to automate the process.&lt;/p&gt;
 
-&lt;p&gt;For a tool like &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;, we prefer not to rely on additional tools beyond a standard TeX distribution,
-and as Windows now provides a &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; utility this has allowed us to build a CTAN-uploading tool into &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt;
+&lt;p&gt;For a tool like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;, we prefer not to rely on additional tools beyond a standard TeX distribution,
+and as Windows now provides a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; utility this has allowed us to build a CTAN-uploading tool into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;
 directly. The mechanics of this tool were written by David Carlisle; thanks!&lt;/p&gt;
 
-&lt;p&gt;Its use is relatively straightforward. In the package’s &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file, add a table
+&lt;p&gt;Its use is relatively straightforward. In the package’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file, add a table
 along the following lines:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = {
   pkg          = &quot;vertbars&quot;,
   version      = &quot;v1.0c&quot;,
   author       = &quot;Peter R Wilson; Will Robertson&quot;,
@@ -900,50 +892,46 @@ along the following lines:&lt;/p&gt;
   repository   = &quot;https://github.com/wspr/herries-press/&quot;,
   note         = [[Uploaded automatically by l3build...]]
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Additional fields to what are listed above are possible; this example isn’t intended to be exhaustive.
 The full list of possibilities is available either through the &lt;a href=&quot;https://ctan.org/help/submit&quot;&gt;CTAN API documentation&lt;/a&gt;
-or through the &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; documentation.&lt;/p&gt;
+or through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt; documentation.&lt;/p&gt;
 
-&lt;h2 id=&quot;running-l3build-upload&quot;&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build upload&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;running-l3build-upload&quot;&gt;Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build upload&lt;/code&gt;&lt;/h2&gt;
 
-&lt;p&gt;With the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; configuration file in place, to submit a new version of the package
-to CTAN you would first run &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt; to generate the package zip archive, then execute
+&lt;p&gt;With the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; configuration file in place, to submit a new version of the package
+to CTAN you would first run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt; to generate the package zip archive, then execute
 something like&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --message &quot;Minor update to fix some erroneous spaces from missing % signs&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --message &quot;Minor update to fix some erroneous spaces from missing % signs&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;For a longer message you could use &lt;code class=&quot;highlighter-rouge&quot;&gt;--file releasenotes-v1.0c.txt&lt;/code&gt; where the listed filename
+&lt;p&gt;For a longer message you could use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--file releasenotes-v1.0c.txt&lt;/code&gt; where the listed filename
 contains the release notes for this update. Note, however, that there is a fairly small
 character limit on what can be included here; you may wish to maintain a longer, more detailed,
 list of changes in a separate CHANGELOG file.&lt;/p&gt;
 
-&lt;p&gt;Before the upload process, &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build&lt;/code&gt; will check whether any required fields have been
+&lt;p&gt;Before the upload process, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt; will check whether any required fields have been
 omitted and prompt them in an interactive terminal.
 In particular, the user will be asked their email address for verification purposes;
-in general this information should not be hard-coded into the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file if that file
+in general this information should not be hard-coded into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file if that file
 is to be stored publicly.&lt;/p&gt;
 
 &lt;p&gt;Rather than an interactive query, the email field can also be set as a command line option as in&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --email &quot;my.email@mail.com&quot; ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --email &quot;my.email@mail.com&quot; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Alternatively, you could create a &lt;code class=&quot;highlighter-rouge&quot;&gt;build-private.lua&lt;/code&gt; file in your personal &lt;code class=&quot;highlighter-rouge&quot;&gt;texmf/scripts&lt;/code&gt; directory
+&lt;p&gt;Alternatively, you could create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build-private.lua&lt;/code&gt; file in your personal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texmf/scripts&lt;/code&gt; directory
 containing&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = uploadconfig or {}
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = uploadconfig or {}
 uploadconfig.uploader = &quot;My Name&quot;
 uploadconfig.email    = &quot;my.name@gmail.com&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;And read this into your &lt;code class=&quot;highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file with &lt;code class=&quot;highlighter-rouge&quot;&gt;require('build-private.lua')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And read this into your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;require('build-private.lua')&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;further-automation-and-future-plans&quot;&gt;Further automation and future plans&lt;/h2&gt;
 
@@ -952,14 +940,14 @@ uploadconfig.email    = &quot;my.name@gmail.com&quot;
 &lt;ul&gt;
   &lt;li&gt;You may wish additional logic to check the status of your version control system
 before proceeding with tagging or upload.&lt;/li&gt;
-  &lt;li&gt;You may wish to have &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build tag&lt;/code&gt; update the package version automatically.&lt;/li&gt;
-  &lt;li&gt;You may wish to populate the &lt;code class=&quot;highlighter-rouge&quot;&gt;announcement&lt;/code&gt; field within &lt;code class=&quot;highlighter-rouge&quot;&gt;uploadconfig&lt;/code&gt; automatically
-from an associated &lt;code class=&quot;highlighter-rouge&quot;&gt;CHANGELOG&lt;/code&gt; file.&lt;/li&gt;
+  &lt;li&gt;You may wish to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build tag&lt;/code&gt; update the package version automatically.&lt;/li&gt;
+  &lt;li&gt;You may wish to populate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;announcement&lt;/code&gt; field within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uploadconfig&lt;/code&gt; automatically
+from an associated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHANGELOG&lt;/code&gt; file.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;And so on. It’s also worth noting that this tool does &lt;em&gt;not&lt;/em&gt; automatically run &lt;code class=&quot;highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt;
+&lt;p&gt;And so on. It’s also worth noting that this tool does &lt;em&gt;not&lt;/em&gt; automatically run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt;
 as that process can be very slow if the test suite needs to be re-run. It is a manual process
-to run the appropriate &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; then &lt;code class=&quot;highlighter-rouge&quot;&gt;ctan&lt;/code&gt; then &lt;code class=&quot;highlighter-rouge&quot;&gt;upload&lt;/code&gt; steps.&lt;/p&gt;
+to run the appropriate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tag&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctan&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;upload&lt;/code&gt; steps.&lt;/p&gt;
 
 &lt;p&gt;As we gain more experience with how we and others are using the tool we will look into providing
 more functions around automation and/or convenience, especially integration with version control.&lt;/p&gt;
@@ -969,8 +957,8 @@ a quick change to a package and send it through to CTAN.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 16 Apr 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/04/16/l3build-upload/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/04/16/l3build-upload/</guid>
+        <link>http://localhost:4000/news/2019/04/16/l3build-upload/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/04/16/l3build-upload/</guid>
         
         <category>latex3</category>
         

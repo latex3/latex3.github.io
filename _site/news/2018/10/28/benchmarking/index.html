@@ -66,17 +66,17 @@
     <h1 id="experimental-benchmarking-functions">Experimental benchmarking functions</h1>
 
 <p>Prompted by a <a href="https://tex.stackexchange.com/q/456316/">TeX-sx question</a> on
-benchmarking, the team have added a new experimental package to <code class="highlighter-rouge">expl3</code>:
-<a href="https://ctan.org/pkg/l3experimental"><code class="highlighter-rouge">l3benchmark</code></a>. This new material
+benchmarking, the team have added a new experimental package to <code class="language-plaintext highlighter-rouge">expl3</code>:
+<a href="https://ctan.org/pkg/l3experimental"><code class="language-plaintext highlighter-rouge">l3benchmark</code></a>. This new material
 provides a convenient interface for benchmarking: seeing how long it takes for
 blocks of code to run. This uses the underlying ‘timer’ support in modern TeX
 engines (XeTeX at present not included), but adds some handy wrappers so most
 of the hard work is automated.</p>
 
 <p>The new code is pretty experimental, so we are hoping to get feedback on the
-interfaces. For example, we’ve provided <code class="highlighter-rouge">\benchmark:n</code>, which automatically
+interfaces. For example, we’ve provided <code class="language-plaintext highlighter-rouge">\benchmark:n</code>, which automatically
 loops code to get enough run time to produce a ‘meaningful’ timing. Do we also
-need to have a <code class="highlighter-rouge">\benchmark_once:n</code> version, or how about a <code class="highlighter-rouge">begin/end</code> pairing
+need to have a <code class="language-plaintext highlighter-rouge">\benchmark_once:n</code> version, or how about a <code class="language-plaintext highlighter-rouge">begin/end</code> pairing
 for code that can’t be run in a loop?</p>
 
 <p>We’d love to hear from developers on how they see this, either through

@@ -69,8 +69,8 @@
 <p>The first TeX implementations only supported reading 7-bit
 ASCII files—any accented or otherwise “special” character
 had to be entered using commands, if it could be represented at
-all. For example to obtain an “ä” one would enter <code class="highlighter-rouge">\"a</code>, and to
-typeset a “ß” the command <code class="highlighter-rouge">\ss</code>. Furthermore fonts at that
+all. For example to obtain an “ä” one would enter <code class="language-plaintext highlighter-rouge">\"a</code>, and to
+typeset a “ß” the command <code class="language-plaintext highlighter-rouge">\ss</code>. Furthermore fonts at that
 time had 128 glyphs inside, holding the ASCII characters, some
 accents to build composite glyphs from a letter and an accent, and a
 few special symbols such as parentheses, etc.</p>
@@ -103,7 +103,7 @@ the early nineties that LaTeX2e (that was being developed to provide
 a LaTeX version usable across the world) had to provide a solution
 to this issue.</p>
 
-<p>The LaTeX2e answer was the introduction of the <code class="highlighter-rouge">inputenc</code> package
+<p>The LaTeX2e answer was the introduction of the <code class="language-plaintext highlighter-rouge">inputenc</code> package
 (see <a href="/publications/encoding-concepts.pdf" target="_blank" onclick="vgwPixelCall('1ae896e70ca04d1581310de310a76dda');">LaTeX2e
 encoding interfaces</a>) through which it is possible to provide
 support for multiple encodings. It also allows to correctly process a
@@ -113,9 +113,9 @@ and even supports documents where the encoding changes midway.</p>
 <p>Since the first release of LaTeX2e in 1994, LaTeX documents that
 used any characters outside ASCII in the source (i.e. any
 characters in the range of 128-255) were supposed to load
-<code class="highlighter-rouge">inputenc</code> and specify in which file encoding they were
+<code class="language-plaintext highlighter-rouge">inputenc</code> and specify in which file encoding they were
 written and stored.
-If the <code class="highlighter-rouge">inputenc</code> package was not loaded then LaTeX used a
+If the <code class="language-plaintext highlighter-rouge">inputenc</code> package was not loaded then LaTeX used a
 “raw” encoding which essentially took each byte from the input file
 and typeset the glyph that happened to be in that position in the
 current font—something that sometimes produces the right result but
@@ -130,11 +130,10 @@ requires some effort to explicitly store files in one of the legacy
 encodings.</p>
 
 <p>As a result, whenever LaTeX users want to use any accented
-characters from their keyboard (instead of resorting to <code class="highlighter-rouge">\"a</code> and
+characters from their keyboard (instead of resorting to <code class="language-plaintext highlighter-rouge">\"a</code> and
 the like) they always have to use</p>
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code>  <span class="k">\usepackage</span><span class="na">[utf8]</span><span class="p">{</span>inputenc<span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">\usepackage</span><span class="na">[utf8]</span><span class="p">{</span>inputenc<span class="p">}</span>
+</code></pre></div></div>
 <p>in the preamble of their documents as otherwise LaTeX will produce
 gibberish.</p>
 
@@ -144,15 +143,15 @@ gibberish.</p>
 changed from the “fall through raw” encoding to UTF-8 if used with
 classic TeX or pdfTeX. The implementation is essentially
 the same as the existing UTF-8 support from
-<code class="highlighter-rouge">\usepackage[utf8]{inputenc}</code>.</p>
+<code class="language-plaintext highlighter-rouge">\usepackage[utf8]{inputenc}</code>.</p>
 
 <p>The LuaTeX and XeTeX engines always supported the
 UTF-8 encoding as their native (and only) input encoding, so with
-these engines <code class="highlighter-rouge">inputenc</code> was always a no-op.</p>
+these engines <code class="language-plaintext highlighter-rouge">inputenc</code> was always a no-op.</p>
 
 <p>This means that with new documents one can assume UTF-8 input and it
 is no longer required to always specify
-<code class="highlighter-rouge">\usepackage[utf8]{inputenc}</code>. But if this line is present it
+<code class="language-plaintext highlighter-rouge">\usepackage[utf8]{inputenc}</code>. But if this line is present it
 will not hurt either.</p>
 
 <h2 id="compatibility">Compatibility</h2>
@@ -163,40 +162,38 @@ will not hurt either.</p>
   <li>documents using only ASCII in the input file and
   accessing accented characters via commands;</li>
   <li>documents that specified the encoding of their file via an
-  option to the <code class="highlighter-rouge">inputenc</code> package and then used 8-bit
+  option to the <code class="language-plaintext highlighter-rouge">inputenc</code> package and then used 8-bit
   characters in that encoding;</li>
   <li>documents that already had been stored in UTF-8 (whether or not
-  specifying this via <code class="highlighter-rouge">inputenc</code>).</li>
+  specifying this via <code class="language-plaintext highlighter-rouge">inputenc</code>).</li>
 </ul>
 
 <p>Only documents that have been stored in a legacy encoding and used
 accented letters from the keyboard <em>without</em> loading
-<code class="highlighter-rouge">inputenc</code> (relying on the similarities between the input used
+<code class="language-plaintext highlighter-rouge">inputenc</code> (relying on the similarities between the input used
 and the T1 font encoding) are affected.</p>
 
 <p>These documents will now generate an error that they contain invalid
 UTF-8 sequences.  However, such documents may be easily processed by
-adding the new command <code class="highlighter-rouge">\UseRawInputEncoding</code> as the first line
+adding the new command <code class="language-plaintext highlighter-rouge">\UseRawInputEncoding</code> as the first line
 of the file. This will re-instate the previous “raw” encoding
 default.</p>
 
-<p><code class="highlighter-rouge">\UseRawInputEncoding</code> may also be used on the command line to process
+<p><code class="language-plaintext highlighter-rouge">\UseRawInputEncoding</code> may also be used on the command line to process
 existing files without requiring the file to be edited, ie the command
 line</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>  pdflatex '\UseRawInputEncoding \input'  file
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pdflatex '\UseRawInputEncoding \input'  file
+</code></pre></div></div>
 <p>will process the file using the previous default encoding.</p>
 
 <p>Possible alternatives are reencoding the file to UTF-8 using a tool
 (such as recode or iconv or an editor) or adding the line</p>
-<div class="highlighter-rouge"><pre class="highlight"><code> \usepackage[encoding]{inputenc}
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> \usepackage[encoding]{inputenc}
+</code></pre></div></div>
 <p>to the preamble specifying the “encoding” that fits the file
-encoding.  In many cases this will be <code class="highlighter-rouge">latin1</code> or
-<code class="highlighter-rouge">cp1252</code>. For other encoding names and their meaning see the
-<code class="highlighter-rouge">inputenc</code> documentation.</p>
+encoding.  In many cases this will be <code class="language-plaintext highlighter-rouge">latin1</code> or
+<code class="language-plaintext highlighter-rouge">cp1252</code>. For other encoding names and their meaning see the
+<code class="language-plaintext highlighter-rouge">inputenc</code> documentation.</p>
 
 <p>As usual, this change may also be reverted via the more general <a href="/help/documentation/latexrelease.pdf" target="_blank" onclick="vgwPixelCall('ef0b0f945a6148be8c924ed494b726d4');">latexrelease
 package</a> mechanism, by speciying a release date earlier than this

@@ -265,17 +265,16 @@ Herbert has written several other books on LaTeX topics, check out his [author p
 
 ### Spanish
 
-#### [LaTeX 2014](http://tecdigital.tec.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2014.pdf)
+#### [LaTeX 2017]( https://tecdigital.tec.ac.cr/revistamatematica/Libros/LaTeX/LaTeX_2018.pdf)
 
-![LaTeX 2014](alexander-borbon-a_-_latex-2014.jpg){:width="150" height="233"}
+![LaTeX 2014](alexander-borbon-a_-_latex-2017.png){:width="150" height="233"}
 **Edition:** 2nd edition  
 **Authors:** Alexander Borbon A., Walter Mora F.  
 **Language:** Spanish  
-**Date:** 2014  
+**Date:** 2017  
 **Publisher:** Revista digital Matemática Educación e Internet   
-**ISBN-10:** 0   
 **ISBN-13:** 978-9977-66-227-5  
-**Pages:** 304 pages  
+**Pages:** 311 pages  
 
 Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)  Download is 17Mb
 
