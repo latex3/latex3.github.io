@@ -5,9 +5,58 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jun 2020 21:51:38 +0200</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2020 21:51:38 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jul 2020 13:18:42 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jul 2020 13:18:42 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Online TUG Conference 24-26 July 2020</title>
+        <description>&lt;h1 id=&quot;the-first-online-tug-conference-will-happen-24-26-july-2020&quot;&gt;The first online TUG conference will happen 24-26 July 2020&lt;/h1&gt;
+
+&lt;p&gt;You probably heard this already from other sources and maybe already
+registered, but if not, now is the time.&lt;/p&gt;
+
+&lt;p&gt;Next week the annual TeX Users Group Conference will be broadcasted
+live and to watch the presentations and otherwise participate all you
+need to do is to &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register&lt;/a&gt;. This year
+registration is free of charge, because the costs for an online event
+are much lower, so all that is needed to attend is the registration.&lt;/p&gt;
+
+&lt;p&gt;You will find many interesting and exciting talks in &lt;a href=&quot;https://tug.org/tug2020/program.html&quot;&gt;the program
+schedule&lt;/a&gt; and while some my be
+at inconvenient hours, depending on your location, most are probably
+at reasonable times. If not there are plans to make the talks
+available afterwards (no details yet), but live or partly live events
+are usually more fun in my opinion.&lt;/p&gt;
+
+&lt;p&gt;A number of people from the LaTeX Project team are also presenting:
+Javier,
+Joseph,
+Marcel and myself.&lt;/p&gt;
+
+&lt;p&gt;So go ahead and &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register yourself&lt;/a&gt; if you are interested
+and let us make this the biggest Tex conference in years!&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Jul 2020 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2020/07/17/TUG-online-conference/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/07/17/TUG-online-conference/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>development</category>
+        
+        <category>conference</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>First prerelease of LaTeX 2020-10-01 is available for testing</title>
@@ -849,122 +898,6 @@ into the evolution of LaTeX.&lt;/p&gt;
         <guid isPermaLink="true">http://localhost:4000/news/2019/04/23/history-papers/</guid>
         
         <category>latex history</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Uploading to CTAN with l3build</title>
-        <description>&lt;h1 id=&quot;uploading-to-ctan-with-l3build&quot;&gt;Uploading to CTAN with l3build&lt;/h1&gt;
-
-&lt;p&gt;A new version of &lt;a href=&quot;https://ctan.org/pkg/l3build&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;&lt;/a&gt; has recently been released with the ability
-to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; to automatically upload packages to CTAN.&lt;/p&gt;
-
-&lt;p&gt;This functionality has been on our wishlist for some time, with early
-thoughts around the idea of “reverse engineering” the CTAN upload page like the
-(now defunct) &lt;a href=&quot;https://ctan.org/pkg/ctanupload&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctanupload&lt;/code&gt;&lt;/a&gt; tool by Martin Scharrer.
-Luckily for us, the CTAN team added an API to allow developers to interface
-with the CTAN upload process in a well-documented and stable manner.&lt;/p&gt;
-
-&lt;p&gt;This API has been used for some time by the &lt;a href=&quot;https://ctan.org/pkg/ctan-o-mat&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctan-o-mat&lt;/code&gt;&lt;/a&gt; tool by Gerd Neugebauer,
-which provides the ability to send package updates through to CTAN via the command line,
-with metadata for the package loadable via a configuration file.
-While it’s not a cumbersome process to manually upload packages through CTAN, it’s nice
-to be able to automate the process.&lt;/p&gt;
-
-&lt;p&gt;For a tool like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;, we prefer not to rely on additional tools beyond a standard TeX distribution,
-and as Windows now provides a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; utility this has allowed us to build a CTAN-uploading tool into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt;
-directly. The mechanics of this tool were written by David Carlisle; thanks!&lt;/p&gt;
-
-&lt;p&gt;Its use is relatively straightforward. In the package’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file, add a table
-along the following lines:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = {
-  pkg          = &quot;vertbars&quot;,
-  version      = &quot;v1.0c&quot;,
-  author       = &quot;Peter R Wilson; Will Robertson&quot;,
-  uploader     = &quot;Will Robertson&quot;
-  license      = &quot;lppl1.3c&quot;,
-  summary      = &quot;Mark vertical rules in margin of text&quot;,
-  ctanPath     = &quot;/macros/latex/contrib/vertbars&quot;,
-  repository   = &quot;https://github.com/wspr/herries-press/&quot;,
-  note         = [[Uploaded automatically by l3build...]]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Additional fields to what are listed above are possible; this example isn’t intended to be exhaustive.
-The full list of possibilities is available either through the &lt;a href=&quot;https://ctan.org/help/submit&quot;&gt;CTAN API documentation&lt;/a&gt;
-or through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt; documentation.&lt;/p&gt;
-
-&lt;h2 id=&quot;running-l3build-upload&quot;&gt;Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build upload&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;With the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; configuration file in place, to submit a new version of the package
-to CTAN you would first run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt; to generate the package zip archive, then execute
-something like&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --message &quot;Minor update to fix some erroneous spaces from missing % signs&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;For a longer message you could use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--file releasenotes-v1.0c.txt&lt;/code&gt; where the listed filename
-contains the release notes for this update. Note, however, that there is a fairly small
-character limit on what can be included here; you may wish to maintain a longer, more detailed,
-list of changes in a separate CHANGELOG file.&lt;/p&gt;
-
-&lt;p&gt;Before the upload process, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build&lt;/code&gt; will check whether any required fields have been
-omitted and prompt them in an interactive terminal.
-In particular, the user will be asked their email address for verification purposes;
-in general this information should not be hard-coded into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file if that file
-is to be stored publicly.&lt;/p&gt;
-
-&lt;p&gt;Rather than an interactive query, the email field can also be set as a command line option as in&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;l3build upload --email &quot;my.email@mail.com&quot; ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternatively, you could create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build-private.lua&lt;/code&gt; file in your personal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texmf/scripts&lt;/code&gt; directory
-containing&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uploadconfig = uploadconfig or {}
-uploadconfig.uploader = &quot;My Name&quot;
-uploadconfig.email    = &quot;my.name@gmail.com&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And read this into your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.lua&lt;/code&gt; file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;require('build-private.lua')&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;further-automation-and-future-plans&quot;&gt;Further automation and future plans&lt;/h2&gt;
-
-&lt;p&gt;The current support does not attempt to automate any aspect of the release process. For instance:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You may wish additional logic to check the status of your version control system
-before proceeding with tagging or upload.&lt;/li&gt;
-  &lt;li&gt;You may wish to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build tag&lt;/code&gt; update the package version automatically.&lt;/li&gt;
-  &lt;li&gt;You may wish to populate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;announcement&lt;/code&gt; field within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uploadconfig&lt;/code&gt; automatically
-from an associated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHANGELOG&lt;/code&gt; file.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And so on. It’s also worth noting that this tool does &lt;em&gt;not&lt;/em&gt; automatically run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3build ctan&lt;/code&gt;
-as that process can be very slow if the test suite needs to be re-run. It is a manual process
-to run the appropriate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tag&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctan&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;upload&lt;/code&gt; steps.&lt;/p&gt;
-
-&lt;p&gt;As we gain more experience with how we and others are using the tool we will look into providing
-more functions around automation and/or convenience, especially integration with version control.&lt;/p&gt;
-
-&lt;p&gt;In the mean time, I’m looking forward to having it be a good bit easier to make
-a quick change to a package and send it through to CTAN.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 16 Apr 2019 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2019/04/16/l3build-upload/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/04/16/l3build-upload/</guid>
-        
-        <category>latex3</category>
-        
-        <category>l3build</category>
-        
-        <category>discussion</category>
         
         
         <category>news</category>
