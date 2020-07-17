@@ -14,26 +14,26 @@ tags: [latex2e, latex3, development, conference]
 You probably heard this already from other sources and maybe already
 registered, but if not, now is the time.
 
-Next week the annual TeX Users Group Conference will be broadcasted
-live and to watch the presentations and otherwise participate all you
+Next week the annual TeX Users Group Conference will be broadcast
+live: to watch the presentations and otherwise participate all you
 need to do is to [register](https://tug.org/tug2020/). This year
 registration is free of charge, because the costs for an online event
 are much lower, so all that is needed to attend is the registration.
 
+A number of people from the LaTeX Project Team are giving presentations:
+Javier,
+Joseph,
+Marcel and myself.
+
 You will find many interesting and exciting talks in [the program
-schedule](https://tug.org/tug2020/program.html) and while some my be
+schedule](https://tug.org/tug2020/program.html) and while some may be
 at inconvenient hours, depending on your location, most are probably
 at reasonable times. If not there are plans to make the talks
 available afterwards (no details yet), but live or partly live events
 are usually more fun in my opinion.
 
-A number of people from the LaTeX Project team are also presenting:
-Javier,
-Joseph,
-Marcel and myself.
-
 So go ahead and [register yourself](https://tug.org/tug2020/) if you are interested
-and let us make this the biggest Tex conference in years!
+and let's make this the biggest TeX conference in years!
 
 
 Enjoy --- Frank

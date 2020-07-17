@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Jul 2020 13:18:42 +0200</pubDate>
-    <lastBuildDate>Fri, 17 Jul 2020 13:18:42 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jul 2020 16:57:06 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jul 2020 16:57:06 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -16,26 +16,26 @@
 &lt;p&gt;You probably heard this already from other sources and maybe already
 registered, but if not, now is the time.&lt;/p&gt;
 
-&lt;p&gt;Next week the annual TeX Users Group Conference will be broadcasted
-live and to watch the presentations and otherwise participate all you
+&lt;p&gt;Next week the annual TeX Users Group Conference will be broadcast
+live: to watch the presentations and otherwise participate all you
 need to do is to &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register&lt;/a&gt;. This year
 registration is free of charge, because the costs for an online event
 are much lower, so all that is needed to attend is the registration.&lt;/p&gt;
 
+&lt;p&gt;A number of people from the LaTeX Project Team are giving presentations:
+Javier,
+Joseph,
+Marcel and myself.&lt;/p&gt;
+
 &lt;p&gt;You will find many interesting and exciting talks in &lt;a href=&quot;https://tug.org/tug2020/program.html&quot;&gt;the program
-schedule&lt;/a&gt; and while some my be
+schedule&lt;/a&gt; and while some may be
 at inconvenient hours, depending on your location, most are probably
 at reasonable times. If not there are plans to make the talks
 available afterwards (no details yet), but live or partly live events
 are usually more fun in my opinion.&lt;/p&gt;
 
-&lt;p&gt;A number of people from the LaTeX Project team are also presenting:
-Javier,
-Joseph,
-Marcel and myself.&lt;/p&gt;
-
 &lt;p&gt;So go ahead and &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register yourself&lt;/a&gt; if you are interested
-and let us make this the biggest Tex conference in years!&lt;/p&gt;
+and let’s make this the biggest TeX conference in years!&lt;/p&gt;
 
 &lt;p&gt;Enjoy — Frank&lt;/p&gt;
 
