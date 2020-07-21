@@ -5,9 +5,40 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Jul 2020 16:57:06 +0200</pubDate>
-    <lastBuildDate>Fri, 17 Jul 2020 16:57:06 +0200</lastBuildDate>
+    <pubDate>Tue, 21 Jul 2020 08:56:28 +0200</pubDate>
+    <lastBuildDate>Tue, 21 Jul 2020 08:56:28 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>New articles by project members</title>
+        <description>&lt;h1 id=&quot;new-articles-by-project-members&quot;&gt;New articles by project members&lt;/h1&gt;
+
+&lt;p&gt;We have added three articles recently published in TUGboat to the site.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ulrike’s article gives a sort overview about the work going on in providing tagged PDF documents,&lt;/li&gt;
+  &lt;li&gt;Enrico discusses aspects of mathematical typesetting and&lt;/li&gt;
+  &lt;li&gt;Frank’s article discusses a new package that implements an improved algorithm for float handling automatically avoiding fairly empty float pages that are common in standard LaTeX documents.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You will find all of them on the &lt;a href=&quot;/publications/indexbyyear/2020/&quot;&gt;Publications from 2020&lt;/a&gt; page.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Jul 2020 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2020/07/21/new-TUB-articles/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/07/21/new-TUB-articles/</guid>
+        
+        <category>latex</category>
+        
+        <category>accessibility</category>
+        
+        <category>pagination</category>
+        
+        <category>floats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Online TUG Conference 24-26 July 2020</title>
@@ -815,89 +846,6 @@ Frank&lt;/p&gt;
         <category>members</category>
         
         <category>luaotfload</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Two papers on the history of LaTeX</title>
-        <description>&lt;h1 id=&quot;two-papers-on-the-history-of-latex&quot;&gt;Two papers on the history of LaTeX&lt;/h1&gt;
-
-&lt;p&gt;We have added two papers on different aspects of the history of LaTeX
-to the site.  While both are somewhat older they present interesting
-accounts on the evolution of LaTeX.&lt;/p&gt;
-
-&lt;p&gt;The first was given by Chris Rowley at a conference celebrating Leslie
-Lamport’s 60th birthday and discusses the relevance of LaTeX throughout
-several decades (including some interesting predictions that can be checked
-against reality).&lt;/p&gt;
-
-&lt;h3 id=&quot;the-latex-legacy&quot;&gt;&lt;a href=&quot;/publications/2001-CAR-LaTeX-legacy.pdf&quot;&gt;The LaTeX Legacy&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Published paper, PODC ‘01 Proceedings of the twentieth annual ACM symposium on Principles of distributed computing, Pages 17-25&lt;/li&gt;
-  &lt;li&gt;Keywords: LaTeX history, LaTeX future&lt;/li&gt;
-  &lt;li&gt;Abstract
-    &lt;blockquote&gt;
-      &lt;p&gt;The second edition of The LaTeX Manual begins: `LaTeX is a system for
-typesetting documents. Its first widely available version,
-mysteriously numbered 2.09, appeared in 1985.’&lt;/p&gt;
-
-      &lt;p&gt;It is too early for a complete critical assessment of the impact of
-LaTeX 2.09 because its world-wide effects on many aspects of many
-cultures, not least scientific publication, remain strong after 15
-years—and that itself is significant in a technological world where a
-mere 15 months of fame can make and break an idea.&lt;/p&gt;
-
-      &lt;p&gt;Therefore this paper provides simply a review and evaluation of the
-relationship between TeX, LaTeX and some of the major technical
-developments in the world of quality automated formatting since the
-publication of LaTeX 2.09 in 1985. It is is neither definitive nor
-comprehensive but I hope it is informative.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;The second is an interview carried out by Dave Walden (for the TUG
-interview corner) and Gianluca Pignalberi (for the Free Software
-Magazine).&lt;/p&gt;
-
-&lt;h3 id=&quot;interview-of-frank-mittelbach--a-combined-interview-of-the-latex-project-director&quot;&gt;&lt;a href=&quot;/publications/2006-FMi-FSM-interview.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('8d3e30d44868430f853c7263dd693030');&quot;&gt;Interview of Frank Mittelbach – A combined interview of the LaTeX Project director&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;, Gianluca Pignalberi, Dave Walden&lt;/li&gt;
-  &lt;li&gt;Published paper, 2006, Free Software Magazine&lt;/li&gt;
-  &lt;li&gt;Keywords: LaTeX history, LaTeX future, LPPL, LaTeX3&lt;/li&gt;
-  &lt;li&gt;Abstract
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.freesoftwaremagazine.com/&quot;&gt;Free Software Magazine (FSM)&lt;/a&gt;
-and the &lt;a href=&quot;https://www.tug.org/&quot;&gt;TeX Users Group (TUG)&lt;/a&gt; both like to publish
-interviews. Recently, Gianluca Pignalberi of Free Software Magazine
-and Dave Walden of TUG both approached Frank Mittelbach about
-interviewing him. Rather than doing two separate interviews,
-Mittelbach, Pignalberi, and Walden decided on a combined interview in
-keeping with the mutual interests already shared by Free Software
-Magazine and TUG.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;We hope that both of them will give you some interesting insights
-into the evolution of LaTeX.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 23 Apr 2019 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2019/04/23/history-papers/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/04/23/history-papers/</guid>
-        
-        <category>latex history</category>
         
         
         <category>news</category>

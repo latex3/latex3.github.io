@@ -8,6 +8,7 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): PDF, Tagging, Accessibility
 
 
+{% include _papers/paper_2020-UFi-TUB-tb127fischer-accessible.md  %}
 
 {% include _papers/paper_2019-CAR-TUB-tb125rowley-tagpdf.md  %}
 
