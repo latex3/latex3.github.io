@@ -3,11 +3,151 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>https://latex-project.org//</link>
-    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Jul 2020 12:52:09 +0200</pubDate>
-    <lastBuildDate>Tue, 21 Jul 2020 12:52:09 +0200</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 21 Jul 2020 14:38:18 +0200</pubDate>
+    <lastBuildDate>Tue, 21 Jul 2020 14:38:18 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Second pre-release of LaTeX 2020-10-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;the-second-latex-pre-release-for-2020-10-01-is-available-for-testing&quot;&gt;The second LaTeX pre-release for 2020-10-01 is available for testing&lt;/h1&gt;
+
+&lt;p&gt;A few days ago we have submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
+and by now it should be available to all users using MiKTeX or TeX
+Live (on any operating system).&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-of-the-second-pre-release-for-2020-10-01&quot;&gt;Main features of the second pre-release for 2020-10-01&lt;/h2&gt;
+
+&lt;p&gt;The first pre-release distributed end of May had the following two main
+features (beside bug fixes):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the functionality of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; package was added directly to the LaTeX kernel&lt;/li&gt;
+  &lt;li&gt;LaTeX’s font series handling was improved&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The second pre-release adds one major new component to LaTeX: a general
+hook managment system to improve package interoperability and enable
+easier customization and extension of LaTeX.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-general-hook-management-for-latex&quot;&gt;A general hook management for LaTeX&lt;/h3&gt;
+
+&lt;p&gt;Most LaTeX users and package writers will know the handful of hooks
+that LaTeX offered until now, the most important one perhaps
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\AtBeginDocument&lt;/code&gt;. They are important but far too few so that in many
+cases packages developers had to patch directly into internals of LaTeX, with the
+all the resulting problems.&lt;/p&gt;
+
+&lt;p&gt;With the new hook management system LaTeX will get many more hooks
+that packages writers (and authors) can use to add code in a
+controlled and reliable way.  There have been a number of places new
+hooks have been added using the new system, more will follow over
+time. Available now are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hooks to add code before and after environments (formerly offered through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;etoolbox&lt;/code&gt; package)&lt;/li&gt;
+  &lt;li&gt;Hooks used when loading files, packages, or classes (similar to what the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filehook&lt;/code&gt; package provides)&lt;/li&gt;
+  &lt;li&gt;Hooks into the page-building process (e.g., functionality previously available through packages such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atbegshi&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atveryend&lt;/code&gt; and a few others)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The importance here is not so much that the functionality of these
+packages has been integrated into the LaTeX kernel, but that with the
+hook management system there is a single structured way to order the
+code added by different packages in a reliable way. This will resolve
+many of the interoperability issues between packages, which formerly
+could only be resolved by loading them in a specific order (if at
+all) or by complex and fragile code inside the packages to account
+for various scenarios in user documents.&lt;/p&gt;
+
+&lt;p&gt;The hook management system is currently documented in three document
+(for the final release this will get consolidated):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc lthooks&lt;/code&gt;  — The description of the interfaces and the core
+hooks already added to the kernel.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltshipout&lt;/code&gt; — The documentation of the hooks available
+during the page production process.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltfilehook&lt;/code&gt; — hooks that can be used before or after a file gets loaded.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;other-fixes-and-improvements&quot;&gt;Other fixes and improvements&lt;/h3&gt;
+
+&lt;p&gt;A full list of all fixes and additions is given in a draft version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32&lt;/code&gt;
+which you should be able to read by running&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;texdoc ltnews32
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;on the command line (or by any other means available at your operating
+system—somewhere there should be a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32.pdf&lt;/code&gt; that
+you can open with a PDF reader). The draft version is also available from our website as
+&lt;a href=&quot;/news/latex2e-news/ltnews32.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');&quot;&gt;LaTeX2e News Issue 32 draft&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
+
+&lt;p&gt;We expect to produce a third and final pre-release incorporating the
+user feedback we receive and consolidating some of the documentation.
+A few additional outstanding issues are expected to get fixed as well,
+but nothing major — the main functionality planned for the fall
+release is available already now with the second pre-release.&lt;/p&gt;
+
+&lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
+
+&lt;p&gt;We issue the second pre-release now in the hope that you will help by
+making sure that all the enhancements and fixes inside are safe and
+without any undesired side effects, so please help with the testing if
+you can.&lt;/p&gt;
+
+&lt;p&gt;This development format allows you to test the upcoming LaTeX release scheduled
+for 2020-10-01 with your documents or packages. Such testing is
+particularly important for package maintainers to verify that changes
+to the core LaTeX haven’t introduced incompatibilities with existing
+code. We try to identify any such problem beforehand, but such an
+undertaking is necessarily incomplete, which is why we ask for user
+testing.&lt;/p&gt;
+
+&lt;p&gt;Besides developers we also ask ordinary users to try out the new
+release candidate, because the more people are testing the new
+format, the higher the chances that any hidden problems are identified
+before the final release in February hits the streets.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straight forward. All
+you have to do is to replace the invocation command by appending
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+integrated editing environment, then it depends on the system 
+how to configure it to use an alternative format; but in any case the necessary
+modification should be straight forward.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-7&lt;/code&gt;, the first 5 pre-releases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 21 Jul 2020 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2020/07/21/latex-dev-2020-10-1b/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/07/21/latex-dev-2020-10-1b/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New articles by project members</title>
@@ -24,8 +164,8 @@
 &lt;p&gt;You will find all of them on the &lt;a href=&quot;/publications/indexbyyear/2020/&quot;&gt;Publications from 2020&lt;/a&gt; page.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Jul 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/07/21/new-TUB-articles/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/07/21/new-TUB-articles/</guid>
+        <link>http://localhost:4000/news/2020/07/21/new-TUB-articles/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/07/21/new-TUB-articles/</guid>
         
         <category>latex</category>
         
@@ -73,8 +213,8 @@ and let’s make this the biggest TeX conference in years!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Jul 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/07/17/TUG-online-conference/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/07/17/TUG-online-conference/</guid>
+        <link>http://localhost:4000/news/2020/07/17/TUG-online-conference/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/07/17/TUG-online-conference/</guid>
         
         <category>latex2e</category>
         
@@ -198,8 +338,8 @@ for LaTeX, so stay tuned.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</guid>
+        <link>http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</guid>
         
         <category>latex2e</category>
         
@@ -270,8 +410,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 02 Feb 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</guid>
+        <link>http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -311,8 +451,8 @@ Frank&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 31 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
+        <link>http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
         
         <category>latex3</category>
         
@@ -479,8 +619,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</guid>
+        <link>http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</guid>
         
         <category>latex2e</category>
         
@@ -634,8 +774,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Nov 2019 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</guid>
+        <link>http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</guid>
         
         <category>latex2e</category>
         
@@ -676,8 +816,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 15 Oct 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</guid>
+        <link>http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
@@ -797,55 +937,14 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-d
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</guid>
+        <link>http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</guid>
         
         <category>latex2e</category>
         
         <category>regression testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New kids on the block (2)</title>
-        <description>&lt;h1 id=&quot;new-kids-on-the-block-2&quot;&gt;New kids on the block (2)&lt;/h1&gt;
-
-&lt;p&gt;I’m happy to be able to announce that Phelype Oleinik and Marcel Krüger
-have joined the LaTeX Project Team. Contact
-details are on &lt;a href=&quot;/about/team&quot;&gt;the team page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Phelype is a Civil Engineer, a TeX enthusiast and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
-advocate—you’ll find him on Stack Exchange answering complex
-questions.  Marcel is an accomplished and well-known LuaTeX expert and
-besides other activities is maintaining &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt;.  With Marcel
-joining we have formally adopted the work on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luaotfload&lt;/code&gt; which is a
-core component for making LaTeX available with a LuaTeX engine.  The
-repository for this code is now
-&lt;a href=&quot;https://github.com/latex3/luaotfload&quot;&gt;https://github.com/latex3/luaotfload&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We are extremely greateful to have both of them on board and gain from their
-experience and knowledge!&lt;/p&gt;
-
-&lt;p&gt;A warm welcome —
-Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 25 Aug 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/08/25/new-kids2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/08/25/new-kids2/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>members</category>
-        
-        <category>luaotfload</category>
         
         
         <category>news</category>

@@ -2,6 +2,8 @@
 
 Changes to the `master` branch can be viewed at [http://latex3.github.io/](http://latex3.github.io/), which is the staging environment. If everything looks fine, you can merge `master` with `live` to have the server running [https://www.latex-project.org/](https://www.latex-project.org/) pick up the changes.
 
+What actually happens is that the `_site` directory is pulled by the server, so it needs to contain a properly built site (see below).
+
 ## Branches
 
 **The latex-project.org staging**  
@@ -10,7 +12,7 @@ Changes to the `master` branch can be viewed at [http://latex3.github.io/](http:
 **The latex-project.org website**  
 [https://www.latex-project.org/](https://www.latex-project.org/) - `live` branch
 
-## Contributing
+## Contributing (team members only)
 
 If you want to develop locally first, this is the way to contribute:
 
@@ -43,6 +45,16 @@ Trigger the local server by executing the ``jekyll serve`` task.
     $ jekyll serve
 
 Your local copy will now be accessible at `http://localhost:4000`. Then use `CTRL` + `C` to stop the server.
+
+### Generate the site version
+
+`jekyll serve` saves the site in `_site`but it changes the site url to localhost (as of version 4.x) so it is no longer possible to use that directory as the official site. Instead you now need to run
+
+
+    $ jekyll build
+
+to get the `{{ site.url }}` variable set correctly.
+
 
 ## Resources
 
