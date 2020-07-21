@@ -8,6 +8,8 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Fonts in text and math
 
 
+{% include _papers/paper_2020-UFi-TUB-tb127fischer-bangla.md  %}
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
