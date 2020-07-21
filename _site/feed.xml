@@ -3,10 +3,10 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Jul 2020 08:56:28 +0200</pubDate>
-    <lastBuildDate>Tue, 21 Jul 2020 08:56:28 +0200</lastBuildDate>
+    <link>https://latex-project.org//</link>
+    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 21 Jul 2020 12:52:09 +0200</pubDate>
+    <lastBuildDate>Tue, 21 Jul 2020 12:52:09 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -24,8 +24,8 @@
 &lt;p&gt;You will find all of them on the &lt;a href=&quot;/publications/indexbyyear/2020/&quot;&gt;Publications from 2020&lt;/a&gt; page.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Jul 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/07/21/new-TUB-articles/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/07/21/new-TUB-articles/</guid>
+        <link>https://latex-project.org//news/2020/07/21/new-TUB-articles/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/07/21/new-TUB-articles/</guid>
         
         <category>latex</category>
         
@@ -73,8 +73,8 @@ and let’s make this the biggest TeX conference in years!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Jul 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/07/17/TUG-online-conference/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/07/17/TUG-online-conference/</guid>
+        <link>https://latex-project.org//news/2020/07/17/TUG-online-conference/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/07/17/TUG-online-conference/</guid>
         
         <category>latex2e</category>
         
@@ -198,8 +198,8 @@ for LaTeX, so stay tuned.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 28 May 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/05/28/latex-dev-2020-10-1a/</guid>
+        <link>https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/05/28/latex-dev-2020-10-1a/</guid>
         
         <category>latex2e</category>
         
@@ -270,8 +270,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 02 Feb 2020 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/02/02/issue31-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -311,8 +311,8 @@ Frank&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 31 Jan 2020 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
+        <link>https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
         
         <category>latex3</category>
         
@@ -479,8 +479,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Jan 2020 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/01/17/latex-dev-2020-2/</guid>
+        <link>https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/01/17/latex-dev-2020-2/</guid>
         
         <category>latex2e</category>
         
@@ -634,8 +634,8 @@ situation further.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Nov 2019 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/11/28/latex-dev-2020-1/</guid>
+        <link>https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/11/28/latex-dev-2020-1/</guid>
         
         <category>latex2e</category>
         
@@ -676,8 +676,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 15 Oct 2019 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/10/15/issue30-of-latex2e-news-released/</guid>
+        <link>https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</guid>
         
         <category>latex2e</category>
         
@@ -797,8 +797,8 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-d
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2019 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/09/01/LaTeX-dev-format/</guid>
+        <link>https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</guid>
         
         <category>latex2e</category>
         
@@ -836,8 +836,8 @@ Frank&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 25 Aug 2019 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2019/08/25/new-kids2/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2019/08/25/new-kids2/</guid>
+        <link>https://latex-project.org//news/2019/08/25/new-kids2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2019/08/25/new-kids2/</guid>
         
         <category>latex2e</category>
         
