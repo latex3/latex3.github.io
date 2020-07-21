@@ -8,6 +8,9 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Unicode
 
 
+{% include _papers/paper_2020-JAW-TUG-tb127-wright-case.md %}
+
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2018 (Rio de Janeiro, Brazil)
