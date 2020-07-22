@@ -62,16 +62,16 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Jul 21, 2020</span></small>
+    <small class="meta"><span class="post-date">Jul 22, 2020</span></small>
     <h1 id="the-second-latex-pre-release-for-2020-10-01-is-available-for-testing">The second LaTeX pre-release for 2020-10-01 is available for testing</h1>
 
-<p>A few days ago we have submitted a new LaTeX development format<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> to CTAN
-and by now it should be available to all users using MiKTeX or TeX
+<p>A few days ago we submitted a new LaTeX development format<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> to CTAN
+and by now this should be available to all users using MiKTeX or TeX
 Live (on any operating system).</p>
 
 <h2 id="main-features-of-the-second-pre-release-for-2020-10-01">Main features of the second pre-release for 2020-10-01</h2>
 
-<p>The first pre-release distributed end of May had the following two main
+<p>The first pre-release, distributed at the end of May, had the following two main
 features (beside bug fixes):</p>
 
 <ul>
@@ -79,40 +79,45 @@ features (beside bug fixes):</p>
   <li>LaTeX’s font series handling was improved</li>
 </ul>
 
-<p>The second pre-release adds one major new component to LaTeX: a general
-hook managment system to improve package interoperability and enable
+<p>This second pre-release adds one major new component to LaTeX: a general
+hook management system to improve package interoperability and enable
 easier customization and extension of LaTeX.</p>
 
-<h3 id="a-general-hook-management-for-latex">A general hook management for LaTeX</h3>
+<h3 id="a-general-hook-management-system-for-latex">A general hook management system for LaTeX</h3>
 
 <p>Most LaTeX users and package writers will know the handful of hooks
-that LaTeX offered until now, the most important one perhaps
-<code class="language-plaintext highlighter-rouge">\AtBeginDocument</code>. They are important but far too few so that in many
-cases packages developers had to patch directly into internals of LaTeX, with 
-all the resulting problems.</p>
+that LaTeX has been offering until now, the most important one perhaps
+being <code class="language-plaintext highlighter-rouge">\AtBeginDocument</code>. These are important hooks, but they are far
+too few so that in many cases package developers had to directly patch
+the internals of LaTeX.  Thus resulted in many problems.</p>
 
-<p>With the new hook management system LaTeX will get many more hooks
+<p>With the new hook management system, LaTeX will get many more hooks
 that packages writers (and authors) can use to add code in a
-controlled and reliable way.  There have been a number of places new
-hooks have been added using the new system, more will follow over
+controlled and reliable way.  New hooks have been added in a number of
+places by using the new system and more will follow over
 time. Available now are:</p>
 <ul>
-  <li>Hooks to add code before and after environments (formerly offered through the <code class="language-plaintext highlighter-rouge">etoolbox</code> package)</li>
-  <li>Hooks used when loading files, packages, or classes (similar to what the <code class="language-plaintext highlighter-rouge">filehook</code> package provides)</li>
-  <li>Hooks into the page-building process (e.g., functionality previously available through packages such as <code class="language-plaintext highlighter-rouge">atbegshi</code> or <code class="language-plaintext highlighter-rouge">atveryend</code> and a few others)</li>
+  <li>Hooks to add code before and after environments (formerly offered
+through the <code class="language-plaintext highlighter-rouge">etoolbox</code> package);</li>
+  <li>Hooks used when loading files, packages, or classes (similar to
+what the <code class="language-plaintext highlighter-rouge">filehook</code> package now provides);</li>
+  <li>Hooks in the page-building process (e.g., functionality previously
+available through packages such as <code class="language-plaintext highlighter-rouge">atbegshi</code> or <code class="language-plaintext highlighter-rouge">atveryend</code> and a
+few others).</li>
 </ul>
 
-<p>The importance here is not so much that the functionality of these
-packages has been integrated into the LaTeX kernel, but that with the
-hook management system there is a single structured way to order the
-code added by different packages in a reliable way. This will resolve
-many of the interoperability issues between packages, which formerly
-could only be resolved by loading them in a specific order (if at
-all) or by complex and fragile code inside the packages to account
+<p>The import here is not so much that the functionality of these
+packages has been integrated into the LaTeX kernel, but that the
+hook management system provides a single structured way for different packages 
+to reliably add and order 
+code.  This will resolve
+many of the inter-package interoperability issues which formerly
+could be resolved (if at all) only by loading the packages in a specific order, 
+or by the use of complex and fragile code inside the packages to account
 for various scenarios in user documents.</p>
 
-<p>The hook management system is currently documented in three document
-(for the final release this will get consolidated):</p>
+<p>The hook management system is currently described in these three documents
+(for the final release they will be consolidated):</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">texdoc lthooks</code>  — The description of the interfaces and the core
@@ -132,7 +137,7 @@ which you should be able to read by running</p>
 
 <p>on the command line (or by any other means available at your operating
 system—somewhere there should be a file called <code class="language-plaintext highlighter-rouge">ltnews32.pdf</code> that
-you can open with a PDF reader). The draft version is also available from our website as
+you can open with a PDF reader). The draft version of this file is also available from our website as
 <a href="/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">LaTeX2e News Issue 32 draft</a>.</p>
 
 <h2 id="outlook">Outlook</h2>
@@ -145,21 +150,21 @@ release is available already now with the second pre-release.</p>
 
 <h2 id="please-help-with-the-testing">Please help with the testing</h2>
 
-<p>We issue the second pre-release now in the hope that you will help by
-making sure that all the enhancements and fixes inside are safe and
-without any undesired side effects, so please help with the testing if
+<p>We are issuing this second pre-release now in the hope that you will help us by
+making sure that all the enhancements and fixes we have provided are safe and that
+they do not have any undesired side effects, so please help with the testing if
 you can.</p>
 
 <p>This development format allows you to test the upcoming LaTeX release scheduled
 for 2020-10-01 with your documents or packages. Such testing is
 particularly important for package maintainers to verify that changes
 to the core LaTeX haven’t introduced incompatibilities with existing
-code. We try to identify any such problem beforehand, but such an
-undertaking is necessarily incomplete, which is why we ask for user
+code. We try to identify any such problems beforehand but such an
+undertaking is necessarily incomplete, which is why we are asking for user
 testing.</p>
 
-<p>Besides developers we also ask ordinary users to try out the new
-release candidate, because the more people are testing the new
+<p>Besides developers, we also ask ordinary users to try out the new
+release, because the more people that test the new
 format, the higher the chances that any hidden problems are identified
 before the final release in October hits the streets.</p>
 
