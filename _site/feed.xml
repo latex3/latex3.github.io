@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 22 Jul 2020 10:47:08 +0200</pubDate>
-    <lastBuildDate>Wed, 22 Jul 2020 10:47:08 +0200</lastBuildDate>
+    <pubDate>Wed, 22 Jul 2020 11:43:46 +0200</pubDate>
+    <lastBuildDate>Wed, 22 Jul 2020 11:43:46 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -54,7 +54,7 @@ available through packages such as &lt;code class=&quot;language-plaintext highl
 few others).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The import here is not so much that the functionality of these
+&lt;p&gt;The importance here is not so much that the functionality of these
 packages has been integrated into the LaTeX kernel, but that the
 hook management system provides a single structured way for different packages 
 to reliably add and order 
@@ -139,7 +139,7 @@ modification should be straight forward.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 22 Jul 2020 02:00:01 +0200</pubDate>
+        <pubDate>Wed, 22 Jul 2020 02:00:02 +0200</pubDate>
         <link>https://latex-project.org//news/2020/07/22/latex-dev-2020-10-1b/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2020/07/22/latex-dev-2020-10-1b/</guid>
         
