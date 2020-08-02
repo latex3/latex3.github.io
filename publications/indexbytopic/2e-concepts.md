@@ -63,5 +63,12 @@ description: "Selection of links to PDF versions of various articles published b
 {% include _papers/paper_1995-FMi-talk-LaTeX2e-encoding-interfaces.md %}
 
 
+## TUG Conference 1989 (Stanford, USA)
+
+{% include _papers/paper_1989-FMi-TUG-stanford.md %}
+
+<hr class="conference-end">
+
+
 <div class="row">{% include toc.pubbytopic.html %}</div>
 <div id="div_vgwpixel"></div>

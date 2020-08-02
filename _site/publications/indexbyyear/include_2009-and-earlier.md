@@ -104,3 +104,9 @@
 
 {% include _papers/paper_1995-FMi-talk-LaTeX2e-encoding-interfaces.md %}
 
+
+## TUG Conference 1989 (Stanford, USA)
+
+{% include _papers/paper_1989-FMi-TUG-stanford.md %}
+
+<hr class="conference-end">
