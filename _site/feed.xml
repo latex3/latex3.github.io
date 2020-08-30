@@ -5,9 +5,168 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 02 Aug 2020 20:08:34 +0200</pubDate>
-    <lastBuildDate>Sun, 02 Aug 2020 20:08:34 +0200</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2020 12:15:30 +0200</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2020 12:15:30 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Final pre-release of LaTeX 2020-10-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;the-third-and-final-latex-pre-release-for-2020-10-01-is-available-for-testing&quot;&gt;The third and final LaTeX pre-release for 2020-10-01 is available for testing&lt;/h1&gt;
+
+&lt;p&gt;A few days ago we submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
+and by now this should be available to all users using MiKTeX or TeX
+Live (on any operating system).&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-of-the-final-pre-release-for-2020-10-01&quot;&gt;Main features of the final pre-release for 2020-10-01&lt;/h2&gt;
+
+&lt;p&gt;In the previous pre-releases, distributed in May and July, the following main
+features (beside bug fixes) were made available:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The functionality of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; package was added directly to the LaTeX kernel.&lt;/li&gt;
+  &lt;li&gt;LaTeX’s font series handling was improved.&lt;/li&gt;
+  &lt;li&gt;A general hook management system to improve package
+interoperability and enable easier customization.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this final prerelease we have fully integrated the hook management
+system (previously it was added at the end overwriting earlier
+definitions in the kernel). In addition the following features were added:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The picture environent now supports dimensions (and not only
+numbers multiplied by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unitlength&lt;/code&gt;) in places where coordinates
+have to be specified. This is basically incorporating the
+functionality of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;picture.sty&lt;/code&gt; package by Heiko Oberdiek into
+the kernel.&lt;/li&gt;
+  &lt;li&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ShowCommand&lt;/code&gt; was added to show the definition of robust
+commands in an easy manner.&lt;/li&gt;
+  &lt;li&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewCommandCopy&lt;/code&gt; was added to allow making copies of robust
+commands (which can’t be done using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\let&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docstrip&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3docstrip&lt;/code&gt; were merged so that one can now always
+use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docstrip&lt;/code&gt; even with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;-based sources.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;other-fixes-and-improvements&quot;&gt;Other fixes and improvements&lt;/h3&gt;
+
+&lt;p&gt;There have been a larger number of smaller bug fixes and enhancements.
+A full list of all fixes and additions is given in a draft version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32&lt;/code&gt;
+which you should be able to read by running&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;texdoc ltnews32
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;on the command line (or by any other means available at your operating
+system—somewhere there should be a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltnews32.pdf&lt;/code&gt; that
+you can open with a PDF reader). The draft version of this file is also available from our website as
+&lt;a href=&quot;/news/latex2e-news/ltnews32.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');&quot;&gt;LaTeX2e News Issue 32 draft&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-general-hook-management-system-for-latex-the-main-feature-of-the-2020-fall-release&quot;&gt;A general hook management system for LaTeX (the main feature of the 2020 fall release)&lt;/h3&gt;
+
+&lt;p&gt;Most LaTeX users and package writers will know the handful of hooks
+that LaTeX has been offering until now, the most important one perhaps
+being &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\AtBeginDocument&lt;/code&gt;. These are important hooks, but they are far
+too few so that in many cases package developers had to directly patch
+the internals of LaTeX.  Thus resulted in many problems.&lt;/p&gt;
+
+&lt;p&gt;With the new hook management system, LaTeX will get many more hooks
+that packages writers (and authors) can use to add code in a
+controlled and reliable way.  New hooks have been added in a number of
+places by using the new system and more will follow over
+time. Available now are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hooks to add code before and after environments (formerly offered
+through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;etoolbox&lt;/code&gt; package);&lt;/li&gt;
+  &lt;li&gt;Hooks used when loading files, packages, or classes (similar to
+what the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filehook&lt;/code&gt; package now provides);&lt;/li&gt;
+  &lt;li&gt;Hooks in the page-building process (e.g., functionality previously
+available through packages such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atbegshi&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atveryend&lt;/code&gt; and a
+few others).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The important point here is not so much that the functionality of these
+packages has been integrated into the LaTeX kernel, but that the
+hook management system provides a single structured way for different packages 
+to reliably add and order 
+code.  This will resolve
+many of the inter-package interoperability issues which formerly
+could be resolved (if at all) only by loading the packages in a specific order, 
+or by the use of complex and fragile code inside the packages to account
+for various scenarios in user documents.&lt;/p&gt;
+
+&lt;p&gt;The hook management system is currently described in these three documents:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc lthooks&lt;/code&gt;  — The description of the interfaces and the core
+hooks already added to the kernel.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltshipout&lt;/code&gt; — The documentation of the hooks available
+during the page production process.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltfilehook&lt;/code&gt; — hooks that can be used before or after a file gets loaded.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
+
+&lt;p&gt;We expect this to be the final pre-release matching the code that goes
+into the 2020-10-01 release, except for any bug fixes that are found
+between now and the release date.&lt;/p&gt;
+
+&lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
+
+&lt;p&gt;We are issuing this final pre-release now in the hope that you will help us by
+making sure that all the enhancements and fixes we have provided are safe and that
+they do not have any undesired side effects, so please help with the testing if
+you can.&lt;/p&gt;
+
+&lt;p&gt;This development format allows you to test the upcoming LaTeX release scheduled
+for 2020-10-01 with your documents or packages. Such testing is
+particularly important for package maintainers to verify that changes
+to the core LaTeX haven’t introduced incompatibilities with existing
+code. We try to identify any such problems beforehand but such an
+undertaking is necessarily incomplete, which is why we are asking for user
+testing.&lt;/p&gt;
+
+&lt;p&gt;Besides developers, we also ask ordinary users to try out the new
+release, because the more people that test the new
+format, the higher the chances that any hidden problems are identified
+before the final release in October hits the streets.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straight forward. All
+you have to do is to replace the invocation command by appending
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+integrated editing environment, then it depends on the system 
+how to configure it to use an alternative format; but in any case the necessary
+modification should be straight forward.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The internal version number for the pre-release is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; pre-release-8&lt;/code&gt;, the first 5 pre-releases just mirrored the patch releases we did for 2020-02-02. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2020 02:00:03 +0200</pubDate>
+        <link>https://latex-project.org//news/2020/08/30/latex-dev-2020-10-1c/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/08/30/latex-dev-2020-10-1c/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Second pre-release of LaTeX 2020-10-01 is available for testing</title>
@@ -829,129 +988,6 @@ release information for earlier LaTeX releases.&lt;/p&gt;
         <category>latex2e</category>
         
         <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Major news: LaTeX development formats are now available</title>
-        <description>&lt;h1 id=&quot;latex-development-formats-are-now-available&quot;&gt;LaTeX development formats are now available&lt;/h1&gt;
-
-&lt;p&gt;We know that many of you, especially developers and maintainers
-of important packages, have a strong interest in a stable LaTeX 
-environment.&lt;/p&gt;
-
-&lt;p&gt;In order to keep LaTeX very stable for users whilst allowing for
-further development to continue, we now have a development branch of
-LaTeX on GitHub containing development code for the upcoming release.
-When this code is ready for wider consumption and testing, we generate
-a pre-release of LaTeX from this development branch and make it
-available on CTAN.&lt;/p&gt;
-
-&lt;p&gt;For users of the TeXLive and MikTeX distributions it is therefore now
-straightforward to test their documents and code against the upcoming
-LaTeX release with ease, simply by selecting a different program name
-(when using the command line) or by selecting a menu entry (after
-setting it up, see below).&lt;/p&gt;
-
-&lt;p&gt;If you do this then the latest version of the LaTeX development 
-format will be used to process your document, allowing you 
-to test the upcoming release with your own documents and packages.
-For example, if you run&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;then you will be greeted on the screen with
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2019-10-01&amp;gt; pre-release-2&lt;/code&gt; (identifying the pre-release
-format) instead of the normal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LaTeX2e &amp;lt;2018-12-01&amp;gt;&lt;/code&gt;.  In this
-pre-release you will find the latest new features that we have
-developed. Here is an example of upcoming features that are currently
-only in the pre-release format: better UTF8-handling as described in
-&lt;a href=&quot;/publications/indexbyyear/2019&quot;&gt;Taming UTF-8 in pdfTeX&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note, that these are not `nightly builds’ of the format reflecting the
-very latest stage of development, but pre-release versions that we have
-tested ourselves so that we consider them ready for testing by a 
-broader community, prior to their public release.&lt;/p&gt;
-
-&lt;h2 id=&quot;our-hopes&quot;&gt;Our hopes&lt;/h2&gt;
-
-&lt;p&gt;We don’t expect everybody to start using the development formats to
-participate in testing, but we hope that people with a strong interest
-in a stable LaTeX environment (especially developers and maintainers
-of important packages) will use the new facilities and help us to
-ensure that future public releases of LaTeX do not (as has happened in
-the past) require some immediate patches because of issues that were
-not identified by our internal regression test suite or by other
-testing that we do.&lt;/p&gt;
-
-&lt;p&gt;Any issue identified when using the development format should preferably
-be logged as an issue on GitHub, following the procedure outlined in
-&lt;a href=&quot;/bugs/&quot;&gt;www.latex-project.org/bugs/&lt;/a&gt;
-including the use of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latexbug&lt;/code&gt; package as described.&lt;/p&gt;
-
-&lt;p&gt;Our bug reporting process normally states that issues involving
-third-party software are out of scope as we can’t correct external
-packages.  However, in the particular case of the development 
-format showing an
-incompatibility with a third-party package, it is fine to open an issue
-with us (in addition, please, to informing the maintainer of that package)
-so that we know about the problem and can jointly work on resolving it.&lt;/p&gt;
-
-&lt;h2 id=&quot;details-please-&quot;&gt;Details please …&lt;/h2&gt;
-
-&lt;p&gt;More details and some background information about the concepts and
-the process is available in an upcoming TUGboat article:&lt;/p&gt;
-
-&lt;h3 id=&quot;the-latex-release-workflow-and-the-latex-dev-formats&quot;&gt;&lt;a href=&quot;/publications/2019-FMi-TUB-tb125mitt-dev-format.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('03770697eae2427c8a6bfe7e9b8ab332');&quot;&gt;The LaTeX release workflow and the LaTeX dev formats&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;TUGboat 40:2, 2019&lt;/li&gt;
-  &lt;li&gt;Abstract
-    &lt;blockquote&gt;
-      &lt;p&gt;How do you prevent creating banana software (i.e., software that
-gets ripe at the customer site)? By proper testing! But this is
-anything but easy.&lt;/p&gt;
-
-      &lt;p&gt;The paper will give an overview of the efforts made by the LaTeX
-Project Team over the years to provide high-quality software and
-explains the changes that we have made this summer to improve the
-situation further.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;setting-up-menu-items&quot;&gt;Setting up menu items&lt;/h2&gt;
-
-&lt;p&gt;While the command line call works out of the box if you have a recent
-uptodate TeXLive or MikTeX installation, the use within an integrated
-editing environment doesn’t at this point in time (maybe the
-developers of these editors will include it in the future). However,
-it is normally fairly simple to enable it as most (or even all?) of
-them provide simple ways to call your own setup. How this works in
-detail depends very much on the environment you use, so we can’t give
-much help here. But as an example: to provide an additional menu entry
-for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-dev&lt;/code&gt; all I had to do was to copy the file
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX.engine&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XeLaTeX-dev.engine&lt;/code&gt; and change the call from
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev&lt;/code&gt; inside.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank &amp;amp; Chris&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Sep 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/09/01/LaTeX-dev-format/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>regression testing</category>
-        
-        <category>development formats</category>
         
         
         <category>news</category>

@@ -29,7 +29,7 @@ To install packages from the development repository, using `l3build` as follows:
     cd l3kernel
     texlua build.lua install
 
-You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to me code and contribute them back via [Pull Requests](https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md).
+You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to the code and contribute them back via [Pull Requests](https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md) but please read the [contributing guidelines](https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md) first.
 
 
 ## Bug reports
