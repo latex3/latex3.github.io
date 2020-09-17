@@ -5,9 +5,72 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Sep 2020 14:09:29 +0200</pubDate>
-    <lastBuildDate>Tue, 01 Sep 2020 14:09:29 +0200</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2020 17:26:18 +0200</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2020 17:26:18 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Talks from the online TUG Conference 2020</title>
+        <description>&lt;h1 id=&quot;talks-from-the-online-tug-conference-2020-are-now-online&quot;&gt;Talks from the online TUG Conference 2020 are now online&lt;/h1&gt;
+
+&lt;p&gt;The first TUG online conference in July was quite a success with many
+interesting talks on many subjects of TeX usage and related topics.
+The talks are now appearing one after another on YouTube, thanks to
+the the work of a few individuals who have prepared them (and the
+question/answer sessions) for publication.&lt;/p&gt;
+
+&lt;p&gt;If you have missed the conference (or if you want listen to one of the
+talks again) you will find them on the &lt;a href=&quot;https://www.youtube.com/c/TeXUsersGroup/featured&quot;&gt;TeX Users Group Channel on
+YouTube&lt;/a&gt;. So far
+only a subset of the talks have been added; the remaining ones will
+probably appear pretty soon.&lt;/p&gt;
+
+&lt;p&gt;There are also several talks by members of the LaTeX Project team. These are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://youtu.be/zNci4lcb8Vo&quot;&gt;Frank Mittelbach: Quo Vadis LaTeX(3) — A look at the upcoming
+years&lt;/a&gt; which gives an overview about
+our recently started multi-year project that aims at providing
+accessible and tagged PDF;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://youtu.be/0qTBtKr-5c0&quot;&gt;Joseph Wright: learnlatex.org - Taking online training LaTeX fully
+interactive&lt;/a&gt; which gives an overview
+about a project providing interactive online training for new LaTeX
+users;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://youtu.be/xPj6vNo8exY&quot;&gt;Marcel Krüger — HarfBuzz in
+LuaLaTeX&lt;/a&gt; which discusses the
+harfbuzz implementation for LuaLaTeX, its features and usage;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://youtu.be/aHbO7BUUQqU&quot;&gt;Javier Bezos — in conversation with Paulo Ney de
+Souza&lt;/a&gt; which is an interview with the current
+maintainer of Babel.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Sep 2020 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2020/09/15/TUG-online-talks/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/09/15/TUG-online-talks/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>development</category>
+        
+        <category>conference</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Final pre-release of LaTeX 2020-10-01 is available for testing</title>
@@ -947,46 +1010,6 @@ situation further.&lt;/p&gt;
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>New October 2019 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;october-2019-latex-release-available&quot;&gt;October 2019 LaTeX release available&lt;/h1&gt;
-
-&lt;p&gt;We have recently released the October 2019 LaTeX distribution to CTAN from where it automatically moves (or has moved) to the major TeX distributions.&lt;/p&gt;
-
-&lt;p&gt;This release fixes a small number of bugs and introduces some new features. The most important ones are documented in &lt;a href=&quot;/news/latex2e-news/ltnews30.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('7000e177ed02498cb64066adbedb6d81');&quot;&gt;“LaTeX2e News Issue 30”&lt;/a&gt;. This document
-can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;h3 id=&quot;topics-are&quot;&gt;Topics are:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;LaTeX development formats now available&lt;/li&gt;
-  &lt;li&gt;Improving Unicode handling in pdfTeX&lt;/li&gt;
-  &lt;li&gt;Improving file name handling in pdfTeX&lt;/li&gt;
-  &lt;li&gt;Improving the filecontents environment&lt;/li&gt;
-  &lt;li&gt;Making more user commands robust&lt;/li&gt;
-  &lt;li&gt;Other changes to the LaTeX kernel, tools and amsmath&lt;/li&gt;
-  &lt;li&gt;Documentation updates&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 15 Oct 2019 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2019/10/15/issue30-of-latex2e-news-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
