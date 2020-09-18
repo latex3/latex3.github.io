@@ -14,7 +14,10 @@ typesetting!
 We are happy to thank [Paulo Cereda](https://github.com/cereda) for
 designing and implementing the "hummingbird" logo for LaTeX.
 
-
+Please note that the hummingbird logos are *not distributed* under
+LPPL; these logos represent the LaTeX Project (and its work) and
+should not be modified without our explicit permission and should only
+be used as indicated below.
 
 
 ***

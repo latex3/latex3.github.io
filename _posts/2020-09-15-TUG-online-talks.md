@@ -9,7 +9,7 @@ categories: news
 tags: [latex2e, latex3, development, conference]
 ---
 
-# Talks from the online TUG Conference 2020 are now online
+# Talks from the online TUG Conference 2020 are now available on YouTube
 
 The first TUG online conference in July was quite a success with many
 interesting talks on many subjects of TeX usage and related topics.
