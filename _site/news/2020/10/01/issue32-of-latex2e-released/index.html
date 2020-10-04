@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>First prerelease of LaTeX 2020-10-01 is available for testing</title>
-  <meta name="description" content="First prerelease of LaTeX 2020-10-01 is available for testing">
+  <title>Fall 2020 LaTeX release available</title>
+  <meta name="description" content="The Octber 2020 release of LaTeX is available. ltnews32 describes updates and changes made in the new LaTeX release.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,64 +62,62 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">May 28, 2020</span></small>
-    <h1 id="the-first-latex-prerelease-for-2020-10-01-is-available-for-testing">The first LaTeX prerelease for 2020-10-01 is available for testing</h1>
+    <small class="meta"><span class="post-date">Oct 1, 2020</span></small>
+    <h1 id="the-fall-2020-latex-release-is-available">The fall 2020 LaTeX release is available</h1>
 
-<p>A few days ago we have submitted a new LaTeX development format<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> to CTAN
-and by now it should be available to all users using MiKTeX or TeX
-Live (on any operating system).</p>
+<p>This release introduces a number of important
+enhancements.</p>
 
-<p>This format allows you to test the upcoming LaTeX release scheduled
-for 2020-10-01 with your documents or packages. Such testing is
-particularly important for package maintainers to verify that changes
-to the core LaTeX haven’t introduced incompatibilities with existing
-code. We try to identify any such problem beforehand, but such an
-undertaking is necessarily incomplete, which is why we ask for user
-testing.</p>
+<h3 id="a-general-hook-management-system-for-latex">A general hook management system for LaTeX</h3>
 
-<p>Besides developers we also ask ordinary users to try out the new
-release candidate, because the more people are testing the new
-format, the higher the chances that any hidden problems are identified
-before the final release in February hits the streets.</p>
+<p>Most LaTeX users and package writers will know the handful of hooks
+that LaTeX has been offering until now, the most important one perhaps
+being <code class="language-plaintext highlighter-rouge">\AtBeginDocument</code>. These are important hooks, but they are far
+too few so that in many cases package developers had to directly patch
+the internals of LaTeX.  This resulted in many problems.</p>
 
-<p>Processing your documents with the prerelease is straight forward. All
-you have to do is to replace the invocation command by appending
-<code class="language-plaintext highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
+<p>With the new hook management system, LaTeX will get many more hooks
+that packages writers (and authors) can use to add code in a
+controlled and reliable way.  New hooks have been added in a number of
+places by using the new system and more will follow over
+time. Available now are:</p>
+<ul>
+  <li>Hooks to add code before and after environments (formerly offered
+through the <code class="language-plaintext highlighter-rouge">etoolbox</code> package);</li>
+  <li>Hooks used when loading files, packages, or classes (similar to
+what the <code class="language-plaintext highlighter-rouge">filehook</code> package now provides);</li>
+  <li>Hooks in the page-building process (e.g., functionality previously
+available through packages such as <code class="language-plaintext highlighter-rouge">atbegshi</code> or <code class="language-plaintext highlighter-rouge">atveryend</code> and a
+few others).</li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-</code></pre></div></div>
+<p>The important point here is not so much that the functionality of these
+packages has been integrated into the LaTeX kernel, but that the
+hook management system provides a single structured way for different packages 
+to reliably add and order 
+code.  This will resolve
+many of the inter-package interoperability issues which formerly
+could be resolved (if at all) only by loading the packages in a specific order, 
+or by the use of complex and fragile code inside the packages to account
+for various scenarios in user documents.</p>
 
-<p>instead of using <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code> or <code class="language-plaintext highlighter-rouge">xelatex</code>. If you use an
-integrated editing environment, then it depends on the system 
-how to configure it to use an alternative format; but in any case the necessary
-modification should be straight forward.</p>
+<p>The hook management system is currently described in these three documents:</p>
 
-<h2 id="main-features-of-the-first-prerelease-for-2020-10-01">Main features of the first prerelease for 2020-10-01</h2>
-
-<p>We have been quite busy (did Corona help?) and so already this first
-prerelease contains close to thirty smaller and larger fixes and
-enhancements. A full list is given in a draft version of <code class="language-plaintext highlighter-rouge">ltnews32</code>
-which you should be able to read by running</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>texdoc ltnews32
-</code></pre></div></div>
-
-<p>on the command line (or by any other means available at your operating
-system—somewhere there should be a file called <code class="language-plaintext highlighter-rouge">ltnews32.pdf</code> that
-you can open with a PDF reader). The draft version is also available from our website as
-<a href="/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">LaTeX2e News Issue 32 draft</a>.</p>
-
-<p>In this post I only touch two of the most important topics, but many
-others are worth exploring too, so please check that documentation out.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">texdoc lthooks</code>  — The description of the interfaces and the core
+hooks already added to the kernel.</li>
+  <li><code class="language-plaintext highlighter-rouge">texdoc ltshipout</code> — The documentation of the hooks available
+during the page production process.</li>
+  <li><code class="language-plaintext highlighter-rouge">texdoc ltfilehook</code> — hooks that can be used before or after a file gets loaded.</li>
+</ul>
 
 <h3 id="providing-xparse-as-part-of-the-format">Providing <code class="language-plaintext highlighter-rouge">xparse</code> as part of the format</h3>
 
 <p>In the previous release we added the LaTeX3 programming layer to the
 LaTeX format to improve the loading speed when packages using <code class="language-plaintext highlighter-rouge">expl3</code>
-are used (such as <code class="language-plaintext highlighter-rouge">fontspec</code> or <code class="language-plaintext highlighter-rouge">xparse</code>). In the upcoming release we
-are now extending this support by integrating <code class="language-plaintext highlighter-rouge">xparse</code> so that the extended
-interface for defining document-level commands becomes available out of
-the box.</p>
+are used. In this release we are now extending this support by
+integrating <code class="language-plaintext highlighter-rouge">xparse</code> so that the extended interface for defining
+document-level commands becomes available out of the box.</p>
 
 <p>This enables users and most importantly package developers to
 easily define LaTeX commands with multiple optional arguments or
@@ -147,27 +145,36 @@ as either <code class="language-plaintext highlighter-rouge">bf</code> or <code 
 or the 〈false code〉 based on where it is used (e.g., inside
 <code class="language-plaintext highlighter-rouge">\textbf</code> (or <code class="language-plaintext highlighter-rouge">\bfseries</code>) or not).</p>
 
-<h2 id="outlook">Outlook</h2>
+<h3 id="a-large-number-of-other-enhancements-and-corrections">A large number of other enhancements and corrections</h3>
 
-<p>We issue the first prerelease now in the hope that you will help by
-making sure that all the enhancements and fixes inside are safe and
-without any undesired side effects, so please help with the testing if
-you can.</p>
+<p>There are nearly fifty other enhancements and corrections that we
+documented in the ltnews article for this release (and a few very
+minor ones that only made it into the <code class="language-plaintext highlighter-rouge">changes.txt</code>file) The most
+important ones from a user perspective are:</p>
 
-<p>We expect further extensions (currently under development) to be added
-in a second prerelease, in particular a general hook management system
-for LaTeX, so stay tuned.</p>
+<ul>
+  <li>Support for length expression in coordinates of picture commands as an alternative to
+decimal numbers denoting a multiple of <code class="language-plaintext highlighter-rouge">\unitlength</code>, e.g., <code class="language-plaintext highlighter-rouge">\put(0,.2\textheight){...}</code></li>
+  <li>New commands to make copies of robust commands (<code class="language-plaintext highlighter-rouge">\let</code> wouldn’t
+work for them)</li>
+  <li>A new <code class="language-plaintext highlighter-rouge">\ShowCommand</code> command to display the full definition of a
+robust command (works also on other commands)</li>
+</ul>
 
-<p>Enjoy — Frank</p>
+<p>But read the whole ltnews article because there may be other gems that
+are useful for you.</p>
 
-<p><img src="https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332" width="1" height="1" alt="" /></p>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>The internal version number for the pre-release is <code class="language-plaintext highlighter-rouge">LaTeX2e &lt;2020-10-01&gt; pre-release-6</code>, the earlier prereleases just mirrored the patch releases we did for 2020-02-02. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<h4 id="where-to-learn-more-">Where to learn more …</h4>
+
+<p>The new features and most the important bug fixes made in this release
+are documented in <a href="/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">“LaTeX2e
+News Issue 32”</a>. This document can be found on the <a href="/news/latex2e-news/">LaTeX2e news
+page</a> where you will also find
+release information for earlier LaTeX releases.</p>
+
+<p>Happy LaTeXing
+— Frank</p>
+
 
   </article>
 </div>
