@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 04 Oct 2020 16:50:26 +0200</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2020 16:50:26 +0200</lastBuildDate>
+    <pubDate>Sun, 04 Oct 2020 18:34:48 +0200</pubDate>
+    <lastBuildDate>Sun, 04 Oct 2020 18:34:48 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -25,7 +25,7 @@ too few so that in many cases package developers had to directly patch
 the internals of LaTeX.  This resulted in many problems.&lt;/p&gt;
 
 &lt;p&gt;With the new hook management system, LaTeX will get many more hooks
-that packages writers (and authors) can use to add code in a
+that package writers (and authors) can use to add code in a
 controlled and reliable way.  New hooks have been added in a number of
 places by using the new system and more will follow over
 time. Available now are:&lt;/p&gt;
@@ -389,7 +389,7 @@ too few so that in many cases package developers had to directly patch
 the internals of LaTeX.  Thus resulted in many problems.&lt;/p&gt;
 
 &lt;p&gt;With the new hook management system, LaTeX will get many more hooks
-that packages writers (and authors) can use to add code in a
+that package writers (and authors) can use to add code in a
 controlled and reliable way.  New hooks have been added in a number of
 places by using the new system and more will follow over
 time. Available now are:&lt;/p&gt;
