@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2020-FMi-TUB-tb128mitt-quovadis.pdf" target="_blank" onclick="vgwPixelCall('');">Quo vadis LaTeX(3) Team — A look back and at the upcoming years</a>
+### <a href="{{site.baseurl}}/publications/2020-FMi-TUB-tb128mitt-quovadis.pdf" target="_blank" onclick="vgwPixelCall('a0b5f4cd18144b338d5a36e2651f2cce');">Quo vadis LaTeX(3) Team — A look back and at the upcoming years</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + TUGboat 41:2, 2020 
