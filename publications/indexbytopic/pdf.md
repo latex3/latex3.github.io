@@ -8,6 +8,7 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): PDF, Tagging, Accessibility
 
 
+{% include _papers/paper_2020-FMi-UFi-CAR-tagged-pdf-feasibility.md  %}
 
 
 <hr class="conference-start">
