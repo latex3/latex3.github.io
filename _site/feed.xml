@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 11:52:15 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 11:52:15 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 14:22:31 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 14:22:31 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -23,7 +23,7 @@ L3 programming layer &amp;lt;2020-10-27&amp;gt; xparse &amp;lt;2020-03-03&amp;gt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Up to now the documentation for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; that we provide consists of a
-short introduction (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3.pdf)&lt;/code&gt;, its reference manual
+short introduction (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3.pdf&lt;/code&gt;), its reference manual
 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interface3.pdf&lt;/code&gt;) and its source code (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source3.pdf&lt;/code&gt;) all of which you
 can easily access using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc&lt;/code&gt; program, e.g.,&lt;/p&gt;
 
@@ -33,9 +33,9 @@ can easily access using the &lt;code class=&quot;language-plaintext highlighter-
 &lt;p&gt;What was missing, however, was a tutorial to help progammers to get
 familiar with the features and approaches when they want to use the L3
 programming layer in their own packages. Such a tutorial has now been
-written by Ziyue “Alan” Xiang, currently a PhD student at Purdue ECE
-and we strongly recommend to check it out if you are interested in L3
-programming or in understanding code written in it:&lt;/p&gt;
+written by Ziyue “Alan” Xiang, currently a PhD student at Purdue
+University and we strongly recommend to check it out if you are
+interested in L3 programming or in understanding code written in it:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.alanshawn.com/latex3-tutorial/&quot;&gt;Tutorial on L3 programming layer (expl3)&lt;/a&gt;&lt;/li&gt;
