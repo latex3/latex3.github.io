@@ -5,12 +5,12 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 11:49:21 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 11:49:21 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 11:52:15 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 11:52:15 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>L3 programming layer tutorial</title>
+        <title>Tutorial on the L3 programming layer (expl3)</title>
         <description>&lt;h1 id=&quot;tutorial-on-the-l3-programming-layer-expl3&quot;&gt;Tutorial on the L3 programming layer (expl3)&lt;/h1&gt;
 
 &lt;p&gt;In Spring 2020 the LaTeX3 programming language &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; was integrated
