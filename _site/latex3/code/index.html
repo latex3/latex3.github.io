@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LaTeX3 Development Code</title>
-  <meta name="description" content="Home of the LaTeX3 development code. Obtaining LaTeX3 development code and discussing it.">
+  <title>LaTeX Development Code</title>
+  <meta name="description" content="Home of the LaTeX development code. Obtaining LaTeX development code and discussing it.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -60,17 +60,40 @@
 
   <div class="wrap">
   <article>
-<h1 id="latex3-development-code">LaTeX3 development code</h1>
+<h1 id="latex-development-code">LaTeX Development Code</h1>
 
-<p>The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named <a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a>.</p>
+<p>The base files of LaTeX are managed and developed in a number of GitHub repositories.
+The most important ones are:</p>
 
-<p>Notable LaTeX packages part of this repository include <code class="language-plaintext highlighter-rouge">l3kernel/expl3</code> and <code class="language-plaintext highlighter-rouge">l3packages/xparse</code>. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
+<ul>
+  <li>
+    <p><a href="https://github.com/latex3/latex2e"><code class="language-plaintext highlighter-rouge">latex2e</code></a> — the core LaTex
+format and base package (what you get running <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code>, etc.)</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a> — the L3 programming
+layer (as integrated in the LaTeX format), as well as bits and
+pieces not integrated because they are still under development</p>
+  </li>
+</ul>
 
-<p>The LaTeX3 code is managed using <a href="https://github.com/latex3/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> configuration files. <code class="language-plaintext highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.</p>
+<h2 id="l3build">l3build</h2>
 
-<h2 id="obtaining-it">Obtaining it</h2>
+<p>The LaTeX code is installed and tested using <a href="https://github.com/latex3/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> configuration files. <code class="language-plaintext highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX team.</p>
 
-<p>Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="language-plaintext highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="language-plaintext highlighter-rouge">expl3</code>, using:</p>
+<h2 id="the-l3-programming-layer">The L3 programming layer</h2>
+
+<p><em>rewrite this and/or rewrite the above</em></p>
+
+<p>One part of the LaTeX development code, the L3 programming layer, consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed in a GitHub repository named <a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a>.</p>
+
+<p>Notable LaTeX packages part of this repository include <code class="language-plaintext highlighter-rouge">l3kernel/expl3</code>, <code class="language-plaintext highlighter-rouge">l3backend</code> and <code class="language-plaintext highlighter-rouge">l3packages/xparse</code>. In 2020 large parts of this code have been integrated in the LaTeX format. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
+
+<h3 id="obtaining-it">Obtaining it</h3>
+
+<p><em>needs changes or even dropping</em></p>
+
+<p>Most of the L3 programming layer code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="language-plaintext highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="language-plaintext highlighter-rouge">expl3</code>, using:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tlmgr update l3kernel
 </code></pre></div></div>
@@ -90,11 +113,26 @@ texlua build.lua install
 
 <h2 id="bug-reports">Bug reports</h2>
 
-<p>You may raise any issues in the <a href="https://github.com/latex3/latex3/issues">Issue Tracker</a>. These issues are usually intended to report issues relating to the code, such as documentation clarifications, missed functionality, or bugs.</p>
+<p>You may raise any issues concerning the LaTeX format code or the core
+packages in the <a href="https://github.com/latex3/latex2e/issues">LaTeX2e Issue
+Tracker</a>.  Please read the
+explanation on <a href="/bugs/">how to raise a bug report</a> and
+when first.  In order to be able to do a decent job, we need your help
+in providing the right kind of information when submitting a bug
+report — thanks in advance.</p>
+
+<p>Bugs directly related to the L3 programming layer or bugs about L3
+code that is not integrated in the LaTeX format are better raised in
+the <a href="https://github.com/latex3/latex3/issues">L3 Issue Tracker</a>.</p>
+
+<p>Issues opened are usually intended to report issues relating to the
+code, such as documentation clarifications, missed functionality, or
+bugs. Please do not use the issue trackers to request help with your
+documents for this other channels are much better suited.</p>
 
 <h2 id="discussing-it">Discussing it</h2>
 
-<p>The concepts developed by the LaTeX3 development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <a href="mailto:listserv@URZ.UNI-HEIDELBERG.DE">listserv@URZ.UNI-HEIDELBERG.DE</a> containing the line</p>
+<p>The concepts developed by the LaTeX development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <a href="mailto:listserv@URZ.UNI-HEIDELBERG.DE">listserv@URZ.UNI-HEIDELBERG.DE</a> containing the line</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SUBSCRIBE LATEX-L Your Name
 </code></pre></div></div>
@@ -109,7 +147,7 @@ mode. If you like to be post using this interface, you have to be
 subscribed to the list and you need to log on (which is an option on
 the page).</p>
 
-<h3 id="archived-posts">Archived posts</h3>
+<h4 id="archived-posts">Archived posts</h4>
 
 <p>This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:</p>
 
