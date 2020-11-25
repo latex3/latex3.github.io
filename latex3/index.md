@@ -33,18 +33,16 @@ compatibility methods for older documents.
 
 As part of this change of focus the following major improvements have
 been introduced during the last years:
-
- - 2018: Full support Unicode input;  UTF-8 became the encoding
-   default for documents;
-
- - 2019: Introduction of the LaTeX development formats to allow people to
++ 2018: Full support Unicode input; UTF-8 became the encoding default
+  for documents;
++ 2019: Introduction of the LaTeX development formats to allow people to
    try out upcoming releases with ease;
-
- - 2020: Integration of the LaTeX3 programming layer into the LaTeX
-     format; first use of this layer: a new general hook management for
-     LaTeX; <br>
-     Interface extensions to NFSS (The LaTeX font selection
-     scheme) to better support modern fonts( OpenType and others).
++ 2020: Integration of the LaTeX3 programming layer into the LaTeX
+     format; first use of this layer: a new general hook management
+     for LaTeX; <br>
+     Interface extensions to NFSS (The LaTeX font
+     selection scheme) to better support modern fonts( OpenType and
+     others).
 
 We also announced at the TUG conference 2020 the start of a multi-year
 project (financially supported in parts by Adobe) to make LaTeX
