@@ -27,7 +27,7 @@ goals for future development and on new code which are now integrated
 into LaTeX.
 
 A while ago we made the decision to drop the idea of a separate LaTeX3
-that exists in parallel to LaTeX2e, but instead gradually modernizing
+that exists in parallel to LaTeX2e, but instead gradually modernize
 LaTeX to keep it competitive in todays world while maintaining
 compatibility methods for older documents.
 
@@ -37,11 +37,11 @@ been introduced during the last years:
   for documents;
 + 2019: Introduction of the LaTeX development formats to allow people to
    try out upcoming releases with ease;
-+ 2020: Integration of the LaTeX3 programming layer into the LaTeX
-     format; first use of this layer: a new general hook management
-     for LaTeX; <br>
++ 2020: Integration of the `L3 programming layer` into the LaTeX
+     format; first uses of this layer inside the format: a new general hook management
+     for LaTeX and the `xparse` document commands (formerly available as a package);<br>
      Interface extensions to NFSS (The LaTeX font
-     selection scheme) to better support modern fonts( OpenType and
+     selection scheme) to better support modern fonts (OpenType and
      others).
 
 We also announced at the TUG conference 2020 the start of a multi-year
@@ -105,5 +105,7 @@ the progress._
 </div>
 
 <hr>
+
+<img src="https://ssl-vg03.met.vgwort.de/na/79785ceeed5a46bc994c9777c7e614ce" width="1" height="1" alt="">
 
 

@@ -64,62 +64,100 @@
 
 <p>The base files of LaTeX are managed and developed in a number of GitHub repositories.
 The most important ones are:</p>
-
 <ul>
-  <li>
-    <p><a href="https://github.com/latex3/latex2e"><code class="language-plaintext highlighter-rouge">latex2e</code></a> — the core LaTex
-format and base package (what you get running <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code>, etc.)</p>
+  <li><a href="https://github.com/latex3/latex2e"><code class="language-plaintext highlighter-rouge">latex2e</code></a> — the core LaTeX
+format and base package (what you get running <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code>, etc.)
+    <ul>
+      <li>This repository also contains the required bundles, i.e.,
+ <code class="language-plaintext highlighter-rouge">amsmath</code>, <code class="language-plaintext highlighter-rouge">graphics</code>, <code class="language-plaintext highlighter-rouge">tools</code> and for historical reasons <code class="language-plaintext highlighter-rouge">cyrillic</code>.</li>
+    </ul>
   </li>
-  <li>
-    <p><a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a> — the L3 programming
-layer (as integrated in the LaTeX format), as well as bits and
-pieces not integrated because they are still under development</p>
+  <li><a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a> — the L3 programming
+layer and the <code class="language-plaintext highlighter-rouge">l3backend</code> (as integrated 2020 in the LaTeX format).
+    <ul>
+      <li>This repository also contains new code bundles for other components of LaTeX
+ that are not yet integrated, because they are still under development.
+ However, most of it is available through general TeX distributions
+ in form of LaTeX packages and we clearly distinuish between
+ experimental code (for the daring) and packages that we consider suitable for
+ general use.</li>
+      <li>More information about the packages included
+in the repository is documented in the top-level
+<a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of
+the repository.</li>
+    </ul>
   </li>
 </ul>
 
+<p>There are <a href="https://github.com/latex3/">various other repositories</a>,
+e.g., <code class="language-plaintext highlighter-rouge">babel</code>, <code class="language-plaintext highlighter-rouge">hyperref</code>, <code class="language-plaintext highlighter-rouge">l3build</code>, <code class="language-plaintext highlighter-rouge">luaotfload</code> to mention a few,
+all of which are managed by the LaTeX Project Team and several members
+have their own repositories from whic they distribute further LaTeX
+packages that are in general use.</p>
+
 <h2 id="l3build">l3build</h2>
 
-<p>The LaTeX code is installed and tested using <a href="https://github.com/latex3/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> configuration files. <code class="language-plaintext highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX team.</p>
+<p>The LaTeX code is installed and tested using
+<a href="https://github.com/latex3/l3build"><code class="language-plaintext highlighter-rouge">l3build</code></a> configuration
+files. <code class="language-plaintext highlighter-rouge">l3build</code> is a cross-platform Lua program for automating the
+building and testing process of (primarily) LaTeX package files, and
+it is also developed by the LaTeX team.</p>
 
-<h2 id="the-l3-programming-layer">The L3 programming layer</h2>
+<h2 id="obtaining-it">Obtaining it</h2>
 
-<p><em>rewrite this and/or rewrite the above</em></p>
+<p>Most of the LaTeX code is directly available and automatically kept
+up-to-date through all major TeX distributions so you <em>just</em> get it
+automatically (or manually) through the update mechanism of your
+installation.</p>
 
-<p>One part of the LaTeX development code, the L3 programming layer, consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed in a GitHub repository named <a href="https://github.com/latex3/latex3"><code class="language-plaintext highlighter-rouge">latex3</code></a>.</p>
+<p>There is also the possibility to run the version for the next release
+using the so-called <code class="language-plaintext highlighter-rouge">-dev</code> formats which are currated prereleases
+(that we believe are suitable for use and testing)</p>
 
-<p>Notable LaTeX packages part of this repository include <code class="language-plaintext highlighter-rouge">l3kernel/expl3</code>, <code class="language-plaintext highlighter-rouge">l3backend</code> and <code class="language-plaintext highlighter-rouge">l3packages/xparse</code>. In 2020 large parts of this code have been integrated in the LaTeX format. Full information about the packages included in the repository is documented in the top-level <a href="https://github.com/latex3/latex3/blob/master/README.md">README</a> of the repository.</p>
-
-<h3 id="obtaining-it">Obtaining it</h3>
-
-<p><em>needs changes or even dropping</em></p>
-
-<p>Most of the L3 programming layer code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of <code class="language-plaintext highlighter-rouge">l3kernel</code>, which provides the programming layer <code class="language-plaintext highlighter-rouge">expl3</code>, using:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tlmgr update l3kernel
-</code></pre></div></div>
-
-<p>If you wish to test using unreleased code in GitHub, you may clone the repository using</p>
+<p>However, if you wish to test the unreleased development code on GitHub,
+you may clone one of the repository using for example</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:latex3/latex3.git
 </code></pre></div></div>
 
-<p>To install packages from the development repository, using <code class="language-plaintext highlighter-rouge">l3build</code> as follows:</p>
+<p>To locally install packages from the development repository, use
+<code class="language-plaintext highlighter-rouge">l3build</code> as follows:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd l3kernel
-texlua build.lua install
+l3build install
 </code></pre></div></div>
 
-<p>You may also wish to ‘fork’ the repository on GitHub and clone your fork if you wish to make changes to the code and contribute them back via <a href="https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md">Pull Requests</a> but please read the <a href="https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md">contributing guidelines</a> first.</p>
+<p>In some cases (for example for <code class="language-plaintext highlighter-rouge">l3kernel</code> because this is the L3
+programming layer so is loaded into the format) you may need to update
+the formats afterwards, but in most cases the local install is
+sufficient.</p>
+
+<blockquote>
+  <p><strong>Important note:</strong> such a <code class="language-plaintext highlighter-rouge">l3build install</code> stores the generated
+ files in your local <code class="language-plaintext highlighter-rouge">texmf</code> tree, which is searched first when the
+ TeX program looks for files. Thus later updates that you receive
+ through the normal distribution mechanism will never get used,
+ unless you delete the local files or set up you system so that you
+ can switch trees as needed!</p>
+</blockquote>
+
+<p>You may alternatively wish to ‘fork’ the repository on GitHub and clone
+your fork if you wish to make changes to the code and contribute them
+back via Pull Requests but please read the <a href="https://github.com/latex3/latex2e/blob/master/CONTRIBUTING.md">LaTeX contributing
+guidelines</a>
+and <a href="https://github.com/latex3/latex3/blob/master/CONTRIBUTING.md">L3 contributing
+guidelines</a>
+first.</p>
 
 <h2 id="bug-reports">Bug reports</h2>
 
 <p>You may raise any issues concerning the LaTeX format code or the core
 packages in the <a href="https://github.com/latex3/latex2e/issues">LaTeX2e Issue
 Tracker</a>.  Please read the
-explanation on <a href="/bugs/">how to raise a bug report</a> and
-when first.  In order to be able to do a decent job, we need your help
-in providing the right kind of information when submitting a bug
-report — thanks in advance.</p>
+explanation on <a href="/bugs/">how and when to raise a bug
+report</a> first.  In order to be able to do a
+decent job, we need your help in providing the right kind of
+information when submitting a bug report — thanks in advance.</p>
 
 <p>Bugs directly related to the L3 programming layer or bugs about L3
 code that is not integrated in the LaTeX format are better raised in
@@ -160,6 +198,8 @@ the page).</p>
 </code></pre></div></div>
 
 <p>for all messages sent in March 2017.</p>
+
+<p><img src="https://ssl-vg03.met.vgwort.de/na/23f0e9e6ba4d439d8176609d38eaccae" width="1" height="1" alt="" /></p>
 
 
 </article>
