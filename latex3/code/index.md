@@ -1,22 +1,28 @@
 ---
 layout: page
-title: "LaTeX3 Development Code"
-description: "Home of the LaTeX3 development code. Obtaining LaTeX3 development code and discussing it."
+title: "LaTeX Development Code"
+description: "Home of the LaTeX development code. Obtaining LaTeX development code and discussing it."
 permalink: /latex3/code/
 ---
 
-# LaTeX3 development code
+# LaTeX Development Code 
 
-The broader LaTeX3 code consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed using version control in a single GitHub repository named [`latex3`](https://github.com/latex3/latex3).
+The base files of LaTeX are managed and developed in the GitHub repository named [`latex2e`](https://github.com/latex3/latex2e).
 
-Notable LaTeX packages part of this repository include `l3kernel/expl3` and `l3packages/xparse`. Full information about the packages included in the repository is documented in the top-level [README](https://github.com/latex3/latex3/blob/master/README.md) of the repository.
+## l3build 
 
-The LaTeX3 code is managed using [`l3build`](https://github.com/latex3/l3build) configuration files. `l3build` is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX3 team.
+The LaTeX code is installed and tested using [`l3build`](https://github.com/latex3/l3build) configuration files. `l3build` is a cross-platform Lua program for automating the building and testing process of (primarily) LaTeX package files, and it is also developed by the LaTeX team.
+
+## The L3 programming layer
+
+One part of the LaTeX development code, the L3 programming layer, consists of a number of modules targeting different functionality intended as building blocks within LaTeX2e and/or as stand-alone code prototyping ideas for future development. These modules are currently managed in a GitHub repository named [`latex3`](https://github.com/latex3/latex3).
+
+Notable LaTeX packages part of this repository include `l3kernel/expl3`, `l3backend` and `l3packages/xparse`. In 2020 large parts of this code have been integrated in the LaTeX format. Full information about the packages included in the repository is documented in the top-level [README](https://github.com/latex3/latex3/blob/master/README.md) of the repository.
 
 
-## Obtaining it
+### Obtaining it
 
-Most of the LaTeX3 code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of `l3kernel`, which provides the programming layer `expl3`, using:
+Most of the L3 programming layer code is available and kept up-to-date through a TeX distribution. For example, in TeX Live you can update to the latest version of `l3kernel`, which provides the programming layer `expl3`, using:
 
     tlmgr update l3kernel
 
@@ -34,12 +40,12 @@ You may also wish to ‘fork’ the repository on GitHub and clone your fork if 
 
 ## Bug reports
 
-You may raise any issues in the [Issue Tracker](https://github.com/latex3/latex3/issues). These issues are usually intended to report issues relating to the code, such as documentation clarifications, missed functionality, or bugs.
+You may raise any issues in the [LaTeX2e Issue Tracker](https://github.com/latex3/latex2e/issues) and the [L3 Issue Tracker](https://github.com/latex3/latex3/issues). These issues are usually intended to report issues relating to the code, such as documentation clarifications, missed functionality, or bugs.
 
 
 ## Discussing it
 
-The concepts developed by the LaTeX3 development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <mailto:listserv@URZ.UNI-HEIDELBERG.DE> containing the line
+The concepts developed by the LaTeX development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <mailto:listserv@URZ.UNI-HEIDELBERG.DE> containing the line
 
     SUBSCRIBE LATEX-L Your Name
 
@@ -54,7 +60,7 @@ subscribed to the list and you need to log on (which is an option on
 the page).
 
 
-### Archived posts
+#### Archived posts
 
 This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:
 

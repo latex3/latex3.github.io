@@ -1,21 +1,21 @@
 ---
 layout: page
 menu: Latex3
-title: "The LaTeX3 Project"
-description: "Home of the LaTeX3 project, a long-term research project to develop the next version of the LaTeX typesetting system."
+title: "The LaTeX Project"
+description: "Home of the LaTeX project, a project to maintain and develop the LaTeX typesetting system."
 permalink: /latex3/
 ---
 
-# The LaTeX3 Project
+# The LaTeX Project
 
-The LaTeX3 project is a long-term research project to develop the next version of the LaTeX typesetting system. In a <a href="{{site.baseurl}}/help/documentation/ltx3info.pdf" target="_blank" onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">separate article</a> we provide a more detailed description of what we aim to achieve and how you can help us to achieve our goals. Some older reports on the work already done by the project are available from the Comprehensive TeX Archive Network (CTAN). Other work is available from this site as [articles]({{site.baseurl}}/publications/) (in PDF format) and as [development code]({{site.baseurl}}/latex3/code/).
+The LaTeX project maintains and develops the LaTeX typesetting system. In a <a href="{{site.baseurl}}/help/documentation/ltx3info.pdf" target="_blank" onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">separate article</a> we provide a more detailed description of what we aim to achieve and how you can help us to achieve our goals. Some older reports on the work already done by the project are available from the Comprehensive TeX Archive Network (CTAN). Other work is available from this site as [articles]({{site.baseurl}}/publications/) (in PDF format) and as [development code]({{site.baseurl}}/latex3/code/).
 
-Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are committed to the active maintenance of _The New Standard LaTeX (LaTeX2e)_. The experience gained from the production and maintenance of The New Standard LaTeX will have a major influence on the design of LaTeX3.
+The experience gained from the production and maintenance of _The New Standard LaTeX (LaTeX2e)_ had a major influence on the development of new code and goals which are now integrated into LaTeX.
 
 <div class="row">
   <div class="col cell1of2">
-    <h2>LaTeX3 Project Team</h2>
-    <p>The current LaTeX3 project team personnel with contact details
+    <h2>LaTeX Project Team</h2>
+    <p>The current LaTeX project team personnel with contact details
     can be found on the <a href="{{ "/about/team" | prepend: site.baseurl }}">Team Page</a>.
     </p>
   </div>
@@ -33,13 +33,13 @@ Until LaTeX3 is delivered, the [project team]({{site.baseurl}}/about/team/) are 
   <section class="col cell1of3">
     <a href="{{ "/latex3/code/" | prepend: site.baseurl }}">
       <h3>Development Code</h3>
-      <p>LaTeX3 development code for experimentation and comments only.</p>
+      <p>LaTeX development code  for experimentation and comments only.</p>
     </a>
   </section>
   <section class="col cell1of3">
     <a href="{{ "/publications/" | prepend: site.baseurl }}">
       <h3>Publications</h3>
-      <p>Articles, conference papers, videos etc. published by the LaTeX3 project.</p>
+      <p>Articles, conference papers, videos etc. published by the LaTeX project.</p>
     </a>
   </section>
   <section class="col cell1of3">
