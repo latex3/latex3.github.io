@@ -16,7 +16,7 @@ onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">separate
 article</a> we provide a more detailed description of what we aim to
 achieve and how you can help us to achieve our goals. Some older
 reports on the work already done by the project are available from the
-Comprehensive TeX Archive Network (CTAN). Other work is available from
+Comprehensive TeX Archive Network (CTAN). More recent  work is available from
 this site as [articles]({{site.baseurl}}/publications/) (in PDF
 format) and information about the current [development code if found
 on a separate page]({{site.baseurl}}/latex3/code/).
@@ -53,11 +53,11 @@ tagging]({{site.baseurl}}/publications/indexbytopic/pdf/) for more
 details. Updates and status reports will be added in that place when
 they become available.
 
-_We are quite excited about this project, because it offers the chance
-to make LaTeX unique not just for its unsurpassed quality in math
-typesetting, paragraph breaking, etc., but also then its ability to
-produce structured documents without manual labor --- so stay tuned on
-the progress._
+> We are quite excited about this project, because it offers the chance
+> to make LaTeX unique not just for its unsurpassed quality in math
+> typesetting, paragraph breaking, etc., but also then its ability to
+> produce structured documents without manual labor --- so stay tuned on
+> the progress.
  
 <div class="row">
   <div class="col cell1of2">
