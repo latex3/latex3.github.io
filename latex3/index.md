@@ -14,32 +14,32 @@ href="{{site.baseurl}}/help/documentation/ltx3info.pdf"
 target="_blank"
 onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">separate
 article</a> we provide a more detailed description of what we aim to
-achieve and how you can help us to achieve our goals. Some older
+achieve and how you can help us to achieve the project goals. Some older
 reports on the work already done by the project are available from the
-Comprehensive TeX Archive Network (CTAN). More recent  work is available from
+Comprehensive TeX Archive Network (CTAN). More recent work is available from
 this site as [articles]({{site.baseurl}}/publications/) (in PDF
-format) and information about the current [development code if found
+format) and information about the current [development code can be found
 on a separate page]({{site.baseurl}}/latex3/code/).
 
 The experience gained from the production and maintenance of LaTeX2e
-(the version you have been using for many years) had a major influence on our
-goals for future development and on new code which are now integrated
+(the version you have been using for many years) has a major influence on our
+goals for future development and on new code which is now integrated
 into LaTeX.
 
 A while ago we made the decision to drop the idea of a separate LaTeX3
-that exists in parallel to LaTeX2e, but instead gradually modernize
-LaTeX to keep it competitive in todays world while maintaining
+format that would exist in parallel to LaTeX2e, but instead decided to gradually modernize
+LaTeX to keep it competitive in today's world while maintaining
 compatibility methods for older documents.
 
 As part of this change of focus the following major improvements have
-been introduced during the last years:
-+ 2018: Full support Unicode input; UTF-8 became the encoding default
-  for documents;
+been introduced in the last few years:
++ 2018: Full support for Unicode input; UTF-8 became the default encoding
+  in LaTeX;
 + 2019: Introduction of the LaTeX development formats to allow people to
    try out upcoming releases with ease;
 + 2020: Integration of the `L3 programming layer` into the LaTeX
-     format; first uses of this layer inside the format: a new general hook management
-     for LaTeX and the `xparse` document commands (formerly available as a package);<br>
+     format; the first uses of this layer inside the format are a new general hook management system
+     for LaTeX, and the `xparse` document commands (formerly available as a package);<br>
      Interface extensions to NFSS (The LaTeX font
      selection scheme) to better support modern fonts (OpenType and
      others).
@@ -50,12 +50,12 @@ tagging enabled to provide support for "Accessibility" and other
 applications that require PDF output with structural information.  See
 the [page on accessibility and
 tagging]({{site.baseurl}}/publications/indexbytopic/pdf/) for more
-details. Updates and status reports will be added in that place when
+details. Updates and status reports will be added there as
 they become available.
 
 > We are quite excited about this project, because it offers the chance
 > to make LaTeX unique not just for its unsurpassed quality in math
-> typesetting, paragraph breaking, etc., but also then its ability to
+> typesetting, paragraph breaking, etc., but then in the future the ability to
 > produce structured documents without manual labor --- so stay tuned on
 > the progress.
  
