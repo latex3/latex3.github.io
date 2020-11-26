@@ -28,9 +28,9 @@ The most important ones are:
 
 There are [various other repositories](https://github.com/latex3/),
 e.g., `babel`, `hyperref`, `l3build`, `luaotfload` to mention a few,
-all of which are managed by the LaTeX Project Team and several members
-have their own repositories from whic they distribute further LaTeX
-packages that are in general use.
+all of which are managed by the LaTeX Project Team. In addition
+several members have their own repositories from which they distribute
+further LaTeX packages that are in general use.
 
 
 
@@ -69,7 +69,7 @@ programming layer so is loaded into the format) you may need to update
 the formats afterwards, but in most cases the local install is
 sufficient.
 
-> **Important note:** such a `l3build install` stores the generated
+> **Important note:** Such an `l3build install` stores the generated
 >  files in your local `texmf` tree, which is searched first when the
 >  TeX program looks for files. Thus later updates that you receive
 >  through the normal distribution mechanism will never get used,

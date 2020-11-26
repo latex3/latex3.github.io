@@ -14,12 +14,15 @@ href="{{site.baseurl}}/help/documentation/ltx3info.pdf"
 target="_blank"
 onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">separate
 article</a> we provide a more detailed description of what we aim to
-achieve and how you can help us to achieve the project goals. Some older
-reports on the work already done by the project are available from the
-Comprehensive TeX Archive Network (CTAN). More recent work is available from
-this site as [articles]({{site.baseurl}}/publications/) (in PDF
-format) and information about the current [development code can be found
-on a separate page]({{site.baseurl}}/latex3/code/).
+achieve and how you can help us to achieve the project goals. Some
+older reports from the early days of the project (mainly of
+historical interest) are available from the Comprehensive TeX
+Archive Network (CTAN) as
+[ltx3pub](https://www.ctan.org/tex-archive/info/ltx3pub). More recent
+work is available from this site as
+[articles]({{site.baseurl}}/publications/) (in PDF format) and
+information about the current [development code can be found on a
+separate page]({{site.baseurl}}/latex3/code/).
 
 The experience gained from the production and maintenance of LaTeX2e
 (the version you have been using for many years) had a major influence on our
@@ -47,15 +50,22 @@ been introduced in the last few years:
 We also announced at the TUG conference 2020 the start of a multi-year
 project (financially supported in parts by Adobe) to make LaTeX
 tagging enabled to provide support for "Accessibility" and other
-applications that require PDF output with structural information.  See
-the [page on accessibility and
-tagging]({{site.baseurl}}/publications/indexbytopic/pdf/) for more
-details. Updates and status reports will be added there as
-they become available.
+applications that require PDF output with structural information.
+
+For more details about this project take a look at our [page on accessibility and
+tagging]({{site.baseurl}}/publications/indexbytopic/pdf/), in
+particular the two articles
+<a href="{{site.baseurl}}/publications/2020-FMi-TUB-tb128mitt-quovadis.pdf" target="_blank" onclick="vgwPixelCall('a0b5f4cd18144b338d5a36e2651f2cce');">"Quo vadis LaTeX(3) Team — A look back and at the upcoming years"</a>
+and
+<a href="{{site.baseurl}}/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf" target="_blank" onclick="vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');">"LaTeX Tagged PDF — A blueprint for a large project"</a>
+as well as the
+<a href="{{site.baseurl}}/publications/2020-tagged-pdf-feasibility.pdf" target="_blank" onclick="vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');">LaTeX Tagged PDF Feasibility Evaluation Study</a>.
+Updates and status reports will be added there as they become
+available.
 
 > We are quite excited about this project, because it offers the chance
 > to make LaTeX unique not just for its unsurpassed quality in math
-> typesetting, paragraph breaking, etc., but then in the future the ability to
+> typesetting, paragraph breaking, etc., but then in the future for the ability to
 > produce structured documents without manual labor --- so stay tuned on
 > the progress.
  
