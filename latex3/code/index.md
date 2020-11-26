@@ -14,7 +14,7 @@ The most important ones are:
    + This repository also contains the required bundles, i.e.,
    `amsmath`, `graphics`, `tools` and for historical reasons `cyrillic`.
 + [`latex3`](https://github.com/latex3/latex3) --- the L3 programming
-  layer and the `l3backend` (as integrated 2020 in the LaTeX format).
+  layer and `l3backend` (as integrated 2020 in the LaTeX format).
   + This repository also contains new code bundles for other components of LaTeX
      that are not yet integrated, because they are still under development.
      However, most of it is available through general TeX distributions
@@ -69,8 +69,8 @@ programming layer so is loaded into the format) you may need to update
 the formats afterwards, but in most cases the local install is
 sufficient.
 
-> **Important note:** Such an `l3build install` stores the generated
->  files in your local `texmf` tree, which is searched first when the
+> **Important note:** Files installed via `l3build install` are stored
+>  in your local `texmf` tree, which is searched first when the
 >  TeX program looks for files. Thus later updates that you receive
 >  through the normal distribution mechanism will never get used,
 >  unless you delete the local files or set up you system so that you
@@ -104,7 +104,8 @@ the [L3 Issue Tracker](https://github.com/latex3/latex3/issues).
 Issues opened are usually intended to report issues relating to the
 code, such as documentation clarifications, missed functionality, or
 bugs. Please do not use the issue trackers to request help with your
-documents for this other channels are much better suited.
+documents. Other channels such as [stackexchange](https://tex.stackexchange.com)
+are much better suited for obtaining help.
 
 
 ## Discussing it
@@ -119,7 +120,7 @@ There exists a [web interface to the
 list](https://listserv.uni-heidelberg.de/cgi-bin/wa?A0=LATEX-L) that
 can be used to read through the posts sorted by topic and month. By
 default this is available to the general public in a read-only
-mode. If you like to be post using this interface, you have to be
+mode. If you would like to post using this interface, you have to be
 subscribed to the list and you need to log on (which is an option on
 the page).
 

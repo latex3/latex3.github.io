@@ -65,7 +65,7 @@ available.
 
 > We are quite excited about this project, because it offers the chance
 > to make LaTeX unique not just for its unsurpassed quality in math
-> typesetting, paragraph breaking, etc., but then in the future for the ability to
+> typesetting, paragraph breaking, etc., but also in future, the ability to
 > produce structured documents without manual labor --- so stay tuned on
 > the progress.
  
