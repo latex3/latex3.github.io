@@ -22,7 +22,7 @@ format) and information about the current [development code can be found
 on a separate page]({{site.baseurl}}/latex3/code/).
 
 The experience gained from the production and maintenance of LaTeX2e
-(the version you have been using for many years) has a major influence on our
+(the version you have been using for many years) had a major influence on our
 goals for future development and on new code which is now integrated
 into LaTeX.
 
