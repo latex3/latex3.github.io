@@ -47,10 +47,13 @@ been introduced in the last few years:
      selection scheme) to better support modern fonts (OpenType and
      others).
 
-We also announced at the TUG conference 2020 the start of a multi-year
-project (financially supported in parts by Adobe) to make LaTeX
-tagging enabled to provide support for "Accessibility" and other
-applications that require PDF output with structural information.
+
+At the TUG conference 2020 we also announced the start of a multi-year 
+project (financially supported in part by Adobe) to provide  LaTeX 
+support for the straightforward production of ‘tagged PDF’.  This form 
+of PDF is required to support "Accessibility" (as in the PDF/UA 
+standard) and other uses of PDF that require structural information.
+
 
 For more details about this project take a look at our [page on accessibility and
 tagging]({{site.baseurl}}/publications/indexbytopic/pdf/), in
@@ -59,7 +62,7 @@ particular the two articles
 and
 <a href="{{site.baseurl}}/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf" target="_blank" onclick="vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');">"LaTeX Tagged PDF — A blueprint for a large project"</a>
 as well as the
-<a href="{{site.baseurl}}/publications/2020-tagged-pdf-feasibility.pdf" target="_blank" onclick="vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');">LaTeX Tagged PDF Feasibility Evaluation Study</a>.
+<a href="{{site.baseurl}}/publications/2020-tagged-pdf-feasibility.pdf" target="_blank" onclick="vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');">"LaTeX Tagged PDF Feasibility Evaluation Study"</a>.
 Updates and status reports will be added there as they become
 available.
 
@@ -72,7 +75,7 @@ available.
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX Project Team</h2>
-    <p>The current LaTeX project team personnel with contact details
+    <p>The current LaTeX project team personnel, with contact details
     can be found on the <a href="{{ "/about/team" | prepend: site.baseurl }}">Team Page</a>.
     </p>
   </div>
@@ -97,7 +100,7 @@ available.
   <section class="col cell1of3">
     <a href="{{ "/latex3/code/" | prepend: site.baseurl }}">
       <h3>Development Code</h3>
-      <p>LaTeX development code  for experimentation and comments only.</p>
+      <p>LaTeX development code, for experimentation and comments only.</p>
     </a>
   </section>
   <section class="col cell1of3">
