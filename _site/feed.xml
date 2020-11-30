@@ -5,9 +5,108 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 30 Nov 2020 10:03:55 +0100</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2020 10:03:55 +0100</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2020 13:16:35 +0100</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2020 13:16:35 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Tagged PDF feasibility study published</title>
+        <description>&lt;h1 id=&quot;tagged-pdf-feasibility-study-published&quot;&gt;Tagged PDF feasibility study published&lt;/h1&gt;
+
+&lt;p&gt;At the TUG 2020 online conference we announced the start of a multi-year project to automatically generate tagged PDF with LaTeX, which is an important aspect of producing “accessible” documents. Back then we promised that further information about the project is forthcoming.&lt;/p&gt;
+
+&lt;p&gt;We have now added the feasibility study (which was the starting point for the project) to this website:&lt;/p&gt;
+
+&lt;h3 id=&quot;latex-tagged-pdf-feasibility-evaluation-study&quot;&gt;&lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');&quot;&gt;LaTeX Tagged PDF Feasibility Evaluation Study&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#ulrike-fischer&quot;&gt;Ulrike Fischer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Written: December 2019 with minor updates September 2020&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This forty-page document contains information about a 
+multi-year project, started by the LaTeX Project Team in 2020, 
+that will extend  LaTeX to produce tagged, and hence accessible, 
+PDF with minimal manual intervention.
+  It explains in detail both the
+project goals and the tasks that need to be undertaken, concluding
+with a detailed project plan.  It is our blueprint for for how we
+think the project should be undertaken.&lt;/p&gt;
+
+  &lt;p&gt;The Introduction contains an overview of the beneﬁts of the
+project and explains why LaTeX documents make a good starting point
+for the production of tagged PDF.  More information about this
+blueprint and the project can be found in the article “LaTeX Tagged
+PDF — A blueprint for a large project” TUGboat, Volume 41-3 (2020),
+which will appear shortly.&lt;/p&gt;
+
+  &lt;p&gt;The original version of this study dates from late 2019 and was
+addressed primarily to an audience within Adobe which consisted of
+engineers and managers with a wide knowledge of digital typography and
+electronic publishing but not necessarily much background within the
+specialized world of TeX, LaTeX and friends.  This version of the
+study was updated in September 2020 with some minor redactions,
+corrections and clarifications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In addition the TUGboat article referred to above is also available for reading:&lt;/p&gt;
+
+&lt;h3 id=&quot;latex-tagged-pdf--a-blueprint-for-a-large-project&quot;&gt;&lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');&quot;&gt;LaTeX Tagged PDF — A blueprint for a large project&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/about/team/#chris-rowley&quot;&gt;Chris Rowley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;TUGboat 41:3, 2020&lt;/li&gt;
+  &lt;li&gt;Abstract
+    &lt;blockquote&gt;
+      &lt;p&gt;In Frank’s talk at the TUG 2020 online conference we announced the
+start of a multi-year project to enhance LaTeX to fully and
+naturally support the creation of structured document formats, in
+particular the “tagged PDF” format as required by accessibility
+standards such as PDF/UA.&lt;/p&gt;
+
+      &lt;p&gt;In this short article we outline the background to this project and
+some of its history so far. We then describe the major features of
+the project and the tasks involved, of which more details can be
+found in the &lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');&quot;&gt;Feasibility
+Study&lt;/a&gt; that was prepared as the ﬁrst part of our co-operation
+with Adobe.&lt;/p&gt;
+
+      &lt;p&gt;This leads on to a description of how we plan to use the study as
+the basis for our work on the project and some details of our
+planned working methodologies, illustrated by what we have achieved
+so far and leading to a discussion of some of the obstacles we
+foresee.&lt;/p&gt;
+
+      &lt;p&gt;Finally there is also a summary of recent, current and upcoming
+activities on and around the project.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You will find both documents, as well as other documents about the “Tagged PDF Project” and related topics, on the &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;PDF, Tagging and Accessibility&lt;/a&gt; page in the publications area of the site.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2020 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2020/11/30/tagged-pdf-FS-study/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/11/30/tagged-pdf-FS-study/</guid>
+        
+        <category>latex</category>
+        
+        <category>accessibility</category>
+        
+        <category>tagged pdf</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Tutorial on the L3 programming layer (expl3)</title>
@@ -822,47 +921,6 @@ release information for earlier LaTeX releases.&lt;/p&gt;
         <guid isPermaLink="true">https://latex-project.org//news/2020/02/02/issue31-of-latex2e-released/</guid>
         
         <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Issues 11 and 12 of LaTeX3 news released</title>
-        <description>&lt;h1 id=&quot;issues-11-and-12-of-latex3-news-released&quot;&gt;Issues 11 and 12 of LaTeX3 news released&lt;/h1&gt;
-
-&lt;p&gt;There has been quite a gap since the last LaTeX3 News and there is a
-lot to report.  By mistake LaTeX3 News 11 (nominally February 2018)
-did not get published when written and we discovered this only when we
-prepared issue 12.  We have kept the information it contains separate
-as it is a good summary of &lt;a href=&quot;/news/latex3-news/l3news11.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2cf1bc0a478f4e45840d5a3de028200a');&quot;&gt;the work
-that had happened in 2017&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;LaTeX3 News 12 then covers &lt;a href=&quot;/news/latex3-news/l3news12.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('2cf1bc0a478f4e45840d5a3de028200a');&quot;&gt;the work done in 2018 and 2019&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We also added a document that &lt;a href=&quot;/news/latex3-news/l3news.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('06009f5d88d4445cae1ba16872605b92');&quot;&gt;combines
-all twelve LaTeX3 newletters in historical order&lt;/a&gt;. This gives some
-interesting insights into the activities of the last decade and clearly
-shows the increased activities of the team in the recent years, now
-that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (the programming layer of LaTeX3) gains more and more
-followers.&lt;/p&gt;
-
-&lt;p&gt;You will find all newletters as individual PDF files also on &lt;a href=&quot;/news/latex3-news/&quot;&gt;the
-LaTeX3 newletter page&lt;/a&gt; on this
-site.&lt;/p&gt;
-
-&lt;p&gt;—Enjoy
-Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 31 Jan 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/01/31/issue-11-12-of-latex3-news-released/</guid>
-        
-        <category>latex3</category>
         
         <category>latex-news</category>
         
