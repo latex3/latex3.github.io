@@ -151,13 +151,13 @@ A summary sorted by release is given in the following document:
 
 The full documentation of the source code with all commands and their
 implementation can be obtained by processing `source2e.tex`
-distributed as part of the LaTeX2e distribution. A compiled version
+distributed as part of the LaTeX2e distribution. A compiled version (from a recent release)
 with a list of all major changes and an index of all commands and
 their usage within the kernel is
 
 + <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2019-10-01 (660+ pages)</a>
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2020-10-01 (660+ pages)</a>
 
 As a companion document Martin Scharrer compiled a useful reference
 list with links back into the previous document if both are stored in
