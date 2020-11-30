@@ -1,24 +1,30 @@
 % \iffalse meta-comment
 %
-% Copyright 1993 1994 1995 1996 1997 1998 1999 2000 2001
+% Copyright (C) 1993-2020
 % The LaTeX3 Project and any individual authors listed elsewhere
-% in this file. 
-% 
+% in this file.
+%
 % This file is part of the LaTeX base system.
 % -------------------------------------------
-% 
+%
 % It may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License, either version 1.2
+% conditions of the LaTeX Project Public License, either version 1.3c
 % of this license or (at your option) any later version.
 % The latest version of this license is in
 %    http://www.latex-project.org/lppl.txt
-% and version 1.2 or later is part of all distributions of LaTeX 
-% version 1999/12/01 or later.
-% 
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This file has the LPPL maintenance status "maintained".
+%
 % The list of all files belonging to the LaTeX base distribution is
 % given in the file `manifest.txt'. See also `legal.txt' for additional
 % information.
-% 
+%
+% The list of derived (unpacked) files belonging to the distribution
+% and covered by LPPL is defined by the unpacking scripts (with
+% extension .ins) which are part of the distribution.
+%
 % \fi
 % Filename: usrguide.tex
 
@@ -28,10 +34,10 @@
 
 \title{\LaTeXe~for authors}
 
-\author{\copyright~Copyright 1995--2001, \LaTeX3 Project Team.\\
+\author{\copyright~Copyright 1995--2020, \LaTeX3 Project Team.\\
    All rights reserved.}
 
-\date{31 July 2001}
+\date{25 May 2020}
 
 
 \begin{document}
@@ -52,7 +58,11 @@ new facilities and is intended for authors who are already familiar
 with the old version of \LaTeX{}.  It is \emph{not} a reference manual
 for \LaTeXe{} nor is it a complete introduction to \LaTeX.
 
-\subsection{\LaTeXe---The new \LaTeX~release}
+It is somewhat of an historical document now, since \LaTeXe{} came into
+existence in 1994.
+
+\subsection[\LaTeXe---The new \LaTeX~release]
+  {\LaTeXe---The new \LaTeX~release\\ (well, for more than 10 years now)}
 
 The previous version of \LaTeX{} was known as \LaTeX~2.09.  Over the
 years many extensions have been developed for \LaTeX.  This is, of
@@ -102,11 +112,7 @@ The fund is administered by The \TeX{} Users Group and by various
 local user groups.  Information about making donations and joining
 these groups is available from:
 \begin{quote}\small\label{addrs}
-   \TeX{} Users Group, P.O. Box 1239, Three Rivers, CA~93271-1239, USA\\
-   Fax:~+1~209~561~4584 \ Email: \texttt{tug@mail.tug.org}
-
-   UK TUG, 1 Eymore Close, Selly Oak, Birmingham B29~4LB, UK\\
-   Fax: +44 121 476 2159 \ Email: \texttt{uktug-enquiries@tex.ac.uk}
+   \texttt{http://www.tug.org/lugs.html}
 \end{quote}
 
 The \LaTeX3{} project has its home page
@@ -122,7 +128,7 @@ Older articles covering aspects of the \LaTeX3 project are also
 available for anonymous ftp from the Comprehensive \TeX{} Archive, in
 the directory:
 \begin{verbatim}
-  tex-archive/info/ltx3pub
+  ctan:info/ltx3pub
 \end{verbatim}
 The file |ltx3pub.bib| in that directory contains an abstract of each
 of the files.
@@ -163,10 +169,10 @@ For a general introduction to \LaTeX, including the new features of
 \LaTeXe, you should read \emph{\LaTeXbook}
 by Leslie Lamport~\cite{A-W:LLa94}.
 
-A more detailed description of the new features of \LaTeX, including
-an overview of more than 150 packages, is to be found in
-\emph{\LaTeXcomp} by Michel Goossens, Frank Mittelbach and Alexander
-Samarin~\cite{A-W:GMS94}. 
+A more detailed description of the new features of \LaTeX, including an
+overview of more than 200 packages and nearly 1000 ready to run examples, is
+to be found in \emph{\LaTeXcomp second edition} by Frank Mittelbach and
+Michel Goossens~\cite{A-W:MG2004}.
 
 Packages and programs for producing and manipulating graphics are
 discussed at length in \emph{\LaTeXGcomp} by Michel Goossens,
@@ -187,14 +193,18 @@ six-monthly release of \LaTeX; it will be found in the files
 describes the new \LaTeX{} features for writers of document classes
 and packages; it is in |clsguide.tex|.  The guide \emph{\fntguide}
 describes the \LaTeX{} font selection scheme for class- and
-package-writers; it is in |fntguide.tex|. Support for cyrillic languages
+package-writers; it is in |fntguide.tex|. Support for Cyrillic languages
 in \LaTeX{} is described in \emph{\cyrguide}.
 
-We are gradually turning the source code for \LaTeX{} into a \LaTeX{}
-document \emph{\sourcecode}.  This document includes an index of
-\LaTeX{} commands and can be typeset from |source2e.tex|.
+The documented source code (from the files used to produce the kernel
+format via |latex.ltx|) is now available as
+\emph{The \LaTeXe\ Sources}.  ]
+This very large document also includes an index of
+\LaTeX{} commands.  It can be typeset from the \LaTeX{} file
+|source2e.tex| in the |base| directory, using the source files and
+the class file |ltxdoc.cls| from this directory.
 
-For more information about \TeX{} and \LaTeX, please contact your
+For more information about \TeX{} and \LaTeX{}, please contact your
 local \TeX{} Users Group, or the international \TeX{} Users Group (see
 page \pageref{addrs}).
 
@@ -495,44 +505,6 @@ This section describes the new commands available in \LaTeXe.
 They are covered in more detail in \emph{\LaTeXbook} and in
 \emph{\LaTeXcomp}.
 
-\subsection{Initial commands}
-
-Initial commands can appear only before the |\documentclass|
-line.
-
-\begin{decl}
-|\begin{filecontents}| \arg{file-name} \\
-  \m{file-contents} \\
-|\end{filecontents}|
-\end{decl}
-
-The |filecontents| environment is intended for bundling within a
-single document file the contents of packages, options, or other
-files.  When the document file is run through \LaTeXe{} the body of
-this environment is written verbatim (preceded by a comment line) to a
-file whose name is given as the environment's only argument.  However,
-if that file already exists then nothing happens except for an
-information message.
-
-Only normal ASCII text characters (7-bit visible text) should be
-included in a |filecontents| environment.  Anything else, such as tab
-characters, form-feeds or 8-bit characters, should not be included in a
-|filecontents| environment.
-
-Tabs and form feeds produce a warning, explaining that they are turned
-into spaces or blank lines, respectively.
-What happens to 8-bit characters depends on the \TeX{} installation and
-is in general unpredictable.
-
-The |filecontents| environment is used for including \LaTeX{} files.
-For other plain text files (such as Encapsulated PostScript files),
-you should use the |filecontents*| environment which does not add a
-comment line.
-
-These environments are allowed only before |\documentclass|.  This
-ensures that any packages that have been bundled in the document are
-present when needed.
-
 \subsection{Preamble commands}
 \label{Sec:pre}
 
@@ -549,8 +521,10 @@ This command replaces the
 \LaTeX~2.09 command |\documentstyle|.
 
 There must be exactly one |\documentclass| command in a document; and
-it must come after the |filecontents| environments, if any, but before
-any other commands.
+it should normally come before any other command.  (There are some
+exceptions, e.g., you can have |filecontents| environments before it
+or |\RequirePackage| but these should be only used in special
+scenarios as discussed elsewhere.)
 
 The \m{option-list} is a list of options, each of which may modify the
 formatting of elements which are defined in the \m{class-name} file,
@@ -646,6 +620,52 @@ the format of error messages. \LaTeXe\ provides an interface to this
 through the standard |\setcounter| command. As most \LaTeX\ users do
 not want to see the internal definitions of \LaTeX\ commands each time
 they make an error, \LaTeXe{} sets this to $-1$ by default.
+
+
+\subsection{Environments to write out support files}
+
+\NEWfeature{2019}
+%
+Until the \LaTeX\ release in 2019 the |filecontents| environment was
+restricted to a place before the |\documentclass| command. These days
+it can be used anywhere, though we still think that in most cases it is
+best to only use it a the top of your document or in the preamble.
+
+\begin{decl}
+|\begin{filecontents}| \oarg{option-list} \arg{file-name} \\
+  \m{file-contents} \\
+|\end{filecontents}|
+\end{decl}
+
+The |filecontents| environment is intended for bundling within a
+single document file the contents of packages, options, or other
+files.  When the document file is run through \LaTeXe{} the body of
+this environment is written verbatim (preceded by a comment line) to a
+file whose name is given as the environment's only argument.  However,
+if that file already exists then nothing happens except for an
+information message.
+
+These days most UTF-8 text characters can be used in a
+|filecontents| envi\-ronment---they will be written unchanged to the
+output file.  However, tabs and form feeds produce a warning,
+explaining that they are turned into spaces or blank lines,
+respectively.
+
+By default the environment does not overwrite an existing file and it
+even refuses to write out the data if there exists a file that is
+anywhere in the path that \TeX\ searches when inputting files.  With
+the option |nosearch| you can ask it to look only into the current
+directory and with the option |overwrite| (or |force|) you can request
+it to write the file regardless. It will, however, never write to
+|\jobname.tex| to avoid overwriting itself.
+
+The |filecontents| environment is used for including \LaTeX{} files.
+For other plain text files (such as Encapsulated PostScript files),
+you should use the |filecontents*| environment which does not add a
+comment line.
+
+
+
 
 \subsection{Document structure}
 
@@ -978,6 +998,7 @@ in \emph{\LaTeXcomp}, and the interface for class- and package-writers
 is described in \emph{\fntguide}.
 
 \begin{decl}
+|\normalfont|\\
 |\rmfamily|\\
 |\sffamily|\\
 |\ttfamily|\\
@@ -997,6 +1018,7 @@ both a change of series and a change of shape, to give a bold italic
 font.
 
 \begin{decl}
+|\textnormal|\arg{text}\\
 |\textrm|\arg{text}\\
 |\textsf|\arg{text}\\
 |\texttt|\arg{text}\\
@@ -1286,21 +1308,21 @@ superscript position and in the correct size.
    \newcommand{\fauxguillemet}[1]{$\vcenter{\hbox{$\scriptscriptstyle#1$}}$}
    These commands produce various sorts of quotation mark.
    Rough representations of them are:
-   \fauxguillemet\ll a\fauxguillemet\gg{} 
-   \fauxguillemet<a\fauxguillemet> 
-   ,\kern -0.1em,\kern 0.05em a\kern -0.05em`` 
+   \fauxguillemet\ll a\fauxguillemet\gg{}
+   \fauxguillemet<a\fauxguillemet>
+   ,\kern -0.1em,\kern 0.05em a\kern -0.05em``
    ,\kern 0.05em a\kern -0.05em` and |"|a|"|.
 
 \NEWdescription{2001/06/01}
    There are therefore some extra short-form ligatures available for
    use in documents that will only be used with |T1|-encoded fonts.
-   
-   The guillemets |\guillemotleft| and |\guillemotright|% 
-   \footnote{We apologise once again for maintaining Adobe's 
-     enormous solipsism of confusing a diving bird with 
-     punctuation marks!}  
-   can be obtained by typing |<<<<| and |>>>>| and |\quotedblbase| 
-   by typing |,,|\,.  
+
+   The guillemets |\guillemotleft| and |\guillemotright|%
+   \footnote{We apologise once again for maintaining Adobe's
+     enormous solipsism~(sic) of confusing a diving bird with
+     punctuation marks!}
+   can be obtained by typing |<<<<| and |>>>>| and |\quotedblbase|
+   by typing |,,|\,.
 
    Also, unlike the unexpected results with
    |OT1|-encoded fonts, |<<| and |>>| will produce \textless{} and
@@ -1437,7 +1459,7 @@ causes when such misleadingly encoded documents are distributed, the
 features and commands.  Any attempt to use them will give you an error
 message and, moreover, many of them simply  will not work, whilst
 others will produce unpredictable results.
-So don't bother sending us any bug reports about such occurences since
+So don't bother sending us any bug reports about such occurrences since
 they are intentional.
 
 
@@ -1769,12 +1791,6 @@ this.
 
 \begin{thebibliography}{1}
 
-\bibitem{A-W:GMS94}
-Michel Goossens, Frank Mittelbach and Alexander Samarin.
-\newblock {\em The {\LaTeX} Companion}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1994.
-
-
 \bibitem{A-W:GRM97}
 Michel Goossens, Sebastian Rahtz and Frank Mittelbach.
 \newblock {\em The {\LaTeX} Graphics Companion}.
@@ -1798,6 +1814,13 @@ Donald~E. Knuth.
 Leslie Lamport.
 \newblock {\em {\LaTeX:} A Document Preparation System}.
 \newblock Addison-Wesley, Reading, Massachusetts, second edition, 1994.
+
+\bibitem{A-W:MG2004}
+Frank Mittelbach and Michel Goossens.
+\newblock {\em The {\LaTeX} Companion second edition}.
+\newblock With Johannes Braams, David Carlisle, and Chris Rowley.
+\newblock Addison-Wesley, Reading, Massachusetts, 2004.
+
 
 \end{thebibliography}
 
