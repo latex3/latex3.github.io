@@ -75,7 +75,7 @@ available.
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX Project Team</h2>
-    <p>The current LaTeX project team personnel, with contact details
+    <p>The current LaTeX project team personnel, with contact details,
     can be found on the <a href="{{ "/about/team" | prepend: site.baseurl }}">Team Page</a>.
     </p>
   </div>
