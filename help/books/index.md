@@ -67,7 +67,7 @@ Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id
 
 There are some extracts from the book as PDF files available from this site:
 
-+ <A href="bookpart_tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
++ <a href="bookpart_tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
 + <a href="bookpart_tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
 + <a href="bookpart_tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
 

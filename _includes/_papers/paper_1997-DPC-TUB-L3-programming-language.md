@@ -9,9 +9,7 @@
 
 An article giving a brief overview of the first release of expl3: a
 proposed LaTeX3 programming language. The article appeared in TUGboat
-volume 18, number 4. For the current state of the LaTeX3 programming
-language, please see the documentation in the [CTAN distribution of
-expl3](http://mirror.ctan.org/help/Catalogue/entries/expl3.html).
+volume 18, number 4. These days expl3 is part of the LaTeX format named "L3 programming layer".
 
 ***
 

@@ -27,9 +27,7 @@ members, but everything is publically accessible including the ability
 to download, clone (using Git) or checkout (using SVN).
 
 More details are given in the article
-"<a href="{{site.baseurl}}/publications/tb121mitt-bug-reporting.pdf"
-target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting
-bugs in the LaTeX core software</a>"
+<a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb121mitt-bug-reporting.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">New rules for reporting bugs in the LaTeX core software</a>
 that has been submitted to TUGboat.
 
 ## New workflow for reporting bugs
