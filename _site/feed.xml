@@ -5,36 +5,9 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Feb 2021 23:33:35 +0100</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2021 23:33:35 +0100</lastBuildDate>
+    <pubDate>Sun, 28 Feb 2021 23:39:50 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Feb 2021 23:39:50 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
-    
-      <item>
-        <title>A new team member?</title>
-        <description>&lt;h1 id=&quot;a-new-team-member&quot;&gt;A new team member?&lt;/h1&gt;
-
-&lt;p&gt;In these rather dark times, some light-hearted news.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/gato-2021.jpg&quot; alt=&quot;Gato&quot; width=&quot;60%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Courtesy of Paulo Cereda (the designer of our hummingbird) a picture
-of his pet camouflaging himself as a project member:&lt;/p&gt;
-
-&lt;p&gt;Looking forward to his contributions. — Enjoy Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 07 Feb 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/02/07/a-new-team-member/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/02/07/a-new-team-member/</guid>
-        
-        <category>latex</category>
-        
-        <category>latex team</category>
-        
-        
-        <category>news</category>
-        
-      </item>
     
       <item>
         <title>Second pre-release of LaTeX 2021-05-01 is available for testing</title>
@@ -116,15 +89,42 @@ modification should be straight forward.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 03 Jan 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/01/03/latex-dev-2021-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/01/03/latex-dev-2021-1/</guid>
+        <pubDate>Mon, 01 Mar 2021 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2021/03/01/latex-dev-2021-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/03/01/latex-dev-2021-1/</guid>
         
         <category>latex2e</category>
         
         <category>beta-testing</category>
         
         <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>A new team member?</title>
+        <description>&lt;h1 id=&quot;a-new-team-member&quot;&gt;A new team member?&lt;/h1&gt;
+
+&lt;p&gt;In these rather dark times, some light-hearted news.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gato-2021.jpg&quot; alt=&quot;Gato&quot; width=&quot;60%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Courtesy of Paulo Cereda (the designer of our hummingbird) a picture
+of his pet camouflaging himself as a project member:&lt;/p&gt;
+
+&lt;p&gt;Looking forward to his contributions. — Enjoy Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 07 Feb 2021 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2021/02/07/a-new-team-member/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/02/07/a-new-team-member/</guid>
+        
+        <category>latex</category>
+        
+        <category>latex team</category>
         
         
         <category>news</category>
