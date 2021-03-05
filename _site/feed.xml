@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Mar 2021 11:37:10 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Mar 2021 11:37:10 +0100</lastBuildDate>
+    <pubDate>Fri, 05 Mar 2021 17:08:51 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Mar 2021 17:08:51 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -29,24 +29,24 @@ the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot;&
 Issue 33&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are
 part of the distribution. Notable improvements are&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;better support for cut-and-paste from LaTeX-generated PDF documents
+  &lt;li&gt;better support for copy-and-paste from LaTeX-generated PDF documents
 by including glyphtounicode mappings;&lt;/li&gt;
   &lt;li&gt;support for producing several footnote marks to one footnote with
-the help of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\footef&lt;/code&gt; command;&lt;/li&gt;
+the help of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\footref&lt;/code&gt; command;&lt;/li&gt;
   &lt;li&gt;additional support for package and class option lists that use key/value syntax;&lt;/li&gt;
-  &lt;li&gt;extending the general hook management system to paragraphs discussed below.&lt;/li&gt;
+  &lt;li&gt;extending the general hook management system to paragraphs as discussed below.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;extending-the-general-hook-management-system-to-paragraphs&quot;&gt;Extending the general hook management system to paragraphs&lt;/h3&gt;
 
-&lt;p&gt;In addition to the bug fixes and enhancements this second pre-release
-also extends the general hook management system of LaTeX by supporting
+&lt;p&gt;In addition to the bug fixes and enhancements, this second pre-release
+also extends LaTeX’s general hook management system by supporting
 paragraph hooks executed at the beginning and end of every paragraph.&lt;/p&gt;
 
 &lt;p&gt;This functionality is essential for the production of automatically
 tagged PDF documents and resolves one of the major obstacles in this
 area. It is thus an important step in our multi-year journey towards
-accessible and well-tagged PDF documents, see articles in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;PDF, Tagging, Accessibility&lt;/a&gt;.&lt;/p&gt;
+accessible and well-tagged PDF documents. See articles in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;PDF, Tagging, Accessibility&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Even though this new functionality may not be of direct interest to
 most users (as long as it is not yet used for processing accessible
@@ -61,7 +61,7 @@ below for how to do this with ease.&lt;/p&gt;
 &lt;p&gt;We also added the necessary support in the LaTeX kernel and uploaded the
 new LaTeX PDF management — so far as a separate package for testing.
 This code is another important step towards &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;well-tagged PDF
-documents&lt;/a&gt;. as it provides backend-independent interfaces to
+documents&lt;/a&gt; as it provides backend-independent interfaces to
 central PDF dictionaries, tools to create annotations, form Xobjects,
 to embed files, and to handle PDF standards.  During a test phase this
 code is provided through an external package named
@@ -71,7 +71,7 @@ You can access the documentation through &lt;code class=&quot;language-plaintext
 &lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
 
 &lt;p&gt;We expect to produce a third and probably final pre-release adding
-some more features and enhancement in early April.&lt;/p&gt;
+some more features and enhancements in early April.&lt;/p&gt;
 
 &lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
 

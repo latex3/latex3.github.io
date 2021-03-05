@@ -81,24 +81,24 @@ the draft publication of <a href="/news/latex2e-news/ltnews33.pdf">LaTeX2e News
 Issue 33</a>. A full list is given in the <code class="language-plaintext highlighter-rouge">changes.txt</code> files that are
 part of the distribution. Notable improvements are</p>
 <ul>
-  <li>better support for cut-and-paste from LaTeX-generated PDF documents
+  <li>better support for copy-and-paste from LaTeX-generated PDF documents
 by including glyphtounicode mappings;</li>
   <li>support for producing several footnote marks to one footnote with
-the help of the <code class="language-plaintext highlighter-rouge">\footef</code> command;</li>
+the help of the <code class="language-plaintext highlighter-rouge">\footref</code> command;</li>
   <li>additional support for package and class option lists that use key/value syntax;</li>
-  <li>extending the general hook management system to paragraphs discussed below.</li>
+  <li>extending the general hook management system to paragraphs as discussed below.</li>
 </ul>
 
 <h3 id="extending-the-general-hook-management-system-to-paragraphs">Extending the general hook management system to paragraphs</h3>
 
-<p>In addition to the bug fixes and enhancements this second pre-release
-also extends the general hook management system of LaTeX by supporting
+<p>In addition to the bug fixes and enhancements, this second pre-release
+also extends LaTeX’s general hook management system by supporting
 paragraph hooks executed at the beginning and end of every paragraph.</p>
 
 <p>This functionality is essential for the production of automatically
 tagged PDF documents and resolves one of the major obstacles in this
 area. It is thus an important step in our multi-year journey towards
-accessible and well-tagged PDF documents, see articles in <a href="/publications/indexbytopic/pdf/">PDF, Tagging, Accessibility</a>.</p>
+accessible and well-tagged PDF documents. See articles in <a href="/publications/indexbytopic/pdf/">PDF, Tagging, Accessibility</a>.</p>
 
 <p>Even though this new functionality may not be of direct interest to
 most users (as long as it is not yet used for processing accessible
@@ -113,7 +113,7 @@ below for how to do this with ease.</p>
 <p>We also added the necessary support in the LaTeX kernel and uploaded the
 new LaTeX PDF management — so far as a separate package for testing.
 This code is another important step towards <a href="/publications/indexbytopic/pdf/">well-tagged PDF
-documents</a>. as it provides backend-independent interfaces to
+documents</a> as it provides backend-independent interfaces to
 central PDF dictionaries, tools to create annotations, form Xobjects,
 to embed files, and to handle PDF standards.  During a test phase this
 code is provided through an external package named
@@ -123,7 +123,7 @@ You can access the documentation through <code class="language-plaintext highlig
 <h2 id="outlook">Outlook</h2>
 
 <p>We expect to produce a third and probably final pre-release adding
-some more features and enhancement in early April.</p>
+some more features and enhancements in early April.</p>
 
 <h2 id="please-help-with-the-testing">Please help with the testing</h2>
 
