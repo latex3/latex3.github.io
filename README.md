@@ -7,7 +7,7 @@ What actually happens is that the `_site` directory is pulled by the server, so 
 ## Branches
 
 **The latex-project.org staging**  
-[http://latex3.github.io/](http://latex3.github.io/) - `master` branch
+[http://latex3.github.io/](http://latex3.github.io/) - `main` branch
 
 **The latex-project.org website**  
 [https://www.latex-project.org/](https://www.latex-project.org/) - `live` branch
