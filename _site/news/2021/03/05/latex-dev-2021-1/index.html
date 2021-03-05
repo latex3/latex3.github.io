@@ -62,7 +62,7 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Mar 1, 2021</span></small>
+    <small class="meta"><span class="post-date">Mar 5, 2021</span></small>
     <h1 id="the-second-latex-pre-release-for-2021-05-01-is-available-for-testing">The second LaTeX pre-release for 2021-05-01 is available for testing</h1>
 
 <p>A few days ago we submitted a new LaTeX development format to CTAN
@@ -76,10 +76,18 @@ Live (on any operating system).</p>
 regularly get an old format.</p>
 
 <p>The second pre-release now provides a number of smaller enhancements and
-resolves roughly fourty issues. The more important ones are listed in
+resolves roughly forty issues. The more important ones are listed in
 the draft publication of <a href="/news/latex2e-news/ltnews33.pdf">LaTeX2e News
 Issue 33</a>. A full list is given in the <code class="language-plaintext highlighter-rouge">changes.txt</code> files that are
-part of the distribution.</p>
+part of the distribution. Notable improvements are</p>
+<ul>
+  <li>better support for cut-and-paste from LaTeX-generated PDF documents
+by including glyphtounicode mappings;</li>
+  <li>support for producing several footnote marks to one footnote with
+the help of the <code class="language-plaintext highlighter-rouge">\footef</code> command;</li>
+  <li>additional support for package and class option lists that use key/value syntax;</li>
+  <li>extending the general hook management system to paragraphs discussed below.</li>
+</ul>
 
 <h3 id="extending-the-general-hook-management-system-to-paragraphs">Extending the general hook management system to paragraphs</h3>
 
@@ -99,6 +107,18 @@ there aren’t any conflicts with existing packages that also try to
 manipulate the paragraph processing in one way or the other. So please
 make use of the development format whenever you have a chance, see
 below for how to do this with ease.</p>
+
+<h3 id="kernel-support-for-the-new-latex-pdf-management">Kernel support for the new LaTeX PDF management</h3>
+
+<p>We also added the necessary support in the LaTeX kernel and uploaded the
+new LaTeX PDF management — so far as a separate package for testing.
+This code is another important step towards <a href="/publications/indexbytopic/pdf/">well-tagged PDF
+documents</a>. as it provides backend-independent interfaces to
+central PDF dictionaries, tools to create annotations, form Xobjects,
+to embed files, and to handle PDF standards.  During a test phase this
+code is provided through an external package named
+<code class="language-plaintext highlighter-rouge">pdfmanagement-testphase</code>. Please help with the testing here too.
+You can access the documentation through <code class="language-plaintext highlighter-rouge">texdoc pdfmanagement-testphase</code>.</p>
 
 <h2 id="outlook">Outlook</h2>
 

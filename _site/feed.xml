@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Feb 2021 23:39:50 +0100</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2021 23:39:50 +0100</lastBuildDate>
+    <pubDate>Fri, 05 Mar 2021 11:37:10 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Mar 2021 11:37:10 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -24,10 +24,18 @@ Live (on any operating system).&lt;/p&gt;
 regularly get an old format.&lt;/p&gt;
 
 &lt;p&gt;The second pre-release now provides a number of smaller enhancements and
-resolves roughly fourty issues. The more important ones are listed in
+resolves roughly forty issues. The more important ones are listed in
 the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot;&gt;LaTeX2e News
 Issue 33&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are
-part of the distribution.&lt;/p&gt;
+part of the distribution. Notable improvements are&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;better support for cut-and-paste from LaTeX-generated PDF documents
+by including glyphtounicode mappings;&lt;/li&gt;
+  &lt;li&gt;support for producing several footnote marks to one footnote with
+the help of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\footef&lt;/code&gt; command;&lt;/li&gt;
+  &lt;li&gt;additional support for package and class option lists that use key/value syntax;&lt;/li&gt;
+  &lt;li&gt;extending the general hook management system to paragraphs discussed below.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;extending-the-general-hook-management-system-to-paragraphs&quot;&gt;Extending the general hook management system to paragraphs&lt;/h3&gt;
 
@@ -47,6 +55,18 @@ there aren’t any conflicts with existing packages that also try to
 manipulate the paragraph processing in one way or the other. So please
 make use of the development format whenever you have a chance, see
 below for how to do this with ease.&lt;/p&gt;
+
+&lt;h3 id=&quot;kernel-support-for-the-new-latex-pdf-management&quot;&gt;Kernel support for the new LaTeX PDF management&lt;/h3&gt;
+
+&lt;p&gt;We also added the necessary support in the LaTeX kernel and uploaded the
+new LaTeX PDF management — so far as a separate package for testing.
+This code is another important step towards &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;well-tagged PDF
+documents&lt;/a&gt;. as it provides backend-independent interfaces to
+central PDF dictionaries, tools to create annotations, form Xobjects,
+to embed files, and to handle PDF standards.  During a test phase this
+code is provided through an external package named
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdfmanagement-testphase&lt;/code&gt;. Please help with the testing here too.
+You can access the documentation through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc pdfmanagement-testphase&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
 
@@ -89,9 +109,9 @@ modification should be straight forward.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 01 Mar 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/03/01/latex-dev-2021-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/03/01/latex-dev-2021-1/</guid>
+        <pubDate>Fri, 05 Mar 2021 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2021/03/05/latex-dev-2021-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/03/05/latex-dev-2021-1/</guid>
         
         <category>latex2e</category>
         
@@ -417,7 +437,7 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 &lt;p&gt;The first TUG online conference in July was quite a success with many
 interesting talks on many subjects of TeX usage and related topics.
 The talks are now appearing one after another on YouTube, thanks to
-the the work of a few individuals who have prepared them (and the
+the work of a few individuals who have prepared them (and the
 question/answer sessions) for publication.&lt;/p&gt;
 
 &lt;p&gt;If you have missed the conference (or if you want listen to one of the

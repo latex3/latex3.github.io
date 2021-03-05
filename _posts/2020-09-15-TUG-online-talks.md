@@ -14,7 +14,7 @@ tags: [latex2e, latex3, development, conference]
 The first TUG online conference in July was quite a success with many
 interesting talks on many subjects of TeX usage and related topics.
 The talks are now appearing one after another on YouTube, thanks to
-the the work of a few individuals who have prepared them (and the
+the work of a few individuals who have prepared them (and the
 question/answer sessions) for publication.
 
 If you have missed the conference (or if you want listen to one of the
