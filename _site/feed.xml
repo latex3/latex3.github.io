@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Mar 2021 17:08:51 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Mar 2021 17:08:51 +0100</lastBuildDate>
+    <pubDate>Tue, 30 Mar 2021 23:37:18 +0200</pubDate>
+    <lastBuildDate>Tue, 30 Mar 2021 23:37:18 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -497,7 +497,7 @@ maintainer of Babel.&lt;/p&gt;
         <title>Final pre-release of LaTeX 2020-10-01 is available for testing</title>
         <description>&lt;h1 id=&quot;the-third-and-final-latex-pre-release-for-2020-10-01-is-available-for-testing&quot;&gt;The third and final LaTeX pre-release for 2020-10-01 is available for testing&lt;/h1&gt;
 
-&lt;p&gt;A few days ago we submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
+&lt;p&gt;A few days ago we submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
 and by now this should be available to all users using MiKTeX or TeX
 Live (on any operating system).&lt;/p&gt;
 
@@ -655,7 +655,7 @@ modification should be straight forward.&lt;/p&gt;
         <title>Second pre-release of LaTeX 2020-10-01 is available for testing</title>
         <description>&lt;h1 id=&quot;the-second-latex-pre-release-for-2020-10-01-is-available-for-testing&quot;&gt;The second LaTeX pre-release for 2020-10-01 is available for testing&lt;/h1&gt;
 
-&lt;p&gt;A few days ago we submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
+&lt;p&gt;A few days ago we submitted a new LaTeX development format&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to CTAN
 and by now this should be available to all users using MiKTeX or TeX
 Live (on any operating system).&lt;/p&gt;
 
