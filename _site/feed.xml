@@ -5,9 +5,147 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Mar 2021 23:37:18 +0200</pubDate>
-    <lastBuildDate>Tue, 30 Mar 2021 23:37:18 +0200</lastBuildDate>
+    <pubDate>Mon, 03 May 2021 23:45:48 +0200</pubDate>
+    <lastBuildDate>Mon, 03 May 2021 23:45:48 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Final pre-release of LaTeX 2021-06-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;the-third-and-final-latex-pre-release-for-2021-06-01-is-available-for-testing&quot;&gt;The third and final LaTeX pre-release for 2021-06-01 is available for testing&lt;/h1&gt;
+
+&lt;p&gt;A few days ago we submitted a new LaTeX development format to CTAN
+and by now this should be available to all users using MiKTeX or TeX
+Live (on any operating system).&lt;/p&gt;
+
+&lt;p&gt;Because of the freeze for TeXLive 2021 we have decided to move the
+release date for LaTeX from May to June, to give everybody enough time
+for testing the new release features.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-of-the-second-pre-release-for-2021-06-01&quot;&gt;Main features of the second pre-release for 2021-06-01&lt;/h2&gt;
+
+&lt;p&gt;The final pre-release contains all the features, corrections and enhancements that we intend to release in June.
+The more important ones are listed in
+the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot;&gt;LaTeX2e News
+Issue 33&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are
+part of the distribution. Notable improvements are&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;better support for copy-and-paste from LaTeX-generated PDF documents
+by including glyphtounicode mappings;&lt;/li&gt;
+  &lt;li&gt;support for producing several footnote marks to one footnote with
+the help of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\footref&lt;/code&gt; command;&lt;/li&gt;
+  &lt;li&gt;additional support for package and class option lists that use key/value syntax;&lt;/li&gt;
+  &lt;li&gt;extending the general hook management system to paragraphs and commands as discussed below.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;extending-the-general-hook-management-system-to-paragraphs-and-commands&quot;&gt;Extending the general hook management system to paragraphs and commands&lt;/h3&gt;
+
+&lt;p&gt;In addition to the bug fixes and enhancements, the next release also
+extends LaTeX’s general hook management system by supporting paragraph
+hooks executed at the beginning and end of every paragraph, documented
+in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltpara-doc.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This functionality is essential for the production of automatically
+tagged PDF documents and resolves one of the major obstacles in this
+area. It is thus an important step in our multi-year journey towards
+accessible and well-tagged PDF documents. See articles in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;PDF, Tagging,
+Accessibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Even though this new functionality may not be of direct interest to
+most users (as long as it is not yet used for processing accessible
+PDF) it is nevertheless important that it gets tested to ensure that
+there aren’t any conflicts with existing packages that also try to
+manipulate the paragraph processing in one way or the other. So please
+make use of the development format whenever you have a chance, see
+below for how to do this with ease.&lt;/p&gt;
+
+&lt;p&gt;The release will also support generic hooks on all user-level
+commands; in theory that is, in practice there are some restrictions
+as explained in the documentation in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmdhooks-doc.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Again this is an important step towards tagged PDF as it will help
+integrating the necessary code in various user-level commands without
+extensive code alterations that would otherwise be required. In
+addition this functionality is also of interest to packages that for
+one or the other reason currently patch code of other packages or from
+the kernel as the hook management helps to do this in controlled ways
+avoiding typical incompatibilities between packages.&lt;/p&gt;
+
+&lt;h3 id=&quot;kernel-support-for-the-new-latex-pdf-management&quot;&gt;Kernel support for the new LaTeX PDF management&lt;/h3&gt;
+
+&lt;p&gt;We also added the necessary support in the LaTeX kernel and uploaded
+the new LaTeX PDF management — so far as a separate package for
+testing.  This code is another important step towards &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;well-tagged PDF
+documents&lt;/a&gt; as it provides backend-independent interfaces to central
+PDF dictionaries, tools to create annotations, form Xobjects, to embed
+files, and to handle PDF standards.  During a test phase this code is
+provided through an external package named
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdfmanagement-testphase&lt;/code&gt;. Please help with the testing here too.  You
+can access the documentation through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc pdfmanagement-testphase&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
+
+&lt;p&gt;This is the final prerelease, the same code (modulo any corrections
+found during testing) is planned as the official June 2021 release.&lt;/p&gt;
+
+&lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
+
+&lt;p&gt;We are issuing this final pre-release now in the hope that you will help us by
+making sure that all the enhancements and fixes we have provided are safe and that
+they do not have any undesired side effects, so please help with the testing if
+you can.&lt;/p&gt;
+
+&lt;p&gt;This development format allows you to test the upcoming LaTeX release scheduled
+for 2021-06-01 with your documents or packages. Such testing is
+particularly important for package maintainers to verify that changes
+to the core LaTeX haven’t introduced incompatibilities with existing
+code. We try to identify any such problems beforehand but such an
+undertaking is necessarily incomplete, which is why we are asking for user
+testing.&lt;/p&gt;
+
+&lt;p&gt;Besides developers, we also ask ordinary users to try out the new
+release, because the more people that test the new
+format, the higher the chances that any hidden problems are identified
+before the final release in May hits the streets.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straight forward. All
+you have to do is to replace the invocation command by appending
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an
+integrated editing environment, then it depends on the system 
+how to configure it to use an alternative format; but in any case the necessary
+modification should be straight forward.&lt;/p&gt;
+
+&lt;p&gt;If you encounter any issue with this prerelease, please open a bug report
+at https://github.com/latex3/latex2e/issues following the guidelines
+given there (especially providing a processable test document).&lt;/p&gt;
+
+&lt;p&gt;In case of incompatibility problems with the prerelease it is, of
+course, acceptable to report them to us, even if
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\RequirePackage{latexbug}&lt;/code&gt; tells you to report them elsewhere (it
+would help if you do that too).&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 May 2021 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2021/05/05/latex-dev-2021-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/05/05/latex-dev-2021-2/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Second pre-release of LaTeX 2021-05-01 is available for testing</title>
@@ -823,55 +961,6 @@ modification should be straight forward.&lt;/p&gt;
         <category>pagination</category>
         
         <category>floats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Online TUG Conference 24-26 July 2020</title>
-        <description>&lt;h1 id=&quot;the-first-online-tug-conference-will-happen-24-26-july-2020&quot;&gt;The first online TUG conference will happen 24-26 July 2020&lt;/h1&gt;
-
-&lt;p&gt;You probably heard this already from other sources and maybe already
-registered, but if not, now is the time.&lt;/p&gt;
-
-&lt;p&gt;Next week the annual TeX Users Group Conference will be broadcast
-live: to watch the presentations and otherwise participate all you
-need to do is to &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register&lt;/a&gt;. This year
-registration is free of charge, because the costs for an online event
-are much lower, so all that is needed to attend is the registration.&lt;/p&gt;
-
-&lt;p&gt;A number of people from the LaTeX Project Team are giving presentations:
-Javier,
-Joseph,
-Marcel and myself.&lt;/p&gt;
-
-&lt;p&gt;You will find many interesting and exciting talks in &lt;a href=&quot;https://tug.org/tug2020/program.html&quot;&gt;the program
-schedule&lt;/a&gt; and while some may be
-at inconvenient hours, depending on your location, most are probably
-at reasonable times. If not there are plans to make the talks
-available afterwards (no details yet), but live or partly live events
-are usually more fun in my opinion.&lt;/p&gt;
-
-&lt;p&gt;So go ahead and &lt;a href=&quot;https://tug.org/tug2020/&quot;&gt;register yourself&lt;/a&gt; if you are interested
-and let’s make this the biggest TeX conference in years!&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 17 Jul 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/07/17/TUG-online-conference/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/07/17/TUG-online-conference/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>development</category>
-        
-        <category>conference</category>
         
         
         <category>news</category>

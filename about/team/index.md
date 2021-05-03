@@ -6,11 +6,11 @@ description: "List of people currently involved in the LaTeX project and a list 
 
 # Team
 
-LaTeX is based on [Donald E. Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)'s TeX typesetting language or certain extensions. LaTeX was first developed in 1985 by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), and is now being maintained and developed by the [LaTeX3 Project]({{site.baseurl}}/latex3/). 
+LaTeX is based on [Donald E. Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)'s TeX typesetting language or certain extensions. LaTeX was first developed in 1985 by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), and is now being maintained and developed by the [LaTeX Project]({{site.baseurl}}/latex3/). 
 
 <h2>Current Team Members</h2>
 
-People currently involved in the LaTeX3 project are (in more or less chronological order): 
+People currently involved in the LaTeX project are (in more or less chronological order): 
 
 <div class="row">
 <div class="col cell1of2">
@@ -54,17 +54,6 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
     <h2>Robin Fairbairns <br><span class="role">LaTeX3 Team (retired)</span></h2>
   </li>
 
-  <li id="morten-høgholm">
-    <img src="morten-høgholm.jpg" alt="Morten Høgholm">
-    <h2>Morten Høgholm <br><span class="role">LaTeX3 Team</span></h2>
-  </li>
-  <li id="javier-bezos">
-    <img src="javier-bezos.jpg" alt="Javier Bezos">
-    <h2>Javier Bezos <br><span class="role">LaTeX3 Team</span></h2>
-    <ul class="team">
-      <li><a href="http://www.texnia.com/"><span class="fa fa-external-link-square"></span>http://www.texnia.com/</a></li>
-    </ul>
-  </li>
   <li id="will-robertson">
     <img src="will-robertson.jpg" alt="Will Robertson">
     <h2>Will Robertson <br><span class="role">LaTeX3 Team</span></h2>
@@ -144,10 +133,8 @@ People currently involved in the LaTeX3 project are (in more or less chronologic
 
 
 
-
-
 <h2>Former Team Members</h2>
-<p>Former members of the project team were: Denys Duchier, Michael Downes, Alan Jeffrey, Martin Schröder, <a href="http://thomas-lotze.de/">Thomas Lotze</a>.</p>
+<p>Former members of the project team were: Denys Duchier, Michael Downes, Morten Høgholm, Alan Jeffrey, Martin Schröder, <a href="http://thomas-lotze.de/">Thomas Lotze</a>.</p>
 
     
 <div class="row">
