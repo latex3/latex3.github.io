@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 May 2021 23:45:48 +0200</pubDate>
-    <lastBuildDate>Mon, 03 May 2021 23:45:48 +0200</lastBuildDate>
+    <pubDate>Tue, 04 May 2021 17:25:31 +0200</pubDate>
+    <lastBuildDate>Tue, 04 May 2021 17:25:31 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -25,7 +25,7 @@ for testing the new release features.&lt;/p&gt;
 
 &lt;p&gt;The final pre-release contains all the features, corrections and enhancements that we intend to release in June.
 The more important ones are listed in
-the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot;&gt;LaTeX2e News
+the &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot;&gt;draft publication of LaTeX2e News
 Issue 33&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are
 part of the distribution. Notable improvements are&lt;/p&gt;
 &lt;ul&gt;
@@ -105,7 +105,7 @@ testing.&lt;/p&gt;
 &lt;p&gt;Besides developers, we also ask ordinary users to try out the new
 release, because the more people that test the new
 format, the higher the chances that any hidden problems are identified
-before the final release in May hits the streets.&lt;/p&gt;
+before the final release in June hits the streets.&lt;/p&gt;
 
 &lt;p&gt;Processing your documents with the pre-release is straight forward. All
 you have to do is to replace the invocation command by appending
