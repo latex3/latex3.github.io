@@ -8,7 +8,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 <div class="row">
   <div class="col cell1of2">
-    <p>The most recent version of LaTeX is nominally dated 2020/10/01 (it may additionally have a patch-level associated with it).</p>
+    <p>The most recent version of LaTeX is nominally dated 2021/06/01 (it may additionally have a patch-level associated with it).</p>
     <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#the-latex-git-repository">Git Repository</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
