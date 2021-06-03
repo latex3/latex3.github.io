@@ -48,7 +48,7 @@ because those need special handling in tagged PDF.
 
 ### Extending the hook concept to commands
 
-With this release we extended the set of "generic" hooks to for
+With this release we extended the set of "generic" hooks to
 commands: in theory each document-level command has now two hooks
 `cmd/<command>/before` and `cmd/<command>/after` in which packages (or
 the user in the preamble) can add code using the hook management
@@ -59,7 +59,7 @@ similar to the use of `\preto` and `\appto` from that package, but with
 the difference that if different packages try to do that, the added
 code chunks can be controlled and ordered as needed using the hook
 mechanism. The documentation for this functionality can be found in
-<a href="{{site.baseurl}}/help/documentation/#documentation-of-the-new-hook-management">`ltcmdhook-doc.pdf`</a>`.
+<a href="{{site.baseurl}}/help/documentation/#documentation-of-the-new-hook-management">`ltcmdhook-doc.pdf`</a>.
 
 In practice, not all commands can accept such generic hooks: some
 (especially those that take optional arguments) will break if you try
@@ -87,7 +87,7 @@ are useful for you.
 
 #### Where to learn more ...
 
-The new features and most the important bug fixes made in this release
+The new features and most of the important bug fixes made in this release
 are documented in <a
 href="{{site.baseurl}}/news/latex2e-news/ltnews33.pdf" target="_blank"
 onclick="vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');">"LaTeX2e

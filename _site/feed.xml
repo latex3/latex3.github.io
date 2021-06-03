@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Jun 2021 17:50:45 +0200</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 17:50:45 +0200</lastBuildDate>
+    <pubDate>Thu, 03 Jun 2021 20:46:53 +0200</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 20:46:53 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -43,7 +43,7 @@ because those need special handling in tagged PDF.&lt;/p&gt;
 
 &lt;h3 id=&quot;extending-the-hook-concept-to-commands&quot;&gt;Extending the hook concept to commands&lt;/h3&gt;
 
-&lt;p&gt;With this release we extended the set of “generic” hooks to for
+&lt;p&gt;With this release we extended the set of “generic” hooks to
 commands: in theory each document-level command has now two hooks
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd/&amp;lt;command&amp;gt;/before&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd/&amp;lt;command&amp;gt;/after&lt;/code&gt; in which packages (or
 the user in the preamble) can add code using the hook management
@@ -54,7 +54,7 @@ similar to the use of &lt;code class=&quot;language-plaintext highlighter-rouge&
 the difference that if different packages try to do that, the added
 code chunks can be controlled and ordered as needed using the hook
 mechanism. The documentation for this functionality can be found in
-&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmdhook-doc.pdf&lt;/code&gt;&lt;/a&gt;`.&lt;/p&gt;
+&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmdhook-doc.pdf&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In practice, not all commands can accept such generic hooks: some
 (especially those that take optional arguments) will break if you try
@@ -82,7 +82,7 @@ are useful for you.&lt;/p&gt;
 
 &lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
 
-&lt;p&gt;The new features and most the important bug fixes made in this release
+&lt;p&gt;The new features and most of the important bug fixes made in this release
 are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');&quot;&gt;“LaTeX2e
 News Issue 33”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
 page&lt;/a&gt; where you will also find
