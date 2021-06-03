@@ -3,10 +3,10 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Jun 2021 12:44:27 +0200</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 12:44:27 +0200</lastBuildDate>
+    <link>https://latex-project.org//</link>
+    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 03 Jun 2021 17:50:45 +0200</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 17:50:45 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -34,8 +34,8 @@ changed LaTeX so that the kernel gains control both at the start and
 at the end of each paragraph. This is done in a manner that is (or
 should be) transparent to both packages and documents.  We have also
 included four public hooks to enable adding code to paragraphs in a
-controlled manner. The documentation on this is available as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
-ltpara-doc&lt;/code&gt;.&lt;/p&gt;
+controlled manner. The documentation on this is available as 
+&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltpara-doc.pdf&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;These hooks will enable us to automatically tag paragraphs and enables
 us to identify when paragraphs are broken across columns or pages,
@@ -53,8 +53,8 @@ machinery.&lt;/p&gt;
 similar to the use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\preto&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\appto&lt;/code&gt; from that package, but with
 the difference that if different packages try to do that, the added
 code chunks can be controlled and ordered as needed using the hook
-mechanism. The documentation for this functionality can be found in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
-ltcmdhooks-doc&lt;/code&gt;.&lt;/p&gt;
+mechanism. The documentation for this functionality can be found in
+&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmdhook-doc.pdf&lt;/code&gt;&lt;/a&gt;`.&lt;/p&gt;
 
 &lt;p&gt;In practice, not all commands can accept such generic hooks: some
 (especially those that take optional arguments) will break if you try
@@ -83,7 +83,7 @@ are useful for you.&lt;/p&gt;
 &lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
 
 &lt;p&gt;The new features and most the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');&quot;&gt;“LaTeX2e
+are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');&quot;&gt;“LaTeX2e
 News Issue 33”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
 page&lt;/a&gt; where you will also find
 release information for earlier LaTeX releases.&lt;/p&gt;
@@ -93,8 +93,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 01 Jun 2021 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2021/06/01/issue33-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2021/06/01/issue33-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2021/06/01/issue33-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/06/01/issue33-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -231,8 +231,8 @@ would help if you do that too).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 May 2021 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2021/05/05/latex-dev-2021-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2021/05/05/latex-dev-2021-2/</guid>
+        <link>https://latex-project.org//news/2021/05/05/latex-dev-2021-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/05/05/latex-dev-2021-2/</guid>
         
         <category>latex2e</category>
         
@@ -346,8 +346,8 @@ modification should be straight forward.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Mar 2021 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2021/03/05/latex-dev-2021-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2021/03/05/latex-dev-2021-1/</guid>
+        <link>https://latex-project.org//news/2021/03/05/latex-dev-2021-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/03/05/latex-dev-2021-1/</guid>
         
         <category>latex2e</category>
         
@@ -375,8 +375,8 @@ of his pet camouflaging himself as a project member:&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 07 Feb 2021 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2021/02/07/a-new-team-member/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2021/02/07/a-new-team-member/</guid>
+        <link>https://latex-project.org//news/2021/02/07/a-new-team-member/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/02/07/a-new-team-member/</guid>
         
         <category>latex</category>
         
@@ -472,8 +472,8 @@ activities on and around the project.&lt;/p&gt;
 &lt;p&gt;You will find both documents, as well as other documents about the “Tagged PDF Project” and related topics, on the &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;PDF, Tagging and Accessibility&lt;/a&gt; page in the publications area of the site.&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Nov 2020 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2020/11/30/tagged-pdf-FS-study/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/11/30/tagged-pdf-FS-study/</guid>
+        <link>https://latex-project.org//news/2020/11/30/tagged-pdf-FS-study/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/11/30/tagged-pdf-FS-study/</guid>
         
         <category>latex</category>
         
@@ -524,8 +524,8 @@ interested in L3 programming or in understanding code written in it:&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 09 Nov 2020 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2020/11/09/l3-tutorial/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/11/09/l3-tutorial/</guid>
+        <link>https://latex-project.org//news/2020/11/09/l3-tutorial/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/11/09/l3-tutorial/</guid>
         
         <category>latex3</category>
         
@@ -654,8 +654,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 01 Oct 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/10/01/issue32-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/10/01/issue32-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2020/10/01/issue32-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/10/01/issue32-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -713,8 +713,8 @@ maintainer of Babel.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 15 Sep 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/09/15/TUG-online-talks/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/09/15/TUG-online-talks/</guid>
+        <link>https://latex-project.org//news/2020/09/15/TUG-online-talks/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/09/15/TUG-online-talks/</guid>
         
         <category>latex2e</category>
         
@@ -873,8 +873,8 @@ modification should be straight forward.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 01 Sep 2020 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/09/01/latex-dev-2020-10-1c/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/09/01/latex-dev-2020-10-1c/</guid>
+        <link>https://latex-project.org//news/2020/09/01/latex-dev-2020-10-1c/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/09/01/latex-dev-2020-10-1c/</guid>
         
         <category>latex2e</category>
         
@@ -1018,8 +1018,8 @@ modification should be straight forward.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 22 Jul 2020 02:00:03 +0200</pubDate>
-        <link>http://localhost:4000/news/2020/07/22/latex-dev-2020-10-1b/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2020/07/22/latex-dev-2020-10-1b/</guid>
+        <link>https://latex-project.org//news/2020/07/22/latex-dev-2020-10-1b/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2020/07/22/latex-dev-2020-10-1b/</guid>
         
         <category>latex2e</category>
         

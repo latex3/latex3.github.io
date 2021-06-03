@@ -68,7 +68,7 @@ This is augmented by the following document that describes newer features (start
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide3.pdf"
    target="_blank"
-   onclick="vgwPixelCall('');">LaTeX2e for authors --- new features</a>
+   onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">LaTeX2e for authors --- new features</a>
 
 
 
@@ -112,19 +112,19 @@ The hook management introduced in 2020 is largely intended for package developer
 
 + <a href="{{site.baseurl}}/help/documentation/lthooks-doc.pdf"
      target="_blank"
-     onclick="vgwPixelCall('');">Overview of LaTeX's hook management and core hooks</a>
+     onclick="vgwPixelCall('78721ee2481742e58ccc2d8b10baa93e');">Overview of LaTeX's hook management and core hooks --- `lthooks-doc.pdf`</a>
 + <a href="{{site.baseurl}}/help/documentation/ltcmdhook-doc.pdf"
      target="_blank"
-     onclick="vgwPixelCall('');">Generic hooks for document-level commands</a>
+     onclick="vgwPixelCall('e021195650e74fab825f06d16b1f1e45');">Generic hooks for document-level commands --- `ltcmdhooks-doc.pdf`</a>
 + <a href="{{site.baseurl}}/help/documentation/ltfilehook-doc.pdf"
      target="_blank"
-     onclick="vgwPixelCall('');">Hooks available when reading files</a>
+     onclick="vgwPixelCall('db9d65dcb6fc4eab9c83d8ba9d1c1ad7');">Hooks available when reading files --- `ltfilehook-doc.pdf`</a>
 + <a href="{{site.baseurl}}/help/documentation/ltshipout-doc.pdf"
      target="_blank"
-     onclick="vgwPixelCall('');">Hooks available when writing pages</a> (e.g., for background pictures, etc.)
+     onclick="vgwPixelCall('7a2aefabd77843169cef0df3ec78dbc7');">Hooks available when writing pages  --- `ltshipout-doc.pdf`</a> (e.g., for background pictures, etc.)
 + <a href="{{site.baseurl}}/help/documentation/ltpara-doc.pdf"
      target="_blank"
-     onclick="vgwPixelCall('');">Hooks available when processing paragraphs</a>
+     onclick="vgwPixelCall('c6f0abc213674d8bb743d04d8a374786');">Hooks available when processing paragraphs --- `ltpara-doc.pdf`</a>
 
 
 

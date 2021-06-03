@@ -38,8 +38,8 @@ changed LaTeX so that the kernel gains control both at the start and
 at the end of each paragraph. This is done in a manner that is (or
 should be) transparent to both packages and documents.  We have also
 included four public hooks to enable adding code to paragraphs in a
-controlled manner. The documentation on this is available as `texdoc
-ltpara-doc`.
+controlled manner. The documentation on this is available as 
+<a href="{{site.baseurl}}/help/documentation/#documentation-of-the-new-hook-management">`ltpara-doc.pdf`</a>.
 
 These hooks will enable us to automatically tag paragraphs and enables
 us to identify when paragraphs are broken across columns or pages,
@@ -58,8 +58,8 @@ If you know the `etoolbox` package, then you can think of them as being
 similar to the use of `\preto` and `\appto` from that package, but with
 the difference that if different packages try to do that, the added
 code chunks can be controlled and ordered as needed using the hook
-mechanism. The documentation for this functionality can be found in `texdoc
-ltcmdhooks-doc`.
+mechanism. The documentation for this functionality can be found in
+<a href="{{site.baseurl}}/help/documentation/#documentation-of-the-new-hook-management">`ltcmdhook-doc.pdf`</a>`.
 
 In practice, not all commands can accept such generic hooks: some
 (especially those that take optional arguments) will break if you try
@@ -90,7 +90,7 @@ are useful for you.
 The new features and most the important bug fixes made in this release
 are documented in <a
 href="{{site.baseurl}}/news/latex2e-news/ltnews33.pdf" target="_blank"
-onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">"LaTeX2e
+onclick="vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');">"LaTeX2e
 News Issue 33"</a>. This document can be found on the [LaTeX2e news
 page]({{site.baseurl}}/news/latex2e-news/) where you will also find
 release information for earlier LaTeX releases.
