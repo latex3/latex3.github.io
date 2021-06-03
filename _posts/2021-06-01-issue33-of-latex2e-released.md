@@ -72,13 +72,13 @@ without touching or updating package code.
 
 There are many other enhancements and corrections that we
 documented in the ltnews article for this release (and a few very
-minor ones that only made it into the `changes.txt`file). The most
+minor ones that only made it into the `changes.txt` file). The most
 important ones from a user perspective are:
 
  - Further improvements of file name parsing; in particular
    we made the parsing much faster again (it got a little slow with
    the functional enhancements we introduced in the last releases)
-  - Better handlling of font series and font shape changes
+  - Better handling of font series and font shape changes
  - Improved copy & paste from documents produced with pdfTeX
 
 

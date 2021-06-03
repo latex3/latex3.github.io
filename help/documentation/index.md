@@ -31,8 +31,9 @@ description: "References to the official LaTeX documentation and to documentatio
       <li><a href="#documentation-distributed-with-latex">Distributed LaTeX documentation</a>
         <ul>
 	  <li><a href="#general-documentation">General documentation</a></li>
+	  <li><a href="#documentation-of-the-new-hook-management">Hook management</a></li>
 	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
-	  <li><a href="#japanese-translations">Japanese translations</a></li>
+	  <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
 	  <li><a href="#quick-summary-of-changes-by-release">Summary of changes by release</a></li>
 	  <li><a href="#source-code-documentation">Source code documentation</a></li>
         </ul>
@@ -62,6 +63,14 @@ the following document:
 + <a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors</a>
+
+This is augmented by the following document that describes newer features (started 2020):
+
++ <a href="{{site.baseurl}}/help/documentation/usrguide3.pdf"
+   target="_blank"
+   onclick="vgwPixelCall('');">LaTeX2e for authors --- new features</a>
+
+
 
 For more extensive introductory documentation take a look at the [links to
 contributed documentation]({{site.baseurl}}/help/links/) that have their own page.
@@ -97,6 +106,30 @@ More advanced documentation about core LaTeX, which is available via the net inc
      onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">The LaTeX3
      Project</a>
 
+### Documentation of the new hook management
+
+The hook management introduced in 2020 is largely intended for package developers. However, most of the available hooks can also be useful for document authors. The documentation is currently split across several documents:
+
++ <a href="{{site.baseurl}}/help/documentation/lthooks-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('');">Overview of LaTeX's hook management and core hooks</a>
++ <a href="{{site.baseurl}}/help/documentation/ltcmdhook-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('');">Generic hooks for document-level commands</a>
++ <a href="{{site.baseurl}}/help/documentation/ltfilehook-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('');">Hooks available when reading files</a>
++ <a href="{{site.baseurl}}/help/documentation/ltshipout-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('');">Hooks available when writing pages</a> (e.g., for background pictures, etc.)
++ <a href="{{site.baseurl}}/help/documentation/ltpara-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('');">Hooks available when processing paragraphs</a>
+
+
+
+
+
 ### Typesetting complex mathematics
 
 Specifically targeting the typesetting of mathematics is:
@@ -106,7 +139,7 @@ Specifically targeting the typesetting of mathematics is:
      onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">User's Guide for the amsmath Package (Version 2.1)</a>
 
 
-### Japanese translations
+### Japanese translations of documentation
 
 Yukitoshi FUJIMURA kindly translated two of the above documents to the Japanese language. These are
 
@@ -157,7 +190,7 @@ their usage within the kernel is
 
 + <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2020-10-01 (660+ pages)</a>
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2021-06-01 (1000+ pages)</a>
 
 As a companion document Martin Scharrer compiled a useful reference
 list with links back into the previous document if both are stored in

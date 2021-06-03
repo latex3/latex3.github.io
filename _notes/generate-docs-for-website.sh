@@ -1,75 +1,69 @@
 
-SRCDIR=../../latex2e
+## needs to be run from root of repository!
 
-mkdir tmpdir
+CURDIR=`pwd`
+SRCDIR=$CURDIR/../latex2e
 
-cp $SRCDIR/base/*dtx tmpdir
-cp $SRCDIR/support/ltxdoc.cfg tmpdir
+echo $CURDIR
 
-cd tmpdir
+cd $SRCDIR/base
 
-rm -f  source2e.cls source2e.ind *.aux *.toc *.out *.hd
-
-echo pdflatex source2e
-if (pdflatex source2e > /dev/null) 
-then
-  echo "makeindex -s source2e.ist source2e.idx"
-  makeindex -s source2e.ist source2e.idx > /dev/null 2> /dev/null
-  echo "makeindex -s gglo.ist -o source2e.gls source2e.glo"
-  makeindex -s gglo.ist -o source2e.gls source2e.glo > /dev/null 2> /dev/null
-  echo "pdflatex source2e"
-  pdflatex source2e >/dev/null 
-  echo "pdflatex source2e"
-  pdflatex source2e >/dev/null
-else
-  echo "!!! LaTeX ERROR: source2e. (See source2e.log.)"
-  exit 1
-fi
+if test $? -gt 0 ; then  cd $CURDIR; echo "cd failed" ;exit ; fi
 
 
-echo "\batchmode"                                       >> ltxdoc.cfg
+l3build doc
 
-# The next four lines produce full indexes and change logs
-# you may not want those.
-echo "\AtBeginDocument{\RecordChanges}"                 >> ltxdoc.cfg
-echo "\AtEndDocument{\PrintChanges}"                    >> ltxdoc.cfg
-echo "\AtBeginDocument{\CodelineIndex\EnableCrossrefs}" >> ltxdoc.cfg
-echo "\AtEndDocument{\PrintIndex}"                      >> ltxdoc.cfg
-
-# If you do not want any code listings, just documentation, then instead
-# of the above four lines, uncomment the following:
-# echo "\AtBeginDocument{\OnlyDescription}"                >> ltxdoc.cfg
+if test $? -gt 0 ; then  cd $CURDIR; echo "generate doc failed" ;exit ; fi
 
 
-for i in classes.dtx  inputenc.dtx utf8ienc.dtx latexrelease.dtx 
-do
-  B=`basename $i .dtx`
 
-  echo pdflatex $i
-  if (pdflatex $i  >/dev/null) 
-  then
-    echo pdflatex $i
-    pdflatex $i > /dev/null
-    echo makeindex -s gind.ist $B.idx
-    makeindex -s gind.ist $B.idx > /dev/null 2> /dev/null
-    echo makeindex -s gglo.ist -o $B.gls $B.glo
-    makeindex -s gglo.ist -o $B.gls $B.glo > /dev/null 2> /dev/null
-    echo pdflatex $i
-    pdflatex $i > /dev/null
-  else
-    echo "!!! LaTeX ERROR: $i. (See $B.log.)"
-    exit 1
-  fi
+cd $SRCDIR/build/doc
 
-done
+ls *pdf
 
-for i in *pdf
-do
-  echo cp $i ../../help/documentation
-  cp $i ../../help/documentation
-done
+cp cfgguide.pdf classes.pdf clsguide.pdf cyrguide.pdf encguide.pdf fntguide.pdf \
+   latexchanges.pdf latexrelease.pdf ltx3info.pdf modguide.pdf source2e.pdf \
+   usrguide.pdf usrguide.tex usrguide3.pdf \
+   $CURDIR/help/documentation/
 
-cd ..
+if test $? -gt 0 ; then  cd $CURDIR; echo "copy docs failed" ;exit ; fi
 
-rm -r tmpdir
+
+cp ltcmdhooks-doc.pdf lthooks-doc.pdf ltshipout-doc.pdf ltfilehook-doc.pdf ltpara-doc.pdf \
+   $CURDIR/help/documentation/
+
+if test $? -gt 0 ; then  cd $CURDIR; echo "copy hook docs failed" ;exit ; fi
+
+
+cp ltnews*.pdf \
+   $CURDIR/news/latex2e-news/
+
+if test $? -gt 0 ; then  cd $CURDIR; echo "copy news failed" ; exit ; fi
+
+
+
+########## amsmath documentation
+
+cd $SRCDIR/required/amsmath
+
+l3build doc
+
+if test $? -gt 0 ; then  cd $CURDIR; echo "generate ams doc failed" ;exit ; fi
+
+cd $SRCDIR/build/doc
+
+cp amsldoc.pdf \
+   $CURDIR/help/documentation/
+
+
+if test $? -gt 0 ; then  cd $CURDIR; echo "copy ams doc failed" ; exit ; fi
+
+
+
+
+
+
+cd $CURDIR
+
+exit
 

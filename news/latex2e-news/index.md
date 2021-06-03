@@ -24,6 +24,7 @@ In addition the newletters are individually available below.
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2021/06/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews33.pdf" target="_blank" onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">LaTeX2e News Issue 33</a> | Hooks for paragraphs and generic hooks for commands; improved copy & paste; file handling improvements; NFSS improvements; various smaller improvements and bug fixes|
 | 2020/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">LaTeX2e News Issue 32</a> | New hook management for LaTeX; `xparse` now part of the kernel; various smaller improvements and bug fixes|
 | 2020/02/02 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews31.pdf" target="_blank" onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">LaTeX2e News Issue 31</a> | L3 programming layer now part of the 2e kernel; improvements and new features for LaTeX font selection (NFSS); various bug fixes|
 | 2019/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews30.pdf" target="_blank" onclick="vgwPixelCall('7000e177ed02498cb64066adbedb6d81');">LaTeX2e News Issue 30</a> |  LaTeX development formats available; Unicode now allowed in labels, file names and other places; improvements to `filecontents`, robustify many commands; further changes to `base`, `tools`, and `amsmath`|

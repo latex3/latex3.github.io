@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Jun 2021 01:04:50 +0200</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 01:04:50 +0200</lastBuildDate>
+    <pubDate>Thu, 03 Jun 2021 12:44:27 +0200</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 12:44:27 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -66,14 +66,14 @@ without touching or updating package code.&lt;/p&gt;
 
 &lt;p&gt;There are many other enhancements and corrections that we
 documented in the ltnews article for this release (and a few very
-minor ones that only made it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt;file). The most
+minor ones that only made it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; file). The most
 important ones from a user perspective are:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Further improvements of file name parsing; in particular
 we made the parsing much faster again (it got a little slow with
 the functional enhancements we introduced in the last releases)&lt;/li&gt;
-  &lt;li&gt;Better handlling of font series and font shape changes&lt;/li&gt;
+  &lt;li&gt;Better handling of font series and font shape changes&lt;/li&gt;
   &lt;li&gt;Improved copy &amp;amp; paste from documents produced with pdfTeX&lt;/li&gt;
 &lt;/ul&gt;
 
