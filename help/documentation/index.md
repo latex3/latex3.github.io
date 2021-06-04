@@ -113,7 +113,7 @@ The hook management introduced in 2020 is largely intended for package developer
 + <a href="{{site.baseurl}}/help/documentation/lthooks-doc.pdf"
      target="_blank"
      onclick="vgwPixelCall('78721ee2481742e58ccc2d8b10baa93e');">Overview of LaTeX's hook management and core hooks --- `lthooks-doc.pdf`</a>
-+ <a href="{{site.baseurl}}/help/documentation/ltcmdhook-doc.pdf"
++ <a href="{{site.baseurl}}/help/documentation/ltcmdhooks-doc.pdf"
      target="_blank"
      onclick="vgwPixelCall('e021195650e74fab825f06d16b1f1e45');">Generic hooks for document-level commands --- `ltcmdhooks-doc.pdf`</a>
 + <a href="{{site.baseurl}}/help/documentation/ltfilehook-doc.pdf"
