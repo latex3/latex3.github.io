@@ -47,7 +47,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 **ISBN-13:** 978-0201529838  
 **Pages:** 288 pages  
 
-There is an [errata file](manual.err) for this book.
+There is an [errata file](lamport-manual.pdf) for this book.
 
 <hr>
 
