@@ -65,11 +65,11 @@
     <small class="meta"><span class="post-date">Sep 23, 2021</span></small>
     <h1 id="the-second-latex-pre-release-for-2021-11-15-is-available-for-testing">The second LaTeX pre-release for 2021-11-15 is available for testing</h1>
 
-<p>A few days ago we submitted a new LaTeX development format to CTAN and by now this should be available to all users using MiKTeX or TeX Live (on any operating system).</p>
+<p>A few days ago we submitted a new LaTeX development format to CTAN and by now it should be available to all users using MiKTeX or TeX Live (on any operating system).</p>
 
 <h2 id="main-features-of-the-second-pre-release-for-2021-11-15">Main features of the second pre-release for 2021-11-15</h2>
 
-<p>The first pre-release was just a copy of the main release for 20021-06-01 in order to avoid that people using the development release regularly get an old format.</p>
+<p>The first pre-release was just a copy of the main release for 2021-06-01 in order to avoid that people using the development release regularly get an old format.</p>
 
 <p>The second pre-release now provides some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.</p>
 
@@ -81,7 +81,7 @@
       <li>Providing <code class="language-plaintext highlighter-rouge">\ActivateGenericHook</code>;</li>
       <li>Command to clear “next” hook code before invocation;</li>
       <li>Cleanup after a one-time hook;</li>
-      <li>Changed the behavior of `\RemoveFromHook</li>
+      <li>Changed the behavior of <code class="language-plaintext highlighter-rouge">\RemoveFromHook</code>;</li>
       <li>Standardizing generic hook names;</li>
     </ul>
   </li>
@@ -89,8 +89,8 @@
     <ul>
       <li><code class="language-plaintext highlighter-rouge">\tracinglostchars</code> got a new default</li>
       <li><code class="language-plaintext highlighter-rouge">\PackageNote</code> was added to show notes that aren’t “warnings” on the terminal</li>
-      <li><code class="language-plaintext highlighter-rouge">\ShowCommand</code> to show code of robust commands</li>
-      <li><code class="language-plaintext highlighter-rouge">\NewCommandCopy</code> to safely copy robust and fragile commands to new names</li>
+      <li><code class="language-plaintext highlighter-rouge">\ShowCommand</code> got extended to show commands defined with <code class="language-plaintext highlighter-rouge">ltcmd</code> (former <code class="language-plaintext highlighter-rouge">xparse</code>)</li>
+      <li><code class="language-plaintext highlighter-rouge">\NewCommandCopy</code> got extended as well to safely these commands to new names</li>
       <li><code class="language-plaintext highlighter-rouge">alt</code> key for <code class="language-plaintext highlighter-rouge">\includegraphics</code> (anticipating future development)</li>
     </ul>
   </li>
@@ -100,15 +100,15 @@
 
 <h3 id="improving-the-hook-management-further">Improving the hook management further</h3>
 
-<p>The breaking change mentioned about involves the name of generic file hooks. They used a special naming convention in the past and we now changed them to use the same structure as all other generic hooks, that is, their “variable” part (i.e., the file or package name) is always in second position. For example, to execute some code after the array package was loaded you now say</p>
+<p>The breaking change mentioned above involves the name of generic file hooks. They used a special naming convention in the past and we now changed them to use the same structure as all other generic hooks, that is, their “variable” part (i.e., the file or package name) is always in the second position. For example, to execute some code after the array package was loaded you now say</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\AddToHook{package/array/after}{...code...}
 </code></pre></div></div>
 <p>just like you would set up code to be executed after each tabular environment with</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\AddToHook{env/tabular/after}{...code...}
 </code></pre></div></div>
-<p>For now the old syntax <code class="language-plaintext highlighter-rouge">package/after/array</code> is still supported, thus packages making use of this functionality have time to adopt to the new convention once the main release is out and distributed.</p>
+<p>For now the old syntax <code class="language-plaintext highlighter-rouge">package/after/array</code> is still supported, thus packages making use of this functionality have time to adapt to the new convention once the main release is out and distributed.</p>
 
-<p>Other improvements of the hook management (e.g., the functionality to have packages implement generic hooks) are discussed in <a href="/news/latex2e-news/ltnews34.pdf">LaTeX2e News Issue 34</a> and in the relevant kernel documentation.</p>
+<p>Other improvements to the hook management (e.g., the functionality to have packages implement generic hooks) are discussed in <a href="/news/latex2e-news/ltnews34.pdf">LaTeX2e News Issue 34</a> and in the relevant kernel documentation.</p>
 
 <h2 id="outlook">Outlook</h2>
 
