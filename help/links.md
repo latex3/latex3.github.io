@@ -25,7 +25,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 <hr>
 
 ## Contributed Documentation and articles on LaTeX
-+ [TeXdoc Online - TeX and LaTeX Documentation](http://www.texdoc.net/)  
++ [TeXdoc Online - TeX and LaTeX Documentation](https://texdoc.org/)  
   Dedicated server for querying and browsing manuals, guides and package documentation. 
 + [LaTeX: an introduction](http://www.techscribe.co.uk/ta/latex-introduction.pdf)  
   This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was published in 'Communicator', Spring 2006.
@@ -65,6 +65,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   
 ## Tutorials
 
++ [An interactive LaTeX course for beginners](https://www.learnlatex.org/)
+  This course with 16 main lessons is available in multiple languages. It offers interactive exercises, allowing you to run LaTeX in the browser without having to install it upfront. Highly recommended for beginners.
 + [Video tutorials on various LaTeX topics](http://www.youtube.com/ShareLaTeX)  
   This channel shows a growing collection of high-quality video tutorials from the folks from ShareLaTeX (an online editor for LaTeX) on different aspects of LaTeX, currently a beginners series, a series on Thesis writing, a series on beamer, and one on TikZ. The tutorials are not specific to the editor, so they are worth watching by anybody who wants to get a first impression on a particular topic. Of course, video tutorials can never address all aspects, but these have enough detail to get you started.
 + [Getting to grips with LaTeX](http://www.andy-roberts.net/misc/latex/)  
