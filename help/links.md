@@ -71,8 +71,9 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   This channel shows a growing collection of high-quality video tutorials from the folks from ShareLaTeX (an online editor for LaTeX) on different aspects of LaTeX, currently a beginners series, a series on Thesis writing, a series on beamer, and one on TikZ. The tutorials are not specific to the editor, so they are worth watching by anybody who wants to get a first impression on a particular topic. Of course, video tutorials can never address all aspects, but these have enough detail to get you started.
 + [Getting to grips with LaTeX](http://www.andy-roberts.net/misc/latex/)  
   A collection of tutorials meant to get people going with LaTeX, by Andrew Roberts.
-+ [Using Imported Graphics in LaTeX2e](ftp://ctan.tug.org/tex-archive/info/epslatex.pdf)  
++ [Using Imported Graphics in LaTeX2e](https://www.ctan.org/pkg/epslatex)  
   This article by Keith Reckdahl shows you how to do (almost) anything with graphics: side-by-side, rotated, etc.
+  There is also a [French translation](https://www.ctan.org/pkg/fepslatex) available.
 
 ## User Groups
 
