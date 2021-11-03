@@ -92,7 +92,7 @@ People currently involved in the LaTeX project are (in more or less chronologica
     <img src="jonas-jared-jacek.jpg" alt="Jonas Jacek">
     <h2>Jonas Jared Jacek <br><span class="role">Web Development, Webmaster</span></h2>
     <ul class="team">
-      <li><a href="https://www.jonas.me/"><span class="fa fa-external-link-square"></span>https://www.jonas.me/</a></li>
+      <li><a href="https://www.j15k.com/"><span class="fa fa-external-link-square"></span>https://www.j15k.com/</a></li>
     </ul>
   </li>
   <li id="enrico-gregorio">
