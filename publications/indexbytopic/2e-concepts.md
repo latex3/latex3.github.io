@@ -2,10 +2,15 @@
 layout: page
 menu: Publications
 title: "Articles ordered by topic: LaTeX2e Concepts and Design"
-description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations ordered by major topics."
+description: "Selection of links to PDF versions of various articles published by the LaTeX project and links to videos of their conference presentations ordered by major topics."
 ---
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX2e Concepts and Design
+
+
+
+{% include _papers/paper_2021-JAW-TUB-tb130wright-goodbad.md  %}
+{% include _papers/paper_2021-JAW-TUB-tb130wright-newdoccmd.md  %}
 
 
 {% include _papers/paper_2019-FMi-TUB-tb125mitt-dev-format.md  %}
