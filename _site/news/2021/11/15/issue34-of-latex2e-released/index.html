@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Final pre-release of LaTeX 2021-11-15 is available for testing</title>
-  <meta name="description" content="Final pre-release of LaTeX 2021-11-15 is available for testing">
+  <title>Fall 2021 LaTeX release available</title>
+  <meta name="description" content="The  Fall 2021 release of LaTeX is available. ltnews34 describes updates and changes made in the new LaTeX release.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,16 +62,23 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Oct 25, 2021</span></small>
-    <h1 id="the-final-latex-pre-release-for-2021-11-15-is-available-for-testing">The final LaTeX pre-release for 2021-11-15 is available for testing</h1>
+    <small class="meta"><span class="post-date">Nov 15, 2021</span></small>
+    <h1 id="the-fall-2021-latex-release-is-available">The Fall 2021 LaTeX release is available</h1>
 
-<p>A few days ago we submitted the final pre-release of the LaTeX format to CTAN and by now it should be available to all users using MiKTeX or TeX Live (on any operating system).</p>
+<p>As we have announced previously, we have shifted the release dates for
+LaTeX slightly, to better align with the yearly release of TeX Live:
+a first release in
+May/June after TeX Live has updated and a second release around November.</p>
 
-<h2 id="main-features-included-in-the-final-pre-release-for-2021-11-15">Main features included in the final pre-release for 2021-11-15</h2>
+<p>The current release does not contain any major new modules, but is focused around consolidation  and improvements of functionality introduced in previous releases.
+In the meantime we are working further on the future production of reliable tagged PDF output (see
+the article <a href="/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf" target="_blank" onclick="vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');">LaTeX
+Tagged PDF — A blueprint for a large project</a> that describes the
+project we are engaged in), which will again take center stage in the Spring release 2022.</p>
 
-<p>The upcoming release does not contain any major new modules, but is focused around consolidation  and improvements of functionality introduced in previous releases. There have been some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.</p>
+<h3 id="hook-management-improvements">Hook management improvements</h3>
 
-<p>The hook management improvements are</p>
+<p>There have been some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.</p>
 
 <ul>
   <li>Standardizing generic hook names;</li>
@@ -81,7 +88,12 @@
   <li>Properly clean up after a one-time hook.</li>
 </ul>
 
-<p>Other notable improvements include</p>
+<h3 id="new-or-improved-commands">New or improved commands</h3>
+
+<p>There are many enhancements and corrections that we
+documented in the ltnews article for this release (and a few very
+minor ones that only made it into the <code class="language-plaintext highlighter-rouge">changes.txt</code> file). The most
+important aspects from a user perspective are:</p>
 
 <ul>
   <li>Extending <code class="language-plaintext highlighter-rouge">\ShowCommand</code> to show commands defined with <code class="language-plaintext highlighter-rouge">\NewDocumentCommand</code> and friends;</li>
@@ -93,31 +105,20 @@
   <li>Altering the default for <code class="language-plaintext highlighter-rouge">\tracinglostchars</code>.</li>
 </ul>
 
-<p>There are also a number of smaller enhancements and some bug fixes as usual. The details are discussed in the draft publication of <a href="/news/latex2e-news/ltnews34.pdf" target="_blank" onclick="vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');">“LaTeX2e
-News Issue 34”</a>. A full list is given in the <code class="language-plaintext highlighter-rouge">changes.txt</code> files that are part of the distribution.</p>
+<p>But read the whole ltnews article because there may be other gems that
+are useful for you.</p>
 
-<h2 id="outlook">Outlook</h2>
+<h4 id="where-to-learn-more-">Where to learn more …</h4>
 
-<p>We expect to ship the final release (with the same code base as this pre-release) as planned around mid November.</p>
+<p>The new features and most of the important bug fixes made in this release
+are documented in <a href="/news/latex2e-news/ltnews34.pdf" target="_blank" onclick="vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');">“LaTeX2e
+News Issue 34”</a>. This document can be found on the <a href="/news/latex2e-news/">LaTeX2e news
+page</a> where you will also find
+release information for earlier LaTeX releases.</p>
 
-<h2 id="please-help-with-the-testing">Please help with the testing</h2>
+<p>Happy LaTeXing
+— Frank</p>
 
-<p>We are issuing this final pre-release now in the hope that you will help us by making sure that all the enhancements and fixes we have provided are safe and that they do not have any undesired side effects, so please help with the testing if you can.</p>
-
-<p>This development format allows you to test the upcoming LaTeX release scheduled for 2021-11-15 with your documents or packages. Such testing is particularly important for package maintainers to verify that changes to the core LaTeX haven’t introduced incompatibilities with existing code. We try to identify any such problems beforehand but such an undertaking is necessarily incomplete, which is why we are asking for user testing.</p>
-
-<p>Besides developers, we also ask ordinary users to try out the new release, because the more people that test the new format, the higher the chances that any hidden problems are identified before the final release hits the streets.</p>
-
-<p>Processing your documents with the pre-release is straightforward. All you have to do is to replace the invocation command by appending <code class="language-plaintext highlighter-rouge">-dev</code> to the executable, e.g., on the command line you would run</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-</code></pre></div></div>
-
-<p>instead of using <code class="language-plaintext highlighter-rouge">pdflatex</code>, <code class="language-plaintext highlighter-rouge">lualatex</code> or <code class="language-plaintext highlighter-rouge">xelatex</code>. If you use an integrated editing environment, then it depends on the system  how to configure it to use an alternative format; but in any case the necessary modification should be straightforward.</p>
-
-<p>Enjoy — Frank</p>
-
-<p><img src="https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332" width="1" height="1" alt="" /></p>
 
   </article>
 </div>

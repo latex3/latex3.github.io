@@ -18,13 +18,14 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 </div>
 
 
+
 A document with all available issues bundled together in their historical order is
 <a href="{{site.baseurl}}/news/latex2e-news/ltnews.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">`ltnews.pdf`</a>.
 In addition the newletters are individually available below. 
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
-| 2021/11/15 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews34.pdf" target="_blank" onclick="vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');">LaTeX2e News Issue 34</a> | Updates to hook management system; new and improved commands; code improvements & bug fixes in kernel `graphics`, `tools`, and `amsmath`|
+| 2021/11/15 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews34.pdf" target="_blank" onclick="vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');">LaTeX2e News Issue 34</a> | Updates to hook management system; new and improved commands; code improvements & bug fixes in kernel `graphics`, `tools`, and `amsmath`|
 | 2021/06/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews33.pdf" target="_blank" onclick="vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');">LaTeX2e News Issue 33</a> | Hooks for paragraphs and generic hooks for commands; improved copy & paste; file handling improvements; NFSS improvements; various smaller improvements and bug fixes|
 | 2020/10/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews32.pdf" target="_blank" onclick="vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');">LaTeX2e News Issue 32</a> | New hook management for LaTeX; `xparse` now part of the kernel; various smaller improvements and bug fixes|
 | 2020/02/02 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews31.pdf" target="_blank" onclick="vgwPixelCall('ae10a427f62847639c5aadcc05cea97b');">LaTeX2e News Issue 31</a> | L3 programming layer now part of the 2e kernel; improvements and new features for LaTeX font selection (NFSS); various bug fixes|
