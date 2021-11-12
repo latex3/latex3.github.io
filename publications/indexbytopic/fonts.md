@@ -8,6 +8,15 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Fonts in text and math
 
 
+<hr class="conference-start">
+
+## From the TUG Online Conference 2021
+
+{% include _papers/paper_2021-MKr-TUG-talk.md  %}
+
+<hr class="conference-end">
+
+
 {% include _papers/paper_2020-UFi-TUB-tb127fischer-bangla.md  %}
 
 <hr class="conference-start">

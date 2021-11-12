@@ -13,6 +13,7 @@
 
 {% include _papers/paper_2021-FMi-TUG-talk.md  %}
 {% include _papers/paper_2021-JAW-TUG-talk.md  %}
+{% include _papers/paper_2021-MKr-TUG-talk.md  %}
 
 <hr class="conference-end">
 
