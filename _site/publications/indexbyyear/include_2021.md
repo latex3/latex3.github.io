@@ -11,7 +11,8 @@
 
 ## TUG Conference 2021 (Online conference)
 
-Videos to be added when available.
+{% include _papers/paper_2021-FMi-TUG-talk.md  %}
+{% include _papers/paper_2021-JAW-TUG-talk.md  %}
 
 <hr class="conference-end">
 

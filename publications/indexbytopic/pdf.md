@@ -8,10 +8,19 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): PDF, Tagging, Accessibility
 
 
+<hr class="conference-start">
+
+## From the TUG Conference 2021 (Online conference)
+
+{% include _papers/paper_2021-FMi-TUG-talk.md  %}
+
+<hr class="conference-end">
+
+
 {% include _papers/paper_2021-UFi-TUB-tb131fischer-tagpdf.md  %}
 
-{% include _papers/paper_2020-FMi-TUB-tb129mitt-tagpdf.md  %}
 
+{% include _papers/paper_2020-FMi-TUB-tb129mitt-tagpdf.md  %}
 {% include _papers/paper_2020-FMi-UFi-CAR-tagged-pdf-feasibility.md  %}
 
 
