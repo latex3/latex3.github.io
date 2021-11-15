@@ -106,6 +106,12 @@ More advanced documentation about core LaTeX, which is available via the net inc
      onclick="vgwPixelCall('51fc82f5083e42e49d51d818c781d70b');">The LaTeX3
      Project</a>
 
+The LaTeX3 programming layer (which is part of the LaTeX format) is documented in
++ <a href="https://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer interface documentation</a>
+
+
 ### Documentation of the new hook management
 
 The hook management introduced in 2020 is largely intended for package developers. However, most of the available hooks can also be useful for document authors. The documentation is currently split across several documents:
@@ -174,31 +180,36 @@ Changes made to the LaTeX kernel or to core packages maintained by the
 LaTeX team are discussed in some detail in the
 <a href="{{site.baseurl}}/news/latex2e-news/">LaTeX News Newsletters</a>
 that come as part of each release.
-A summary sorted by release is given in the following document:
-+ <a href="{{site.baseurl}}/help/documentation/latexchanges.pdf"
-     target="_blank"
-     onclick="vgwPixelCall('a7c07774d9444aa58b6cf007a1a8d349');">Changes to the LaTeX2ε format since 2014</a>
+
+A document with all available issues bundled together in their historical order is
+<a href="{{site.baseurl}}/news/latex2e-news/ltnews.pdf" target="_blank" onclick="vgwPixelCall('3f94d8cd27314ca6a11bdb1d1dcdb6c5');">`ltnews.pdf`</a>.
 
 
 ### Source code documentation
 
 The full documentation of the source code with all commands and their
 implementation can be obtained by processing `source2e.tex`
-distributed as part of the LaTeX2e distribution. A compiled version (from a recent release)
+distributed as part of the LaTeX2e distribution. A compiled version (from the current release)
 with a list of all major changes and an index of all commands and
 their usage within the kernel is
 
-+ <a href="{{site.baseurl}}/help/documentation/source2e.pdf"
++ <a href="http://mirrors.ctan.org/macros/latex/base/source2e.pdf"
      target="_blank"
-     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources, release 2021-06-01 (1000+ pages)</a>
+     onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources (1000+ pages)</a>
++ <a href="http://mirrors.ctan.org/macros/latex/contrib/l3kernel/source3.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer sources (1000+ pages)</a>
+     
 
 As a companion document Martin Scharrer compiled a useful reference
-list with links back into the previous document if both are stored in
+list with links back into the 2e source document if both are stored in
 the same directory:
 
 + <a href="http://mirrors.ctan.org/info/macros2e/macros2e.pdf"
      target="_blank"
      onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">List of internal LaTeX2e Macros useful to Package Authors</a>
+
+
 
 For the implementation of the standard classes `article`, `report`,
 and `book` there also exists a document that contains the complete sources
