@@ -1,6 +1,6 @@
 
 
-### [Any colo(u)r you like]()
+### Any colo(u)r you like
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Video of the TUG 2021 online conference
@@ -10,7 +10,7 @@
 >
 > As part of wider efforts to enhance the LaTeX kernel via expl3 additions, recent work on the l3color package has brought many of these concepts into a single set of interfaces. That means not only copying existing ideas but also ensuring maximal functionality. In my talk, I will explore the work on l3color, highlighting where it can go beyond the predecessor packages in ease of use and functionality.
 
-Video to be added when available.
+**Video to be added when available.**
 
 
 ***

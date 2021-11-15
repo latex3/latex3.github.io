@@ -1,6 +1,6 @@
 
 
-### [Taming the beast — Advances in paragraph tagging with pdfTeX and XeTeX]()
+### Taming the beast — Advances in paragraph tagging with pdfTeX and XeTeX
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Video of the TUG 2021 online conference
@@ -10,7 +10,7 @@
 >
 >This work is part of our multi-year journey to gradually modernize LaTeX so that it can automatically produce high-quality tagged and “accessible” PDF without the need to post-process the result of the LaTeX run.
 
-Video to be added when available.
+**Video to be added when available.**
 
 ***
 
