@@ -12,4 +12,3 @@
 > I will show how to use these packages and the benefits they will bring for the average user, while also mentioning resulting incompatibilities and required changes in documents.
 
 ***
-
