@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/paper_2021-JAW-TUB-tb130wright-newdoccmd.pdf">`\NewDocumentCommand` versus `\newcommand` versus . . .</a>
+### <a href="{{site.baseurl}}/publications/2021-JAW-TUB-tb130wright-newdoccmd.pdf">`\NewDocumentCommand` versus `\newcommand` versus . . .</a>
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#jospeh-wright)
 + TUGboat 42:1, 2021 
