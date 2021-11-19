@@ -1,6 +1,4 @@
-\def\readRCS$#1 #2 #3 #4 #5${\def\erratafiledate{#4}}
-\readRCS
-$Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
+\newcommand\erratafiledate{2021-11-19}
 
 \def\comando#1{\texttt{\string#1}}
 
@@ -14,16 +12,16 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 %
 % The current version of this file can be found at:
 %
-%    http://www.latex-project.org/guides/books.html
+%    https://www.latex-project.org/help/books/
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{filecontents}{ttcterrata.cls}
 %%
-%% Copyright (C) 1997,2004,2005,2007 Frank Mittelbach
-%% This class file is licenced under LPPL latest version; 
-%% see http://www.latex-project.org/lppl
+%% Copyright (C) 1997-2021 Frank Mittelbach
+%% This class file is licenced under LPPL latest version;
+%% see https://www.latex-project.org/lppl
 %
 %
 % It sets up a few commands used to format the errata entries for books in the
@@ -32,14 +30,16 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 %    Tools and Techniques for Computer Typesetting
 %
 % hence the name. However, anybody who likes to use it is free to apply it for
-% errata files of other books. 
+% errata files of other books.
 %
 % Changes:
 %
 % v1.0a - changed name from errata.cls to ttcterrata.cls
+% v1.0b - added \arraybackslash
+% v1.0c - and took it out again and used \tabularnewline instead
 
 \ProvidesClass{ttcterrata}
-  [2007/11/10 v1.0a Mini class for errata files; subject to change (FMi)]
+  [2021/08/03 v1.0c Mini class for errata files; subject to change (FMi)]
 
 \LoadClass{article}
 
@@ -64,7 +64,9 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
   \setbox\@tempboxa\vbox\bgroup
      \let\endgobble\egroup
      \let\hideamp\relax
-     \let\\\relax\let\par\@@par}
+     \let\\\relax
+     \let\tabularnewline\relax
+     \let\par\@@par}
 
 \newcommand*\hideamp{&}
 
@@ -141,7 +143,7 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
      \typeout{Ignoring entry #1 #2 #3 #4}%
      \expandafter\gobbleerrata
    \fi
-   \hideamp \\%
+   \hideamp \tabularnewline
    \displayrevisionfix{#1}{#5}
    \hideamp #2 \hideamp (\textsf{#3}) \hideamp
 }
@@ -155,15 +157,15 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
      \typeout{Ignoring entry #1 #2 #3 #4}%
      \expandafter\gobbleerrata
    \fi
-   \hideamp \\%
+   \hideamp \tabularnewline
    \fbox{\bfseries !!}\hfill
    \displayrevisionfix{#1}{#5}
    \hideamp #2 \hideamp (\textsf{#3}) \hideamp
 }
 
 \newcommand\CHAPTER[1]{\endgobble
-  &\\[4pt]%
-  \multicolumn{4}{l}{\framebox[10cm][l]{\textbf{\normalsize\strut#1}}} \\}
+  &\tabularnewline[4pt]%
+  \multicolumn{4}{l}{\framebox[10cm][l]{\textbf{\normalsize\strut#1}}} \tabularnewline}
 
 \newenvironment{erratalist}
   {\begin{longtable}{r>{\raggedright}p{2cm}l>{\raggedright}p{10cm}l}}
@@ -191,7 +193,7 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 
 % some special shortcuts overwriting existing commands:
 
-\let\u\underline 
+\let\u\underline
 \renewcommand\>{$\to$}
 
 %%% some code suggested by Thorsten Hansen to count the number of
@@ -201,7 +203,7 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 \def\count@contributors#1/#2/#3\@nil{
    \@ifundefined{c@#1}{\newcounter{#1}}{}\stepcounter{#1}%
 %%%   also count secondary:
-%%%   \@ifundefined{c@#2}{\newcounter{#2}}{}\stepcounter{#2}% 
+%%%   \@ifundefined{c@#2}{\newcounter{#2}}{}\stepcounter{#2}%
 }
 
 \renewcommand\erroronpage[5]{%
@@ -214,11 +216,11 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
      \typeout{Ignoring entry #1 #2 #3 #4}%
      \expandafter\gobbleerrata
    \fi
-   \hideamp \\%
+   \hideamp \tabularnewline
    \displayrevisionfix{#1}{#5}
    \hideamp #2 \hideamp (\textsf{#3}) \hideamp
 }
- 
+
 \renewcommand\seriouserroronpage[5]{%
    \count@contributors#3/secondary/\@nil
    \endgobble
@@ -229,14 +231,14 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
      \typeout{Ignoring entry #1 #2 #3 #4}%
      \expandafter\gobbleerrata
    \fi
-   \hideamp \\%
+   \hideamp \tabularnewline
    \fbox{\bfseries !!}\hfill
    \displayrevisionfix{#1}{#5}
    \hideamp #2 \hideamp (\textsf{#3}) \hideamp
 }
 
 \renewcommand\contributor[2]{\makebox[1cm][l]{%
-  \sffamily#1} #2\@ifundefined{c@#1}{}{ (\arabic{#1})}\par} 
+  \sffamily#1} #2\@ifundefined{c@#1}{}{ (\arabic{#1})}\par}
 
 \end{filecontents}
 
@@ -244,12 +246,12 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 \begin{filecontents}{\jobname.cfg}
 %
 %
-% Configuration file for the errata listing of 
+% Configuration file for the errata listing of
 %
 %  The LaTeX Companion, Second Edition
 %
 %
-% \erratastartdate 
+% \erratastartdate
 %
 % Specifies the date from which on errata entries should be listed.
 %
@@ -271,8 +273,8 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 %    listing.
 %
 % The default below ensures that all entries relevant to the x-th
-%    printing are typeset. 
-%    
+%    printing are typeset.
+%
 %
 
 \renewcommand\myprinting{1}
@@ -338,7 +340,7 @@ $Id: tlc2.err 207 2013-07-12 11:04:05Z mittelba $
 
 This file (\texttt{\jobname.err}) can be found as part of the \LaTeX{}
 distribution and its latest version is maintained on the \LaTeX{}
-project site at \texttt{http://www.latex-project.org/guides/\jobname.err}
+project site at \texttt{https://www.latex-project.org/help/books/\jobname.err}
 where you will also find extracts of the book.
 
 The first column in the table shows the page number of the errata
@@ -357,7 +359,7 @@ you own by changing the configuration in the file \texttt{\jobname.cfg}.
 \end{center}
 
 Any mistake found and reported is a gain for all readers of our book.
-For this reason Addison-Wesley and the authors offer a prize (for 6 
+For this reason Addison-Wesley and the authors offer a prize (for 6
 periods) to the eligible person who finds the largest
 number of bugs during that period (in case of a draw a random choice
 will be made between all those with the largest number of findings).
@@ -372,7 +374,7 @@ is, no boxed sets or multiple volume offers).
 As usual, the authors and publisher reserve the right to make various
 decisions such as whether a reported feature is an error for
 competitive purposes or whether similar features count as a single or
-multiple errors.  --- 
+multiple errors.  ---
 Good luck!
 
 \begin{center}
@@ -404,9 +406,9 @@ Contest period ends & Winner \\[4pt]
    To help you in assessing this errata document we have placed
    exclamation marks in front of each entry that we consider essential
    for correctly understanding the book contents.
-   
-\erroronpage{general}{}{FMi}{2004/05/14}{} 
-   
+
+\erroronpage{general}{}{FMi}{2004/05/14}{}
+
    Due to the printing process there may be small alignment problems
    between blue and black text on some pages. These can vary from book
    to book depending on how the paper was handled between print
@@ -414,14 +416,14 @@ Contest period ends & Winner \\[4pt]
 
 
 
-\erroronpage{general}{}{FMi}{2004/07/28}{} 
+\erroronpage{general}{}{FMi}{2004/07/28}{}
    Slightly updated examples matching the second printing will be made
    available at CTAN: \texttt{info/examples/tlc2}. The book CD will
    have the original examples from the first printing.
 
 
 
-\CHAPTER{Front matter}
+\CHAPTER{Front matter} 
 
 \erroronpage{iv}{bottom}{FMi}{2004/04/23}{2}
    Some updates indicating second printing (with corrections)
@@ -440,7 +442,7 @@ Contest period ends & Winner \\[4pt]
    Each time a space is missing between package names in parentheses.
 
 \erroronpage{xxvii}{para 1, l.-2}{THa}{2004/06/21}{2}
-   Add: ``Thorsten Hansen (\textsf{bibunits}\u{, \textsf{multibib}}) 
+   Add: ``Thorsten Hansen (\textsf{bibunits}\u{, \textsf{multibib}})
 
 \erroronpage{xxvii}{para 4, l.2}{NBe}{2004/04/23}{2}
    Replace ``Wai Wing'' with ``Wai Wong'' (very sorry for this typo).
@@ -448,7 +450,7 @@ Contest period ends & Winner \\[4pt]
 \erroronpage{xxvii}{para 4, l.2}{MHCL/CAR}{2004/06/09}{2}
    Kai Tek airport is correctly named Kai Tak airport but the photo
    was actually taken at Hong Kong International Airport
-   
+
 \erroronpage{xxvii}{after para 4}{FMi}{2004/06/09}{2}
   Add following paragraph:
 ``Any mistake found and reported is a gain for all readers of our
@@ -456,7 +458,7 @@ book. We would therefore like to thank those readers who reported
 any of the mistakes which had been overlooked so far.
 The latest version of the errata file can
 be found on the \LaTeX{} project site at
-\texttt{http://www.latex-project.org/guides/tlc2.err} where you will also
+\texttt{https://www.latex-project.org/help/books/tlc2.err} where you will also
 find an on-line version of the index and other extracts from the book.''
 
 \CHAPTER{Chapter 1}
@@ -599,7 +601,7 @@ the standard classes (file \texttt{classes.dtx}).''
       \thesection\par \centering#2\par}%          %   and number
      \@afterheading                               % prepare indentation handling
      \sectionmark{#1}%                            % add to running header
-     \addvspace{\baselineskip}}                   % space after heading 
+     \addvspace{\baselineskip}}                   % space after heading
 
   \newcommand\sAppendix[1]{%                      % Simplified (starred) form
     {\raggedleft\large\bfseries\appendixname\par \centering#1\par}%
@@ -625,7 +627,7 @@ the standard classes (file \texttt{classes.dtx}).''
 
 % not really a bug but ...
 \erroronpage{35}{para 1}{hajk}{2005/09/29}{}
-        Package fncychap also makes unwanted ``Chapter 0'' heading for 
+        Package fncychap also makes unwanted ``Chapter 0'' heading for
         |\chapter{Preface}| in |\frontmatter| of book.
 
   Comment: I don't really consider this a bug (as it is not surprising
@@ -671,14 +673,14 @@ the standard classes (file \texttt{classes.dtx}).''
    The lines of the ``heading text'' are wrapped at a place different
    from that indicated by the \verb=|<- \@tocrmarg ->|=.
 
-\seriouserroronpage{51}{descr. of 
+\seriouserroronpage{51}{descr. of
                  \texttt{\textbackslash
                  @pnumwidth}}{CBa}{2005/04/04}{4}
    Needs changing with |\renewcommand|!
 
-\seriouserroronpage{51}{descr. of 
+\seriouserroronpage{51}{descr. of
                  \texttt{\textbackslash @tocrmarg}}{HjG/FMi}{2004/05/20}{2}
-   Add additional sentence: 
+   Add additional sentence:
    ``It can be set to a rubber length, which results in the TOC being set
                    unjustified.''
 
@@ -720,7 +722,7 @@ Remove: ``\ldots are limited to three characters, like MS-DOS \u{or Windows}.''
 
  \erroronpage{58}{exa 2-3-8}{CBe}{2004/07/27}{2}
  km2 appears two times in the code and in the printed output;
- it should be \verb=km\textsuperscript={2} in the code 
+ it should be \verb=km\textsuperscript={2} in the code
  and km\textsuperscript{2} in the output.
 
 \erroronpage{62}{l.-11}{HjG}{2004/05/21}{2}
@@ -746,7 +748,7 @@ Remove: ``\ldots are limited to three characters, like MS-DOS \u{or Windows}.''
 
 \erroronpage{75}{para -1, l.2}{CKr}{2004/10/17}{4}
    Change: ``provided the \textit{keys}'' \>
-           ``provided the \textit{key}\u{s}'' 
+           ``provided the \textit{key}\u{s}''
 
 \seriouserroronpage{76}{para -2, l.5--8}{DAr/FMi}{2004/07/24}{2}
 Change marginal to ``{\itshape Unnumbered sections get moving
@@ -760,7 +762,7 @@ moving arguments, \ldots''
    Add:  ``In addition,  no \u{unrelated} |\addcontentsline| command is
 allowed to intervene between heading and label.''
 
-\erroronpage{78}{\S 2.4.5, l.1}{HjG}{2004/05/24}{2} 
+\erroronpage{78}{\S 2.4.5, l.1}{HjG}{2004/05/24}{2}
    Add: ``Sebastian
    Rahtz \u{(with contributions by Heiko Oberdiek and
    David Carlisle)} has developed\ldots''
@@ -773,7 +775,7 @@ allowed to intervene between heading and label.''
 
 \erroronpage{84}{}{DAr}{2004/07/23}{2}
 Change: ``For example, if the current size is \u{\ttfamily\textbackslash Large} then
-\verb=\relsize{-2}= would change to \u{\ttfamily\textbackslash normalsize}\,. 
+\verb=\relsize{-2}= would change to \u{\ttfamily\textbackslash normalsize}\,.
 
 \seriouserroronpage{84}{exa 3-1-7}{FMi}{2004/04/23}{2}
    To avoid extra space in the output, second line should read:\\
@@ -793,9 +795,9 @@ Change: ``For example, if the current size is \u{\ttfamily\textbackslash Large} 
 
 \erroronpage{87}{exa. 3-1-16}{DHL}{2004/06/07}{2}
     The solid band produced by |\xout| is actually supposed to come
-    out as a series of separated ``/'' symbols. With the 
+    out as a series of separated ``/'' symbols. With the
     \texttt{ulem} package used for the first printing that works well
-    for most text fonts, but 
+    for most text fonts, but
     with Times Roman (used in the example) you get the result shown.
     The new package version fixes this defect.
 
@@ -855,7 +857,7 @@ highlighting color\u{ as demonstrated below}:
 
 \erroronpage{117}{para 3, l.3}{CBC}{2004/05/18}{2}
    Tense correction: ``\ldots they did not change when the text font
-   \u{was} modified''. 
+   \u{was} modified''.
 
 \erroronpage{117}{para 3,l.-3}{FMi}{2004/05/31}{2}
     Change: ``your list consist of'' \> ``your list\u{s} consist of''.
@@ -876,11 +878,11 @@ highlighting color\u{ as demonstrated below}:
 \erroronpage{124}{middle para, ll. -3/-2}{HjG}{2004/05/26}{2}
    Missing word: ``It is even possible \u{to} use \ldots''
 
-\iffalse 
+\iffalse
 %% only do if real error on page
 \erroronpage{125}{para 3 of \S 3.2.7, ll.-2/-1}{HjG}{2004/05/26}{}
    Word position: ``\ldots\ whenever |\endnote| or |\endnotemark|
-   \u{is used} without an optional argument.'' 
+   \u{is used} without an optional argument.''
 \fi
 
 \erroronpage{127}{para 3, l.last}{PYu}{2004/07/01}{2}
@@ -943,11 +945,11 @@ similar after the |\\| to prevent an underfull hbox-warning.
 
 \erroronpage{156}{para -1, l.4}{CBC}{2004/05/20}{2}
   Change: ``There is also the possibility to operate'' \> ``It is also
-  possible to operate''. 
+  possible to operate''.
 
 \erroronpage{157}{para 2, l.-4}{CBC}{2004/05/20}{2}
   Change: ``\ldots discussed below) are potentially'' \> ``\ldots
-  discussed below) \u{is} potentially''. 
+  discussed below) \u{is} potentially''.
 
 \erroronpage{158}{para3, l.3}{DHL/FMi}{2004/06/07}{2}
    Change word: ``tiny white rules \u{behind} the lines'' \> ``tiny white
@@ -1044,11 +1046,11 @@ similar after the |\\| to prevent an underfull hbox-warning.
 \CHAPTER{Chapter 4}
 
 \erroronpage{196}{table 4.2}{YiL}{2012/05/07}{}
-  The values shown in the table aren't any quite correct. These days 
-  some of them are calculated depending on the chosen paper size option 
+  The values shown in the table aren't any quite correct. These days
+  some of them are calculated depending on the chosen paper size option
   and so have slightly different values from what is listed in the table.
   The values listed are those that have been used in 2.09 (i.e., they
-  would be fully correct in compatibility mode, that is for documents 
+  would be fully correct in compatibility mode, that is for documents
   starting with |\documentstyle|).
 
 \erroronpage{199}{code block}{UFi}{2004/07/31}{2}
@@ -1076,7 +1078,7 @@ similar after the |\\| to prevent an underfull hbox-warning.
 
 \erroronpage{205}{para 4, l.4}{CAR}{2004/06/06}{2}
    Delete word: ``\ldots taken up by the binding\u{ method}. For
-   example,\ldots'' 
+   example,\ldots''
 
 \erroronpage{205}{para 5, l.2}{CBC}{2004/05/21}{2}
 Omitted word: ``one can \u{perform} the parameter calculations''.
@@ -1101,7 +1103,7 @@ Add a comment line: ``\verb=% syntax: \typearea[<binding corr.>]{<slices>}=''
 \erroronpage{209}{para 1, l.1--2}{BMo}{2004/05/16}{2}
    Replace:
    ``\ldots  and does not leave sufficient space for marginal notes
-   that fall outside the page.''  
+   that fall outside the page.''
    \>
    ``\ldots but does not adjust the size of the marginal boxes to fit
    in the remaining margin.''
@@ -1152,7 +1154,7 @@ Add a comment line: ``\verb=% syntax: \typearea[<binding corr.>]{<slices>}=''
    ``Table~9.2 on page~547 in Section~\u{9.2.1}''
    (or omit section refence completely)
 
-\erroronpage{223}{tab 4.3}{THa}{2004/06/22}{2}  
+\erroronpage{223}{tab 4.3}{THa}{2004/06/22}{2}
   Spurious space after superscript \textsuperscript{a} in footnote.
 
 \erroronpage{226}{para. 5, l.2}{PYu}{2004/07/05}{2}
@@ -1173,7 +1175,7 @@ Add a comment line: ``\verb=% syntax: \typearea[<binding corr.>]{<slices>}=''
 
 \erroronpage{229}{2.-1}{CBC}{2004/05/24}{2}
  Change: ``if the first B-head\ldots would have already been'' \> ``if
- the first B-head\ldots had already been''. 
+ the first B-head\ldots had already been''.
 
 \erroronpage{229}{para -2,l.-2}{HjG}{2005/05/09}{4}
    Replace:
@@ -1194,13 +1196,13 @@ Add a comment line: ``\verb=% syntax: \typearea[<binding corr.>]{<slices>}=''
 
 \seriouserroronpage{234}{First boxed command}{CBC}{2004/05/24}{2}
   Change: ``\verb=\enlargethispage*{=size\verb=}='' \>
-  ``\verb=\enlargethispage{=size\verb=}=''. 
+  ``\verb=\enlargethispage{=size\verb=}=''.
 
 \erroronpage{237}{para 1, l.3}{MKo}{2004/08/06}{2}
  Change: ``\textsf{scrpage}'' \> ``\textsf{scrpage2}''
 
 \erroronpage{237}{para 4, l.3}{DAl}{2005/01/11}{4}
-   Change: ``also works as \u{an} replacement'' \> ``also works as 
+   Change: ``also works as \u{an} replacement'' \> ``also works as
  \u{a} replacement''
 
 \erroronpage{237}{para 5, l.2}{CBe}{2004/07/27}{2}
@@ -1222,7 +1224,7 @@ the \verb|\kill| command.
 \erroronpage{242}{para -2}{DSch/FMi}{2005/09/19}{4}
   Replace para with:
 ``The \texttt{tabular*} environment has an additional width argument that
-specifies the required total width of the table. 
+specifies the required total width of the table.
 It needs stretchable spaces between columns, that have to be added using
 |\extracolsep|  (see page~246).''
 
@@ -1242,7 +1244,7 @@ It needs stretchable spaces between columns, that have to be added using
  environments. If all the cells of the row are smaller than the strut the effect
  is more or less similar to an enlargement of the inter-row space, while if at
  least one cell in the row is larger than the strut no spreading apart takes
- place other than that required by the largest cell. 
+ place other than that required by the largest cell.
 
 
 
@@ -1260,7 +1262,7 @@ It needs stretchable spaces between columns, that have to be added using
  Replace:   ``the sum of its value,
    added to the product
    |\baselineskip|${}\times{}$|\arraystretch}|''
- \> 
+ \>
  `` $|\arraystretch| \times (|\extrarowheight| + 0.7 |\baselineskip|)$''
 
 
@@ -1280,7 +1282,7 @@ It needs stretchable spaces between columns, that have to be added using
  Replace para with: ``A
  common use of |@{}| is to remove the space equal to
 the value of |\tabcolsep| (for \texttt{tabular}) that, by default,
-appears on each side of the table, 
+appears on each side of the table,
 except when the column specification starts or ends in a \verb=|=.''
 
 
@@ -1356,7 +1358,7 @@ Replace with: ``We then continue by
   explaining how you can define and use your own floating environments (Section~6.3.1),
   or, conversely, how captioning commands can  be used  to enter
   information into the list of figures and tables for nonfloating
-  material (Section~6.3.2). 
+  material (Section~6.3.2).
   Then methods for rotating the content of a float are described
   (Section~6.3.3).
 
@@ -1366,7 +1368,7 @@ Replace with: ``We then continue by
 
 \erroronpage{285}{item 3, l.3}{FMi}{2005/02/13}{4}
    Use typewriter:  ``the default is \texttt{12pt}
-   \texttt{plus} \texttt{2pt} \u{\texttt{minus}} 
+   \texttt{plus} \texttt{2pt} \u{\texttt{minus}}
      \texttt{2pt} for 10\,pt''
 
 \erroronpage{285}{item 3, l.3}{HjG}{2005/02/06}{4}
@@ -1388,7 +1390,7 @@ Replace with: ``We then continue by
 ``However, by itself this option
 forces all floats to appear \emph{before} the next section material is
 typeset, since the |\FloatBarrier| prevents a float from a current
-  section from appearing below 
+  section from appearing below
 the start of the new section, even if some material of the current
 section is present on the same page. ''
 
@@ -1474,7 +1476,7 @@ The Runaway error may be explained in a better way: the
 \fi
 
 \erroronpage{309}{para 4, l.3}{DAl}{2005/06/29}{4}
-   Missing comma: ``\ldots you will get a typical ``standard \LaTeX''  
+   Missing comma: ``\ldots you will get a typical ``standard \LaTeX''
    format\u{,} that is, \ldots''
 
 \erroronpage{312}{\texttt{position} option}{JS/FMi}{2005/09/14}{4}
@@ -1482,7 +1484,7 @@ The Runaway error may be explained in a better way: the
 
 \erroronpage{312}{para 2, l.2}{DAl}{2005/06/29}{4}
     Word in wrong position:  ``for example, ``above'' the caption if
-    caption is \u{the} placed at the bottom.'' 
+    caption is \u{the} placed at the bottom.''
  \>
    ``for example, ``above'' the caption if \u{the} caption is \ldots''
 
@@ -1510,9 +1512,9 @@ Remove: ``approach is to \u{to} specify\ldots''
 
 \CHAPTER{Chapter 7}
 
-\erroronpage{332}{para -2,l.2}{THa}{2004/07/21}{2}  
+\erroronpage{332}{para -2,l.2}{THa}{2004/07/21}{2}
   SinCE SEriFS arE noT alwayS horizonTaL: ``Serifs are the tiny
-  horizontal strokes\dots'' \> ``Serifs are the tiny strokes\dots''  
+  horizontal strokes\dots'' \> ``Serifs are the tiny strokes\dots''
 
 \erroronpage{338}{para -1, l.3}{HjG}{2004/06/29}{2}
    Missing word: ``command \u{and} declarative forms''
@@ -1668,7 +1670,7 @@ Modern Typewriter.
     Missing space between ``m,'' and ``bx'' in the middle column.
 
 \erroronpage{391}{tab. 7.15}{FMi}{2004/07/09}{2}
-   Row~1: Thickness of vertical line between first two columns too 
+   Row~1: Thickness of vertical line between first two columns too
    wide (printing problem).
 
 \erroronpage{391}{tab 7.15, l.-2}{RPa}{2004/09/14}{4}
@@ -1725,7 +1727,7 @@ Modern Typewriter.
  ``local guide''; I believe this is an obsolete concept, dating back to
  the times when \TeX\ and \LaTeX\ were used on multitasking mainframes;
  commercial distributions might still have a ``local guide'', but I have never
-  seen one. 
+  seen one.
 
 
 \erroronpage{414}{footnote}{hv}{2008/10/30}{}
@@ -1774,7 +1776,7 @@ These days the package |pst-char| has been integrated into  |pst-text|.
 
 \erroronpage{428}{item 6}{CKr}{2005/01/18}{4}
    Replace: ``Specified the quad width'' \> ``Specifie\u{s} the quad
-   width'' 
+   width''
 
 \erroronpage{432}{para 4, l.9}{HjG}{2004/07/11}{2}
    Not plural: ``\ldots: the outer text size\u{s} and the three math
@@ -1785,7 +1787,7 @@ These days the package |pst-char| has been integrated into  |pst-text|.
    ``\u{a}nd are usually placed in an \texttt{.fd} file.''
 
 \erroronpage{441}{para 5, l.1}{MKu/FMi}{2004/06/24}{2}
-   Replace: UTF8 \> UTF-8 
+   Replace: UTF8 \> UTF-8
 
 \erroronpage{442}{footnote, l.2}{usw}{2005/01/11}{4}
    Sentence begins with lowercase 's'.
@@ -1800,7 +1802,7 @@ produce a straight double quote, i.e., ")''
      \u{such a} way that \ldots''
 
 \erroronpage{444}{para 2, l.4}{DAl}{2005/08/01}{4}
-   Missing word: ``\ldots associates the number 224 \u{with} the  
+   Missing word: ``\ldots associates the number 224 \u{with} the
 command |\alpha|.''
 
 \erroronpage{445}{para 4, ll.3--5}{HjG}{2004/07/12}{2}
@@ -1816,14 +1818,14 @@ command |\alpha|.''
                   math glyph---comprehensible?
 
 \erroronpage{447}{Heading}{MKu/FMi}{2004/06/24}{2}
-   Replace: UTF8 \> UTF-8 
+   Replace: UTF8 \> UTF-8
 
 \erroronpage{451}{para 4, l.2}{HjG}{2004/07/12}{2}
    Wrong number:
    ``\texttt{\u{'240}} octal'' \> ``\texttt{\u{'344}} octal''
 
 \erroronpage{453}{para 2, l.2}{DAl}{2005/08/01}{4}
-   Missing word : ``\ldots an \emph{LICR-object} that is \u{to} be  
+   Missing word : ``\ldots an \emph{LICR-object} that is \u{to} be
 used whenever\ldots''
 
 \erroronpage{455}{para 3, l.-1}{JCh}{2004/07/17}{2}
@@ -1835,13 +1837,13 @@ used whenever\ldots''
    |\OE| $\leftrightarrow$ |\O| -- cf.\ |\o| and |\oe| on p.459
 
 \erroronpage{457}{tab. 7.33}{HjG}{2004/07/12}{2}
-   Entry |\`i|: ``(\u{avail})'' \> ``(\u{alias})'' 
+   Entry |\`i|: ``(\u{avail})'' \> ``(\u{alias})''
 
 \erroronpage{458}{\texttt{\string\copyright}}{FMi/usw}{2005/01/11}{4}
  Natively available in LY1 encoding
 
 \seriouserroronpage{458}{l. 27--30}{JLV}{2005/05/31}{4}
- Unfortunately |\guillemotleft|, |\guillemotright|, |\guilsinglleft|, and 
+ Unfortunately |\guillemotleft|, |\guillemotright|, |\guilsinglleft|, and
  |\guilsinglright| have no ``default'' and only function in |OT1| if
  \textsf{babel} is loaded
 
@@ -1900,7 +1902,7 @@ used whenever\ldots''
 \erroronpage{463}{para 1, l.2}{HjG}{2004/06/28}{2}
    Change:
    ``\ldots integrated in \u{1993})'' \>
-   ``\ldots integrated in \u{1994})'' 
+   ``\ldots integrated in \u{1994})''
 
 
 \CHAPTER{Chapter 8}
@@ -2002,7 +2004,7 @@ Poor Maxwell's equations! No doubt there are mathematical
 \erroronpage{500}{page}{FMi}{2004/04/23}{}
    Printing problem: blue color not properly aligned.
 \fi
-  
+
 \erroronpage{501}{exa 8-6-4}{HjG}{2004/06/21}{2}
    Surplus word (in source comment):\\
    ``\texttt{\% the old \u{the} definition of \textbackslash csc}''
@@ -2063,7 +2065,7 @@ Poor Maxwell's equations! No doubt there are mathematical
   Y\&Y has unfortunately folded and their domain was taking over by a
   seller for ``latex'' clothing (interesting isnt it?).
   Some information about Y\&Y can be found at
-  \texttt{http://www.tug.org/yandy}.
+  \texttt{https://www.tug.org/yandy}.
 
 \seriouserroronpage{518}{fig.~8.9}{CKr/FMi}{2005/02/18}{4}
   The pxfonts have the symbols |\succapprox| and |\precapprox| in the
@@ -2083,7 +2085,7 @@ Poor Maxwell's equations! No doubt there are mathematical
   Y\&Y has unfortunately folded and their domain was taking over by a
   seller for ``latex'' clothing (interesting isnt it?).
   Some information about Y\&Y can be found at
-  \texttt{http://www.tug.org/yandy}.
+  \texttt{https://www.tug.org/yandy}.
 
 \seriouserroronpage{523}{figure 8.16}{MHe}{2004/05/22}{2}
      The symbols to the left and right of ``Q(t)'' in the middle of
@@ -2122,7 +2124,7 @@ Poor Maxwell's equations! No doubt there are mathematical
    The |fleqn| option is used, but in the output, the two equations
    seem to be right aligned rather than left aligned!\\
    Indeed true: this is because  in \textsf{amsmath} the |\mathindent|
-   added on the left is 
+   added on the left is
    actually a rubber length (see page 471) that is automatically
    shortend if there is not enough space.
 
@@ -2157,7 +2159,7 @@ Change: ``The unaccented ASCII Latin letters and Arabic
    Printing problem: blue color not properly aligned.
 \fi
 
- \erroronpage{527}{table 8.10}{BMo/CAR}{2004/05/21}{2} 
+ \erroronpage{527}{table 8.10}{BMo/CAR}{2004/05/21}{2}
          This table would be
          better if reordered, in particular so that the first row
          contains: \verb=\aleph \beth \gimmel \daleth=.  This would
@@ -2167,7 +2169,7 @@ Change: ``The unaccented ASCII Latin letters and Arabic
 
 \erroronpage{527,528}{table 8-10/11}{FMi}{2006/08/09}{s}
    Added the missing symbol from amssymb: |\circledR|, |\yen|,
-   |\checkmark|, and |\maltese|. 
+   |\checkmark|, and |\maltese|.
 
   The general distribution of symbols between the two tables is a bit
   questionable, but this will stay as it is.
@@ -2178,7 +2180,7 @@ Change: ``The unaccented ASCII Latin letters and Arabic
 
 \erroronpage{528}{table 8.11}{LHe}{2008/02/08}{}
     |\dag| and |\ddag| are |\mathord|s not |\mathbin| as claimed in table
-    8.13. 
+    8.13.
 
 
 \seriouserroronpage{529}{table 8.12, l.3}{JGr}{2004/06/10}{2}
@@ -2283,12 +2285,12 @@ Plural: ``Clearly, 8 bits \u{are} not sufficient\ldots''
     newzealand})''
 
     Add footnote: ``\textit{The option \texttt{\upshape english}
-  combines American hyphenation patterns 
-  with a British date format.}''  
+  combines American hyphenation patterns
+  with a British date format.}''
 
 
 \erroronpage{545}{exa 9-2-1}{JAn}{2005/09/09}{4}
-  The quotes surrounding R\'ef\'erences and Chapitre 
+  The quotes surrounding R\'ef\'erences and Chapitre
   should be the french ones: use |\og| and |\fg{}|. And similar those
   around German words should use |"`| and |"'|.
 
@@ -2311,7 +2313,7 @@ Plural: ``Clearly, 8 bits \u{are} not sufficient\ldots''
 \erroronpage{551}{tab 9.3}{CBe}{2004/07/27}{}
    I am surprised that in Russian there is no word for ``Glossary''.
 
-   Frank: It most certainly exits :-), but right now Babel doesn't
+   Frank: It most certainly exists :-), but right now Babel doesn't
    know about it---so there is nothing we can do about it at the
    moment. Actually the same problem exists with Polish, although here
    I got a translation ``s\l{}ownik termin\'ow'' which will eventually
@@ -2353,7 +2355,7 @@ to show the differences between |"-|, |\-|, and no hyphen.
         and ``|~N~|\meta{letter}'' \> ``|~N|''
 
 \erroronpage{554}{exa 9-3-11}{UFi/MGo}{2004/06/03}{2}
- Replace body with: 
+ Replace body with:
    ``|En fran\c{c}ais on doit mettre un \fg petit espace\fg\|
      |devant la ponctuation double: comme cela!|
      \ldots''
@@ -2543,8 +2545,8 @@ The line:\\
  Replace ``\textsf{bang}'' with ``\textsf{bengali}''.  This
  package is available on CTAN in the \textsf{languages/bengali/pandey}.
 
-\seriouserroronpage{592}{para 3, l.4 }{PPN}{2004/05/25}{2} 
-  Replace ``\textsf{denag}'' with ``\textsf{devnag}''.  
+\seriouserroronpage{592}{para 3, l.4 }{PPN}{2004/05/25}{2}
+  Replace ``\textsf{denag}'' with ``\textsf{devnag}''.
   This package is on CTAN \texttt{languages/devanagari/velthuis}.
 
 \erroronpage{592}{para 5, l.1}{CKr}{2004/10/15}{4}
@@ -2552,7 +2554,7 @@ The line:\\
 
 \erroronpage{592}{general remarks}{PPn}{2004/05/25}{}
 Additional remarks not for inclusion in the book: For \TeX{}, \LaTeX{}
-in languages of India, 
+in languages of India,
 there are several nice packages.  An overview can be found in the
 following {\sc TUGboat} Articles;
 
@@ -2680,7 +2682,7 @@ Add word: Calculating the horizontal and vertical \u{distance}
 \erroronpage{606}{para -1}{HjG/FMi}{2005/05/19}{4}
       The arguments ``\textit{$\Delta$width}'' and
       ``\textit{$\Delta$height}'' are mistakenly used in math mode. In
-      the book that means a differnt font and different kerning.
+      the book that means a different font and different kerning.
 
 \erroronpage{606--608}{all boxed texts}{CAR}{2004/05/26}{2}
       All the parentheses `(' and `)' (9 pairs in total)
@@ -2713,6 +2715,9 @@ some of the listed drivers are only of historical interest.
 \erroronpage{616}{boxed texts}{FMi}{2004/05/26}{2}
    Corrections as outlined in summary entry above.
 
+\erroronpage{617}{Fig. 10-2-2}{EOl}{2021/11/17}{}
+   A ``|%|'' should follow the ending ``|}|'' of the two |\bluefbox|es.
+
 \erroronpage{618}{boxed text}{CAR}{2004/05/26}{2}
    Replace: ``\textit{key val list}'' \> ``\textit{key/val-list}''
    (also in following text).
@@ -2733,10 +2738,13 @@ some of the listed drivers are only of historical interest.
 \erroronpage{620}{para 5, l.2}{FMi}{2005/04/27}{4}
    Replace:
    ``\ldots in the \u{optional arguments}.'' \>
-   ``\ldots in the \textit{key/val-list}.'' 
+   ``\ldots in the \textit{key/val-list}.''
 
 %\erroronpage{621}{page}{FMi}{2004/04/23}{}
 %   Printing problem: blue color not properly aligned.
+
+\erroronpage{621}{Fig. 10-2-8}{EOl}{2021/11/17}{}
+   A ``|%|'' should follow the ending ``|}|'' of the first |\bluefbox|.
 
 \erroronpage{623}{para 1, l.7}{HjG}{2004/06/07}{2}
    Delete word: ``some \u{of} key combinations''
@@ -2750,7 +2758,7 @@ some of the listed drivers are only of historical interest.
         \u{\texttt{tabular}} examples''
 
 \erroronpage{631}{para.2, l.6}{FMi/HjG}{2006/10/22}{s}
-  Ersetze: "`\u{This point} is shown \ldots"' \>
+  Replace: "`\u{This point} is shown \ldots"' \>
            "`\u{This} is shown \ldots"'
 
 \erroronpage{631}{para -1, l.-1}{JBr}{2004/08/02}{2}
@@ -2805,7 +2813,7 @@ some of the listed drivers are only of historical interest.
   The variable parts do not show the right fonts.
 
 \erroronpage{641}{para 3, l.1}{ReSt}{2005/04/17}{4}
-  Remove: ``The |\Curve| command\u{s} is similar\ldots'' 
+  Remove: ``The |\Curve| command\u{s} is similar\ldots''
 
 \erroronpage{641}{para 3, l.2}{HjG}{2004/06/07}{2}
    Second occurrence of mandatory argument should use the same font as
@@ -2826,13 +2834,13 @@ some of the listed drivers are only of historical interest.
         delete ``,and .gif''
 
 \erroronpage{643}{para 3, l.1}{FMi}{2005/11/11}{s}
-  Unfortunately Th\`anh's name is mispelled. The correct spelling
+  Unfortunately Th\`anh's name is misspelled. The correct spelling
   is ``H\`an Th\^e\llap{\raise 0.5ex\hbox{\'{}}} Th\`anh''.
 
 \erroronpage{643}{para 4, l.5}{CBe}{2004/07/27}{2}
 Add: ``\ldots can be converted to PDF by
 ImageMagick's \texttt{convert} utility\u{, \texttt{eps2pdf}} (\u{both
-of} which call \texttt{ghostscript} 
+of} which call \texttt{ghostscript}
 internally), \texttt{Acrobat Distiller}, or\ldots''
 
 \erroronpage{646}{l.1}{HjG/FMi}{2004/06/08}{2}
@@ -2855,7 +2863,7 @@ page several output files are generated.)''
 \seriouserroronpage{654}{para 2 l.7}{UFi}{2004/06/01}{2}
   Missing |}|:  ``like
   |\index{\texttt{|\emph{key}|}|\u{\texttt{\textbraceright}} and''
-                                
+
 
 
 %That's a nice one: somehow the copy-editor has but the output is one
@@ -2897,7 +2905,7 @@ The source has now been edited to match the printed output.
 
 
 \erroronpage{656}{}{CBe}{2004/07/27}{s}
-   How horrible the page rotated counterclockwise! 
+   How horrible the page rotated counterclockwise!
 
 \erroronpage{657}{\texttt{-p} item, l.-1}{HjG}{2004/06/10}{2}
    Add word: ``\ldots the three \u{special} cases \ldots''
@@ -2906,7 +2914,7 @@ The source has now been edited to match the printed output.
  Swap the words ``single'' and ``double''
 
 \iffalse
-% not a bug make it look nicer 
+% not a bug make it look nicer
 \erroronpage{661}{tab. 11.2, right col.}{HjG}{2004/06/10}{}
    Inter-line spacing in multiple-line entries ???\\(Keywords:
    |headings_flag|, |item_x1|, |delim_0|, |page_precedence|)
@@ -2914,7 +2922,7 @@ The source has now been edited to match the printed output.
 
 \erroronpage{661}{tab. 11.2, l.12}{JMH}{2005/08/06}{4}
  The identifier referred is ``\texttt{heading\_flag}'', but the
- desciption uses the word ``\texttt{flag}''.
+ description uses the word ``\texttt{flag}''.
 
 
 \erroronpage{662}{l.6}{RPa}{2004/09/14}{4}
@@ -2939,7 +2947,7 @@ page 666 changed to reflect rnaRA:\\
 `` \ldots\ assumes that pages numbered with lowercase Roman
 numerals precede those numbered with Arabic numerals, which in turn
 precede those numbered with the lowercase alphabet, uppercase Roman
-numerals and finally the uppercase alphabet. 
+numerals and finally the uppercase alphabet.
 
 
 \seriouserroronpage{661/664-5}{}{FMi}{2005/08/14}{4}
@@ -2955,8 +2963,8 @@ numerals and finally the uppercase alphabet.
 
 
 \seriouserroronpage{666}{para 4 l.5 and l.6}{UFi}{2004/06/01}{2}
-  Add extra visual space in second index: ``Likewise, 
-  \verb*=\index{a space}= and 
+  Add extra visual space in second index: ``Likewise,
+  \verb*=\index{a space}= and
   \verb*=\index{a  space}= produce\ldots''
 
 \erroronpage{668}{boxed text}{HjG}{2004/06/10}{2}
@@ -2981,15 +2989,15 @@ numerals and finally the uppercase alphabet.
    Section~11.3.4.
 
    Be aware that producing index entries in arguments of commands has
-   its own pitfalls, e.g., in 
-   \verb=\command{Properties of \Prog\index{\Prog}}=.  
+   its own pitfalls, e.g., in
+   \verb=\command{Properties of \Prog\index{\Prog}}=.
    Then \LaTeX{} commands might be expanded
    before they are written to the \texttt{idx} file and the placement
    in the index will depend on the expansion of \verb=\Prog=.''
 
 \erroronpage{669}{para -2, l.3}{MKu/FMi}{2004/07/01}{2}% already done by fmi
    Add: ``\ldots \verb|\usepackage[latin1]{inputenc}| to all her
-   documents \u{(or on recent Linux distributions the 
+   documents \u{(or on recent Linux distributions the
    option \texttt{utf8})}, while\ldots''
 
 \erroronpage{669}{section 11.3.2, para 2, L.3}{JMH}{2005/08/06}{4}
@@ -3057,7 +3065,7 @@ order to have the desired effect.
 
 \CHAPTER{Chapter 12}
 
-\erroronpage{general}{several pages}{HVo/FMi}{2004/05/21}{} 
+\erroronpage{general}{several pages}{HVo/FMi}{2004/05/21}{}
     The German word  ``Schuldrecht'' is incorrectly hyphenated as
     ``Schul\-drecht'' in several examples due to the fact that English
     hyphenation patterns are used unless the language is
@@ -3146,7 +3154,7 @@ it may result in \u{a normal space,} some extra space\u, or in starting a new li
    Add: ``when using \u{the} \texttt{chicago} \u{\BibTeX\ style}.''
 
 \seriouserroronpage{710}{para 4, l.2}{BMo}{2004/05/16}{2}
-      Replace: 
+      Replace:
       ``locate the printed version.'' \> ``locate the
      article within the journal.''
 
@@ -3161,7 +3169,7 @@ Add word: ``If you \u{only} want to specify an \textit{annotator},
   Extra word:  ``the \u{the} journal'' \\
   Correct explanation:  ``\ldots the journal name\u{, volume number,}
   and year of publication, which is why we got ``TUGboat \u{10
-  [}1989\u]''.'' 
+  [}1989\u]''.''
 
 \seriouserroronpage{719}{syntax box}{HjG/FMi}{2004/06/14}{2}
    Order of optional arguments are like |\cite| (i.e., swapped):\\
@@ -3185,7 +3193,7 @@ Add word: ``If you \u{only} want to specify an \textit{annotator},
 
 \seriouserroronpage{727}{para 3, l.-3}{JBe}{2004/06/01}{2}
   Replace: \texttt{\textbackslash jbnovarioref} \>
-  \texttt{\textbackslash jbignorevarioref} 
+  \texttt{\textbackslash jbignorevarioref}
 
 \erroronpage{727}{examples 12-5-21/22}{FMi}{2004/06/03}{2}
   Not wrong, but it looks funny: due to the chosen example height the
@@ -3208,9 +3216,9 @@ Add word: ``If you \u{only} want to specify an \textit{annotator},
  was changed to contain a slightly different set of citations (same
  change was made to example 12-5-27):
 \begin{verbatim}
-  Full citations: \cite{aschur} \cite{bschur} 
+  Full citations: \cite{aschur} \cite{bschur}
   not shown on the left!
-\newpage 
+\newpage
   text \cite[\S\,7]{aschur} text
   \cite[\S\,8]{aschur} \cite[\S\,16]{zpo}
   text \cite[\S\,7]{bschur} \cite{aschur}
@@ -3222,7 +3230,7 @@ And the text above the example was changed as follows:
 explicitly), then the following happens: the first citation of a
 publication automatically displays the full entry (citation~5 in the
 next example).  In case of repeated citations to unambiguous works
-only the name of the author(s) are shown (citation~8). For ambiguous citations 
+only the name of the author(s) are shown (citation~8). For ambiguous citations
 this will be done only for immediately following citations
 (citation~4). However, if there are
 intervening citations, then the name(s) and short titles are shown
@@ -3248,7 +3256,7 @@ Replace: ``in which case \u{the first} cross-reference \ldots''
 
 \seriouserroronpage{743}{item 3}{UFi}{2004/05/27}{2}
  Equal sign missing: \texttt{sortkey\u{ = }"Bismarck, Otto von"}.
- 
+
 \erroronpage{744}{exa 12-5-48/49}{HjG}{2004/06/15}{}
    There's a spurious space before all occurrences of
    ``\textsc{D. E. Knuth}''! \\ This is (partly, ie in the footnote)
@@ -3269,19 +3277,19 @@ Replace: ``in which case \u{the first} cross-reference \ldots''
    Replace (`bibtopic' column, row 4; `multibib' column, row 7):\\
    ``no'' \> ``No''
 
-\erroronpage{746}{Tab. 12.2}{THa}{2004/06/21}{2}  
+\erroronpage{746}{Tab. 12.2}{THa}{2004/06/21}{2}
   Change ``Requires tailored .bib files''  \> ``Works with standard
-  .bib files'' 
+  .bib files''
   (and change matching row entries)
 
-\erroronpage{746}{Tab. 12.2}{THa}{2004/06/21}{2} 
+\erroronpage{746}{Tab. 12.2}{THa}{2004/06/21}{2}
   Change: ``Above typeset together somewhere'' \>
  ``Group bibliographies together''
 
-\erroronpage{749}{para -1, l.1}{THa}{2004/06/22}{2} 
+\erroronpage{749}{para -1, l.1}{THa}{2004/06/22}{2}
   Missing accents: ``Jose Alberto Fernandez'' \> ``Jos\'e Alberto
-  Fern\'andez'' 
-  
+  Fern\'andez''
+
 \erroronpage{750}{para -3, l.-2}{CKr}{2005/03/31}{4}
  Delete surplus word: ``\ldots as \u{the} the auxiliary files would be
  overwritten.''
@@ -3293,7 +3301,7 @@ Replace: ``in which case \u{the first} cross-reference \ldots''
 \erroronpage{753}{para 4, l.5}{HjG}{2004/06/15}{2}
    Replace: ``|\bibliography|'' \> ``|\bibliographystyle|''
 
-\seriouserroronpage{755/756}{}{THa}{2004/06/21}{2}  
+\seriouserroronpage{755/756}{}{THa}{2004/06/21}{2}
   Wrong limitation of multibib: The whole passage from ``A final
   difference'' up to  ``|nocite|.'' should be replaced with something
   like: ``The multibib package (since version 2.3 of 2004/01/24) is
@@ -3462,7 +3470,7 @@ After changing the bib file  this line comes out as:
 \erroronpage{789}{para 3}{FMi}{2005/06/02}{4}
 Replace whole paragraph with:
 ``The program is not available on CTAN. Its current home is
-\texttt{http://jabref.sourceforge.net/}, where it was merged
+\texttt{https://www.jabref.org}, where it was merged
 with a similar project called  \textsf{BibKeeper}
 under the new name \textsf{JabRef}.''
 
@@ -3477,7 +3485,7 @@ under the new name \textsf{JabRef}.''
    \texttt{apa.bst} -- add:
        ``American Psychology Association \u{\BibTeX\ style}'' \\
    \texttt{jmb.bst} -- add:
-       ``\emph{Journal of Molecular Biology}  \u{\BibTeX}\ style''\\ 
+       ``\emph{Journal of Molecular Biology}  \u{\BibTeX}\ style''\\
    Some journal names are written in italic, other's aren't:
        Astronomy; Behavioral and Brain Sciences; Human Biology.
 
@@ -3538,7 +3546,7 @@ under the new name \textsf{JabRef}.''
    Remove surplus word: ``\ldots, then it is all that \u{it} is necessary.''
 
 \erroronpage{800}{Citation scheme,l.2}{DAl}{2005/09/03}{4}
-    Replace letter: ``\ldots different questions th\u{a}n if you  
+    Replace letter: ``\ldots different questions th\u{a}n if you
  choose\ldots''
 
 \erroronpage{802}{para 2, l.4}{HjG}{2004/06/17}{2}
@@ -3547,7 +3555,7 @@ under the new name \textsf{JabRef}.''
 \erroronpage{802}{para -1, l.3}{FMi}{2005/06/02}{4}
    Replace wrong braces:
     ``|\urlprefix\url[|\textit{field-value}|]|'' \>
-    ``|\urlprefix\url{|\textit{field-value}|}|'' 
+    ``|\urlprefix\url{|\textit{field-value}|}|''
 
 \erroronpage{803}{para -2, l.2}{HjG}{2004/06/17}{2}
    Replace: ``in the second phase of the \u{formatting}'' \>
@@ -3574,7 +3582,7 @@ under the new name \textsf{JabRef}.''
    Replace: ``at the beginning of this section'' \>
             ``on the facing page''
 
-            
+
 
 \CHAPTER{Chapter 14}
 
@@ -3593,8 +3601,8 @@ under the new name \textsf{JabRef}.''
 \erroronpage{816}{para -3, l.4+}{HOb}{2004/05/28}{2}
  Change sentence:
   Note that \u{such short forms for \texttt{\textbackslash verb},
- just} like \texttt{\textbackslash verb} itself, 
- cannot appear in the argument of another command, but 
+ just} like \texttt{\textbackslash verb} itself,
+ cannot appear in the argument of another command, but
  \u{the characters} may be used
  freely inside \texttt{verbatim} and \texttt{macrocode} environments.
 
@@ -3609,7 +3617,7 @@ asked for, and lines 1, \u{3}, and 4 otherwise.''
   Entries not sorted correctly: swap |\CheckSum| and |\CheckModules|
 
 \seriouserroronpage{821}{descr.\ of
-           \ttfamily\textbackslash DeleteShortVerb}{UFi}{2004/05/23}{2} 
+           \ttfamily\textbackslash DeleteShortVerb}{UFi}{2004/05/23}{2}
  \verb=\MakeshortVerb= should be \verb=\Make=\u{S}\texttt{hortVerb}\\
  \verb=\MakeshortVerb*= should be \verb=\Make=\u{S}\texttt{hortVerb*}
 
@@ -3674,7 +3682,7 @@ asked for, and lines 1, \u{3}, and 4 otherwise.''
    Editorial comment: reprinted because of pagebreak changes.
 
 \erroronpage{828}{para 3, l.2}{DHL}{2004/05/16}{2}
-   Extra word: ``If so, \u{case}'' \> ``If so,'' 
+   Extra word: ``If so, \u{case}'' \> ``If so,''
 
 \seriouserroronpage{829}{syntax box}{HOb}{2004/05/29}{2}
    |\preamble|, |\endpreamble|, |\postamble|, and |\endpostamble| all
@@ -3725,7 +3733,7 @@ asked for, and lines 1, \u{3}, and 4 otherwise.''
   Missing \texttt{*}: |\DeclareDir|\u{\texttt{*}}|{tex/bibtex/...|
 
 \erroronpage{832}{code blocks}{DPa}{2004/08/04}{2}
-  Three instances of |tex/bibtex| in |\DeclareDir| should lose the |tex/| to 
+  Three instances of |tex/bibtex| in |\DeclareDir| should lose the |tex/| to
   conform to TDS and change made on page 831
 
 \erroronpage{832}{2. code block}{MSch}{2006/01/06}{s}
@@ -3770,8 +3778,9 @@ Missing word: ``as the \textsf{doc} package \u{is} loaded''
    ``\ldots\ \u{without a} configuration file.''
 
 \erroronpage{837}{exa 14-4-1}{FMi}{2004/06/12}{}
-   Editoral comment: example has to be reprocessed whenever this chapter is modified to
-   show correct rcs checkin (otherwise input and output will not match).
+   Editorial comment: example has to be reprocessed whenever this
+   chapter is modified to show correct rcs checkin (otherwise input
+   and output will not match).
 
 \erroronpage{837}{para 2,l.3}{DAl}{2005/09/03}{4}
    Replace:
@@ -3815,7 +3824,7 @@ is not recognized as the start of a \texttt{figure*} environment}.''
 
 
 \erroronpage{843}{para 3, l.2}{YvH}{2004/05/28}{2}
-   Missing word: ``and |\z@| contain |@| \u{in} their name'' 
+   Missing word: ``and |\z@| contain |@| \u{in} their name''
 
 \erroronpage{843}{para 4, l.3}{PYu}{2004/07/03}{2}
    Change: ``to do: the difficult''  \>  ``to do\u; the difficult''
@@ -3848,7 +3857,7 @@ Replace: ``An error is raised if the definitions differ, ldots''
 
 \erroronpage{851}{para 5, l.-2}{FMi}{2004/07/20}{2}
   Add + change font: ``It also defines \u{the command}
-  |\the|\u{\textit{newctr}} to\ldots'' 
+  |\the|\u{\textit{newctr}} to\ldots''
 
 \erroronpage{852}{code block 1, l.2}{JGr}{2004/06/10}{2}
    Second \verb=\makeatletter= should be \verb=\makeatother=
@@ -3869,7 +3878,7 @@ Change:
 
 
 \erroronpage{853}{l.6}{THa/FMi}{2004/06/23}{2}
-  Missing space: ``c,\u{~}\dots, z'' 
+  Missing space: ``c,\u{~}\dots, z''
 
 \erroronpage{853}{para 4,ll.2+3}{HjG}{2004/05/25}{2}
    Add word: ``\ldots definitions for sectioning \u{counters}''
@@ -3877,8 +3886,8 @@ Change:
 \erroronpage{853}{counter code block}{FMi}{2005/06/09}{4}
 The order of declarations of the counters is incorrect; they have to be
 \begin{verbatim}
-\newcounter{part}                
-\newcounter{section}  
+\newcounter{part}
+\newcounter{section}
 \newcounter{subsection}[section]
 \newcounter{subsubsection}[subsection]
 \end{verbatim}
@@ -3893,14 +3902,14 @@ or you will receive a ``counter not defined'' error.
 
 \erroronpage{854}{ll. 1+2}{FMi}{2004/05/25}{2}
    Add word and commata: ``Only the representation\u{, prefix,} and
-             label field commands 
+             label field commands
              are defined \ldots''
 
 \seriouserroronpage{854}{code block 1}{HjG/FMi}{2004/05/25}{2}
 Replace with approx:\\[6pt]
 \hspace*{-140pt}\begin{minipage}[b]{\linewidth}
 \begin{verbatim}
-\renewcommand\theenumi  {\arabic{enumi}}       \renewcommand\theenumii{\alph{enumii}}   
+\renewcommand\theenumi  {\arabic{enumi}}       \renewcommand\theenumii{\alph{enumii}}
 \renewcommand\theenumiii{\roman{enumiii}}      \renewcommand\theenumiv{\Alph{enumiv}}
 \end{verbatim}
 \begin{verbatim}
@@ -3915,14 +3924,14 @@ Replace with approx:\\[6pt]
 
 
 \erroronpage{855}{fig A.1, l.4}{JAn}{2005/09/09}{4}
-  Change  ``Did\^ot'' \> ``Didot'' (no caret); and delete the 
-comma after inch 
+  Change  ``Did\^ot'' \> ``Didot'' (no caret); and delete the
+comma after inch
 
 
 \erroronpage{855}{fig A.1}{CBe/FMi}{2004/07/27}{2}
 Add: \texttt{ex} \quad Height of a small ``x'' in the current font \u{(approximately)}
 \\
-Add: \texttt{em} \quad Width 
+Add: \texttt{em} \quad Width
             of capital ``M'' in current font  \u{(approximately)}
 
 
@@ -3933,11 +3942,11 @@ Add: \texttt{em} \quad Width
 \erroronpage{856}{tab A.2, l.6}{PYu}{2004/07/05}{2}
   Add: ``a \u{solid} horizontal line''
 
-\erroronpage{857}{table A.3}{V-Li}{2004/09/14}{4} 
+\erroronpage{857}{table A.3}{V-Li}{2004/09/14}{4}
   |\vspace{len}| is missing
 
 \erroronpage{858}{l.-8}{HjG/FMi}{2004/05/26}{2}
-   Add: ``\u{missing or} misplaced |\item|'' 
+   Add: ``\u{missing or} misplaced |\item|''
 
 \erroronpage{858}{syntax box}{PYu}{2004/07/03}{2}
   |\addvspace{|\textit{space}|}| should be typeset in a smaller font.
@@ -3980,13 +3989,13 @@ Add: \texttt{em} \quad Width
                  paragraph.}
 
   Editorial comment: change moves pagebreak.
-    
+
 \seriouserroronpage{878}{codeline 4 (?)}{UFi}{2004/05/22}{2}
  |\usepackage[german]{varioref}[2001/09/0]:| day number is missing
  (test for version doesn't work then anymore!)
 
 \erroronpage{886}{fig.~A.1}{HjG}{2004/05/21}{2}
-   Add: \verb=\ProcessOptions= \u{\texttt{\char`\\relax}} 
+   Add: \verb=\ProcessOptions= \u{\texttt{\char`\\relax}}
    (cf. hint on p.~882!)
 
 
@@ -4004,7 +4013,7 @@ Missing letter: ``\verb=l.167 \par=\u{\texttt{t}}\verb={Text}=''
  Add: ``Technically, a moving argument is an argument
         that is internally expanded by \LaTeX{} without typesetting it
         directly\u{ (e.g.}, by using the internal \LaTeX{} construct
-        |\protected@edef|\textsuperscript{1}\u).'' 
+        |\protected@edef|\textsuperscript{1}\u).''
 
 \erroronpage{893}{para 2, l.8}{MHo/FMi}{2004/10/05}{4}
  Replace:
@@ -4040,11 +4049,11 @@ bitmap images such as \texttt{.jpg}, \texttt{.gif}, and \texttt{.png} files.''
 \erroronpage{899}{item 5}{UFi}{2004/05/23}{2}
   The ``\TeX{} Live CD'' is  spelled incorrectly as
  ``\TeX{} live'' or  ``\TeX live''
- 
+
 \erroronpage{901}{item 3}{UFi}{2004/05/23}{2}
   The ``\TeX{} Live CD'' is  spelled incorrectly as
  ``\TeX{} live'' or  ``\TeX live''
- 
+
 \seriouserroronpage{902}{l.5}{HjG}{2004/05/22}{2}
    Missing letter: ``\texttt{\char`\\dis\u{c}retionary}''
 
@@ -4094,9 +4103,9 @@ processing your document with e\TeX{} and additionally load the
 
 \erroronpage{917}{footnote}{HOb}{2004/05/29}{2}
   Replace footnote with: ``In modern distributions \LaTeX{} is automatically
-  using the e\TeX{} program. On older installations you may have to 
+  using the e\TeX{} program. On older installations you may have to
   call a different program (e.g.,  \texttt{elatex} instead of
-  \texttt{latex}) when processing a 
+  \texttt{latex}) when processing a
   document.''
 
 
@@ -4180,7 +4189,7 @@ processing your document with e\TeX{} and additionally load the
 
 \erroronpage{938}{para -1, l.3}{UFi/FMi}{2004/05/23}{2}
  Difficult to understand; replace:
-  ``\ldots a large \u{increase in} \texttt{t=} between'' 
+  ``\ldots a large \u{increase in} \texttt{t=} between''
 
 \erroronpage{939}{para 3, l.2}{HjG}{2004/05/23}{2}
    Words need to be swapped:
@@ -4252,18 +4261,22 @@ processing your document with e\TeX{} and additionally load the
 \CHAPTER{Bibliography}
 
 \erroronpage{963}{[1]}{CKr}{2005/06/20}{4}
-   Url changed: \url{http://partners.adobe.com/public/developer/en/font/T1_SPEC.PDF}
+   Url changed: \url{https://partners.adobe.com/public/developer/en/font/T1_SPEC.PDF}
+   2017: url no longer valid; maybe \url{https://www-cdf.fnal.gov/offline/PostScript/T1_SPEC.PDF}
 
 \erroronpage{963}{[2]}{CKr}{2005/06/20}{4}
-   Url changed: \url{http://partners.adobe.com/public/developer/en/ps/5001.DSC_Spec.pdf}
+   Url changed: \url{https://partners.adobe.com/public/developer/en/ps/5001.DSC_Spec.pdf}
+   2017: url no longer valid; maybe \url{https://www-cdf.fnal.gov/offline/PostScript/5001.PDF}
 
 \erroronpage{963}{[3]}{CKr}{2005/06/20}{4}
    Url changed:
-   \url{http://partners.adobe.com/public/developer/en/ps/5002.EPSF_Spec.pdf}
+   \url{https://partners.adobe.com/public/developer/en/ps/5002.EPSF_Spec.pdf}
+   2017: url no longer valid; maybe \url{https://archive.org/details/5002.EPSFSpec}
 
 \erroronpage{964}{[5]}{CKr}{2005/06/20}{4}
    Url changed:
-   \url{http://partners.adobe.com/public/developer/en/pdf/PDFReference.pdf}
+   \url{https://partners.adobe.com/public/developer/en/pdf/PDFReference.pdf}
+   2017: url no longer valid; maybe \url{http://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf}
 
 
 \erroronpage{965}{[17], l.-1}{HjG}{2004/06/18}{2}
@@ -4290,10 +4303,10 @@ processing your document with e\TeX{} and additionally load the
 
 \erroronpage{975}{[107], [109], [110], [111]}{HjG}{2004/06/21}{2}
   Incomplete URLs:\\
-  \texttt{http://www.latex-project.org\u{/ltnews/}}\\
-  \texttt{http://www.latex-project.org\u{/guides/fntguide.pdf}}\\
-  \texttt{http://www.latex-project.org\u{/guides/cfgguide.pdf}}\\
-  \texttt{http://www.latex-project.org\u{/lppl/}}
+  \texttt{https://www.latex-project.org\u{/news/latex2e-news/}}\\
+  \texttt{https://www.latex-project.org\u{/help/documentation/fntguide.pdf}}\\
+  \texttt{https://www.latex-project.org\u{/help/documentation/cfgguide.pdf}}\\
+  \texttt{https://www.latex-project.org\u{/lppl/}}
 
 \erroronpage{976}{[117]}{FMi}{2005/11/07}{s}
   The title is ``E-\TeX: Guidelines for Future \TeX{} Extensions''.
@@ -4303,11 +4316,11 @@ processing your document with e\TeX{} and additionally load the
 
 \erroronpage{977}{[124]}{FMi}{2005/07/09}{4}
   Link is missing a period:
-    \url{http://www.latex-project.org/papers/tug99}\texttt{\u.pdf}
+    \url{https://www.latex-project.org/publications/tug99}\texttt{\u.pdf}
 
 \erroronpage{978}{[138]}{FMi}{2005/06/25}{4}
   Now has appeared:  24\#1, pp.~105--114, 2004. URL:
-  \url{http://www.tug.org/TUGboat/Articles/tb24-1/plaice.pdf}
+  \url{https://www.tug.org/TUGboat/Articles/tb24-1/plaice.pdf}
 
 \erroronpage{979}{[143]}{HjG}{2004/05/20}{2}
   Missing period: Robert M\u. Ritter
@@ -4316,19 +4329,19 @@ processing your document with e\TeX{} and additionally load the
    Missing word: ``for \LaTeX\ \u{and} a possible''
 
 \erroronpage{980}{[151]}{THa}{2004/06/25}{2}
-  Remove: ``\LaTeX\u{Joachim Schrod}.'' 
+  Remove: ``\LaTeX\u{Joachim Schrod}.''
 
 \erroronpage{980}{[153]}{THa}{2004/06/25}{2}
-  Swap words: ``often are'' \> ``are often'' 
+  Swap words: ``often are'' \> ``are often''
 
 \erroronpage{980}{[155]}{THa}{2004/06/25}{2}
-  Missing word:   ``For \u{the} \textsf{kuvio} system\ldots'' 
+  Missing word:   ``For \u{the} \textsf{kuvio} system\ldots''
 
 \erroronpage{980}{[157]}{HjG}{2004/05/20}{2}
   First line of online resources is not flush right (stray space?).
 
 \erroronpage{981}{[158]-[162]}{RKo}{2005/11/11}{s}
-  Unfortunately Th\`anh's name is mispelled (accents in [161/2]). The correct spelling
+  Unfortunately Th\`anh's name is misspelled (accents in [161/2]). The correct spelling
   is ``H\`an Th\^e\llap{\raise 0.5ex\hbox{\'{}}} Th\`anh''.
 
   Furthermore, the surename is H\`an so the entries should have been sorted
@@ -4342,16 +4355,16 @@ processing your document with e\TeX{} and additionally load the
 
 \erroronpage{982}{[168]}{HjG}{2004/05/20}{2}
   First line of online resources should be:\\
-  \texttt{http://www.tug.org/TUGboat/Articles/\u{tb11-3/tb29vulis.pdf}}
+  \texttt{https://www.tug.org/TUGboat/Articles/\u{tb11-3/tb29vulis.pdf}}
 
 
 \CHAPTER{Index}
 
 \erroronpage{983--1082}{index}{FMi}{2004/06/11}{}
   I do not list changes to the index that are results of other errata
-  entries as they are too dificult to track. Instead I will put an
+  entries as they are too difficult to track. Instead I will put an
   updated index on the web at
-  \url{http://www.latex-project.org/guides/tlc2-ap4.pdf} once in a while.
+  \url{https://www.latex-project.org/help/books/tlc2-ap4.pdf} once in a while.
 
 \erroronpage{general}{}{FMi}{2004/06/08}{2}
   Editorial comment: the whole index has been reprinted.
@@ -4386,7 +4399,7 @@ and
   Correct range: author-date citations / history of (699, 700)
 
 \erroronpage{992}{}{J-CCh}{2005/07/17}{s}
-  Correct:  ``B\u{\'e}zier'' 
+  Correct:  ``B\u{\'e}zier''
 
 \erroronpage{993}{}{SEg}{2005/04/26}{4}
   bibliographies/authors/name,formatting shows 798--1092 but should be
@@ -4416,7 +4429,7 @@ and
    oblique (333)
 
 \erroronpage{1020}{}{CKr}{2005/01/09}{4}
-  Replace ``fonts / URW Antigua'' \> ``fonts / URW Anti\u{q}ua'' 
+  Replace ``fonts / URW Antigua'' \> ``fonts / URW Anti\u{q}ua''
 
 \erroronpage{1034}{first col.}{FMi}{2004/05/15}{2}
   Add entry: ``lists / enumerated / user-defined, 151''
@@ -4426,18 +4439,18 @@ and
 
 \erroronpage{1041}{}{FMi}{2004/08/02}{2}
   ``\texttt{NACRO} \BibTeX{} command'' \>
-  ``\texttt{MACRO} \BibTeX{} command'' 
+  ``\texttt{MACRO} \BibTeX{} command''
 
 \erroronpage{1051}{secound col., l.14}{MSc}{2004/06/04}{2}
         missing index entries for ``pdftex'' on p.7 and p.643
 
 \erroronpage{1069}{}{FMi}{2004/11/07}{4}
   Replace: ``text symbols / setting-up''  \>
-           ``\u{math} symbols / setting-up''  
+           ``\u{math} symbols / setting-up''
 
 
 \erroronpage{1076}{}{CKr}{2005/01/09}{4}
-  Replace ``URW Antigua'' \> ``URW Anti\u{q}ua'' 
+  Replace ``URW Antigua'' \> ``URW Anti\u{q}ua''
 
 
 \CHAPTER{People}
@@ -4446,9 +4459,9 @@ and
    Editorial comment: Needs manual breaking in index output file for
    second and fourth printing.
 
-\erroronpage{1081}{col 1}{FMi}{2004/06/22}{2} 
-  Missing accents: ``Fernandez, Jose Alberto '' \> `Fern\'andez, Jos\'e Alberto'' 
-  
+\erroronpage{1081}{col 1}{FMi}{2004/06/22}{2}
+  Missing accents: ``Fernandez, Jose Alberto '' \> `Fern\'andez, Jos\'e Alberto''
+
 \erroronpage{1081}{col 1}{HjG}{2004/06/22}{2}
    Change page number in entry:
    ``Fukui, Rei, xxvii, 405, \u{969}'' \> ``\ldots, \u{968}''
@@ -4460,7 +4473,7 @@ and
 \erroronpage{1081}{col 2}{HjG}{2004/06/16}{2}
    Change page number in entry:
    ``Hufflen, Jean-Michel, 761, \u{971}'' \> ``\ldots, \u{970}''
-    
+
 \erroronpage{1081}{}{HjG}{2004/07/08}{2}
    Add page entries for ``Kettler, Howard'' and ``Frutiger, Adrian''
    to ``People'' index back to 374.
@@ -4503,7 +4516,7 @@ and
 
 \erroronpage{1089}{para 4, l.4}{FMi}{2004/07/21}{2}
   Add:  ``\ldots this typographical icing \u{(package
-  \textsf{pdfcprot})} was\ldots'' 
+  \textsf{pdfcprot})} was\ldots''
 
 \erroronpage{1089}{l.-5}{HjG}{2004/05/20}{2}
   Missing period: \ldots files\u. It \ldots
@@ -4540,6 +4553,7 @@ and
 \contributor{DHL}{Dan Luecking}
 \contributor{DIs}{Daniel Isaacson}
 \contributor{DSch}{Dirk Schlimm}
+\contributor{EOl}{Edgar Olthof}
 \contributor{ERy}{Elizabeth Ryan}
 \contributor{FHa}{Ferdy Hanssen}
 \contributor{FMi}{Frank Mittelbach}
@@ -4614,7 +4628,7 @@ preferably in a form usable directly in this file, i.e.,
 \begin{flushleft}
 |\erroronpage{|\textit{page-number}|}{|\textit{line-identification}|}{|%
    \textit{your-initials}|}{|\textit{date}|}{}| \\
-   \hspace*{2em}\textit{description of the the erratum}
+   \hspace*{2em}\textit{description of the erratum}
 \end{flushleft}
 Here is an example:
 \begin{verbatim}
@@ -4623,5 +4637,3 @@ Here is an example:
 \end{verbatim}
 
 \end{document}
-
-
