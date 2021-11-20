@@ -360,8 +360,8 @@ nav input[type=checkbox]:checked ~ ul { display: block; }
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-  background: #565A5E;
-  color: #BBB;
+  background: #565A50;
+  color: #FFF;
   font-size: 0.9em;
   margin: 0 -2.2em -3em;
   padding: 1.5em 2em 1em 2em;
