@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2014-FMi-wspr-TUB-tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2F2014-FMi-wspr-TUB-tb111mitt-l3build.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+### <a href="{{site.baseurl}}/publications/2014-FMi-wspr-TUB-tb111mitt-l3build.pdf" target="_blank" onclick="vgwPixelCall('1a7c94b5c86849099e006f519e72ccf0');">l3build --- A modern Lua test suite for TeX programming</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), [Will Robertson]({{site.baseurl}}/about/team/#will-robertson) and The LaTeX3 team
 + Published paper, TUGboat volume 35, number 3, 2014

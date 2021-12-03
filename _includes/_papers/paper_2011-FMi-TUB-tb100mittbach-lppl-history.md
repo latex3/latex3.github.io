@@ -1,5 +1,5 @@
 
-### <a href="{{site.baseurl}}/publications/2011-FMi-TUB-tb100mittbach-lppl-history.pdf" target="_blank" onclick="vgwPixelCall('47fddd07482e43119a3460a269650aa8');">Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more</a>  <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2F2011-FMi-TUB-tb100mittbach-lppl-history.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+### <a href="{{site.baseurl}}/publications/2011-FMi-TUB-tb100mittbach-lppl-history.pdf" target="_blank" onclick="vgwPixelCall('47fddd07482e43119a3460a269650aa8');">Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 32, number 1, 2011

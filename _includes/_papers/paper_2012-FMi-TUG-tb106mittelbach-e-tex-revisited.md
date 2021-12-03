@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2012-FMi-TUB-tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">E-TeX: Guidelines to future TeX extensions --- revisited</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb106mittelbach-e-tex-revisited.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+### <a href="{{site.baseurl}}/publications/2012-FMi-TUB-tb106mittelbach-e-tex-revisited.pdf" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">E-TeX: Guidelines to future TeX extensions --- revisited</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 34, number 1, 2013

@@ -1,7 +1,7 @@
 
 
 
-### <a href="{{site.baseurl}}/publications/2014-FMi-TUB-tb111mitt-float-placement.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a> <a target="_blank" href="https://flattr.com/submit/auto?user_id=Frank.Mittelbach&url=http%3A%2F%2Flatex-project.org%2Fpublications%2Ftb111mitt-float.pdf"><img border="0" title="Flattr this" alt="Flattr this" src="//button.flattr.com/flattr-badge-large.png"/></a>
+### <a href="{{site.baseurl}}/publications/2014-FMi-TUB-tb111mitt-float-placement.pdf" target="_blank" onclick="vgwPixelCall('f722ab0955c94459bf7cd9e0ef041df4');">How to influence the position of float environments like figure and table in LaTeX?</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + Published paper, TUGboat volume 35, number 3, 2014

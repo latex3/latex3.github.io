@@ -80,12 +80,6 @@ to determine whether the respective text has reached
 royalty-relevant thresholds in the calendar year.
 
 
-#### Flattr
-
-Some pages of this offer integrate "Flattr" buttons of the micropayment service Flattr that is operated by the company Flattr Network Ltd. with seat in 2nd Floor, White bear yard 114A, Clerkenwell Road, London, Middlesex, England, EC1R 5DF, United Kingdom. If you visit these pages a connections to servers operated by Flattr is initiated. If you have a Flattr account and you are logged into the service and interact with the button then information is passed to Flattr for billing purposes in accordance with the Flattr service. Even if you are not logged into the service it is possible that usage data is collected and saved. How your data will be processed precisely when the Flattr button is clicked can be found in the [Flattr privacy statement](https://flattr.com/privacy/).
-
-_If you have a Flattr account (or obtain one because you like the concept) and you click on one of the Flattr buttons you make a small contribution to the work of the LaTeX Project. Thank you for that._
-
 
 #### Amazon associate program
 
