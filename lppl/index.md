@@ -8,6 +8,8 @@ description: "Home of the LaTeX project public license (LPPL), which is a free s
 
 The LaTeX project public license is a [free software](https://www.debian.org/intro/free) license. The most recent version of the LPPL is version 1.3c. The latest version, in plain text, can always be found at [https://latex-project.org/lppl.txt]({{site.baseurl}}/lppl.txt). There is also a LaTeX version of the license, which authors of LPPL software are encouraged to include in their manuals.
 
+The article <a href="{{site.baseurl}}/publications/2011-FMi-TUB-tb100mittbach-lppl-history.pdf" target="_blank" onclick="vgwPixelCall('47fddd07482e43119a3460a269650aa8');">Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more</a> gives some background information on the license, explains it components and the reasons behind it.
+
 ## How to use the LPPL
 
 To use this license, place in each of the components of your work both an explicit copyright notice including your name and the year the work was authored and/or last substantially modified. Include also a statement that the distribution and/or modification of that component is constrained by the conditions in this license.
