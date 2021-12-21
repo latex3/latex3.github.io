@@ -5,9 +5,68 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 03 Dec 2021 17:50:49 +0100</pubDate>
-    <lastBuildDate>Fri, 03 Dec 2021 17:50:49 +0100</lastBuildDate>
+    <pubDate>Tue, 21 Dec 2021 20:29:41 +0100</pubDate>
+    <lastBuildDate>Tue, 21 Dec 2021 20:29:41 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>log4j vulnerability: LaTeX is not affected!</title>
+        <description>&lt;h1 id=&quot;log4j-vulnerability-latex-is-not-affected&quot;&gt;log4j vulnerability: LaTeX is not affected!&lt;/h1&gt;
+
+&lt;p&gt;We are seeing more and more requests asking us whether LaTeX needs a
+patch, because of the log4j vulnerability, when the necessary patch is
+planned and ready ready, etc. Rather than to explain each time (which
+I more than a dozen times by now) why nothing needs to be done at our end, I
+decided to post it here, so that I can refer to that statement.&lt;/p&gt;
+
+&lt;p&gt;Upfront I like to apologize to any LaTeX user for the noise, because
+if you know what LaTeX is (a macro package running on top of the TeX
+program), then you are well aware that such questions are ill
+formed. But most people being charged to check all software in use in
+their organization do not know each and every piece of software and
+for them LaTeX is just a program that may or may not use log4j.&lt;/p&gt;
+
+&lt;p&gt;Well, LaTeX is not a program, it is input for a program (namely TeX or
+one of its variants) so the question has to be: is any of the TeX
+programs that make use of the LaTeX source as input vulnerable to the
+log4j issue?&lt;/p&gt;
+
+&lt;p&gt;The answer is fortunately a &lt;strong&gt;clear NO&lt;/strong&gt; and the official statement for this from
+the TeX Users Group organization (for the TeXLive and MikTeX
+distributions) can be found here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tug.org/&quot;&gt;TeX Users Group home page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the news blog for the TUG organization you then find:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tug.org/texlive/cve-log4j.html&quot;&gt;TUG’s statement on the log4j vulnerability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you talk to people who are searching for an answer whether or not
+LaTeX (or rather TeX) is affected by log4j and if so what is being
+done about it, please refer them to TUG and that statement.&lt;/p&gt;
+
+&lt;p&gt;Happy and continuously safe LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 21 Dec 2021 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2021/12/21/log4j-vulnerability/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2021/12/21/log4j-vulnerability/</guid>
+        
+        <category>latex</category>
+        
+        <category>log4j</category>
+        
+        <category>vulnerability</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Fall 2021 LaTeX release available</title>
@@ -767,134 +826,6 @@ interested in L3 programming or in understanding code written in it:&lt;/p&gt;
         <category>development</category>
         
         <category>tutorial</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Fall 2020 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;the-fall-2020-latex-release-is-available&quot;&gt;The fall 2020 LaTeX release is available&lt;/h1&gt;
-
-&lt;p&gt;This release introduces a number of important
-enhancements.&lt;/p&gt;
-
-&lt;h3 id=&quot;a-general-hook-management-system-for-latex&quot;&gt;A general hook management system for LaTeX&lt;/h3&gt;
-
-&lt;p&gt;Most LaTeX users and package writers will know the handful of hooks
-that LaTeX has been offering until now, the most important one perhaps
-being &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\AtBeginDocument&lt;/code&gt;. These are important hooks, but they are far
-too few so that in many cases package developers had to directly patch
-the internals of LaTeX.  This resulted in many problems.&lt;/p&gt;
-
-&lt;p&gt;With the new hook management system, LaTeX will get many more hooks
-that package writers (and authors) can use to add code in a
-controlled and reliable way.  New hooks have been added in a number of
-places by using the new system and more will follow over
-time. Available now are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hooks to add code before and after environments (formerly offered
-through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;etoolbox&lt;/code&gt; package);&lt;/li&gt;
-  &lt;li&gt;Hooks used when loading files, packages, or classes (similar to
-what the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filehook&lt;/code&gt; package now provides);&lt;/li&gt;
-  &lt;li&gt;Hooks in the page-building process (e.g., functionality previously
-available through packages such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atbegshi&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atveryend&lt;/code&gt; and a
-few others).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The important point here is not so much that the functionality of these
-packages has been integrated into the LaTeX kernel, but that the
-hook management system provides a single structured way for different packages 
-to reliably add and order 
-code.  This will resolve
-many of the inter-package interoperability issues which formerly
-could be resolved (if at all) only by loading the packages in a specific order, 
-or by the use of complex and fragile code inside the packages to account
-for various scenarios in user documents.&lt;/p&gt;
-
-&lt;p&gt;The hook management system is currently described in these three documents:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc lthooks&lt;/code&gt;  — The description of the interfaces and the core
-hooks already added to the kernel.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltshipout&lt;/code&gt; — The documentation of the hooks available
-during the page production process.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc ltfilehook&lt;/code&gt; — hooks that can be used before or after a file gets loaded.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;providing-xparse-as-part-of-the-format&quot;&gt;Providing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; as part of the format&lt;/h3&gt;
-
-&lt;p&gt;In the previous release we added the LaTeX3 programming layer to the
-LaTeX format to improve the loading speed when packages using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;
-are used. In this release we are now extending this support by
-integrating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; so that the extended interface for defining
-document-level commands becomes available out of the box.&lt;/p&gt;
-
-&lt;p&gt;This enables users and most importantly package developers to
-easily define LaTeX commands with multiple optional arguments or
-other syntax features with ease.
-For details, check out the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt; documentation, e.g., via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
-xparse&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;improving-the-font-series-handling&quot;&gt;Improving the font series handling&lt;/h3&gt;
-
-&lt;p&gt;In the previous release we extended NFSS (the new font selection scheme)
-to better support modern fonts that offer different font faces, e.g.,
-condensed, semi-bold, etc., and make them work seamlessly with each
-other. Experiences with the extended interface showed that for some
-use cases adequate support was still missing or that in special setups
-the algorithms sometimes selected a wrong font series value. These
-cases have now been resolved and additional support commands have been
-added. For example, with&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\IfFontSeriesContextTF{〈context〉} {〈true code〉}{〈false code〉}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;you can now define commands that behave differently depending on the
-current font series context. The 〈context〉 to check has to be specified
-as either &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bf&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;md&lt;/code&gt;. The command then chooses the 〈true code〉
-or the 〈false code〉 based on where it is used (e.g., inside
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\textbf&lt;/code&gt; (or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bfseries&lt;/code&gt;) or not).&lt;/p&gt;
-
-&lt;h3 id=&quot;a-large-number-of-other-enhancements-and-corrections&quot;&gt;A large number of other enhancements and corrections&lt;/h3&gt;
-
-&lt;p&gt;There are nearly fifty other enhancements and corrections that we
-documented in the ltnews article for this release (and a few very
-minor ones that only made it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt;file) The most
-important ones from a user perspective are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Support for length expression in coordinates of picture commands as an alternative to
-decimal numbers denoting a multiple of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unitlength&lt;/code&gt;, e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\put(0,.2\textheight){...}&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;New commands to make copies of robust commands (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\let&lt;/code&gt; wouldn’t
-work for them)&lt;/li&gt;
-  &lt;li&gt;A new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ShowCommand&lt;/code&gt; command to display the full definition of a
-robust command (works also on other commands)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But read the whole ltnews article because there may be other gems that
-are useful for you.&lt;/p&gt;
-
-&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
-
-&lt;p&gt;The new features and most the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews32.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('4c0ec6a7a0884b70986328bd5dc816ee');&quot;&gt;“LaTeX2e
-News Issue 32”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 01 Oct 2020 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2020/10/01/issue32-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/10/01/issue32-of-latex2e-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
         
         
         <category>news</category>
