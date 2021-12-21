@@ -9,6 +9,12 @@ description: "Selection of links to PDF versions of various articles published b
 
 ***
 
+
+
+
+{% include _papers/paper_2020-FMi-CI-Journal-28454894_as_accepted.md %}
+
+
 {% include _papers/paper_2018-FMi-CI-Journal-28454894_as_submitted.md %}
 
 
