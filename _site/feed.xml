@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Dec 2021 20:29:41 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Dec 2021 20:29:41 +0100</lastBuildDate>
+    <pubDate>Tue, 21 Dec 2021 21:20:08 +0100</pubDate>
+    <lastBuildDate>Tue, 21 Dec 2021 21:20:08 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -16,7 +16,7 @@
 &lt;p&gt;We are seeing more and more requests asking us whether LaTeX needs a
 patch, because of the log4j vulnerability, when the necessary patch is
 planned and ready ready, etc. Rather than to explain each time (which
-I more than a dozen times by now) why nothing needs to be done at our end, I
+I did more than a dozen times by now) why nothing needs to be done at our end, I
 decided to post it here, so that I can refer to that statement.&lt;/p&gt;
 
 &lt;p&gt;Upfront I like to apologize to any LaTeX user for the noise, because
