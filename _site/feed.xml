@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Dec 2021 21:20:08 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Dec 2021 21:20:08 +0100</lastBuildDate>
+    <pubDate>Tue, 21 Dec 2021 21:45:49 +0100</pubDate>
+    <lastBuildDate>Tue, 21 Dec 2021 21:45:49 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -14,12 +14,12 @@
         <description>&lt;h1 id=&quot;log4j-vulnerability-latex-is-not-affected&quot;&gt;log4j vulnerability: LaTeX is not affected!&lt;/h1&gt;
 
 &lt;p&gt;We are seeing more and more requests asking us whether LaTeX needs a
-patch, because of the log4j vulnerability, when the necessary patch is
-planned and ready ready, etc. Rather than to explain each time (which
+patch because of the log4j vulnerability, when the necessary patch is
+planned and ready, etc. Rather than to explain each time (which
 I did more than a dozen times by now) why nothing needs to be done at our end, I
 decided to post it here, so that I can refer to that statement.&lt;/p&gt;
 
-&lt;p&gt;Upfront I like to apologize to any LaTeX user for the noise, because
+&lt;p&gt;Upfront I would like to apologize to any LaTeX user for the noise, because
 if you know what LaTeX is (a macro package running on top of the TeX
 program), then you are well aware that such questions are ill
 formed. But most people being charged to check all software in use in
@@ -32,14 +32,8 @@ programs that make use of the LaTeX source as input vulnerable to the
 log4j issue?&lt;/p&gt;
 
 &lt;p&gt;The answer is fortunately a &lt;strong&gt;clear NO&lt;/strong&gt; and the official statement for this from
-the TeX Users Group organization (for the TeXLive and MikTeX
+the &lt;a href=&quot;https://tug.org/&quot;&gt;TeX Users Group organization&lt;/a&gt; (for the TeXLive and MikTeX
 distributions) can be found here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tug.org/&quot;&gt;TeX Users Group home page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In the news blog for the TUG organization you then find:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://tug.org/texlive/cve-log4j.html&quot;&gt;TUG’s statement on the log4j vulnerability&lt;/a&gt;&lt;/li&gt;
