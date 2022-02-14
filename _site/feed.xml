@@ -5,9 +5,46 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Dec 2021 21:45:49 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Dec 2021 21:45:49 +0100</lastBuildDate>
-    <generator>Jekyll v4.1.1</generator>
+    <pubDate>Mon, 14 Feb 2022 13:37:21 +0100</pubDate>
+    <lastBuildDate>Mon, 14 Feb 2022 13:37:21 +0100</lastBuildDate>
+    <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>LaTeX Graphics Companion 2ed is back in print!</title>
+        <description>&lt;h1 id=&quot;latex-graphics-companion-2ed-is-back-in-print&quot;&gt;LaTeX Graphics Companion 2ed is back in print&lt;/h1&gt;
+
+&lt;p&gt;The LaTeX Graphics Companion 2nd edition, formerly publish by
+Addision-Wesely in the “Tools and Techniques for Computer Typesetting”
+series, went out of print a while ago. I’m happy to announce that this
+has now changed again. Lehmanns Media has picked up the book and produced an
+affordable reprint, both as printed softcover book and also as a PDF ebook
+version:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58611042-9783965433038-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (softcover)&lt;/a&gt;, ISBN 978-3-96543-303-8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58574614-9783965432994-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (ebook)&lt;/a&gt;, ISBN 978-3-96543-299-4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The book should be available from all major bookstores, the ebook version probably only from Lehmanns directly.&lt;/p&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 14 Feb 2022 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2022/02/14/LGC2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/02/14/LGC2/</guid>
+        
+        <category>latex</category>
+        
+        <category>books</category>
+        
+        <category>graphics</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>log4j vulnerability: LaTeX is not affected!</title>
@@ -73,7 +110,7 @@ May/June after TeX Live has updated and a second release around November.&lt;/p&
 
 &lt;p&gt;The current release does not contain any major new modules, but is focused around consolidation  and improvements of functionality introduced in previous releases.
 In the meantime we are working further on the future production of reliable tagged PDF output (see
-the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');&quot;&gt;LaTeX
+the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;be7595c59bf34ca8b4366dfa05816e17&apos;);&quot;&gt;LaTeX
 Tagged PDF — A blueprint for a large project&lt;/a&gt; that describes the
 project we are engaged in), which will again take center stage in the Spring release 2022.&lt;/p&gt;
 
@@ -112,7 +149,7 @@ are useful for you.&lt;/p&gt;
 &lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
 
 &lt;p&gt;The new features and most of the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');&quot;&gt;“LaTeX2e
+are documented in &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
 News Issue 34”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
 page&lt;/a&gt; where you will also find
 release information for earlier LaTeX releases.&lt;/p&gt;
@@ -168,7 +205,7 @@ release information for earlier LaTeX releases.&lt;/p&gt;
   &lt;li&gt;Altering the default for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tracinglostchars&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The details are discussed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');&quot;&gt;“LaTeX2e
+&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The details are discussed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
 News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are part of the distribution.&lt;/p&gt;
 
 &lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
@@ -244,7 +281,7 @@ News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;lan
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The more important ones are listed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');&quot;&gt;“LaTeX2e
+&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The more important ones are listed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
 News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are part of the distribution.&lt;/p&gt;
 
 &lt;h3 id=&quot;improving-the-hook-management-further&quot;&gt;Improving the hook management further&lt;/h3&gt;
@@ -310,7 +347,7 @@ the release cycle of the TeXLive distribution.&lt;/p&gt;
 
 &lt;p&gt;The focus of this release is to provide further important building
 blocks for the future production of reliable tagged PDF output (see
-the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');&quot;&gt;LaTeX
+the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;be7595c59bf34ca8b4366dfa05816e17&apos;);&quot;&gt;LaTeX
 Tagged PDF — A blueprint for a large project&lt;/a&gt; that describes the
 project we are engaged in); these enhancements are discussed below.&lt;/p&gt;
 
@@ -371,7 +408,7 @@ are useful for you.&lt;/p&gt;
 &lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
 
 &lt;p&gt;The new features and most of the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');&quot;&gt;“LaTeX2e
+are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;3ee1eac0b37f4a6e9102440c46f29e30&apos;);&quot;&gt;“LaTeX2e
 News Issue 33”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
 page&lt;/a&gt; where you will also find
 release information for earlier LaTeX releases.&lt;/p&gt;
@@ -683,7 +720,7 @@ of his pet camouflaging himself as a project member:&lt;/p&gt;
 
 &lt;p&gt;We have now added the feasibility study (which was the starting point for the project) to this website:&lt;/p&gt;
 
-&lt;h3 id=&quot;latex-tagged-pdf-feasibility-evaluation-study&quot;&gt;&lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');&quot;&gt;LaTeX Tagged PDF Feasibility Evaluation Study&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;latex-tagged-pdf-feasibility-evaluation-study&quot;&gt;&lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;c1e17b6fed7b4e0fac9032b4aad469c9&apos;);&quot;&gt;LaTeX Tagged PDF Feasibility Evaluation Study&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
@@ -722,7 +759,7 @@ corrections and clarifications.&lt;/p&gt;
 
 &lt;p&gt;In addition the TUGboat article referred to above is also available for reading:&lt;/p&gt;
 
-&lt;h3 id=&quot;latex-tagged-pdf--a-blueprint-for-a-large-project&quot;&gt;&lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('be7595c59bf34ca8b4366dfa05816e17');&quot;&gt;LaTeX Tagged PDF — A blueprint for a large project&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;latex-tagged-pdf--a-blueprint-for-a-large-project&quot;&gt;&lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;be7595c59bf34ca8b4366dfa05816e17&apos;);&quot;&gt;LaTeX Tagged PDF — A blueprint for a large project&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/about/team/#frank-mittelbach&quot;&gt;Frank Mittelbach&lt;/a&gt;&lt;/li&gt;
@@ -739,7 +776,7 @@ standards such as PDF/UA.&lt;/p&gt;
       &lt;p&gt;In this short article we outline the background to this project and
 some of its history so far. We then describe the major features of
 the project and the tasks involved, of which more details can be
-found in the &lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');&quot;&gt;Feasibility
+found in the &lt;a href=&quot;/publications/2020-tagged-pdf-feasibility.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;c1e17b6fed7b4e0fac9032b4aad469c9&apos;);&quot;&gt;Feasibility
 Study&lt;/a&gt; that was prepared as the ﬁrst part of our co-operation
 with Adobe.&lt;/p&gt;
 
@@ -768,58 +805,6 @@ activities on and around the project.&lt;/p&gt;
         <category>accessibility</category>
         
         <category>tagged pdf</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Tutorial on the L3 programming layer (expl3)</title>
-        <description>&lt;h1 id=&quot;tutorial-on-the-l3-programming-layer-expl3&quot;&gt;Tutorial on the L3 programming layer (expl3)&lt;/h1&gt;
-
-&lt;p&gt;In Spring 2020 the LaTeX3 programming language &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; was integrated
-into the LaTeX format to make it directly accessible to package
-developers and for future LaTeX kernel programming. Since that date
-LaTeX announces itself with something like&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LaTeX2e &amp;lt;2020-10-01&amp;gt; patch level 2
-L3 programming layer &amp;lt;2020-10-27&amp;gt; xparse &amp;lt;2020-03-03&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Up to now the documentation for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; that we provide consists of a
-short introduction (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3.pdf&lt;/code&gt;), its reference manual
-(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interface3.pdf&lt;/code&gt;) and its source code (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source3.pdf&lt;/code&gt;) all of which you
-can easily access using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc&lt;/code&gt; program, e.g.,&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;texdoc interface3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;What was missing, however, was a tutorial to help progammers to get
-familiar with the features and approaches when they want to use the L3
-programming layer in their own packages. Such a tutorial has now been
-written by Ziyue “Alan” Xiang, currently a PhD student at Purdue
-University and we strongly recommend to check it out if you are
-interested in L3 programming or in understanding code written in it:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.alanshawn.com/latex3-tutorial/&quot;&gt;Tutorial on L3 programming layer (expl3)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks Alan for your work; it is much appreciated!&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 09 Nov 2020 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2020/11/09/l3-tutorial/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2020/11/09/l3-tutorial/</guid>
-        
-        <category>latex3</category>
-        
-        <category>development</category>
-        
-        <category>tutorial</category>
         
         
         <category>news</category>

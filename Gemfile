@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 require 'json'
 require 'open-uri'
 
+# gem 'gem-pages', group: :jekyll_plugins
+
 # 2022-02 this is not found by the call
 #versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
