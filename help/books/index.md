@@ -85,7 +85,20 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)).
 **Publisher:** Addison-Wesley Professional   
 **ISBN-10:** 0321508920  
 **ISBN-13:** 078-5342508925  
-**Pages:** 976 pages  
+**Pages:** 976 pages
+
+The book is no longer available from Addision-Wesely but is now reprinted by Lehmanns Media.
+
+![The LaTeX Graphics Companion, 2nd edition (TTCT series)](lgc2-media_103218567.jpeg){:width="150" height="189"}
+**Edition:** 2nd edition  
+**Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voss  
+**Language:** English  
+**Date:** 2007  
+**Publisher:** Lehmanns Media   
+**ISBN-13:** 978-3-96543-303-8 (softcover)    
+**ISBN-13:** 978-3-96543-299-4 (ebook)   
+**Pages:** 976 pages
+
 
 There are some extracts from the book as PDF files available from this site:
 
