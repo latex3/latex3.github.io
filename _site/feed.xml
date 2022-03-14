@@ -5,9 +5,59 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Mar 2022 11:35:21 +0100</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 11:35:21 +0100</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2022 14:43:01 +0100</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2022 14:43:01 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Robin Fairbairns (?? - 2022)</title>
+        <description>&lt;h1 id=&quot;robin-fairbairns----2022&quot;&gt;Robin Fairbairns (?? - 2022)&lt;/h1&gt;
+
+&lt;p&gt;We are sad to report that our long time friend, team member, and LaTeX contributor
+Robin Fairbairns died 25th February 2022, after a long period of ill
+health.
+Much missed husband of Linda, former husband and friend of Josy,
+father of Chloe and Sam, stepfather of Chloe and Lydia.&lt;/p&gt;
+
+&lt;p&gt;The Funeral will be on &lt;a href=&quot;https://funeral-notices.co.uk/notice/fairbairns/5024136&quot;&gt;30th March 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Robin was instrumental in bringing the UK TeX archive to Cambridge,
+and setting up the CTAN TeX archive network in 1992, of which
+Cambridge, DANTE and SHSU were the three original hosts. The UK CTAN
+host was managed by Robin until his retirement in 2014.
+Robin wrote or maintained many well used &lt;a href=&quot;https://www.ctan.org/author/fairbairns&quot;&gt;LaTeX packages that are on
+CTAN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;He also regularly served on the UKTUG Committee, and for many
+years developed and maintained the “UKTUG FAQ” archive of Questions and Answers on
+TeX related subjects.  The FAQ is now maintained at
+&lt;a href=&quot;https://texfaq.org&quot;&gt;https://texfaq.org&lt;/a&gt; but the majority of the text still reflects
+Robin’s original work.&lt;/p&gt;
+
+&lt;p&gt;Robin was one of the seemingly tireless members of the community who was
+active in helping as many people as much as he could. He clearly
+looked to improve the TeX ecosystem and worked hard to leave it in a
+better place after his time was up. He certainly succeeded in that.&lt;/p&gt;
+
+&lt;p&gt;With sadness&lt;/p&gt;
+
+&lt;p&gt;— The LaTeX Team&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 14 Mar 2022 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2022/03/14/robin-fairbairns/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/03/14/robin-fairbairns/</guid>
+        
+        <category>latex</category>
+        
+        <category>personal</category>
+        
+        <category>Robin Fairbairns</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>LaTeX Graphics Companion 2ed is back in print! (update)</title>
@@ -719,33 +769,6 @@ modification should be straightforward.&lt;/p&gt;
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>A new team member?</title>
-        <description>&lt;h1 id=&quot;a-new-team-member&quot;&gt;A new team member?&lt;/h1&gt;
-
-&lt;p&gt;In these rather dark times, some light-hearted news.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/gato-2021.jpg&quot; alt=&quot;Gato&quot; width=&quot;60%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Courtesy of Paulo Cereda (the designer of our hummingbird) a picture
-of his pet camouflaging himself as a project member:&lt;/p&gt;
-
-&lt;p&gt;Looking forward to his contributions. — Enjoy Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 07 Feb 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/02/07/a-new-team-member/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/02/07/a-new-team-member/</guid>
-        
-        <category>latex</category>
-        
-        <category>latex team</category>
         
         
         <category>news</category>
