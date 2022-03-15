@@ -34,10 +34,11 @@ TeX related subjects.  The FAQ is now maintained at
 <https://texfaq.org> but the majority of the text still reflects
 Robin's original work.
 
-Robin was one of the seemingly tireless members of the community who was
-active in helping as many people as much as he could. He clearly
-looked to improve the TeX ecosystem and worked hard to leave it in a
-better place after his time was up. He certainly succeeded in that.
+Robin was a tireless member of the community who helped many people
+for many years with his kind, friendly, and patient approach.  He
+clearly looked to improve the TeX ecosystem and worked hard to leave
+it in a better place after his time was up. He certainly succeeded in
+that.
 
 With sadness
 
