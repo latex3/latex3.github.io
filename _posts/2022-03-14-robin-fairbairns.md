@@ -9,7 +9,7 @@ tags: [latex, personal,Robin Fairbairns]
 ---
 
 
-# Robin Fairbairns (?? - 2022)
+# Robin Fairbairns (1947 - 2022)
 
 
 
@@ -43,4 +43,6 @@ that.
 With sadness
 
 --- The LaTeX Team
+
+<img src="{{site.baseurl}}/img/robin-web.png" alt="Robin Fairbairns" width="100%" height="auto" >
 
