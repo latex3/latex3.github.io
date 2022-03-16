@@ -25,7 +25,7 @@ Robin was instrumental in bringing the UK TeX archive to Cambridge,
 and setting up the CTAN TeX archive network in 1992, of which
 Cambridge, DANTE and SHSU were the three original hosts. The UK CTAN
 host was managed by Robin until his retirement in 2014.
-Robin wrote or maintained many well used [LaTeX packages that are on
+Robin wrote or maintained many well-used [LaTeX packages that are on
 CTAN](https://www.ctan.org/author/fairbairns). 
 
 He also regularly served on the UKTUG Committee, and for many
