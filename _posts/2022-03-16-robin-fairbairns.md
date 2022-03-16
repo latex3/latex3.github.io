@@ -13,7 +13,7 @@ tags: [latex, personal,Robin Fairbairns]
 
 
 
-We are sad to report that our long time friend, team member, and LaTeX contributor
+We are sad to report that our longtime friend, team member, and LaTeX contributor
 Robin Fairbairns died 25th February 2022, after a long period of ill
 health.
 Much missed husband of Linda, former husband and friend of Josy,
