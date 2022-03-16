@@ -34,7 +34,7 @@ TeX related subjects.  The FAQ is now maintained at
 <https://texfaq.org> but the majority of the text still reflects
 Robin's original work.
 
-<img src="{{site.baseurl}}/img/robin-web.png" alt="Robin Fairbairns" width="100%" height="auto" >
+<img src="{{site.baseurl}}/img/Robin-web.png" alt="Robin Fairbairns" width="100%" height="auto" >
 
 Robin was a tireless member of the community who helped many people
 for many years with his kind, friendly, and patient approach.  He
