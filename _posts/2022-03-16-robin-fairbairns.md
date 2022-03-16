@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Robin Fairbairns (?? - 2022)"
-date: 2022-03-14 00:00:00
+title: "Robin Fairbairns (1947 - 2022)"
+date: 2022-03-16 00:00:00
 description: ""
 excerpt: ""
 categories: news
