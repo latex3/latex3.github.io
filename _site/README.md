@@ -1,13 +1,13 @@
 # latex-project.org
 
-Changes to the `master` branch can be viewed at [http://latex3.github.io/](http://latex3.github.io/), which is the staging environment. If everything looks fine, you can merge `master` with `live` to have the server running [https://www.latex-project.org/](https://www.latex-project.org/) pick up the changes.
+Changes to the `master` branch can be viewed at [https://latex3.github.io/](https://latex3.github.io/), which is the staging environment. If everything looks fine, you can merge `master` with `live` to have the server running [https://www.latex-project.org/](https://www.latex-project.org/) pick up the changes.
 
 What actually happens is that the `_site` directory is pulled by the server, so it needs to contain a properly built site (see below).
 
 ## Branches
 
 **The latex-project.org staging**  
-[https://latex3.github.io/](http://latex3.github.io/) - `main` branch
+[https://latex3.github.io/](https://latex3.github.io/) - `main` branch
 
 **The latex-project.org website**  
 [https://www.latex-project.org/](https://www.latex-project.org/) - `live` branch
