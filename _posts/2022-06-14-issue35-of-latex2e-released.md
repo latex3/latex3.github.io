@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "June 2021 LaTeX release available"
+title: "June 2022 LaTeX release available"
 date: 2022-06-14 00:00:00
 description: "The  June 2022 release of LaTeX is available. ltnews35 describes updates and changes made in the new LaTeX release."
 excerpt: "With a few days delay we released the 2022-06-01 version of LaTeX and
