@@ -32,6 +32,7 @@ description: "References to the official LaTeX documentation and to documentatio
         <ul>
 	  <li><a href="#general-documentation">General documentation</a></li>
 	  <li><a href="#documentation-of-the-new-hook-management">Hook management</a></li>
+	  <li><a href="#documentation-of-the-new-mark-mechanism">Page mark management</a></li>
 	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
 	  <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
 	  <li><a href="#quick-summary-of-changes-by-release">Summary of changes by release</a></li>
@@ -133,7 +134,13 @@ The hook management introduced in 2020 is largely intended for package developer
      onclick="vgwPixelCall('c6f0abc213674d8bb743d04d8a374786');">Hooks available when processing paragraphs --- `ltpara-doc.pdf`</a>
 
 
+### Documentation of the new mark mechanism
 
+The new mark mechanism introduced in 2022 offers arbitrary many independent marks and resolves the issues with LaTeX legacy marks (available through `\markbox` and `\markright`). The old mechanism remains available so that classes using it continue to work without any updates.
+
++ <a href="{{site.baseurl}}/help/documentation/ltmarks-doc.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('3dd41d35983b4dbdb9ffd4e2bd967235');">Overview of LaTeX's new mark mechanism --- `ltmarks-doc.pdf`</a>
 
 
 ### Typesetting complex mathematics

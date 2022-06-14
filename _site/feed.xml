@@ -5,9 +5,50 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 27 May 2022 17:21:56 +0200</pubDate>
-    <lastBuildDate>Fri, 27 May 2022 17:21:56 +0200</lastBuildDate>
+    <pubDate>Tue, 14 Jun 2022 18:43:42 +0200</pubDate>
+    <lastBuildDate>Tue, 14 Jun 2022 18:43:42 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>June 2021 LaTeX release available</title>
+        <description>&lt;h1 id=&quot;the-june-2022-latex-release-is-available&quot;&gt;The June 2022 LaTeX release is available&lt;/h1&gt;
+
+&lt;p&gt;With a few days delay we released the 2022-06-01 version of LaTeX and
+by now it should be available in all major distributions. The release
+contains a number of important improvements and extensions that have
+be discussed in previous posts.&lt;/p&gt;
+
+&lt;p&gt;To get a good overview about the new features and most of the
+important bug fixes made in this release take a look a in &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
+News Issue 35”&lt;/a&gt;. This document should be accessible through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
+ltnews35&lt;/code&gt; on your computer and can also be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;p&gt;With the extended testing of pre-releases I would have hoped for once that we can do without having to produce a patch release soon after, but no such luck. While no code issues have been found, we managed to mess up the banner, which comes out as&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LaTeX2e &amp;lt;2022-06-01&amp;gt; pre-release-0 (develop 2022-6-12 branch)
+L3 programming layer &amp;lt;2022-06-02&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, and a minor fix in for legacy Cyrillic code pages).&lt;/p&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Jun 2022 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2022/06/14/issue35-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/06/14/issue35-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        <category>tagged PDF</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Final pre-release of LaTeX 2022-06-01 is available for testing</title>
@@ -628,104 +669,6 @@ News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;lan
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Spring 2021 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;the-spring-2021-latex-release-is-available&quot;&gt;The Spring 2021 LaTeX release is available&lt;/h1&gt;
-
-&lt;p&gt;This year Spring in LaTeX’s counting is somewhat delayed, but this
-fits the weather—at least here in Germany were we had April
-weather throughout most of May.
-We plan to keep it this way in future releases: a first release in
-May/June and a second release around November as this better fits with
-the release cycle of the TeXLive distribution.&lt;/p&gt;
-
-&lt;p&gt;The focus of this release is to provide further important building
-blocks for the future production of reliable tagged PDF output (see
-the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;be7595c59bf34ca8b4366dfa05816e17&apos;);&quot;&gt;LaTeX
-Tagged PDF — A blueprint for a large project&lt;/a&gt; that describes the
-project we are engaged in); these enhancements are discussed below.&lt;/p&gt;
-
-&lt;h3 id=&quot;extending-the-hook-concept-to-paragraphs&quot;&gt;Extending the hook concept to paragraphs&lt;/h3&gt;
-
-&lt;p&gt;Largely triggered by the need for better control of paragraph text
-processing, in particular when producing tagged PDF output, we have
-changed LaTeX so that the kernel gains control both at the start and
-at the end of each paragraph. This is done in a manner that is (or
-should be) transparent to both packages and documents.  We have also
-included four public hooks to enable adding code to paragraphs in a
-controlled manner. The documentation on this is available as 
-&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltpara-doc.pdf&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;These hooks will enable us to automatically tag paragraphs and enables
-us to identify when paragraphs are broken across columns or pages,
-because those need special handling in tagged PDF.&lt;/p&gt;
-
-&lt;h3 id=&quot;extending-the-hook-concept-to-commands&quot;&gt;Extending the hook concept to commands&lt;/h3&gt;
-
-&lt;p&gt;With this release we extended the set of “generic” hooks to
-commands: in theory each document-level command has now two hooks
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd/&amp;lt;command&amp;gt;/before&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd/&amp;lt;command&amp;gt;/after&lt;/code&gt; in which packages (or
-the user in the preamble) can add code using the hook management
-machinery.&lt;/p&gt;
-
-&lt;p&gt;If you know the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;etoolbox&lt;/code&gt; package, then you can think of them as being
-similar to the use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\preto&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\appto&lt;/code&gt; from that package, but with
-the difference that if different packages try to do that, the added
-code chunks can be controlled and ordered as needed using the hook
-mechanism. The documentation for this functionality can be found in
-&lt;a href=&quot;/help/documentation/#documentation-of-the-new-hook-management&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmdhook-doc.pdf&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In practice, not all commands can accept such generic hooks: some
-(especially those that take optional arguments) will break if you try
-using an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/after&lt;/code&gt; hook with them. However, many will and that allows
-us in the future to easily patch the many commands to enable tagged PDF
-without touching or updating package code.&lt;/p&gt;
-
-&lt;h3 id=&quot;a-large-number-of-other-enhancements-and-corrections&quot;&gt;A large number of other enhancements and corrections&lt;/h3&gt;
-
-&lt;p&gt;There are many other enhancements and corrections that we
-documented in the ltnews article for this release (and a few very
-minor ones that only made it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; file). The most
-important ones from a user perspective are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Further improvements of file name parsing; in particular
-we made the parsing much faster again (it got a little slow with
-the functional enhancements we introduced in the last releases)&lt;/li&gt;
-  &lt;li&gt;Better handling of font series and font shape changes&lt;/li&gt;
-  &lt;li&gt;Improved copy &amp;amp; paste from documents produced with pdfTeX&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But read the whole ltnews article because there may be other gems that
-are useful for you.&lt;/p&gt;
-
-&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
-
-&lt;p&gt;The new features and most of the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews33.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;3ee1eac0b37f4a6e9102440c46f29e30&apos;);&quot;&gt;“LaTeX2e
-News Issue 33”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 01 Jun 2021 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2021/06/01/issue33-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/06/01/issue33-of-latex2e-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        <category>tagged PDF</category>
         
         
         <category>news</category>

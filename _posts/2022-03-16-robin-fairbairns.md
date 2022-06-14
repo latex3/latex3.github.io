@@ -3,7 +3,9 @@ layout: post
 title: "Robin Fairbairns (1947 - 2022)"
 date: 2022-03-16 00:00:00
 description: ""
-excerpt: ""
+excerpt: "We are sad to report that our longtime friend, team member, and LaTeX contributor
+Robin Fairbairns died 25th February 2022, after a long period of ill
+health ..."
 categories: news
 tags: [latex, personal,Robin Fairbairns]
 ---
