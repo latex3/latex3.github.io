@@ -19,7 +19,7 @@ contains a number of important improvements and extensions that have
 be discussed in previous posts.
 
 To get a good overview about the new features and most of the
-important bug fixes made in this release take a look a in <a
+important bug fixes made in this release take a look at <a
 href="{{site.baseurl}}/news/latex2e-news/ltnews35.pdf" target="_blank"
 onclick="vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');">"LaTeX2e
 News Issue 35"</a>. This document should be accessible through `texdoc
@@ -32,7 +32,7 @@ With the extended testing of pre-releases I would have hoped for once that we ca
 LaTeX2e <2022-06-01> pre-release-0 (develop 2022-6-12 branch)
 L3 programming layer <2022-06-02>
 ```
-which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, and a minor fix in for legacy Cyrillic code pages).
+which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, a minor fix in for legacy Cyrillic code pages, and a fix for `ltxdoc` if used with `csquotes`in the preamble).
 
 Happy LaTeXing
 --- Frank

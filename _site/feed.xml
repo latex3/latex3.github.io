@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Jun 2022 18:43:42 +0200</pubDate>
-    <lastBuildDate>Tue, 14 Jun 2022 18:43:42 +0200</lastBuildDate>
+    <pubDate>Tue, 14 Jun 2022 22:22:53 +0200</pubDate>
+    <lastBuildDate>Tue, 14 Jun 2022 22:22:53 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -19,7 +19,7 @@ contains a number of important improvements and extensions that have
 be discussed in previous posts.&lt;/p&gt;
 
 &lt;p&gt;To get a good overview about the new features and most of the
-important bug fixes made in this release take a look a in &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
+important bug fixes made in this release take a look at &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
 News Issue 35”&lt;/a&gt;. This document should be accessible through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
 ltnews35&lt;/code&gt; on your computer and can also be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
 page&lt;/a&gt; where you will also find
@@ -29,7 +29,7 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LaTeX2e &amp;lt;2022-06-01&amp;gt; pre-release-0 (develop 2022-6-12 branch)
 L3 programming layer &amp;lt;2022-06-02&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, and a minor fix in for legacy Cyrillic code pages).&lt;/p&gt;
+&lt;p&gt;which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, a minor fix in for legacy Cyrillic code pages, and a fix for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltxdoc&lt;/code&gt; if used with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;csquotes&lt;/code&gt;in the preamble).&lt;/p&gt;
 
 &lt;p&gt;Happy LaTeXing
 — Frank&lt;/p&gt;
