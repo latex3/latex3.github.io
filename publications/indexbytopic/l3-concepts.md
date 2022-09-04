@@ -8,6 +8,7 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX3 Concepts, Architecture and Design
 
 
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2021 (Online conference)

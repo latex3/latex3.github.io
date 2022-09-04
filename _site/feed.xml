@@ -5,9 +5,110 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Jul 2022 22:49:25 +0200</pubDate>
-    <lastBuildDate>Fri, 15 Jul 2022 22:49:25 +0200</lastBuildDate>
+    <pubDate>Sun, 04 Sep 2022 21:54:44 +0200</pubDate>
+    <lastBuildDate>Sun, 04 Sep 2022 21:54:44 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Talks from the online TUG Conferences 2021 and 2022</title>
+        <description>&lt;h1 id=&quot;talks-from-the-online-tug-conference-2021-and-2022-on-youtube&quot;&gt;Talks from the online TUG Conference 2021 and 2022 on YouTube&lt;/h1&gt;
+
+&lt;p&gt;For some reason it took a long time to get the 2021 talks cut and
+uploaded to YouTube and when that finally happened, I was in the
+middle of entering copy-editing corrections for the &lt;em&gt;LaTeX Companion, 3rd edition&lt;/em&gt; and
+simply missed the opportunity to announce the talks and update the
+website to refer to it.  Now with with TUG 2022 also online this is
+more than overdue.&lt;/p&gt;
+
+&lt;p&gt;Both conferences (as usual) had quite a number of interesting talks on
+many subjects of TeX usage and related topics.  If you have missed the
+conferences (or if you want listen to one of the talks again) you will
+find them all on the &lt;a href=&quot;https://www.youtube.com/c/TeXUsersGroup/featured&quot;&gt;TeX Users Group Channel on
+YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were also several talks by members of the LaTeX Project
+team. Some are directly relevant to our multi-year project on
+automatically producing tagged PDF; others discuss other LaTeX topics
+of interest. As an intro to the tagged-PDF project (for those who haven’t heard about it yet) I also provide one
+link to a talk from the 2020 conference announcing that project.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2020 Conference
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://youtu.be/zNci4lcb8Vo&quot;&gt;Frank Mittelbach: Quo Vadis LaTeX(3) — A look at the upcoming
+years (2020)&lt;/a&gt; which gives an overview about
+our recently started multi-year project that aims at providing
+accessible and tagged PDF. There is also &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot;&gt;an article related to the information given in the talk&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2021 Conference
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7FQLnggVgDE&quot;&gt;Frank Mittelbach: Taming the beast — Advances in paragraph tagging
+with pdfTeX and XeTeX (2021)&lt;/a&gt; - Automatic paragraph tagging with
+the pdfTeX and XeTeX engine now possible.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=d0ivQywNkAQ&quot;&gt;Ulrike Fischer: On the road to Tagged PDF: About StructElem,
+ Marked Content, PDF/A and Squeezed Bärs (2021)&lt;/a&gt;
+  — An overview
+ about tagging possibilities already available. There is also &lt;a href=&quot;/publications/2021-xxUFi-TUB-tb131fischer-tagpdf.pdf&quot;&gt;an article related to the talk&lt;/a&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Z4sU-h3moOc&quot;&gt;Joseph Wright: Any colo(u)r you like (2021)&lt;/a&gt;
+ — New color-handling methods for the LaTeX kernel.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VDsEum6GoBI&quot;&gt;Paulo Ney de Souza: Interview with Frank Mittelbach (2021)&lt;/a&gt;
+ — This interview took place on 7 August 2021, during the TUG 2021
+online conference. It is also &lt;a href=&quot;/publications/2021-FMi-TUB-tb131mittelbach-desouza.pdf&quot;&gt;transcribed as an article&lt;/a&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2022 Conference
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=JjW_hfrYxfk&quot;&gt;Ulrike Fischer: New in stock — recent LaTeX improvements (that
+ you may have missed), (2022)&lt;/a&gt;
+  — An overview about selected new
+ features offered by LaTeX with a number of examples given.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sgv0ZV7od_U&quot;&gt;Ulrike Fischer: Using spot colors with LaTeX (2022)&lt;/a&gt;
+— Experience gained while working on the 3rd edition of &lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jV9S2M0iEfo&quot;&gt;Joseph Wright: Key-value setting handling in the kernel (2022)&lt;/a&gt;
+ — A discussion of new features for packages and classes offering
+key/value options.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=zT6OKygUqRU&quot;&gt;Joseph Wright: Case changing: LaTeX reaches Unicode-land (2022)&lt;/a&gt;
+ — LaTeX now provides much better support for case changing.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Sep 2022 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2022/09/04/TUG-online-talks-21-22/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/09/04/TUG-online-talks-21-22/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>development</category>
+        
+        <category>conference</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>June 2022 LaTeX release available</title>
@@ -575,94 +676,6 @@ News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;lan
         <pubDate>Mon, 25 Oct 2021 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2021/10/25/latex-dev-2021-4/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2021/10/25/latex-dev-2021-4/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Second pre-release of LaTeX 2021-11-15 is available for testing</title>
-        <description>&lt;h1 id=&quot;the-second-latex-pre-release-for-2021-11-15-is-available-for-testing&quot;&gt;The second LaTeX pre-release for 2021-11-15 is available for testing&lt;/h1&gt;
-
-&lt;p&gt;A few days ago we submitted a new LaTeX development format to CTAN and by now it should be available to all users using MiKTeX or TeX Live (on any operating system).&lt;/p&gt;
-
-&lt;h2 id=&quot;main-features-of-the-second-pre-release-for-2021-11-15&quot;&gt;Main features of the second pre-release for 2021-11-15&lt;/h2&gt;
-
-&lt;p&gt;The first pre-release was just a copy of the main release for 2021-06-01 in order to avoid that people using the development release regularly get an old format.&lt;/p&gt;
-
-&lt;p&gt;The second pre-release now provides some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.&lt;/p&gt;
-
-&lt;p&gt;Notable improvements already contained in the pre-release are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Resolving some issues around the new hook functionality:
-    &lt;ul&gt;
-      &lt;li&gt;Providing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ActivateGenericHook&lt;/code&gt;;&lt;/li&gt;
-      &lt;li&gt;Command to clear “next” hook code before invocation;&lt;/li&gt;
-      &lt;li&gt;Cleanup after a one-time hook;&lt;/li&gt;
-      &lt;li&gt;Changed the behavior of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\RemoveFromHook&lt;/code&gt;;&lt;/li&gt;
-      &lt;li&gt;Standardizing generic hook names;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Other improvements:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tracinglostchars&lt;/code&gt; got a new default&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\PackageNote&lt;/code&gt; was added to show notes that aren’t “warnings” on the terminal&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ShowCommand&lt;/code&gt; got extended to show commands defined with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltcmd&lt;/code&gt; (former &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xparse&lt;/code&gt;)&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewCommandCopy&lt;/code&gt; got extended as well to safely these commands to new names&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alt&lt;/code&gt; key for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\includegraphics&lt;/code&gt; (anticipating future development)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The more important ones are listed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
-News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are part of the distribution.&lt;/p&gt;
-
-&lt;h3 id=&quot;improving-the-hook-management-further&quot;&gt;Improving the hook management further&lt;/h3&gt;
-
-&lt;p&gt;The breaking change mentioned above involves the name of generic file hooks. They used a special naming convention in the past and we now changed them to use the same structure as all other generic hooks, that is, their “variable” part (i.e., the file or package name) is always in the second position. For example, to execute some code after the array package was loaded you now say&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\AddToHook{package/array/after}{...code...}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;just like you would set up code to be executed after each tabular environment with&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\AddToHook{env/tabular/after}{...code...}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;For now the old syntax &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package/after/array&lt;/code&gt; is still supported, thus packages making use of this functionality have time to adapt to the new convention once the main release is out and distributed.&lt;/p&gt;
-
-&lt;p&gt;Other improvements to the hook management (e.g., the functionality to have packages implement generic hooks) are discussed in &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot;&gt;LaTeX2e News Issue 34&lt;/a&gt; and in the relevant kernel documentation.&lt;/p&gt;
-
-&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
-
-&lt;p&gt;We expect to produce a third and  final pre-release adding some more features and enhancements in late October.&lt;/p&gt;
-
-&lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
-
-&lt;p&gt;We are issuing this second pre-release now in the hope that you will help us by making sure that all the enhancements and fixes we have provided are safe and that they do not have any undesired side effects, so please help with the testing if you can.&lt;/p&gt;
-
-&lt;p&gt;This development format allows you to test the upcoming LaTeX release scheduled for 2021-11-15 with your documents or packages. Such testing is particularly important for package maintainers to verify that changes to the core LaTeX haven’t introduced incompatibilities with existing code. We try to identify any such problems beforehand but such an undertaking is necessarily incomplete, which is why we are asking for user testing.&lt;/p&gt;
-
-&lt;p&gt;Besides developers, we also ask ordinary users to try out the new release, because the more people that test the new format, the higher the chances that any hidden problems are identified before the final release hits the streets.&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have to do is to replace the invocation command by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated editing environment, then it depends on the system  how to configure it to use an alternative format; but in any case the necessary modification should be straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Sep 2021 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2021/09/23/latex-dev-2021-3/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/09/23/latex-dev-2021-3/</guid>
         
         <category>latex2e</category>
         

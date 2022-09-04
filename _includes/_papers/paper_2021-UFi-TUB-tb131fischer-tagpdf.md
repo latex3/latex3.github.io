@@ -11,4 +11,7 @@
 >
 > I will show how to use these packages and the benefits they will bring for the average user, while also mentioning resulting incompatibilities and required changes in documents.
 
+There is also a video from the
+[talk given at the TUG online conference 2021 at YouTube](https://www.youtube.com/watch?v=d0ivQywNkAQ) on this topic.
+
 ***
