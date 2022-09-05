@@ -12,6 +12,7 @@
 {% include _papers/paper_2022-UFI-TUG-talk-spotcolor.md  %}
 {% include _papers/paper_2022-JAW-TUG-talk-keyval.md  %}
 {% include _papers/paper_2022-JAW-TUG-talk-casechange.md %}
+{% include _papers/paper_2022-JAW-TUG-talk-siunitx.md %}
 
 <hr class="conference-end">
 

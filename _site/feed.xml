@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 04 Sep 2022 21:54:44 +0200</pubDate>
-    <lastBuildDate>Sun, 04 Sep 2022 21:54:44 +0200</lastBuildDate>
+    <pubDate>Mon, 05 Sep 2022 11:30:18 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Sep 2022 11:30:18 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -55,6 +55,10 @@ the pdfTeX and XeTeX engine now possible.&lt;/p&gt;
  about tagging possibilities already available. There is also &lt;a href=&quot;/publications/2021-xxUFi-TUB-tb131fischer-tagpdf.pdf&quot;&gt;an article related to the talk&lt;/a&gt;.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=hXqaLwxuivQ&quot;&gt;Marcel Krüger: Reviving Type 3 fonts for modern LuaLaTeX documents&lt;/a&gt;
+ — A discussion of the recently added LuaTeX support for this font format for non-bitmap use cases.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
         &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Z4sU-h3moOc&quot;&gt;Joseph Wright: Any colo(u)r you like (2021)&lt;/a&gt;
  — New color-handling methods for the LaTeX kernel.&lt;/p&gt;
       &lt;/li&gt;
@@ -85,6 +89,11 @@ key/value options.&lt;/p&gt;
       &lt;li&gt;
         &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=zT6OKygUqRU&quot;&gt;Joseph Wright: Case changing: LaTeX reaches Unicode-land (2022)&lt;/a&gt;
  — LaTeX now provides much better support for case changing.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IYPFinT6C_k&quot;&gt;Joseph Wright: siunitx: Launching version 3 (2022)&lt;/a&gt;
+ — A discussion of the move from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;siunitx&lt;/code&gt; version 2 to version 3 and what developer efforts have made this
+ a success.&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;

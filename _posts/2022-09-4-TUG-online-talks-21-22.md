@@ -50,12 +50,16 @@ link to a talk from the 2020 conference announcing that project.
         — An overview
        about tagging possibilities already available. There is also [an article related to the talk]({{ site.baseurl }}/publications/2021-xxUFi-TUB-tb131fischer-tagpdf.pdf).
 
+    - [Marcel Krüger: Reviving Type 3 fonts for modern LuaLaTeX documents](https://www.youtube.com/watch?v=hXqaLwxuivQ)
+       — A discussion of the recently added LuaTeX support for this font format for non-bitmap use cases.
+
     - [Joseph Wright: Any colo(u)r you like (2021)](https://www.youtube.com/watch?v=Z4sU-h3moOc)
        — New color-handling methods for the LaTeX kernel.
 
     - [Paulo Ney de Souza: Interview with Frank Mittelbach (2021)](https://www.youtube.com/watch?v=VDsEum6GoBI)
        — This interview took place on 7 August 2021, during the TUG 2021
       online conference. It is also [transcribed as an article]({{ site.baseurl }}/publications/2021-FMi-TUB-tb131mittelbach-desouza.pdf).
+
 
 - 2022 Conference
    - [Ulrike Fischer: New in stock --- recent LaTeX improvements (that
@@ -72,6 +76,10 @@ link to a talk from the 2020 conference announcing that project.
 
    - [Joseph Wright: Case changing: LaTeX reaches Unicode-land (2022)](https://www.youtube.com/watch?v=zT6OKygUqRU)
       — LaTeX now provides much better support for case changing.
+
+   - [Joseph Wright: siunitx: Launching version 3 (2022)](https://www.youtube.com/watch?v=IYPFinT6C_k)
+      — A discussion of the move from `siunitx` version 2 to version 3 and what developer efforts have made this
+      a success.
 
 
 

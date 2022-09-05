@@ -12,6 +12,7 @@ description: "Selection of links to PDF versions of various articles published b
 ## TUG Conference 2022 (Online conference)
 
 {% include _papers/paper_2022-JAW-TUG-talk-casechange.md %}
+{% include _papers/paper_2022-JAW-TUG-talk-siunitx.md %}
 
 <hr class="conference-end">
 
