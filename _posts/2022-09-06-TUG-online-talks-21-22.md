@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Talks from the online TUG Conferences 2021 and 2022"
-date: 2022-09-04 00:00:00
+date: 2022-09-06 00:00:00
 description: "Talks from the online TUG Conferences 2021 and 2022"
 excerpt: "For some reason it took a long time to get the 2021 talks cut and
 uploaded to YouTube and when that finally happened, I was in the middle
