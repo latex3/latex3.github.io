@@ -93,7 +93,7 @@ The book is no longer available from Addision-Wesely but is now reprinted by Leh
 **Edition:** 2nd edition  
 **Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voss  
 **Language:** English  
-**Date:** 2007  
+**Date:** 2022 (reprint of the 2009 version with corrections)   
 **Publisher:** Lehmanns Media   
 **ISBN-13:** 978-3-96543-303-8 (softcover)    
 **ISBN-13:** 978-3-96543-299-4 (ebook)   
