@@ -5,9 +5,97 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Sep 2022 21:11:19 +0200</pubDate>
-    <lastBuildDate>Tue, 06 Sep 2022 21:11:19 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2022 14:21:24 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2022 14:21:24 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>First pre-release of LaTeX 2022-09-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;pre-release-of-latex-for-2022-11-01-is-ready-for-testing&quot;&gt;Pre-release of LaTeX for 2022-11-01 is ready for testing&lt;/h1&gt;
+
+&lt;p&gt;We submitted the first pre-release version for the 2022-11-01 LaTeX
+kernel to CTAN recently. It should have made its way into TeX Live
+or should appear for everyone pretty soon.&lt;/p&gt;
+
+&lt;p&gt;It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing the them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.&lt;/p&gt;
+
+&lt;p&gt;The main highlight is briefly discussed below, further details plus smaller bug fixes and improvements not covered here can be found in the draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews36.pdf&quot;&gt;LaTeX2e News Issue 36&lt;/a&gt; newsletter.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-feature-in-the-kernel-highlights&quot;&gt;New feature in the kernel (highlights)&lt;/h2&gt;
+
+&lt;h3 id=&quot;for-developers&quot;&gt;For developers&lt;/h3&gt;
+
+&lt;p&gt;The most important improvement in LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareDocumentCommand&lt;/code&gt; interfaces and offers a reliable method to allow and (optional) argument to contain either a key/value list or interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of key whose name is specified in the command declaration. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; command could be declared as&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DeclareDocumentCommand \caption {s ={short-text}+O{#3} +m}
+       {...}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;which means that it expects an optional star (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;) and a mandatory argument that can contain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\par&lt;/code&gt; commands (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+m&lt;/code&gt;).
+It also has an optional argument (before the mandatory one) whose default – if not given – is the content of the mandatory one (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+O{#3}&lt;/code&gt;), which is why it refers to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#3&lt;/code&gt;. By prefixing this with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;={short-text}&lt;/code&gt; we state that this optional argument should check for a key/value list and if not found, assign its argument content to the key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; for later processing. This way, further processing of the argument can always assume that it got a key/value list, either the one specified or the simple one with just the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; key.&lt;/p&gt;
+
+&lt;p&gt;Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it i upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.&lt;/p&gt;
+
+&lt;p&gt;While technically this functionality can be used with any argument we intend to use is only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\cmd * [&amp;lt;arg with key/val or free text&amp;gt;] &amp;lt;other mandatory or optional arguments&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Simpler commands could, of course,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;not offer a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; form or&lt;/li&gt;
+  &lt;li&gt;an optional argument always expecting a key/value list or&lt;/li&gt;
+  &lt;li&gt;one without any key/value support or&lt;/li&gt;
+  &lt;li&gt;no optional argument whatsoever.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;for-developers-and-users&quot;&gt;For developers and users&lt;/h3&gt;
+
+&lt;p&gt;You may wonder what rules are used to determine that an argument is interpreted as a key/value list. They are fairly simple, but adequate (we hope) for nearly all use cases. Basically, the argument text is searched for one or more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; signs that are not part of math mode, or more precisely not within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt;. Other constructs are not considered at the moment, e.g., if you really use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{math}...\end{math}&lt;/code&gt; it will not work inside such an argument.
+If the content is incorrectly interpreted as a key/value list, then the remedy for the user is to hide the content in a brace group, e.g.,&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\caption[The form: \begin{math} a=b\end{math}]  {...}  % fails
+\caption[{The form: \begin{math} a=b\end{math}}]{...}  % works
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;There is also a way to force interpretation as a key/value list by prepending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=,&lt;/code&gt; to the argument which can be useful in some situations with valueless keys.
+More details can be found in the documentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
+
+&lt;p&gt;We expect to produce another pre-release before the next main release, but this will most likely only contain some further updates to the latex-lab code, and possible some minor updates to fix one or the other minor pending issue.
+Please help with the testing of this pre-release by using it for your documents or testing it against your own packages.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
+to do is to replace the invocation command by appending -dev to the executable,
+e.g., on the command line you would run&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
+editing environment, then it depends on the system how to configure it to use an
+alternative format; but in any case the necessary modification should be
+straightforward.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Joseph &amp;amp; Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 20 Sep 2022 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2022/09/20/latex-dev-2022-3/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/09/20/latex-dev-2022-3/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Talks from the online TUG Conferences 2021 and 2022</title>
@@ -618,79 +706,6 @@ release information for earlier LaTeX releases.&lt;/p&gt;
         <category>latex-news</category>
         
         <category>tagged PDF</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Final pre-release of LaTeX 2021-11-15 is available for testing</title>
-        <description>&lt;h1 id=&quot;the-final-latex-pre-release-for-2021-11-15-is-available-for-testing&quot;&gt;The final LaTeX pre-release for 2021-11-15 is available for testing&lt;/h1&gt;
-
-&lt;p&gt;A few days ago we submitted the final pre-release of the LaTeX format to CTAN and by now it should be available to all users using MiKTeX or TeX Live (on any operating system).&lt;/p&gt;
-
-&lt;h2 id=&quot;main-features-included-in-the-final-pre-release-for-2021-11-15&quot;&gt;Main features included in the final pre-release for 2021-11-15&lt;/h2&gt;
-
-&lt;p&gt;The upcoming release does not contain any major new modules, but is focused around consolidation  and improvements of functionality introduced in previous releases. There have been some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.&lt;/p&gt;
-
-&lt;p&gt;The hook management improvements are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Standardizing generic hook names;&lt;/li&gt;
-  &lt;li&gt;Rationalizing the behavior of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\RemoveFromHook&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Providing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ActivateGenericHook&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Providing a command to clear “next” hook code before invocation;&lt;/li&gt;
-  &lt;li&gt;Properly clean up after a one-time hook.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other notable improvements include&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ShowCommand&lt;/code&gt; to show commands defined with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewDocumentCommand&lt;/code&gt; and friends;&lt;/li&gt;
-  &lt;li&gt;Extending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewCommandCopy&lt;/code&gt; as well, to safely copy such commands to new names;&lt;/li&gt;
-  &lt;li&gt;Improving the math font family allocation to avoid running out of available math groups in complex documents. A number of math alphabets (controlled through the counter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localmathalphabets&lt;/code&gt;) are now locally allocated and their math groups can be reused with different alphabets per formula;&lt;/li&gt;
-  &lt;li&gt;Adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\PackageNote&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\PackageNoteOnLine&lt;/code&gt; to show notes that aren’t “warnings” on the terminal;&lt;/li&gt;
-  &lt;li&gt;Supporting an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alt&lt;/code&gt; key with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\includegraphics&lt;/code&gt; (anticipating future development);&lt;/li&gt;
-  &lt;li&gt;Providing a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newcolumn&lt;/code&gt; command and an optional argument to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\columnbreak&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multicol&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Altering the default for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tracinglostchars&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are also a number of smaller enhancements and some bug fixes as usual. The details are discussed in the draft publication of &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
-News Issue 34”&lt;/a&gt;. A full list is given in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; files that are part of the distribution.&lt;/p&gt;
-
-&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
-
-&lt;p&gt;We expect to ship the final release (with the same code base as this pre-release) as planned around mid November.&lt;/p&gt;
-
-&lt;h2 id=&quot;please-help-with-the-testing&quot;&gt;Please help with the testing&lt;/h2&gt;
-
-&lt;p&gt;We are issuing this final pre-release now in the hope that you will help us by making sure that all the enhancements and fixes we have provided are safe and that they do not have any undesired side effects, so please help with the testing if you can.&lt;/p&gt;
-
-&lt;p&gt;This development format allows you to test the upcoming LaTeX release scheduled for 2021-11-15 with your documents or packages. Such testing is particularly important for package maintainers to verify that changes to the core LaTeX haven’t introduced incompatibilities with existing code. We try to identify any such problems beforehand but such an undertaking is necessarily incomplete, which is why we are asking for user testing.&lt;/p&gt;
-
-&lt;p&gt;Besides developers, we also ask ordinary users to try out the new release, because the more people that test the new format, the higher the chances that any hidden problems are identified before the final release hits the streets.&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have to do is to replace the invocation command by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable, e.g., on the command line you would run&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pdflatex-dev myfile    or    lualatex-dev myfile    or    xelatex-dev myfile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated editing environment, then it depends on the system  how to configure it to use an alternative format; but in any case the necessary modification should be straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://ssl-vg03.met.vgwort.de/na/03770697eae2427c8a6bfe7e9b8ab332&quot; width=&quot;1&quot; height=&quot;1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Oct 2021 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2021/10/25/latex-dev-2021-4/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/10/25/latex-dev-2021-4/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
         
         
         <category>news</category>
