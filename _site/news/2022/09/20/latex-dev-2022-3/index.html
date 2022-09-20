@@ -69,7 +69,7 @@
 kernel to CTAN recently. It should have made its way into TeX Live
 or should appear for everyone pretty soon.</p>
 
-<p>It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing the them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.</p>
+<p>It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.</p>
 
 <p>The main highlight is briefly discussed below, further details plus smaller bug fixes and improvements not covered here can be found in the draft version of the <a href="/news/latex2e-news/ltnews36.pdf">LaTeX2e News Issue 36</a> newsletter.</p>
 
@@ -77,7 +77,7 @@ or should appear for everyone pretty soon.</p>
 
 <h3 id="for-developers">For developers</h3>
 
-<p>The most important improvement in LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the <code class="language-plaintext highlighter-rouge">\DeclareDocumentCommand</code> interfaces and offers a reliable method to allow and (optional) argument to contain either a key/value list or interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of key whose name is specified in the command declaration. For example, the <code class="language-plaintext highlighter-rouge">\caption</code> command could be declared as</p>
+<p>The most important improvement in LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the <code class="language-plaintext highlighter-rouge">\DeclareDocumentCommand</code> interfaces and offers a reliable method to allow an (optional) argument to contain either a key/value list or interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of the key whose name is specified in the command declaration. For example, the <code class="language-plaintext highlighter-rouge">\caption</code> command could be declared as</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\DeclareDocumentCommand \caption {s ={short-text}+O{#3} +m}
        {...}
@@ -86,9 +86,9 @@ or should appear for everyone pretty soon.</p>
 <p>which means that it expects an optional star (<code class="language-plaintext highlighter-rouge">s</code>) and a mandatory argument that can contain <code class="language-plaintext highlighter-rouge">\par</code> commands (<code class="language-plaintext highlighter-rouge">+m</code>).
 It also has an optional argument (before the mandatory one) whose default – if not given – is the content of the mandatory one (<code class="language-plaintext highlighter-rouge">+O{#3}</code>), which is why it refers to <code class="language-plaintext highlighter-rouge">#3</code>. By prefixing this with <code class="language-plaintext highlighter-rouge">={short-text}</code> we state that this optional argument should check for a key/value list and if not found, assign its argument content to the key <code class="language-plaintext highlighter-rouge">short-text</code> for later processing. This way, further processing of the argument can always assume that it got a key/value list, either the one specified or the simple one with just the <code class="language-plaintext highlighter-rouge">short-text</code> key.</p>
 
-<p>Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it i upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.</p>
+<p>Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it in upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.</p>
 
-<p>While technically this functionality can be used with any argument we intend to use is only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,</p>
+<p>While technically this functionality can be used with any argument we intend to use it only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\cmd * [&lt;arg with key/val or free text&gt;] &lt;other mandatory or optional arguments&gt;
 </code></pre></div></div>
 <p>Simpler commands could, of course,</p>

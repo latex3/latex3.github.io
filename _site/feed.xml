@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 20 Sep 2022 14:21:24 +0200</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2022 14:21:24 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2022 15:51:55 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2022 15:51:55 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -17,7 +17,7 @@
 kernel to CTAN recently. It should have made its way into TeX Live
 or should appear for everyone pretty soon.&lt;/p&gt;
 
-&lt;p&gt;It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing the them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.&lt;/p&gt;
+&lt;p&gt;It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.&lt;/p&gt;
 
 &lt;p&gt;The main highlight is briefly discussed below, further details plus smaller bug fixes and improvements not covered here can be found in the draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews36.pdf&quot;&gt;LaTeX2e News Issue 36&lt;/a&gt; newsletter.&lt;/p&gt;
 
@@ -25,7 +25,7 @@ or should appear for everyone pretty soon.&lt;/p&gt;
 
 &lt;h3 id=&quot;for-developers&quot;&gt;For developers&lt;/h3&gt;
 
-&lt;p&gt;The most important improvement in LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareDocumentCommand&lt;/code&gt; interfaces and offers a reliable method to allow and (optional) argument to contain either a key/value list or interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of key whose name is specified in the command declaration. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; command could be declared as&lt;/p&gt;
+&lt;p&gt;The most important improvement in LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareDocumentCommand&lt;/code&gt; interfaces and offers a reliable method to allow an (optional) argument to contain either a key/value list or interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of the key whose name is specified in the command declaration. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; command could be declared as&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DeclareDocumentCommand \caption {s ={short-text}+O{#3} +m}
        {...}
@@ -34,9 +34,9 @@ or should appear for everyone pretty soon.&lt;/p&gt;
 &lt;p&gt;which means that it expects an optional star (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;) and a mandatory argument that can contain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\par&lt;/code&gt; commands (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+m&lt;/code&gt;).
 It also has an optional argument (before the mandatory one) whose default – if not given – is the content of the mandatory one (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+O{#3}&lt;/code&gt;), which is why it refers to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#3&lt;/code&gt;. By prefixing this with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;={short-text}&lt;/code&gt; we state that this optional argument should check for a key/value list and if not found, assign its argument content to the key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; for later processing. This way, further processing of the argument can always assume that it got a key/value list, either the one specified or the simple one with just the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; key.&lt;/p&gt;
 
-&lt;p&gt;Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it i upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.&lt;/p&gt;
+&lt;p&gt;Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it in upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.&lt;/p&gt;
 
-&lt;p&gt;While technically this functionality can be used with any argument we intend to use is only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,&lt;/p&gt;
+&lt;p&gt;While technically this functionality can be used with any argument we intend to use it only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\cmd * [&amp;lt;arg with key/val or free text&amp;gt;] &amp;lt;other mandatory or optional arguments&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Simpler commands could, of course,&lt;/p&gt;
