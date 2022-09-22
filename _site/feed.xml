@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Sep 2022 12:53:06 +0200</pubDate>
-    <lastBuildDate>Wed, 21 Sep 2022 12:53:06 +0200</lastBuildDate>
+    <pubDate>Thu, 22 Sep 2022 20:02:01 +0200</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2022 20:02:01 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -50,7 +50,7 @@ It also has an optional argument (before the mandatory one) whose default – if
 
 &lt;h3 id=&quot;for-developers-and-users&quot;&gt;For developers and users&lt;/h3&gt;
 
-&lt;p&gt;You may wonder what rules are used to determine that an argument is interpreted as a key/value list. They are fairly simple, but adequate (we hope) for nearly all use cases. Basically, the argument text is searched for one or more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; signs that are not part of inline math mode, or more precisely not within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt;. Other constructs are not considered at the moment, e.g., if you really use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{math}...\end{math}&lt;/code&gt; or some display math it will not work inside such an argument without adjustment.
+&lt;p&gt;You may wonder what rules are used to determine that an argument is interpreted as a key/value list. They are fairly simple, but adequate (we hope) for nearly all use cases. Basically, the argument text is searched for one or more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; signs  that are neither within an explicit brace group &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{...}&lt;/code&gt; nor part of inline math mode, or more precisely not within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt;. Other constructs are not considered at the moment, e.g., if you really use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{math}...\end{math}&lt;/code&gt; or some display math that contains an equal sign, it will not work inside such an argument without adjustment.
 If the content is incorrectly interpreted as a key/value list, then the remedy for the user is to hide the content in a brace group, e.g.,&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\caption[The form: \begin{math} a=b\end{math}]  {...}  % fails
