@@ -78,6 +78,7 @@ People currently involved in the LaTeX project are (in more or less chronologica
       <li><a href="skype:josephawright"><span class="fa fa-skype"></span>josephawright</a></li>
       <li><a href="https://www.texdev.net/"><span class="fa fa-external-link-square"></span>https://www.texdev.net/</a></li>
       <li><a href="https://tex.stackexchange.com/users/73/joseph-wright"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/73</a></li>
+      <li><a href="https://www.linkedin.com/in/joseph-wright-7436a2252/"><span class="fa fa-linkedin-square"></span>https://www.linkedin.com/in/joseph-wright-7436a2252/</a></li>
     </ul>
   </li>
   <li id="bruno-le-floch">
