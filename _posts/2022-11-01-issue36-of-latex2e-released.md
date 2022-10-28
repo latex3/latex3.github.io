@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The November 2022 release of LaTeX is available"
-date: 2022-11-01 00:00:00
+date: 2022-10-28 00:00:00
 description: "The  November 2022 release of LaTeX is available. ltnews36 describes updates and changes made in the new LaTeX release."
 excerpt: "More or less on time we released the 2022-11-01 version of LaTeX and
 by now it should be available in all major distributions.  This
