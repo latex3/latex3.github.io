@@ -5,12 +5,63 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Sep 2022 20:02:01 +0200</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2022 20:02:01 +0200</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2022 17:49:36 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2022 17:49:36 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
-        <title>First pre-release of LaTeX 2022-09-01 is available for testing</title>
+        <title>The November 2022 release of LaTeX is available</title>
+        <description>&lt;h1 id=&quot;the-november-2022-release-of-latex-is-available&quot;&gt;The November 2022 release of LaTeX is available&lt;/h1&gt;
+
+&lt;p&gt;More or less on time we released the 2022-11-01 version of LaTeX and
+by now it should be available in all major distributions.  This
+release is largely a consolidation release. However it also contains one
+very important enhancement that is initially important for package
+developers, but over time — when the kernel and packages starting
+using it — will become relevant for user documents.&lt;/p&gt;
+
+&lt;p&gt;I’m talking about the fact that we prepared the grounds to use
+optional key/value arguments with basically any command including
+those that current have optional arguments expecting a simple
+value. For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chapter&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; allow an optional argument
+to hold the data for the TOC or LOF file. With the new functionality
+they can be changed (not done yet) to alternatively support a
+key/value list in this argument and LaTeX will automatically determine
+which version applies.  This is very important for providing a standard
+and consistent method for accessible LaTeX documents, because there
+has to be a possibility to specify “alternative text” in various
+places. There are other reasons related to the Tagged PDF project why
+such an interface is useful and the beauty of it is that it is both
+consistent and upward compatible.&lt;/p&gt;
+
+&lt;p&gt;To get a good overview about the new features and most of the
+important bug fixes made in this release take a look at &lt;a href=&quot;/news/latex2e-news/ltnews36.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
+News Issue 36”&lt;/a&gt;. This document should be accessible through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
+ltnews36&lt;/code&gt; on your computer and can also be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
+page&lt;/a&gt; where you will also find
+release information for earlier LaTeX releases.&lt;/p&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 01 Nov 2022 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2022/11/01/issue36-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/11/01/issue36-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex-news</category>
+        
+        <category>tagged PDF</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>First pre-release of LaTeX 2022-11-01 is available for testing</title>
         <description>&lt;h1 id=&quot;pre-release-of-latex-for-2022-11-01-is-ready-for-testing&quot;&gt;Pre-release of LaTeX for 2022-11-01 is ready for testing&lt;/h1&gt;
 
 &lt;p&gt;We submitted the first pre-release version for the 2022-11-01 LaTeX
@@ -632,80 +683,6 @@ done about it, please refer them to TUG and that statement.&lt;/p&gt;
         <category>log4j</category>
         
         <category>vulnerability</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Fall 2021 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;the-fall-2021-latex-release-is-available&quot;&gt;The Fall 2021 LaTeX release is available&lt;/h1&gt;
-
-&lt;p&gt;As we have announced previously, we have shifted the release dates for
-LaTeX slightly, to better align with the yearly release of TeX Live:
-a first release in
-May/June after TeX Live has updated and a second release around November.&lt;/p&gt;
-
-&lt;p&gt;The current release does not contain any major new modules, but is focused around consolidation  and improvements of functionality introduced in previous releases.
-In the meantime we are working further on the future production of reliable tagged PDF output (see
-the article &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;be7595c59bf34ca8b4366dfa05816e17&apos;);&quot;&gt;LaTeX
-Tagged PDF — A blueprint for a large project&lt;/a&gt; that describes the
-project we are engaged in), which will again take center stage in the Spring release 2022.&lt;/p&gt;
-
-&lt;h3 id=&quot;hook-management-improvements&quot;&gt;Hook management improvements&lt;/h3&gt;
-
-&lt;p&gt;There have been some improvements of the hook management as a result of feedback from developers and our own experience applying the new functionality. This includes one breaking change in behavior (relevant only to package developers), for which we offer compatibility code for now. Thus nothing will break right now, but going forward the new method needs to be used, because at some point in the future the compatibility code will be taken out.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Standardizing generic hook names;&lt;/li&gt;
-  &lt;li&gt;Rationalizing the behavior of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\RemoveFromHook&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Providing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ActivateGenericHook&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Providing a command to clear “next” hook code before invocation;&lt;/li&gt;
-  &lt;li&gt;Properly clean up after a one-time hook.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;new-or-improved-commands&quot;&gt;New or improved commands&lt;/h3&gt;
-
-&lt;p&gt;There are many enhancements and corrections that we
-documented in the ltnews article for this release (and a few very
-minor ones that only made it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;changes.txt&lt;/code&gt; file). The most
-important aspects from a user perspective are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Extending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ShowCommand&lt;/code&gt; to show commands defined with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewDocumentCommand&lt;/code&gt; and friends;&lt;/li&gt;
-  &lt;li&gt;Extending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\NewCommandCopy&lt;/code&gt; as well, to safely copy such commands to new names;&lt;/li&gt;
-  &lt;li&gt;Improving the math font family allocation to avoid running out of available math groups in complex documents. A number of math alphabets (controlled through the counter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localmathalphabets&lt;/code&gt;) are now locally allocated and their math groups can be reused with different alphabets per formula;&lt;/li&gt;
-  &lt;li&gt;Adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\PackageNote&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\PackageNoteOnLine&lt;/code&gt; to show notes that aren’t “warnings” on the terminal;&lt;/li&gt;
-  &lt;li&gt;Supporting an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alt&lt;/code&gt; key with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\includegraphics&lt;/code&gt; (anticipating future development);&lt;/li&gt;
-  &lt;li&gt;Providing a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\newcolumn&lt;/code&gt; command and an optional argument to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\columnbreak&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multicol&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;Altering the default for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\tracinglostchars&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But read the whole ltnews article because there may be other gems that
-are useful for you.&lt;/p&gt;
-
-&lt;h4 id=&quot;where-to-learn-more-&quot;&gt;Where to learn more …&lt;/h4&gt;
-
-&lt;p&gt;The new features and most of the important bug fixes made in this release
-are documented in &lt;a href=&quot;/news/latex2e-news/ltnews34.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
-News Issue 34”&lt;/a&gt;. This document can be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 15 Nov 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/11/15/issue34-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/11/15/issue34-of-latex2e-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        <category>tagged PDF</category>
         
         
         <category>news</category>
