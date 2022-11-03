@@ -25,6 +25,7 @@ In addition the newletters are individually available below.
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2022/11/01 | [LaTeX2e News Issue 36]({{site.baseurl}}/news/latex2e-news/ltnews36.pdf) | Auto-detecting kex/value arguments; various smaller changes and improvements to the `base`, `graphics`, and `tools` bundles  |
 | 2022/06/01 | [LaTeX2e News Issue 35]({{site.baseurl}}/news/latex2e-news/ltnews35.pdf) | Document metadata interface; new mark mechanism; key/value approach for options; doc version 3; latex-lab bundle; various smaller changes and improvements to the `base`, `amsmath`, `graphics`, and `tools` bundles  |
 | 2021/11/15 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews34.pdf" target="_blank" onclick="vgwPixelCall('349962df3c4b42a7a64e729501dc2d7e');">LaTeX2e News Issue 34</a> | Updates to hook management system; new and improved commands; code improvements & bug fixes in kernel `graphics`, `tools`, and `amsmath`|
 | 2021/06/01 | <a href="{{site.baseurl}}/news/latex2e-news/ltnews33.pdf" target="_blank" onclick="vgwPixelCall('3ee1eac0b37f4a6e9102440c46f29e30');">LaTeX2e News Issue 33</a> | Hooks for paragraphs and generic hooks for commands; improved copy & paste; file handling improvements; NFSS improvements; various smaller improvements and bug fixes|
