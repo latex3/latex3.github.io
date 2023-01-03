@@ -5,9 +5,39 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Nov 2022 23:46:30 +0100</pubDate>
-    <lastBuildDate>Thu, 03 Nov 2022 23:46:30 +0100</lastBuildDate>
+    <pubDate>Tue, 03 Jan 2023 18:30:32 +0100</pubDate>
+    <lastBuildDate>Tue, 03 Jan 2023 18:30:32 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>PDF days Europe 2022 - Tagged and Accessible LaTeX</title>
+        <description>&lt;h1 id=&quot;pdf-days-europe-2022---tagged-and-accessible-latex&quot;&gt;PDF days Europe 2022 - Tagged and Accessible LaTeX&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Foto.CatrinWolf.de-DSC_5259.jpeg&quot; alt=&quot;Frank at PDFdays Europe 2022&quot; width=&quot;80%&quot; height=&quot;auto&quot; /&gt;
+&lt;br /&gt;&lt;em&gt;Photo by Catrin Wolf&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;At the PDF days Europe 2022 conference, hosted by the PDF Association (PDFA) we gave a presentation on the current state of the “LaTeX Tagged PDF” project, explaining the challenges, achievements, and our plans for the future.&lt;/p&gt;
+
+&lt;p&gt;The talk was recorded and is now available on the PDFA website &lt;a href=&quot;https://www.pdfa.org/presentation/tagged-and-accessible-pdf-with-latex/&quot;&gt;&lt;strong&gt;through this link&lt;/strong&gt;&lt;/a&gt;.&lt;br /&gt;
+The slides of the presentation &lt;a href=&quot;/publications/2022-FMi-PDFA-slides.pdf&quot;&gt;&lt;strong&gt;are available here&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Jan 2023 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2023/01/03/pdfdays-2022/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/01/03/pdfdays-2022/</guid>
+        
+        <category>tagged PDF</category>
+        
+        <category>accessibility</category>
+        
+        <category>conference</category>
+        
+        <category>development</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>The November 2022 release of LaTeX is available</title>
@@ -630,59 +660,6 @@ version:&lt;/p&gt;
         <category>books</category>
         
         <category>graphics</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>log4j vulnerability: LaTeX is not affected!</title>
-        <description>&lt;h1 id=&quot;log4j-vulnerability-latex-is-not-affected&quot;&gt;log4j vulnerability: LaTeX is not affected!&lt;/h1&gt;
-
-&lt;p&gt;We are seeing more and more requests asking us whether LaTeX needs a
-patch because of the log4j vulnerability, when the necessary patch is
-planned and ready, etc. Rather than to explain each time (which
-I did more than a dozen times by now) why nothing needs to be done at our end, I
-decided to post it here, so that I can refer to that statement.&lt;/p&gt;
-
-&lt;p&gt;Upfront I would like to apologize to any LaTeX user for the noise, because
-if you know what LaTeX is (a macro package running on top of the TeX
-program), then you are well aware that such questions are ill
-formed. But most people being charged to check all software in use in
-their organization do not know each and every piece of software and
-for them LaTeX is just a program that may or may not use log4j.&lt;/p&gt;
-
-&lt;p&gt;Well, LaTeX is not a program, it is input for a program (namely TeX or
-one of its variants) so the question has to be: is any of the TeX
-programs that make use of the LaTeX source as input vulnerable to the
-log4j issue?&lt;/p&gt;
-
-&lt;p&gt;The answer is fortunately a &lt;strong&gt;clear NO&lt;/strong&gt; and the official statement for this from
-the &lt;a href=&quot;https://tug.org/&quot;&gt;TeX Users Group organization&lt;/a&gt; (for the TeXLive and MikTeX
-distributions) can be found here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tug.org/texlive/cve-log4j.html&quot;&gt;TUG’s statement on the log4j vulnerability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you talk to people who are searching for an answer whether or not
-LaTeX (or rather TeX) is affected by log4j and if so what is being
-done about it, please refer them to TUG and that statement.&lt;/p&gt;
-
-&lt;p&gt;Happy and continuously safe LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 21 Dec 2021 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2021/12/21/log4j-vulnerability/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2021/12/21/log4j-vulnerability/</guid>
-        
-        <category>latex</category>
-        
-        <category>log4j</category>
-        
-        <category>vulnerability</category>
         
         
         <category>news</category>

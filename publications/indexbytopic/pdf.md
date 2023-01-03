@@ -10,6 +10,15 @@ description: "Selection of links to PDF versions of various articles published b
 
 <hr class="conference-start">
 
+## From the PDF days Europe, September 2022 (Berlin)
+
+{% include _papers/paper_2022-FMi-PDFA-talk.md  %}
+
+<hr class="conference-end">
+
+
+<hr class="conference-start">
+
 ## From the TUG Conference 2021 (Online conference)
 
 {% include _papers/paper_2021-FMi-TUG-talk.md  %}
