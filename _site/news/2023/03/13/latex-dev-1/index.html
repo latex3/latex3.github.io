@@ -82,9 +82,11 @@ sectioning commands and content, figure and table listings.</p>
 
 <p>This can be activated through</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\DocumentMetadata{testphase=phase-III}
+\documentclass{...}                     % article, book or report
 </code></pre></div></div>
 <p>In addition there is also a (very early) prototype for tagging formulas, which can be activated through</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\DocumentMetadata{testphase={phase-III,math}}
+\documentclass{...}
 </code></pre></div></div>
 <p>It offers support for LaTeX’s standard math environments but also for
 all environments provided through the <code class="language-plaintext highlighter-rouge">amsmath</code> package.</p>

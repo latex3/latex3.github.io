@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Mar 2023 14:59:57 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2023 14:59:57 +0100</lastBuildDate>
+    <pubDate>Mon, 13 Mar 2023 15:19:46 +0100</pubDate>
+    <lastBuildDate>Mon, 13 Mar 2023 15:19:46 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -30,9 +30,11 @@ sectioning commands and content, figure and table listings.&lt;/p&gt;
 
 &lt;p&gt;This can be activated through&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase=phase-III}
+\documentclass{...}                     % article, book or report
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;In addition there is also a (very early) prototype for tagging formulas, which can be activated through&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase={phase-III,math}}
+\documentclass{...}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;It offers support for LaTeX’s standard math environments but also for
 all environments provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package.&lt;/p&gt;
