@@ -5,9 +5,85 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 04 Jan 2023 00:15:37 +0100</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2023 00:15:37 +0100</lastBuildDate>
+    <pubDate>Mon, 13 Mar 2023 14:59:57 +0100</pubDate>
+    <lastBuildDate>Mon, 13 Mar 2023 14:59:57 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;towards-automatted-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing”&lt;/h1&gt;
+
+&lt;p&gt;We submitted the second pre-release version for the 2023-06-01 LaTeX
+kernel to CTAN recently. It should have made its way into TeX Live
+(both 2022 and the 2023 pre-test) for everyone by now, so it’s ready
+for user to try.&lt;/p&gt;
+
+&lt;p&gt;It does not yet contain all updates to the LaTeX format that will
+become part of the standard in June, but the new code already provided
+is worth checking out.&lt;/p&gt;
+
+&lt;h2 id=&quot;automated-tagging-of-pdf-documents&quot;&gt;Automated tagging of PDF documents&lt;/h2&gt;
+
+&lt;p&gt;We have now enabled new automatic tagging functionality for additional
+LaTeX elements, among them most display environments, standard
+sectioning commands and content, figure and table listings.&lt;/p&gt;
+
+&lt;p&gt;This can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase=phase-III}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In addition there is also a (very early) prototype for tagging formulas, which can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase={phase-III,math}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It offers support for LaTeX’s standard math environments but also for
+all environments provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package.&lt;/p&gt;
+
+&lt;p&gt;All of this automation is currently in a prototype state and
+restricted to the use of standard classes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;article&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;report&lt;/code&gt;, and
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;book&lt;/code&gt;) and it supports only a limited number of add-on package. See the
+draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;LaTeX2e News
+Issue 37&lt;/a&gt; newsletter for further details. It provides information
+how to submit feedback on the new functionality.&lt;/p&gt;
+
+&lt;p&gt;The newsletter also covers various other small enhancements or
+corrections that we intend to provide with the June release.&lt;/p&gt;
+
+&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
+
+&lt;p&gt;We expect to produce another pre-release around the end of April, which will
+give us time to finish the release by June. Please help with the testing.&lt;/p&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
+to do is to replace the invocation command by appending -dev to the executable,
+e.g., on the command line you would run&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
+editing environment, then it depends on the system how to configure it to use an
+alternative format; but in any case the necessary modification should be
+straightforward.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 13 Mar 2023 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2023/03/13/latex-dev-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/03/13/latex-dev-1/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>PDF days Europe 2022 - Tagged and Accessible LaTeX</title>
@@ -617,43 +693,6 @@ website (which only offers pages in the German language). Internationally, the b
         <pubDate>Tue, 08 Mar 2022 01:00:00 +0100</pubDate>
         <link>https://latex-project.org//news/2022/03/08/LGC2-update/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2022/03/08/LGC2-update/</guid>
-        
-        <category>latex</category>
-        
-        <category>books</category>
-        
-        <category>graphics</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>LaTeX Graphics Companion 2ed is back in print!</title>
-        <description>&lt;h1 id=&quot;latex-graphics-companion-2ed-is-back-in-print&quot;&gt;LaTeX Graphics Companion 2ed is back in print&lt;/h1&gt;
-
-&lt;p&gt;The LaTeX Graphics Companion 2nd edition, formerly publish by
-Addision-Wesely in the “Tools and Techniques for Computer Typesetting”
-series, went out of print a while ago. I’m happy to announce that this
-has now changed again. Lehmanns Media has picked up the book and produced an
-affordable reprint, both as printed softcover book and also as a PDF ebook
-version:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58611042-9783965433038-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (softcover)&lt;/a&gt;, ISBN 978-3-96543-303-8&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58574614-9783965432994-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (ebook)&lt;/a&gt;, ISBN 978-3-96543-299-4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The book should be available from all major bookstores, the ebook version probably only from Lehmanns directly.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 14 Feb 2022 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2022/02/14/LGC2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/02/14/LGC2/</guid>
         
         <category>latex</category>
         
