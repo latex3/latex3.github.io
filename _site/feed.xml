@@ -5,18 +5,18 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Mar 2023 15:19:46 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2023 15:19:46 +0100</lastBuildDate>
+    <pubDate>Tue, 14 Mar 2023 20:10:55 +0100</pubDate>
+    <lastBuildDate>Tue, 14 Mar 2023 20:10:55 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
         <title>Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;towards-automatted-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing”&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;towards-automatted-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing&lt;/h1&gt;
 
 &lt;p&gt;We submitted the second pre-release version for the 2023-06-01 LaTeX
 kernel to CTAN recently. It should have made its way into TeX Live
 (both 2022 and the 2023 pre-test) for everyone by now, so it’s ready
-for user to try.&lt;/p&gt;
+for users to try.&lt;/p&gt;
 
 &lt;p&gt;It does not yet contain all updates to the LaTeX format that will
 become part of the standard in June, but the new code already provided
@@ -55,7 +55,7 @@ corrections that we intend to provide with the June release.&lt;/p&gt;
 give us time to finish the release by June. Please help with the testing.&lt;/p&gt;
 
 &lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
-to do is to replace the invocation command by appending -dev to the executable,
+to do is to replace the invocation command by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable,
 e.g., on the command line you would run&lt;/p&gt;
 
 &lt;ul&gt;
