@@ -5,9 +5,70 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Mar 2023 20:10:55 +0100</pubDate>
-    <lastBuildDate>Tue, 14 Mar 2023 20:10:55 +0100</lastBuildDate>
+    <pubDate>Fri, 17 Mar 2023 20:26:37 +0100</pubDate>
+    <lastBuildDate>Fri, 17 Mar 2023 20:26:37 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>The LaTeX Companion, 3rd ed is available for pre-ordering!</title>
+        <description>&lt;h1 id=&quot;the-latex-companion-third-edition-is-available-for-pre-ordering&quot;&gt;The LaTeX Companion, third edition is available for pre-ordering&lt;/h1&gt;
+
+&lt;p&gt;I’m happy to announce that the third edition of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt;
+has been sent to the printers and is by now available for
+pre-ordering. It will be published by end of April / beginning of May.
+This is the end of five years of careful work and we hope that it will
+provide our readers with all the information they need to successfully navigate the
+LaTeX eco-system and efficiently produce beautiful documents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/help/books/TLC3-Part-I.jpeg&quot; alt=&quot;TLC3 Part I cover&quot; width=&quot;40%&quot; height=&quot;auto&quot; /&gt;
+&lt;img src=&quot;/help/books/TLC3-Part-II.jpeg&quot; alt=&quot;TLC3 Part II cover&quot; width=&quot;40%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the publication of the last edition (2004) a lot has happened in the
+LaTeX world and thus  a complete rewrite was necessary.
+All chapters have been thoroughly revised and in many cases largely
+extended to describe new important functionality and features. More
+than 5,000 add-on packages have been analyzed in detail, out of which
+roughly 10% have been chosen for inclusion in &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt;.
+All important aspects of these packages are described
+ to provide the user once again with
+a satisfying one-stop–shop experience for the decade to come.&lt;/p&gt;
+
+&lt;p&gt;To cover what we thought worth describing today, the book nearly
+doubled in size.
+The print edition is therefore produced as a two-volume set and  sold as a bundle.
+Both volumes come as hardcover with ribbons to easily mark pages in the book.&lt;/p&gt;
+
+&lt;p&gt;The edition is also available as an &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784&quot;&gt;eBook (Part I and II
+combined)&lt;/a&gt;
+consisting of PDF and ePub format without DRM.  Finally, the publisher
+offers the combination of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;the printed books + the digital versions&lt;/a&gt;
+at a very attractive price not available anywhere else.&lt;/p&gt;
+
+&lt;p&gt;To give you some impressions what is covered in the third edition here are some excerpts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-preface.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Preface of the 3rd edition&lt;/a&gt; (317 kB)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-toc.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Table of contents&lt;/a&gt; (337 kB)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-chapter-samples.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;348a5d49af564cf591c8447d2fd485ca&apos;);&quot;&gt;Initial pages of &lt;em&gt;all&lt;/em&gt; chapters&lt;/a&gt; (3,4 MB)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy LaTeXing
+— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 17 Mar 2023 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2023/03/17/TLC3/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/03/17/TLC3/</guid>
+        
+        <category>latex</category>
+        
+        <category>books</category>
+        
+        <category>TLC</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
@@ -661,46 +722,6 @@ that.&lt;/p&gt;
         <category>personal</category>
         
         <category>Robin Fairbairns</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>LaTeX Graphics Companion 2ed is back in print! (update)</title>
-        <description>&lt;h1 id=&quot;latex-graphics-companion-2ed-is-back-in-print&quot;&gt;LaTeX Graphics Companion 2ed is back in print&lt;/h1&gt;
-
-&lt;p&gt;The LaTeX Graphics Companion 2nd edition, formerly publish by
-Addision-Wesely in the “Tools and Techniques for Computer Typesetting”
-series, went out of print a while ago. I’m happy to announce that this
-has now changed again. Lehmanns Media has picked up the book and produced an
-affordable reprint, both as printed softcover book and also as a DRM-free PDF ebook
-version:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58611042-9783965433038-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (softcover)&lt;/a&gt;, ISBN 978-3-96543-303-8&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lehmanns.de/shop/mathematik-informatik/58574614-9783965432994-the-latex-graphics-companion&quot;&gt;LaTeX Graphics Companion (ebook)&lt;/a&gt;, ISBN 978-3-96543-299-4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;update-2022-03-08-international-ordering&quot;&gt;Update 2022-03-08 (International ordering)&lt;/h2&gt;
-
-&lt;p&gt;The book should be available from all major bookstores or online ebook providers. The above links point to the Lehmanns
-website (which only offers pages in the German language). Internationally, the book can be ordered through Amazon and the like and you find the ebook on &lt;a href=&quot;https://play.google.com/store/books/details/Michel_Goossens_The_LATEX_Graphics_Companion?id=_jhZEAAAQBAJ&quot;&gt;Google Play&lt;/a&gt; or &lt;a href=&quot;https://www2.ciando.com/ebook/bid-3107964-the-latex-graphics-companion-tools-and-techniques-for-computer-typesetting.html&quot;&gt;ciando&lt;/a&gt; and perhaps on  others.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 08 Mar 2022 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2022/03/08/LGC2-update/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/03/08/LGC2-update/</guid>
-        
-        <category>latex</category>
-        
-        <category>books</category>
-        
-        <category>graphics</category>
         
         
         <category>news</category>

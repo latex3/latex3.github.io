@@ -35,7 +35,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 
 ### English
 
-#### [LaTeX: A document preparation system, User's guide and reference manual](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-a-document-preparation-system-9780201529838)
+#### [LaTeX: A document preparation system, User's guide and reference manual](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-a-document-preparation-system-9780201529838)
 
 ![LaTeX: A document preparation system, User's guide and reference manual](leslie-lamport_-_latex-a-document-preparation-system-users-guide-and-reference-manual.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -51,7 +51,44 @@ There is an [errata file](lamport-manual.pdf) for this book.
 
 <hr>
 
-#### [The LaTeX Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992)
+
+
+
+#### [The LaTeX Companion, 3nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489)
+
+![The LaTeX Companion, 3nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3nd-edition-ttct-series.jpeg){:width="180"}
+**Edition:** 3nd edition  
+**Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach) with [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer)   
+**Date:** 2023  
+**Language:** English  
+**Publisher:** Addison-Wesley Professional  
+**ISBN-13:** 978-0-13-816648-9   
+**Pages:** 976 (Part I)	and 1008 (Part II) pages  
+
+Compared to the previous edition the third edition nearly doubled in size.
+The print edition is therefore produced as a two-volume set --- the above information links to this bundle.
+<br>
+It is also available as an [eBook (Part I and II
+combined)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784)
+consisting of PDF and ePub format without DRM.  Finally, the publisher
+offers the combination of [the printed books + the digital versions](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489)
+at a very attractive price not available anywhere else.
+<br>
+Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
+Also important is that the digital version offered by some resellers only contains either the ePub or the PDF but not both! We therefore recommend that you watch out for this.
+
+There are some extracts from the third edition as PDF files to offer some impressions of its coverage:
+
++ <a href="tlc3-digital-preface.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Preface of the 3rd edition</a> (317 kB)
++ <a href="tlc3-digital-toc.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Table of contents</a> (337 kB)
++ <a href="tlc3-digital-chapter-samples.pdf" target="_blank" onclick="vgwPixelCall('348a5d49af564cf591c8447d2fd485ca');">Initial pages of *all* chapters</a> (3,4 MB)
+
+
+<hr>
+
+
+
+#### [The LaTeX Companion, 2nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992)
 
 ![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -63,13 +100,7 @@ There is an [errata file](lamport-manual.pdf) for this book.
 **ISBN-13:** 978-0201362992  
 **Pages:** 1120 pages  
 
-Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-companion-9780201362992) consisting of PDF, mobi and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/) for more information.
-
-There are some extracts from the book as PDF files available from this site:
-
-+ <a href="bookpart_tlc2-ch0.pdf" target="_blank" onclick="vgwPixelCall('7d58e1729e9e4cf0946c2d9db00fbe60');">tables of contents, figures, and tables and preface</a> (176 kB)
-+ <a href="bookpart_tlc2-ch3.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">full text of chapter 3, «Basic formatting tools»</a> (780 kB)
-+ <a href="bookpart_tlc2-ap4.pdf" target="_blank" onclick="vgwPixelCall('400c4c45851a48f6afdb9db1d7fc0ff7');">bibliography and index</a> (796 kB)
+Also available as an [eBook bundle](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992) consisting of PDF and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/) for more information.
 
 There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)). 
 
@@ -104,13 +135,12 @@ There are some extracts from the book as PDF files available from this site:
 
 +  <a href="{{site.baseurl}}/help/books/bookpart_lgc2-excerpts.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">some excerpts from the book in one PDF file</a> (2.9 MB)
 +  <a href="{{site.baseurl}}/help/books/bookpart_lgc2-ap3.pdf" target="_blank" onclick="vgwPixelCall('d590c5a9cac547cb950b5cb45aa55413');">bibliography and index</a> (1223 kB)
-+ [supplementary material on the web](http://xml.web.cern.ch/XML/lgc2/) maintained by Michel Goossens
 
 There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 
 <hr>
 
-#### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
+#### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
 
 ![The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](michael-goossens_-_the-latex-web-companion-integrating-tex-html-xml-ttct-series.jpg){:width="150" height="188"}
 **Edition:** 1st edition  
@@ -124,7 +154,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 
 <hr>
 
-#### [Guide to LaTeX (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850)
+#### [Guide to LaTeX (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653)
 
 ![Guide to LaTeX (TTCT series)](helmut-kopka_-_guide-to-latex.jpg){:width="150" height="210"}
 **Edition:** 4th edition  
@@ -136,30 +166,10 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 **ISBN-13:** 978-0321173850  
 **Pages:** 624 pages  
 
-Also available as an [eBook bundle](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fguide-to-latex-9780321173850) consisting of PDF, mobi and ePub format without DRM.
+Also available as an [eBook bundle](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653) consisting of PDF and ePub format without DRM.
 
 <hr>
 
-#### [The LaTeX Companions Third Revised Boxed Set](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000312&type=3&subid=0)
-
-![The LaTeX Companions Third Revised Boxed Set, A Complete Guide and Reference for Preparing, Illustrating and Publishing Technical Documents](frank-mittelbach_-_the-latex-companions-3rd-revised-set.jpg){:width="150" height="134"}
-**Edition:** 3rd revised box set  
-**Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Michel Goossens, Sebastian Rahtz, Denis Roegel, Herbert Voss, Helmut Kopka, Patrick W. Daly  
-**Language:** English  
-**Date:** 2008  
-**Publisher:** Addison-Wesley Professional   
-**ISBN-10:** 1847199860  
-**ISBN-13:** 978-0321514431  
-**Pages:** 3328 pages  
-
-A Complete Guide and Reference for Preparing, Illustrating and Publishing Technical Documents. This is a boxed set of the titles in the series _Tools and Techniques for Computer Typesetting (TTCT)_ at a reduced price, consisting of the following books: 
-
-+ Guide to LaTeX, 4th edition
-+ The LaTeX Companion, 2nd edition
-+ The LaTeX Graphics Companion, 2nd edition
-+ The LaTeX Web Companion
-
-<hr>
 
 #### [LaTeX Beginner's Guide](https://www.packtpub.com/latex-beginners-guide/book)
 
@@ -198,7 +208,7 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 
 ### French
 
-#### [LaTeX Companion, 2e édition](http://www.pearson.fr/livre/?GCOI=27440100048330)
+#### [LaTeX Companion, 2e édition --- out of print](http://www.pearson.fr/livre/?GCOI=27440100048330)
 
 ![LaTeX Companion, 2e édition](frank-mittelbach_-_latex-companion-fr.jpg){:width="150" height="189"}
 **Edition:** 2e édition  
@@ -220,7 +230,7 @@ This book is a translation of [The LaTeX Companion, 2nd edition](http://www.info
 
 ### German
 
-#### [LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools)](http://www.amazon.de/gp/product/386894088X/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=386894088X&linkCode=as2&tag=wwwlatexproje-21)
+#### [LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools) --- out of print](http://www.amazon.de/gp/product/386894088X/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=386894088X&linkCode=as2&tag=wwwlatexproje-21)
 
 ![LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools)](frank-mittelbach_-_der-latex-begleiter-2-bafoeg-edition.jpg){:width="150" height="232"}
 **Edition:** 2nd edition  
@@ -313,7 +323,7 @@ May be difficult to find these days.
 
 ### English
 
-#### [Computers & Typesetting, Volume A: The TeXbook (Hardcover)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fcomputers-typesetting-volume-a-the-texbook-9780201134476)
+#### [Computers & Typesetting, Volume A: The TeXbook (Hardcover)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-a-the-texbook-9780201134476)
 
 ![Computers & Typesetting, Volume A: The TeXbook (Hardcover)](donald-erwin-knuth_-_computers-&-typesetting-the-texbook-vol-a.jpg){:width="150" height="189"}
 **Edition:** 1st edition  
@@ -327,17 +337,16 @@ May be difficult to find these days.
 
 <hr>
 
-#### [The TeXbook](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&subid=&offerid=163217.1&type=10&tmpid=12438&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Ftexbook-9780201134483)
+#### [Computers & Typesetting, Volume B: TeX the program (Hardcover)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-b-tex-the-program-9780201134377)
 
-![The TeXbook](donald-erwin-knuth_-_the-texbook.jpg){:width="150" height="200"}
+![Computers & Typesetting, Volume B: TeX the program (Hardcover)](donald-erwin-knuth_-_computers-&-typesetting-vol-b.jpeg){:width="150" height="200"}
 **Edition:** 1st edition  
 **Author:** Donald E. Knuth  
 **Language:** English  
-**Date:** 1984  
+**Date:** 1986  
 **Publisher:** Addison-Wesley Professional   
-**ISBN-10:** 0-201-13448-9   
-**ISBN-13:** 978-0-201-13448-3  
-**Pages:** 496 pages  
+**ISBN-13:** 978-0-201-13448-7  
+**Pages:** 624 pages  
 
 <hr>
 
