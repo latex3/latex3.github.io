@@ -77,12 +77,11 @@ at a very attractive price not available anywhere else.
 Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
 Also important is that the digital version offered by some resellers only contains either the ePub or the PDF but not both! We therefore recommend that you watch out for this.
 
-In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/custom costs, e.g.
-by using [Amazon.de](https://amzn.to/40yY7gD) in Germany. However, the combination of print and digital formats is only available from the publisher's InformIT site through the link above.
+In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/customs fees, e.g.
+by using [Amazon.de in Germany](https://amzn.to/40yY7gD). However, the combination of print and digital formats is only available from the publisher's InformIT site through the link above.
 
 
 There are some extracts from the third edition as PDF files to offer some impressions of its coverage:
-
 + <a href="tlc3-digital-preface.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Preface of the 3rd edition</a> (317 kB)
 + <a href="tlc3-digital-toc.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Table of contents</a> (337 kB)
 + <a href="tlc3-digital-chapter-samples.pdf" target="_blank" onclick="vgwPixelCall('348a5d49af564cf591c8447d2fd485ca');">Initial pages of *all* chapters</a> (3,4 MB)
@@ -94,7 +93,7 @@ There are some extracts from the third edition as PDF files to offer some impres
 
 #### [The LaTeX Companion, 2nd edition (TTCT series) --- previous edition](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992)
 
-![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="150" height="189"}
+![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="160"}
 **Edition:** 2nd edition  
 **Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Michel Goossens, [Johannes Braams]({{site.baseurl}}/about/team/#johannes-braams), [David Carlisle]({{site.baseurl}}/about/team/#david-carlisle), [Chris Rowley]({{site.baseurl}}/about/team/#chris-rowley)  
 **Date:** 2004  
