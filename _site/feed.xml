@@ -5,26 +5,27 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Mar 2023 20:26:37 +0100</pubDate>
-    <lastBuildDate>Fri, 17 Mar 2023 20:26:37 +0100</lastBuildDate>
+    <pubDate>Sat, 18 Mar 2023 00:13:02 +0100</pubDate>
+    <lastBuildDate>Sat, 18 Mar 2023 00:13:02 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
-        <title>The LaTeX Companion, 3rd ed is available for pre-ordering!</title>
-        <description>&lt;h1 id=&quot;the-latex-companion-third-edition-is-available-for-pre-ordering&quot;&gt;The LaTeX Companion, third edition is available for pre-ordering&lt;/h1&gt;
+        <title>&quot;The LaTeX Companion&quot;, third edition, is available for pre-order</title>
+        <description>&lt;h1 id=&quot;the-third-edition-of-the-latex-companion-is-available-for-pre-order&quot;&gt;The third edition of &lt;em&gt;The LaTeX Companion&lt;/em&gt; is available for pre-order&lt;/h1&gt;
 
 &lt;p&gt;I’m happy to announce that the third edition of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt;
-has been sent to the printers and is by now available for
-pre-ordering. It will be published by end of April / beginning of May.
+has been sent to the printer and is now available for
+pre-order. It will be published by end of April or beginning of May.
 This is the end of five years of careful work and we hope that it will
 provide our readers with all the information they need to successfully navigate the
-LaTeX eco-system and efficiently produce beautiful documents.&lt;/p&gt;
+LaTeX ecosystem and efficiently produce beautiful documents.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/help/books/TLC3-Part-I.jpeg&quot; alt=&quot;TLC3 Part I cover&quot; width=&quot;40%&quot; height=&quot;auto&quot; /&gt;
-&lt;img src=&quot;/help/books/TLC3-Part-II.jpeg&quot; alt=&quot;TLC3 Part II cover&quot; width=&quot;40%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/help/books/TLC3-Part-I.jpeg&quot; alt=&quot;TLC3 Part I cover&quot; width=&quot;45%&quot; height=&quot;auto&quot; /&gt;
+&lt;img src=&quot;/help/books/TLC3-Part-II.jpeg&quot; alt=&quot;TLC3 Part II cover&quot; width=&quot;45%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Since the publication of the last edition (2004) a lot has happened in the
 LaTeX world and thus  a complete rewrite was necessary.
+&lt;br /&gt;
 All chapters have been thoroughly revised and in many cases largely
 extended to describe new important functionality and features. More
 than 5,000 add-on packages have been analyzed in detail, out of which
@@ -38,18 +39,25 @@ doubled in size.
 The print edition is therefore produced as a two-volume set and  sold as a bundle.
 Both volumes come as hardcover with ribbons to easily mark pages in the book.&lt;/p&gt;
 
-&lt;p&gt;The edition is also available as an &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784&quot;&gt;eBook (Part I and II
-combined)&lt;/a&gt;
-consisting of PDF and ePub format without DRM.  Finally, the publisher
-offers the combination of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;the printed books + the digital versions&lt;/a&gt;
-at a very attractive price not available anywhere else.&lt;/p&gt;
-
-&lt;p&gt;To give you some impressions what is covered in the third edition here are some excerpts:&lt;/p&gt;
+&lt;p&gt;To give you an idea of what is covered in the third edition, here are some excerpts:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-preface.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Preface of the 3rd edition&lt;/a&gt; (317 kB)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-toc.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Table of contents&lt;/a&gt; (337 kB)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-chapter-samples.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;348a5d49af564cf591c8447d2fd485ca&apos;);&quot;&gt;Initial pages of &lt;em&gt;all&lt;/em&gt; chapters&lt;/a&gt; (3,4 MB)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-chapter-samples.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;348a5d49af564cf591c8447d2fd485ca&apos;);&quot;&gt;The initial pages of &lt;em&gt;all twenty&lt;/em&gt; chapters&lt;/a&gt; (3,4 MB)&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;The edition is also available as an &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784&quot;&gt;eBook (Part I and II
+combined)&lt;/a&gt;
+consisting of PDF and ePub format without DRM.  Finally, the publisher
+offers the combination of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;the printed books + the digital
+versions&lt;/a&gt;
+at a very attractive price not available anywhere else.
+&lt;br /&gt;
+Note that some distributors offer the two parts of the edition (also)
+individually, but usually for a much higher price compared to the
+bundle.  Also important is that the digital version offered by some
+resellers only contains either the ePub or the PDF but not both! We
+therefore recommend that you watch out for this.&lt;/p&gt;
 
 &lt;p&gt;Happy LaTeXing
 — Frank&lt;/p&gt;

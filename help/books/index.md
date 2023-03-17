@@ -77,6 +77,10 @@ at a very attractive price not available anywhere else.
 Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
 Also important is that the digital version offered by some resellers only contains either the ePub or the PDF but not both! We therefore recommend that you watch out for this.
 
+In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/custom costs, e.g.
+by using [Amazon.de](https://amzn.to/40yY7gD) in Germany. However, the combination of print and digital formats is only available from the publisher's InformIT site through the link above.
+
+
 There are some extracts from the third edition as PDF files to offer some impressions of its coverage:
 
 + <a href="tlc3-digital-preface.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Preface of the 3rd edition</a> (317 kB)
@@ -88,7 +92,7 @@ There are some extracts from the third edition as PDF files to offer some impres
 
 
 
-#### [The LaTeX Companion, 2nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992)
+#### [The LaTeX Companion, 2nd edition (TTCT series) --- previous edition](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992)
 
 ![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -106,11 +110,11 @@ There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)).
 
 <hr>
 
-#### [The LaTeX Graphics Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000313&type=3&subid=0)
+#### [The LaTeX Graphics Companion, 2nd edition (TTCT series)](https://amzn.to/3mPRpnB)
 
 ![The LaTeX Graphics Companion, 2nd edition (TTCT series)](michael-goossens_-_the-latex-graphics-companion-2nd-edition-ttct-series.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
-**Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voss  
+**Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voß  
 **Language:** English  
 **Date:** 2007  
 **Publisher:** Addison-Wesley Professional   
@@ -122,7 +126,7 @@ The book is no longer available from Addision-Wesely but is now reprinted by Leh
 
 ![The LaTeX Graphics Companion, 2nd edition (TTCT series)](lgc2-media_103218567.jpeg){:width="150" height="189"}
 **Edition:** 2nd edition  
-**Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voss  
+**Authors:** Michel Goossens, [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach), Sebastian Rahtz, Denis Roegel, Herbert Voß  
 **Language:** English  
 **Date:** 2022 (reprint of the 2009 version with corrections)   
 **Publisher:** Lehmanns Media   
@@ -256,11 +260,11 @@ Jürgen Fenn has written a review for the german TeX magazine "Die TeXnische Kom
 
 <hr>
 
-#### [Einführung in LaTeX: unter Berücksichtigung von pdfLaTeX, XLaTeX und LuaLaTeX](http://www.amazon.de/gp/product/3865414621/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3865414621&linkCode=as2&tag=wwwlatexproje-21)
+#### [Einführung in LaTeX: unter Berücksichtigung von pdfLaTeX, XLaTeX und LuaLaTeX](https://www.amazon.de/gp/product/3865414621/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3865414621&linkCode=as2&tag=wwwlatexproje-21)
 
 ![Einführung in LaTeX: unter Berücksichtigung von pdfLaTeX, XLaTeX und LuaLaTeX ](herbert-voss_-_einfuehrung-in-latex.jpg){:width="150" height="221"}
 **Edition:** 1st edition  
-**Author:** Herbert Voss  
+**Author:** Herbert Voß  
 **Language:** German  
 **Date:** 2012  
 **Publisher:** Lehmanns   
@@ -268,11 +272,11 @@ Jürgen Fenn has written a review for the german TeX magazine "Die TeXnische Kom
 **ISBN-13:** 978-3865414625  
 **Pages:** 944 pages  
 
-Herbert has written several other books on LaTeX topics, check out his [author page on amazon.de](http://www.amazon.de/Herbert-Vo%C3%9F/e/B0045AA4DO/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=wwwlatexproje-21) and on [amazon.com](http://www.amazon.com/Herbert-Voss/e/B0045AA4DO/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20). 
+Herbert has written several other books on LaTeX topics, check out his [author page on amazon.de](https://www.amazon.de/Herbert-Vo%C3%9F/e/B0045AA4DO/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=wwwlatexproje-21) and on [amazon.com](https://www.amazon.com/Herbert-Voss/e/B0045AA4DO/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20). 
 
 <hr>
 
-#### [Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional)](http://www.amazon.de/gp/product/3826694864/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3826694864&linkCode=as2&tag=wwwlatexproje-21)
+#### [Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional)](https://www.amazon.de/gp/product/3826694864/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3826694864&linkCode=as2&tag=wwwlatexproje-21)
 
 ![Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional) ](joachim-schlosser_-_wissenschaftliche-arbeiten-schreiben-mit-latex.jpg){:width="150" height="211"}
 **Edition:** 5th edition  
