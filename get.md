@@ -82,7 +82,6 @@ that are entirely, or least primarily, free software.
   <div class="col cell1of4">
     <h2><span class="fa fa-windows"></span> Windows</h2>
     <p>Check out the <a href="http://miktex.org/">MiKTeX</a>
-    or <a href="http://www.tug.org/protext/">proTeXt</a>
     or <a href="http://www.tug.org/texlive">TeX Live</a>
     distributions; they contain a complete TeX system with LaTeX
     itself and editors to write documents.</p>
@@ -90,11 +89,12 @@ that are entirely, or least primarily, free software.
   <div class="col cell1of4">
     <h2><span class="fa fa-globe"></span> Online</h2>
     <p>LaTeX online services
-      like <a href="http://papeeria.com">Papeeria</a>,
+      like
       <a href="https://www.overleaf.com/">Overleaf</a>,
-      <a href="https://www.sharelatex.com/">ShareLaTeX</a>,
-      <a href="https://www.datazar.com/">Datazar</a>,
-    and <a href="https://latexbase.com/">LaTeX base</a> offer the
+      <a href="https://papeeria.com">Papeeria</a>,
+      <a href="https://latexbase.com/">LaTeX base</a>
+    or <a href="https://cocalc.com">CoCalc</a>
+    offer the
     ability to edit, view and download LaTeX files and resulting
     PDFs.</p>
   </div>
