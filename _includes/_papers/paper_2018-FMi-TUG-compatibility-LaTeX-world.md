@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2018-07-21-FMi-TUG-compatibility-LaTeX-handouts.pdf" target="_blank" onclick="vgwPixelCall('f018e721a0fe425899cee633a987ebff');">Compatibility in the LaTeX world</a> (handouts)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)
++ [TUG Conference 2018](https://tug.org/tug2018/) (Rio de Janeiro, Brazil)
 + Abstract:
 
 > In this talk I take a look at the major disruptions that have rocked the

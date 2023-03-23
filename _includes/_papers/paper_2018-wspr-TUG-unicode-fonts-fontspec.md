@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2018-07-22-wspr-TUG-fontspec-unimath-slides.pdf" target="_blank">Unicode fonts with fontspec and unicode-math</a> (slides)
 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
-+ [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)
++ [TUG Conference 2018](https://tug.org/tug2018/) (Rio de Janeiro, Brazil)
 + Abstract:
 
 > While the fundamentals of both the `fontspec` and

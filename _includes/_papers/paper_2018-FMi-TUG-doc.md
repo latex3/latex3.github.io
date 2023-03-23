@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2018-07-21-FMi-TUG-quarter-doc-handouts.pdf" target="_blank" onclick="vgwPixelCall('8745aa17547143a68b1906d317a594d0');">A quarter century of doc</a> (handouts)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)
++ [TUG Conference 2018](https://tug.org/tug2018/) (Rio de Janeiro, Brazil)
 + Abstract:
 
 >   In this talk I will re-examine my poor attempts at Literate

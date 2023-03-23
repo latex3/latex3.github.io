@@ -85,7 +85,7 @@ available.
     <p>If you want to support LaTeX development, i.e., the <b>maintenance
     efforts for the current version and the work on future release</b>
     by a donation, the best way to do this is donating to the <a
-    href="http://www.tug.org/donate.html">TeX Users Group</a>. They
+    href="https://www.tug.org/donate.html">TeX Users Group</a>. They
     will make sure that your contribution will be used according to
     your intention (use: LaTeX Project Contribution).</p>
     

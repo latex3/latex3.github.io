@@ -1,5 +1,5 @@
 
-### [LaTeX3 programming: External perspectives](http://www.tug.org/TUGboat/tb30-1/tb94wright-latex3.pdf)
+### [LaTeX3 programming: External perspectives](https://www.tug.org/TUGboat/tb30-1/tb94wright-latex3.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 30 (2009), No. 1

@@ -1,6 +1,6 @@
 
 
-### [Beyond \newcommand with xparse](http://tug.org/TUGboat/tb31-1/tb97wright-xparse.pdf)
+### [Beyond \newcommand with xparse](https://tug.org/TUGboat/tb31-1/tb97wright-xparse.pdf)
 
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 31 (2010), No. 1

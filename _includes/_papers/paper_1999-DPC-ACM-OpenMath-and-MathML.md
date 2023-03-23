@@ -7,9 +7,9 @@ alt="ACM DL Author-ize service" style="vertical-align:middle"/><a
 href="https://dl.acm.org/authorize?N652297" title="OpenMath and
 MathML: semantic markup for mathematics">OpenMath and MathML: semantic
 markup for mathematics</a><div style="margin-left:25px"><a
-href="http://dl.acm.org/author_page.cfm?id=81100431412" >O.
+href="https://dl.acm.org/author_page.cfm?id=81100431412" >O.
 Caprotti</a>, <a
-href="http://dl.acm.org/author_page.cfm?id=81100430209" >D.
+href="https://dl.acm.org/author_page.cfm?id=81100430209" >D.
 Carlisle</a><br />XRDS: Crossroads, The ACM Magazine for Students -
 Special issue on markup languages, 1999</div></div>
 <!-- ACM DL Bibliometrics: OpenMath and MathML: semantic markup for

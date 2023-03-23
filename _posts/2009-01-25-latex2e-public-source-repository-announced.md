@@ -15,7 +15,7 @@ No changes are being made to the way the LaTeX is distributed, so it will still 
 
 The addition of this public repository will allow users to track progress of the LaTeX codebase, and install fixes to critical files without waiting for the next major release of the software.
 
-The Subversion repository is located here: `http://www.latex-project.org/svnroot/latex2e-public/`. **As of 2019 this is no longer online, the sources are on GitHub for a number of years. Therefore the checkout instructions below are also only of historical interestand no longer accurate!**
+The Subversion repository is located here: `http://www.latex-project.org/svnroot/latex2e-public/`. **As of 2019 this is no longer online, the sources are on GitHub for a number of years. Therefore the checkout instructions below are also only of historical interest and no longer accurate!**
 
 You may check out a working copy of the code with the Subversion front-end of your choice or the command line statements: 
 
@@ -23,7 +23,7 @@ You may check out a working copy of the code with the Subversion front-end of yo
 `svn co http://www.latex-project.org/svnroot/latex2e-public/ latex2e-svn`
 
 The repository also contains the extensive test suite used to check changes to the codebase for regressions to known behaviour. The test suite was first introduced in TUGboat 18(4), 1997:
-[http://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf](http://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf)
+[https://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf](https://www.tug.org/TUGboat/Articles/tb18-4/tb57mitt.pdf)
 This is the first time it has been publicly available; some work still needs to be done to organise it into a public build script.
 
 While we have your attention, don't forget to take a look at the experimental code that we've been building as part of the LaTeX3 project:

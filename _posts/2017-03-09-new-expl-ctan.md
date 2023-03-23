@@ -22,7 +22,7 @@ tags: [latex3, expl3, snapshot]
    added to `xparse`
  - `\IfValue(TF)` is now marked as stable
  - There have been some questions about the (removed) k-type
-   argument: see [StackExchange question](http://tex.stackexchange.com/q/357187) for
+   argument: see [StackExchange question](https://tex.stackexchange.com/q/357187) for
    some transitional code (note that the replacement e-type
    *is experimental*)
 

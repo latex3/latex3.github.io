@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2016-07-FMi-TUG-alice-goes-floating-slides-with-notes.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice goes floating</a> (slides with speaker notes intermixed)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ [TUG Conference 2016](http://tug.org/tug2016/) (Toronto, Canada)
++ [TUG Conference 2016](https://tug.org/tug2016/) (Toronto, Canada)
 
 In this talk a framework for globally optimizing pagination of
 documents containing floats is demonstrated. As the main example Alice

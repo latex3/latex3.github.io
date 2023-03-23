@@ -27,11 +27,11 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 ## Contributed Documentation and articles on LaTeX
 + [TeXdoc Online - TeX and LaTeX Documentation](https://texdoc.org/)  
   Dedicated server for querying and browsing manuals, guides and package documentation. 
-+ [LaTeX: an introduction](http://www.techscribe.co.uk/ta/latex-introduction.pdf)  
++ [LaTeX: an introduction](https://www.techscribe.co.uk/ta/latex-introduction.pdf)  
   This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was published in 'Communicator', Spring 2006.
 + [The (Not So) Short Introduction to LaTeX2e](https://ctan.org/tex-archive/info/lshort/english/lshort.pdf)  
   This document by Tobias Oetiker et al is a good beginner's tutorial. There are a number of [translations](ftp://ctan.tug.org/tex-archive/info/lshort/) available. 
-+ [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](http://ctan.org/pkg/latex2e-help-texinfo)  
++ [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](https://ctan.org/pkg/latex2e-help-texinfo)  
   This document is an unofficial reference manual for LaTeX developed over many years by various volunteers. It is available in several languages, i.e., English, French and Spanish. The document is developed further and you find the current development versions and new releases [here](https://puszcza.gnu.org.ua/software/latexrefman/).
 + [Formatting information -- An introduction to typesetting with LaTeX](http://latex.silmaril.ie/formattinginformation/)  
   A fairly comprehensive online-book about LaTeX written by Peter Flynn.
@@ -44,32 +44,32 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 
   The questions answered here cover a wide range of topics, but typesetting issues are mostly covered from the viewpoint of a LaTeX user. 
 
-+ [A Visual LaTeX FAQ](http://www.ctan.org/tex-archive/info/visualFAQ/visualFAQ.pdf)  
++ [A Visual LaTeX FAQ](https://ctan.net/info/visualfaq/visualFAQ.pdf)  
   Having trouble finding the answer to a LaTeX question? The Visual LaTeX FAQ is an innovative new search interface that presents over a hundred typeset samples of frequently requested document formatting. Simply click on a hyperlinked piece of text and the Visual LaTeX FAQ will send your Web browser to the appropriate page in the TeX FAQ. By Scott Pakin.
   
 ## Question and Answer Websites
 
 ### English
 
-+ [TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/)  
++ [TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/)  
   Stack Exchange is a question and answer site for users of TeX, LaTeX, ConTeXt, and related typesetting systems.
-+ [LaTeX Community](http://www.latex-community.org/)  
++ [LaTeX Community](https://latex.org/forum/)  
   An active community with a lot of LaTeX knowledge available.
 
 ### German
 
-+ [TeXwelt](http://texwelt.de/wissen/)  
++ [TeXwelt](https://texwelt.de/wissen/)  
   TeX und LaTeX, Fragen und Antworten. (German)
-+ [goLaTeX LaTeX Forum](http://golatex.de/)  
++ [goLaTeX LaTeX Forum](https://golatex.de/)  
   Active a set of LaTeX forums. (German)
   
 ## Tutorials
 
 + [An interactive LaTeX course for beginners](https://www.learnlatex.org/)
   This course with 16 main lessons is available in multiple languages. It offers interactive exercises, allowing you to run LaTeX in the browser without having to install it upfront. Highly recommended for beginners.
-+ [Video tutorials on various LaTeX topics](http://www.youtube.com/ShareLaTeX)  
++ [Video tutorials on various LaTeX topics](https://www.youtube.com/ShareLaTeX)  
   This channel shows a growing collection of high-quality video tutorials from the folks from ShareLaTeX (an online editor for LaTeX) on different aspects of LaTeX, currently a beginners series, a series on Thesis writing, a series on beamer, and one on TikZ. The tutorials are not specific to the editor, so they are worth watching by anybody who wants to get a first impression on a particular topic. Of course, video tutorials can never address all aspects, but these have enough detail to get you started.
-+ [Getting to grips with LaTeX](http://www.andy-roberts.net/misc/latex/)  
++ [Getting to grips with LaTeX](https://www.andy-roberts.net/misc/latex/)  
   A collection of tutorials meant to get people going with LaTeX, by Andrew Roberts.
 + [Using Imported Graphics in LaTeX2e](https://www.ctan.org/pkg/epslatex)  
   This article by Keith Reckdahl shows you how to do (almost) anything with graphics: side-by-side, rotated, etc.
@@ -86,8 +86,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [Gutenberg (French)](https://www.gutenberg.eu.org/)  
   The web site of the French speaking TeX Users Group. You will find publications, tutorials and more.
 
-+ [UK-TUG](http://uk.tug.org/)  
-  The web site of the UK TeX Users Group. They publish a lot of their meeting sessions
++ [UK-TUG](http://uk-tug-archive.tug.org/)  
+  The web site holding the archives the UK TeX Users Group. UKTUG is no longer in existance but the archive holds interesting historical material. They also published a lot of their meeting sessions
   [as videos](https://vimeo.com/uktug/).
 
 

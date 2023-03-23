@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2019-08-FMi-TUG-Taming-utf8.pdf" target="_blank" onclick="vgwPixelCall('72c969abd8024d83a06851a5d838f346');">Taming UTF-8 in pdfTeX</a> (handouts)
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
-+ [TUG Conference 2019](http://tug.org/tug2019/) (Palo Alto, USA)
++ [TUG Conference 2019](https://tug.org/tug2019/) (Palo Alto, USA)
 
 > To understand the concepts in pdflatex for processing UTF-8 encoded
 > files it is helpful to first take a look at the models used by the

@@ -30,12 +30,12 @@ You can also edit/commit directly to the gh-pages branch [on github](https://git
 * Commit directly to the gh-pages branch / Create a new branch for this commit and start a pull request.
 
 ### Requirements
-In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](http://sass-lang.com), [Markdown](http://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](http://www.ruby-lang.org/en/downloads/)* installed on your machine.
+In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](https://sass-lang.com), [Markdown](https://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](https://www.ruby-lang.org/en/downloads/)* installed on your machine.
 
 ## Local Development
 
 ### Gem Installation
-Use the ``bundle`` command to install the necessary gems for the **LaTeX Project**. If you don't have [bundler](http://gembundler.com) installed you'll need to run ``gem install bundler`` before using ``bundle``.
+Use the ``bundle`` command to install the necessary gems for the **LaTeX Project**. If you don't have [bundler](https://gembundler.com) installed you'll need to run ``gem install bundler`` before using ``bundle``.
 
     $ bundle install
 
@@ -59,23 +59,23 @@ to get the `{{ site.url }}` variable set correctly.
 ## Resources
 
 * [Git Documentation](https://git-scm.com/docs/)
-* [Jekyll Documentation](http://jekyllrb.com/docs/home/)
+* [Jekyll Documentation](https://jekyllrb.com/docs/home/)
 * [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [SASS Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+* [SASS Documentation](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 * [Markdown Documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-* [Kramdown Documentation](http://kramdown.gettalong.org/documentation.html)
+* [Kramdown Documentation](https://kramdown.gettalong.org/documentation.html)
 
 ## Website
 
 ### Webdesign License
 
-The latex-project.org webdesign by [Jonas Jacek](http://jonas.me/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/latex3/latex3.github.io](https://github.com/latex3/latex3.github.io).
+The latex-project.org webdesign by [Jonas Jacek](https://jonas.me/) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/latex3/latex3.github.io](https://github.com/latex3/latex3.github.io).
 
 This is a [Free Culture License](https://creativecommons.org/share-your-work/public-domain/freeworks/)!
 
 However, the license requires you to give appropriate credit to Jonas, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests Jonas or the LaTeX Project endorses you or your use.
 
-Please credit Jonas with a link to his website (http://jonas.me/) and state the license somewhere on your page. Everything else brings bad karma.
+Please credit Jonas with a link to his website (https://jonas.me/) and state the license somewhere on your page. Everything else brings bad karma.
 
 ### Reporting Website Bugs
 

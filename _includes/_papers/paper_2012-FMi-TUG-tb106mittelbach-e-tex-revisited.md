@@ -6,9 +6,9 @@
 + Published paper, TUGboat volume 34, number 1, 2013
 + The paper was presented at the TUG Conference 2012 in Boston.
 
-+ [TUG Conference 2012](http://tug.org/tug2012/) (Boston, USA)
++ [TUG Conference 2012](https://tug.org/tug2012/) (Boston, USA)
 + Text version of the <a href="{{site.baseurl}}/publications/2012-FMi-TUB-tb106mittelbach-e-tex-revisited-abstract.txt" target="_blank" onclick="vgwPixelCall('22a96dd7bbe64a03bc837f79aaf9e174');">abstract</a>
-+ Digital Camera recording of the talk on YouTube: [E-TeX: Guidelines to future TeX extensions --- revisited](http://youtu.be/qXS27F5NxUg) 
++ Digital Camera recording of the talk on YouTube: [E-TeX: Guidelines to future TeX extensions --- revisited](https://youtu.be/qXS27F5NxUg) 
 
 
 In 1990 shortly after Don Knuth announced TeX 3.0 Frank gave a paper

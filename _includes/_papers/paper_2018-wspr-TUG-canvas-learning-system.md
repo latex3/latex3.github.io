@@ -3,7 +3,7 @@
 ### <a href="{{site.baseurl}}/publications/2018-07-20-wspr-TUG-canvas-lms-slides.pdf" target="_blank">Creating teaching material with LaTeXML for the Canvas Learning Management System</a> (slides)
 
 + [Will Robertson]({{site.baseurl}}/about/team/#will-robertson)
-+ [TUG Conference 2018](http://tug.org/tug2018/) (Rio de Janeiro, Brazil)
++ [TUG Conference 2018](https://tug.org/tug2018/) (Rio de Janeiro, Brazil)
 + Abstract:
 
 > In this presentation I will outline the system by which I produce PDF

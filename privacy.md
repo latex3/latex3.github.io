@@ -85,7 +85,7 @@ royalty-relevant thresholds in the calendar year.
 
 Frank Mittelbach is a participant in the Amazon US and EU associate program through which advertising fees can be earned by placing links to Amazon.com and Amazon.de. Amazon uses cookies to trace the origin of orders. Among other things, Amazon may be able to realize that you have clicked on an affiliate link on this website.
 
-For more information on data usage by Amazon, refer to the privacy policy of the company: [Amazon DE](http://www.amazon.de/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=3312401) and [Amazon US](http://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-9?ie=UTF8&nodeId=468496).
+For more information on data usage by Amazon, refer to the privacy policy of the company: [Amazon DE](https://www.amazon.de/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=3312401) and [Amazon US](https://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-9?ie=UTF8&nodeId=468496).
 
 _If you buy a book through one of the links on this website that refer you to Amazon you make a small contribution to the work of the LaTeX Project (even if the book is not from some of the project members). Thank you for that._
 
@@ -94,9 +94,9 @@ _If you buy a book through one of the links on this website that refer you to Am
 
 Frank Mittelbach is a participant in the Rakuten Linkshare associate program through which advertising fees can be earned by placing links to participating third-party offers. Rakuten Linkshare uses cookies to trace the origin of orders initiated in this way. Among other things, Rakuten Linkshare may be able to realize that you have clicked on an affiliate link on this website.
 
-For more information on data usage by Rakuten Linkshare, refer to the privacy policy of the company: [Rakuten privacy policy](http://marketing.rakuten.com/affiliate-privacy-policy).
+For more information on data usage by Rakuten Linkshare, refer to the privacy policy of the company: [Rakuten privacy policy](https://marketing.rakuten.com/affiliate-privacy-policy).
 
-_This service is used for books from Pearson/Addison-Wesley, e.g., The LaTeX Companions. If you buy such a book through one of the links on this websitethat point to Pearson you make a small contribution to the work of the LaTeX Project. Thank you for that._
+_This service is used for books from Pearson/Addison-Wesley, e.g., The LaTeX Companions. If you buy such a book through one of the links on this website that point to Pearson you make a small contribution to the work of the LaTeX Project. Thank you for that._
 
 
 #### Revocation, changes, corrections and updates

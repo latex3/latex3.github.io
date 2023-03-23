@@ -211,7 +211,7 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 
 ### French
 
-#### [LaTeX Companion, 2e édition --- out of print](http://www.pearson.fr/livre/?GCOI=27440100048330)
+#### LaTeX Companion, 2e édition --- out of print
 
 ![LaTeX Companion, 2e édition](frank-mittelbach_-_latex-companion-fr.jpg){:width="150" height="189"}
 **Edition:** 2e édition  
@@ -223,17 +223,17 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **ISBN-13:** 978-2-7440-7182-9  
 **Pages:** 1116 pages  
 
-Ce livre est la traduction de la 2e édition du [The LaTeX Companion](http://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
+Ce livre est la traduction de la 2e édition du [The LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
 <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](http://www.informit.com/store/latex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
+This book is a translation of [The LaTeX Companion, 2nd edition](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
 
 
 <hr>
 
 ### German
 
-#### [LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools) --- out of print](http://www.amazon.de/gp/product/386894088X/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=386894088X&linkCode=as2&tag=wwwlatexproje-21)
+#### [LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools) --- out of print](https://www.amazon.de/gp/product/386894088X/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=386894088X&linkCode=as2&tag=wwwlatexproje-21)
 
 ![LaTeX-Begleiter Bafög-Ausgabe (Pearson Studium - Scientific Tools)](frank-mittelbach_-_der-latex-begleiter-2-bafoeg-edition.jpg){:width="150" height="232"}
 **Edition:** 2nd edition  
@@ -245,7 +245,7 @@ This book is a translation of [The LaTeX Companion, 2nd edition](http://www.info
 **ISBN-13:** 978-3868940886  
 **Pages:** 1168 pages  
 
-This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflage](http://www.pearson-studium.de/main/main.asp?page=bookdetails&ProductID=106617) (ISBN 3-8273-7166-X) with identical content. This book is a translation of [The LaTeX Companion, 2nd edition (TTCT series)](http://click.linksynergy.com/fs-bin/click?id=g/Y5ZYi0Q7I&offerid=145238.10000314&type=3&subid=0) with a number of adaptations to the German language.
+This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflage](https://www.pearson-studium.de/main/main.asp?page=bookdetails&ProductID=106617) (ISBN 3-8273-7166-X) with identical content. This book is a translation of [The LaTeX Companion, 2nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992) with a number of adaptations to the German language.
 
 There are some extracts from the book as PDF files available from this site:
 
@@ -306,7 +306,7 @@ Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
 
 <hr>
 
-#### [El libro de LaTeX](http://www.latex.um.es/libro/index.html)
+#### [El libro de LaTeX](https://www.latex.um.es/libro/index.html)
 
 ![El libro de LaTeX](bernardo-cascales-salinas_-_el-libro-de-latex.jpg){:width="150" height="212"}
 **Edition:** 1st edition  
@@ -353,7 +353,7 @@ May be difficult to find these days.
 
 <hr>
 
-#### [Fonts & Encodings](http://www.amazon.com/Fonts-Encodings-Yannis-Haralambous/dp/0596102429/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20)
+#### [Fonts & Encodings](https://www.amazon.com/Fonts-Encodings-Yannis-Haralambous/dp/0596102429/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=lapr05-20)
 
 ![Fonts & Encodings](yannis-haralambous_-_fonts-and-encodings.jpg){:width="150" height="197"}
 **Edition:** 1st edition  
@@ -369,7 +369,7 @@ May be difficult to find these days.
 
 ### French
 
-#### [Le TeXbook : Composition informatique](http://www.amazon.fr/Texbook-Composition-informatique-Donald-Knuth/dp/2711748197/)
+#### [Le TeXbook : Composition informatique](https://www.amazon.fr/Texbook-Composition-informatique-Donald-Knuth/dp/2711748197/)
 
 ![Le TeXbook : Composition informatique](donald-erwin-knuth_-_le-texbook-composition-informatique.jpg){:width="150" height="217"}
 **Edition:** 1st edition  
@@ -383,7 +383,7 @@ May be difficult to find these days.
 
 <hr>
 
-#### [Fontes et Codages](http://www.amazon.fr/Fontes-Codages-Yannis-Haralambous/dp/284177273X)
+#### [Fontes et Codages](https://www.amazon.fr/Fontes-Codages-Yannis-Haralambous/dp/284177273X)
 
 ![Fontes et Codages](yannis-haralambous_-_fontes-et-codages.jpg){:width="150" height="206"}
 **Edition:** 1st edition  

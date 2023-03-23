@@ -6,7 +6,7 @@
 + Multilingual Language Processing Conference 1997 (Tsukuba, Japan)
 + Published paper, 1997
 + Keywords: general research, proposed model for LaTeX (current and future version)
-+ [Taped version of the talk given in Tsukuba, Japan](http://youtu.be/qsKGEirRcpA) (Analog recording on YouTube)
++ [Taped version of the talk given in Tsukuba, Japan](https://youtu.be/qsKGEirRcpA) (Analog recording on YouTube)
 
 In a conference on multilingual typesetting in Japan and later at a TUG conference a new model is presented for dealing with language information in structured documents. The article appeared in the conference proceedings, TUGboat volume 18, number 3.
 

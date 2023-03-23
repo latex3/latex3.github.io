@@ -4,7 +4,7 @@
 
 <hr class="conference-start">
 
-## [TUG Conference 2010](http://tug.org/tug2010/) (San Francisco, USA)
+## [TUG Conference 2010](https://tug.org/tug2010/) (San Francisco, USA)
 
 {% include _papers/paper_2010-CAR-TUG-A-brief-history-of-LaTeX-with-a-prediction.md %}
 {% include _papers/paper_2010-FMi-TUG-exhuming-coffins-from-the-last-century.md %}

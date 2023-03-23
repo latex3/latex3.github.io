@@ -29,7 +29,7 @@ Since then, the availability and use of eTeX has spread, and almost
 all users have them available. Indeed, the standard format-building
 routines for LaTeX have included them for many years. There are also a
 lot of packages on CTAN that use eTeX, most obviously any using the
-[expl3 programming language](http://ctan.org/pkg/l3kernel) that the
+[expl3 programming language](https://ctan.org/pkg/l3kernel) that the
 LaTeX3 Project have created.
 
 The team had always meant to say at some stage that eTeX was now

@@ -9,4 +9,4 @@ tags: [lppl]
 
 # LPPL now DFSG free
 
-Version 1.3 of the [LaTeX project public license (LPPL)]({{site.baseurl}}/lppl/) has been released. It is now considered a Free Software license by the terms of the [Debian Free Software guidelines](http://www.debian.org/social_contract#guidelines).
+Version 1.3 of the [LaTeX project public license (LPPL)]({{site.baseurl}}/lppl/) has been released. It is now considered a Free Software license by the terms of the [Debian Free Software guidelines](https://www.debian.org/social_contract#guidelines).
