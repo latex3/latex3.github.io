@@ -35,7 +35,7 @@ description: "List of books on TeX and LaTeX and related topics. List book in En
 
 ### English
 
-#### [LaTeX: A document preparation system, User's guide and reference manual](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-a-document-preparation-system-9780201529838)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-a-document-preparation-system-9780201529838" rel="nofollow" >LaTeX: A document preparation system, User's guide and reference manual</a>
 
 ![LaTeX: A document preparation system, User's guide and reference manual](leslie-lamport_-_latex-a-document-preparation-system-users-guide-and-reference-manual.jpg){:width="150" height="189"}
 **Edition:** 2nd edition  
@@ -54,7 +54,7 @@ There is an [errata file](lamport-manual.pdf) for this book.
 
 
 
-#### [The LaTeX Companion, 3nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >The LaTeX Companion, 3nd edition (TTCT series)</a>
 
 ![The LaTeX Companion, 3nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3nd-edition-ttct-series.jpeg){:width="180"}
 **Edition:** 3nd edition  
@@ -68,10 +68,9 @@ There is an [errata file](lamport-manual.pdf) for this book.
 Compared to the previous edition the third edition nearly doubled in size.
 The print edition is therefore produced as a two-volume set --- the above information links to this bundle.
 <br>
-It is also available as an [eBook (Part I and II
-combined)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784)
+It is also available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >eBook (Part I and II combined)</a>
 consisting of PDF and ePub format without DRM.  Finally, the publisher
-offers the combination of [the printed books + the digital versions](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489)
+offers the combination of <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >the printed books + the digital versions</a>
 at a very attractive price not available anywhere else.
 <br>
 Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
@@ -91,7 +90,7 @@ There are some extracts from the third edition as PDF files to offer some impres
 
 
 
-#### [The LaTeX Companion, 2nd edition (TTCT series) --- previous edition](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992" rel="nofollow" >The LaTeX Companion, 2nd edition (TTCT series) --- previous edition</a>
 
 ![The LaTeX Companion, 2nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-2nd-edition-ttct-series.jpg){:width="160"}
 **Edition:** 2nd edition  
@@ -103,7 +102,7 @@ There are some extracts from the third edition as PDF files to offer some impres
 **ISBN-13:** 978-0201362992  
 **Pages:** 1120 pages  
 
-Also available as an [eBook bundle](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992) consisting of PDF and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/) for more information.
+Also available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992" rel="nofollow" >eBook bundle</a> consisting of PDF and ePub format without DRM, see [news entry]({{site.baseurl}}/news/2013/11/02/latex-compagnion-ebook/) for more information.
 
 There is an [errata file](tlc2.err) (along with a [PDF version](tlc2-err.pdf)). 
 
@@ -143,7 +142,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 
 <hr>
 
-#### [The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-web-companion-integrating-tex-html-and-xml-9780201433111)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-web-companion-integrating-tex-html-and-xml-9780201433111" rel="nofollow" >The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)</a>
 
 ![The LaTeX Web Companion Integrating TeX, HTML and XML (TTCT series)](michael-goossens_-_the-latex-web-companion-integrating-tex-html-xml-ttct-series.jpg){:width="150" height="188"}
 **Edition:** 1st edition  
@@ -157,7 +156,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 
 <hr>
 
-#### [Guide to LaTeX (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653" rel="nofollow" >Guide to LaTeX (TTCT series)</a>
 
 ![Guide to LaTeX (TTCT series)](helmut-kopka_-_guide-to-latex.jpg){:width="150" height="210"}
 **Edition:** 4th edition  
@@ -169,7 +168,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 **ISBN-13:** 978-0321173850  
 **Pages:** 624 pages  
 
-Also available as an [eBook bundle](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653) consisting of PDF and ePub format without DRM.
+These days it is available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653" rel="nofollow" >eBook in ePub format</a> without DRM.
 
 <hr>
 
@@ -223,10 +222,11 @@ From Wikibooks, this open-content textbook is intended to serve new users who wi
 **ISBN-13:** 978-2-7440-7182-9  
 **Pages:** 1116 pages  
 
-Ce livre est la traduction de la 2e édition du [The LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992) (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
+Ce livre est la traduction de la 2e édition du
+<a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992" rel="nofollow" >The LaTeX Companion, 2nd edition (TTCT series)</a> (voir ci-dessus). Des extraits du livre sont disponibles sur ce site:
 <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">texte complet de l'annexe B, «Détecter et résoudre; les problèmes» file</a> (463 kB)
 
-This book is a translation of [The LaTeX Companion, 2nd edition](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992). There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
+This book is a translation of <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992" rel="nofollow" >The LaTeX Companion, 2nd edition (TTCT series)</a>. There is an extract from the book as PDF files available from this site:  <a href="{{site.baseurl}}/help/books/bookpart_tlc2fr-apb.pdf" target="_blank" onclick="vgwPixelCall('8563afc57cfe4e65a068251bc8f87935');">full text of appendix B, «Tracing and resolving problems» file</a> (463 kB)
 
 
 <hr>
@@ -245,7 +245,7 @@ This book is a translation of [The LaTeX Companion, 2nd edition](https://click.l
 **ISBN-13:** 978-3868940886  
 **Pages:** 1168 pages  
 
-This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflage](https://www.pearson-studium.de/main/main.asp?page=bookdetails&ProductID=106617) (ISBN 3-8273-7166-X) with identical content. This book is a translation of [The LaTeX Companion, 2nd edition (TTCT series)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992) with a number of adaptations to the German language.
+This is a re-issue (student version) of the book [Der LaTeX-Begleiter, 2. Auflage](https://www.pearson-studium.de/main/main.asp?page=bookdetails&ProductID=106617) (ISBN 3-8273-7166-X) with identical content. This book is a translation of <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-9780201362992" rel="nofollow" >The LaTeX Companion, 2nd edition (TTCT series)</a> with a number of adaptations to the German language.
 
 There are some extracts from the book as PDF files available from this site:
 
@@ -326,7 +326,7 @@ May be difficult to find these days.
 
 ### English
 
-#### [Computers & Typesetting, Volume A: The TeXbook (Hardcover)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-a-the-texbook-9780201134476)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-a-the-texbook-9780201134476" rel="nofollow" >Computers & Typesetting, Volume A: The TeXbook (Hardcover)</a>
 
 ![Computers & Typesetting, Volume A: The TeXbook (Hardcover)](donald-erwin-knuth_-_computers-&-typesetting-the-texbook-vol-a.jpg){:width="150" height="189"}
 **Edition:** 1st edition  
@@ -340,7 +340,7 @@ May be difficult to find these days.
 
 <hr>
 
-#### [Computers & Typesetting, Volume B: TeX the program (Hardcover)](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-b-tex-the-program-9780201134377)
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fcomputers-typesetting-volume-b-tex-the-program-9780201134377" rel="nofollow" >Computers & Typesetting, Volume B: TeX the program (Hardcover)</a>
 
 ![Computers & Typesetting, Volume B: TeX the program (Hardcover)](donald-erwin-knuth_-_computers-&-typesetting-vol-b.jpeg){:width="150" height="200"}
 **Edition:** 1st edition  
