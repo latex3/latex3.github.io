@@ -5,9 +5,92 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 25 May 2023 23:29:28 +0200</pubDate>
-    <lastBuildDate>Thu, 25 May 2023 23:29:28 +0200</lastBuildDate>
+    <pubDate>Fri, 26 May 2023 12:01:57 +0200</pubDate>
+    <lastBuildDate>Fri, 26 May 2023 12:01:57 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Final pre-release of LaTeX 2023-06-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;final-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Final pre-release of LaTeX 2023-06-01 is available for testing&lt;/h1&gt;
+
+&lt;p&gt;We submitted the final pre-release version for the 2023-06-01 LaTeX
+kernel to CTAN recently. It should have made its way into TeX Live
+for everyone by now (or pretty soon), so it’s ready
+for users and developers to try.&lt;/p&gt;
+
+&lt;p&gt;We did not manage to get everything in that we originally planned for
+the June release, but given that the newsletter has seven pages is
+some indication that we have been busy. &lt;strong&gt;Please test it out so that
+we all can be sure that the main release has no issues.&lt;/strong&gt; Given that
+we are somewhat late in the schedule we will delay the June release by
+a week or two so that developers can verify that their packages will
+work smoothly with the new release.&lt;/p&gt;
+
+&lt;h2 id=&quot;automated-tagging-of-pdf-documents&quot;&gt;Automated tagging of PDF documents&lt;/h2&gt;
+
+&lt;p&gt;We have now enabled new automatic tagging functionality for additional
+LaTeX elements, among them most display environments, standard
+sectioning commands and content, figure and table listings. Also
+supported are standard floats, citations, bibliographies and a few
+more elements, but we aren’t yet at the point that we can state that all
+elements described in Leslie Lamport’s manual on LaTeX are supported
+— but we are getting close.&lt;/p&gt;
+
+&lt;p&gt;This can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase=phase-III}
+\documentclass{...}                     % article, book or report
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In addition there is also an early prototype for tagging formulas, which can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase={phase-III,math}}
+\documentclass{...}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It offers support for LaTeX’s standard math environments and also for
+all environments provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package.&lt;/p&gt;
+
+&lt;p&gt;All of this automation is currently in a prototype state and
+restricted to the use of standard classes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;article&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;report&lt;/code&gt;, and
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;book&lt;/code&gt;) and it supports only a limited number of add-on package. See the &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;LaTeX2e News
+Issue 37&lt;/a&gt; newsletter for further details. It provides information
+how to submit feedback on the new functionality.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;newsletter&lt;/a&gt;
+also covers various other small enhancements or corrections that we
+provide with the June release.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;/h2&gt;
+
+&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
+to do is to replace the invocation command by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable,
+e.g., on the command line you would run&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
+editing environment, then it depends on the system how to configure it to use an
+alternative format; but in any case the necessary modification should be
+straightforward.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 27 May 2023 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2023/05/27/latex-dev-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/05/27/latex-dev-2/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>beta-testing</category>
+        
+        <category>development formats</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>&quot;The LaTeX Companion&quot;, third edition, is available for pre-order</title>
@@ -82,8 +165,8 @@ by using &lt;a href=&quot;https://amzn.to/40yY7gD&quot;&gt;Amazon.de in Germany&
       </item>
     
       <item>
-        <title>Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;towards-automatted-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automatted PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing&lt;/h1&gt;
+        <title>Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
+        <description>&lt;h1 id=&quot;towards-automated-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing&lt;/h1&gt;
 
 &lt;p&gt;We submitted the second pre-release version for the 2023-06-01 LaTeX
 kernel to CTAN recently. It should have made its way into TeX Live
@@ -680,59 +763,6 @@ straightforward.&lt;/p&gt;
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Robin Fairbairns (1947 - 2022)</title>
-        <description>&lt;h1 id=&quot;robin-fairbairns-1947---2022&quot;&gt;Robin Fairbairns (1947 - 2022)&lt;/h1&gt;
-
-&lt;p&gt;We are sad to report that our longtime friend, team member, and LaTeX contributor
-Robin Fairbairns died 25th February 2022, after a long period of ill
-health.
-Much missed husband of Linda, former husband and friend of Josy,
-father of Chloe and Sam, stepfather of Chloe and Lydia.&lt;/p&gt;
-
-&lt;p&gt;The Funeral will be on &lt;a href=&quot;https://funeral-notices.co.uk/notice/fairbairns/5024136&quot;&gt;30th March 2022&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Robin was instrumental in bringing the UK TeX archive to Cambridge,
-and setting up the CTAN TeX archive network in 1992, of which
-Cambridge, DANTE and SHSU were the three original hosts. The UK CTAN
-host was managed by Robin until his retirement in 2014.
-Robin wrote or maintained many well-used &lt;a href=&quot;https://www.ctan.org/author/fairbairns&quot;&gt;LaTeX packages that are on
-CTAN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;He also regularly served on the UKTUG Committee, and for many
-years developed and maintained the “UKTUG FAQ” archive of Questions and Answers on
-TeX related subjects.  The FAQ is now maintained at
-&lt;a href=&quot;https://texfaq.org&quot;&gt;https://texfaq.org&lt;/a&gt; but the majority of the text still reflects
-Robin’s original work.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/Robin-web.png&quot; alt=&quot;Robin Fairbairns&quot; width=&quot;100%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Robin was a tireless member of the community who helped many people
-for many years with his kind, friendly, and patient approach.  He
-clearly looked to improve the TeX ecosystem and worked hard to leave
-it in a better place after his time was up. He certainly succeeded in
-that.&lt;/p&gt;
-
-&lt;p&gt;With sadness&lt;/p&gt;
-
-&lt;p&gt;— The LaTeX Team&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 16 Mar 2022 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2022/03/16/robin-fairbairns/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/03/16/robin-fairbairns/</guid>
-        
-        <category>latex</category>
-        
-        <category>personal</category>
-        
-        <category>Robin Fairbairns</category>
         
         
         <category>news</category>

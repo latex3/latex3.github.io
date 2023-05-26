@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
-  <meta name="description" content="We submitted the second pre-release version for the 2023-06-01 LaTeX kernel to CTAN recently. It is ready for testing and exploration of automated tagging.">
+  <title>Final pre-release of LaTeX 2023-06-01 is available for testing</title>
+  <meta name="description" content="We submitted the final pre-release version for the 2023-06-01 LaTeX kernel to CTAN recently. It is ready for testing and exploration of automated tagging.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,49 +62,54 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Mar 13, 2023</span></small>
-    <h1 id="towards-automated-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing">Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</h1>
+    <small class="meta"><span class="post-date">May 27, 2023</span></small>
+    <h1 id="final-pre-release-of-latex-2023-06-01-is-available-for-testing">Final pre-release of LaTeX 2023-06-01 is available for testing</h1>
 
-<p>We submitted the second pre-release version for the 2023-06-01 LaTeX
+<p>We submitted the final pre-release version for the 2023-06-01 LaTeX
 kernel to CTAN recently. It should have made its way into TeX Live
-(both 2022 and the 2023 pre-test) for everyone by now, so it’s ready
-for users to try.</p>
+for everyone by now (or pretty soon), so it’s ready
+for users and developers to try.</p>
 
-<p>It does not yet contain all updates to the LaTeX format that will
-become part of the standard in June, but the new code already provided
-is worth checking out.</p>
+<p>We did not manage to get everything in that we originally planned for
+the June release, but given that the newsletter has seven pages is
+some indication that we have been busy. <strong>Please test it out so that
+we all can be sure that the main release has no issues.</strong> Given that
+we are somewhat late in the schedule we will delay the June release by
+a week or two so that developers can verify that their packages will
+work smoothly with the new release.</p>
 
 <h2 id="automated-tagging-of-pdf-documents">Automated tagging of PDF documents</h2>
 
 <p>We have now enabled new automatic tagging functionality for additional
 LaTeX elements, among them most display environments, standard
-sectioning commands and content, figure and table listings.</p>
+sectioning commands and content, figure and table listings. Also
+supported are standard floats, citations, bibliographies and a few
+more elements, but we aren’t yet at the point that we can state that all
+elements described in Leslie Lamport’s manual on LaTeX are supported
+— but we are getting close.</p>
 
 <p>This can be activated through</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\DocumentMetadata{testphase=phase-III}
 \documentclass{...}                     % article, book or report
 </code></pre></div></div>
-<p>In addition there is also a (very early) prototype for tagging formulas, which can be activated through</p>
+<p>In addition there is also an early prototype for tagging formulas, which can be activated through</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\DocumentMetadata{testphase={phase-III,math}}
 \documentclass{...}
 </code></pre></div></div>
-<p>It offers support for LaTeX’s standard math environments but also for
+<p>It offers support for LaTeX’s standard math environments and also for
 all environments provided through the <code class="language-plaintext highlighter-rouge">amsmath</code> package.</p>
 
 <p>All of this automation is currently in a prototype state and
 restricted to the use of standard classes (<code class="language-plaintext highlighter-rouge">article</code>, <code class="language-plaintext highlighter-rouge">report</code>, and
-<code class="language-plaintext highlighter-rouge">book</code>) and it supports only a limited number of add-on package. See the
-draft version of the <a href="/news/latex2e-news/ltnews37.pdf">LaTeX2e News
+<code class="language-plaintext highlighter-rouge">book</code>) and it supports only a limited number of add-on package. See the <a href="/news/latex2e-news/ltnews37.pdf">LaTeX2e News
 Issue 37</a> newsletter for further details. It provides information
 how to submit feedback on the new functionality.</p>
 
-<p>The newsletter also covers various other small enhancements or
-corrections that we intend to provide with the June release.</p>
+<p>The <a href="/news/latex2e-news/ltnews37.pdf">newsletter</a>
+also covers various other small enhancements or corrections that we
+provide with the June release.</p>
 
-<h2 id="outlook">Outlook</h2>
-
-<p>We expect to produce another pre-release around the end of April, which will
-give us time to finish the release by June. Please help with the testing.</p>
+<h2 id="testing">Testing</h2>
 
 <p>Processing your documents with the pre-release is straightforward. All you have
 to do is to replace the invocation command by appending <code class="language-plaintext highlighter-rouge">-dev</code> to the executable,
