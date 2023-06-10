@@ -56,7 +56,7 @@ provide with the June release.
 # _The LaTeX Companion, third edition_ is now in print
 
 A while back we announced that the third edition of [_The LaTeX Companion_](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489) can be preordered. This status has changed and since middle of May the book is available from the publisher's website as well as from book shops or online shops such as Amazon.
-The digital version is still in the works (the ePub version to be precise), but if you order from [Pearson](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489) they already ship the uPDF version with the ePub following automatically, once ready.
+The digital version is still in the works (the ePub version to be precise), but if you order from [Pearson](https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489) they already ship the PDF version with the ePub following automatically, once ready.
 To give you an idea of what is covered in the third edition, here are some excerpts:
 + <a href="{{ site.baseurl }}/help/books/tlc3-digital-preface.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Preface of the 3rd edition</a> (317 kB)
 + <a href="{{ site.baseurl }}/help/books/tlc3-digital-toc.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Table of contents</a> (337 kB)
