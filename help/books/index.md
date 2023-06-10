@@ -54,10 +54,10 @@ There is an [errata file](lamport-manual.pdf) for this book.
 
 
 
-#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >The LaTeX Companion, 3nd edition (TTCT series)</a>
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >The LaTeX Companion, 3rd edition (TTCT series)</a>
 
-![The LaTeX Companion, 3nd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3nd-edition-ttct-series.jpeg){:width="180"}
-**Edition:** 3nd edition  
+![The LaTeX Companion, 3rd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3rd-edition-ttct-series.jpeg){:width="180"}
+**Edition:** 3rd edition  
 **Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach) with [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer)   
 **Date:** 2023  
 **Language:** English  
