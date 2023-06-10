@@ -5,9 +5,80 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 May 2023 11:28:58 +0200</pubDate>
-    <lastBuildDate>Sun, 28 May 2023 11:28:58 +0200</lastBuildDate>
+    <pubDate>Sat, 10 Jun 2023 11:20:34 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Jun 2023 11:20:34 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>LaTeX 2023-06-01 released and distributed</title>
+        <description>&lt;h1 id=&quot;latex-2023-06-01-release-distributed&quot;&gt;LaTeX 2023-06-01 release distributed&lt;/h1&gt;
+
+&lt;p&gt;With a few days delay (because of a  performance issue we had to resolve first)
+we have submitted  2023-06-01 release of the LaTeX
+kernel to CTAN. It should have made its way into TeX Live
+for everyone by now (or pretty soon).&lt;/p&gt;
+
+&lt;p&gt;We did not manage to get everything in that we originally planned for
+the June release, but given that the newsletter has seven pages is
+some indication that we have been busy.&lt;/p&gt;
+
+&lt;h2 id=&quot;automated-tagging-of-pdf-documents&quot;&gt;Automated tagging of PDF documents&lt;/h2&gt;
+
+&lt;p&gt;We have now enabled new automatic tagging functionality for additional
+LaTeX elements, among them most display environments, standard
+sectioning commands and content, figure and table listings. Also
+supported are standard floats, citations, bibliographies and a few
+more elements, but we aren’t yet at the point that we can state that all
+elements described in Leslie Lamport’s manual on LaTeX are supported
+— but we are getting close.&lt;/p&gt;
+
+&lt;p&gt;This can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase=phase-III}
+\documentclass{...}                     % article, book or report
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In addition there is also an early prototype for tagging formulas, which can be activated through&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase={phase-III,math}}
+\documentclass{...}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It offers support for LaTeX’s standard math environments and also for
+all environments provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package.&lt;/p&gt;
+
+&lt;p&gt;All of this automation is currently in a prototype state and
+restricted to the use of standard classes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;article&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;report&lt;/code&gt;, and
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;book&lt;/code&gt;) and it supports only a limited number of add-on package. See the &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;LaTeX2e News
+Issue 37&lt;/a&gt; newsletter for further details. It provides information
+how to submit feedback on the new functionality.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;newsletter&lt;/a&gt;
+also covers various other small enhancements or corrections that we
+provide with the June release.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-latex-companion-third-edition-is-now-in-print&quot;&gt;&lt;em&gt;The LaTeX Companion, third edition&lt;/em&gt; is now in print&lt;/h1&gt;
+
+&lt;p&gt;A while back we announced that the third edition of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt; can be preordered. This status has changed and since middle of May the book is available from the publisher’s website as well as from book shops or online shops such as Amazon.
+The digital version is still in the works (the ePub version to be precise), but if you order from &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;Pearson&lt;/a&gt; they already ship the uPDF version with the ePub following automatically, once ready.
+To give you an idea of what is covered in the third edition, here are some excerpts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-preface.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Preface of the 3rd edition&lt;/a&gt; (317 kB)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-toc.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Table of contents&lt;/a&gt; (337 kB)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-chapter-samples.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;348a5d49af564cf591c8447d2fd485ca&apos;);&quot;&gt;The initial pages of &lt;em&gt;all twenty&lt;/em&gt; chapters&lt;/a&gt; (3,4 MB)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;/news/2023/03/17/TLC3&quot;&gt;this earlier news post&lt;/a&gt; for additional details.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 10 Jun 2023 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Final pre-release of LaTeX 2023-06-01 is available for testing</title>
@@ -598,165 +669,6 @@ straightforward.&lt;/p&gt;
         <pubDate>Fri, 27 May 2022 02:00:00 +0200</pubDate>
         <link>https://latex-project.org//news/2022/05/27/latex-dev-2022-2/</link>
         <guid isPermaLink="true">https://latex-project.org//news/2022/05/27/latex-dev-2022-2/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Pre-release of LaTeX 2022-06-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;pre-release-of-latex-for-2022-06-01-ready-for-testing&quot;&gt;Pre-release of LaTeX for 2022-06-01 ready for testing&lt;/h1&gt;
-
-&lt;p&gt;We submitted the latest pre-release version for the 2022-06-01 LaTeX
-kernel to CTAN recently. It should have made its way into TeX Live
-(both 2021 and the 2022 pre-test) for everyone by now, so it’s ready
-for user to try.&lt;/p&gt;
-
-&lt;p&gt;It already contains most updates to the LaTeX format that will become part of the standard in June; thus testing the them now will help identifying packages that need upgrading and finding any bugs lurking before the June release hits the streets; see below for how to do this in a safe way.&lt;/p&gt;
-
-&lt;p&gt;The highlights are briefly discussed below, further details plus smaller bug fixes and improvements not covered here can be found in the draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot;&gt;LaTeX2e News Issue 35&lt;/a&gt; newsletter.&lt;/p&gt;
-
-&lt;h2 id=&quot;new-features-in-the-kernel-highlights&quot;&gt;New features in the kernel (highlights)&lt;/h2&gt;
-
-&lt;h3 id=&quot;for-users&quot;&gt;For users&lt;/h3&gt;
-
-&lt;p&gt;One of the most significant changes in the code is one that users (hopefully)
-won’t notice: the definition of UTF-8 characters in pdfTeX. We have made these
-engine-protected, which should make processing them in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; a lot easier.
-The way the change has been set up means we don’t expect users to actually see
-a difference, but we do want to hear about how it is working. So get your complicated
-accents out and try them all over the place with pdfTeX. (LuaTeX and XeTeX
-users won’t even need to worry.) One thing that goes with this change is that
-we have updated the definition of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\MakeUppercase&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\MakeLowercase&lt;/code&gt;, so
-they use Unicode-aware &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; code ‘behind the scenes’. Again, this should
-be transparent to users, but it would be good to hear how it works in the wild.&lt;/p&gt;
-
-&lt;p&gt;More visible are a small set of new commands we are adding in this pre-release.
-We are moving &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\fpeval&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\inteval&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xfp&lt;/code&gt; package directly into
-the kernel. We are also adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ExpandArgs&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\UseName&lt;/code&gt;, ideas again taken
-from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;. These commands allow control of expansion, so you can do a range
-of basic expansion tasks in document commands, without needing TeX programming
-or using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;. For example, you can now do&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\NewDocumentCommand\newcopyedit{mO{red}}
-  {\newcounter{todo#1}%
-   \ExpandArgs{c}\NewDocumentCommand{#1}{s m}%
-     {\stepcounter{todo#1}%
-      \IfBooleanTF {##1}%
-         {\todo[color=#2!10]%
-            {\UseName{thetodo#1}: ##2}}%
-         {\todo[inline,color=#2!10]%
-            {\UseName{thetodo#1}: ##2}}%
-     }%
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;which can create a document command by name: something people have been asking
-for many years.&lt;/p&gt;
-
-&lt;p&gt;One more addition from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; ideas is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\IfBlankTF&lt;/code&gt;: this can test if it has
-been given an entirely blank argument. Here, blank means empty or just spaces:
-this comes up surprisingly often.&lt;/p&gt;
-
-&lt;h3 id=&quot;for-package-authors&quot;&gt;For package authors&lt;/h3&gt;
-
-&lt;p&gt;Package authors might well choose to use the features described above. There
-is though one big change aimed squarely at packages: keyval-based option
-handling. We have introduced a new set of commands, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareKeys&lt;/code&gt;,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ProcessKeyOptions&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\SetKeys&lt;/code&gt;, which can be used to create keyvals and
-to use them as package options. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareKeys&lt;/code&gt; uses the same approach as the
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\keys_define:nn&lt;/code&gt; to create keys: each key has one or more
-‘properties’ which control how it behaves. We have provided a small number
-of common properties at this stage, for storing key values in a macro, for
-setting a switch and for executing some code. We have also provided a method
-to define the usage of keys: whether they are only available at package
-loading time, in the preamble or can also be used in the document body.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DeclareKeys
-  {
-    draft.if    = @mypkg@draft      ,
-    draft.usage = preamble          ,
-    name.store  = \@mypkg@name      ,
-    name.usage  = load              ,
-    command.code = \showtokens{#1}
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Package options can then be processed using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ProcessKeyOptions&lt;/code&gt;, which will
-set keys defined by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareKeys&lt;/code&gt;. Keys can also be set in the document
-body using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\SetKeys&lt;/code&gt;. All of these new commands take an optional argument to
-define the key &lt;em&gt;family&lt;/em&gt;: the namespace for the keys. This is by default the name
-of the current package file.&lt;/p&gt;
-
-&lt;p&gt;More advanced key types can be created directly using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3keys&lt;/code&gt;): the
-keys created by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DefineKeys&lt;/code&gt; are standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; keys.&lt;/p&gt;
-
-&lt;p&gt;Unlike traditional package options, loading a package using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ProcessKeyOptions&lt;/code&gt;
-multiple times with different options will not lead to a clash error. Instead,
-the options will simply be passed to the same key handler. This means that
-the package author can control how repeatedly setting the same keys is handled.&lt;/p&gt;
-
-&lt;h3 id=&quot;documentmetadata&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DocumentMetadata&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;There is one more addition to the kernel for use at the top of the document: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DocumentMetadata&lt;/code&gt;. It is the trigger to tell LaTeX that the current document is new/modern document that should use concepts not available in traditional LaTeX2e documents, for example, everything developed for the PDF tagging project.&lt;/p&gt;
-
-&lt;p&gt;This new command has to come first in a LaTeX document, &lt;em&gt;before&lt;/em&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\documentclass&lt;/code&gt;. It is used, as the name suggests, to set metadata about the entire document, but while the PDF tagging project is being worked on, it is also used to enable new code from this project (see the discussion of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latex-lab&lt;/code&gt; below).&lt;/p&gt;
-
-&lt;p&gt;Even if used with an empty argument, it will currently already show some effect, by loading the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdfmanagement&lt;/code&gt; that offers a reliable and consistent interfaces for packages (such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hyperref&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;media9&lt;/code&gt;, etc.) that need to set or query PDF resources, so that they can coexist without overwriting their settings in random ways.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hyperref&lt;/code&gt; package, for example, will switch to a new driver with extended possibilities, if the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DocumentMetadata&lt;/code&gt; declaration was used, you can see this with the following simple document, that does shows the new default link colors of the new driver.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{}
-
-\documentclass{article}
-\usepackage{hyperref}
-
-\begin{document}
-\tableofcontents
-\section{A link}  \url{https://www.latex-project.org}
-\end{document}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;the-latex-lab-bundle&quot;&gt;The LaTeX-lab bundle&lt;/h2&gt;
-
-&lt;p&gt;This is a new space to explore ideas that we think may get added to LaTeX. These experimental ideas are only activated if the right key is present in the argument to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DocumentMetadata&lt;/code&gt;, i.e., they do not affect users who do not wish to experiment with new features. For example, the key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;testphase&lt;/code&gt; can be used to enable code that has been developed for the PDF tagging project. We currently are in testphase II of the tagging project, and that can be activated using&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase = phase-II}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This then loads &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tagpdf&lt;/code&gt; and additional support code from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latex-lab&lt;/code&gt; and produces documents that have paragraph text and footnotes tagged; further document elements, e.g., headings and lists will follow soon as part of this phase.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latex-lab&lt;/code&gt; space may also hold code that we are in the process of moving to the kernel, but that we first want to tests without the danger of disruption, for example, at the moment it hosts the new management code for independent marks, which will either in June of by the end of the year move to the format.&lt;/p&gt;
-
-&lt;p&gt;It is possible that some ideas from the lab will be dropped or modified: anyone using them should be mindful of that. However, we expect that most will eventually move to the kernel. Tagging will &lt;em&gt;always&lt;/em&gt; require &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DocumentMetadata&lt;/code&gt; to be present, but over time the need to activate it with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;testphase&lt;/code&gt; key will be removed.&lt;/p&gt;
-
-&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
-
-&lt;p&gt;We expect to produce another pre-release around the end of April, which will
-give us time to finish the release by June. Please help with the testing&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
-to do is to replace the invocation command by appending -dev to the executable,
-e.g., on the command line you would run&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
-editing environment, then it depends on the system how to configure it to use an
-alternative format; but in any case the necessary modification should be
-straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Joseph &amp;amp; Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 21 Mar 2022 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2022/03/21/latex-dev-2022-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/03/21/latex-dev-2022-1/</guid>
         
         <category>latex2e</category>
         
