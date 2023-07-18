@@ -1,4 +1,4 @@
-\newcommand\erratafiledate{2014-09-30}
+\newcommand\erratafiledate{2014/09/30}
 
 \def\comando#1{\texttt{\string#1}}
 
@@ -363,8 +363,13 @@ Bafög-Ausgabe (Softcover) die inhaltlich identisch ist:
 )
 \end{verbatim}
 
-
 \begin{list}{}{\setlength\leftmargin{0cm}\setlength\rightmargin{3cm}}
+\item[]
+
+Beide Ausgaben sind nur noch antiquarisch erhältlich. Das englische
+Original "`The \LaTeX{} Companion"' existiert in der dritten Ausgabe
+(Erscheinungsdatum Mai 2023).
+
 \item[]
 
 Diese Errata-Datei (\texttt{\jobname.err}) ist Teil der
