@@ -29,10 +29,10 @@ cp cfgguide.pdf classes.pdf clsguide.pdf clsguide-historic.pdf cyrguide.pdf encg
 if test $? -gt 0 ; then  cd $CURDIR; echo "copy docs failed" ;exit ; fi
 
 
-cp ltcmdhooks-doc.pdf lthooks-doc.pdf ltshipout-doc.pdf ltfilehook-doc.pdf ltpara-doc.pdf \
+cp ltcmdhooks-doc.pdf lthooks-doc.pdf ltshipout-doc.pdf ltfilehook-doc.pdf ltpara-doc.pdf ltmarks-doc.pdf \
    $CURDIR/help/documentation/
 
-if test $? -gt 0 ; then  cd $CURDIR; echo "copy hook docs failed" ;exit ; fi
+if test $? -gt 0 ; then  cd $CURDIR; echo "copy hook and marks docs failed" ;exit ; fi
 
 
 cp ltnews*.pdf \
