@@ -1,4 +1,4 @@
-\newcommand\erratafiledate{2023/09/01}        % needs / not -
+\newcommand\erratafiledate{2023/10/01}        % needs / not -
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % To produce a printed version of this errata file run this file through
@@ -259,8 +259,9 @@
 % printing are typeset.
 %
 
-\renewcommand\erratastartdate{2023/04/01}
+\renewcommand\erratastartdate{2023/04/01}    % ALL ENTRIES
 %\renewcommand\erratastartdate{2023/05/30}   % for the first digital edition
+%\renewcommand\erratastartdate{2023/09/01}   % 
 
 
 % If you own a digital edition (which is more often updated than the
@@ -636,6 +637,13 @@ Typo: Assembler (\u{N}otorola68k, x86masm) \> \\ Assembler (\u{M}otorola68k, x86
 
 \CHAPTER{Chapter 5 --- The Layout of the Page}
 
+\erroronpage{I-386}{exa 5-3-1, l.7}{EOl}{2023/09/09}{s}
+Change:
+paragraph over \u{two} pages. \> paragraph over \u{three} pages.
+
+\textit{Reason: The third page contains just the word ``pages.'' (which would be page 8)
+is not shown.}
+
 
 \CHAPTER{Chapter 6 --- Tabular  Material}
 
@@ -654,6 +662,9 @@ result in ``31.00'', which is probably not desired.
 
 \CHAPTER{Chapter 7 --- Mastering Floats}
 
+\erroronpage{I-520}{paragraph 4, l.3}{EOl}{2023/09/09}{s}
+Change:
+For \u{a} example \> For example
 
 \CHAPTER{Chapter 8 --- Graphics Generation and Manipulation}
 

@@ -276,34 +276,36 @@ Herbert has written several other books on LaTeX topics, check out his [author p
 
 <hr>
 
-#### [Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional)](https://www.amazon.de/gp/product/3826694864/ref=as_li_tf_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3826694864&linkCode=as2&tag=wwwlatexproje-21)
+#### [Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional)](https://www.amazon.de/Wissenschaftliche-Arbeiten-schreiben-mit-LaTeX-dp-3747504469/dp/3747504469?&linkCode=ll1&tag=wwwlatexproje-21&linkId=4def1df24e5c6204bfefba936c430079&language=de_DE&ref_=as_li_ss_tl)
 
 ![Wissenschaftliche Arbeiten schreiben mit LaTeX: Leitfaden für Einsteiger (mitp Professional) ](joachim-schlosser_-_wissenschaftliche-arbeiten-schreiben-mit-latex.jpg){:width="150" height="211"}
-**Edition:** 5th edition  
+**Edition:** 7th edition  
 **Author:** Joachim Schlosser  
 **Language:** German  
-**Date:** 2013  
+**Date:** 2021  
 **Publisher:** mitp   
-**ISBN-10:** 3826694864  
-**ISBN-13:** 978-3826694868  
+**ISBN-10:** 3747504469
+**ISBN-13:** 978-3747504468
 **Pages:** 328 pages  
 
 <hr>
 
 ### Spanish
 
-#### [LaTeX 2017]( https://tecdigital.tec.ac.cr/revistamatematica/Libros/LaTeX/LaTeX_2018.pdf)
+#### [LaTeX 2022](https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/LaTeX/MoraW_BorbonA_LibroLaTeX.pdf)
 
 ![LaTeX 2014](alexander-borbon-a_-_latex-2017.png){:width="150" height="233"}
 **Edition:** 2nd edition  
 **Authors:** Alexander Borbon A., Walter Mora F.  
 **Language:** Spanish  
-**Date:** 2017  
+**Date:** 2022  
 **Publisher:** Revista digital Matemática Educación e Internet   
 **ISBN-13:** 978-9977-66-227-5  
 **Pages:** 311 pages  
 
-Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)  Download is 17Mb
+Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC BY-NC-ND 3.0)
+
+The cover page changes once in a while so the above is an older one. Updated revisions also got new links in the past so you may have to search at [Revista digital Matemática Educación e Internet](https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/) if the above link is suddenly no longer valid.
 
 <hr>
 
