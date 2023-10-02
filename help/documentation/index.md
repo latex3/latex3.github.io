@@ -57,19 +57,19 @@ description: "References to the official LaTeX documentation and to documentatio
 
 ### General documentation
 
-A short introduction to LaTeX (with some focus on the differences
-between the old LaTeX 2.09 and current standard LaTeX2e) is given in
+A short introduction to newer features of LaTeX is given in
 the following document:
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors</a>
-
-This is augmented by the following document that describes newer features (started 2020):
-
-+ <a href="{{site.baseurl}}/help/documentation/usrguide3.pdf"
-   target="_blank"
    onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">LaTeX2e for authors --- new features</a>
+
+The original guide describing commands introduced with LaTeX2e in 1994 (with some focus on the differences
+between the old LaTeX 2.09 and current standard LaTeX2e) is available as well::
+
++ <a href="{{site.baseurl}}/help/documentation/usrguide-historic.pdf"
+   target="_blank"
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors --- historic version</a> 
 
 
 
@@ -81,7 +81,11 @@ More advanced documentation about core LaTeX, which is available via the net inc
 + <a href="{{site.baseurl}}/help/documentation/clsguide.pdf"
      target="_blank"
      onclick="vgwPixelCall('54a136f9814144fba489022ec511facc');">LaTeX2e
-     for class and package writers</a>
+     for class and package writers --- current version</a>
++ <a href="{{site.baseurl}}/help/documentation/clsguide-historic.pdf"
+     target="_blank"
+     onclick="vgwPixelCall('54a136f9814144fba489022ec511facc');">LaTeX2e
+     for class and package writers --- historic version</a> (the original document with updates until 2020 with more focus on changes between LaTeX 2.09 and LaTeX2e)
 + <a href="{{site.baseurl}}/help/documentation/fntguide.pdf"
      target="_blank"
      onclick="vgwPixelCall('4db227f3399b4546b97e9f273c16da8e');">LaTeX2e

@@ -1,5 +1,5 @@
 
-## needs to be run from root of repository!
+## needs to be run from root of website repository and the LaTeX repository needs to be in branch "main"!
 
 CURDIR=`pwd`
 SRCDIR=$CURDIR/../latex2e
@@ -21,9 +21,9 @@ cd $SRCDIR/build/doc
 
 ls *pdf
 
-cp cfgguide.pdf classes.pdf clsguide.pdf cyrguide.pdf encguide.pdf fntguide.pdf \
-   latexchanges.pdf latexrelease.pdf ltx3info.pdf modguide.pdf source2e.pdf \
-   usrguide.pdf usrguide.tex usrguide3.pdf \
+cp cfgguide.pdf classes.pdf clsguide.pdf clsguide-historic.pdf cyrguide.pdf encguide.pdf fntguide.pdf \
+   latexrelease.pdf ltx3info.pdf modguide.pdf source2e.pdf \
+   usrguide.pdf usrguide-historic.pdf \
    $CURDIR/help/documentation/
 
 if test $? -gt 0 ; then  cd $CURDIR; echo "copy docs failed" ;exit ; fi
