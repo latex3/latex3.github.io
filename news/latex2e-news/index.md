@@ -8,7 +8,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 <div class="row">
   <div class="col cell1of2">
-    <p>The most recent version of LaTeX is nominally dated 2023/06/01 (it may additionally have a patch-level associated with it).</p>
+    <p>The most recent version of LaTeX is nominally dated 2023/11/01 (it may additionally have a patch-level associated with it).</p>
     <p>Due to the small number of changes these days new releases will appear at irregular intervals, normally once a year. If you are in need of some immediate bug fix you may try the <a href="{{site.baseurl}}/get/#the-latex-git-repository">Git Repository</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
@@ -24,6 +24,7 @@ In addition the newletters are individually available below.
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2023/11/01 | [LaTeX2e News Issue 38]({{site.baseurl}}/news/latex2e-news/ltnews38.pdf) | News from tagging project; new management concept: sockets and plugs; new management concept: document properties and cross-referencing; various smaller changes and improvements to the `base` and `tools` bundles  |
 | 2023/06/01 | [LaTeX2e News Issue 37]({{site.baseurl}}/news/latex2e-news/ltnews37.pdf) | Advances in the tagging project; hooks with arguments; various smaller changes and improvements to the `base` and `tools` bundles  |
 | 2022/11/01 | [LaTeX2e News Issue 36]({{site.baseurl}}/news/latex2e-news/ltnews36.pdf) | Auto-detecting kex/value arguments; various smaller changes and improvements to the `base`, `graphics`, and `tools` bundles  |
 | 2022/06/01 | [LaTeX2e News Issue 35]({{site.baseurl}}/news/latex2e-news/ltnews35.pdf) | Document metadata interface; new mark mechanism; key/value approach for options; doc version 3; latex-lab bundle; various smaller changes and improvements to the `base`, `amsmath`, `graphics`, and `tools` bundles  |
