@@ -2,7 +2,8 @@
 layout: post
 title: "LaTeX 2023-11-01 released and distributed"
 date: 2023-11-04 00:00:00
-description: ""
+description: "We sent the 2023-11-01 release of the LaTeX kernel to CTAN on Wednesday (the
+1st) as planned. By now it should be available to most users via TeX Live or MiKTeX..."
 categories: news
 tags: [latex2e]
 ---

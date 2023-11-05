@@ -5,9 +5,93 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Nov 2023 22:55:01 +0100</pubDate>
-    <lastBuildDate>Thu, 02 Nov 2023 22:55:01 +0100</lastBuildDate>
+    <pubDate>Sun, 05 Nov 2023 21:21:46 +0100</pubDate>
+    <lastBuildDate>Sun, 05 Nov 2023 21:21:46 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>LaTeX 2023-11-01 released and distributed</title>
+        <description>&lt;h1 id=&quot;latex-2023-11-01-release-distributed&quot;&gt;LaTeX 2023-11-01 release distributed&lt;/h1&gt;
+
+&lt;p&gt;We sent the 2023-11-01 release of the LaTeX kernel to CTAN on Wednesday (the
+1st) as planned. By now it should be available to most users &lt;em&gt;via&lt;/em&gt; TeX Live or
+MiKTeX.&lt;/p&gt;
+
+&lt;p&gt;As we’ll detail below, we have reached a significant milestone in the tagged PDF
+project: that was the major aim for this release, and we are happy it all landed
+with a day or so to spare (Joseph in particular was very happy: he builds the
+releases).&lt;/p&gt;
+
+&lt;h2 id=&quot;tagging-of-pdf-documents-a-milestone-is-reached&quot;&gt;Tagging of PDF documents: a milestone is reached&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;./2023-06-10-issue37-of-latex2e-released&quot;&gt;last news&lt;/a&gt;, we told you that
+we were not quite at the stage where we could automatically tag documents that
+used the elements in Lamport’s LaTeX manual, but we were getting close. We are
+now (almost) there: other than titles, you can tag everything in a
+‘Lamport-compatible’ document using&lt;/p&gt;
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\DocumentMetadata&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;testphase = &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;phase-III,math,table&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\documentclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;...&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% article, book or report&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is all still experimental, hence the need to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;testphase&lt;/code&gt;, and you’ll
+see that math mode and table support is &lt;em&gt;even more&lt;/em&gt; experimental, hence needing
+to explicitly opt-in for this part. But it does work: we are already getting
+positive feedback from adventurous users, and we think this will enable us to
+move the bigger questions forward. For example: exactly what is useful for
+tagged mathematics?&lt;/p&gt;
+
+&lt;p&gt;What we really need from users now is feedback. We have set up a dedicated
+&lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;GitHub project&lt;/a&gt; to collect feedback,
+issue and so on. Done in a single place, this means you don’t need to know
+exactly which component we need to work on to fix problems, and you have a
+single place to see if things are already reported.&lt;/p&gt;
+
+&lt;h2 id=&quot;flexible-property-support&quot;&gt;Flexible property support&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\label&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref&lt;/code&gt; mechanism has always been present in LaTeX, and has over
+time been extended by a number of packages. For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hyperref&lt;/code&gt; adds
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\autoref&lt;/code&gt; which tries to use the type of counter associated with a link. A
+general extension mechanism has been available for many years using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zref&lt;/code&gt;
+package.&lt;/p&gt;
+
+&lt;p&gt;From the current LaTeX release, a similar approach to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zref&lt;/code&gt; has been added to
+the kernel. This allows the author to cross-reference to a named property, where
+new properties can be added to those already defined. For example&lt;/p&gt;
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\NewProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;chapter&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;now&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;?&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\thechapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;would add a new property ‘chapter’ which is set immediately and expands
+to the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\thechapter&lt;/code&gt;. This could then be recorded using&lt;/p&gt;
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\RecordProperties&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;mylabel&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;chapter&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;which is similar to adding a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\label&lt;/code&gt;: this can be used to record multiple
+properties:&lt;/p&gt;
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\RecordProperties&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;mylabel&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;chapter,page&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Once this is done, a generic cross-reference can be generated using&lt;/p&gt;
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\RefProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;mylabel&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;chapter&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A set of pre-defined properties are provided: these are conceptually the same as
+those from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zref&lt;/code&gt; and other packages in the same area, but are not necessarily
+named identically.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-changes&quot;&gt;Other changes&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/news/latex2e-news/ltnews38.pdf&quot;&gt;newsletter&lt;/a&gt;
+also covers various other small enhancements or corrections that we
+provide with the November release.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 04 Nov 2023 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</guid>
+        
+        <category>latex2e</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>LaTeX 2023-06-01 released and distributed</title>
@@ -627,54 +711,6 @@ L3 programming layer &amp;lt;2022-06-02&amp;gt;
         <category>latex-news</category>
         
         <category>tagged PDF</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Final pre-release of LaTeX 2022-06-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;final-pre-release-of-latex-for-2022-06-01ready-for-testing&quot;&gt;Final pre-release of LaTeX for 2022-06-01ready for testing&lt;/h1&gt;
-
-&lt;p&gt;Last week we submitted the final pre-release version for the 2022-06-01 LaTeX
-kernel so it should be available in all major TeX distributions.&lt;/p&gt;
-
-&lt;p&gt;As always new functionality and bug fixes are discussed in the
-corresponding &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot;&gt;LaTeX2e News
-Issue 35&lt;/a&gt; newsletter.&lt;/p&gt;
-
-&lt;p&gt;Because we are a few days behind our original schedule, we are going
-to delay the main release for a few days too,  to give people
-time to do some final testing. Please help with this testing!&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
-to do is to replace the invocation command by appending -dev to the executable,
-e.g., on the command line you would run&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
-editing environment, then it depends on the system how to configure it to use an
-alternative format; but in any case the necessary modification should be
-straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 27 May 2022 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2022/05/27/latex-dev-2022-2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/05/27/latex-dev-2022-2/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
         
         
         <category>news</category>
