@@ -5,9 +5,62 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Nov 2023 15:21:27 +0100</pubDate>
-    <lastBuildDate>Sat, 25 Nov 2023 15:21:27 +0100</lastBuildDate>
+    <pubDate>Sat, 25 Nov 2023 17:09:02 +0100</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2023 17:09:02 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Talks from the TUG Conference 2023 in Bonn</title>
+        <description>&lt;h1 id=&quot;talks-from-the-tug-conference-2023-in-bonn&quot;&gt;Talks from the TUG Conference 2023 in Bonn&lt;/h1&gt;
+
+&lt;p&gt;The TUG conference 2023 in Bonn was a hybrid conference, i.e., all talks were recorded and also streamed. The recordings have been cut and cleaned up by a few relentless volunteers and are now available on YouTube.
+All in all, there are 30 interesting talks on various subjects TeX, LaTeX, and related topics.  If you have missed the conference (or if you want listen to one of the talks again) you will find them all on the &lt;a href=&quot;https://www.youtube.com/c/TeXUsersGroup/featured&quot;&gt;TeX Users Group Channel on YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were also several talks by members of the LaTeX Project
+team to which I like to draw your attention:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ulrike Fischer: &lt;a href=&quot;https://youtu.be/3-owUEe23k8?feature=shared&quot;&gt;Automated tagging of LaTeX documents—what is possible today?&lt;/a&gt;
+  — An overview the current status of the LaTeX Tagged PDF project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Frank Mittelbach: &lt;a href=&quot;https://youtu.be/L9NybNjtGDM?feature=shared&quot;&gt;38 years with LaTeX—A personal picture story&lt;/a&gt;
+   — A personal history in pictures of nearly four decades in the TeX world.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Frank Mittelbach: &lt;a href=&quot;https://youtu.be/QIxSXIwDiSo?feature=shared&quot;&gt;The LaTeX Companion, 3rd edition—Anecdotes and lessons learned&lt;/a&gt;
+   —  A review of five years of work producing the new edition of the LaTeX Companion.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/UIK8FFZjFMU?feature=shared&quot;&gt;Further adventures in Unicode-land: Refining case changing&lt;/a&gt;
+   —  A discussion of challenges in Unicode processing, inparticular case changing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/m2ffkW3bckU?feature=shared&quot;&gt;Supporting backends in expl3&lt;/a&gt;
+  — A look at the history of backend abstraction and the model used in expl3 to provide a consistent experience across different TeX engines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 25 Nov 2023 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>development</category>
+        
+        <category>history</category>
+        
+        <category>TLC3</category>
+        
+        <category>conference</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>LaTeX 2023-11-01 released and distributed</title>
@@ -670,47 +723,6 @@ key/value options.&lt;/p&gt;
         <category>development</category>
         
         <category>conference</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>June 2022 LaTeX release available</title>
-        <description>&lt;h1 id=&quot;the-june-2022-latex-release-is-available&quot;&gt;The June 2022 LaTeX release is available&lt;/h1&gt;
-
-&lt;p&gt;With a few days delay we released the 2022-06-01 version of LaTeX and
-by now it should be available in all major distributions. The release
-contains a number of important improvements and extensions that have
-be discussed in previous posts.&lt;/p&gt;
-
-&lt;p&gt;To get a good overview about the new features and most of the
-important bug fixes made in this release take a look at &lt;a href=&quot;/news/latex2e-news/ltnews35.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
-News Issue 35”&lt;/a&gt;. This document should be accessible through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
-ltnews35&lt;/code&gt; on your computer and can also be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;p&gt;With the extended testing of pre-releases I would have hoped for once that we can do without having to produce a patch release soon after, but no such luck. While no code issues have been found, we managed to mess up the banner, which comes out as&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LaTeX2e &amp;lt;2022-06-01&amp;gt; pre-release-0 (develop 2022-6-12 branch)
-L3 programming layer &amp;lt;2022-06-02&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;which is, of course, utter nonsense.  So expect a patch release during the next days (it will be identical to the current one, except for a corrected banner, a minor fix in for legacy Cyrillic code pages, and a fix for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ltxdoc&lt;/code&gt; if used with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;csquotes&lt;/code&gt;in the preamble).&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 14 Jun 2022 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2022/06/14/issue35-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/06/14/issue35-of-latex2e-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        <category>tagged PDF</category>
         
         
         <category>news</category>
