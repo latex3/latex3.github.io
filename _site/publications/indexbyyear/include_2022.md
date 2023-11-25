@@ -18,10 +18,10 @@
 {% include _papers/paper_2022-JAW-TUB-tb135wright-grapheme.md  %}
 
 
+{% include _papers/paper_2022-UFi-TUB-tb134fischer-spotcolor.md  %}
 
 {% include _papers/paper_2022-JAW-TUB-tb134wright-keyval.md  %}
 {% include _papers/paper_2022-JAW-TUB-tb134wright-case.md  %}
-
 
 <hr class="conference-start">
 

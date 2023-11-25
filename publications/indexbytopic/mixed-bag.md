@@ -20,6 +20,8 @@ description: "Selection of links to PDF versions of various articles published b
 <hr class="conference-end">
 
 
+{% include _papers/paper_2022-UFi-TUB-tb134fischer-spotcolor.md  %}
+
 
 {% include _papers/paper_2021-FMi-TUB-tb131mittelbach-desouza.md  %}
 
