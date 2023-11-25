@@ -5,7 +5,21 @@ title: "Articles ordered by topic: Not fitting any category"
 description: "Selection of links to PDF versions of various articles published by the LaTeX3 project and links to videos of their conference presentations ordered by major topics."
 ---
 
-# [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Not fitting any defined category 
+# [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): Not fitting any defined category
+
+
+
+
+<hr class="conference-start">
+
+## TUG Conference 2023 (Bonn, Germany)
+
+{% include _papers/paper_2023_FMi-TUG-talk-history38.md  %}
+{% include _papers/paper_2023_FMi-TUG-talk-tlc3.md  %}
+
+<hr class="conference-end">
+
+
 
 {% include _papers/paper_2021-FMi-TUB-tb131mittelbach-desouza.md  %}
 

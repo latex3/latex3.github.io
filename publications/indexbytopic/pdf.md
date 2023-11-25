@@ -8,6 +8,19 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): PDF, Tagging, Accessibility
 
 
+
+{% include _papers/paper_2023-UFi-FMi-TUG-tb137fischer-tagging23.md  %}
+{% include _papers/paper_2023-DPC-UFi-FMi-tb137carlisle-taggedpdfworkshop23.md  %}
+
+<hr class="conference-start">
+
+## TUG Conference 2023 (Bonn, Germany)
+
+{% include _papers/paper_2023_UFi-TUG-talk-autotagging.md  %}
+
+<hr class="conference-end">
+
+
 <hr class="conference-start">
 
 ## From the PDF days Europe, September 2022 (Berlin)

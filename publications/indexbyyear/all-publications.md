@@ -17,6 +17,7 @@ select one of the year entries in the table of contents above.
 
 ***
 
+{% include_relative include_2023.md %}
 {% include_relative include_2022.md %}
 {% include_relative include_2021.md %}
 {% include_relative include_2020.md %}

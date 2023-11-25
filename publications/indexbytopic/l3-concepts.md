@@ -8,7 +8,22 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX3 Concepts, Architecture and Design
 
 
+
+<hr class="conference-start">
+
+## TUG Conference 2023 (Bonn, Germany)
+
+{% include _papers/paper_2023_JAW-TUG-talk-backends.md  %}
+{% include _papers/paper_2023_JAW-TUG-talk-unicodeland.md  %}
+
+<hr class="conference-end">
+
+
+
+
 {% include _papers/paper_2022-JAW-TUB-tb135wright-grapheme.md  %}
+
+
 
 
 <hr class="conference-start">
