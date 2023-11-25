@@ -8,6 +8,9 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX2e Concepts and Design
 
 
+{% include _papers/paper_2022-JAW-TUB-tb134wright-keyval.md  %}
+
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2022 (Online conference)

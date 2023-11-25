@@ -8,6 +8,9 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/):  Workflow and build support
 
 
+{% include _papers/paper_2022-JAW-TUB-tb133wright-l3build.md  %}
+
+
 <hr class="conference-start">
 
 ## From the TUG Conference 2018 (Rio de Janeiro, Brazil)

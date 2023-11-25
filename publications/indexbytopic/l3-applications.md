@@ -7,6 +7,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX3 Applications (in LaTeX2e)
 
+{% include _papers/paper_2022-JAW-TUB-tb134wright-case.md  %}
 
 
 ## TUG Conference 2022 (Online conference)

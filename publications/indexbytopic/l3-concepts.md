@@ -8,6 +8,8 @@ description: "Selection of links to PDF versions of various articles published b
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): LaTeX3 Concepts, Architecture and Design
 
 
+{% include _papers/paper_2022-JAW-TUB-tb135wright-grapheme.md  %}
+
 
 <hr class="conference-start">
 
