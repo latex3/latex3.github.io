@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 26 Nov 2023 21:06:46 +0100</pubDate>
-    <lastBuildDate>Sun, 26 Nov 2023 21:06:46 +0100</lastBuildDate>
+    <pubDate>Sun, 26 Nov 2023 22:48:25 +0100</pubDate>
+    <lastBuildDate>Sun, 26 Nov 2023 22:48:25 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -77,7 +77,7 @@ releases).&lt;/p&gt;
 
 &lt;h2 id=&quot;tagging-of-pdf-documents-a-milestone-is-reached&quot;&gt;Tagging of PDF documents: a milestone is reached&lt;/h2&gt;
 
-&lt;p&gt;In the &lt;a href=&quot;./2023-06-10-issue37-of-latex2e-released&quot;&gt;last news&lt;/a&gt;, we told you that
+&lt;p&gt;In the &lt;a href=&quot;/news/2023/06/10/issue37-of-latex2e-released&quot;&gt;last news&lt;/a&gt;, we told you that
 we were not quite at the stage where we could automatically tag documents that
 used the elements in Lamport’s LaTeX manual, but we were getting close. We are
 now (almost) there: other than titles, you can tag everything in a

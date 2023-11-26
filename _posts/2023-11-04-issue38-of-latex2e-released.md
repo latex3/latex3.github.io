@@ -21,7 +21,7 @@ releases).
 
 ## Tagging of PDF documents: a milestone is reached
 
-In the [last news](./2023-06-10-issue37-of-latex2e-released), we told you that
+In the [last news]({{site.baseurl}}/news/2023/06/10/issue37-of-latex2e-released), we told you that
 we were not quite at the stage where we could automatically tag documents that
 used the elements in Lamport's LaTeX manual, but we were getting close. We are
 now (almost) there: other than titles, you can tag everything in a
