@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Nov 2023 18:06:51 +0100</pubDate>
-    <lastBuildDate>Sat, 25 Nov 2023 18:06:51 +0100</lastBuildDate>
+    <pubDate>Sun, 26 Nov 2023 21:06:46 +0100</pubDate>
+    <lastBuildDate>Sun, 26 Nov 2023 21:06:46 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -32,7 +32,7 @@ team to which I like to draw your attention:&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/UIK8FFZjFMU?feature=shared&quot;&gt;Further adventures in Unicode-land: Refining case changing&lt;/a&gt;
-   —  A discussion of challenges in Unicode processing, inparticular case changing.&lt;/p&gt;
+   —  A discussion of challenges in Unicode processing, in particular case changing.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/m2ffkW3bckU?feature=shared&quot;&gt;Supporting backends in expl3&lt;/a&gt;
   — A look at the history of backend abstraction and the model used in expl3 to provide a consistent experience across different TeX engines.&lt;/li&gt;

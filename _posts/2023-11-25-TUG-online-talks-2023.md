@@ -25,7 +25,7 @@ team to which I like to draw your attention:
       —  A review of five years of work producing the new edition of the LaTeX Companion.
 
  - Joseph Wright: [Further adventures in Unicode-land: Refining case changing](https://youtu.be/UIK8FFZjFMU?feature=shared)
-      —  A discussion of challenges in Unicode processing, inparticular case changing.
+      —  A discussion of challenges in Unicode processing, in particular case changing.
 
  - Joseph Wright: [Supporting backends in expl3](https://youtu.be/m2ffkW3bckU?feature=shared)
      — A look at the history of backend abstraction and the model used in expl3 to provide a consistent experience across different TeX engines.
