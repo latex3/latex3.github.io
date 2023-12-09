@@ -18,7 +18,7 @@ The most important ones are:
   + This repository also contains new code bundles for other components of LaTeX
      that are not yet integrated, because they are still under development.
      However, most of it is available through general TeX distributions
-     in form of LaTeX packages and we clearly distinuish between
+     in form of LaTeX packages and we clearly distinguish between
      experimental code (for the daring) and packages that we consider suitable for
      general use.
   +  More information about the packages included
@@ -50,7 +50,7 @@ automatically (or manually) through the update mechanism of your
 installation.
 
 There is also the possibility to run the version for the next release
-using the so-called `-dev` formats which are currated prereleases
+using the so-called `-dev` formats which are curated prereleases
 (that we believe are suitable for use and testing)
 
 However, if you wish to test the unreleased development code on GitHub,

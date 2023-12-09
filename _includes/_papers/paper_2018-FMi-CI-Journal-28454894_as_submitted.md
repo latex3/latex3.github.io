@@ -59,7 +59,7 @@ replaced by the peer reviewed version after the 12 month embargo
 phase. This article may be used for non-commercial purposes in
 accordance with Wiley Terms and Conditions for Self-Archiving.
 
-The peer reviewd and published version is now available as <a href="{{site.baseurl}}/publications/2019-FMi-coin12165-final.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">A General LuaTeX Framework for Globally Optimized Pagination (journal version)</a>.
+The peer reviewed and published version is now available as <a href="{{site.baseurl}}/publications/2019-FMi-coin12165-final.pdf" target="_blank" onclick="vgwPixelCall('76c39a7e25524b9a8b93f680f6f20cba');">A General LuaTeX Framework for Globally Optimized Pagination (journal version)</a>.
 
 This article is an extended version (37 pages) of the [2016 ACM article "A General Framework for Globally Optimized Pagination"]({{site.baseurl}}/publications/indexbytopic/pagination/#from-acm-doceng-conference-2016-vienna-austria), providing a
 lot more details and additional research results.

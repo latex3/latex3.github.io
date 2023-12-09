@@ -85,7 +85,7 @@ There are some extracts from the third edition as PDF files to offer some impres
 + <a href="tlc3-digital-toc.pdf" target="_blank" onclick="vgwPixelCall('1edd78f588df4fccb8edd771eb5e9727');">Table of contents</a> (337 kB)
 + <a href="tlc3-digital-chapter-samples.pdf" target="_blank" onclick="vgwPixelCall('348a5d49af564cf591c8447d2fd485ca');">Initial pages of *all* chapters</a> (3,4 MB)
 
-As hard as you try books are never without some errors. Thus, as always we provide an [errata file](tlc3.err) that can be customized to show only errata relevant for printing you own (along with a precompiled [PDF version](tlc3-err.pdf)). We also run a competion among those who help us weed out any mistakes we have made, see the details in the errata file.
+As hard as you try books are never without some errors. Thus, as always we provide an [errata file](tlc3.err) that can be customized to show only errata relevant for printing you own (along with a precompiled [PDF version](tlc3-err.pdf)). We also run a competition among those who help us weed out any mistakes we have made, see the details in the errata file.
 
 <hr>
 
