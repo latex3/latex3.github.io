@@ -8,7 +8,7 @@
 + Abstract
 > 
 >
->In this talk I present a selection of improvement we made in the recent LaTeX releases. The changes are not discussed in depth; the goal is to give some interesting examples and make you curious enough to explore the documentation and learn more.
+> In this talk I present a selection of improvement we made in the recent LaTeX releases. The changes are not discussed in depth; the goal is to give some interesting examples and make you curious enough to explore the documentation and learn more.
 
 ***
 
