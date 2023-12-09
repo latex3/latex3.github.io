@@ -16,7 +16,7 @@
 > with a detailed project plan.  It is our blueprint for for how we
 > think the project should be undertaken.
 > 
-> The Introduction contains an overview of the beneﬁts of the
+> The Introduction contains an overview of the benefits of the
 > project and explains why LaTeX documents make a good starting point
 > for the production of tagged PDF.  More information about this
 > blueprint and the project can be found in the article "LaTeX Tagged

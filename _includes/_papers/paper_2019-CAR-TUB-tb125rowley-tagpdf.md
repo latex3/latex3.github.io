@@ -7,7 +7,7 @@
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + TUGboat 40:2, 2019 
 + Abstract
-> This is a brief summary of a talk given by the ﬁrst author at the
+> This is a brief summary of a talk given by the first author at the
 > TUG’19 conference, together with some references for further reading
 > and viewing.  
 

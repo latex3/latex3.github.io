@@ -6,10 +6,10 @@
 + TUGboat 41:1, 2020 
 + Abstract
 > We discuss some aspects of mathematical typesetting: choice of
-> symbols, code abstraction, ﬁne details. Relationships between math
-> typesetting and international standards are examined. A ﬁnal section
+> symbols, code abstraction, fine details. Relationships between math
+> typesetting and international standards are examined. A final section
 > on typesetting of numbers and units reports on some recent
-> developments in the ﬁeld.
+> developments in the field.
 
 ***
 
