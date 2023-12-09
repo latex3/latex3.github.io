@@ -127,7 +127,19 @@ reason not to do this.
 These days the LaTeX development sources are kept in a GitHub
 repository (previously we used SVN).
 
-Anyone can access it and download the files, but
+> **Note:** The repository is not meant to be used as an install
+> source for users who just want to set up a LaTeX system for
+> processing their documents. It is rather complicated to produce a
+> running version starting from these sources, which is why we provide
+> the CTAN version (which is still not trivial to use directly) and
+> why from that CTAN version a ready to use version finds its way into
+> all major distributions within a few days. So please use the TeX
+> distributions (or the CTAN version) instead instead of the Git
+> Repository.  The repository is of use only to the few people that
+> are interested in kernel development or help the LaTeX Project team
+> in that development.
+
+Having said that, anyone can access it and download the files, but
 submission is restricted to team members. The repository is located at
   [https://github.com/latex3/latex2e](https://github.com/latex3/latex2e)
 and from that browser page you may explore the files, clone the
@@ -182,8 +194,7 @@ appreciate ideas, but cannot always integrate them into the kernel and
 it is quite likely that we reject updates made in this way.
 
 If you want to discuss a possible contribution before (or instead of)
-making a pull request, we suggest you raise the topic first on
-[the LATEX-L list]({{site.baseurl}}/latex3/code#discussing-it) or drop a
+making a pull request, we suggest you raise the topic first by dropping a
 line to the [team]({{site.baseurl}}/about/team).
 
 
