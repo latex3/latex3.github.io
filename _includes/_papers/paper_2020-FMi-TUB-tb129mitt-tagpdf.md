@@ -18,7 +18,7 @@
 > href="{{site.baseurl}}/publications/2020-tagged-pdf-feasibility.pdf"
 > target="_blank"
 > onclick="vgwPixelCall('c1e17b6fed7b4e0fac9032b4aad469c9');">Feasibility
-> Study</a> that was prepared as the ﬁrst part of our co-operation
+> Study</a> that was prepared as the first part of our co-operation
 > with Adobe.
 >
 > This leads on to a description of how we plan to use the study as

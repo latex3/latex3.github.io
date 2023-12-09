@@ -135,7 +135,7 @@ repository or download the files in a `.zip` archive (roughly 25Mb) by
 using the appropriate buttons.
 
 If you are familiar with Git you can also clone the repository using the
-command line or your favorite Git fontend tool, e.g.,
+command line or your favorite Git frontend tool, e.g.,
 
 ```
 git clone  https://github.com/latex3/latex2e.git

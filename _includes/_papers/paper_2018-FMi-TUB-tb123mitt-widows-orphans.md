@@ -11,7 +11,7 @@ orphans, i.e., first and last lines of a paragraph that due to a page
 break are separated from the rest of the paragraph.
 
 Practical advice is given how to best avoid these situations and how
-to mangage and resolve them when they arise.  The final part discusses
+to manage and resolve them when they arise.  The final part discusses
 the package `widows-and-orphans` that will help here by automatically
 identifying and highlighting the problematical place in a longer
 document, in fact not just for widows and orphans but also for words

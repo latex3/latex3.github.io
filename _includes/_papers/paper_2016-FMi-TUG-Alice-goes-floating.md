@@ -14,7 +14,7 @@ If the same document is formatted using the new framework then one will
 get a
 <a href="{{site.baseurl}}/publications/2016-07-FMi-TUG-alice-goes-floating-phase4-strict-texflex.pdf" target="_blank" onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">globally optimized solution as shown here</a>.
 At the moment the framework is still in its early stages and not yet
-publically available as further research and development is needed.
+publicly available as further research and development is needed.
 
 Video of the talk recorded by River Valley TV:  <a href="http://zeeba.tv/media/conferences/tug-2016/0102-Frank-Mittelbach/" target="_blank"  onclick="vgwPixelCall('2670672cff324b98bafa9be09e193fff');">Alice
        goes floating</a> (audio near the end fails unfortunately)

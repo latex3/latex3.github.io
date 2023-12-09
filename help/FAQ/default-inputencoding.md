@@ -43,7 +43,7 @@ happened. For example, the German word "Größe" (height) entered on a
 German keyboard could show up as "Gr\v T\`ae" on a different
 computer using a different encoding by default.
 
-So in summmary the situation wasn't at all good and it was clear in
+So in summary the situation wasn't at all good and it was clear in
 the early nineties that LaTeX2e (that was being developed to provide
 a LaTeX version usable across the world) had to provide a solution
 to this issue.
@@ -149,6 +149,6 @@ As usual, this change may also be reverted via the more general <a
 href="{{site.baseurl}}/help/documentation/latexrelease.pdf"
 target="_blank"
 onclick="vgwPixelCall('ef0b0f945a6148be8c924ed494b726d4');">latexrelease
-package</a> mechanism, by speciying a release date earlier than this
+package</a> mechanism, by specifying a release date earlier than this
 release.
 

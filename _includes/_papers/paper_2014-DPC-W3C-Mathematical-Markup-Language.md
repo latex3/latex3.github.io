@@ -12,6 +12,6 @@ MathML can be used to encode both mathematical notation and mathematical content
 
 While MathML is human-readable, authors typically will use equation editors, conversion programs, and other specialized software tools to generate MathML. Several versions of such MathML tools exist, both freely available software and commercial products, and more are under development.
 
-MathML was originally specified as an XML application and most of the examples in this specification assume that syntax. Other syntaxes are possible most notably [HTML5] specifies the syntax for MathML in HTML. Unless explictly noted, the examples in this specification are also valid HTML syntax. 
+MathML was originally specified as an XML application and most of the examples in this specification assume that syntax. Other syntaxes are possible most notably [HTML5] specifies the syntax for MathML in HTML. Unless explicitly noted, the examples in this specification are also valid HTML syntax. 
 
 ***

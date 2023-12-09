@@ -4,7 +4,7 @@
 + [Joseph Wright]({{site.baseurl}}/about/team/#joseph-wright)
 + Published paper, TUGboat, Volume 36 (2015), No. 3
 
-A discussion of our Continious
+A discussion of our Continuous
 Integration testing setup for LaTeX3 sources using l3build
 and Travis-CI. These days we also use this to continuously test the LaTeX2e sources!
 
