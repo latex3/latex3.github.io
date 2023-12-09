@@ -18,7 +18,7 @@
 >Therefore this paper provides simply a review and evaluation of the
 >relationship between TeX, LaTeX and some of the major technical
 >developments in the world of quality automated formatting since the
->publication of LaTeX 2.09 in 1985. It is is neither definitive nor
+>publication of LaTeX 2.09 in 1985. It is neither definitive nor
 >comprehensive but I hope it is informative.
 
 ***

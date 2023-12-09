@@ -13,7 +13,7 @@
 > PDF with minimal manual intervention.
 >   It explains in detail both the
 > project goals and the tasks that need to be undertaken, concluding
-> with a detailed project plan.  It is our blueprint for for how we
+> with a detailed project plan.  It is our blueprint for how we
 > think the project should be undertaken.
 > 
 > The Introduction contains an overview of the beneﬁts of the

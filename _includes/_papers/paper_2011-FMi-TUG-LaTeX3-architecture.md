@@ -38,7 +38,7 @@ result is a coherent vision for a future typesetting system based on
 the principles of TeX and LaTeX but moving them to the next
 level.
 
-The talk discusses the the separation of concerns as propagated by the
+The talk discusses the separation of concerns as propagated by the
 architecture: between logical structure, design layer and the coding
 and implementation support. At the same time it is shown that for
 high-quality results this separation needs to be accompanied by

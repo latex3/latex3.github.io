@@ -8,7 +8,7 @@ uploaded to YouTube and when that finally happened, I was in the middle
 of entering copy-editing corrections for the LaTeX Companion, 3rd edition and simply
 missed the opportunity to announce the talks and update the website to
 refer to it.
-Now with with TUG 2022 also online this is more than overdue ..."
+Now with TUG 2022 also online this is more than overdue ..."
 categories: news
 tags: [latex2e, latex3, development, conference]
 ---
@@ -19,7 +19,7 @@ For some reason it took a long time to get the 2021 talks cut and
 uploaded to YouTube and when that finally happened, I was in the
 middle of entering copy-editing corrections for the _LaTeX Companion, 3rd edition_ and
 simply missed the opportunity to announce the talks and update the
-website to refer to it.  Now with with TUG 2022 also online this is
+website to refer to it.  Now with TUG 2022 also online this is
 more than overdue.
 
 Both conferences (as usual) had quite a number of interesting talks on

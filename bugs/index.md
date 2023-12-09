@@ -64,25 +64,26 @@ as such.
 
 While this is somewhat unfortunate, it is a consequence of fairly
 active development with an open model where essentially everybody is
-free to provide add-ons and contribute them to [CTAN](https://www.ctan.org). But at the same
-time this model is also one of the reasons why LaTeX is still very
-popular and why you will find a solution for essentially any
-typesetting problem in the LaTeX universe. So this is is a bit of a
-"the glass is half full or half empty" situation.
+free to provide add-ons and contribute them to
+[CTAN](https://www.ctan.org). But at the same time this model is also
+one of the reasons why LaTeX is still very popular and why you will
+find a solution for essentially any typesetting problem in the LaTeX
+universe. So this is a bit of a "the glass is half full or half empty"
+situation.
 
 
 ## Policy on layout and interface deficiencies
 
 Upfront we should probably stress that "deficiencies" in the design of
-of the standard document classes (`article`, `report` and `book`) as
-well a questionable but long established interface behavior of
-commands is something that we will normally not change, even if we can
-all agree that a different behavior or a different layout would have
-been a better choice. You are, of course, welcome to report issues in
-these areas, using the procedure explained below, but in all likelihood such
+the standard document classes (`article`, `report` and `book`) as well
+a questionable but long established interface behavior of commands is
+something that we will normally not change, even if we can all agree
+that a different behavior or a different layout would have been a
+better choice. You are, of course, welcome to report issues in these
+areas, using the procedure explained below, but in all likelihood such
 reports will get suspended.
 
-The reason is is that the kernel interfaces and the document classes
+The reason is that the kernel interfaces and the document classes
 have been used for many years in essentially all documents (even
 documents using different classes often build them upon the standard
 classes in the background) and thus such changes would break or as

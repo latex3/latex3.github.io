@@ -16,7 +16,7 @@ The links below point to material that we think is useful and that we
 had a chance to judge for ourselves (because we speak the language and
 found the time to look at). There is much more available on the
 Internet and in the link section we point to other resources that
-offer additional links and material. So the the fact that **_we do not
+offer additional links and material. So the fact that **_we do not
 list some resource_** should not be taken as a quality statement that
 such material is inferior!
 

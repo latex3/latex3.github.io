@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb123mitt-dashundergaps.pdf" target="_blank" onclick="vgwPixelCall('cf8be8fdcbc7435f9ceb8cb9ac0d4e25');">The dashundergaps package package</a>
+### <a href="{{site.baseurl}}/publications/2018-FMi-TUB-tb123mitt-dashundergaps.pdf" target="_blank" onclick="vgwPixelCall('cf8be8fdcbc7435f9ceb8cb9ac0d4e25');">The dashundergaps package</a>
 
 + [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + TUGboat 39:3, 2018 

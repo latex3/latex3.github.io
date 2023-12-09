@@ -25,7 +25,7 @@ Everyone is allowed to distribute verbatim copies of this license document, but 
  
 ## Preamble
 
-The LaTeX Project Public License (LPPL) is the primary license under which the the LaTeX kernel and the base LaTeX packages are distributed.
+The LaTeX Project Public License (LPPL) is the primary license under which the LaTeX kernel and the base LaTeX packages are distributed.
 
 You may use this license for any work of which you hold the copyright and which you wish to distribute. This license may be particularly suitable if your work is TeX-related (such as a LaTeX package), but you may use it with small modifications even if your work is unrelated to TeX.
 

@@ -705,7 +705,7 @@ preferably in a form usable directly in this file, i.e.,
 \begin{flushleft}
 |\erroronpage{|\textit{page-number}|}{|\textit{line-identification}|}{|%
    \textit{your-initials}|}{|\textit{date}|}{}| \\
-   \hspace*{2em}\textit{description of the the erratum}
+   \hspace*{2em}\textit{description of the erratum}
 \end{flushleft}
 Here is an example:
 \begin{verbatim}
