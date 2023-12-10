@@ -134,10 +134,10 @@ repository (previously we used SVN).
 > the CTAN version (which is still not trivial to use directly) and
 > why from that CTAN version a ready to use version finds its way into
 > all major distributions within a few days. So please use the TeX
-> distributions (or the CTAN version) instead instead of the Git
-> Repository.  The repository is of use only to the few people that
-> are interested in kernel development or help the LaTeX Project team
-> in that development.
+> distributions (or the CTAN version) instead of the Git repository.
+> The repository is of use only to the few people that are interested
+> in kernel development or help the LaTeX Project team in that
+> development.
 
 Having said that, anyone can access it and download the files, but
 submission is restricted to team members. The repository is located at
