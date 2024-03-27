@@ -48,7 +48,7 @@ link to a talk from the 2020 conference announcing that project.
     - [Ulrike Fischer: On the road to Tagged PDF: About StructElem,
        Marked Content, PDF/A and Squeezed Bärs (2021)](https://www.youtube.com/watch?v=d0ivQywNkAQ)
         — An overview
-       about tagging possibilities already available. There is also [an article related to the talk]({{ site.baseurl }}/publications/2021-xxUFi-TUB-tb131fischer-tagpdf.pdf).
+       about tagging possibilities already available. There is also [an article related to the talk]({{ site.baseurl }}/publications/2021-UFi-TUB-tb131fischer-tagpdf.pdf).
 
     - [Marcel Krüger: Reviving Type 3 fonts for modern LuaLaTeX documents](https://www.youtube.com/watch?v=hXqaLwxuivQ)
        — A discussion of the recently added LuaTeX support for this font format for non-bitmap use cases.

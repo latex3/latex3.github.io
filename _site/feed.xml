@@ -5,9 +5,44 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 10 Dec 2023 11:03:38 +0100</pubDate>
-    <lastBuildDate>Sun, 10 Dec 2023 11:03:38 +0100</lastBuildDate>
+    <pubDate>Wed, 27 Mar 2024 13:02:08 +0100</pubDate>
+    <lastBuildDate>Wed, 27 Mar 2024 13:02:08 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Accessibility talks at DEIMS 2024 conference in Tokyo</title>
+        <description>&lt;h1 id=&quot;international-digitization-and-e-inclusion-in-mathematics-and-science-2024-conference-deims2024-in-tokyo&quot;&gt;International &lt;a href=&quot;https://workshop.sciaccess.net/deims2024/program.html&quot;&gt;Digitization and E-Inclusion in Mathematics and Science 2024&lt;/a&gt; conference (DEIMS2024) in Tokyo&lt;/h1&gt;
+
+&lt;p&gt;The conference was held as a hybrid conference, i.e., all talks were recorded and also streamed. Some of the talks were given remotely.
+The &lt;a href=&quot;https://youtube.com/playlist?list=PLHpRBFvRd88_EvTy4BKdrEPvdGdLf26wH&amp;amp;si=EZLSh9hUoSz39Kaa&quot;&gt;full playlist&lt;/a&gt; with all talks is available at
+YouTube.&lt;/p&gt;
+
+&lt;p&gt;Ulrike and myself gave a talk on “&lt;a href=&quot;https://www.youtube.com/watch?v=GHbLa5fd2hI&amp;amp;t=10s&quot;&gt;Enhancing LaTeX to automatically produce tagged and accessible PDF&lt;/a&gt;” including a semi-live demonstration. The corresponding paper was also submitted to TUGboat and will appear there in the next issue.
+You will find it in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;the publication section&lt;/a&gt; of this site.&lt;/p&gt;
+
+&lt;p&gt;The conference was very interesting and it was a very helpful experience to talk to people directly affected by accessibility issues.&lt;/p&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 27 Mar 2024 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2024/03/27/DEIMS-tokyo/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/03/27/DEIMS-tokyo/</guid>
+        
+        <category>Accessibility</category>
+        
+        <category>tagged PDF</category>
+        
+        <category>latex</category>
+        
+        <category>development</category>
+        
+        <category>conference</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Talks from the TUG Conference 2023 in Bonn</title>
@@ -613,116 +648,6 @@ straightforward.&lt;/p&gt;
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Talks from the online TUG Conferences 2021 and 2022</title>
-        <description>&lt;h1 id=&quot;talks-from-the-online-tug-conference-2021-and-2022-on-youtube&quot;&gt;Talks from the online TUG Conference 2021 and 2022 on YouTube&lt;/h1&gt;
-
-&lt;p&gt;For some reason it took a long time to get the 2021 talks cut and
-uploaded to YouTube and when that finally happened, I was in the
-middle of entering copy-editing corrections for the &lt;em&gt;LaTeX Companion, 3rd edition&lt;/em&gt; and
-simply missed the opportunity to announce the talks and update the
-website to refer to it.  Now with TUG 2022 also online this is
-more than overdue.&lt;/p&gt;
-
-&lt;p&gt;Both conferences (as usual) had quite a number of interesting talks on
-many subjects of TeX usage and related topics.  If you have missed the
-conferences (or if you want listen to one of the talks again) you will
-find them all on the &lt;a href=&quot;https://www.youtube.com/c/TeXUsersGroup/featured&quot;&gt;TeX Users Group Channel on
-YouTube&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There were also several talks by members of the LaTeX Project
-team. Some are directly relevant to our multi-year project on
-automatically producing tagged PDF; others discuss other LaTeX topics
-of interest. As an intro to the tagged-PDF project (for those who haven’t heard about it yet) I also provide one
-link to a talk from the 2020 conference announcing that project.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2020 Conference
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://youtu.be/zNci4lcb8Vo&quot;&gt;Frank Mittelbach: Quo Vadis LaTeX(3) — A look at the upcoming
-years (2020)&lt;/a&gt; which gives an overview about
-our recently started multi-year project that aims at providing
-accessible and tagged PDF. There is also &lt;a href=&quot;/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf&quot;&gt;an article related to the information given in the talk&lt;/a&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;2021 Conference
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7FQLnggVgDE&quot;&gt;Frank Mittelbach: Taming the beast — Advances in paragraph tagging
-with pdfTeX and XeTeX (2021)&lt;/a&gt; - Automatic paragraph tagging with
-the pdfTeX and XeTeX engine now possible.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=d0ivQywNkAQ&quot;&gt;Ulrike Fischer: On the road to Tagged PDF: About StructElem,
- Marked Content, PDF/A and Squeezed Bärs (2021)&lt;/a&gt;
-  — An overview
- about tagging possibilities already available. There is also &lt;a href=&quot;/publications/2021-xxUFi-TUB-tb131fischer-tagpdf.pdf&quot;&gt;an article related to the talk&lt;/a&gt;.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=hXqaLwxuivQ&quot;&gt;Marcel Krüger: Reviving Type 3 fonts for modern LuaLaTeX documents&lt;/a&gt;
- — A discussion of the recently added LuaTeX support for this font format for non-bitmap use cases.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Z4sU-h3moOc&quot;&gt;Joseph Wright: Any colo(u)r you like (2021)&lt;/a&gt;
- — New color-handling methods for the LaTeX kernel.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VDsEum6GoBI&quot;&gt;Paulo Ney de Souza: Interview with Frank Mittelbach (2021)&lt;/a&gt;
- — This interview took place on 7 August 2021, during the TUG 2021
-online conference. It is also &lt;a href=&quot;/publications/2021-FMi-TUB-tb131mittelbach-desouza.pdf&quot;&gt;transcribed as an article&lt;/a&gt;.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;2022 Conference
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=JjW_hfrYxfk&quot;&gt;Ulrike Fischer: New in stock — recent LaTeX improvements (that
- you may have missed), (2022)&lt;/a&gt;
-  — An overview about selected new
- features offered by LaTeX with a number of examples given.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sgv0ZV7od_U&quot;&gt;Ulrike Fischer: Using spot colors with LaTeX (2022)&lt;/a&gt;
-— Experience gained while working on the 3rd edition of &lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jV9S2M0iEfo&quot;&gt;Joseph Wright: Key-value setting handling in the kernel (2022)&lt;/a&gt;
- — A discussion of new features for packages and classes offering
-key/value options.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=zT6OKygUqRU&quot;&gt;Joseph Wright: Case changing: LaTeX reaches Unicode-land (2022)&lt;/a&gt;
- — LaTeX now provides much better support for case changing.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IYPFinT6C_k&quot;&gt;Joseph Wright: siunitx: Launching version 3 (2022)&lt;/a&gt;
- — A discussion of the move from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;siunitx&lt;/code&gt; version 2 to version 3 and what developer efforts have made this
- a success.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 06 Sep 2022 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2022/09/06/TUG-online-talks-21-22/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/09/06/TUG-online-talks-21-22/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex3</category>
-        
-        <category>development</category>
-        
-        <category>conference</category>
         
         
         <category>news</category>
