@@ -5,9 +5,48 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Mar 2024 13:02:08 +0100</pubDate>
-    <lastBuildDate>Wed, 27 Mar 2024 13:02:08 +0100</lastBuildDate>
+    <pubDate>Wed, 27 Mar 2024 17:13:30 +0100</pubDate>
+    <lastBuildDate>Wed, 27 Mar 2024 17:13:30 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>ISO PDF/UA-2 standard released - Examples made by LaTeX</title>
+        <description>&lt;h1 id=&quot;iso-pdfua-2-standard-released&quot;&gt;ISO PDF/UA-2 standard released&lt;/h1&gt;
+
+&lt;p&gt;Early 2024 the new Universal Accessibility standard for PDF (&lt;a href=&quot;https://pdfa.org/iso-14289-2-pdf-ua-2-the-gold-standard-for-accessibility-in-pdf-2-0-has-arrived/&quot;&gt;PDF/UA-2&lt;/a&gt;) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects.&lt;/p&gt;
+
+&lt;p&gt;The standard is closely related to the &lt;a href=&quot;https://pdfa.org/wtpdf&quot;&gt;Well-Tagged PDF (WTPDF) specification&lt;/a&gt; from the PDF Assocciation, and documents conforming to WTPDF are automatically compliant with PDF/UA-2.
+The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf&quot;&gt;freely available for download&lt;/a&gt; by the PDF Association, which gives you an easy access to all normative statements of PDF/UA-2.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples-of-wtpdf--pdfua-2-documents-produced-by-latex&quot;&gt;Examples of WTPDF / PDF/UA-2 documents produced by LaTeX&lt;/h2&gt;
+
+&lt;p&gt;You will find a collection of examples that conform to the new accessibility standard in a &lt;a href=&quot;https://github.com/latex3/tagging-project/discussions/72&quot;&gt;post at the LaTeX tagged PDF project repository&lt;/a&gt;.  All of the examples have been produced by LaTeX using the code from our &lt;em&gt;LaTeX tagged PDF project&lt;/em&gt;. The files are a mixture of small examples demonstrating specific features, older out of copyright documents that have been re-typeset as tagged pdf, and contemporary documents including recently published arXiv papers, course notes, and conference papers.&lt;/p&gt;
+
+&lt;p&gt;They nicely demonstrate what is already possible with LaTeX when producing accessible documents conforming to PDF standards such as WTPDF, PDF/UA-2 or PDF/A-4.&lt;/p&gt;
+
+&lt;p&gt;Please note that this make LaTeX one of the first (if not the only) producer of PDF documents that is already capable of producing documents conforming to the new PDF/UA-2 and WTPDF standards that were released in early 2024.&lt;/p&gt;
+
+&lt;p&gt;— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 27 Mar 2024 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2024/03/27/PDFUA2-examples/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/03/27/PDFUA2-examples/</guid>
+        
+        <category>Accessibility</category>
+        
+        <category>tagged PDF</category>
+        
+        <category>latex</category>
+        
+        <category>development</category>
+        
+        <category>PDF/UA-2</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Accessibility talks at DEIMS 2024 conference in Tokyo</title>
@@ -25,9 +64,9 @@ You will find it in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;th
 &lt;p&gt;Enjoy — Frank&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 27 Mar 2024 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2024/03/27/DEIMS-tokyo/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2024/03/27/DEIMS-tokyo/</guid>
+        <pubDate>Tue, 26 Mar 2024 01:00:00 +0100</pubDate>
+        <link>https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</guid>
         
         <category>Accessibility</category>
         
@@ -560,94 +599,6 @@ release information for earlier LaTeX releases.&lt;/p&gt;
         <category>latex-news</category>
         
         <category>tagged PDF</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>First pre-release of LaTeX 2022-11-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;pre-release-of-latex-for-2022-11-01-is-ready-for-testing&quot;&gt;Pre-release of LaTeX for 2022-11-01 is ready for testing&lt;/h1&gt;
-
-&lt;p&gt;We submitted the first pre-release version for the 2022-11-01 LaTeX
-kernel to CTAN recently. It should have made its way into TeX Live
-or should appear for everyone pretty soon.&lt;/p&gt;
-
-&lt;p&gt;It already contains most updates and improvements to the LaTeX format that will become part of the standard in November; thus testing them now will help identifying packages that need upgrading and finding any bugs lurking before that release hits the streets; see below for how to do this in a safe way.&lt;/p&gt;
-
-&lt;p&gt;The main highlight is briefly discussed below, further details plus smaller bug fixes and improvements not covered here can be found in the draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews36.pdf&quot;&gt;LaTeX2e News Issue 36&lt;/a&gt; newsletter.&lt;/p&gt;
-
-&lt;h2 id=&quot;new-feature-in-the-kernel-highlights&quot;&gt;New feature in the kernel (highlights)&lt;/h2&gt;
-
-&lt;h3 id=&quot;for-developers&quot;&gt;For developers&lt;/h3&gt;
-
-&lt;p&gt;The most important improvement in the LaTeX kernel is to offer a standard mechanism for receiving and manipulating key/value arguments in commands. This is implemented in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\DeclareDocumentCommand&lt;/code&gt; interfaces and offers a reliable method to allow an (optional) argument to contain either a key/value list or to interpret it as an ordinary argument if the content does not contain such a key/value list. In the latter case that content is interpreted  as the value of the key whose name is specified in the command declaration. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; command could be declared as&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DeclareDocumentCommand \caption {s ={short-text}+O{#3} +m}
-       {...}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;which means that it expects an optional star (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;) and a mandatory argument that can contain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\par&lt;/code&gt; commands (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+m&lt;/code&gt;).
-It also has an optional argument (before the mandatory one) whose default – if not given – is the content of the mandatory one (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+O{#3}&lt;/code&gt;), which is why it refers to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#3&lt;/code&gt;. By prefixing this with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;={short-text}&lt;/code&gt; we state that this optional argument should check for a key/value list and if no such list is found, should assign its argument content to the key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; for further processing. Then such processing of the argument can always assume that it got a key/value list, either the one specified or the simple one with just the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short-text&lt;/code&gt; key.&lt;/p&gt;
-
-&lt;p&gt;Right now, only the functionality is offered and that is largely targeted towards developers. However, the moment commands make use of that feature (and from the project team perspective we certainly intend to make use of it in upcoming releases) it becomes relevant for users as well, because then they will be able to specify key/value arguments in several places, while support for “free text arguments” is retained.&lt;/p&gt;
-
-&lt;p&gt;While technically this functionality can be used with any argument we intend to use it only for the first optional argument of a command and suggest that developers do likewise so that (most) LaTeX commands use a similar interface that makes it easy for users to work with, i.e.,&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\cmd * [&amp;lt;arg with key/val or free text&amp;gt;] &amp;lt;other mandatory or optional arguments&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Simpler commands could, of course, offer&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;no &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; form or&lt;/li&gt;
-  &lt;li&gt;an optional argument always expecting a key/value list or&lt;/li&gt;
-  &lt;li&gt;one without any key/value support or&lt;/li&gt;
-  &lt;li&gt;no optional argument whatsoever.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;for-developers-and-users&quot;&gt;For developers and users&lt;/h3&gt;
-
-&lt;p&gt;You may wonder what rules are used to determine that an argument is interpreted as a key/value list. They are fairly simple, but adequate (we hope) for nearly all use cases. Basically, the argument text is searched for one or more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; signs  that are neither within an explicit brace group &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{...}&lt;/code&gt; nor part of inline math mode, or more precisely not within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$...$&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\(...\)&lt;/code&gt;. Other constructs are not considered at the moment, e.g., if you really use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\begin{math}...\end{math}&lt;/code&gt; or some display math that contains an equal sign, it will not work inside such an argument without adjustment.
-If the content is incorrectly interpreted as a key/value list, then the remedy for the user is to hide the content in a brace group, e.g.,&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\caption[The form: \begin{math} a=b\end{math}]  {...}  % fails
-\caption[{The form: \begin{math} a=b\end{math}}]{...}  % works
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;There is also a way to force interpretation as a key/value list by prepending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=,&lt;/code&gt; to the argument which can be useful in some situations with valueless keys.
-More details can be found in the documentation.&lt;/p&gt;
-
-&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
-
-&lt;p&gt;We expect to produce another pre-release before the next main release, but this will most likely only contain some further updates to the latex-lab code, and possible some minor updates to fix one or the other minor pending issue.
-Please help with the testing of this pre-release by using it for your documents or testing it against your own packages.&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
-to do is to replace the invocation command by appending -dev to the executable,
-e.g., on the command line you would run&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
-editing environment, then it depends on the system how to configure it to use an
-alternative format; but in any case the necessary modification should be
-straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank &amp;amp; Joseph&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 20 Sep 2022 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2022/09/20/latex-dev-2022-3/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/09/20/latex-dev-2022-3/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
         
         
         <category>news</category>

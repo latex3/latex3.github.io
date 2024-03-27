@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accessibility talks at DEIMS 2024 conference in Tokyo"
-date: 2024-03-27 00:00:00
+date: 2024-03-26 00:00:00
 description: "Accessibility talks at DEIMS 2024 conference in Tokyo"
 excerpt: "The conference was held as a hybrid conference, i.e., all talks were recorded and also streamed and some talks were given remotely.
 The full playlist with all talks is available at ..."
