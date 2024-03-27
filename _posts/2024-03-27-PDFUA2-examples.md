@@ -21,7 +21,7 @@ You will find a collection of examples that conform to the new accessibility sta
 
 They nicely demonstrate what is already possible with LaTeX when producing accessible documents conforming to PDF standards such as WTPDF, PDF/UA-2 or PDF/A-4.
 
-Please note that this make LaTeX one of the first (if not the only) producer of PDF documents that is already capable of producing documents conforming to the new PDF/UA-2 and WTPDF standards that were released in early 2024.
+Please note that this makes LaTeX one of the first (if not the only) producer of PDF documents that is already capable of producing documents conforming to the new PDF/UA-2 and WTPDF standards that were released in early 2024.
 
 
  --- Frank

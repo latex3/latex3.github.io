@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Mar 2024 17:13:30 +0100</pubDate>
-    <lastBuildDate>Wed, 27 Mar 2024 17:13:30 +0100</lastBuildDate>
+    <pubDate>Wed, 27 Mar 2024 20:11:54 +0100</pubDate>
+    <lastBuildDate>Wed, 27 Mar 2024 20:11:54 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -24,7 +24,7 @@ The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/
 
 &lt;p&gt;They nicely demonstrate what is already possible with LaTeX when producing accessible documents conforming to PDF standards such as WTPDF, PDF/UA-2 or PDF/A-4.&lt;/p&gt;
 
-&lt;p&gt;Please note that this make LaTeX one of the first (if not the only) producer of PDF documents that is already capable of producing documents conforming to the new PDF/UA-2 and WTPDF standards that were released in early 2024.&lt;/p&gt;
+&lt;p&gt;Please note that this makes LaTeX one of the first (if not the only) producer of PDF documents that is already capable of producing documents conforming to the new PDF/UA-2 and WTPDF standards that were released in early 2024.&lt;/p&gt;
 
 &lt;p&gt;— Frank&lt;/p&gt;
 
