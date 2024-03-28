@@ -2,7 +2,10 @@
 layout: post
 title: "LaTeX 2023-06-01 released and distributed"
 date: 2023-06-10 00:00:00
-description: ""
+description: "LaTeX 2023-06-01 released and distributed"
+excerpt: "With a few days delay (because of a  performance issue we had to resolve first)
+we have submitted  2023-06-01 release of the LaTeX kernel to CTAN. It should have made its way into TeX Live
+for everyone by now (or pretty soon) ..."
 categories: news
 tags: [latex2e]
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "ISO PDF/UA-2 standard released - Examples made by LaTeX"
 date: 2024-03-27 00:00:00
 description: "ISO PDF/UA-2 standard released - Examples made by LaTeX"
-excerpt: " ..."
+excerpt: " Early 2024 the new Universal Accessibility standard for PDF (PDF/UA-2) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects. ... You will find a collection of examples that conform to the new accessibility standard ..."
 categories: news
 tags: [Accessibility, tagged PDF, latex, development, PDF/UA-2]
 ---
