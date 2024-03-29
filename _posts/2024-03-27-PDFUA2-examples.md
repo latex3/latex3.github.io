@@ -10,10 +10,10 @@ tags: [Accessibility, tagged PDF, latex, development, PDF/UA-2]
 
 # ISO PDF/UA-2 standard released
 
-Early 2024 the new Universal Accessibility standard for PDF ([PDF/UA-2](https://pdfa.org/iso-14289-2-pdf-ua-2-the-gold-standard-for-accessibility-in-pdf-2-0-has-arrived/)) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects.
+In March 2024 the new Universal Accessibility standard for PDF ([PDF/UA-2](https://pdfa.org/iso-14289-2-pdf-ua-2-the-gold-standard-for-accessibility-in-pdf-2-0-has-arrived/)) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects.
 
 The standard is closely related to the [Well-Tagged PDF (WTPDF) specification](https://pdfa.org/wtpdf) from the PDF Assocciation, and documents conforming to WTPDF are automatically compliant with PDF/UA-2.
-The WTPDF specification is [freely available for download](https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf) by the PDF Association, which gives you an easy access to all normative statements of PDF/UA-2.
+The WTPDF specification is [freely available for download](https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf) by the PDF Association, which gives you an easy access to all normative requirements in PDF/UA-2.
 
 ## Examples of WTPDF / PDF/UA-2 documents produced by LaTeX
 

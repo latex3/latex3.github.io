@@ -5,18 +5,18 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Mar 2024 12:12:09 +0100</pubDate>
-    <lastBuildDate>Thu, 28 Mar 2024 12:12:09 +0100</lastBuildDate>
+    <pubDate>Fri, 29 Mar 2024 16:12:45 +0100</pubDate>
+    <lastBuildDate>Fri, 29 Mar 2024 16:12:45 +0100</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
         <title>ISO PDF/UA-2 standard released - Examples made by LaTeX</title>
         <description>&lt;h1 id=&quot;iso-pdfua-2-standard-released&quot;&gt;ISO PDF/UA-2 standard released&lt;/h1&gt;
 
-&lt;p&gt;Early 2024 the new Universal Accessibility standard for PDF (&lt;a href=&quot;https://pdfa.org/iso-14289-2-pdf-ua-2-the-gold-standard-for-accessibility-in-pdf-2-0-has-arrived/&quot;&gt;PDF/UA-2&lt;/a&gt;) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects.&lt;/p&gt;
+&lt;p&gt;In March 2024 the new Universal Accessibility standard for PDF (&lt;a href=&quot;https://pdfa.org/iso-14289-2-pdf-ua-2-the-gold-standard-for-accessibility-in-pdf-2-0-has-arrived/&quot;&gt;PDF/UA-2&lt;/a&gt;) was released. It is based on PDF 2.0 and improves accessibility compared to PDF/UA-1 (based on PDF 1.7) in many important aspects.&lt;/p&gt;
 
 &lt;p&gt;The standard is closely related to the &lt;a href=&quot;https://pdfa.org/wtpdf&quot;&gt;Well-Tagged PDF (WTPDF) specification&lt;/a&gt; from the PDF Assocciation, and documents conforming to WTPDF are automatically compliant with PDF/UA-2.
-The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf&quot;&gt;freely available for download&lt;/a&gt; by the PDF Association, which gives you an easy access to all normative statements of PDF/UA-2.&lt;/p&gt;
+The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf&quot;&gt;freely available for download&lt;/a&gt; by the PDF Association, which gives you an easy access to all normative requirements in PDF/UA-2.&lt;/p&gt;
 
 &lt;h2 id=&quot;examples-of-wtpdf--pdfua-2-documents-produced-by-latex&quot;&gt;Examples of WTPDF / PDF/UA-2 documents produced by LaTeX&lt;/h2&gt;
 
@@ -56,7 +56,7 @@ The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/
 The &lt;a href=&quot;https://youtube.com/playlist?list=PLHpRBFvRd88_EvTy4BKdrEPvdGdLf26wH&amp;amp;si=EZLSh9hUoSz39Kaa&quot;&gt;full playlist&lt;/a&gt; with all talks is available at
 YouTube.&lt;/p&gt;
 
-&lt;p&gt;Ulrike and myself gave a talk on “&lt;a href=&quot;https://www.youtube.com/watch?v=GHbLa5fd2hI&amp;amp;t=10s&quot;&gt;Enhancing LaTeX to automatically produce tagged and accessible PDF&lt;/a&gt;” including a semi-live demonstration. The corresponding paper was also submitted to TUGboat and will appear there in the next issue.
+&lt;p&gt;Ulrike and I gave a talk on “&lt;a href=&quot;https://www.youtube.com/watch?v=GHbLa5fd2hI&amp;amp;t=10s&quot;&gt;Enhancing LaTeX to automatically produce tagged and accessible PDF&lt;/a&gt;” including a semi-live demonstration. The corresponding paper was also submitted to TUGboat and will appear there in the next issue.
 You will find it in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;the publication section&lt;/a&gt; of this site.&lt;/p&gt;
 
 &lt;p&gt;The conference was very interesting and it was a very helpful experience to talk to people directly affected by accessibility issues.&lt;/p&gt;

@@ -15,7 +15,7 @@ The conference was held as a hybrid conference, i.e., all talks were recorded an
 The [full playlist](https://youtube.com/playlist?list=PLHpRBFvRd88_EvTy4BKdrEPvdGdLf26wH&si=EZLSh9hUoSz39Kaa) with all talks is available at
 YouTube.
 
-Ulrike and myself gave a talk on "[Enhancing LaTeX to automatically produce tagged and accessible PDF](https://www.youtube.com/watch?v=GHbLa5fd2hI&t=10s)" including a semi-live demonstration. The corresponding paper was also submitted to TUGboat and will appear there in the next issue.
+Ulrike and I gave a talk on "[Enhancing LaTeX to automatically produce tagged and accessible PDF](https://www.youtube.com/watch?v=GHbLa5fd2hI&t=10s)" including a semi-live demonstration. The corresponding paper was also submitted to TUGboat and will appear there in the next issue.
 You will find it in [the publication section]({{ site.baseurl }}/publications/indexbytopic/pdf/) of this site.
 
 The conference was very interesting and it was a very helpful experience to talk to people directly affected by accessibility issues.
