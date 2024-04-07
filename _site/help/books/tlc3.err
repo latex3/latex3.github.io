@@ -1,4 +1,4 @@
-\newcommand\erratafiledate{2024/03/17}        % needs / and not -
+\newcommand\erratafiledate{2024/04/07}        % needs / and not -
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % To produce a printed version of this errata file run this file through
@@ -397,7 +397,7 @@ Good luck!
 \begin{center}
 \begin{tabular}{clr}
 Contest period ends & Winner \\[4pt]
-2024/03 & Bernd Burkhardt           & 52 suggestions\\
+2024/03 & Bernd Burghardt           & 52 suggestions\\
 \end{tabular}
 \end{center}
 
@@ -591,6 +591,13 @@ the index is always fully regenerated for new printings.
   English. Personally, I prefer the version with accent (as does Don
   Knuth) so it is deliberate and will not change.
 
+
+\CHAPTER{Preface}
+
+\erroronpage{I-xlii}{para 1, l.3}{FMi}{2024/04/01}{s}
+\u{the designer} of the Lato fonts \> \u{a co-designer} of the Lato fonts
+
+
 \CHAPTER{Chapter 1 --- Introduction}
 
 \erroronpage{I-5}{para 4, l.4}{kb}{2023/04/04}{s}
@@ -656,7 +663,7 @@ Use
 \newcommand\sample[1]{\textnormal{\noindent #1:}
  The limit is \qty{30}{\kmh} not $\qty{50}{\kmh}$.\par}}
 \end{verbatim}
-so that both text and math usage of \verb=\pty= are compared in the example.
+so that both text and math usage of \verb=\qty= are compared in the example.
 
 
 \erroronpage{I-182}{para 4}{BeB}{2024/03/17}{s}
@@ -767,6 +774,9 @@ Missing space: Theproblem \> The problem
 \erroronpage{I-708}{listing}{FMi}{2023/05/14}{s}
 Situation is the same in the 2023 distributions; listing output updated.
 
+\erroronpage{I-726}{para 4, l.5}{MRu}{2024/04/07}{s}
+Add word: more than hundred \> more than \u{one} hundred
+
 \erroronpage{I-759}{l.1}{BeB}{2023/08/20}{s}
 in the range of 0000 to \u{00FF} \> in the range of 0000 to \u{007F}
 
@@ -786,7 +796,7 @@ then this structure is repeated \u{for the related font families} as often as ne
 
 
 \erroronpage{II-24}{para 3, l. -2}{BeB}{2023/08/13}{s}
-There is no slanted shape in Grande Mono: \\
+There is no slanted shape in Grande Mono (so it should be in blue): \\
 \u{\textsl{naïve}} \> \u{\textsl{\bl naïve}}
 
 
@@ -795,8 +805,8 @@ Open Type font is available: \\
 \u{— no Open Type —} \> \u{Lucida Handwriting OT}
 
 \erroronpage{II-25}{para -2, l.-2}{BeB}{2023/08/13}{s}
-There are no italic blackletters:  \\
-\textit{phœnix's official rôle}\> \textit{\bl phœnix's official rôle}
+There are no italic blackletters (so it should be in blue):  \\
+\textit{phœnix's official rôle} \> \textit{\bl phœnix's official rôle}
 
 \erroronpage{II-28}{table 10.14, l. 3}{BeB}{2023/08/13}{s}
 Inconsistent order: sl, l \> l, sl
