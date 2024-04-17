@@ -3,10 +3,10 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Apr 2024 17:24:47 +0200</pubDate>
-    <lastBuildDate>Wed, 17 Apr 2024 17:24:47 +0200</lastBuildDate>
+    <link>https://latex-project.org//</link>
+    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 17 Apr 2024 17:34:05 +0200</pubDate>
+    <lastBuildDate>Wed, 17 Apr 2024 17:34:05 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -30,8 +30,8 @@ The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/
 
 </description>
         <pubDate>Wed, 27 Mar 2024 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2024/03/27/PDFUA2-examples/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2024/03/27/PDFUA2-examples/</guid>
+        <link>https://latex-project.org//news/2024/03/27/PDFUA2-examples/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/03/27/PDFUA2-examples/</guid>
         
         <category>Accessibility</category>
         
@@ -65,8 +65,8 @@ You will find it in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;th
 
 </description>
         <pubDate>Tue, 26 Mar 2024 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2024/03/26/DEIMS-tokyo/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2024/03/26/DEIMS-tokyo/</guid>
+        <link>https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</guid>
         
         <category>Accessibility</category>
         
@@ -116,8 +116,8 @@ team to which I like to draw your attention:&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 25 Nov 2023 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2023/11/25/TUG-online-talks-2023/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/11/25/TUG-online-talks-2023/</guid>
+        <link>https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</guid>
         
         <category>latex2e</category>
         
@@ -210,8 +210,8 @@ provide with the November release.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 04 Nov 2023 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2023/11/04/issue38-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/11/04/issue38-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -281,8 +281,8 @@ To give you an idea of what is covered in the third edition, here are some excer
 
 </description>
         <pubDate>Sat, 10 Jun 2023 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2023/06/10/issue37-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/06/10/issue37-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -360,8 +360,8 @@ straightforward.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 27 May 2023 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2023/05/27/latex-dev-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/05/27/latex-dev-2/</guid>
+        <link>https://latex-project.org//news/2023/05/27/latex-dev-2/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/05/27/latex-dev-2/</guid>
         
         <category>latex2e</category>
         
@@ -432,8 +432,8 @@ by using &lt;a href=&quot;https://amzn.to/40yY7gD&quot;&gt;Amazon.de in Germany&
 
 </description>
         <pubDate>Fri, 17 Mar 2023 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2023/03/17/TLC3/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/03/17/TLC3/</guid>
+        <link>https://latex-project.org//news/2023/03/17/TLC3/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/03/17/TLC3/</guid>
         
         <category>latex</category>
         
@@ -510,8 +510,8 @@ straightforward.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 13 Mar 2023 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2023/03/13/latex-dev-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/03/13/latex-dev-1/</guid>
+        <link>https://latex-project.org//news/2023/03/13/latex-dev-1/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/03/13/latex-dev-1/</guid>
         
         <category>latex2e</category>
         
@@ -538,8 +538,8 @@ The slides of the presentation &lt;a href=&quot;/publications/2022-FMi-PDFA-slid
 
 </description>
         <pubDate>Tue, 03 Jan 2023 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2023/01/03/pdfdays-2022/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2023/01/03/pdfdays-2022/</guid>
+        <link>https://latex-project.org//news/2023/01/03/pdfdays-2022/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2023/01/03/pdfdays-2022/</guid>
         
         <category>tagged PDF</category>
         
@@ -591,8 +591,8 @@ release information for earlier LaTeX releases.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 03 Nov 2022 01:00:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2022/11/03/issue36-of-latex2e-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2022/11/03/issue36-of-latex2e-released/</guid>
+        <link>https://latex-project.org//news/2022/11/03/issue36-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2022/11/03/issue36-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
