@@ -65,7 +65,7 @@ the following document:
    onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">LaTeX2e for authors --- new features</a>
 
 The original guide describing commands introduced with LaTeX2e in 1994 (with some focus on the differences
-between the old LaTeX 2.09 and current standard LaTeX2e) is available as well::
+between the old LaTeX 2.09 and current standard LaTeX2e) is available as well. It remains relevant because the commands introduced between 1994 and 2020 are not included in the previous document:
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide-historic.pdf"
    target="_blank"

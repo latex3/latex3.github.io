@@ -201,11 +201,11 @@ a:target  { color: #007F00; }
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: circle; }
 ol {
-  list-style: decimal inside; }
+  list-style: decimal; }
 ol, ul {
-  padding-left: 0;
+  padding-left: 1em;
   margin-top: 0; }
 ul ul,
 ul ol,

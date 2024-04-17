@@ -56,9 +56,14 @@ description: "Getting LaTeX. Get to know how and where to get TeX distributions 
 ## TeX Distributions
 
 If you're new to TeX and LaTeX or just want an easy installation, get
-a full TeX distribution. The TeX Users Group (TUG) has a
-  [list of notable distributions](https://www.tug.org/interest.html#free)
-that are entirely, or least primarily, free software.
+a full TeX distribution. The TeX Users Group (TUG) has a [list of
+notable distributions](https://www.tug.org/interest.html#free) that
+are entirely, or least primarily, free software, i.e., there are no
+charges for download or use.
+
+Several distributions, in particular MacTeX, TeX Live and MiKTeX
+provide update mechanism through which you can manually or
+automatically receive updates from CTAN.
 
 ***
 
@@ -72,12 +77,14 @@ that are entirely, or least primarily, free software.
     older versions of TeX Live, see
     <a href="https://repology.org/metapackage/texlive/versions">Linux TeX Live package status</a>
     for details.</p>
+    <p>These are free distributions, i.e., there are no charges for download or use.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-apple"></span> Mac OS</h2>
     <p>The <a href="https://www.tug.org/mactex/">MacTeX</a>
     distribution contains everything you need, including a complete
     TeX system with LaTeX itself and editors to write documents.</p>
+    <p>This is a free distribution, i.e., there are no charges for download or use.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-windows"></span> Windows</h2>
@@ -85,6 +92,7 @@ that are entirely, or least primarily, free software.
     or <a href="https://www.tug.org/texlive">TeX Live</a>
     distributions; they contain a complete TeX system with LaTeX
     itself and editors to write documents.</p>
+    <p>These are free distributions, i.e., there are no charges for download or use.</p>
   </div>
   <div class="col cell1of4">
     <h2><span class="fa fa-globe"></span> Online</h2>
@@ -97,6 +105,8 @@ that are entirely, or least primarily, free software.
     offer the
     ability to edit, view and download LaTeX files and resulting
     PDFs.</p>
+    <p>Most are commercial services, but several of them, though not all, offer free
+    plans with some restrictions.</p>
   </div>
 </div>
 
