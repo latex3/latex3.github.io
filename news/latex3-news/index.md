@@ -8,6 +8,9 @@ description: "LaTeX3 Newsletters. Information on important activities and topics
 
 Newsletters by the LaTeX3 project team covering topics of interest in the area of LaTeX3/expl3 development. They appear in irregular intervals and are not necessarily tied to individual releases of the software (as the LaTeX3 kernel code is updated rather often).
 
+We do not produce new newsletters about LaTeX3, because in 2020 the core of LaTeX3 has moved into the standard format and is available as the L3 programming layer, i.e., it is no longer experimental code that has to be loaded separately.
+Important new information about the L3 programming layer is now covered in the Release News Letters for LaTeX2e.
+
 A document with all available issues bundled together in their historical order is
 <a href="{{site.baseurl}}/news/latex3-news/l3news.pdf" target="_blank" onclick="vgwPixelCall('06009f5d88d4445cae1ba16872605b92');">`l3news.pdf`</a>.
 In addition the newsletters are individually available below. 

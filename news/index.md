@@ -20,6 +20,7 @@ permalink: /news/
     <a href="{{site.baseurl}}/news/latex3-news/">
       <h2>LaTeX3 Newsletters</h2>
       <p> Newsletters covering important topics related to LaTeX3/expl3 development.</p>
+      <p> We do not produce new newsletters about LaTeX3, because in 2020 the core of LaTeX3 has moved into the standard format and is available as the L3 programming layer, i.e., it is no longer experimental code that has to be loaded separately. Important new information about the L3 programming layer is now covered in the Release News Letters for LaTeX2e.</p>
     </a>
   </section>
 </div>
