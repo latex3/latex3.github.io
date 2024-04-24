@@ -3,11 +3,58 @@
   <channel>
     <title>The LaTeX Project</title>
     <description></description>
-    <link>https://latex-project.org//</link>
-    <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 21 Apr 2024 17:13:30 +0200</pubDate>
-    <lastBuildDate>Sun, 21 Apr 2024 17:13:30 +0200</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 24 Apr 2024 11:35:39 +0200</pubDate>
+    <lastBuildDate>Wed, 24 Apr 2024 11:35:39 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Development releases for the L3 Programming Layer</title>
+        <description>&lt;h1 id=&quot;development-releases-for-the-l3-programming-layer-aka-expl3&quot;&gt;Development releases for the L3 Programming Layer (aka &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;)&lt;/h1&gt;
+
+&lt;p&gt;The team have made development releases of the LaTeX kernel available
+for some time, to allow active users and developers to test new
+features. We have now extended the concept to cover the core of
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; (packages &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3kernel&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3backend&lt;/code&gt;) that is automatically
+loaded by the LaTeX kernel as the ‘L3 Programming layer’.  The new
+CTAN packages &lt;a href=&quot;https://ctan.org/pkg/l3kernel-dev&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3kernel-dev&lt;/code&gt;&lt;/a&gt; and
+&lt;a href=&quot;https://ctan.org/pkg/l3backend-dev&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3backend-dev&lt;/code&gt;&lt;/a&gt; will be used
+when building the development LaTeX formats, allowing testing of
+changes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; before its release and thus before becoming active
+in the production version of LaTeX.&lt;/p&gt;
+
+&lt;p&gt;We encourage interested users and especially developers to try out the
+development formats, which will now include testing a pre-release
+of the L3 Programming Layer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unlike the LaTeX kernel, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt; does not have a fixed release
+schedule.  To allow for that, the aim is that there will be an
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l3kernel-dev&lt;/code&gt; upload to CTAN around two weeks before the upload of
+the ‘production’ version.  This should be enough time for testing but
+still allow a quick turn-around as features are added to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expl3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;— Joseph &amp;amp; Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 24 Apr 2024 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2024/04/24/l3prog-dev/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2024/04/24/l3prog-dev/</guid>
+        
+        <category>testing</category>
+        
+        <category>latex programming layer</category>
+        
+        <category>latex</category>
+        
+        <category>expl3</category>
+        
+        <category>development</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>ISO PDF/UA-2 standard released - Examples made by LaTeX</title>
@@ -30,8 +77,8 @@ The WTPDF specification is &lt;a href=&quot;https://pdfa.org/wp-content/uploads/
 
 </description>
         <pubDate>Wed, 27 Mar 2024 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2024/03/27/PDFUA2-examples/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2024/03/27/PDFUA2-examples/</guid>
+        <link>http://localhost:4000/news/2024/03/27/PDFUA2-examples/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2024/03/27/PDFUA2-examples/</guid>
         
         <category>Accessibility</category>
         
@@ -65,8 +112,8 @@ You will find it in &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;th
 
 </description>
         <pubDate>Tue, 26 Mar 2024 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2024/03/26/DEIMS-tokyo/</guid>
+        <link>http://localhost:4000/news/2024/03/26/DEIMS-tokyo/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2024/03/26/DEIMS-tokyo/</guid>
         
         <category>Accessibility</category>
         
@@ -116,8 +163,8 @@ team to which I like to draw your attention:&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 25 Nov 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/11/25/TUG-online-talks-2023/</guid>
+        <link>http://localhost:4000/news/2023/11/25/TUG-online-talks-2023/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/11/25/TUG-online-talks-2023/</guid>
         
         <category>latex2e</category>
         
@@ -210,8 +257,8 @@ provide with the November release.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 04 Nov 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/11/04/issue38-of-latex2e-released/</guid>
+        <link>http://localhost:4000/news/2023/11/04/issue38-of-latex2e-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/11/04/issue38-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -281,8 +328,8 @@ To give you an idea of what is covered in the third edition, here are some excer
 
 </description>
         <pubDate>Sat, 10 Jun 2023 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/06/10/issue37-of-latex2e-released/</guid>
+        <link>http://localhost:4000/news/2023/06/10/issue37-of-latex2e-released/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/06/10/issue37-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
@@ -360,8 +407,8 @@ straightforward.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 27 May 2023 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2023/05/27/latex-dev-2/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/05/27/latex-dev-2/</guid>
+        <link>http://localhost:4000/news/2023/05/27/latex-dev-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/05/27/latex-dev-2/</guid>
         
         <category>latex2e</category>
         
@@ -432,8 +479,8 @@ by using &lt;a href=&quot;https://amzn.to/40yY7gD&quot;&gt;Amazon.de in Germany&
 
 </description>
         <pubDate>Fri, 17 Mar 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/03/17/TLC3/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/03/17/TLC3/</guid>
+        <link>http://localhost:4000/news/2023/03/17/TLC3/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/03/17/TLC3/</guid>
         
         <category>latex</category>
         
@@ -510,8 +557,8 @@ straightforward.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 13 Mar 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/03/13/latex-dev-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/03/13/latex-dev-1/</guid>
+        <link>http://localhost:4000/news/2023/03/13/latex-dev-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/03/13/latex-dev-1/</guid>
         
         <category>latex2e</category>
         
@@ -538,8 +585,8 @@ The slides of the presentation &lt;a href=&quot;/publications/2022-FMi-PDFA-slid
 
 </description>
         <pubDate>Tue, 03 Jan 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/01/03/pdfdays-2022/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/01/03/pdfdays-2022/</guid>
+        <link>http://localhost:4000/news/2023/01/03/pdfdays-2022/</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2023/01/03/pdfdays-2022/</guid>
         
         <category>tagged PDF</category>
         
@@ -548,57 +595,6 @@ The slides of the presentation &lt;a href=&quot;/publications/2022-FMi-PDFA-slid
         <category>conference</category>
         
         <category>development</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>The November 2022 release of LaTeX is available</title>
-        <description>&lt;h1 id=&quot;the-november-2022-release-of-latex-is-available&quot;&gt;The November 2022 release of LaTeX is available&lt;/h1&gt;
-
-&lt;p&gt;More or less on time we released the 2022-11-01 version of LaTeX and
-by now it should be available in all major distributions.  This
-release is largely a consolidation release. However it also contains one
-very important enhancement that is initially important for package
-developers, but over time — when the kernel and packages starting
-using it — will become relevant for user documents.&lt;/p&gt;
-
-&lt;p&gt;I’m talking about the fact that we prepared the grounds to use
-optional key/value arguments with basically any command including
-those that current have optional arguments expecting a simple
-value. For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\chapter&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\caption&lt;/code&gt; allow an optional argument
-to hold the data for the TOC or LOF file. With the new functionality
-they can be changed (not done yet) to alternatively support a
-key/value list in this argument and LaTeX will automatically determine
-which version applies.  This is very important for providing a standard
-and consistent method for accessible LaTeX documents, because there
-has to be a possibility to specify “alternative text” in various
-places. There are other reasons related to the Tagged PDF project why
-such an interface is useful and the beauty of it is that it is both
-consistent and upward compatible.&lt;/p&gt;
-
-&lt;p&gt;To get a good overview about the new features and most of the
-important bug fixes made in this release take a look at &lt;a href=&quot;/news/latex2e-news/ltnews36.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;349962df3c4b42a7a64e729501dc2d7e&apos;);&quot;&gt;“LaTeX2e
-News Issue 36”&lt;/a&gt;. This document should be accessible through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;texdoc
-ltnews36&lt;/code&gt; on your computer and can also be found on the &lt;a href=&quot;/news/latex2e-news/&quot;&gt;LaTeX2e news
-page&lt;/a&gt; where you will also find
-release information for earlier LaTeX releases.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 03 Nov 2022 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2022/11/03/issue36-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2022/11/03/issue36-of-latex2e-released/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>latex-news</category>
-        
-        <category>tagged PDF</category>
         
         
         <category>news</category>
