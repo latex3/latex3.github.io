@@ -112,7 +112,7 @@ More advanced documentation about core LaTeX, which is available via the net inc
      Project</a>
 
 The LaTeX3 programming layer (which is part of the LaTeX format) is documented in
-+ <a href="https://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf"
++ <a href="https://mirrors.ctan.org/macros/latex/required/l3kernel/interface3.pdf"
      target="_blank"
      onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer interface documentation</a>
 
@@ -204,10 +204,10 @@ distributed as part of the LaTeX2e distribution. A compiled version (from the cu
 with a list of all major changes and an index of all commands and
 their usage within the kernel is
 
-+ <a href="http://mirrors.ctan.org/macros/latex/base/source2e.pdf"
++ <a href="https://mirrors.ctan.org/macros/latex/base/source2e.pdf"
      target="_blank"
      onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">The LaTeX2e Sources (1000+ pages)</a>
-+ <a href="http://mirrors.ctan.org/macros/latex/contrib/l3kernel/source3.pdf"
++ <a href="https://mirrors.ctan.org/macros/latex/required/l3kernel/source3.pdf"
      target="_blank"
      onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer sources (1000+ pages)</a>
      
@@ -216,7 +216,7 @@ As a companion document Martin Scharrer compiled a useful reference
 list with links back into the 2e source document if both are stored in
 the same directory:
 
-+ <a href="http://mirrors.ctan.org/info/macros2e/macros2e.pdf"
++ <a href="https://mirrors.ctan.org/info/macros2e/macros2e.pdf"
      target="_blank"
      onclick="vgwPixelCall('47645342fb934c628c269524107689eb');">List of internal LaTeX2e Macros useful to Package Authors</a>
 
@@ -248,13 +248,13 @@ documented here:
 There is a lot of documentation in languages other than English. Lists of books and other resources in other languages are maintained by TeX user groups in the respective countries. The following are known to us:
 
 ###  German
-+ [German LaTeX documentation maintained by German TeX User Group Dante e.V.](http://www.dante.de/)
++ [German LaTeX documentation maintained by German TeX User Group Dante e.V.](https://www.dante.de/)
 
 ### French
 
 + [French LaTeX documentation maintained by the Francophone TeX Users Group GUTenberg](https://www.gutenberg.eu.org/-TeXniques-)  
 + [Tout ce que vous avez toujours voulu savoir sur LaTeX](http://lozzone.free.fr/index.php?vlunch=latex)
-+ [A collection of french LaTeX documentation](http://www.framasoft.net/rubrique266.html) maintained by [Framasoft](http://www.framasoft.net/)
++ [A collection of french LaTeX documentation](https://www.framasoft.net/rubrique266.html) maintained by [Framasoft](http://www.framasoft.net/)
 + [Apprends LaTeX!](http://www.babafou.eu.org/Apprends_LaTeX/)
 
 <hr>
