@@ -30,7 +30,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [LaTeX: an introduction](https://www.techscribe.co.uk/ta/latex-introduction.pdf)  
   This is a one-page high-level overview of LaTeX, by Mike Unwalla. It was published in 'Communicator', Spring 2006.
 + [The (Not So) Short Introduction to LaTeX2e](https://ctan.org/tex-archive/info/lshort/english/lshort.pdf)  
-  This document by Tobias Oetiker et al is a good beginner's tutorial. There are a number of [translations](ftp://ctan.tug.org/tex-archive/info/lshort/) available. 
+  This document by Tobias Oetiker et al is a very good beginner's tutorial. There are a number of [translations into other languages than English](https://ctan.org/tex-archive/info/lshort) available. 
 + [LaTeX: Structured documents for TeX (unofficial LaTeX reference manual)](https://ctan.org/pkg/latex2e-help-texinfo)  
   This document is an unofficial reference manual for LaTeX developed over many years by various volunteers. It is available in several languages, i.e., English, French and Spanish. The document is developed further and you find the current development versions and new releases [here](https://puszcza.gnu.org.ua/software/latexrefman/).
 + [Formatting information -- An introduction to typesetting with LaTeX](http://latex.silmaril.ie/formattinginformation/)  
@@ -55,6 +55,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   Stack Exchange is a question and answer site for users of TeX, LaTeX, ConTeXt, and related typesetting systems.
 + [LaTeX Community](https://latex.org/forum/)  
   An active community with a lot of LaTeX knowledge available.
++ [r/LaTeX subreddit](https://www.reddit.com/r/LaTeX/) <br>
+   Another active question and answer site that also exhibits showcases and other material.
 
 ### German
 
@@ -65,8 +67,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   
 ## Tutorials
 
-+ [An interactive LaTeX course for beginners](https://www.learnlatex.org/)
-  This course with 16 main lessons is available in multiple languages. It offers interactive exercises, allowing you to run LaTeX in the browser without having to install it upfront. Highly recommended for beginners.
++ [An interactive LaTeX course for beginners](https://www.learnlatex.org/) <br>
+  Initiated by members of the LaTeX Project Team this course with 16 main lessons is available in multiple languages. It offers interactive exercises, allowing you to run LaTeX in the browser without having to install it upfront. Highly recommended for beginners.
 + [Video tutorials on various LaTeX topics](https://www.youtube.com/ShareLaTeX)  
   This channel shows a growing collection of high-quality video tutorials from the folks from ShareLaTeX (an online editor for LaTeX) on different aspects of LaTeX, currently a beginners series, a series on Thesis writing, a series on beamer, and one on TikZ. The tutorials are not specific to the editor, so they are worth watching by anybody who wants to get a first impression on a particular topic. Of course, video tutorials can never address all aspects, but these have enough detail to get you started.
 + [Getting to grips with LaTeX](https://www.andy-roberts.net/misc/latex/)  
