@@ -14,7 +14,7 @@ We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to CTAN.  By 
 
 ## The LaTeX Tagged PDF project
 
-As with the previous release the team continues to focus on progrssing the LaTeX tagged PDF project: It is now possible for a subset of LaTeX documents to automatically generate PDFs that comply with the new PDF/UA-2 and WTPDF (well tagged PDF) standards or, if necessary with the older PDF/UA-1 standard.  See the examples for  [PDF/UA-2](https://github.com/latex3/tagging-project/discussions/72) and [PDF/UA-1](https://github.com/latex3/tagging-project/discussions/82) and in general the information provided in the [tagging-project](https://github.com/latex3/tagging-project) GitHub repository.
+As with the previous release the team continues to focus on progressing the LaTeX tagged PDF project: It is now possible for a subset of LaTeX documents to automatically generate PDFs that comply with the new PDF/UA-2 and WTPDF (well tagged PDF) standards or, if necessary with the older PDF/UA-1 standard.  See the examples for  [PDF/UA-2](https://github.com/latex3/tagging-project/discussions/72) and [PDF/UA-1](https://github.com/latex3/tagging-project/discussions/82) and in general the information provided in the [tagging-project](https://github.com/latex3/tagging-project) GitHub repository.
 
 We suggest that anybody interested in accessible documents starts experimenting with the prototype.  To help with this we have added a short guide on how to [use the prototype](https://github.com/latex3/tagging-project) and its currently available interfaces. 
 
