@@ -10,7 +10,7 @@ description: "This privacy statement explains to users the nature, extent and pu
 
 This privacy statement explains to users the nature, extent and purpose, the collection and use of personal data by the responsible provider (The LaTeX Project, see contact page) on this website (referred to as "the offer" below).
 
-The legal basis of data protection can be found in the Federal Data Protection Act (BDSG) and the Telemedia Act (TMG) of the Federal Republic of Germany and the General Data Protection Regulation (GDPR) of the European Union.
+The legal basis of data protection can be found in the Federal Data Protection Act (BDSG) of the Federal Republic of Germany and the General Data Protection Regulation (GDPR) of the European Union.
 
 ### Access data / Server logs
 

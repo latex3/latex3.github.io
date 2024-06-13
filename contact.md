@@ -26,5 +26,11 @@ Please send feedback and bug reports concerning the project web site to <mailto:
 Frank Mittelbach  
 Zedernweg 62  
 55128 Mainz  
-Germany  
+Germany   
+Tel.:  +49 6131 337274   
 Email: <mailto:frank.mittelbach@latex-project.org>
+
+### Resposible for the editorial content
+
+ - Frank Mittelbach  
+ - [LaTeX project team]({{site.baseurl}}/about/team/)
