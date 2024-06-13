@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Jun 2024 17:12:27 +0200</pubDate>
-    <lastBuildDate>Tue, 11 Jun 2024 17:12:27 +0200</lastBuildDate>
+    <pubDate>Thu, 13 Jun 2024 12:43:07 +0200</pubDate>
+    <lastBuildDate>Thu, 13 Jun 2024 12:43:07 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;As with the previous release the team continues to focus on progressing the LaTeX tagged PDF project: It is now possible for a subset of LaTeX documents to automatically generate PDFs that comply with the new PDF/UA-2 and WTPDF (well tagged PDF) standards or, if necessary with the older PDF/UA-1 standard.  See the examples for  &lt;a href=&quot;https://github.com/latex3/tagging-project/discussions/72&quot;&gt;PDF/UA-2&lt;/a&gt; and &lt;a href=&quot;https://github.com/latex3/tagging-project/discussions/82&quot;&gt;PDF/UA-1&lt;/a&gt; and in general the information provided in the &lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;tagging-project&lt;/a&gt; GitHub repository.&lt;/p&gt;
 
-&lt;p&gt;We suggest that anybody interested in accessible documents starts experimenting with the prototype.  To help with this we have added a short guide on how to &lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;use the prototype&lt;/a&gt; and its currently available interfaces.&lt;/p&gt;
+&lt;p&gt;We suggest that anybody interested in accessible documents starts experimenting with the prototype.  To help with this we have added a short guide on how to &lt;a href=&quot;https://github.com/latex3/tagging-project/blob/main/documentation/prototype-usage-instructions.md&quot;&gt;use the prototype&lt;/a&gt; and its currently available interfaces.&lt;/p&gt;
 
 &lt;h2 id=&quot;other-improvements-and-changes&quot;&gt;Other improvements and changes&lt;/h2&gt;
 
@@ -40,9 +40,9 @@
 
 &lt;p&gt;Enjoy Frank&lt;/p&gt;
 </description>
-        <pubDate>Sat, 15 Jun 2024 02:00:00 +0200</pubDate>
-        <link>https://latex-project.org//news/2024/06/15/issue39-of-latex2e-released/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2024/06/15/issue39-of-latex2e-released/</guid>
+        <pubDate>Thu, 13 Jun 2024 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2024/06/13/issue39-of-latex2e-released/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/06/13/issue39-of-latex2e-released/</guid>
         
         <category>latex2e</category>
         
