@@ -5,12 +5,82 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Jun 2024 23:20:20 +0200</pubDate>
-    <lastBuildDate>Thu, 13 Jun 2024 23:20:20 +0200</lastBuildDate>
+    <pubDate>Sun, 07 Jul 2024 09:55:37 +0200</pubDate>
+    <lastBuildDate>Sun, 07 Jul 2024 09:55:37 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>LaTeX 2024-061-01 PL1 released and distributed</title>
+        <title>How to make accessible PDF</title>
+        <description>&lt;h1 id=&quot;how-to-make-accessible-pdf&quot;&gt;How to make accessible PDF&lt;/h1&gt;
+
+&lt;p&gt;The “LaTeX Tagged PDF” project is now advanced enough that more and
+more people start using it. We have therefore begun with building
+usage documentation that is not scattered across different
+repositories as this is the case at the moment.&lt;/p&gt;
+
+&lt;p&gt;For issues encountered with the project code we have added a dedicated
+&lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tagging-project&lt;/code&gt;
+repository&lt;/a&gt; a while ago.
+In this repository people can report problems and look up the current state of
+known issues. It is also hosting discussions related to the project.&lt;/p&gt;
+
+&lt;p&gt;We have now extended this repository to use GitHub pages providing a
+small &lt;a href=&quot;https://latex3.github.io/tagging-project/&quot;&gt;number of web
+pages&lt;/a&gt;. So far it holds&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Examples of Tagged PDFs conforming to the WTPDf, PDF/UA-1, and PDF&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Guidelines on &lt;a href=&quot;https://latex3.github.io/tagging-project/documentation/prototype-usage-instructions.html&quot;&gt;how to produce accessible
+PDF&lt;/a&gt;
+(describing the current tempoary interfaces)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://latex3.github.io/tagging-project/tagging-status/&quot;&gt;Tables that record the
+status&lt;/a&gt;
+of various packages and classes (i.e., whether or not they can be
+used with the new tagging code) based on the issues that are
+already on record&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This documentation and the tables are all work in progress and will
+get updated whenever there is new information.&lt;/p&gt;
+
+&lt;p&gt;If you want to help improving this, then this is easily possible.  We
+are looking for volunteers who try out the tagging code in various
+ways and report problems or package incompatibilites and help with
+developing tests that prove or disprove that the tagging code can be
+used with packages for which we don’t have enough data so far.&lt;/p&gt;
+
+&lt;p&gt;— Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 06 Jul 2024 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2024/07/06/tagging/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/07/06/tagging/</guid>
+        
+        <category>Accessibility</category>
+        
+        <category>tagged PDF</category>
+        
+        <category>latex</category>
+        
+        <category>development</category>
+        
+        <category>PDF/UA-1</category>
+        
+        <category>PDF/UA-2</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>LaTeX 2024-06-01 PL1 released and distributed</title>
         <description>&lt;h1 id=&quot;latex-2024-06-01-pl1-release-distributed&quot;&gt;LaTeX 2024-06-01 PL1 release distributed&lt;/h1&gt;
 
 &lt;p&gt;We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to CTAN.  By now it should be available to most users &lt;em&gt;via&lt;/em&gt; TeX Live or MiKTeX.&lt;/p&gt;
@@ -529,84 +599,6 @@ by using &lt;a href=&quot;https://amzn.to/40yY7gD&quot;&gt;Amazon.de in Germany&
         <category>books</category>
         
         <category>TLC</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing</title>
-        <description>&lt;h1 id=&quot;towards-automated-pdf-tagging-pre-release-of-latex-2023-06-01-is-available-for-testing&quot;&gt;Towards automated PDF tagging: Pre-release of LaTeX 2023-06-01 is available for testing&lt;/h1&gt;
-
-&lt;p&gt;We submitted the second pre-release version for the 2023-06-01 LaTeX
-kernel to CTAN recently. It should have made its way into TeX Live
-(both 2022 and the 2023 pre-test) for everyone by now, so it’s ready
-for users to try.&lt;/p&gt;
-
-&lt;p&gt;It does not yet contain all updates to the LaTeX format that will
-become part of the standard in June, but the new code already provided
-is worth checking out.&lt;/p&gt;
-
-&lt;h2 id=&quot;automated-tagging-of-pdf-documents&quot;&gt;Automated tagging of PDF documents&lt;/h2&gt;
-
-&lt;p&gt;We have now enabled new automatic tagging functionality for additional
-LaTeX elements, among them most display environments, standard
-sectioning commands and content, figure and table listings.&lt;/p&gt;
-
-&lt;p&gt;This can be activated through&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase=phase-III}
-\documentclass{...}                     % article, book or report
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;In addition there is also a (very early) prototype for tagging formulas, which can be activated through&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\DocumentMetadata{testphase={phase-III,math}}
-\documentclass{...}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;It offers support for LaTeX’s standard math environments but also for
-all environments provided through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amsmath&lt;/code&gt; package.&lt;/p&gt;
-
-&lt;p&gt;All of this automation is currently in a prototype state and
-restricted to the use of standard classes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;article&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;report&lt;/code&gt;, and
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;book&lt;/code&gt;) and it supports only a limited number of add-on package. See the
-draft version of the &lt;a href=&quot;/news/latex2e-news/ltnews37.pdf&quot;&gt;LaTeX2e News
-Issue 37&lt;/a&gt; newsletter for further details. It provides information
-how to submit feedback on the new functionality.&lt;/p&gt;
-
-&lt;p&gt;The newsletter also covers various other small enhancements or
-corrections that we intend to provide with the June release.&lt;/p&gt;
-
-&lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;/h2&gt;
-
-&lt;p&gt;We expect to produce another pre-release around the end of April, which will
-give us time to finish the release by June. Please help with the testing.&lt;/p&gt;
-
-&lt;p&gt;Processing your documents with the pre-release is straightforward. All you have
-to do is to replace the invocation command by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-dev&lt;/code&gt; to the executable,
-e.g., on the command line you would run&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex-dev myfile&lt;/code&gt; or&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex-dev myfile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdflatex&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lualatex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xelatex&lt;/code&gt;. If you use an integrated
-editing environment, then it depends on the system how to configure it to use an
-alternative format; but in any case the necessary modification should be
-straightforward.&lt;/p&gt;
-
-&lt;p&gt;Enjoy — Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 13 Mar 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/03/13/latex-dev-1/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/03/13/latex-dev-1/</guid>
-        
-        <category>latex2e</category>
-        
-        <category>beta-testing</category>
-        
-        <category>development formats</category>
         
         
         <category>news</category>

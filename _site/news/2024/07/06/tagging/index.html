@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LaTeX 2024-06-01 PL1 released and distributed</title>
-  <meta name="description" content="We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to CTAN.  By now it should be available to most users via TeX Live or MiKTeX....">
+  <title>How to make accessible PDF</title>
+  <meta name="description" content="Info on making accessible PDF">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/fa/css/font-awesome.css">
@@ -62,35 +62,53 @@
   <h1>LaTeX News</h1>
 <div class="post">
   <article class="post-content">
-    <small class="meta"><span class="post-date">Jun 13, 2024</span></small>
-    <h1 id="latex-2024-06-01-pl1-release-distributed">LaTeX 2024-06-01 PL1 release distributed</h1>
+    <small class="meta"><span class="post-date">Jul 6, 2024</span></small>
+    <h1 id="how-to-make-accessible-pdf">How to make accessible PDF</h1>
 
-<p>We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to CTAN.  By now it should be available to most users <em>via</em> TeX Live or MiKTeX.</p>
+<p>The “LaTeX Tagged PDF” project is now advanced enough that more and
+more people start using it. We have therefore begun with building
+usage documentation that is not scattered across different
+repositories as this is the case at the moment.</p>
 
-<h2 id="the-latex-tagged-pdf-project">The LaTeX Tagged PDF project</h2>
+<p>For issues encountered with the project code we have added a dedicated
+<a href="https://github.com/latex3/tagging-project"><code class="language-plaintext highlighter-rouge">tagging-project</code>
+repository</a> a while ago.
+In this repository people can report problems and look up the current state of
+known issues. It is also hosting discussions related to the project.</p>
 
-<p>As with the previous release the team continues to focus on progressing the LaTeX tagged PDF project: It is now possible for a subset of LaTeX documents to automatically generate PDFs that comply with the new PDF/UA-2 and WTPDF (well tagged PDF) standards or, if necessary with the older PDF/UA-1 standard.  See the examples for  <a href="https://github.com/latex3/tagging-project/discussions/72">PDF/UA-2</a> and <a href="https://github.com/latex3/tagging-project/discussions/82">PDF/UA-1</a> and in general the information provided in the <a href="https://github.com/latex3/tagging-project">tagging-project</a> GitHub repository.</p>
-
-<p>We suggest that anybody interested in accessible documents starts experimenting with the prototype.  To help with this we have added a short guide on how to <a href="https://github.com/latex3/tagging-project/blob/main/documentation/prototype-usage-instructions.md">use the prototype</a> and its currently available interfaces.</p>
-
-<h2 id="other-improvements-and-changes">Other improvements and changes</h2>
-
-<p>The <a href="/news/latex2e-news/ltnews39.pdf">newsletter</a> also covers various other small enhancements or corrections that we provide with the June release.</p>
-
-<h2 id="the-reasons-behind-patch-level-1">The reasons behind patch level 1</h2>
-
-<p>After distributing the release at the beginning of June two issues have been identified.</p>
+<p>We have now extended this repository to use GitHub pages providing a
+small <a href="https://latex3.github.io/tagging-project/">number of web
+pages</a>. So far it holds</p>
 
 <ul>
-  <li>Truly empty p-cells in tables produced a width of zero, with the result that some tables showed misalignments or in case of <code class="language-plaintext highlighter-rouge">colortbl</code> not all of the cell got colored.</li>
-  <li>The other also involved table packages and resulted in an error in special situations.</li>
+  <li>
+    <p>Examples of Tagged PDFs conforming to the WTPDf, PDF/UA-1, and PDF</p>
+  </li>
+  <li>
+    <p>Guidelines on <a href="https://latex3.github.io/tagging-project/documentation/prototype-usage-instructions.html">how to produce accessible
+PDF</a>
+(describing the current tempoary interfaces)</p>
+  </li>
+  <li>
+    <p><a href="https://latex3.github.io/tagging-project/tagging-status/">Tables that record the
+status</a>
+of various packages and classes (i.e., whether or not they can be
+used with the new tagging code) based on the issues that are
+already on record</p>
+  </li>
 </ul>
 
-<p>Both issues have been corrected in patch level 1.</p>
+<p>This documentation and the tables are all work in progress and will
+get updated whenever there is new information.</p>
 
-<p>It is worthwhile to note that both could have been identified beforehand by using the <code class="language-plaintext highlighter-rouge">latex-dev</code> release.  We try to test as much as we can to avoid the need for  patch releases, but compared to our user base of millions, we are just a tiny group. So please consider running your own documents and projects regularly with a <code class="language-plaintext highlighter-rouge">latex-dev</code> release and alert us if you identify any regression (see the previous LaTeX newsletter on how to set this up).</p>
+<p>If you want to help improving this, then this is easily possible.  We
+are looking for volunteers who try out the tagging code in various
+ways and report problems or package incompatibilites and help with
+developing tests that prove or disprove that the tagging code can be
+used with packages for which we don’t have enough data so far.</p>
 
-<p>Enjoy Frank</p>
+<p>— Frank</p>
+
 
   </article>
 </div>
