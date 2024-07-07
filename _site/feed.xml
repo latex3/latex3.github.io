@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 07 Jul 2024 09:55:37 +0200</pubDate>
-    <lastBuildDate>Sun, 07 Jul 2024 09:55:37 +0200</lastBuildDate>
+    <pubDate>Sun, 07 Jul 2024 11:46:01 +0200</pubDate>
+    <lastBuildDate>Sun, 07 Jul 2024 11:46:01 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -18,11 +18,11 @@ more people start using it. We have therefore begun with building
 usage documentation that is not scattered across different
 repositories as this is the case at the moment.&lt;/p&gt;
 
-&lt;p&gt;For issues encountered with the project code we have added a dedicated
-&lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tagging-project&lt;/code&gt;
-repository&lt;/a&gt; a while ago.
-In this repository people can report problems and look up the current state of
-known issues. It is also hosting discussions related to the project.&lt;/p&gt;
+&lt;p&gt;A while ago we created a dedicated &lt;a href=&quot;https://github.com/latex3/tagging-project&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tagging-project&lt;/code&gt;
+repository&lt;/a&gt; for issues
+encountered with the project code.  In this repository people can
+report problems and look up the current state of known issues. It is
+also hosting discussions related to the project.&lt;/p&gt;
 
 &lt;p&gt;We have now extended this repository to use GitHub pages providing a
 small &lt;a href=&quot;https://latex3.github.io/tagging-project/&quot;&gt;number of web
@@ -30,7 +30,11 @@ pages&lt;/a&gt;. So far it holds&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Examples of Tagged PDFs conforming to the WTPDf, PDF/UA-1, and PDF&lt;/p&gt;
+    &lt;p&gt;Examples of Tagged PDFs conforming to the
+ &lt;a href=&quot;https://github.com/latex3/tagging-project/discussions/72&quot;&gt;WTPDF/PDF/UA-2&lt;/a&gt;
+ and
+ &lt;a href=&quot;https://github.com/latex3/tagging-project/discussions/82&quot;&gt;PDF/UA-1&lt;/a&gt;
+ specifications.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Guidelines on &lt;a href=&quot;https://latex3.github.io/tagging-project/documentation/prototype-usage-instructions.html&quot;&gt;how to produce accessible
