@@ -5,8 +5,8 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 08 Jul 2024 11:11:03 +0200</pubDate>
-    <lastBuildDate>Mon, 08 Jul 2024 11:11:03 +0200</lastBuildDate>
+    <pubDate>Mon, 08 Jul 2024 11:16:35 +0200</pubDate>
+    <lastBuildDate>Mon, 08 Jul 2024 11:16:35 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -50,16 +50,16 @@ already on record&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The initial work on the compatibility tables was provided by Ian Thompson — thanks for that!&lt;/p&gt;
-
 &lt;p&gt;This documentation and the tables are all work in progress and will
 get updated whenever there is new information.&lt;/p&gt;
 
-&lt;p&gt;If you want to help improving this, then this is easily possible.  We
-are looking for volunteers who try out the tagging code in various
-ways and report problems or package incompatibilites and help with
-developing tests that prove or disprove that the tagging code can be
-used with packages for which we don’t have enough data so far.&lt;/p&gt;
+&lt;p&gt;The initial work on the compatibility tables was provided by Ian
+Thompson — thanks for that!  If you want to help improving this,
+then this is easily possible.  We are looking for volunteers who try
+out the tagging code in various ways and report problems or package
+incompatibilites and help with developing tests that prove or disprove
+that the tagging code can be used with packages for which we don’t
+have enough data so far.&lt;/p&gt;
 
 &lt;p&gt;— Frank&lt;/p&gt;
 
