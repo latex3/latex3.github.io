@@ -100,7 +100,6 @@ automatically receive updates from CTAN.
       like
       <a href="https://www.overleaf.com/">Overleaf</a>,
       <a href="https://papeeria.com">Papeeria</a>,
-      <a href="https://latexbase.com/">LaTeX base</a>
     or <a href="https://cocalc.com">CoCalc</a>
     offer the
     ability to edit, view and download LaTeX files and resulting
