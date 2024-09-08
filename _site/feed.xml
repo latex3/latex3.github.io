@@ -5,9 +5,85 @@
     <description></description>
     <link>https://latex-project.org//</link>
     <atom:link href="https://latex-project.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 12 Aug 2024 09:09:05 +0200</pubDate>
-    <lastBuildDate>Mon, 12 Aug 2024 09:09:05 +0200</lastBuildDate>
+    <pubDate>Sun, 08 Sep 2024 21:13:39 +0200</pubDate>
+    <lastBuildDate>Sun, 08 Sep 2024 21:13:39 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>TUG Conference 2024 in Prague: talks and workshop</title>
+        <description>&lt;h1 id=&quot;tug-conference-2024-in-prague-talks-and-workshop&quot;&gt;TUG Conference 2024 in Prague: talks and workshop&lt;/h1&gt;
+
+&lt;p&gt;The TUG conference 2024 in Prague was a hybrid conference, i.e., all talks were recorded and also streamed. The recordings have been cut and cleaned up by a Norbert Preining and are now available on YouTube.
+All in all, there are 31 interesting talks on various subjects TeX, LaTeX, and related topics.  If you have missed the conference (or if you want listen to one of the talks again) you will find them all on the &lt;a href=&quot;https://www.youtube.com/c/TeXUsersGroup/featured&quot;&gt;TeX Users Group Channel on YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were also several talks by members of the LaTeX Project
+team to which I like to draw your attention:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ulrike Fischer: &lt;a href=&quot;https://youtu.be/b70CsLh7qU0?si=i2iJTWMM5g4S08OI&quot;&gt;Progress in the LaTeX tagging project: 2024&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Creating tagged PDFs is an important approach to making typeset material accessible. To do that from LaTeX, changes to the kernel are needed so that end users do not need to manually edit their sources, but rather can simply `switch on’ tagging support. Adding these methods to \LaTeX\ is an ongoing effort which is now delivering significant results.&lt;/p&gt;
+
+      &lt;p&gt;As well as technical changes in the code, there is work needed on the tagging concept: exactly how should different structures be represented. Those questions can only be asked and answered when there is a sufficient body of tagged documents to spark discussion.&lt;/p&gt;
+
+      &lt;p&gt;Here, I will show the progress that the project has made to date, show what documents can already be tagged automatically and highlight the next steps and open questions.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Frank Mittelbach: &lt;a href=&quot;https://youtu.be/yuO7nO0XTEk?si=4nrohfUY_K-ikICC&quot;&gt;Hooks, sockets and plugs&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Driven by the need to support tagging, a number of ideas are being introduced into the LaTeX kernel to allow more flexible changes to code paths, design aspects and document command creation. Hooks were introduced a few releases ago, and provide a way to manage the interaction between packages in a flexible and powerful way. More recently, we brought in sockets and plugs: places where exactly one code path is needed, but exactly what that code path is needs to be swappable. In this talk, we’ll look at why we need both sockets and hooks, and which to use when.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/hGkismTbkQ8?si=j9GmcPtrjgrz1ATC&quot;&gt;Templates: Prototype document elements&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Controlling design is something that has been challenging in LaTeX to date. While the LaTeX Team developed experimental ideas in the mid-1990s for creating flexible design elements, they were not viable for real documents then. These ideas, based around ‘templates’, have now reached maturity and are included in the Summer 2024 LaTeX kernel release.&lt;/p&gt;
+
+      &lt;p&gt;In this talk, I will look at what a template is, why we’d want to use them and the flexibility and power they will bring to controlling document design.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Joseph Wright: &lt;a href=&quot;https://youtu.be/WBeBtlQrGOs?si=XYwqiTWQ_g39TXau&quot;&gt;suiting development continues: 2024&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;siunitx&lt;/code&gt; package was first released in 2008, and has been through three major revisions; v3.0.0 was released in May 2021. Since then, development of new ideas has continues, with new features in numbers, tables and units. Here, I will pick out some highlights from the past three years of work, and look at where we might see additional ideas in the future.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There have been many other interesting talks: please check out &lt;a href=&quot;https://tug.org/l/tug24-video&quot;&gt;the playlist&lt;/a&gt; containing all recorded talks.&lt;/p&gt;
+
+&lt;h3 id=&quot;workshop-on-accessibility-with-latex&quot;&gt;Workshop on Accessibility with LaTeX&lt;/h3&gt;
+
+&lt;p&gt;The LaTeX Project team also organized a workshop on automatically producing accessible PDFs with LaTeX, which was well-attended. It was held in a different location and was therefore not recorded. However, if you are interested in this topic check out the talk by Ulrike above, the documentation found on this site &lt;a href=&quot;/publications/indexbytopic/pdf/&quot;&gt;about accessibility with LaTeX&lt;/a&gt;, and the information found at &lt;a href=&quot;https://latex3.github.io/tagging-project/&quot;&gt;https://latex3.github.io/tagging-project/&lt;/a&gt;. There you will find&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a short introduction on how to make use of the project code for accessibility;&lt;/li&gt;
+  &lt;li&gt;a larger set of example documents showing accessible PDFs produced with LaTeX;&lt;/li&gt;
+  &lt;li&gt;and a &lt;a href=&quot;https://latex3.github.io/tagging-project/tagging-status/&quot;&gt;fast growing list of packages and classes&lt;/a&gt; that can be used when producing accessible documents (and those that cannot be used yet).
+&lt;br /&gt;
+As of today (6th of September 2024) close to 1000 packages and classes have been classified out of which more than 650 are compatible with the new code needed for accessible PDF production. You might want to consider to bookmark this page, because its contents is changing fast (at the time of the workshop we have about 200 packages classified).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy — Frank&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Sep 2024 02:00:00 +0200</pubDate>
+        <link>https://latex-project.org//news/2024/09/08/TUG-online-talks/</link>
+        <guid isPermaLink="true">https://latex-project.org//news/2024/09/08/TUG-online-talks/</guid>
+        
+        <category>latex2e</category>
+        
+        <category>latex3</category>
+        
+        <category>development</category>
+        
+        <category>TLC3</category>
+        
+        <category>conference</category>
+        
+        <category>accessibility</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>How to make accessible PDF</title>
@@ -533,78 +609,6 @@ straightforward.&lt;/p&gt;
         <category>beta-testing</category>
         
         <category>development formats</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>&quot;The LaTeX Companion&quot;, third edition, is available for pre-order</title>
-        <description>&lt;h1 id=&quot;the-third-edition-of-the-latex-companion-is-available-for-pre-order&quot;&gt;The third edition of &lt;em&gt;The LaTeX Companion&lt;/em&gt; is available for pre-order&lt;/h1&gt;
-
-&lt;p&gt;I’m happy to announce that the third edition of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt;
-has been sent to the printer and is now available for
-pre-order. It will be published by end of April or beginning of May.
-This is the end of five years of careful work and we hope that it will
-provide our readers with all the information they need to successfully navigate the
-LaTeX ecosystem and efficiently produce beautiful documents.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/help/books/TLC3-Part-I.jpeg&quot; alt=&quot;TLC3 Part I cover&quot; width=&quot;45%&quot; height=&quot;auto&quot; /&gt;
-&lt;img src=&quot;/help/books/TLC3-Part-II.jpeg&quot; alt=&quot;TLC3 Part II cover&quot; width=&quot;45%&quot; height=&quot;auto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the publication of the last edition (2004) a lot has happened in the
-LaTeX world and thus  a complete rewrite was necessary.
-&lt;br /&gt;
-All chapters have been thoroughly revised and in many cases largely
-extended to describe new important functionality and features. More
-than 5,000 add-on packages have been analyzed in detail, out of which
-roughly 10% have been chosen for inclusion in &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;&lt;em&gt;The LaTeX Companion&lt;/em&gt;&lt;/a&gt;.
-All important aspects of these packages are described
- to provide the user once again with
-a satisfying one-stop–shop experience for the decade to come.&lt;/p&gt;
-
-&lt;p&gt;To cover what we thought worth describing today, the book nearly
-doubled in size.
-The print edition is therefore produced as a two-volume set and  sold as a bundle.
-Both volumes come as hardcover with ribbons to easily mark pages in the book.&lt;/p&gt;
-
-&lt;p&gt;To give you an idea of what is covered in the third edition, here are some excerpts:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-preface.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Preface of the 3rd edition&lt;/a&gt; (317 kB)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-toc.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;1edd78f588df4fccb8edd771eb5e9727&apos;);&quot;&gt;Table of contents&lt;/a&gt; (337 kB)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/help/books/tlc3-digital-chapter-samples.pdf&quot; target=&quot;_blank&quot; onclick=&quot;vgwPixelCall(&apos;348a5d49af564cf591c8447d2fd485ca&apos;);&quot;&gt;The initial pages of &lt;em&gt;all twenty&lt;/em&gt; chapters&lt;/a&gt; (3,4 MB)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The edition is also available as an &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138115784&quot;&gt;eBook (Part I and II
-combined)&lt;/a&gt;
-consisting of PDF and ePub format without DRM.  Finally, the publisher
-offers the combination of &lt;a href=&quot;https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&amp;amp;mid=24808&amp;amp;murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489&quot;&gt;the printed books + the digital
-versions&lt;/a&gt;
-at a very attractive price not available anywhere else.
-&lt;br /&gt;
-Note that some distributors offer the two parts of the edition (also)
-individually, but usually for a much higher price compared to the
-bundle.  Also important is that the digital version offered by some
-resellers only contains either the ePub or the PDF but not both! We
-therefore recommend that you watch out for this.&lt;/p&gt;
-
-&lt;p&gt;In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/customs fees, e.g.
-by using &lt;a href=&quot;https://amzn.to/40yY7gD&quot;&gt;Amazon.de in Germany&lt;/a&gt;. However, the combination of print and digital formats is only available from the publisher’s InformIT site through the link above.&lt;/p&gt;
-
-&lt;p&gt;Happy LaTeXing
-— Frank&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 17 Mar 2023 01:00:00 +0100</pubDate>
-        <link>https://latex-project.org//news/2023/03/17/TLC3/</link>
-        <guid isPermaLink="true">https://latex-project.org//news/2023/03/17/TLC3/</guid>
-        
-        <category>latex</category>
-        
-        <category>books</category>
-        
-        <category>TLC</category>
         
         
         <category>news</category>
