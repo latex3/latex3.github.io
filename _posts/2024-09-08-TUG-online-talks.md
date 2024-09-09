@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "TUG Conference 2024 in Prague: talks and workshop"
+title: "TUG Conference 2024 in Prague: talks and accessibility workshop"
 date: 2024-09-08 00:00:00
-description: "TUG Conference 2024 in Prague: talks and workshop"
+description: "TUG Conference 2024 in Prague: talks and accessibility workshop"
 excerpt: "The TUG conference 2024 in Prague was a hybrid conference, i.e., all talks were recorded and also streamed. The recordings have been cut and cleaned up by a Norbert Preining and are now available on YouTube. [...] The LaTeX Project team also organized a workshop on automatically producing accessible PDFs with LaTeX..."
 categories: news
 tags: [latex2e, latex3, development, TLC3, conference, accessibility]

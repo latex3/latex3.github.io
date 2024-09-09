@@ -2,7 +2,8 @@
 layout: post
 title: "LaTeX 2024-06-01 PL1 released and distributed"
 date: 2024-06-13 00:00:00
-description: "We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to
+description: "LaTeX 2024-06-01 PL1 released and distributed"
+excerpt: "We sent the 2024-06-01 release (patch level 1) of the LaTeX kernel to
 CTAN.  By now it should be available to most users via TeX Live or MiKTeX...."
 categories: news
 tags: [latex2e]
