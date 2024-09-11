@@ -2,6 +2,7 @@
 .htaccess
 Gemfile.lock
 robots.txt
+/_site
 
 # vim
 *.bak
