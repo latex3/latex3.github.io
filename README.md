@@ -2,8 +2,6 @@
 
 Changes to the `master` branch can be viewed at [https://latex3.github.io/](https://latex3.github.io/), which is the staging environment. If everything looks fine, you can merge `master` with `live` to have the server running [https://www.latex-project.org/](https://www.latex-project.org/) pick up the changes.
 
-What actually happens is that the `_site` directory is pulled by the server, so it needs to contain a properly built site (see below).
-
 ## Branches
 
 **The latex-project.org staging**  
@@ -22,12 +20,14 @@ If you want to develop locally first, this is the way to contribute:
 * Commit locally and push that to your repo.
 * Send in a pull request based on the above.
 
-You can also edit/commit directly to the gh-pages branch [on github](https://github.com/latex3/latex3.github.io):
+You can also edit/commit directly to the main branch [on github](https://github.com/latex3/latex3.github.io):
 
 * Go to the file/directory you want to edit.
 * Make your changes.
 * Add a message describing your edit.
-* Commit directly to the gh-pages branch / Create a new branch for this commit and start a pull request.
+* Commit directly to the main branch / Create a new branch for this commit and start a pull request.
+
+In either case, the page will be automatically build through GitHub Actions and uploaded to the staging or live site depending on the branch.
 
 ### Requirements
 In order to contribute to the website&rsquo;s codebase, you&rsquo;ll need to know a bit about [Git](https://git-scm.com/), [Jekyll](https://github.com/jekyll/jekyll), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) or [Sass](https://sass-lang.com), [Markdown](https://daringfireball.net/projects/markdown/), and some Command Line-fu. You'll also need to know how to install *[Ruby Gems](https://rvm.io)* and of course have *[Ruby](https://www.ruby-lang.org/en/downloads/)* installed on your machine.
@@ -45,16 +45,6 @@ Trigger the local server by executing the ``jekyll serve`` task.
     $ jekyll serve
 
 Your local copy will now be accessible at `http://localhost:4000`. Then use `CTRL` + `C` to stop the server.
-
-### Generate the site version
-
-`jekyll serve` saves the site in `_site`but it changes the site url to localhost (as of version 4.x) so it is no longer possible to use that directory as the official site. Instead you now need to run
-
-
-    $ jekyll build
-
-to get the `{{ site.url }}` variable set correctly.
-
 
 ## Resources
 
