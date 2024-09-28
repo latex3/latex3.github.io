@@ -16,4 +16,4 @@ gem 'jekyll-watch'
 # gem 'therubyracer'   # needed why? doesn't work on macos
 
 # seems to be needed with ruby 3.0
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
