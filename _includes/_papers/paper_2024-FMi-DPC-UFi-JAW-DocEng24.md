@@ -13,10 +13,12 @@
 
 This application note was presented at the ACM Symposium for Document Engineering (DocEng 2024); the official version is available in the [ACM Digital Library](https://doi.org/10.1145/3685650.3685670).
 While, as described in the paper, it is now possible to automatically generate accessible and PDF/UA-2 compliant documents with LaTeX, this is not necessarily the case when special journal classes are required by the publisher.
-The `acmart` class needed for DocEng proceeding does not support tagging yet, which is the reason why the ACM DL contains only an inaccessible PDF of the paper.
+The `acmart` class needed for DocEng proceeding does not support tagging yet, which is one of the reasons why the ACM DL contains only an inaccessible PDF of the paper.
 
-However, the required enhancements to the class are fairly minor and the team has already provided the maintainer with the necessary code changes, thus we expect that it will be soon possible to produce accessible PDFs with that class as well.
+It may take some time to make the `acmart` class fully compatible with the tagging extensions in all situations, because the class supports various journals (all with different frontmatter requirement), which is an area that the project hasn't yet fully addressed.
 
-The version of the paper available from [this site here]({{site.baseurl}}/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf) has been produced using `lualatex-dev` (instead of `pdflatex`) and a patched version of the class to support tagging; other than that, no modifications to the LaTeX source were made. This version is compliant with PDF/UA-2 and the Well-Tagged PDF (WTPDF-1.0) standard.
+However, for the current article (which is fairly simple from a strutural point of view) only a few modofications to the class were necessary to make it work. Thus, the version of the paper available from [this site here]({{site.baseurl}}/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf) is compliant with PDF/UA-2 and the Well-Tagged PDF (WTPDF-1.0) standard.
+
+It has been produced using `lualatex-dev` (instead of `pdflatex`) and a patched version of the class to support tagging as far as necessary for this article. Other than that, no modifications to the LaTeX source were made. 
 
 ***
