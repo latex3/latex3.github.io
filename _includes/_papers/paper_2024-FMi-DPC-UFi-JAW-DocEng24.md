@@ -17,7 +17,7 @@ The `acmart` class needed for DocEng proceeding does not support tagging yet, wh
 
 It may take some time to make the `acmart` class fully compatible with the tagging extensions in all situations, because the class supports various journals (all with different frontmatter requirement), which is an area that the project hasn't yet fully addressed.
 
-However, for the current article (which is fairly simple from a strutural point of view) only a few modofications to the class were necessary to make it work. Thus, the version of the paper available from [this site here]({{site.baseurl}}/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf) is compliant with PDF/UA-2 and the Well-Tagged PDF (WTPDF-1.0) standard.
+However, for the current article (which is fairly simple from a strutural point of view) only a few modifications to the class were necessary to make it work. Thus, the version of the paper available from [this site here]({{site.baseurl}}/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf) is compliant with PDF/UA-2 and the Well-Tagged PDF (WTPDF-1.0) standard.
 
 It has been produced using `lualatex-dev` (instead of `pdflatex`) and a patched version of the class to support tagging as far as necessary for this article. Other than that, no modifications to the LaTeX source were made. 
 
