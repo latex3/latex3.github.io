@@ -59,13 +59,13 @@ Your local copy will now be accessible at `http://localhost:4000`. Then use `CTR
 
 ### Webdesign License
 
-The latex-project.org webdesign by [Jonas Jacek](https://jonas.me/) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/latex3/latex3.github.io](https://github.com/latex3/latex3.github.io).
+The latex-project.org webdesign by [Jonas Jacek](https://www.j15k.com/) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Based on a work at [https://github.com/latex3/latex3.github.io](https://github.com/latex3/latex3.github.io).
 
 This is a [Free Culture License](https://creativecommons.org/share-your-work/public-domain/freeworks/)!
 
 However, the license requires you to give appropriate credit to Jonas, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests Jonas or the LaTeX Project endorses you or your use.
 
-Please credit Jonas with a link to his website (https://jonas.me/) and state the license somewhere on your page. Everything else brings bad karma.
+Please credit Jonas with a link to his website ([https://www.j15k.com/](https://www.j15k.com/)) and state the license somewhere on your page. Everything else brings bad karma.
 
 ### Reporting Website Bugs
 
