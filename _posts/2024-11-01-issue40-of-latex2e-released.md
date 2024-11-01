@@ -76,4 +76,8 @@ fixed in 1994, but got missed until now!
 Another highlight is that pdfLaTeX will use the T1 encoding if you have
 `\DocumentMetadata`, even if you are not tagging.
 
+The <a href="{{site.baseurl}}/news/latex2e-news/ltnews40.pdf">newsletter</a>
+also covers various other small enhancements or corrections that we
+provide with the November release.
+
 Enjoy Joseph
