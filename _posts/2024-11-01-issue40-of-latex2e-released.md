@@ -59,9 +59,10 @@ automatically. Many refinements continue under the hood too: if you want tagged
 PDFs, make sure you are using the latest code.
 
 Making third-party code work with tagging is a key part of the project. To
-support that, at https://latex3.github.io/tagging-project/tagging-status/, we
-are collecting information on the tagging status of many LaTeX packages and
-classes.  We also started to improve tagging support in external packages.
+support that we are [collecting information on the tagging status of many LaTeX
+packages and
+classes](https://latex3.github.io/tagging-project/tagging-status/).  We also
+started to improve tagging support in external packages.
 
 ## Other improvements and changes
 
