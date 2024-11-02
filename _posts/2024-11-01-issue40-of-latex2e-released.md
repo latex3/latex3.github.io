@@ -11,7 +11,7 @@ tags: [latex2e]
 
 # LaTeX 2024-11-01 release distributed
 
-We sent the 2024-06-01 release of the LaTeX kernel to CTAN yesterday.  By tomorrow it should be available to most users _via_ TeX Live or MiKTeX.
+We sent the 2024-11-01 release of the LaTeX kernel to CTAN yesterday.  By tomorrow it should be available to most users _via_ TeX Live or MiKTeX.
 
 ### Thirty years of LaTeX2e
 
