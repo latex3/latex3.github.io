@@ -13,7 +13,7 @@ tags: [latex2e]
 
 We sent the 2024-11-01 release of the LaTeX kernel to CTAN yesterday.  By tomorrow it should be available to most users _via_ TeX Live or MiKTeX.
 
-### Thirty years of LaTeX2e
+## Thirty years of LaTeX2e
 
 This release marks 30 years since the first release of LaTeX2e. Over that time,
 LaTeX has shown itself to be both stable and adaptable. Whilst the original
