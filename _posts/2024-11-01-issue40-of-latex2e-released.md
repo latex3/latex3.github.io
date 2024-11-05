@@ -17,7 +17,7 @@ We sent the 2024-11-01 release of the LaTeX kernel to CTAN yesterday.  By tomorr
 
 This release marks 30 years since the first release of LaTeX2e. Over that time,
 LaTeX has shown itself to be both stable and adaptable. Whilst the original
-plan was that LaTeX2e would be stopping point on the journey to LaTeX3, it
+plan was that LaTeX2e would be a stopping point on the journey to LaTeX3, it
 became clear many years ago that development of LaTeX 'in place' was needed.
 Since 2015, the `latexrelease` mechanism has allowed the team to integrate new
 features into the kernel while still allowing rollback for users to older code.
