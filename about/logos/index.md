@@ -5,6 +5,15 @@ description: "Information about LaTeX logos and the use of the term LaTeX Team."
 permalink: /about/logos/
 ---
 
+
+> **Disclaimer:** This page is currently not linked, because it is
+> unfinished. If you happen to come across it, take it as a first
+> draft. It should already now explain more or less what we think the
+> logo should or shouldn't be used for. So please use this pages as a
+> general guideline and in case of questions or use cases not covered:
+> ask. Thanks.
+
+
 # LaTeX, LaTeX3 and expl3 Logos and Usage
 
 We’ve put together some assets for those times when you want to show
