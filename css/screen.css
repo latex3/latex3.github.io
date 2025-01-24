@@ -322,7 +322,7 @@ header span { position: absolute !important; top: -9999em !important; left: -999
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav { position: relative; }
-nav ul { background: #008080; list-style: none; margin: 0; text-align: center; width: 100%; }
+nav ul { background: #008080; list-style: none; margin: 0; padding: 0; text-align: center; width: 100%; }
 nav ul li { display: inline-block; margin: -1px 0 0 0; }
 nav ul li a, 
 nav ul li a:visited,
