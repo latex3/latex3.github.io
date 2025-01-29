@@ -22,5 +22,6 @@ is available in the  Project's `tagging-project`  repository.
 To see the tool in action, validating one of the Project's example WTPDF files, you may use
 the form at
 
-https://texlive.net/showtags?doc=mathml-AF-ex2-se
+[https://texlive.net/showtags?doc=mathml-AF-ex2-se](https://texlive.net/showtags?doc=mathml-AF-ex2-se)
+
 
