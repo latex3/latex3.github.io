@@ -30,7 +30,7 @@ with support from DANTE.
 To celebrate the update, Stefan has arranged a time limited 15% discount on three of his
 [LaTeX books](https://www.packtpub.com/en-us/search?q=stefan%20kottwitz&country=us&language=en)
 
-<img alt="offer poster" width="50%" src="{{site.baseurl}}/img/learnlatex15.png"/>
+<img alt="offer poster" width="100%" src="{{site.baseurl}}/img/learnlatex15.png"/>
 
 Using the voucher code LEARNLATEX15 (valid until 22nd April 2025).
 
