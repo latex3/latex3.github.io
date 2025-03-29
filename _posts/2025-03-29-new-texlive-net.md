@@ -10,7 +10,7 @@ tags: [Tutorials, Books]
 
 # New TeXLive.net server & Book Discounts
 
-The [TeXLive.net](https://texlive.net) server that hosts a public [LaTeX service](https://texlive.net/run) as used at the [learnlatex.org](https://www.learnlatex.org) tutorial site has been upgraded to a new server.
+The [TeXLive.net](https://texlive.net) server that hosts a public [LaTeX service](https://texlive.net/run) for running LaTeX in the browser (as used, for example, at the [learnlatex.org](https://www.learnlatex.org) tutorial site) has been upgraded to a new server.
 
 This server is also used by other sites such as [LaTeX Community Forum](https://latex.org/forum/) and [TikZ.net](https://tikz.net/) and the recently advertised [tool to display PDF tagging structure](https://texlive.net/showtags?doc=mathml-AF-ex2-se).
 
