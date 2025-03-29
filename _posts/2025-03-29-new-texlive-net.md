@@ -8,7 +8,7 @@ categories: news
 tags: [Tutorials, Books]
 ---
 
-# New TeXLive.net server"
+# New TeXLive.net server
 
 The TeXLive.net server that hosts a public LaTeX service as used at
 the [learnlatex.org](https://www.learnlatex.org) tutorial site
