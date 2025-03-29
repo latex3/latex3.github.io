@@ -28,7 +28,7 @@ As before, the virtual machine hosting the service has been kindly provided by S
 with support from DANTE.
 
 To celebrate the update, Stefan has arranged a time limited 15% discount on three of his
-[LaTeX books](https://www.packtpub.com/en-us/search?q=stefan%20kottwitz&country=us&language=en)
+[LaTeX books](https://www.packtpub.com/en-us/search?q=stefan%20kottwitz&country=us&language=en):
 
 <img alt="offer poster" width="100%" src="{{site.baseurl}}/img/learnlatex15.png"/>
 
