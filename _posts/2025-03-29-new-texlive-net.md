@@ -10,7 +10,7 @@ tags: [Tutorials, Books]
 
 # New TeXLive.net server
 
-The TeXLive.net server that hosts a public LaTeX service as used at
+The [TeXLive.net](https://texlive.net/run) server that hosts a public LaTeX service as used at
 the [learnlatex.org](https://www.learnlatex.org) tutorial site
 has been upgraded to a new server.
 
