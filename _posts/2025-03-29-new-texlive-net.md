@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "New TeXLive.net server"
+title: "New TeXLive.net server & Book Discounts"
 date: 2025-03-29 00:00:00
-description: "New server for TeXLive.net"
+description: "New server for TeXLive.net & Book Discounts"
 excerpt: "Updated server for TEXLive.net with latest Debian operating system and TeXLive 2025"
 categories: news
 tags: [Tutorials, Books]
