@@ -74,8 +74,7 @@ People currently involved in the LaTeX project are (in more or less chronologica
     <h2>Joseph Wright <br><span class="role">LaTeX Team</span></h2>
     <ul class="team">
       <li><a href="https://github.com/sponsors/josephwright"><span class="fa fa-github-square"></span>https://github.com/sponsors/josephwright</a></li>
-      <li><a href="mailto:joseph.wright@morningstar2.co.uk"><span class="fa fa-envelope-square"></span>joseph.wright@morningstar2.co.uk</a></li>
-      <li><a href="skype:josephawright"><span class="fa fa-skype"></span>josephawright</a></li>
+      <li><a href="mailto:joseph@texdev.net"><span class="fa fa-envelope-square"></span>joseph@texdev.net</a></li>
       <li><a href="https://www.texdev.net/"><span class="fa fa-external-link-square"></span>https://www.texdev.net/</a></li>
       <li><a href="https://tex.stackexchange.com/users/73/joseph-wright"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/73</a></li>
       <li><a href="https://www.linkedin.com/in/joseph-wright-7436a2252/"><span class="fa fa-linkedin-square"></span>https://www.linkedin.com/in/joseph-wright-7436a2252/</a></li>
