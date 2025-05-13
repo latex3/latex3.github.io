@@ -163,27 +163,6 @@ git clone  https://github.com/latex3/latex2e.git
 ```
 
 which needs about 50Mb of space.
-Alternatively, you can do a Subversion checkout from the command line, e.g.,
-
-```
-svn co https://github.com/latex3/latex2e.git/trunk
-```
-
-which will just checkout the current files.
-But be aware that a SVN checkout of the form
-
-```
-svn co https://github.com/latex3/latex2e.git
-```
-
-will download all files including their
-history (back to 2009) and amounts to **roughly 1.4Gb** so that is quite large.
-
-*Note: If you had bookmarked the old SVN repository please update that
-bookmark to the new GIT repository as we have finally removed it.*
-
-
-
 
 ### A note on Git pull requests
 
