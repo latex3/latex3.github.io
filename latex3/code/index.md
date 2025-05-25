@@ -13,6 +13,12 @@ The most important ones are:
   format and base package (what you get running `pdflatex`, `lualatex`, etc.)
    + This repository also contains the required bundles, i.e.,
    `amsmath`, `graphics`, `tools` and for historical reasons `cyrillic`.
++ [`tagging-project`](https://github.com/latex3/tagging-project) --- a repository
+  holding discussion about the tagging project
+    + There is no code held in this repository, rather it is used as the source
+      for https://latex3.github.io/tagging-project/
+    + Issues here tend to be cross-repository and may be moved if appropriate to
+      other team locations
 + [`latex3`](https://github.com/latex3/latex3) --- the L3 programming
   layer and `l3backend` (as integrated 2020 in the LaTeX format).
   + This repository also contains new code bundles for other components of LaTeX
@@ -23,7 +29,7 @@ The most important ones are:
      general use.
   +  More information about the packages included
      in the repository is documented in the top-level
-     [README](https://github.com/latex3/latex3/blob/master/README.md) of
+     [README](https://github.com/latex3/latex3/blob/main/README.md) of
      the repository.
 
 There are [various other repositories](https://github.com/latex3/),
