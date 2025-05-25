@@ -110,35 +110,9 @@ are much better suited for obtaining help.
 
 ## Discussing it
 
-The concepts developed by the LaTeX development code, as well as their implementation, are under discussion on the mailing list ‘LATEX-L’. You can join this list, which is intended solely for discussing ideas and concepts for future versions of LaTeX, by sending mail to <mailto:listserv@URZ.UNI-HEIDELBERG.DE> containing the line
-
-    SUBSCRIBE LATEX-L Your Name
-
-### Listserv web interface
-
-There exists a [web interface to the
-list](https://listserv.uni-heidelberg.de/cgi-bin/wa?A0=LATEX-L) that
-can be used to read through the posts sorted by topic and month. By
-default this is available to the general public in a read-only
-mode. If you would like to post using this interface, you have to be
-subscribed to the list and you need to log on (which is an option on
-the page).
-
-
-#### Archived posts
-
-This list is archived and, after subscription, you can retrieve older posts to it by sending mail to the above address, containing a command such as:
-
-    GET LATEX-L LOGyymm
-
-where yy=Year and mm=Month, e.g.
-
-    GET LATEX-L LOG1703
-
-for all messages sent in March 2017.
-
-
-<img src="https://ssl-vg03.met.vgwort.de/na/23f0e9e6ba4d439d8176609d38eaccae" width="1" height="1" alt="">
-
-
+For more general discussion which does not resolve around a specific code
+issue, you can use the [GitHub Discussion
+pages](https://github.com/latex3/latex2e/discussions) for the LaTeX2e
+repository. If the topic raised belongs somewhere else (for example the L3
+programming layer tracker), one of the team will move it.
 
