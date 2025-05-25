@@ -16,7 +16,7 @@ The most important ones are:
 + [`tagging-project`](https://github.com/latex3/tagging-project) --- a repository
   holding discussion about the tagging project
     + There is no code held in this repository, rather it is used as the source
-      for https://latex3.github.io/tagging-project/
+      for [The LaTeX Tagged PDF repository](https://latex3.github.io/tagging-project/)
     + Issues here tend to be cross-repository and may be moved if appropriate to
       other team locations
 + [`latex3`](https://github.com/latex3/latex3) --- the L3 programming
