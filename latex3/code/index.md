@@ -14,9 +14,11 @@ The most important ones are:
    + This repository also contains the required bundles, i.e.,
    `amsmath`, `graphics`, `tools` and for historical reasons `cyrillic`.
 + [`tagging-project`](https://github.com/latex3/tagging-project) --- a repository
-  holding discussions about the tagging project
-    + There is no distributed code held in this repository, rather it is used as the source
-      for [The LaTeX Tagged PDF repository](https://latex3.github.io/tagging-project/)
+  used for [discussions] (https://github.com/latex3/tagging-project/discussions/) of
+  tagging
+    + There is no distributed code held in this repository, but it does hold
+      the source for [The LaTeX Tagged PDF repository](https://latex3.github.io/tagging-project/)
+      and automated tagging tests
     + Issues here tend to be cross-repository and may be moved if appropriate to
       other team locations
 + [`latex3`](https://github.com/latex3/latex3) --- the L3 programming
