@@ -2,7 +2,7 @@
 layout: post
 title: "Shutdown of the LaTeX-L mailing list"
 date: 2025-05-25
-excerpt: ""
+excerpt: "Public discussion about LaTeX developments for many years took place on the LaTeX-L mailing list, hosted by the University of Heidelberg"
 categories: news
 tags: [latex2e, discussion]
 ---
