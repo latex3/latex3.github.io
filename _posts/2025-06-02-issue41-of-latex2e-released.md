@@ -49,7 +49,8 @@ The marks code was originally developed many (many) years ago as part of work
 on a new output routine (OR). Whilst today we don't plan quite such radical
 changes, we are improving the OR. To support accessibility, we need to
 integrate a number of hooks, and this is an opportunity to refactor the OR to
-use the socket/plug approach to extensibility.
+use the socket/plug approach. This should make the OR much easier to control
+without needing to completely replace it.
 
 ## Other improvements and changes
 
