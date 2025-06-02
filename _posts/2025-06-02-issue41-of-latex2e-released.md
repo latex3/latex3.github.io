@@ -11,9 +11,9 @@ tags: [latex2e]
 
 # LaTeX 2025-06-01 release distributed
 
-We sent the 2025-06-01 release (patch level 1) of the LaTeX kernel to CTAN over
-the weekend. It will be appearing to most users _via_ TeX Live about now, and
-shortly in MiKTeX.
+We sent the 2025-06-01 release of the LaTeX kernel to CTAN over the weekend. It
+will be appearing to most users _via_ TeX Live about now, and shortly in
+MiKTeX.
 
 ## News from the tagging project
 
@@ -43,13 +43,13 @@ some spacing oddities following display math mode.
 A few releases ago, we integrated a new marks mechanism into the kernel, but
 left the classical approach available as a separate code path. That has now
 been addressed: the older interfaces now use the new mechanism, and multiple
-mark classes can be used with for example `multicol`.
+mark classes can be used with, for example, `multicol`.
 
 The marks code was originally developed many (many) years ago as part of work
 on a new output routine (OR). Whilst today we don't plan quite such radical
 changes, we are improving the OR. To support accessibility, we need to
-integrate a number of hooks, and this is an opportunity to factor the OR to use
-the socket/plug approach to extensibility.
+integrate a number of hooks, and this is an opportunity to refactor the OR to
+use the socket/plug approach to extensibility.
 
 ## Other improvements and changes
 
