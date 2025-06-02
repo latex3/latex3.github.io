@@ -26,7 +26,7 @@ some caveats at present, but for many cases, this is already very usable.
 Tagging is now easier to turn on, as we've improved the keys to
 `\DocumentMetadata`: all you need now is 
 ```latex
-\DocumentMetadata{tagging = on}
+\DocumentMetadata{lang = ..., tagging = on}
 ```
 This change emphasises that we are now at the stage where a tagging is becoming
 less experimental and more routinely-usable.
