@@ -23,7 +23,7 @@ LuaTeX. The MathML can then be used as an Associated File (AF) for PDF 2.0
 output: a big step in providing accessible mathematics. There are (as usual)
 some caveats at present, but for many cases, this is already very usable.
 
-Tagging is now easiest to turn on, as we've improved the keys to
+Tagging is now easier to turn on, as we've improved the keys to
 `\DocumentMetadata`: all you need now is 
 ```latex
 \DocumentMetadata{tagging = on}
