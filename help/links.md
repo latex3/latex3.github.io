@@ -57,6 +57,8 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   An active community with a lot of LaTeX knowledge available.
 + [r/LaTeX subreddit](https://www.reddit.com/r/LaTeX/) <br>
    Another active question and answer site that also exhibits showcases and other material.
++ [TopAnswers/TeX](https://topanswers.xyz/tex) <br>
+   TopAnswers/TeX is a community-focused and open source Q&A site for LaTeX and friends
 
 ### German
 
@@ -65,6 +67,11 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [goLaTeX LaTeX Forum](https://golatex.de/)  
   Active a set of LaTeX forums. (German)
   
+### French
+
++ [TeXnique.fr](https://texnique.fr/osqa/) <br>  
+  Ce site de « questions & answers » (Q & A), soit en français « questions & réponses » (« Q & R »), est animé par ses membres dont, nous l’espérons, vous-même !
+
 ## Tutorials
 
 + [An interactive LaTeX course for beginners](https://www.learnlatex.org/) <br>
