@@ -58,7 +58,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 + [r/LaTeX subreddit](https://www.reddit.com/r/LaTeX/) <br>
    Another active question and answer site that also exhibits showcases and other material.
 + [TopAnswers/TeX](https://topanswers.xyz/tex) <br>
-   TopAnswers/TeX is a community-focused and open source Q&A site for LaTeX and friends
+   TopAnswers/TeX is a community-focused and open source Q&A site for LaTeX and friends.
 
 ### German
 
@@ -69,7 +69,7 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
   
 ### French
 
-+ [TeXnique.fr](https://texnique.fr/osqa/) <br>  
++ [TeXnique.fr](https://texnique.fr/osqa/)  
   Ce site de « questions & answers » (Q & A), soit en français « questions & réponses » (« Q & R »), est animé par ses membres dont, nous l’espérons, vous-même !
 
 ## Tutorials
