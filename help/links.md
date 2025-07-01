@@ -63,14 +63,20 @@ description: "Links to TeX and LaTeX documentation, forums, communities and ques
 ### German
 
 + [TeXwelt](https://texwelt.de/wissen/)  
-  TeX und LaTeX, Fragen und Antworten. (German)
+  TeX and LaTeX, questions and anwsers. (German)
 + [goLaTeX LaTeX Forum](https://golatex.de/)  
   Active a set of LaTeX forums. (German)
   
 ### French
 
 + [TeXnique.fr](https://texnique.fr/osqa/)  
-  Ce site de « questions & answers » (Q & A), soit en français « questions & réponses » (« Q & R »), est animé par ses membres dont, nous l’espérons, vous-même !
+  Ce site de « questions & answers » (Q & A), soit en français « questions & réponses » (« Q & R »), est animé par ses membres dont, nous l’espérons, vous-même ! (This “questions & answers” (Q&A) site is run by its members, which we hope will include you!)
+
+### मराठी (Marathi)
+
++ [TopAnswers/TeX/tex-mar-deva](https://topanswers.xyz/tex-mar-deva)
+  ह्या संकेतस्थळावर टेक् व लाटेक्-संदर्भात मराठीतून प्रश्न विचारता येतील. (On this site, you can ask questions in Marathi regarding TeX and LaTeX.)
+ 
 
 ## Tutorials
 
