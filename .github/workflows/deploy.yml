@@ -33,8 +33,16 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+      - name: Deploy to Pages
+        id: deployment
+        uses: zauguin/custom-pages@trunk
+        with:
+          server: https://deploy.latex-project.org
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,24 +55,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: ${{ runner.temp }}
-      - name: Extract page
-        run: tar xf ${{ runner.temp }}/artifact.tar
-      - name: Setup SSH
-        env:
-          SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
-          SSH_CONFIG: ${{ secrets.SSH_CONFIG }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE" > ~/.ssh/id_ed25519
-          chmod 0600 ~/.ssh/id_ed25519
-          ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub
-          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-          echo "$SSH_CONFIG" > ~/.ssh/config
-      - name: Copy content
-        run: |
-          rsync -rlpz --delete . deploy:
+      - name: Deploy to Pages
+        id: deployment
+        uses: zauguin/custom-pages@trunk
+        with:
+          server: https://deploy.latex-project.org
     environment:
       name: deploy-live
-      url: "https://www.latex-project.org/"
+      url: ${{ steps.deployment.outputs.page_url }}
