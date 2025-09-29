@@ -17,6 +17,9 @@ description: "Selection of links to PDF versions of various articles published b
 <hr class="conference-end">
 
 
+{% include _papers/paper_2025-UFi-FMi-TUG-tb143fischer-tagging25.md  %}
+
+
 <hr class="conference-start">
 
 ## ACM Symposium on Document Engineering 2025 (DocEng 2025) Nottingham, UK
