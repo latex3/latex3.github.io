@@ -26,7 +26,7 @@
 >
 > [3] Frank Mittelbach, David Carlisle, Ulrike Fischer and Joseph Wright: Automatically producing accessible and reusable PDFs with LaTeX. DocEng 2024, August 2024, San Jose, USA. [https://www.latex-project.org/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf](https://www.latex-project.org/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf)
 >
-> [4] Frank Mittelbach, David Carlisle, Ulrike Fischer and Joseph Wright: MathML and other XML Technologies for Accessible PDF from LaTeX. Paper submitted to DocEng 2025, September 2025, Nottingham, UK. [https://www.latex-project.org/publications/2024-FMi-DPC-UFi-JAW-DocEng2025-MathML-and-other-XML.pdf](https://www.latex-project.org/publications/2025-FMi-DPC-UFi-JAW-DocEng2025-MathML-and-other-XML.pdf)
+> [4] Frank Mittelbach, David Carlisle, Ulrike Fischer and Joseph Wright: MathML and other XML Technologies for Accessible PDF from LaTeX. Paper submitted to DocEng 2025, September 2025, Nottingham, UK. [https://www.latex-project.org/publications/2025-FMi-DPC-UFi-JAW-DocEng2025-MathML-and-other-XML.pdf](https://www.latex-project.org/publications/2025-FMi-DPC-UFi-JAW-DocEng2025-MathML-and-other-XML.pdf)
 >
 > [5] LaTeX Project: Tagging Status of LaTeX Packages and Classes. [https://latex3.github.io/tagging-project/tagging-status](https://latex3.github.io/tagging-project/tagging-status)
 

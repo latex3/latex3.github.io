@@ -9,6 +9,8 @@
 
 {% include _papers/paper_2025_FMi-UFi-PDFA-talk.md  %}
 
+{% include _papers/paper_PDFA-poster.md  %}
+
 <hr class="conference-end">
 
 
