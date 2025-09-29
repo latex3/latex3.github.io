@@ -12,7 +12,7 @@ description: "Selection of links to PDF versions of various articles published b
 
 ## ACM Symposium on Document Engineering 2025 (DocEng 2025) Nottingham, UK
 
-{% include _papers/paper_2025-FMi-DPC-UFi-JAW-MathML-and-other-XML.md  %}
+{% include _papers/paper_2025-FMi-DPC-UFi-JAW-DocEng-MathML-and-other-XML.md  %}
 
 <hr class="conference-end">
 
