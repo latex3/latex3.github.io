@@ -1,0 +1,30 @@
+
+
+### [Tagged and Accessible PDF with LaTeX -- revisited](https://www.pdfa.org/presentation/)
+
++ [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach) and [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer)
++ Video of the talk presented at PDF Days Europe September 2025
++ Keywords: LaTeX, tagging, accessibility, project status
++ Abstract
+> At the PDF days Europe 2022 we outlined the goals of our multi-year project for transforming LaTeX to automatically generate accessible and reusable PDF with no or only minimal configuration adjustments [1, 2]. At that point we were executing phase II (out of six phases) of this project. By now we are in the process of finishing phase IV and are able to report on a number of success stories, including
+> • LaTeX’s capability to automatically generate accessible PDF conforming to the PDF/UA-2 and WTPDF (Well-Tagged PDF) standards [3]
+> • LaTeX’s capability to produce PDF/UA-1 documents if required by a workflow (not recommended, because UA-1 is not really suitable for representing STEM documents with mathematical content)
+> • The ability to automatically generate and embed MathML directly in the PDF to produce high-quality accessible STEM documents [4]
+> • The successful transformation of the LaTeX eco-system; as of now roughly 1000 extension packages are useable when targeting accessible output. This is ongoing work with more and more packages and classes being adjusted over time [5]. In this talk we discuss the current state of the project, the existing achievements, and our plans for the future.
+>
+>References
+>
+> [1] Frank Mittelbach, Ulrike Fischer, and Chris Rowley. LaTeX Tagged PDF Feasibility Evaluation. LaTeX Project, Sept. 2020. https://latex-project.org/publications/indexbyyear/2020/.
+> [2] Frank Mittelbach and Chris Rowley: LaTeX Tagged PDF — A blueprint for a large project. TUGboat 41(3):292–298, 2020. https://tug.org/TUGboat/tb41-3/tb129mitt-tagpdf.pdf
+> [3] Frank Mittelbach, David Carlisle, Ulrike Fischer and Joseph Wright: Automatically producing accessible and reusable PDFs with LaTeX. DocEng 2024, August 2024, San Jose, USA. https://www.latex-project.org/publications/2024-FMi-DPC-UFi-JAW-doceng24.pdf
+> [4] Frank Mittelbach, David Carlisle, Ulrike Fischer and Joseph Wright: MathML and other XML Technologies for Accessible PDF from LaTeX. Paper submitted to DocEng 2025, September 2025, Nottingham, UK.
+> [5] LaTeX Project: Tagging Status of LaTeX Packages and Classes. https://latex3.github.io/tagging-project/tagging-status
+
+
+The talk was recorded and will become available on the [**PDFA website**](https://www.pdfa.org/presentation/tagged-and-accessible-pdf-with-latex/) soon.
+
+The slides of the presentation [**are available here**]({{site.baseurl}}/publications/2025-FMi-PDFA-slides.pdf).
+The audio renderings presented as as part of the talk are [the untagged math formulas]({{site.baseurl}}/publications/2025-FMi-UFi-PDFA-untagged-math-audio.m4a) and in contrast the [tagged math formulas]({{site.baseurl}}/publications/2025-FMi-UFi-PDFA-tagged-math-clearspeak-audio.m4a).
+
+***
+
