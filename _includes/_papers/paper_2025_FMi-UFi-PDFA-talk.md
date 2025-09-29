@@ -7,14 +7,13 @@
 + Keywords: LaTeX, tagging, accessibility, project status
 + Abstract
 > At the PDF days Europe 2022 we outlined the goals of our multi-year project for transforming LaTeX to automatically generate accessible and reusable PDF with no or only minimal configuration adjustments [1, 2]. At that point we were executing phase II (out of six phases) of this project. By now we are in the process of finishing phase IV and are able to report on a number of success stories, including
+>    -  LaTeX’s capability to automatically generate accessible PDF conforming to the PDF/UA-2 and WTPDF (Well-Tagged PDF) standards [3]
 >
-> • LaTeX’s capability to automatically generate accessible PDF conforming to the PDF/UA-2 and WTPDF (Well-Tagged PDF) standards [3]
+>     - LaTeX’s capability to produce PDF/UA-1 documents if required by a workflow (not recommended, because UA-1 is not really suitable for representing STEM documents with mathematical content)
 >
-> • LaTeX’s capability to produce PDF/UA-1 documents if required by a workflow (not recommended, because UA-1 is not really suitable for representing STEM documents with mathematical content)
+>     - The ability to automatically generate and embed MathML directly in the PDF to produce high-quality accessible STEM documents [4]
 >
-> • The ability to automatically generate and embed MathML directly in the PDF to produce high-quality accessible STEM documents [4]
->
-> • The successful transformation of the LaTeX eco-system; as of now roughly 1000 extension packages are useable when targeting accessible output. This is ongoing work with more and more packages and classes being adjusted over time [5].
+>     - The successful transformation of the LaTeX eco-system; as of now roughly 1000 extension packages are useable when targeting accessible output. This is ongoing work with more and more packages and classes being adjusted over time [5].
 >
 >In this talk we discuss the current state of the project, the existing achievements, and our plans for the future.
 >
