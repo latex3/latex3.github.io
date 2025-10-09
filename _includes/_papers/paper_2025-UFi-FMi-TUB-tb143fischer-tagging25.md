@@ -1,6 +1,6 @@
 
 
-### <a href="{{site.baseurl}}/publications/2025-UFi-FMi-TUG-tb143fischer-tagging25.pdf">News from the LaTeX Tagged PDF project: 2025</a>
+### <a href="{{site.baseurl}}/publications/2025-UFi-FMi-TUB-tb143fischer-tagging25.pdf">News from the LaTeX Tagged PDF project: 2025</a>
 
 + [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer) and [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach)
 + TUGboat 46:2, 2025 
