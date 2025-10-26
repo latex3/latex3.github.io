@@ -174,17 +174,16 @@ These days it is available as an <a href="https://click.linksynergy.com/deeplink
 <hr>
 
 
-#### [LaTeX Beginner's Guide](https://www.packtpub.com/latex-beginners-guide/book)
+#### [LaTeX Beginner's Guide](https://www.packtpub.com/en-us/product/latex-beginners-guide-9781801078658)
 
 ![LaTeX Beginner's Guide](stefan-kottwitz_-_latex-beginners-guide.jpg){:width="150" height="187"}
-**Edition:** 1st edition  
+**Edition:** 2nd edition  
 **Author:** Stefan Kottwitz  
 **Language:** English  
-**Date:** 2011  
+**Date:** 2025  
 **Publisher:** Packt Publishing   
-**ISBN-10:** 0321173856  
-**ISBN-13:** 978-1847199867  
-**Pages:** 336 pages  
+**ISBN-13:**  978-1801078658
+**Pages:** 354 pages  
 
 The LaTeX Beginner's Guide is packed with useful examples and explanations. 
 
