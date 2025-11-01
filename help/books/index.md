@@ -57,7 +57,7 @@ There is an [errata file](lamport-manual.pdf) for this book.
 #### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >The LaTeX Companion, 3rd edition (TTCT series)</a>
 
 ![The LaTeX Companion, 3rd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3rd-edition-ttct-series.jpeg){:width="180"}
-**Edition:** 3rd edition (paperback edition)
+**Edition:** 3rd edition (paperback edition)   
 **Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach) with [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer)   
 **Date:** 2025  
 **Language:** English  
@@ -68,7 +68,7 @@ There is an [errata file](lamport-manual.pdf) for this book.
 Compared to the previous edition the third edition nearly doubled in size.
 The print edition is therefore produced as a two-volume set --- the above information links to this bundle. The first printing was done as a hardcover, the later printings are now softcover.
 <br>
-It is also available as an <a "https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780138115784" rel="nofollow" >eBook (Part I and II combined)</a>
+It is also available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780138115784" rel="nofollow" >eBook (Part I and II combined)</a>
 consisting of PDF and ePub format without DRM.  Finally, the publisher
 offers the combination of <a href="href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >the printed books + the digital versions</a>
 at a very attractive price not available anywhere else.
