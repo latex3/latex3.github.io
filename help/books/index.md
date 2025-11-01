@@ -54,30 +54,30 @@ There is an [errata file](lamport-manual.pdf) for this book.
 
 
 
-#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >The LaTeX Companion, 3rd edition (TTCT series)</a>
+#### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >The LaTeX Companion, 3rd edition (TTCT series)</a>
 
 ![The LaTeX Companion, 3rd edition (TTCT series)](frank-mittelbach_-_the-latex-companion-3rd-edition-ttct-series.jpeg){:width="180"}
-**Edition:** 3rd edition  
+**Edition:** 3rd edition (paperback edition)
 **Authors:** [Frank Mittelbach]({{site.baseurl}}/about/team/#frank-mittelbach) with [Ulrike Fischer]({{site.baseurl}}/about/team/#ulrike-fischer)   
-**Date:** 2023  
+**Date:** 2025  
 **Language:** English  
 **Publisher:** Addison-Wesley Professional  
-**ISBN-13:** 978-0-13-816648-9   
+**ISBN-13:** 978-0-13-555684-9
 **Pages:** 976 (Part I)	and 1008 (Part II) pages  
 
 Compared to the previous edition the third edition nearly doubled in size.
-The print edition is therefore produced as a two-volume set --- the above information links to this bundle.
+The print edition is therefore produced as a two-volume set --- the above information links to this bundle. The first printing was done as a hardcover, the later printings are now softcover.
 <br>
-It is also available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >eBook (Part I and II combined)</a>
+It is also available as an <a "https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780138115784" rel="nofollow" >eBook (Part I and II combined)</a>
 consisting of PDF and ePub format without DRM.  Finally, the publisher
-offers the combination of <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-3rd-edition-9780138166489" rel="nofollow" >the printed books + the digital versions</a>
+offers the combination of <a href="href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >the printed books + the digital versions</a>
 at a very attractive price not available anywhere else.
 <br>
 Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
 Also important is that the digital version offered by some resellers only contains either the ePub or the PDF but not both! We therefore recommend that you watch out for this.
 
-In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/customs fees, e.g.
-by using [Amazon.de in Germany](https://amzn.to/40yY7gD). However, note that the combination of print and digital formats is only available from the publisher's InformIT site through the link above.
+In Europe it might be easier to buy the print edition from bookshops or from resellers such as Amazon to avoid having to deal with import/customs fees, e.g.,
+by using [Amazon.de in Germany](https://amzn.eu/d/dZ12xiM). However, note that the combination of print and digital formats is only available from the publisher's InformIT site through the link above.
 
 
 There are some extracts from the third edition as PDF files to offer some impressions of its coverage:
@@ -155,6 +155,7 @@ There is an [errata file](lgc2.err) (along with a [PDF version](lgc2-err.pdf)).
 **ISBN-13:** 978-0201433111  
 **Pages:** 560 pages  
 
+This book is no longer in print though you can still find second hand copies.
 <hr>
 
 #### <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Fguide-to-latex-adobe-reader-9780321639653" rel="nofollow" >Guide to LaTeX (TTCT series)</a>
