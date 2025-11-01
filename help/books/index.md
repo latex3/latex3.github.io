@@ -70,7 +70,7 @@ The print edition is therefore produced as a two-volume set --- the above inform
 <br>
 It is also available as an <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780138115784" rel="nofollow" >eBook (Part I and II combined)</a>
 consisting of PDF and ePub format without DRM.  Finally, the publisher
-offers the combination of <a href="href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >the printed books + the digital versions</a>
+offers the combination of <a href="https://click.linksynergy.com/deeplink?id=g/Y5ZYi0Q7I&mid=24808&murl=https%3A%2F%2Fwww.informit.com%2Fstore%2Flatex-companion-parts-i-ii-9780135556849" rel="nofollow" >the printed books + the digital versions</a>
 at a very attractive price not available anywhere else.
 <br>
 Some distributors offer the two parts of the edition also individually, but usually for a much higher price compared to the bundle.
