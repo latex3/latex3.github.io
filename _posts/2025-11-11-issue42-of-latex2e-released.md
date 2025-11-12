@@ -30,7 +30,7 @@ linked to font size).
 
 For better math tagging, we now support intent attributes: these allow for
 example `|x|` to be read as more than 'bar x bar'. Also notable for math
-mode is that we have fixed an issue with tabular cells: thse now get the
+mode is that we have fixed an issue with tabular cells: these now get the
 correct MathML representation.
 
 ## Other improvements and changes
