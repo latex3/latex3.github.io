@@ -37,6 +37,6 @@ correct MathML representation.
 
 The <a href="{{site.baseurl}}/news/latex2e-news/ltnews42.pdf">newsletter</a>
 also covers various other small enhancements or corrections that we provide
-with the Novembe release.
+with the November release.
 
 Enjoy -- Joseph
