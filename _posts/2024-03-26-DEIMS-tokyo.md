@@ -6,7 +6,7 @@ description: "Accessibility talks at DEIMS 2024 conference in Tokyo"
 excerpt: "The conference was held as a hybrid conference, i.e., all talks were recorded and also streamed and some talks were given remotely.
 The full playlist with all talks is available at ..."
 categories: news
-tags: [Accessibility, tagged PDF, latex, development, conference]
+tags: [accessibility, tagged PDF, latex, development, conference]
 ---
 
 # International [Digitization and E-Inclusion in Mathematics and Science 2024](https://workshop.sciaccess.net/deims2024/program.html) conference (DEIMS2024) in Tokyo

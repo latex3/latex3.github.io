@@ -5,7 +5,7 @@ date: 2024-12-25
 description: "Tagging the world"
 excerpt: "A Tagged PDF-themed holiday video!"
 categories: news
-tags: [latex, tagging, accessibility]
+tags: [latex, tagged PDF, accessibility]
 ---
 
 # Season's Greetings from the LaTeX Project!

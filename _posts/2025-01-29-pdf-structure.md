@@ -5,7 +5,7 @@ date: 2025-01-29 00:00:00
 description: "Extracting and validating a PDF structure Tree as XML"
 excerpt: "A new texlua script is available to extract the structure from a tagged PDF file, and RelaxNG schema are provided to validate the resulting XML."
 categories: news
-tags: [Accessibility, tagged PDF, latex, development, PDF/UA-1, PDF/UA-2]
+tags: [accessibility, tagged PDF, latex, development, PDF/UA-1, PDF/UA-2]
 ---
 
 # Extracting a Tagged PDF Structure Tree as XML

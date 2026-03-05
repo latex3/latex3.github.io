@@ -7,7 +7,7 @@ excerpt: "In the past the development version of the LaTeX2e source files has
 been managed in a Subversion source control system ... We have recently changed this 
 setup and now manage the sources using Git ... So as part of this move we also decided to finally retire the old LaTeX bug database and replace it with ..."
 categories: news
-tags: [LaTeX2e,SVN,Git,bug reporting]
+tags: [latex2e,SVN,Git,bug reporting]
 ---
 
 ## LaTeX2e sources moved from a private SVN repository to GitHub
