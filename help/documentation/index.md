@@ -36,7 +36,7 @@ description: "References to the official LaTeX documentation and to documentatio
 	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
             <ul>
               <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
-              <li><a href="#chinese-translation-of-amsldoc.pdf">Chinese translation</a></li>
+              <li><a href="#chinese-translation-of-amsldoc">Chinese translation</a></li>
             </ul>
 	  <li><a href="#quick-summary-of-changes-by-release">Summary of changes by release</a></li>
 	  <li><a href="#source-code-documentation">Source code documentation</a></li>
@@ -187,7 +187,7 @@ by the American Mathematical Society (AMS):
 
 Here are [his comments on the translation](readme_jpn/).
 
-#### Chinese translation of `amsldoc.pdf`
+#### Chinese translation of amsldoc
 
 There is also a Chinese translation as a browser document that can be found at [https://www.cnoctave.top/2.html](https://www.cnoctave.top/2.html).
 
