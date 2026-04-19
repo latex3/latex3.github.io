@@ -10,7 +10,7 @@ cd $SRCDIR/base
 
 if test $? -gt 0 ; then  cd $CURDIR; echo "cd failed" ;exit ; fi
 
-
+l3build clean
 l3build doc
 
 if test $? -gt 0 ; then  cd $CURDIR; echo "generate doc failed" ;exit ; fi
