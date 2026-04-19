@@ -155,6 +155,8 @@ Specifically targeting the typesetting of mathematics is:
      target="_blank"
      onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">User's Guide for the amsmath Package (Version 2.1)</a>
 
+There is a Japanese translation of the document listed below and there is also a Chinese translation that can be found at [https://www.cnoctave.top/2.html](https://www.cnoctave.top/2.html).
+
 
 ### Japanese translations of documentation
 
