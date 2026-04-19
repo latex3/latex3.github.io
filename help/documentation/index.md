@@ -34,7 +34,10 @@ description: "References to the official LaTeX documentation and to documentatio
 	  <li><a href="#documentation-of-the-new-hook-management">Hook management</a></li>
 	  <li><a href="#documentation-of-the-new-mark-mechanism">Page mark management</a></li>
 	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
-	  <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
+            <ul>
+              <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
+              <li><a href="#chinese-translation-of-amsldoc.pdf">Chinese translation</a></li>
+            </ul>
 	  <li><a href="#quick-summary-of-changes-by-release">Summary of changes by release</a></li>
 	  <li><a href="#source-code-documentation">Source code documentation</a></li>
         </ul>
@@ -155,10 +158,9 @@ Specifically targeting the typesetting of mathematics is:
      target="_blank"
      onclick="vgwPixelCall('bad5c323e6d74c1da25ea619481020a1');">User's Guide for the amsmath Package (Version 2.1)</a>
 
-There is a Japanese translation of the document listed below and there is also a Chinese translation that can be found at [https://www.cnoctave.top/2.html](https://www.cnoctave.top/2.html).
 
 
-### Japanese translations of documentation
+#### Japanese translations of documentation
 
 Yukitoshi FUJIMURA kindly translated two of the above documents to the Japanese language. These are
 
@@ -184,6 +186,10 @@ by the American Mathematical Society (AMS):
      target="_blank"> [source]</a>
 
 Here are [his comments on the translation](readme_jpn/).
+
+#### Chinese translation of `amsldoc.pdf`
+
+There is also a Chinese translation as a browser document that can be found at [https://www.cnoctave.top/2.html](https://www.cnoctave.top/2.html).
 
 
 
