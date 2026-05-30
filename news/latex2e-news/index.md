@@ -8,7 +8,7 @@ description: "LaTeX2e Release Newsletters. Information on the most recent versio
 
 <div class="row">
   <div class="col cell1of2">
-    <p>The most recent version of LaTeX is nominally dated 2025/11/01 (it may additionally have a patch-level associated with it).</p>
+    <p>The most recent version of LaTeX is nominally dated 2026/06/01 (it may additionally have a patch-level associated with it).</p>
     <p>We are back to a fairly regular release cycle with two releases per year: typically June and November. If you are in need of some immediate bug fix you may try the  <span class="bold">latex-dev</span> version that contains code updates for the next release (distributed as part of your normal TeX installation, see ltnews30 for details) or try the <a href="{{site.baseurl}}/get/#the-latex-git-repository">Git Repository</a> of the source code.</p>
   </div>
   <div class="col cell1of2">
@@ -24,6 +24,7 @@ In addition the newsletters are individually available below.
 
 | Release date | LaTeX2e News issue (PDF) | Important Topics covered |
 |:-------------|--------------------------|-------------------------:|
+| 2025/06/01 | [LaTeX2e News Issue 43]({{site.baseurl}}/news/latex2e-news/ltnews43.pdf) | News from tagging project: changes in `\DocumentMetadata` handling; revision of block environments, heading commands, and enumitem using the template approach; improvements and bug fixes; various smaller changes and improvements to the `base`, `tools`, and `amsmath` bundles  |
 | 2025/11/01 | [LaTeX2e News Issue 42]({{site.baseurl}}/news/latex2e-news/ltnews42.pdf) | News from tagging project; layout variations depending on current context; various code improvements and bug fixes; various smaller changes and improvements to the `base`, `tools`, and `firstaid` bundles  |
 | 2025/06/01 | [LaTeX2e News Issue 41]({{site.baseurl}}/news/latex2e-news/ltnews41.pdf) | New output routine configurations; retirement of legacy mark mechanism; new features for accessible PDF documents; various code improvements and bug fixes; various smaller changes and improvements to the `base`, `amsmath`, `tools`, and `graphics` bundles  |
 | 2024/11/01 | [LaTeX2e News Issue 40]({{site.baseurl}}/news/latex2e-news/ltnews40.pdf) | Thirty years of LaTeX2e; an important update on engine support; automatic tagging of math formulas;  tagging support for external packages; various smaller changes and improvements to the `base`, `amsmath`, `tools`, and `l3build` bundles  |
