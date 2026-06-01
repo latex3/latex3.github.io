@@ -48,6 +48,6 @@ engine in creating programmatic strings.
 
 The <a href="{{site.baseurl}}/news/latex2e-news/ltnews43.pdf">newsletter</a>
 also covers various other small enhancements or corrections that we provide
-with the November release.
+with the June release.
 
 Enjoy -- Joseph
