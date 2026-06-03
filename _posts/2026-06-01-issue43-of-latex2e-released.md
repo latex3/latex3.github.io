@@ -32,7 +32,7 @@ to 'true math'.
 
 Work on better supporting languages has been ongoing, with new `language` and
 `other-languages` keys for `\DocumentMetadata`; these support standard BCP-47
-strings such as `en-UK`.
+strings such as `en-GB`.
 
 Working on templates has prompted us to further revise some concepts that have
 been added to the kernel in recent years, to align the code more closely with
