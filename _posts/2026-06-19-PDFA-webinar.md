@@ -8,7 +8,7 @@ categories: news
 tags: [best practice guide,accessibility,accessible math,tagged PDF,PDFA,PDF/UA-2,LaTeX]
 ---
 
-# Webinaron Accessible Mathematical Content in PDF
+# Webinar on Accessible Mathematical Content in PDF
 
 The webinar "Accessible Mathematical Content in PDF", organized by the PDF Association on June 16th, was a great success from the feedback we received. 
 
