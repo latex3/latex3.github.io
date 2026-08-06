@@ -38,7 +38,7 @@ description: "References to the official LaTeX documentation and to documentatio
 	      <li><a href="#documentation-of-the-new-mark-mechanism">Page mark management</a></li>
 	      <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
             </ul>
-          <li><a href="translations-of-documentation">Translations</a></li>
+          <li><a href="#translations-of-documentation">Translations</a></li>
             <ul>
               <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
               <li><a href="#chinese-translation-of-amsldoc">Chinese translation</a></li>
@@ -189,13 +189,13 @@ Yukitoshi FUJIMURA kindly translated some of the above documents to the Japanese
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide_ja_w_annotations.pdf"
    target="_blank"
-   onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">著者のための LaTeX 2e</a> (LaTeX2e for authors --- translation in 2026)
+   onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">著者のための LaTeX2e</a> (LaTeX2e for authors --- translation in 2026)
   <a href="{{site.baseurl}}/help/documentation/usrguide_ja_w_annotations.tex"
    target="_blank"
    onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');"> [source]</a>
-+ <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.pdf"
++ <a href="{{site.baseurl}}/help/documentation/usrguide-historic_jpn.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者のための LaTeX 2e</a> (LaTeX2e for authors --- historic version (translation in 2018))
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者向け LaTeX2e — 過去のバージョン</a> (LaTeX2e for authors --- historic version (translation in 2018))
   <a href="{{site.baseurl}}/help/documentation/usrguide-historic_jpn.tex"
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> [source]</a>
