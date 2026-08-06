@@ -195,7 +195,7 @@ Yukitoshi FUJIMURA kindly translated some of the above documents to the Japanese
    onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');"> [source]</a>
 + <a href="{{site.baseurl}}/help/documentation/usrguide-historic_jpn.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者向け LaTeX2e — 過去のバージョン</a> (LaTeX2e for authors --- historic version (translation in 2018))
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者向け LaTeX2e — 旧バージョン</a> (LaTeX2e for authors --- historic version (translation in 2018))
   <a href="{{site.baseurl}}/help/documentation/usrguide-historic_jpn.tex"
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> [source]</a>
