@@ -1,0 +1,2104 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+
+% \iffalse meta-comment
+%
+% Copyright (C) 2020-2026
+% The LaTeX Project and any individual authors listed elsewhere
+% in this file.
+%
+% This file is part of the LaTeX base system.
+% -------------------------------------------
+%
+% It may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This file has the LPPL maintenance status "maintained".
+%
+% The list of all files belonging to the LaTeX base distribution is
+% given in the file `manifest.txt'. See also `legal.txt' for additional
+% information.
+%
+% The list of derived (unpacked) files belonging to the distribution
+% and covered by LPPL is defined by the unpacking scripts (with
+% extension .ins) which are part of the distribution.
+%
+% \fi
+% Filename: usrguide_ja.tex
+\documentclass{ltxguide}
+%%%%
+%  The original class file ltxguide.cls is used as-is for processing the Japanese text. Consequently, there may be instances where Japanese typesetting conventions are not strictly followed; however, as these are minor issues that do not hinder the reading of this document, they have not been addressed. 日本語テキストの処理には、オリジナルのクラスファイル ltxguide.clsをそのまま使いました。そのため、日本語の組版慣習と規則に厳密に従っていないと感じる方もいらっしゃるかもしれませんが、文書の読解を妨げるものではないと判断しました。
+%
+\usepackage{luatexja} %  Using luatexja is convenient for creating Japanese documents by reusing the style of LaTeX documents written in English. 英語で書かれたLaTeX文書のスタイルを流用して日本語文書を作るときは、luatexjaを利用するのが便利です。
+%  I increased the line spacing to make the Japanese text easier to read. Please adjust this value based on the body text size and the reader's personal preference for readability. 日本語を表示する際、読みやすくするために行間を広げました。この値は本文の文字の大きさや読む人の読みやすさによって変えてください。
+\ExplSyntaxOn
+\tl_set:Nn \baselinestretch {1.25}
+\tl_set:Nn \contentsname {Contents 目次}
+\ExplSyntaxOff
+\selectfont
+%Of course, there is no need to force a replacement of LaTeX2e commands with expl3, but I am currently practicing doing so. もちろんLaTeX2e の命令を expl3 で無理に置き換えなくてよいけど、練習中です。
+%
+\usepackage{luacolor} % lua-ul の色機能に必須
+\usepackage{lua-ul}
+\usepackage{xcolor}
+%\definecolor{softyellow}{RGB}{255, 255, 180}
+\definecolor{softpink}{RGB}{255, 220, 230}
+%
+\usepackage[left=20mm,right=75mm]{geometry}
+\usepackage{marginnote}%  I made a few adjustments to allow for the inclusion of the author's comments in the margin notes. マージンノートに訳者のコメントを入れるための調整をした。
+\setlength{\marginparwidth}{55mm} % マージンノートの幅
+\setlength{\marginparsep}{10mm}    % 本文との間隔
+%  I redefined \marginnote. \marginnoteを再定義してみた。
+\RenewDocumentCommand{\marginnote}{m}{%
+  \marginpar{{\footnotesize\textcolor{blue}{#1}}}% 
+}
+%  The `\emph` command is used to emphasize parts of a sentence; while this renders text in italics for English, it produces bold text for Japanese. Consequently, using `\emph` on Japanese text that includes English words results in an unattractive appearance. To address this, I used lua-u to create the `\jpemph` command, which applies underlining instead of italics to the emphasized sections. I also considered how to handle nested emphasis but ultimately decided against it. 文の一部を強調する命令で\emphがあります。これは英文ですとイタリックになりますが、日本語は太字になります。したがって、英文を含んだ日本文を\emphで処理すると、見た目が悪くなります。そこでlua-uを使って、\jpemph命令を作成しました。これは強調したい箇所をイタリックではなくて下線を引くことで行います。入れ子になった強調の処理も検討しましたが、諦めました。
+\DeclareRobustCommand{\jpemph}[1]{%
+  \underLine{#1}%
+}
+%  For quotation marks in the original text (such as ` and ', or `` and ''), Japanese-style brackets (「 」) have been used in the translation. For instances where `\enquote{}` appears in the original, I created a `\jpquote{}` command to correspond to it. 原文中の引用符（` や '、および `` や ''）は、日本語訳ではかぎ括弧「 」を用いました。原文で `\enquote{}` が使用されている箇所は、原文の\enquote{}に合わせて、\jpquote{}を作りました。
+% The main difference is largely a style convention, not a difference in meaning. In general, American English uses double quotation marks for the main quote and single quotes for a quote inside that quote, while British English usually does the reverse.一般的に、アメリカ英語では主要な引用にダブルクォーテーション（" "）を使い、その中の引用（入れ子になった引用）にシングルクォーテーション（' '）を使いますが、イギリス英語では通常その逆になります。
+%   One of the biggest differences is where commas and periods go. American English typically puts commas and periods inside the quotation marks, while British English usually puts them outside unless they are part of the quoted material. 大きな違いの一つは、カンマやピリオドの位置です。アメリカ英語では通常、カンマやピリオドを引用符の内側に置きますが、イギリス英語では、それらが引用文の一部である場合を除き、通常は外側に置きます。
+\DeclareRobustCommand{\jpquote}[1]{「#1」}
+% Next is a prototype. It is not used in this translation. 次は試作です。この翻訳では使っていません。
+%\DeclareRobustCommand{\booktitle}[1]{『#1』}
+%\jpquote{重要} → 「重要」
+%\jpquote*{重要} → 『重要』
+%\jpquote{彼は \jpquote*{そうです} と言った}
+%\jpquote{\booktitle{LaTeX Companion}を読もう。}
+%  No distinction is made in the Japanese translation between the English semicolon (;) and colon (:). 英文のセミコロン（;）、コロン（;）については、日本語訳で区別していません。
+% Defined the hyperlink color. ハイパーリンクの色を定義した。
+\usepackage[colorlinks=true, linkcolor=magenta, citecolor=blue]{hyperref}% 
+%
+%  Not all sentences cited as examples have been translated, for example ``A much longer and more detailed text for demonstration purposes.'' 例として挙げられたすべての文が翻訳されているわけではありません。例えば、``A much longer and more detailed text for demonstration purposes.''は訳していません。
+%  Finally, I would like to apologize once again. Yet again, I have undertaken a translation without regard for the limitations of my own knowledge and ability.🙇😀
+%%%
+%%%%
+\usepackage[T1]{fontenc}  % needed for \textbackslash in tt
+\usepackage{csquotes} %
+\usepackage{fancyvrb}% To ensure that `fancyvrb` functions correctly in a Japanese environment, LuaTeX-ja provides a wrapper package named `lltjp-fancyvrb`. Consequently, a warning is issued. luatexjaではfancyvrbの機能を日本語環境で適切に動作させるために、lltjp-fancyvrbという名前のラッパーパッケージを提供しています。したがってワーニングが出ます。
+\usepackage{url}
+
+\newcommand\jpnewline{\unskip\vspace{3pt}\newline}
+
+\title{\LaTeX\ for authors\\ current version \\
+著者のための\LaTeX\\
+最新版}
+\author{\copyright~Copyright 2020--2025, \LaTeX\ Project Team.\\
+   All rights reserved.%
+   \footnote{This file may be distributed and/or modified under the
+     conditions of the \LaTeX{} Project Public License, either version 1.3c
+     of this license or (at your option) any later version. See the source
+    \texttt{usrguide.tex} for full details.  \jpnewline
+    このファイルは、\LaTeX{} Project Public License（バージョン1.3c、または任意のそれ以降のバージョン）の条件下で配布および／または改変することができます。詳細については、ソースファイル \texttt{usrguide.tex}をご覧ください。  \jpnewline \textcolor{blue}{\fbox{AI Disclosure}
+This translation was produced using multiple machine translation tools, alongside several free, no-registration generative AI services to verify the content and refine the translated text. The Japanese translation follows the English original to facilitate comparison and verification. All marginal notes are comments intended for the translator's own reference. この翻訳は、複数の機械翻訳を使って行い、内容の確認と訳文の整理のためにユーザ登録不要の無料で使うことのできる複数の生成AIを使いました。原文との比較と翻訳内容を確認するために英語の原文の後に日本語訳を入れました。すべてのマージンノートは訳者自身のためのコメントです。}}%
+}
+
+\date{2026-02-12}
+
+\NewDocumentCommand\cs{m}{\texttt{\textbackslash\detokenize{#1}}}
+\NewDocumentCommand\marg{m}{\arg{#1}}
+\NewDocumentCommand\meta{m}{\ensuremath{\langle}\textit{#1}\ensuremath{\rangle}}
+\NewDocumentCommand\pkg{m}{\textsf{#1}}
+\NewDocumentCommand\text{m}{\ifmmode\mbox{#1}\else#1\fi}
+% Fix a 'feature'
+\makeatletter
+\renewcommand \verbatim@font {\normalfont \ttfamily}
+\makeatother
+
+
+% for fpeval documentation
+
+\providecommand\fpop[1]{\mathop{\texttt{#1}}}
+\providecommand\fpbin[1]{\mathbin{\texttt{#1}}}
+\providecommand\fprel[1]{\mathrel{\texttt{#1}}}
+\providecommand\nan{\texttt{NaN}}
+
+\ExplSyntaxOn
+\ProvideExpandableDocumentCommand \fpeval { m } { \fp_eval:n {#1} }
+\ExplSyntaxOff
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction
+はじめに}
+
+\LaTeXe{} was released in 1994 and added a number of then-new concepts to
+\LaTeX{}. These are described in \texttt{usrguide-historic}, which has largely remained
+unchanged. Since then, the \LaTeX{} team have worked on a number of ideas,
+firstly a programming language for \LaTeX{} (\pkg{expl3}) and then a range of
+tools for document authors which build on that language. Here, we describe
+\emph{stable} and \emph{widely-usable} concepts that have resulted from that
+work. These `new' ideas have been transferred from development packages
+into the \LaTeXe{} kernel. As such, they are now available to \emph{all}
+\LaTeX{} users and have the \emph{same stability} as any other part of the
+kernel. The fact that `behind the scenes' they are built on \pkg{expl3}
+is useful for the development team, but is not directly important to users.
+\jpnewline
+\LaTeXe{}は1994年に公開され、その当時新しい多くの概念を\LaTeX{}に導入しました。これらは\texttt{usrguide-historic}で説明していますが、その内容は現在にいたるまでほとんど変わっていません。その後に、\LaTeX{}開発チームは多くのアイデアに取り組んできました。最初は、\LaTeX{}のためのプログラミング言語（つまり\highLight[softpink]{\pkg{expl3}}）\marginnote{訳注：\highLight[softpink]{\pkg{expl3}}は、L3プログラミング層と呼ばれることもあるようです。\highLight[softpink]{\pkg{expl3}} is apparently also referred to as the L3 programming layer.}を開発し、次にその言語を土台にした文書作成者向けのさまざまなツールの開発に取り組みました。ここでは、その作業の結果として得られた中から、\jpemph{安定していて}そして\jpemph{幅広く利用できる}概念と考えかたについて説明します。これらの「新しい」アイデアは、開発パッケージから\LaTeXe{}カーネルに取り込まれました。そのため、\jpemph{すべて}の\LaTeX{}ユーザーが利用できるようになり、カーネルの他の部分と\jpemph{同じ安定性}を備えています。これらが「舞台裏」で \pkg{expl3}に基づいて構築されているという事実は、開発チームにとっては有益ですが、一般のユーザーにとって直接重要なことではありません。
+
+\section{Creating document commands and environments
+ドキュメントコマンドと環境の作成}
+
+
+\subsection{Overview
+概要}
+
+Creating document commands and environments using the \LaTeX3 toolset is based
+around the idea that a common set of descriptions can be used to cover almost
+all argument types used in real documents. Thus parsing is reduced to a simple
+description of which arguments a command takes: this description provides the
+`glue' between the document syntax and the implementation of the
+command.
+\jpnewline
+\LaTeX3{}のツールセットを使用したドキュメントコマンドと環境の作成は、実際のドキュメントで使用されるほとんどすべての引数タイプをカバーするために、共通の記述セットを使用できるという考えに基づいています。したがって、必要なのはコマンドがどのような引数を取るかを簡潔に記述することだけになります。この記述は、ドキュメントの構文とコマンドの実装の間の「接着剤」となります。
+
+First, we will describe the argument types, then move on to explain how these
+can be used to create both document commands and environments. Various more
+specialized features are then described, which allow an even richer application
+of a simple interface set up.
+\jpnewline
+まず最初に、引数の型について説明し、次にこれらを使ってドキュメントコマンドと環境の両方を作成する方法について説明します。次に、より特殊なさまざまな機能について説明します。これにより、簡潔に設計したインターフェースを、より豊かに応用できるようになります。
+
+The details here are intended to help users create document commands in
+general. More technical detail, suitable for \TeX{} programmers, is included
+in \texttt{interface3}.
+\jpnewline
+ここで述べる詳細は、一般のユーザーがドキュメントコマンドを作成する際の助けとなることを意図しています。 \TeX{}プログラマに適した技術的な詳細は、\texttt{interface3}に含まれています。
+
+\subsection{Describing argument types
+引数の型について}
+
+In order to allow each argument to be defined independently, the parser does
+not simply need to know the number of arguments for a function, but also the
+nature of each one. This is done by constructing an \emph{argument
+specification}, which defines the number of arguments, the type of each
+argument and any additional information needed for the parser to read the user
+input and properly pass it through to internal functions.
+\jpnewline
+各引数を独立に定義できるようにするには、パーサーは関数の引数の個数だけでなく、それぞれの引数の種類も知っていなければなりません。これは、引数の個数、各引数の型、さらにパーサーがユーザー入力を取得して内部関数へ適切に渡すために必要な追加情報を定める\jpemph{引数指定}（argument specification）を与えることで実現されます。
+
+The basic form of the argument specifier is a list of letters, where each
+letter defines a type of argument. As will be described below, some of the
+types need additional information, such as default values. The argument types
+can be divided into two, those which define arguments that are mandatory
+(potentially raising an error if not found) and those which define optional
+arguments. The mandatory types
+\jpnewline
+引数指定子の基本形は文字が並んだものであり、各文字が1つの引数型を表します。後述するように、型によってはデフォルト値などの追加情報が必要な場合があります。引数型は、必須引数を定義するもの（見つからない場合にはエラーになることがある）と、オプション引数を定義するものの2つに分けられます。必須の型は以下の通りです。
+
+\begin{itemize}
+  \item[\texttt{m}] A standard mandatory argument, which can either be a single token
+    alone or multiple tokens surrounded by curly braces |{}|. Regardless of the
+    input, the argument will be passed to the internal code without the outer
+    braces. This is the type specifier for a normal \TeX{} argument.
+ \jpnewline   
+        標準的な必須引数であり、単一の\highLight[softpink]{トークン}\marginnote{訳注：\highLight[softpink]{トークン}（token）とは日常語では何かの印や切符などの価値の単位を表し単語です。コンピュータでは処理の最小単位のことです。In everyday words, a \emph{\highLight[softpink]{token}} refers to a mark or a unit of value, such as a ticket. In computing, it represents the smallest unit of processing.}
+、または波括弧（brace）|{}|で囲まれた複数のトークンのいずれかとなります。入力がどのような形であれ、引数は外側の波括弧を除いた状態で内部のコードに渡されます。これは通常\TeX{}引数のための型指定子です。  \item[\texttt{r}] Given as \texttt{r}\meta{token1}\meta{token2}, this denotes a
+    `required' delimited argument, where the delimiters are
+    \meta{token1} and \meta{token2}. If the opening delimiter \meta{token1} is
+    missing, the default marker \cs{NoValue} will be inserted after a suitable
+    error.  
+ \jpnewline   
+ \texttt{r}\meta{token1}\meta{token2}の形で与えると、これは区切り付きの必須引数を表します。このとき、区切り記号は\meta{token1}と\meta{token2}です。開始区切り\meta{token1}が欠けている場合には、適切なエラーを出したうえで、既定のマーカー\cs{NoValue}が挿入されます。
+ 
+  \item[\texttt{R}] Given as \texttt{R}\meta{token1}\meta{token2}\marg{default},
+    this is a `required' delimited argument as for~\texttt{r},
+    but it has a user-definable recovery \meta{default} instead of
+    \cs{NoValue}.
+    \jpnewline
+\texttt{R}\meta{token1}\meta{token2}\marg{default}の形で与えると、これは\texttt{r}と同様の区切り付き必須引数を表しますが、\cs{NoValue}の代わりに、ユーザーが指定する回復用の既定値\meta{default}を用います。
+  \item[\texttt{v}] Reads an argument `verbatim', between the following
+    character and its next occurrence, in a way similar to the argument
+    of the \LaTeXe{} command \cs{verb}. Thus a \texttt{v}-type argument
+    is read between two identical characters, which cannot be any of |%|, |\|,
+    |#|, |{|, |}| or \verb*| |. The verbatim argument can also be enclosed
+    between braces, |{| and |}|. A command with a verbatim argument will
+    produce an error when it appears within an argument of another command.
+    \jpnewline
+     \LaTeXe{}のコマンド\cs{verb}の引数と同様の方法で、直後の文字を区切り文字として、その次に同じ文字が現れるまでを`\highLight[softpink]{逐語的（verbatim）}\marginnote{訳注：\highLight[softpink]{\enquote{verbatim}}はラテン語で\jpquote{言葉}を意味する語に由来します。そこから「逐語的な」「一言一句そのまま」という意味で使われます。\LaTeX{}では、入力した文字をそのまま出力するということです。\texttt{v}型の引数とは verbatim argument typeの略です。セクション\ref{逐語的引数}に説明があります。\highLight[softpink]{\enquote{verbatim}} derives from the Latin word for "word." It is used to mean "verbatim" or "word-for-word." In \LaTeX{}, this means that the input characters are output exactly as they are. The \texttt{v}-type argument stands for "verbatim argument type"; this is explained in Section \ref{逐語的引数}.}
+に読み込みます。つまり、\texttt{v}型の引数は2つの同じ文字の間で読み込まれますが、その文字として |%|、|\|、|#|、|{|、|}|、または\verb*| |を使うことはできません。逐語的引数は、波括弧 |{|と|}|で囲むことも可能です。逐語的引数を持つコマンドは、別のコマンドの引数内で使うとエラーになります。
+       \item[\texttt{b}] Only suitable in the argument specification of an
+    environment, it denotes the body of the environment, between
+    |\begin|\marg{environment} and |\end|\marg{environment}.  See
+    Section~\ref{sec:cmd:body} for details.
+ \jpnewline   
+    環境の引数指定においてのみ使用可能であり、|\begin{environment}|と|\end{environment}|の間に位置する環境の本体を表します。詳細はセクション~\ref{sec:cmd:body}を参照してください。
+  \item[\texttt{c}] Only suitable in the argument specification of an
+    environment, it denotes collection of the environment verbatim, between
+    |\begin|\marg{environment} and |\end|\marg{environment}.  See
+    Section~\ref{sec:cmd:verbenv} for details.
+    \jpnewline
+    環境の引数指定においてのみ使用可能であり、|\begin{environment}|と|\end{environment}|の間にある環境の内容を逐語的に取得することを表します。詳細はセクション \ref{sec:cmd:verbenv}を参照してください
+\end{itemize}
+The types which define optional arguments are:
+\jpnewline
+オプション引数を定義する型は以下の通りです：
+\begin{itemize}
+  \item[\texttt{o}] A standard \LaTeX{} optional argument, surrounded with square
+    brackets, which will supply the special \cs{NoValue} marker if not given
+    (as described later).
+\jpnewline    
+標準的な\LaTeX{}のオプション引数で、角括弧（square bracket）で囲まれます。値が指定されない場合、特別なマーカー\cs{NoValue}が渡されます（後述）。 
+  \item[\texttt{d}] Given as \texttt{d}\meta{token1}\meta{token2}, an optional
+    argument which is delimited by \meta{token1} and \meta{token2}. As with
+    \texttt{o}, if no value is given the special marker \cs{NoValue} is
+    returned.
+ \jpnewline   
+ \texttt{d}\meta{token1}\meta{token2}の形式で指定されるオプション引数で、\meta{token1}と\meta{token2}によって区切られます。\texttt{o}と同様に、値が指定されない場合は特別なマーカー \cs{NoValue}が返されます。 
+  \item[\texttt{O}] Given as \texttt{O}\marg{default}, is like \texttt{o}, but returns
+    \meta{default} if no value is given.
+\jpnewline    
+ \texttt{O}\marg{default}の形式で指定されます。\texttt{o}と同様ですが、値が与えられない場合には\meta{default}を返します。 
+  \item[\texttt{D}] Given as \texttt{D}\meta{token1}\meta{token2}\marg{default}, it is
+    as for \texttt{d}, but returns \meta{default} if no value is given.
+    Internally, the \texttt{o}, \texttt{d} and \texttt{O} types are
+    short-cuts to an appropriated-constructed \texttt{D} type argument.
+\jpnewline    
+\texttt{D}\meta{token1}\meta{token2}\marg{default}の形式で指定されます。\texttt{d}と同様ですが、値が指定されない場合は\meta{default}が返されます。内部的には、\texttt{o}、\texttt{d}、\texttt{O}は、適切に構成された \texttt{D}型引数の略記です。
+  \item[\texttt{s}] An optional star, which will result in a value
+    \cs{BooleanTrue} if a star is present and \cs{BooleanFalse}
+    otherwise (as described later).
+ \jpnewline   
+オプションの星印です。星印が存在する場合は\cs{BooleanTrue}、存在しない場合は\cs{BooleanFalse}という値になります（後述）。 
+  \item[\texttt{t}] An optional \meta{token}, which will result in a value
+    \cs{BooleanTrue} if \meta{token} is present and \cs{BooleanFalse}
+    otherwise. Given as \texttt{t}\meta{token}.
+\jpnewline    
+省略可能な \meta{token} を読み取る引数です。 \meta{token}が存在する場合は \cs{BooleanTrue}、存在しない場合は\cs{BooleanFalse}になります。 \texttt{t}\meta{token}の形で指定します。
+
+  \item[\texttt{e}] Given as \texttt{e}\marg{tokens}, a set of optional
+    \emph{embellishments}, each of which requires a \emph{value}.
+    If an embellishment is not present, \cs{NoValue} is returned.  Each
+    embellishment gives one argument, ordered as for the list of
+    \meta{tokens} in the argument specification.  All \meta{tokens}
+    must be distinct.
+\jpnewline    
+ \texttt{e}\marg{tokens}の形式で指定される、値を伴う省略可能の\jpemph{修飾子}（embellishment）の集りを読み取る引数です。各修飾子には対応する \jpemph{値}（value）が必要です。修飾子が存在しない場合、\cs{NoValue}が返されます。各修飾子ごとに1~つの引数が与えられ、その順序は引数指定の中の \meta{tokens}の並んだ順序に従います。すべての\meta{tokens}は互いに異なるものである必要があります。 
+  \item[\texttt{E}] As for \texttt{e} but returns one or more \meta{defaults}
+    if values are not given: \texttt{E}\marg{tokens}\marg{defaults}. See
+    Section~\ref{sec:cmd:embellishment} for more details.
+\jpnewline 
+ \texttt{e}と同様ですが、値が与えられない場合は1つ以上の\meta{defaults}を返します：\texttt{E}\marg{tokens}\marg{defaults}。詳細はセクション~\ref{sec:cmd:embellishment}を参照してください。
+\end{itemize}
+
+\subsection{Modifying argument descriptions
+引数記述の変更}
+
+In addition to the argument \emph{types} discussed above, the argument
+description also gives special meaning to \highLight[softpink]{three other characters}.\marginnote{訳注： \enquote{three other characters}, but four. \texttt{+}, \texttt{!},\texttt{-}, \texttt{>}}
+\jpnewline
+前述した引数の\jpemph{型}（type）に加えて、引数記述ではさらに4つの文字が特別な意味を持ちます。
+
+
+First, \texttt{+} is used to make an argument long (to accept paragraph
+tokens). In contrast to \cs{newcommand}, this applies on an
+argument-by-argument basis. So modifying the example to `|s o o +m O{default}|'
+means that the mandatory argument is now \cs{long}, whereas the optional
+arguments are not.
+\jpnewline
+第一に、\texttt{+}は引数を \cs{long}にします。つまり、その引数で段落トークンを受け付けられるようにします。\cs{newcommand}とは異なり、この指定は引数ごとに適用されます。したがって、例を`|s o o +m O{default}|'のように変更すると、必須引数だけが \cs{long}となり、オプション引数は\cs{long}にはなりません。
+
+Secondly, \texttt{!} is used to control whether spaces are allowed before
+optional arguments. There are some subtleties to this, as \TeX{} itself
+has some restrictions on where spaces can be `detected': more detail
+is given in Section~\ref{sec:cmd:opt-space}.
+\jpnewline
+第二に、\texttt{!}はオプション引数の前に空白を許すかどうかを制御するために使います。ただし、この点には少し微妙なところがあります。\TeX{}自体に、空白を「検出」できる位置についていくつか制約があるためです。詳細はセクション~\ref{sec:cmd:opt-space}を参照してください。
+
+Thirdly, \texttt{=} is used to declare that the following argument should
+be interpreted as a series of\highLight[softpink]{ keyvals}. See Section~\ref{sec:cmd:keyval}
+for more details.\marginnote{訳註：Inconsistencies in the notation of `keyval, `key--value', `keyval-form', `keyval form' ​​in the original text. 原文の keyvalsの表記の揺れ。}
+\jpnewline
+第三に、\texttt{=}は、その直後の引数をキー--値の並びとして解釈するよう指定するために使います。\marginnote{訳注：\highLight[softpink]{キー--値}（keyval）は、何かを表す項目を\jpemph{キー}（key）と呼び、キーの具体的な内容を\jpemph{値}（value）として対応づける考え方です。}
+詳細はセクション~\ref{sec:cmd:keyval}を参照してください。
+
+Finally, the character \texttt{>} is used to declare so-called
+`argument processors', which can be used to modify the contents of an
+argument before it is passed to the macro definition. The use of argument
+processors is a somewhat advanced topic, (or at least a less commonly used
+feature) and is covered in Section~\ref{sec:cmd:processors}.
+\jpnewline
+最後に、\texttt{>}は、いわゆる「\highLight[softpink]{引数プロセッサ}」を指定するために使います。これを用いると、引数の内容をマクロ本体に渡す前に加工できます。引数プロセッサの利用はやや高度な話題であり、少なくとも比較的あまり使われない機能です。詳しくはセクション~\ref{sec:cmd:processors}で説明します。\marginnote{訳注：「\highLight[softpink]{引数プロセッサ}（argument processors）」は、マクロに渡される前の引数を、その前後のスペースを削除するなど自動的に整理する仕組みです。\emph{Argument processors} are a mechanism that automatically organizes arguments passed to a macro—such as by removing leading and trailing spaces—before they are processed.}
+
+\subsection{Creating document commands and environments
+ドキュメントコマンドと環境の作成}
+
+\begin{decl}
+  |\NewDocumentCommand|     \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\RenewDocumentCommand|   \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\ProvideDocumentCommand| \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\DeclareDocumentCommand| \arg{cmd} \arg{arg spec} \arg{code}
+\end{decl}
+This family of commands are used to create a \meta{cmd}. The argument
+specification for the function is given by \meta{arg spec}, and the command
+uses the \meta{code} with |#1|, |#2|, etc.\ replaced by the arguments found
+by the parser.
+\jpnewline
+これらのコマンド群は、\meta{cmd}を定義するために用います。そのコマンドの引数仕様は\meta{arg spec} で与えます。実行時には、\meta{code}中の|#1|、|#2|などが、パーサーによって取得された引数に置き換えられます。
+
+An example:
+\jpnewline
+例えば：
+\begin{verbatim}
+   \NewDocumentCommand\chapter{s o m}
+     {%
+       \IfBooleanTF{#1}%
+         {\typesetstarchapter{#3}}%
+         {\typesetnormalchapter{#2}{#3}}%
+     }
+\end{verbatim}
+would be a way to define a \cs{chapter} command which would essentially behave
+like the current \LaTeXe{} command (except that it would accept an optional
+argument even when a \texttt{*} was parsed). The \cs{typesetnormalchapter}
+could test its first argument for being \cs{NoValue} to see if an optional
+argument was present. (See Section~\ref{sec:cmd:special} for details of
+\cs{IfBooleanTF} and testing for \cs{NoValue}.)
+\jpnewline
+これは、基本的には現在の \LaTeXe{}の\cs{chapter}コマンドと同様に動作する\cs{chapter}を定義する一例です（ただし、\texttt{*}が取得された場合でもオプション引数を受け付ける点は異なります）。\cs{typesetnormalchapter}は、第1引数が\cs{NoValue}かどうかを調べることで、オプション引数が与えられていたかどうかを判定できます。（\cs{IfBooleanTF}および\cs{NoValue}かどうかの判定については、セクション~\ref{sec:cmd:special}を参照してください。）
+
+
+The difference between the \cs{New...} \cs{Renew...}, \cs{Provide...}
+and \cs{Declare...} versions is the behavior if \meta{cmd} is already
+defined.
+\jpnewline
+\cs{New...}、\cs{Renew...}、\cs{Provide...}、および \cs{Declare...}の違いは、\meta{cmd}がすでに定義されている場合の挙動にあります。
+\begin{itemize}
+ \item \cs{NewDocumentCommand} will issue an error if \meta{cmd}
+   has already been defined.
+\jpnewline   
+\cs{NewDocumentCommand}は、\meta{cmd}がすでに定義されている場合にエラーを出します。 
+ \item \cs{RenewDocumentCommand} will issue an error if \meta{cmd}
+   has not previously been defined.
+  \jpnewline 
+ \cs{RenewDocumentCommand}は、\meta{cmd}があらかじめ定義されていない場合にエラーを出します。
+ \item \cs{ProvideDocumentCommand} creates a new definition for
+   \meta{cmd} only if one has not already been given.
+ \jpnewline  
+ \cs{ProvideDocumentCommand}は、\meta{cmd}がまだ定義されていない場合にのみ、新たに定義を行います。
+ \item \cs{DeclareDocumentCommand} will always create the new
+   definition, irrespective of any existing \meta{cmd} with the
+   same name.  This should be used sparingly.
+ \jpnewline  
+\cs{DeclareDocumentCommand}は、同名の\meta{cmd}がすでに存在していても、常に新しい定義を作成します。このコマンドの使用は必要最小限にとどめるべきです。
+\end{itemize}
+
+If the \meta{cmd} can't be provided as a single token but needs
+\enquote{constructing}, you can use \cs{ExpandArgs} as explained in
+Section~\ref{sec:preconstructing-csnames} which also gives an example
+in which this is needed.
+\jpnewline
+\meta{cmd}を単一のトークンとして与えられず、\jpquote{組み立てる}必要がある場合は、セクション~\ref{sec:preconstructing-csnames}で説明されている \cs{ExpandArgs}を使うことができます。同セクションには、この機能が必要になる例も示されています。
+
+\begin{decl}
+  |\NewDocumentEnvironment|     \arg{env} \arg{arg spec} \arg{beg-code} \arg{end-code} \\
+  |\RenewDocumentEnvironment|   \arg{env} \arg{arg spec} \arg{beg-code} \arg{end-code} \\
+  |\ProvideDocumentEnvironment| \arg{env} \arg{arg spec} \arg{beg-code} \arg{end-code} \\
+  |\DeclareDocumentEnvironment| \arg{env} \arg{arg spec} \arg{beg-code} \arg{end-code}
+\end{decl}
+These commands work in the same way as \cs{NewDocumentCommand}, etc.\@, but
+create environments (\cs{begin}\arg{env} \ldots{}
+\cs{end}\arg{env}). Both the \meta{beg-code} and \meta{end-code}
+may access the arguments as defined by \meta{arg spec}. The arguments will be
+given following \cs{begin}\arg{env}. Any spaces at the start and end of the
+\arg{env} are removed before the definition takes place, thus
+\jpnewline
+これらのコマンドは\cs{NewDocumentCommand} などと同様に動作しますが、環境（\cs{begin}\arg{env} \ldots{} \cs{end}\arg{env}）を定義します。\meta{beg-code}と\meta{end-code}のいずれも、\meta{arg spec}で定義された引数にアクセスできます。引数は \cs{begin}\arg{env}に続けて指定します。\arg{env}の先頭および末尾にある空白は、定義が行われる前に取り除かれるため、
+\begin{verbatim}
+   \NewDocumentEnvironment{foo}
+\end{verbatim}
+and
+\jpnewline
+と
+\begin{verbatim}
+   \NewDocumentEnvironment{ foo }
+\end{verbatim}
+both create the same \enquote{\texttt{foo}} environment.
+\jpnewline
+は、どちらも同じ\enquote{\texttt{foo}}環境を定義します。
+
+
+\subsection{Optional arguments
+オプション引数}
+\label{sec:cmd:opt}
+\label{sec:cmd:opt}
+
+In contrast to commands created using \LaTeXe{}'s \cs{newcommand}, optional
+arguments created using \cs{NewDocumentCommand} may safely be nested. Thus for
+example, following
+\jpnewline
+\LaTeXe{}の\cs{newcommand}で作成したコマンドとは異なり、\cs{NewDocumentCommand}で作成したコマンドのオプション引数は、安全に入れ子にできます。例えば、
+\begin{verbatim}
+   \NewDocumentCommand\foo{om}{I grabbed `#1' and `#2'}
+   \NewDocumentCommand\baz{o}{#1-#1}
+\end{verbatim}
+using the command as
+\jpnewline
+と定義しておき、次のように使うと
+\begin{verbatim}
+   \foo[\baz[stuff]]{more stuff}
+\end{verbatim}
+will print
+\jpnewline
+これは
+\begin{quote}
+I grabbed `stuff-stuff' and `more stuff'
+\end{quote}
+と出力されます。
+
+This is particularly useful when placing a command with an optional argument
+\emph{inside} the optional argument of a second command.
+\jpnewline
+これは特に、オプション引数を持つコマンドを、別のコマンドのオプション引数の\jpemph{内側}に入れて使う場合に便利です。
+
+
+When an optional argument is followed by a mandatory argument with the same
+delimiter, the parser issues a warning because the optional argument could not
+be omitted by the user, thus becoming in effect mandatory. This can apply to
+\texttt{o}, \texttt{d}, \texttt{O}, \texttt{D}, \texttt{s}, \texttt{t},
+\texttt{e}, and \texttt{E} type arguments followed by \texttt{r} or
+\texttt{R}-type required arguments.
+\jpnewline
+オプション引数の直後に、同じ区切り文字を持つ必須引数が続く場合、そのオプション引数はユーザーが省略できず、実質的に必須引数になってしまいます。そのため、パーサーは警告を出します。これは、\texttt{r}または\texttt{R}型の必須引数が後続する、\texttt{o}、\texttt{d}、\texttt{O}、\texttt{D}、\texttt{s}、\texttt{t}、\texttt{e}、\texttt{E}型の引数に当てはまります。
+
+The default for \texttt{O}, \texttt{D} and \texttt{E} arguments can be
+the result of grabbing another argument. Thus for example
+\jpnewline
+\texttt{O}、\texttt{D}、および \texttt{E}型引数のデフォルト値には、別の引数を取得した結果を用いることができます。
+\begin{verbatim}
+   \NewDocumentCommand\foo{O{#2} m}
+\end{verbatim}
+would use the mandatory argument as the default for the leading optional
+one.
+\jpnewline
+とした場合、先頭のオプション引数のデフォルト値として必須引数が使われます。
+
+\subsection{Spacing and optional arguments
+空白とオプション引数}
+\label{sec:cmd:opt-space}
+
+\TeX{} will find the first argument after a function name irrespective of any
+intervening spaces. This is true for both mandatory and optional arguments. So
+|\foo[arg]| and \verb*|\foo [arg]| are equivalent. Spaces are also ignored when
+collecting arguments up to the last mandatory argument to be collected (as it
+must exist). So after
+\jpnewline
+\TeX{}は、関数名の後に空白が挟まっていても、最初の引数を見つけます。これは必須引数とオプション引数の両方に当てはまります。したがって、|\foo[arg]|と\verb*|\foo [arg]|は同じです。また、最後に取得する必須引数までは、その途中にある空白も無視されます。必須引数は必ず存在しなければならないからです。そのため、
+\begin{verbatim}
+   \NewDocumentCommand\foo{m o m}{ ... }
+\end{verbatim}
+the user input |\foo{arg1}[arg2]{arg3}| and \verb*|\foo{arg1} [arg2] {arg3}|
+will both be parsed in the same way.
+\jpnewline
+と定義した場合、ユーザー入力 |\foo{arg1}[arg2]{arg3}|と\verb*|\foo{arg1} [arg2] {arg3}|は、どちらも同じように解析されます。
+
+The behavior of optional arguments \emph{after} any mandatory arguments is
+selectable. The standard settings will allow spaces here, and thus with
+\jpnewline
+必須引数の\jpemph{後に}現れるオプション引数の扱いは選べます。標準設定では、この位置に空白があっても許されるため、
+\begin{verbatim}
+   \NewDocumentCommand\foobar{m o}{ ... }
+\end{verbatim}
+both |\foobar{arg1}[arg2]| and \verb*|\foobar{arg1} [arg2]| will find an
+optional argument. This can be changed by giving the modified |!| in the
+argument specification:
+\jpnewline
+とした場合、|\foobar{arg1}[arg2]|と\verb*|\foobar{arg1} [arg2]|のどちらでも、オプション引数が取得されます。この挙動は、引数指定に修飾記号|!|を付けることで変更できます：
+\begin{verbatim}
+   \NewDocumentCommand\foobar{m !o}{ ... }
+\end{verbatim}
+where \verb*|\foobar{arg1} [arg2]| will not find an optional argument.
+\jpnewline
+この場合、\verb*|\foobar{arg1} [arg2]|ではオプション引数は取得されません。
+
+There is one subtlety here due to the difference in handling by \TeX{} of
+`control symbols', where the command name is made up of a single
+character, such as `\texttt{\textbackslash\textbackslash}'.
+Spaces are not ignored by \TeX{} here,
+and thus it is possible to require an optional argument directly follow such a
+command. The most common example is the use of \texttt{\textbackslash\textbackslash}
+in \pkg{amsmath} environments, which in the terms here would be defined as
+\jpnewline
+ここには、\TeX{}が「制御記号」（control symbols）を処理する方法の違いに由来する、ひとつの微妙な点があります。制御記号とは、たとえば \texttt{\textbackslash\textbackslash} のように、コマンド名が1~文字だけでできている命令のことです。この場合、\TeX{}は空白を無視しません。
+そのため、この種のコマンドの直後にオプション引数を続けるよう要求することが可能になります。
+もっともよくある例は、\pkg{amsmath}環境内で使われる\texttt{\textbackslash\textbackslash}で、
+ここでの説明に従えば、これは次のように定義されることになります。
+\begin{verbatim}
+   \NewDocumentCommand\\{!s !o}{ ... }
+\end{verbatim}
+
+
+Also notable when using optional arguments in the last position is that \TeX{}
+will necessarily look ahead for the argument opening token. This means that
+the value of |\inputlineno| will be `out by one' if such a trailing optional
+argument is \emph{not} present and the command ends a line; it will be one
+greater than the line number containing the last mandatory argument.
+\jpnewline
+末尾にオプション引数を置く場合にもう1つ注意すべきなのは、\TeX{}が必ず引数の開始トークンを探して先読みを行うことです。そのため、そのような末尾のオプション引数が\jpemph{存在せず}、しかもコマンドが行末で終わる場合には、|\inputlineno|の値が1~だけずれます。具体的には、最後の必須引数を含む行の番号よりも1~大きい値となります。
+
+\subsection{`Embellishments'
+修飾子}
+\label{sec:cmd:embellishment}
+
+The \texttt{E}-type argument allows one default value per test token. This is
+achieved by giving a list of defaults for each entry in the list, for example:
+\jpnewline
+\texttt{E}型引数では、各判定用トークンに対して1つずつデフォルト値を指定できます。これは、各トークンに対応するデフォルト値を並べたリストを与えることで実現されます。例えば、
+\begin{verbatim}
+   E{^_}{{UP}{DOWN}}
+\end{verbatim}
+If the list of default values is \emph{shorter} than the list of test tokens,
+the special \cs{NoValue} marker will be returned (as for the \texttt{e}-type
+argument). Thus for example
+\jpnewline
+デフォルト値のリストが判定用トークンのリストよりも \jpemph{短い}場合には、（\texttt{e}型引数と同様に）特別なマーカー\cs{NoValue}が返されます。したがって、例えば
+\begin{verbatim}
+   E{^_}{{UP}}
+\end{verbatim}
+has default \texttt{UP} for the |^| test character, but will return the
+\cs{NoValue} marker as a default for |_|. This allows mixing of explicit
+defaults with testing for missing values.
+\jpnewline
+この場合、判定用トークン|^|に対するデフォルト値は\texttt{UP}ですが、|_|に対してはデフォルトとして\cs{NoValue}が返されます。これにより、明示的なデフォルト値の指定と、値が与えられていない場合の判定とを併用できます。
+
+\subsection{Testing special values
+特殊な値の判定}
+\label{sec:cmd:special}
+
+Optional arguments make use of dedicated variables to return information about
+the nature of the argument received.
+\jpnewline
+オプション引数では、受け取った引数の状態に関する情報を返すために、専用の値が用いられます。
+
+\begin{decl}
+  |\IfNoValueTF| \arg{arg} \arg{true code} \arg{false code} \\
+  |\IfNoValueT|  \arg{arg} \arg{true code} \\
+  |\IfNoValueF|  \arg{arg} \arg{false code}
+\end{decl}
+The \cs{IfNoValue(TF)} tests are used to check if \meta{argument} (|#1|,
+|#2|, \emph{etc.}) is the special \cs{NoValue} marker. For example
+\jpnewline
+\cs{IfNoValue(TF)}は、\meta{argument}（|#1|、|#2| など）が特別な\cs{NoValue}マーカーであるかどうかを判定するために使います。例えば、
+\begin{verbatim}
+   \NewDocumentCommand\foo{o m}
+     {%
+       \IfNoValueTF {#1}%
+         {\DoSomethingJustWithMandatoryArgument{#2}}%
+         {\DoSomethingWithBothArguments{#1}{#2}}%
+     }
+\end{verbatim}
+will use a different internal function if the optional argument
+is given than if it is not present.
+\jpnewline
+では、オプション引数が与えられた場合と与えられなかった場合とで、異なる内部関数を使います。
+
+Note that three tests are available, depending on which outcome
+branches are required: \cs{IfNoValueTF}, \cs{IfNoValueT} and
+\cs{IfNoValueF}.
+\jpnewline
+必要な分岐に応じて、\cs{IfNoValueTF}、\cs{IfNoValueT}、\cs{IfNoValueF}の3~種類が用意されていることに注意してください。
+
+As the \cs{IfNoValue(TF)} tests are expandable, it is possible to
+test these values later, for example at the point of typesetting or
+in an expansion context.
+\jpnewline
+\cs{IfNoValue(TF)}による判定は展開可能なので、例えば組版時や、展開が必要な文脈で、後からこれらの値を判定することもできます。
+
+When two optional arguments follow each other (a syntax we typically
+discourage), it can make sense to allow users of the command to
+specify only the second argument by providing an empty first
+argument.\NEWdescription{2022/06/01}
+If you wish to test if an argument is blank or not, but are not
+concerned with distinguishing an entirely absent argument from
+an empty one, use the |O|~type specifier with the
+conditional \cs{IfBlankTF} (described below).
+\jpnewline
+2つのオプション引数が続く場合（一般的には推奨されない構文ですが）、最初の引数を空にすることで、2番目の引数だけを指定できるようにすると便利なことがあります。引数が空かどうかを判定したいが、引数が完全に省略されている場合と空である場合とを区別する必要がないのであれば、|O|~型指定子と条件分岐コマンド \cs{IfBlankTF}（後述）を組み合わせて使ってください。
+\begin{decl}
+  |\IfValueTF| \arg{arg} \arg{true code} \arg{false code} \\
+  |\IfValueT|  \arg{arg} \arg{true code} \\
+  |\IfValueF|  \arg{arg} \arg{false code}
+\end{decl}
+The reverse form of the \cs{IfNoValue(TF)} tests are also available
+as \cs{IfValue(TF)}. The context will determine which logical
+form makes the most sense for a given code scenario.
+\jpnewline
+\cs{IfNoValue(TF)}に対する逆の形式として、\cs{IfValue(TF)}も利用できます。どちらの論理形式が適切かは、コードの文脈によって決まります。
+
+
+\begin{decl}[2022/06/01]
+  |\IfBlankTF| \arg{arg} \arg{true code} \arg{false code} \\
+  |\IfBlankT|  \arg{arg} \arg{true code} \\
+  |\IfBlankF|  \arg{arg} \arg{false code}
+\end{decl}
+
+
+The \cs{IfNoValueTF} command chooses the \meta{true code} if the optional argument has not
+been used at all (and it returns the special \cs{NoValue}
+marker), but not if it has been given an empty value. In contrast
+\cs{IfBlankTF} returns true if its argument is either truly empty or
+only contains one or more normal blanks.
+For example
+\jpnewline
+コマンド\cs{IfNoValueTF}は、オプション引数がまったく使われなかった場合（つまり特別な \cs{NoValue}マーカーが返される場合）には \meta{true code}を選びますが、空の値が与えられた場合にはそうなりません。対照的に、\cs{IfBlankTF}は、引数が完全に空であるか、あるいは1~つ以上の通常の空白文字のみを含む場合に「真」を返します。
+例えば
+\begin{verbatim}
+   \NewDocumentCommand\foo{m!o}{\par #1:
+     \IfNoValueTF{#2}
+       {No optional}%
+       {%
+         \IfBlankTF{#2}
+           {Blanks in or empty}%
+           {Real content in}%
+       }%
+     \space argument!}
+   \foo{1}[bar] \foo{2}[  ] \foo{3}[] \foo{4}[\space] \foo{5} [x]
+\end{verbatim}
+results
+in the following output:
+\jpnewline
+は次のような出力を生成します：
+\begin{quote}
+  \NewDocumentCommand\foo{m!o}{\par #1:
+    \IfNoValueTF{#2}{No optional}%
+                {\IfBlankTF{#2}{Blanks in or empty}%
+                  {Real content in}}%
+                \space argument!}
+  \foo{1}[bar] \foo{2}[  ] \foo{3}[] \foo{4}[\space] \foo{5} [x]
+\end{quote}
+
+Note that the \cs{space} in (4) is considered real content---because it is
+a command and not a \enquote{space} character---even though it results
+in producing a space. You can also observe in (5) the effect of the
+\texttt{!} specifier, preventing the last \cs{foo}
+from interpreting \texttt{[x]} as its optional argument.
+\jpnewline
+注意すべき点として、(4)~の \cs{space}は、結果として空白を生成するにもかかわらず、実際の内容として扱われます。その理由は\enquote{space}文字ではなくコマンドだからです。また、(5)~では\texttt{!} 指定子の効果も確認できます。これにより、最後の\cs{foo}は\texttt{[x]}を自分自身のオプション引数として解釈しなくなります。
+
+
+\begin{decl}
+  |\BooleanFalse|  \\
+  |\BooleanTrue|
+\end{decl}
+The \texttt{true} and \texttt{false} flags set when searching for
+an optional character (using \texttt{s} or \texttt{t\meta{char}}) have
+names which are accessible outside of code blocks.
+\jpnewline
+\texttt{true}および\texttt{false}のフラグは、（\texttt{s}や\texttt{t\meta{char}}を使って）オプション文字を探す際に設定されるもので、コードブロックの外からアクセスできる名前を持っています。
+
+\begin{decl}
+  |\IfBooleanTF| \arg{arg} \arg{true code} \arg{false code} \\
+  |\IfBooleanT|  \arg{arg} \arg{true code} \\
+  |\IfBooleanF|  \arg{arg} \arg{false code}
+\end{decl}
+Used to test if \meta{argument} (|#1|, |#2|, \emph{etc.}) is
+\cs{BooleanTrue} or \cs{BooleanFalse}. For example
+\jpnewline
+これらは、\meta{argument}（|#1|、|#2| など）が \cs{BooleanTrue}か\cs{BooleanFalse}かを判定するために使います。例えば
+\begin{verbatim}
+   \NewDocumentCommand\foo{sm}
+     {%
+       \IfBooleanTF {#1}%
+         {\DoSomethingWithStar{#2}}%
+         {\DoSomethingWithoutStar{#2}}%
+     }
+\end{verbatim}
+checks for a star as the first argument, then chooses the action to
+take based on this information.
+\jpnewline
+では、第1~引数が星印かどうかを調べ、その結果に応じて実行する処理を選択します。
+
+\subsection{Auto-converting to key--value format
+キー値形式への自動変換}
+\label{sec:cmd:keyval}
+
+Some document commands have a long history of accepting a `free text' optional
+argument, for example \cs{caption} and the sectioning commands \cs{section},
+etc. Introducing more sophisticated (keyval) options to these commands
+therefore needs a method to interpret the optional argument \emph{either} as
+free text \emph{or} as a series of keyvals. This needs to take place
+during argument grabbing as there is a need for careful treatment of
+braces to obtain the correct result.
+\jpnewline
+一部のドキュメントコマンド、例えば\cs{caption}や\cs{section}などには、オプション引数として「自由テキスト」（ キー値形式ではない通常のテキスト）を受け入れてきた長い歴史があります。したがって、これらのコマンドに、より洗練された（キー値l）オプションを導入するには、オプション引数を自由なテキストとして、\jpemph{または}キー値の並びとしての\jpemph{いずれかで}解釈する方法が必要となります。正しい結果を得るには波括弧を慎重に扱う必要があるため、これは引数の取得時に行わなければなりません。
+
+
+The \texttt{=} modifier is available to allow \pkg{ltcmd} to correctly
+implement this process. The modifier guarantees that the argument will be
+passed to further code as a series of keyvals. To do that, the \texttt{=}
+should be followed by an argument containing the default key name. This is used
+as the key in a key--value pair \emph{if} the `raw' argument does \emph{not}
+have the correct form to be interpreted as a set of keyvals.
+\jpnewline
+この処理を\pkg{ltcmd}で正しく実装するために、\texttt{=}修飾子が用意されています。この修飾子は、引数がキー値の列として後続のコードに渡されることを保証します。そのためには、\texttt{=}の後に、デフォルトのキー名を含む引数を指定する必要があります。処理していないままの引数がキー値として解釈できる正しい形式で \jpemph{ない}場合には、このデフォルトのキー名がキー値として用いられます。
+
+
+Taking \cs{caption} as an example, with the demonstration implementation
+\jpnewline
+例として\cs{caption}をとると、デモ用の実装
+\begin{verbatim}
+   \DeclareDocumentCommand\caption{s ={short-text} +O{#3} +m}
+     {%
+       \showtokens{Grabbed arguments:^^J(#2)^^Jand^^J(#3)}%
+     }
+\end{verbatim}
+the default key name is \texttt{short-text}. When the command \cs{caption} is
+then used, if the optional argument is free text such as
+\jpnewline
+では、デフォルトのキー名は\texttt{short-text}となります。このとき、\cs{caption}コマンドのオプション引数として、次のような自由形式のテキストを与えると、
+\begin{verbatim}
+   \caption[Some short text]{A much longer and more detailed text for
+     demonstration purposes}
+\end{verbatim}
+then the output will be
+\jpnewline
+を与えると、出力は
+\begin{verbatim}
+   Grabbed arguments:
+   (short-text={Some short text})
+   and
+   (A much longer and more detailed text for demonstration purposes)
+\end{verbatim}
+On the other hand, if the caption is given with a keyval-form argument
+\jpnewline
+となります。一方、キャプションをキー値形式の引数で指定した場合
+\begin{verbatim}
+   \caption[label = cap:demo]%
+     {A much longer and more detailed text for demonstration purposes}
+\end{verbatim}
+then this will be respected
+\jpnewline
+には、指定はそのまま用いられます。
+\begin{verbatim}
+   Grabbed arguments:
+   (label = cap:demo)
+   and
+   (A much longer and more detailed text for demonstration purposes)
+\end{verbatim}
+
+Interpretation as keyval form is determined by the presence of \texttt{=}
+characters within the argument. Those in inline math mode (enclosed within
+\verb|$...$| or \verb|\(...\)|) are ignored. An argument can be forced to be
+read as keyvals by including an empty entry at the start
+\jpnewline
+キー値形式としての解釈は、引数内に \texttt{=}文字が含まれているかどうかによって決定されます。 ただし、インライン数式モード（\verb|$...$| または\verb|\(...\)|で囲まれた部分）にある\texttt{=}文字は無視されます。引数の先頭に空の要素を置くことで、強制的にキー値として解釈させることができます。
+\begin{verbatim}
+   \caption[=,This is now a keyval]%
+   % ...
+   \caption[This is not $=$ keyval]%
+\end{verbatim}
+
+This empty entry is \emph{not} passed to the underlying code, so will not lead
+to issues with keyval parsers that do not allow an empty key name. Any text-mode
+\texttt{=} signs will need to be braced to avoid being misinterpreted: this
+is likely most conveniently handled by bracing the entire argument
+\jpnewline
+この空の項目は内部のコードには渡され\jpemph{ない}ため、空のキー名を許容しないキー値パーサーとの間で問題が生じることはありません。テキストモードで記述された\texttt{=}記号は、誤って解釈されないよう波括弧で囲む必要があります。これに対処する最も便利な方法は、引数全体を波括弧で囲むことでしょう。そうすれば
+\begin{verbatim}
+   \caption[{Not = to a keyval!}]%
+\end{verbatim}
+which will be passed correctly as
+\jpnewline
+は、正しく
+\begin{verbatim}
+   Grabbed arguments:
+   (short-text = {Not = to a keyval!})
+\end{verbatim}
+として渡されます。
+
+If the argument is completely blank, the conversion results in an empty keyval
+list, not \verb*|short-text = |. This reflects the fact that with a move toward
+keyval processing, an empty argument is best modelled as an empty keyval list.
+If the user does want an empty classical argument, using |[{}]| will work
+with both the new processor code and older formats.
+\jpnewline
+引数が完全に空である場合、変換結果は\verb*|short-text = |ではなく、空のキー値リストとなります。これは、キー値処理へ移行するにあたって、空の引数は空のキー値リストとして扱うのが最も適切であることを反映しています。ユーザーが空の従来型の引数を必要とする場合は、|[{}]|を使うことで、新しいプロセッサコードと古い形式の両方で動作します。
+
+
+\subsection{Argument processors
+引数プロセッサ}
+\label{sec:cmd:processors}
+
+Argument processor are applied to an argument \emph{after} it has been grabbed
+by the underlying system but before it is passed to \meta{code}. An argument
+processor can therefore be used to regularize input at an early stage, allowing
+the internal functions to be completely independent of input form. Processors
+are applied to user input and to default values for optional arguments, but
+\emph{not} to the special \cs{NoValue} marker.
+\jpnewline
+引数プロセッサは、基盤となるシステムが引数を取得した\jpemph{後で}、それが \meta{code}に渡される前に、その引数に対して適用します。したがって、引数プロセッサを用いて入力の形式を早い段階で\highLight[softpink]{正規化（regularize）}\marginnote{訳註：ここで\highLight[softpink]{「正規化（regularize）」}とは、表記や形式が異なる入力を、内部処理のために統一された形式へ変換することを意味します。Here, \highLight[softpink]{regularize} means to convert inputs with varying notation or format into a unified form for internal processing.}すれば、内部関数を入力形式から完全に独立させることが可能になります。プロセッサはユーザー入力や省略可能なオプション引数のデフォルト値に対しては適用されますが、特殊なマーカーである\cs{NoValue}に対しては適用されません。
+
+Each argument processor is specified by the syntax \texttt{>}\marg{processor}
+in the argument specification. Processors are applied from right to left, so
+that
+\jpnewline
+各引数プロセッサは、引数指定において\texttt{>}\marg{processor}という構文で指定されます。プロセッサは右から左の順に適用されるため、
+\begin{verbatim}
+   >{\ProcessorB} >{\ProcessorA} m
+\end{verbatim}
+would apply \cs{ProcessorA} followed by \cs{ProcessorB} to the tokens grabbed
+by the \texttt{m} argument.
+\jpnewline
+と記述すると、\texttt{m}引数によって取得されたトークンに対し、まず\cs{ProcessorA}が適用され、続いて \cs{ProcessorB}が適用されることになります。
+
+\begin{decl}
+  |\SplitArgument| \arg{number} \arg{token(s)}
+\end{decl}
+This processor splits the argument given at each occurrence of the
+\meta{tokens} up to a maximum of \meta{number} tokens (thus
+dividing the input into $\text{\meta{number}} + 1$ parts).
+An error is given if too many \meta{tokens} are present in the
+input. The processed input is placed inside
+$\text{\meta{number}} + 1$ sets of braces for further use.
+If there are fewer than \arg{number} of \arg{tokens} in the argument
+then \cs{NoValue} markers are added at the end of the processed
+argument.
+\jpnewline
+このプロセッサは、引数の中に\meta{tokens}が現れるたびに、その位置で引数を分割します。ただし分割に使う \meta{tokens}の回数は最大で \meta{number}~個までです（したがって、入力は\(\text{\meta{number}} + 1\)~個の部分に分けられます）。入力中に \meta{tokens}が多すぎる場合はエラーとなります。処理された入力は、その後の利用に備えて\(\text{\meta{number}} + 1\)組の波括弧で囲まれ形になります。引数内の\meta{tokens}の数が \meta{number}未満なら、処理後の引数の末尾に\cs{NoValue}マーカーが追加されます。
+
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\SplitArgument{2}{;}} m}
+     {\InternalFunctionOfThreeArguments#1}
+\end{verbatim}
+If only a single character \meta{token} is used for the split, any
+category code $13$ (active) character matching the \meta{token} will
+be replaced before the split takes place.
+Spaces are trimmed at each end of each item parsed.
+\jpnewline
+分割に単一の\meta{token}だけが使われた場合、その\meta{token}に一致する カテゴリーコード$13$（active）の文字 は、分割処理が行われる前に置き換えられます。また、解析された各項目の先頭と末尾にある空白は取り除かれます。
+
+The \texttt{E} argument type is somewhat special, because with a single
+\texttt{E} in the command declaration you may end up with several
+arguments in a command (one formal argument per embellishment token).
+Therefore, when an argument processor is applied to an
+\texttt{e}/\texttt{E}-type
+argument, all the arguments pass through that processor before being fed
+to the \meta{code}.  For example, this command
+\jpnewline
+\texttt{E}型引数はやや特殊です。なぜなら、コマンド宣言で\texttt{E}を1~つだけ書いても、実際にはコマンドが複数の引数を持つことになる（修飾トークンごとに1~つの形式的引数が生じる）からです。そのため、\texttt{e}型や\texttt{E} 型の引数に引数プロセッサを適用する場合、それらすべての引数が\meta{code}に渡される前に、そのプロセッサを通ります。例えば、次のコマンドでは、
+\begin{verbatim}
+   \NewDocumentCommand\foo{ >{\TrimSpaces} e{_^} }
+     { [#1](#2) }
+\end{verbatim}
+applies \cs{TrimSpaces} to both arguments.
+\jpnewline
+両方の引数に対して\cs{TrimSpaces}が適用されます。
+
+\begin{decl}
+  |\SplitList| \arg{token(s)}
+\end{decl}
+This processor splits the argument given at each occurrence of the
+\meta{token(s)} where the number of items is not fixed. Each item is
+then wrapped in braces within |#1|. The result is that the
+processed argument can be further processed using a mapping function
+(see below).
+\jpnewline
+このプロセッサは、項数があらかじめ決まっていないリストを扱うためのもので、与えられた引数を \meta{token(s)}が現れるたびに分割します。その結果、|#1|の中では各項目がそれぞれ波括弧で囲まれた形になります（後述）。
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\SplitList{;}} m}
+     {\MappingFunction#1}
+\end{verbatim}
+If only a single character \meta{token} is used for the split, it will
+take account of the possibility that the \meta{token} has been made active
+(category code~$13$) and will split at such tokens. 
+Spaces are trimmed at each end of each item parsed. Exactly one set
+of braces will be stripped if an entire item is surrounded by them,
+i.e.~the following inputs and outputs result (each separate item as
+a brace group).
+\jpnewline
+分割する際に単一の文字\meta{token}だけを使った場合、その\meta{token}がアクティブ（カテゴリコード~\(13\)）になっている可能性が考慮され、そのようなトークンでも分割が行われます。分割された各要素の先頭と末尾にある空白は取り除かれます。要素全体が波括弧で囲まれている場合は、その波括弧がちょうど1組だけ取り除かれます。つまり、以下の入力に対して示されるような出力が得られます（各要素は波括弧で囲まれた集まりとして扱われます）。
+\begin{verbatim}
+   a      ==> {a}
+   {a}    ==> {a}
+   {a}b   ==> {{a}b}
+   a,b    ==> {a}{b}
+   {a},b  ==> {a}{b}
+   a,{b}  ==> {a}{b}
+   a,{b}c ==> {a}{{b}c}
+\end{verbatim}
+
+\begin{decl}
+  |\ProcessList| \arg{list} \arg{tokens}
+\end{decl}
+To support \cs{SplitList}, the function \cs{ProcessList} is available
+to apply \meta{tokens} to every entry in a \meta{list}. The
+\meta{tokens} can be arbitrary contents that should expect one argument
+after it: the list entry. For example
+\jpnewline
+\cs{SplitList}を補助するものとして、\meta{list}の各要素に\meta{tokens}を適用する \cs{ProcessList}関数が用意されています。ここで \meta{tokens}には任意のコンテンツを指定できますが、その直後に引数（リストの要素）を1つとる形式でなければなりません。例えば
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\SplitList{;}} m}
+     {\ProcessList{#1}{\SomeDocumentCommand}}
+\end{verbatim}
+or
+\jpnewline
+あるいは、次のようにも書けます。
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\SplitList{;}} m}
+     {\ProcessList{#1}{Abc \SomeDocumentCommand}}
+\end{verbatim}
+
+\begin{decl}
+  |\ReverseBoolean|
+\end{decl}
+This processor reverses the logic of \cs{BooleanTrue} and
+\cs{BooleanFalse}, so that the example from earlier would become
+\jpnewline
+このプロセッサは\cs{BooleanTrue}と\cs{BooleanFalse}の論理を反転させるため、先ほどの例は次のようになります。
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\ReverseBoolean} s m}
+     {%
+       \IfBooleanTF#1%
+         {\DoSomethingWithoutStar{#2}}%
+         {\DoSomethingWithStar{#2}}%
+     }
+\end{verbatim}
+
+\begin{decl}
+  |\TrimSpaces|
+\end{decl}
+Removes any leading and trailing spaces (tokens with character code~$32$
+and category code~$10$) for the ends of the argument. Thus for example
+declaring a function
+\jpnewline
+引数の先頭と末尾にある空白（文字コード\(32\)、カテゴリコード\(10\)のトークン）を除去します。例えば、関数
+\begin{verbatim}
+   \NewDocumentCommand\foo{>{\TrimSpaces} m}
+     {\showtokens{#1}}
+\end{verbatim}
+and using it in a document as
+\jpnewline
+を定義して、これを文書内で
+\begin{flushleft}
+  \verb=  =\verb*=\foo{ hello world }=
+\end{flushleft}
+will show `\verb*=hello world=' at the terminal, with the space at each
+end removed. \cs{TrimSpaces} will remove multiple spaces from the ends of
+the input in cases where these have been included such that the standard
+\TeX{} conversion of multiple spaces to a single space does not apply.
+\jpnewline
+として使った場合、端末には`\verb*=hello world='と表示され、両端の空白は取り除かれます。通常の\TeX{}では複数の空白は1つの空白に変換されますが、そのような変換が適用されない形で入力の両端に複数の空白が含まれている場合でも、\cs{TrimSpaces}はそれらを除去します。
+
+\subsection{Body of an environment
+環境の本体}
+\label{sec:cmd:body}
+
+While environments |\begin|\marg{environment}\ \dots{}\,|\end|\marg{environment}
+are typically used in cases where the code implementing the \meta{environment}
+does not need to access the contents of the environment (its `body'),
+it is sometimes useful to have the body as a standard argument.
+\jpnewline
+環境 |\begin|\marg{environment}\ \dots{},|\end|\marg{environment}は、通常、その環境を実装するコードが環境の内容（すなわち本体）にアクセスする必要がない場合に用いられますが、本体を通常の引数として受け取れると便利なこともあります。
+
+This is achieved by ending the argument specification with~\texttt{b}, which is
+a dedicated argument type for this situation. For instance
+\jpnewline
+これは、引数指定の末尾に、この用途専用の引数型である\texttt{b}を置くことで実現されます。例えば、
+\begin{verbatim}
+   \NewDocumentEnvironment{twice}{O{\ttfamily} +b}
+     {#2#1#2} {}
+   \begin{twice}[\itshape]
+     Hello world!
+   \end{twice}
+\end{verbatim}
+typesets `Hello world!{\itshape Hello world!}'.
+\jpnewline
+とします。この例は、`Hello world!{\itshape Hello world!}'と組版されます。
+
+The prefix |+| is used to allow multiple paragraphs in the environment's body.
+Argument processors can also be applied to \texttt{b}~arguments. By default,
+spaces are trimmed at both ends of the body: in the example there would
+otherwise be spaces coming from the ends the lines after |[\itshape]| and
+|world!|. Putting the prefix |!| before \texttt{b} suppresses space-trimming.
+\jpnewline
+接頭辞 |+|を使うと、環境本体に複数の段落を含めることができます。また、\texttt{b} 型引数にも引数プロセッサを適用できます。デフォルトでは、本体の前後にある空白は削除（trim）されます。上の例でそうしないと、|[\itshape]|の後の改行や |world!|の後の改行に由来する空白が入り込むことになります。\texttt{b}の前に接頭辞 |!|を付けると、この空白削除は抑制されます。
+
+When \texttt{b} is used in the argument specification, the last
+argument of the environment declaration (e.g.,
+\cs{NewDocumentEnvironment}), which consists of an \meta{end code} to
+insert at |\end|\marg{environment}, is redundant since one can simply
+put that code at the end of the \meta{start code}. Nevertheless this
+(empty) \meta{end code} must be provided.
+\jpnewline
+引数指定に \texttt{b}を用いる場合、環境宣言（例えば \cs{NewDocumentEnvironment}）の最後の引数、すなわち |\end|\marg{environment}の位置に挿入される\meta{end code}は、実質的には冗長です。というのも、そのコードは単に\meta{start code}の末尾に書いてしまえばよいからです。それでも、この（空の）\meta{end code}自体は与えなければなりません。
+
+Environments that use this feature can be nested.
+\jpnewline
+この機能を使う環境は、入れ子にすることができます。
+
+\subsection{Fully-expandable document commands
+完全展開可能なドキュメントコマンド}\label{sec:ltcmd:expandable}
+
+Document commands created using \cs{NewDocumentCommand}, etc.\@, are normally
+created so that they do not expand unexpectedly. This is done using engine
+features, so is more powerful than \LaTeXe{}'s \cs{protect} mechanism. There
+are \emph{very rare} occasion when it may be useful to create functions using a
+expansion-only grabber. This imposes a number of restrictions on the
+nature of the arguments accepted by a function, and the code it implements.
+This facility should only be used when \emph{necessary}.
+
+\cs{NewDocumentCommand}などを用いて作成される通常のドキュメントコマンドは、予期せず展開されないように保護されています。これはエンジンの機能を利用して実現されているため、\LaTeXe{}の\cs{protect}機構よりも強力な仕組みとなっています。ただし、展開だけで引数を取得する仕組み（expansion-only grabber）を用いて関数を作ることが有用な場合も、\jpemph{ごくまれに}あります。この手法を用いると、関数が受け入れる引数の性質や実装するコードに対して、いくつかの制約が課されることになります。したがって、この機能はあくまで\jpemph{必要な場合にのみ}使うべきです。
+
+\begin{decl}
+  |\NewExpandableDocumentCommand|     \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\RenewExpandableDocumentCommand|   \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\ProvideExpandableDocumentCommand| \arg{cmd} \arg{arg spec} \arg{code} \\
+  |\DeclareExpandableDocumentCommand| \arg{cmd} \arg{arg spec} \arg{code}
+\end{decl}
+This family of commands is used to create a document-level \meta{cmd},
+which will grab its arguments in a fully-expandable manner. The
+argument specification for the function is given by \meta{arg spec},
+and the \meta{cmd} will execute \meta{code}. In  general, \meta{code} will
+also be fully expandable, although it is possible that this will
+not be the case (for example, a function for use in a table might
+expand so that \cs{omit} is the first non-expandable non-space token).
+\jpnewline
+このコマンド群は、引数を完全展開可能な形で取得する文書レベルの\meta{cmd}を定義するために使います。この関数の引数仕様は\meta{arg spec}で指定され、\meta{cmd}は\meta{code}を実行します。一般に\meta{code}も完全に展開可能となりますが、必ずしもそうとは限りません（例えば表組の中で使う関数では、\cs{omit}が最初の展開不可能な非空白トークンになるように展開される可能性があります）。
+
+Parsing arguments by pure expansion imposes a number of restrictions on
+both the type of arguments that can be read and the error checking
+available:
+\jpnewline
+純粋な展開によって引数を解析する場合、取得可能な引数の種類と利用可能なエラーチェックの両面において、いくつかの制約が生じます：
+\begin{itemize}
+  \item The last argument (if any are present) must be one of the
+    mandatory types \texttt{m}, \texttt{r} or \texttt{R}.
+  \jpnewline  
+    最後の引数（引数が存在する場合）は、必須引数型 \texttt{m}、\texttt{r}、または\texttt{R}のいずれかでなければなりません。
+  \item The `verbatim' argument type \texttt{v} is not available.
+  \jpnewline
+   `verbatim'引数型 \texttt{v}は使用できません。
+  \item Argument processors (using \texttt{>}) are not available.
+  \jpnewline
+   引数プロセッサ （\texttt{>}を使う）は使用できません。
+  \item It is not possible to differentiate between, for example
+    |\foo[| and |\foo{[}|: in both cases the \texttt{[} will be
+    interpreted as the start of an optional argument. As a
+    result, checking for optional arguments is less robust than
+    in the standard version.
+    \jpnewline
+    例えば |\foo[|と|\foo{[}|を区別することはできません。どちらの場合も\texttt{[}はオプション引数の開始として解釈されます。その結果、オプション引数の判定は標準版ほど\highLight[softpink]{頑健}ではありません。
+\end{itemize}\marginnote{訳注：ここで使った\highLight[softpink]{頑健}という単語はrobust（ロバスト）の訳です。コマンドの性質を表す専門用語です。ここの後\ref{moving_argument}で説明される移動引数（moving argument）」の中で使用されても、安全に展開され、不正な\TeX{}コードを生成しないコマンドのことです。「頑健（robust）なコマンド」の反対のコマンドに「脆弱（fragile）なコマンド」があります。The term \highLight[softpink]{頑健} (robust) used here is a technical term describing a specific property of a command. A `robust command' is one that expands safely, without generating invalid \TeX{} code, even when used within a `moving argument' (explained later in section \ref{moving_argument}). The opposite of a "robust command" is a "fragile command."}
+
+\subsection{Commands at the start of tabular cells
+表組のセルの先頭で使うコマンド}
+
+Creating commands that are used at the start of tabular cells imposes
+some restrictions on the underlying implementation. The standard \LaTeX{}
+tabular environments (\texttt{tabular}, etc.)  use a mechanism which requires
+that any command wrapping \cs{multicolumn} or similar must be
+`expandable'. This is \emph{not} the case for commands created using
+\cs{NewDocumentCommand}, etc., which as detailed in
+Section~\ref{sec:ltcmd:expandable} use an engine feature which prevents
+such `expansion'. Therefore, to create such wrappers for use at the start
+of tabular cells, you must use \cs{NewExpandableDocumentCommand}, for example
+\jpnewline
+tabular環境のセルの先頭で使用するコマンドを作成する場合、その内部実装にはいくつかの制約が伴います。標準的な \LaTeX{}の tabular 環境（\texttt{tabular} など）では、\cs{multicolumn}やそれに類するコマンドを包むコマンド（ラッパー）は「展開可能」でなければならない仕組みになっています。しかし、\cs{NewDocumentCommand}などを用いて作成されたコマンドはこれに該当\jpemph{しません}。これは、セクション\ref{sec:ltcmd:expandable}で述べたように、そうした「展開」を防ぐエンジン機能を用いているためです。したがって、tabular 環境のセル先頭で使うその種のラッパーコマンドを作るには、例えば \cs{NewExpandableDocumentCommand}を使う必要があります。
+\begin{verbatim}
+   \NewExpandableDocumentCommand\MyMultiCol{m}{\multicolumn{3}{c}{#1}}
+   \begin{tabular}{lcr}
+   a & b & c \\
+   \MyMultiCol{stuff} \\
+   \end{tabular}
+\end{verbatim}
+
+\subsection{Using the verbatim argument types
+ 逐語的引数の使い方}\label{逐語的引数}
+
+As described above, the \texttt{v}-type argument may be viewed as similar to
+\cs{verb}. Before looking at exactly what that means, it is important to
+highlight some key differences. Most notably, \emph{grabbing} a verbatim-like
+argument is separate from \emph{typesetting} it: the latter is covered in the
+next section.
+\jpnewline
+上述の通り、\texttt{v}型引数は\cs{verb}と類似したものと見なすことができます。その正確な意味を検討する前に、いくつかの重要な違いを指摘しておく必要があります。とりわけ注目すべき点は、逐語的な引数を\jpemph{取り込む（grabbing）}ことと、それを\jpemph{組版する}ことは別個の処理であるという点です。後者については次節で扱います。
+
+
+When grabbing a \texttt{v}-type argument, \LaTeX{} first uses the kernel
+command \cs{dospecials} to turn off the \enquote{special} nature of characters.
+It then makes both spaces and tabs \enquote{active}, so that they can be given
+a custom definition. Any other characters are grabbed as-is: this means that if
+any characters have been made \enquote{special} and are not listed in
+\cs{dospecials}, an error will arise (see below).
+\jpnewline
+\texttt{v} 型引数を取り込む際、\LaTeX{}はまずカーネルコマンド \cs{dospecials}を用いて、文字の\jpquote{特殊な}性質を無効にします。続いて、空白とタブを\jpquote{アクティブ}な状態にし、それらに独自の定義を割り当てられるようにします。その他の文字はそのままの状態で読み込まれます。つまり、何らかの文字が \jpquote{特殊な}ものとして設定されているにもかかわらず \cs{dospecials}に含まれていない場合、エラーが発生することになります（後述）。
+
+The characters that are grabbed as the argument are all those between two
+identical: in contrast to \cs{verb}, the characters \texttt{\textbackslash},
+|{|, |}| and |%| \emph{cannot} be used as the delimiter character. If any of
+the grabbed tokens have \enquote{special} meaning, an error will be issued.
+\jpnewline
+引数として取り込まれる文字は、同一の2つの文字に挟まれたすべての文字です。ただし、\cs{verb}とは異なり、\texttt{\textbackslash}、|{|、|}|、|%|といった文字を区切り文字として使用することは\jpemph{できません}。取り込まれたトークンの中に\jpquote{特殊な}意味を持つものが含まれていると、エラーが発生します。
+
+For the \texttt{+v}-type argument, which allows line breaks within the
+argument, newline characters are converted into \cs{obeyedline} commands. The
+standard definition of \cs{obeyedline} is simple |\par|, thus allowing the
+grabbed tokens to be used directly in typesetting. A local redefinition of
+\cs{obeyedline} can be used to achieve other outputs. For example, to retain
+blank lines whilst typesetting, one could use
+\jpnewline
+引数内での改行を許容する \texttt{+v}型の引数では、改行文字は\cs{obeyedline}コマンドに変換されます。\cs{obeyedline}の標準的な定義は単なる|\par|であり、これにより、取得されたトークンをそのまま組版に使用できるようになっています。\cs{obeyedline}を局所的に再定義することで、異なる出力結果を得ることも可能です。例えば、組版時に空行を保持したい場合には、
+\begin{verbatim}
+   \renewcommand*\obeyedline{\mbox{}\par}
+\end{verbatim}
+を使用することができます。
+
+More information about using these arguments in typesetting is in the following
+subsection.
+\jpnewline
+これらの引数を組版で使う方法の詳細は、次のサブセクションで説明します。
+
+Some additional details that may be useful for those with more \TeX{}
+knowledge: do not worry if this does not make sense to you! Spaces and tabs are
+stored as active characters. In $8$-bit engines, non-ASCII characters are
+\enquote{active}, whilst other than the letters a--zA--Z, ASCII characters are
+\enquote{other}. In Unicode engines, non-ASCII codepoints will be either
+letters or \enquote{other}, based on the standard \LaTeX{} settings derived
+from Unicode data. For token-based comparisons, it is likely that the active
+spaces and tabs should be replaced: this can be done conveniently by expansion.
+\jpnewline
+\TeX{}に関する知識が豊富な方にとって役立つかもしれない補足情報をいくつか挙げます（これらが理解できなくても心配は無用です）。空白やタブはアクティブ文字（active characters）として扱われます。8 ビットエンジンでは、非 ASCII 文字は \jpquote{アクティブ} となり、ASCII 文字は英字 a--zA--Zを除いて\jpquote{その他（other）} として扱われます。Unicodeエンジンでは、非ASCIIのコードポイントは、Unicodeデータに基づく標準的な\LaTeX{}設定に従い、文字または\jpquote{その他}のいずれかとして扱われます。トークン単位で比較を行う場合には、アクティブな空白やタブを別のものに置き換える必要が生じることがありますが、これは展開によって手軽に行えます。
+
+----
+\begin{quote}\color{blue}
+**This text is not in the original; it is a note for the translator's own use.** ---
+I think the explanation is clear enough for those knowledgeable about \TeX{}, but it might be a bit difficult to grasp for beginners or non-native English speakers. I asked a generative AI to interpret it :-) by Y. Fujimura
+
+---
+
+ A note for those familiar with \TeX{} internals (no need to worry if this part is unclear):
+
+\begin{itemize}
+\item
+Spaces and tabs are preserved as active characters.
+\item
+ In 8-bit engines, non-ASCII characters become active,
+ while ASCII characters are treated as \enquote{other,} except for the letters a–z and A–Z.
+\item
+ In Unicode engines, non-ASCII code points are treated as either
+ \enquote{letter} or \enquote{other,} in accordance with standard LaTeX settings
+ based on Unicode data.
+\item
+ When performing comparisons token-by-token, it may be necessary
+ to replace active spaces or tabs with a different form,
+ but this can be easily achieved through expansion.
+\end{itemize}
+
+\TeX{}の内部に詳しい方向けの補足です（ここが分からなくても心配しなくてよいです）。
+
+\begin{itemize}
+\item
+スペースとタブはアクティブ文字として保持されます。
+\item
+8ビットエンジンでは、非ASCII文字はアクティブになり、ASCII文字は英字 a--zA--Zを除いて\jpquote{その他}として扱われます。
+\item
+Unicode エンジンでは、非 ASCII コードポイントは、Unicodeデータに基づく標準的な\LaTeX{}の設定に従って、\jpquote{文字}または\jpquote{その他}のいずれかとして扱われます。
+\item
+トークン単位で比較を行う場合には、アクティブなスペースやタブを別の形に置き換える必要が生じることがありますが、これは展開によって容易に行えます。
+\end{itemize}
+\end{quote}
+
+----
+
+\subsection{Typesetting verbatim-like material
+verbatim 的な内容の組版}
+
+In contrast to \cs{verb}, the \texttt{(+)v}-type argument is only about
+\emph{grabbing} the argument, not \emph{typesetting} it. As such, features that
+users often associate with \enquote{verbatim} are not automatically activated,
+e.g., selecting a monospaced font. Material grabbed by the \texttt{v}-type
+argument does not automatically suppress ligatures: with modern \TeX{} engines,
+this largely can be done without the token manipulation which \cs{verb} uses.
+(In \cs{verb}, ligatures are suppressed by making characters active and
+inserting a zero-width kern before the character itself.)
+\jpnewline
+\cs{verb}とは対照的に、\texttt{(+)v}型の引数は引数を\jpemph{取りこむ}ことのみを目的としており、\jpemph{組版}は行いません。そのため、ユーザーが \enquote{verbatim}によく結び付けて考える機能、例えば等幅フォントの選択などは、自動的には有効になりません。\texttt{v}型引数で取得された内容では、合字は自動的には抑制されません。最新の\TeX{}エンジンでは、\cs{verb}が用いるようなトークン操作をしなくても、たいていの場合は合字の抑制が可能です。（\cs{verb} では、文字をアクティブにし、その文字自身の前にゼロ幅のカーンを挿入することで合字を抑制します。）
+
+The \cs{verb} command also selects a monospaced font: this is not intrinsic to
+verbatim material, so will need to be set up using for example \cs{ttfamily}.
+Similarly, the \texttt{verbatim} environment sets up the meaning of \cs{par}
+suitable for breaking lines.
+\jpnewline
+\cs{verb}コマンドは等幅フォントも選択しますが、これは verbatim 的な内容に本質的に備わっている性質ではありません。そのため、必要なら\cs{ttfamily}などを用いて設定しなければなりません。例えば \cs{ttfamily}を用いて設定する必要があります。同様に、\texttt{verbatim}環境は、改行に適した \cs{par}の動作を設定します。
+
+\subsection{Verbatim environments
+verbatim環境}
+\label{sec:cmd:verbenv}
+
+In some cases, when grabbing the body of an environment you will want the
+contents to be treated verbatim. This is available using the argument
+specification~\texttt{c}. Like the \texttt{b} specification, this has to be the
+last one. Thus for example
+\jpnewline
+環境の本体を取り込む際、その内容をそのまま逐語的に扱いたい場合があります。これには引数指定\texttt{c}を使用します。\texttt{b}指定と同様、この指定は最後に来る必要があります。したがって、例えば次の定義
+\begin{verbatim}
+   \NewDocumentEnvironment{MyVerbatim}{!O{\ttfamily} c}
+     {\begin{center} #1 #2\end{center}} {}
+   \begin{MyVerbatim}[\ttfamily\itshape]
+     % Some code is shown here
+     $y = mx + c$
+   \end{MyVerbatim}
+\end{verbatim}
+will typeset verbatim the content, thus:
+\jpnewline
+では、内容が逐語的に組版され、結果は次のようになります。
+\NewDocumentEnvironment{MyVerbatim}{!O{\ttfamily} c}
+  {\begin{center} #1 #2\end{center}} {}
+\begin{MyVerbatim}[\ttfamily\itshape]
+  % Some code is shown here
+  $y = mx + c$
+\end{MyVerbatim}
+
+Since grabbing the entire contents verbatim will result in there being no
+\cs{par} tokens, newlines are always permitted: there is no need for a
+|+|~modifier here. As for the \texttt{v} specification, newlines are stored as
+\cs{obeyedline}. In a similar fashion to the \texttt{b}~specification, by
+default \emph{newlines} are trimmed at both ends of the body. Putting the
+prefix |!| before \texttt{c} suppresses this trimming.
+\jpnewline
+内容をそのまま逐語的に取得する場合、\cs{par}トークンは生成されないため、改行は常に許容されます。したがって、ここでは|+|という修飾子は不要です。\texttt{v} 指定の場合と同様に、改行は\cs{obeyedline}として格納されます。\texttt{b}指定と同様に、デフォルトでは本体の前後にある\jpemph{行}が取り除かれますが、\texttt{c}の前に |!|という接頭辞を付けると、この除去を抑制できます。
+
+Collection of the body takes place on a line-by-line basis: content is
+collected up to the end-of-line in the source, then examined before storage.
+This means that the line ending the environment (containing in the example
+above |\end{MyVerbatim}|) cannot have any text \emph{after} the end of the
+environment. Text \emph{before} the end of environment is treated normally,
+but note that there is no trailing \cs{obeyedline} added if there is text here.
+Other than optional arguments, no text is allowed on the opening line of the
+environment.
+\jpnewline
+本体の取り込みは行単位で行われます。つまり、ソース内の行末までが取り込まれ、保存される前に内容が検査されます。このため、環境を終了させる行（上記の例では|\end{MyVerbatim}|を含む行）において、環境の終了を示す記述の\jpemph{後}にテキストを置くことはできません。環境終了の記述の\jpemph{前}にあるテキストは通常どおり処理されますが、その場合には末尾に\cs{obeyedline}は追加されない点に注意してください。オプション引数を除いて、環境開始行にはテキストを書いてはいけません。
+
+Special handling is applied to a \texttt{o}, \texttt{O}, \texttt{d} or
+\texttt{D}~specification argument immediately before an
+\texttt{c}~specification. This means that when the optional argument is absent,
+the first character of the next line will be read with the correctly applied
+verbatim category code. Issues may arise if \emph{multiple} optional arguments
+are used before a \texttt{c}~specification: this will only work reliably where
+the optional tokens are \enquote{other} characters.
+\jpnewline
+\texttt{c} 指定の直前にある \texttt{o}、\texttt{O}、\texttt{d}、または\texttt{D}指定の引数に対しては、特別な処理が行われます。これは、オプション引数が省略された場合でも、次の行の最初の文字が適切な\highLight[softpink]{ verbatim 用カテゴリコード}で読み込まれることを意味します。\marginnote{訳注： \jpemph{\highLight[softpink]{verbatim 用カテゴリコード（verbatim category code）}} とは、文字を通常の構文解釈から外し、逐語的に扱えるようにするためのカテゴリコード設定を指します。A \emph{\highLight[softpink]{verbatim category code}} refers to a category code setting that exempts characters from standard syntactic interpretation, allowing them to be treated verbatim.}ただし、\texttt{c}指定の前にオプション引数が \jpemph{複数}あると問題が生じる可能性があります。この仕組みが確実に機能するのは、それらのオプション引数を示すトークンが \jpquote{その他の}文字である場合に限られます。
+
+For technical reasons, we recommend that spaces are \emph{not} ignored when
+searching for an optional argument before an \texttt{c} specification: this can
+be achieved by adding the \texttt{!} modifier as shown in the example.
+However, this is left as a choice for the user.
+\jpnewline
+技術的な理由から、\texttt{c}指定子の前にあるオプション引数を検索する際、空白を無視\jpemph{しない}ようにすることをお勧めします。これは、例に示すように \texttt{!}修飾子を追加することで実現できます。ただし、これを行うかどうかはユーザーの判断に委ねられています。
+
+\subsection{Performance
+パフォーマンス}
+
+For document commands where the argument specification is entirely
+comprised of |m| or |+m| entries (or is entirely empty), the internal structure
+created by \cs{NewDocumentCommand} is essentially as efficient 
+as provided by |\newcommand(*)|. As such, document commands may replace
+constructs arising from \cs{newcommand}, etc., without a need to be concerned
+about performance. It should be noted that \cs{newcommand(*)} produces expandable
+results, so the direct replacement is \cs{NewExpandableDocumentCommand};
+in most cases, however, it is better to use \cs{NewDocumentCommand} to
+give more robust structures.
+\jpnewline
+引数仕様が |m| または |+m| だけから成る（あるいは引数が全くない）ドキュメントコマンドでは、\cs{NewDocumentCommand} が作る内部構造は、実質的に|\newcommand(*)|と同程度に効率的です。したがって、\cs{newcommand}などで作られていた定義は、性能面を気にせずドキュメントコマンドで置き換えることができます。ただし、\cs{newcommand(*)}で定義されるコマンドは展開可能なので、厳密に対応する置き換え先は \cs{NewExpandableDocumentCommand}です。とはいえ、多くの場合には、より堅牢な構造にできる\cs{NewDocumentCommand}を使う方が望ましいでしょう。
+
+\subsection{Details about argument delimiters
+引数区切り文字に関する詳細}
+
+In normal (non-expandable) commands, the delimited types look for the
+initial delimiter by peeking ahead (using \pkg{expl3}'s |\peek_...|
+functions) looking for the delimiter token.  The token has to have the
+same meaning and `shape' of the token defined as delimiter.
+There are three possible cases of delimiters: character tokens, control
+sequence tokens, and active character tokens.  For all practical purposes
+of this description, active character tokens will behave exactly as
+control sequence tokens.
+\jpnewline
+通常の（展開可能でない）コマンドでは、区切り付き引数型は、先読み（\pkg{expl3}の |\peek_...| 関数を使用）によって区切りトークンを探し、先頭の区切り文字を見つけます。そのトークンは、区切り文字として定義されたトークンと同じ意味と\jpquote{形}（shape）を持っていなければなりません。区切り文字として使えるトークンには、文字トークン、制御シーケンストークン、アクティブ文字トークンの 3 種類があります。本説明の範囲においては、アクティブ文字トークンは制御綴りトークンと全く同様に振る舞います。
+
+
+\subsubsection{Character tokens
+文字トークン}
+
+A character token is characterized by its character code, and its meaning
+is the category code~(|\catcode|).  When a command is defined, the meaning
+of the character token is fixed into the definition of the command and
+cannot change.  A command will correctly see an argument delimiter if
+the open delimiter has the same character and category codes as at the
+time of the definition.  For example in:
+\jpnewline
+文字トークンは文字コードによって特徴づけられ、その意味はカテゴリコード（|\catcode|）によって決まります。コマンドが定義される際、その文字トークンの意味はコマンドの定義の一部として固定され、後から変更されることはありません。コマンドが引数の区切り文字を正しく認識できるのは、開始区切り文字が定義時と同じ文字コードおよびカテゴリコードを持っている場合だけです。例えば、次のような場合：
+\begin{verbatim}
+   \NewDocumentCommand { \foobar } { D<>{default} } {(#1)}
+   \foobar <hello> \par
+   \char_set_catcode_letter:N <
+   \foobar <hello>
+\end{verbatim}
+the output would be:
+\jpnewline
+出力は次のようになります：
+\begin{verbatim}
+   (hello)
+   (default)<hello>
+\end{verbatim}
+as the open-delimiter |<| changed in meaning between the two calls to
+|\foobar|, so the second one doesn't see the |<| as a valid delimiter.
+Commands assume that if a valid open-delimiter was found, a matching
+close-delimiter will also be there.  If it is not (either by being
+omitted or by changing in meaning), a low-level \TeX{} error is raised
+and the command call is aborted.
+\jpnewline
+これは、|\foobar|を2~回呼び出す間に開始区切り文字である|<|の意味が変わってしまったため、2~回目の呼び出しではその|<|が有効な区切り文字として認識されなかったからです。コマンドは、有効な開始区切り文字が見つかった場合、それに対応する終了区切り文字も存在すると想定して動作します。終了区切り文字が存在しない場合（省略されたか、あるいは意味が変わってしまったことによる）、低レベルの\TeX{}エラーが発生し、コマンドの呼び出しは中断されます。
+
+\subsubsection{Control sequence tokens
+制御シーケンストークン}
+
+A control sequence (or control character) token is characterized by
+its name, and its meaning is its definition.
+A token cannot have two different meanings at the same time.
+When a control sequence is defined as delimiter in a command,
+it will be detected as delimiter whenever the control sequence name
+is found in the document regardless of its current definition.
+For example in:
+\jpnewline
+制御シーケンストークン（または制御文字トークン）は、その名前によって識別され、その意味は定義によって決まります。一つのトークンが同時に二つの異なる意味を持つことはありません。ある制御シーケンスがコマンド内で区切り文字として定義された場合、文書内でその制御シーケンス名が現れると、その時点での定義にかかわらず、常に区切り文字として認識されます。例えば：
+\begin{verbatim}
+   \cs_set:Npn \x { abc }
+   \NewDocumentCommand { \foobar } { D\x\y{default} } {(#1)}
+   \foobar \x hello\y \par
+   \cs_set:Npn \x { def }
+   \foobar \x hello\y
+\end{verbatim}
+the output would be:
+\jpnewline
+とした時の出力は
+\begin{verbatim}
+   (hello)
+   (hello)
+\end{verbatim}
+with both calls to the command seeing the delimiter |\x|.
+\jpnewline
+となり、コマンドへの両方の呼び出しにおいて区切り文字|\x|が認識されます。
+
+\subsection{Creating new argument processors
+新しい引数プロセッサの作成}
+
+\begin{decl}
+  |\ProcessedArgument|
+\end{decl}
+Argument processors allow manipulation of a grabbed argument before it is
+passed to the underlying code. New processor implementations may be created
+as functions which take one trailing argument, and which leave their result in
+the \cs{ProcessedArgument} variable. For example, \cs{ReverseBoolean} is
+defined as
+\jpnewline
+引数プロセッサは、引数が基になるコードに渡される前に、その引数を操作できるようにします。新しいプロセッサの実装は、末尾に1~つの引数を取り、結果を\cs{ProcessedArgument}変数に格納する関数として作成できます。例えば、\cs{ReverseBoolean}は
+\begin{verbatim}
+   \ExplSyntaxOn
+   \cs_new_protected:Npn \ReverseBoolean #1
+     {
+       \bool_if:NTF #1
+         { \tl_set:Nn \ProcessedArgument { \c_false_bool } }
+         { \tl_set:Nn \ProcessedArgument { \c_true_bool } }
+     }
+   \ExplSyntaxOff
+\end{verbatim}
+と定義されます。
+
+[As an aside: the code is written in \pkg{expl3}, so we don't have to
+  worry about spaces creeping into the definition.]
+\jpnewline
+［補足：このコードは\pkg{expl3}で書かれているため、定義に空白が紛れ込む心配はありません。］
+
+\section{Copying and showing (robust) commands and environments
+（堅牢な）コマンドや環境をコピーして表示する}
+
+If you want to (slightly) alter an existing command you may want to
+save the current definition under a new name and then use that in a
+new definition. If the existing command is robust, then the old trick of
+using the low-level \cs{let} for this doesn't work, because it only
+copies the top-level definition, but not the part that actually does
+the work. As most \LaTeX{} commands are nowadays robust, \LaTeX{}
+now offers some high-level declarations for this instead.
+
+既存のコマンドを（少し）変更したい場合、現在の定義を別の名前で保存し、それを新しい定義の中で利用するのがよいでしょう。既存のコマンドが堅牢なものなら、低レベルの\cs{let}を使うという従来の手法はうまくいきません。なぜなら、\cs{let}は最上位の定義をコピーするだけで、実際に処理を行う部分まではコピーしないからです。現在では \LaTeX{}のコマンドの多くが堅牢になっているため、\LaTeX{}ではその代わりに高レベルの宣言が用意されています。
+
+However, please note that it is usually better to make use of
+available hooks (e.g., the generic command or environment hooks),
+instead of copying the current definition and thereby freezing it; see
+the hook management documentation \texttt{lthooks-doc.pdf} for
+details.
+\jpnewline
+ただし、現在の定義をコピーしてその時点の内容に固定してしまうのではなく、利用可能な\highLight[softpink]{フック}（例えば、汎用的なコマンドフックや環境フックなど）\marginnote{訳注：\highLight[softpink]{フック(hook）}は、既存の処理の前後や途中の決まった位置に追加のコードを差し込むための仕組みを指す。A \emph{\highLight[softpink]{hook}} refers to a mechanism for inserting additional code at specific points, before, after, or during, existing processes.}を活用する方が通常は望ましいことに注意してください。詳細については、フック管理に関するドキュメント\texttt{lthooks-doc.pdf}を参照してください。
+
+\begin{decl}
+  |\NewCommandCopy|       \arg{cmd} \arg{existing-cmd} \\
+  |\RenewCommandCopy|     \arg{cmd} \arg{existing-cmd} \\
+  |\DeclareCommandCopy|   \arg{cmd} \arg{existing-cmd}
+\end{decl}
+
+This copies the definition of \meta{existing-cmd} to \meta{cmd}. After
+this \meta{existing-cmd} can be redefined and \meta{cmd}
+still works! This allows you to then provide a new definition for
+\meta{existing-cmd} that makes use of \meta{cmd} (i.e., of its old
+definition). For example, after
+\jpnewline
+\meta{existing-cmd}の定義を\meta{cmd}にコピーします。その後、\meta{existing-cmd}を再定義しても、\meta{cmd}は引き続き機能します。これにより、\meta{cmd}（すなわち \meta{existing-cmd}の古い定義）を利用する新しい \meta{existing-cmd}の定義を与えることができます。例えば、
+\begin{verbatim}
+   \NewCommandCopy\LaTeXorig\LaTeX
+   \RenewDocumentCommand\LaTeX{}{\textcolor{blue}{\LaTeXorig}}
+\end{verbatim}
+all \LaTeX{} logos generated with \cs{LaTeX} will come out in blue
+(assuming you have a color package loaded).
+\jpnewline
+とした後は、\cs{LaTeX}で生成される \LaTeX{}ロゴはすべて青色で生成されます（カラー用パッケージが読み込まれているとします）。
+
+The differences between \cs{New...} and \cs{Renew...} are as
+elsewhere: i.e., you get an error depending on whether or not
+\meta{cmd} already exists, or in case of \cs{Declare...} it is copied
+regardless. Note that there is no \cs{Provide...} declaration, because
+that would be of limited value.
+\jpnewline
+\cs{New...}と\cs{Renew...}の違いは他の場合と同様です。すなわち、\meta{cmd} がすでに存在するかどうかに応じてエラーになるかどうかが決まり、\cs{Declare...}の場合はその有無にかかわらずコピーされます。\cs{Provide...}という宣言がないことに注意してください。その理由は、それがあまり役に立たないからです。
+
+
+If the \meta{cmd} or \meta{existing-cmd} can't be provided as a single
+token but need \enquote{constructing}, you can use \cs{ExpandArgs}
+as explained in
+Section~\ref{sec:preconstructing-csnames}.
+\jpnewline
+\meta{cmd}あるいは\meta{existing-cmd}を単一のトークンとして与えられず、\jpquote{組み立てる}必要がある場合は、セクション\ref{sec:preconstructing-csnames}で説明されているように\cs{ExpandArgs}を使用できます。
+
+\begin{decl}
+  |\ShowCommand|       \arg{cmd}
+\end{decl}
+
+This displays the meaning of the \meta{cmd} on the terminal and then
+stops (just like the primitive \cs{show}). The difference is that it
+correctly shows the meaning of more complex commands, e.g., in case of
+robust commands it displays not only the top-level definition but
+also the actual payload code and in case of commands declared with
+\cs{NewDocumentCommand}, etc.\ it also gives you detailed information
+about the argument signature.
+\jpnewline
+これは、画面に \meta{cmd}の意味を表示し、その後停止します（\highLight[softpink]{プリミティブ}\marginnote{訳注：\highLight[softpink]{プリミティブ（primitive）}とは\TeX{}が最初から持っている命令のことです。A `primitive' is a command that \TeX{} possesses from the start.}な\cs{show}と同様です）。違いは、より複雑なコマンドの意味も正しく表示できる点にあります。例えば、堅牢なコマンドの場合、最上位の定義だけでなく実際の本体コードも表示されますし、\cs{NewDocumentCommand}などで宣言されたコマンドの場合には、引数のシグネチャに関する詳細情報も提示されます。
+
+\begin{decl}
+  |\NewEnvironmentCopy|       \arg{env} \arg{existing-env} \\
+  |\RenewEnvironmentCopy|     \arg{env} \arg{existing-env} \\
+  |\DeclareEnvironmentCopy|   \arg{env} \arg{existing-env}
+\end{decl}
+
+This copies the definition for environment \meta{existing-env} to
+\meta{env} (both the beginning and end code), i.e., it is simply
+applying \cs{NewCommandCopy} twice to the internal commands that
+define an environment, i.e., \cs{}\meta{env} and \cs{end}\meta{env}.
+The differences between \cs{New...}, \cs{Renew...}, and
+\cs{Declare...} are the usual ones.
+\jpnewline
+これは、環境 \meta{existing-env}の定義（開始コードと終了コードの両方）を \meta{env}にコピーします。言い換えれば、環境を定義する内部コマンド \cs{}\meta{env}と\cs{end}\meta{env}に対して \cs{NewCommandCopy}を 2~回適用するのと同じです。\cs{New...}、\cs{Renew...}、\cs{Declare...}の違いは、通常のものと同様です。
+
+\begin{decl}
+  |\ShowEnvironment|       \arg{env}
+\end{decl}
+This displays the meaning of the begin and end code for environment \meta{env}.
+\jpnewline
+これは、環境 \meta{env}の開始コードと終了コードの意味を表示します。
+
+
+\section[Preconstructing command names \\ (or otherwise expanding arguments)
+コマンド名の事前構築（または引数の展開]
+        {Preconstructing command names (or otherwise expanding arguments)
+        コマンド名の事前構築（または引数の展開}
+\label{sec:preconstructing-csnames}
+
+When declaring new commands with \cs{NewDocumentCommand} or
+\cs{NewCommandCopy} or similar, it is sometimes necessary to
+``construct'' the csname. As a general mechanism the L3 programming
+layer has \cs{exp_args:N...} for this, but there is no mechanism for
+it if \cs{ExplSyntaxOn} is not active (and mixing programming and user
+interface level commands is not a good approach anyhow). We therefore
+offer a mechanism to access this ability using CamelCase naming.
+\jpnewline
+新しいコマンドを\cs{NewDocumentCommand} や \cs{NewCommandCopy} などで宣言する際には、制御綴り（csname）を「構築」する必要が生じることがあります。\highLight[softpink]{L3 プログラミング層}\marginnote{訳註：\highLight[softpink]{L3 プログラミング層}とは\pkg{expl3}が提供している仕組みのことです。The \highLight[softpink]{L3 programming layer} refers to the mechanism provided by \pkg{expl3}.}には、そのための一般的な仕組みとして \cs{exp_args:N...} がありますが、\cs{ExplSyntaxOn} が有効でない場合には、それに相当する仕組みがありません（そもそも、プログラミング用コマンドとユーザーインターフェース用コマンドを混在させるのは適切な手法とは言えません）。そこで、CamelCase（キャメルケース）の命名規則を用いることで、この機能を利用できる仕組みを提供しています。
+
+\begin{decl}
+  |\UseName|  \arg{string} \\
+  |\ExpandArgs| \arg{spec} \arg{cmd} \arg{arg1} \dots
+\end{decl}
+
+\cs{UseName} turns the \meta{string} directly into a csname and
+then executes it: this is equivalent to the long-standing
+\LaTeXe{} internal command \cs{@nameuse}, or the L3 programming
+equivalent \cs{use:c}. \cs{ExpandArgs} takes a \meta{spec} which
+describes how to expand the \meta{arguments}, carries out these
+operations then executes the \meta{cmd}. The \meta{spec} uses
+the descriptions offered by the L3 programming layer, and the
+relevant \cs{exp_args:N...} function must exist. Common cases will
+have a \meta{spec} of \texttt{c}, \texttt{cc} or \texttt{Nc}: see below.
+\jpnewline
+\cs{UseName}は\meta{string}を、そのまま制御綴りに変換して実行します。これは、古くからある \LaTeXe{}の内部コマンド \cs{@nameuse} や、L3プログラミング層における同等のコマンド \cs{use:c}と同じものです。\cs{ExpandArgs}は、\meta{arguments}をどのように\highLight[softpink]{展開}\marginnote{訳注：\jpemph{\highLight[softpink]{展開（expand）}}とは、マクロを実際の内容に置き換える処理です。\jpemph{\highLight[softpink]{Expansion}} is the process of replacing a macro with its actual content.}するかを指定する \meta{spec}を受け取り、その展開処理を行った上で \meta{cmd}を実行します。ここで使用される \meta{spec}はL3 プログラミング層の仕様に基づいたものであり、対応する \cs{exp_args:N...} 関数が存在している必要があります。一般的なケースでは、\meta{spec}として \texttt{c}、\texttt{cc}、または\texttt{Nc}が用いられます（後述）。
+
+As an example, the following declaration provides a method to generate
+copyedit commands:
+\begin{verbatim}
+   \NewDocumentCommand\newcopyedit{mO{red}}
+     {%
+       \newcounter{todo#1}%
+       \ExpandArgs{c}\NewDocumentCommand{#1}{s m}%
+         {%
+           \stepcounter{todo#1}%
+           \IfBooleanTF {##1}%
+             {\todo[color=#2!10]{\UseName{thetodo#1}: ##2}}%
+             {\todo[inline,color=#2!10]{\UseName{thetodo#1}: ##2}}%
+         }%
+     }
+\end{verbatim}
+Given that declaration you can then write
+\verb/\newcopyedit{note}[blue]/ which defines the command \cs{note}
+and the corresponding counter for you.
+\jpnewline
+その宣言を与えられれば、\verb/\newcopyedit{note}[blue]/と記述することで、\cs{note}コマンドとそれに対応するカウンタを定義できます。
+\jpnewline
+A second example is to copy a command by string name using
+\cs{NewCommandCopy}: here we might need to construct both command
+names.
+\jpnewline
+2つ目の例は、\cs{NewCommandCopy}を使って文字列名でコマンドをコピーする場合です。この場合には、両方のコマンド名を構築する必要が生じることがあります。
+\begin{verbatim}
+   \NewDocumentCommand\savebyname{m}
+     {\ExpandArgs{cc}\NewCommandCopy{saved#1}{#1}}
+\end{verbatim}
+
+In the \meta{spec} each \texttt{c} stands for one argument that is
+turned into a `\texttt{c}'ommand. An \texttt{n} represents a
+`\texttt{n}'ormal argument that is not altered and \texttt{N} stands for
+a `\texttt{N}'ormal argument which is also left unchanged, but one
+consisting only of a single token (and usually unbraced). Thus, to
+construct a command from a string only for the second argument of
+\cs{NewCommandCopy} you would write
+\jpnewline
+\meta{spec}では、各 \texttt{c}は、その引数 1 つを制御綴りとして構成することを表します。\texttt{n}は変更を加えない通常の引数を表し、\texttt{N}も同様に変更しない引数を表しますが、こちらは単一のトークンだけから成る引数（通常は波括弧で囲まれません）です。したがって、\cs{NewCommandCopy}の第2~引数だけを文字列からコマンドとして構成したい場合には、次のように書きます。
+\begin{verbatim}
+   \ExpandArgs{Nc}\NewCommandCopy\mysectionctr{c@section}
+\end{verbatim}
+There are several other single letters supported in the L3 programming
+layer that \emph{could} be used in the \meta{spec} to manipulate
+arguments in other ways.  If you are interested, take a look at the
+\enquote{Argument expansion} section in the L3 programming layer
+documentation in \texttt{interface3.pdf}.
+\jpnewline
+L3プログラミング層では、このほかにもいくつかの 1~文字指定がサポートされており、\meta{spec}の中でそれらを使って引数を別の方法で操作することも\jpemph{できます}。興味がある方は、\texttt{interface3.pdf}にある L3プログラミング層の文書の \enquote{Argument expansion} 節を参照してください。
+
+\section{Expandable floating point (and other) calculations
+展開可能な浮動小数点（およびその他）の計算}
+
+The \LaTeX3 programming layer which is part of the format offers a
+rich interface to manipulate floating point variables and values. To
+allow for (simpler) applications to use this on document-level or in
+packages otherwise not making use of the L3 programming layer a few
+interface commands are made available.
+\jpnewline
+フォーマットの一部を成す\highLight[softpink]{L3プログラミング層}\marginnote{訳注：原文の\enquote{The \LaTeX3 programming layer}を、他の記述に揃えるために、\jpquote{L3プログラミング層}と訳した。The term \enquote{The LaTeX3 programming layer} in the original text has been translated as ``L3プログラミング層'' to ensure consistency with other descriptions.}は、浮動小数点変数や値を操作するための豊富なインターフェースを提供しています。文書レベルや、本来はL3プログラミング層を利用していないパッケージにおいて、より手軽にこの機能を使えるようにするため、いくつかの利用者向けコマンドが提供されています。
+
+\begin{decl}
+  |\fpeval| \arg{floating point expression}
+\end{decl}
+
+The expandable command \cs{fpeval} takes as its argument a floating
+point expression and produces a result using the normal rules of
+mathematics. As this command is expandable it can be used where \TeX{}
+requires a number and for example within a low-level \cs{edef} operation
+to give a purely numerical result.
+\jpnewline
+展開可能なコマンド\cs{fpeval}は、引数として浮動小数点式を受け取り、通常の数学の規則に従って結果を生成します。このコマンドは展開可能であるため、\TeX{}が数値を必要とする場面や、例えば純粋な数値結果を得るための低レベルな\cs{edef}操作内などで使用することができます。
+\jpnewline
+Briefly, the floating point expressions may comprise:
+\jpnewline
+要約すると、浮動小数点式は以下で構成され得ます：
+\begin{itemize}
+  \item Basic arithmetic: addition $x\fpbin{+}y$, subtraction $x\fpbin{-}y$,
+    multiplication $x\fpbin{*}y$, division $x\fpbin{/}y$, square root~$\fpop{sqrt}{x}$,
+    and parentheses.
+    \jpnewline
+       基本的な算術演算：加算 $x\fpbin{+}y$、減算 $x\fpbin{-}y$、
+   乗算 $x\fpbin{*}y$、除算 $x\fpbin{/}y$、平方根 $\fpop{sqrt}{x}$、
+   および丸括弧（parenthese）。
+  \item Comparison operators: $x\fprel{<}y$,
+    $x\fprel{<=}y$, $x\fprel{>?}y$,
+    $x\fprel{!=}y$ \emph{etc.}
+    \jpnewline
+        比較演算子：$x\fprel{<}y$、
+    $x\fprel{<=}y$、$x\fprel{>?}y$、
+   $x\fprel{!=}y$ など。
+ \jpnewline   
+    The relation $x\fprel{?}y$ is true exactly if one or both operands is~\nan{} or is
+   a tuple, unless they are equal tuples. Each \meta{relation}
+   can be any (non-empty) combination of |<|, |=|, |>|, and~|?|, plus
+   an optional leading~|!| (which negates the \meta{relation}), with
+   the restriction that the negated \meta{relation} may not start with~|?|.
+   \jpnewline
+   関係$x\fprel{?}y$は、両オペランドが等しいタプルである場合を除き、少なくとも一方のオペランドが \nan{}であるか、またはタプルであるときに真になります。各 \meta{relation}には、|<|、|=|、|>|、|?|の空でない任意の組合せを使え、さらに先頭に任意で|!|を付けてその関係を否定できます。ただし、否定された\meta{relation}が|?|で始まってはならないという制約があります。
+\jpnewline
+  \item Boolean logic: sign $\fpop{sign} x$,
+    negation $\fpop{!}x$, conjunction
+    $x\fprel{\&\&}y$, disjunction $x\fprel{\string|\string|}y$, ternary
+    operator $x\fprel{?}y\fprel{:}z$.
+    \jpnewline
+    ブール論理：  符号 $\fpop{sign} x$、否定 $\fpop{!}x$、論理積 $x\fprel{\&\&}y$、論理和 $x\fprel{\string|\string|}y$、三項演算子 $x\fprel{?}y\fprel{:}z$。
+  \item Exponentials: $\fpop{exp} x$, $\fpop{ln} x$, $x\mathord{\texttt{\^{}}}y$.
+  \jpnewline
+   指数・対数・べき乗：$\fpop{exp} x$、$\fpop{ln} x$、$x\mathord{\texttt{\^{}}}y$。
+  \item Integer factorial: $\fpop{fact} x$.
+  \jpnewline
+  整数の階乗： $\fpop{fact} x$。
+  \item Trigonometry: $\fpop{sin} x$, $\fpop{cos} x$, $\fpop{tan} x$, $\fpop{cot} x$, $\fpop{sec}
+    x$, $\fpop{csc} x$ expecting their arguments in radians, and
+    $\fpop{sind} x$, $\fpop{cosd} x$,
+    $\fpop{tand} x$, $\fpop{cotd} x$,
+    $\fpop{secd} x$, $\fpop{cscd} x$ expecting their
+    arguments in degrees.
+    \jpnewline
+     三角関数： 引数はラジアンでとる $\fpop{sin} x$、$\fpop{cos} x$、$\fpop{tan} x$、$\fpop{cot} x$、$\fpop{sec} x$、$\fpop{csc} x$、および引数を度数法（度）でとる $\fpop{sind} x$、$\fpop{cosd} x$、$\fpop{tand} x$、$\fpop{cotd} x$、$\fpop{secd} x$、$\fpop{cscd} x$。
+  \item Inverse trigonometric functions: $\fpop{asin} x$,
+    $\fpop{acos} x$, $\fpop{atan} x$,
+    $\fpop{acot} x$, $\fpop{asec} x$,
+    $\fpop{acsc} x$ giving a result in radians, and
+    $\fpop{asind} x$, $\fpop{acosd} x$,
+    $\fpop{atand} x$, $\fpop{acotd} x$,
+    $\fpop{asecd} x$, $\fpop{acscd} x$ giving a result
+    in degrees.
+    \jpnewline
+       逆三角関数： $\fpop{asin} x$,
+$\fpop{acos} x$, $\fpop{atan} x$,
+$\fpop{acot} x$, $\fpop{asec} x$,
+$\fpop{acsc} x$（結果はラジアン単位）、および
+$\fpop{asind} x$, $\fpop{acosd} x$,
+$\fpop{atand} x$, $\fpop{acotd} x$,
+$\fpop{asecd} x$, $\fpop{acscd} x$（結果は度単位）
+  \item Extrema: $\fpop{max}(x_{1},x_{2},\ldots)$, $\fpop{min}(x_{1},x_{2},\ldots)$,
+    $\fpop{abs}(x)$.
+    \jpnewline
+     最大値、最小値、絶対値：$\fpop{max}(x_{1},x_{2},\ldots)$, $\fpop{min}(x_{1},x_{2},\ldots)$,    $\fpop{abs}(x)$.
+  \item Rounding functions, controlled by two optional
+    values,  $n$ (number of places, $0$ by default) and
+      $t$ (behavior on a tie, $\nan$ by default):
+      \jpnewline
+       丸め関数は、2~つのオプション値、$n$（桁数、デフォルトは$0$）と$t$（同じ場合のデフォルトは$\nan$）によって制御されます。:
+    \begin{itemize}
+    \item $\fpop{trunc}(x,n)$ rounds towards zero,
+    \jpnewline
+        $\fpop{trunc}(x,n)$は0 方向に丸めます。
+    \item $\fpop{floor}(x,n)$ rounds towards~$-\infty$,
+    \jpnewline
+      $\fpop{floor}(x,n)$は$-\infty$方向に丸めます。
+    \item $\fpop{ceil}(x,n)$ rounds towards~$+\infty$,
+    \jpnewline
+    $\fpop{ceil}(x,n)$は$+\infty$方向に丸めます。
+    \item $\fpop{round}(x,n,t)$ rounds to the closest value, with
+    ties rounded to an even value by default, towards zero if $t=0$,
+    towards $+\infty$ if $t>0$ and towards $-\infty$ if $t<0$.
+    \jpnewline
+      $\fpop{round}(x,n,t)$は最も近い値に丸めます。ちょうど中間の場合は、既定では最も近い偶数に丸められます。$t=0$なら0方向、$t>0$なら$+\infty$の向きへ、$t<0$なら $-\infty$の向きに丸められます。
+    \end{itemize}
+  \item Random numbers: $\fpop{rand}()$, $\fpop{randint}(m,n)$.
+  \jpnewline
+    乱数: $\fpop{rand}()$, $\fpop{randint}(m,n)$.
+  \item Constants: \texttt{pi}, \texttt{deg} (one degree in radians).
+  \jpnewline
+  定数: \texttt{pi}, \texttt{deg}（1~度をラジアンで表したもの）。
+  \item Dimensions, automatically expressed in points, \emph{e.g.},
+    \texttt{pc} is~$12$.
+    \jpnewline
+    寸法：自動的にポイント単位で表されり。例えば\texttt{1pc}は$12$として扱われます。
+  \item Automatic conversion (no need for \cs{number}) of
+    integer, dimension, and skip variables to floating points numbers,
+    expressing dimensions in points and ignoring the stretch and
+    shrink components of skips.
+    \jpnewline
+    整数、寸法、およびスキップ変数の浮動小数点数への自動変換（\cs{number}は不要）。寸法はポイント単位で表され、スキップの伸縮成分（stretch/shrink）は無視されます。
+  \item Tuples: $(x_1,\ldots{},x_n)$ that can be added together,
+    multiplied or divided by a floating point number, and nested.
+    \jpnewline
+    タプル：$(x_1,\ldots{},x_n)$の形をとり、相互に加算でき、浮動小数点数による乗算・除算が可能で、入れ子にもできます。
+\end{itemize}
+
+An example of use could be the following:
+\jpnewline
+使用例は以下の通りです：
+\begin{verbatim}
+   \LaTeX{} can now compute: $ \frac{\sin (3.5)}{2} + 2\cdot 10^{-3}
+     = \fpeval{sin(3.5)/2 + 2e-3} $.
+\end{verbatim}
+which produces the following output:
+\jpnewline
+これにより、次のような出力が得られます：
+\begin{quote}
+  \LaTeX{} can now compute: $ \frac{\sin (3.5)}{2} + 2\cdot 10^{-3}
+  = \fpeval{sin(3.5)/2 + 2e-3} $.
+\end{quote}
+
+\begin{decl}
+  |\inteval| \arg{integer expression}
+\end{decl}
+
+  The expandable command \cs{inteval} takes as its argument an integer
+  expression and produces a result using the normal rules of
+  mathematics with some restrictions, see below. The operations
+  recognized are |+|, |-|, |*| and |/| plus parentheses.  As this
+  command is expandable it can be used where \TeX{} requires a number
+  and for example within a low-level \cs{edef} operation to give a
+  purely numerical result.
+\jpnewline
+展開可能なコマンド \cs{inteval}は、引数として整数式を受け取り、通常の数学的規則（ただし一部の制限あり。後述）に従って結果を生成します。利用可能な演算は|+|, |-|, |*|, |/| および丸括弧です。このコマンドは展開可能であるため、\TeX{}が数値を必要とする場面や、例えば低レベルの\cs{edef}処理内で純粋な数値結果を得るために使用することができます。
+
+
+  This is basically a thin wrapper for the primitive \cs{numexpr}
+  command and therefore has some syntax restrictions. These are:
+  \jpnewline
+  これは基本的にプリミティブな\cs{numexpr}コマンドの薄いラッパーであるため、いくつかの構文上の制約があります。それらは以下の通りです：
+  \begin{itemize}
+  \item \texttt{/} denotes division rounded to the closest integer with
+    ties rounded away from zero;
+    \jpnewline
+     \texttt{/}は、最も近い整数への丸め（ただし、中間値の場合はゼロから遠い方の整数へ丸める）による除算を表します。
+  \item there is an error and the overall expression evaluates to zero
+    whenever the absolute value of any intermediate result exceeds
+    $2^{31}-1$, except in the case of scaling operations
+    $a$\texttt{*}$b$\texttt{/}$c$, for which $a$\texttt{*}$b$ may be
+    arbitrarily large;
+    \jpnewline
+    中間計算結果の絶対値が $2^{31}-1$を超えるとエラーとなり、式全体の評価結果はゼロになります。ただし、$a$\texttt{*}$b$\texttt{/}$c$という形式の\highLight[softpink]{スケーリング演算}（この場合、$a$\texttt{*}$b$は任意に大きな値になり得ます）は、そうなりません。\marginnote{訳註：ここの\highLight[softpink]{スケーリング演算}（scaling operation）とは数値の大きさ（スケール）を調整することです。ここでは、大きな数値$a*b$を別の数値$c$で割ることで、適切な範囲に収める操作です。The scaling operation here refers to adjusting the size (scale) of a number. In this case, it involves dividing a large number $a*b$ by another number $c$ to bring it within a suitable range.}
+  \item parentheses may not appear after unary \texttt{+} or
+    \texttt{-}, namely placing \texttt{+(} or \texttt{-(} at the start
+    of an expression or after \texttt{+}, \texttt{-}, \texttt{*},
+    \texttt{/} or~\texttt{(} leads to an error.
+ \jpnewline   
+    単項の\texttt{+}や\texttt{-}の直後に丸括弧を置くことはできません。すなわち、式の先頭や\texttt{+}、\texttt{-}、\texttt{*}、\texttt{/}、\texttt{(}の直後に\texttt{+(}や\texttt{-(}を記述するとエラーになります。
+  \end{itemize}
+
+An example of use could be the following.
+\jpnewline
+使用例は以下のとおりです。
+\begin{verbatim}
+   \LaTeX{} can now compute: The sum of the numbers is $\inteval{1 + 2 + 3}$.
+\end{verbatim}
+which results in
+\jpnewline
+この結果は次のようになります。
+
+\enquote{\LaTeX{} can now compute: The sum of the numbers is $\inteval{1 + 2 + 3}$.}
+
+
+\begin{decl}
+  |\dimeval| \arg{dimen expression} \qquad
+  |\skipeval| \arg{skip expression}
+\end{decl}
+
+Similar to \cs{inteval} but computing a length (\texttt{dimen}) or a
+rubber length (\texttt{skip}) value. Both are thin wrappers around
+the corresponding engine primitives, which makes them fast, but
+therefore shows the same syntax peculiars as discussed
+above. Nevertheless, in practice they are usually sufficient.  For
+example
+\jpnewline
+\cs{inteval}と同様ですが、長さ（\texttt{dimen}）や伸縮可能な長さ（\texttt{skip}）の値を計算します。これらはいずれも対応するエンジンのプリミティブに対するごく薄いラッパーなので高速に動作しますが、その反面、前述したのと同じ構文上の制約もあります。とはいえ、実際にはこれらで十分な場合がほとんどです。例えば、
+\begin{verbatim}
+   \NewDocumentCommand\calculateheight{m}{%
+     \setlength\textheight{\dimeval{\topskip+\baselineskip*\inteval{#1-1}}}}
+\end{verbatim}
+sets the \cs{textheight} to the appropriate value if a page should
+hold a specific number of text lines. Thus after |\calculateheight{40}|
+it is set to \dimeval{\topskip+\baselineskip*\inteval{40-1}}, given
+the values \cs{topskip} (\dimeval{\topskip}) and \cs{baselineskip}
+(\dimeval{\baselineskip}) in the current document.
+です。これは、1ページに特定の行数の本文を収めるために、\cs{textheight}を適切な値に設定します。したがって、|\calculateheight{40}|を実行すると、現在の文書における\cs{topskip}（\dimeval{\topskip}）と\cs{baselineskip}（\dimeval{\baselineskip}）の値に基づいて、\cs{textheight}は\dimeval{\topskip+\baselineskip*\inteval{40-1}}に設定されます。
+
+\section{Expandable \cs{input} equivalent
+展開可能な \cs{input}相当のコマンド}
+
+\begin{decl}
+  |\expandableinput| \arg{filename}
+\end{decl}
+The \LaTeX{} definition of \cs{input} cannot be used in places where \TeX{} is
+performing expansion: the classic example is at the start of a tabular cell.
+There are a number of reasons for this: the key ones are that \cs{input}
+records which files are read and provides pre- and post-file hooks.
+\jpnewline
+\LaTeX{}の\cs{input}定義は、\TeX{}が展開中の箇所では使用できません。典型的な例として、tabular環境のセルの先頭が挙げられます。これにはいくつかの理由がありますが、主なものとしては、どのファイルが読み込まれたかを記録する\cs{input}の機能や、ファイル読み込みの前後に実行されるフックを提供する機能を備えている点が挙げられます。
+
+To support the need to carry out file input in expansion contexts, the command
+\cs{expandableinput} is available: this skips recording the file name and does
+not apply any file hooks, but otherwise behaves like \cs{input}. In particular,
+it still uses \cs{input@path} when doing file lookup.
+\jpnewline
+展開中の文脈でもファイル入力を行えるようにするため、\cs{expandableinput}というコマンドが用意されています。このコマンドは、ファイル名を記録せず、ファイルフックも適用しませんが、\cs{input}と同様に動作します。特に、ファイルの検索時には\cs{input@path}が使用されます。
+
+\section{Case changing
+大文字と小文字の変換}
+
+\begin{decl}
+  |\MakeUppercase| \oarg{keyvals} \arg{text} \\
+  |\MakeLowercaes| \oarg{keyvals} \arg{text} \\
+  |\MakeTitlecase| \oarg{keyvals} \arg{text}
+\end{decl}\marginnote{訳注：MakeLowercaesはMakeLowercaseのスペルミス。The \emph{misspelling} `MakeLowercaes' should be `MakeLowercase'.}
+
+\TeX{} provides two primitives \cs{uppercase} and \cs{lowercase} for changing
+the case of text. However, these have a range of limitations: they only change
+the case of explicit characters, do not account for the surrounding context, do
+not support UTF-8 input with 8-bit engines, etc. To overcome this problem,
+\LaTeX{} provides the commands \cs{MakeUppercase}, \cs{MakeLowercase} and
+\cs{MakeTitlecase}: these offer significant enhancement over the \TeX{}
+primitives. These commands are engine-robust (\cs{protected}), and so
+can be used in moving arguments.
+\jpnewline
+\TeX{}には、二つのプリミティブとして文字の大文字と小文字とを変換する \cs{uppercase}と\cs{lowercase}が用意されています。しかし、これらにはいくつかの制限があります：明示的に与えられた文字しか変換できない、周囲の文脈を考慮しない、8ビットエンジンでUTF-8入力をサポートしていない、といった点です。この問題を解決するために、\LaTeX{}では\cs{MakeUppercase}、\cs{MakeLowercase}、\cs{MakeTitlecase}というコマンドが提供されています。これらは\TeX{}のプリミティブに比べて大幅に機能が強化されています。これらのコマンドは \cs{protected} で定義された堅牢なコマンドなので、\highLight[softpink]{移動引数（moving arguments）}の中で使用することが可能です。\marginnote{訳注：\highLight[softpink]{移動引数}（moving arguments）とは、目次・見出し・柱・しおりなどように、いったん別の場所へ書き出されて後で再利用される可能性のある引数のことです。A `moving argument' refers to an argument that is written out to a different location, such as a table of contents, heading, running head, or bookmark, and may be reused later.}\label{moving_argument}%
+
+Upper- and lower-casing are well-understood in general conversation.
+Titlecasing here follows the definition given by the Unicode Consortium: the
+first character of the input will be converted to (broadly) uppercase, and the
+rest of the input to lowercase. The full range of Unicode UTF-8 input can be
+supported.
+\jpnewline
+大文字化と小文字化については、一般にもよく知られています。ここで\highLight[softpink]{見出し用大文字表記}\marginnote{訳注：\highLight[softpink]{\emph{titlecase}}を、ここでは見出し用大文字表記と訳しました。日本語には当てはまりませんが、書名や章の名前などの見出しのときに、単語の最初の1~文字目だけを大文字にする規則のことです。\cs{MakeTitlecase}は、デフォルトでは、与えられた文字列全体の、最初の1~文字目だけを大文字にします。Here, \highLight[softpink]{\emph{titlecase}} has been translated as "capitalized title for headings." Although this doesn't apply to Japanese, it refers to the rule of capitalizing only the first letter of a word when it's used as a heading, such as a book title or chapter title. By default, \cs{MakeTitlecase} capitalizes only the very first character of the provided string.}は、Unicodeコンソーシアムの定義に従います。つまり、入力の最初の文字は（広義の）大文字に変換され、それ以降の文字は小文字に変換されます。Unicode UTF-8入力の全範囲をサポートできます。
+\begin{flushleft}
+  \begin{tabular}{@{}ll}
+    |\MakeUppercase{hello WORLD ßüé}| & \MakeUppercase{hello WORLD ßüé} \\
+    |\MakeLowercase{hello WORLD ßüé}| & \MakeLowercase{hello WORLD ßüé} \\
+    |\MakeTitlecase{hello WORLD ßüé}| & \MakeTitlecase{hello WORLD ßüé} \\
+  \end{tabular}
+\end{flushleft}
+
+The case-changing commands take an optional argument which can be used to
+tailor the output. This optional argument accepts the key \texttt{locale}, also
+available under the alias \texttt{lang}, which can be used to give a language
+identifier in BCP-47 format. This is then applied to select language-specific
+features during case-changing.
+\jpnewline
+大文字と小文字を変換するコマンドは、出力を調整するためのオプション引数を受け付けます。このオプション引数では、\highLight[softpink]{BCP-47形式}の言語識別子を指定するために \texttt{locale}キー（\texttt{lang}という別名でも指定可能）を使用できます。指定された識別子は、変換処理において言語固有の機能を適用する際に利用されます。\marginnote{訳註：\highLight[softpink]{BCP-47形式}は、言語や地域を表すためのタグの書き方です。たとえば、jaは日本語を指しますが、ja-JPと書けば日本向けの日本語（ロケール \texttt{locale}）を表します。同様に、en-US は米国英語、zh-Hant-TW は台湾で使う繁体字中国語のロケールを意味します。この形式で表されるタグは、「どの言語・文字体系・地域か」を明確に示します。このように表されたときは「どの言語・文字体系・地域か」を表します。The BCP-47 format is a standardized way of writing locale tags to represent languages, regions, and scripts. For example, 'ja' denotes the Japanese language, while 'ja-JP' specifies the Japanese locale as used in Japan. Similarly, 'en-US' refers to the US English locale, and 'zh-Hant-TW' indicates the Traditional Chinese locale as used in Taiwan. These tags precisely identify the language, writing system, and regional conventions.}
+
+For titlecasing, the key \texttt{words} may also be used: this
+takes a choice of \texttt{first} or \texttt{all}. The standard
+setting is \texttt{first}, and means that only the very first
+\enquote{letter} is (broadly) uppercased. The alternative,
+\texttt{all}, means that the input is divided at each space, and
+for each word that results, the first letter is uppercased. For
+example
+\jpnewline
+見出し用大文字表記への変換には、二つのキーワードが用意されています。それらは\texttt{first}と\texttt{all}です。デフォルト設定は\texttt{first}であり、これは、最初の「文字」だけが（概ね）大文字化されることを意味します。もうひとつの選択肢である \texttt{all}は、入力を空白ごとに分割し、分割された各単語の先頭文字を大文字にすることを意味します。例えば、
+
+\begin{verbatim}
+   \MakeTitlecase[words = first]{some words}
+   \MakeTitlecase[words = all]{some words}
+\end{verbatim}
+gives \enquote{\MakeTitlecase[words = first]{some words}
+\MakeTitlecase[words = all]{some words}}.
+\jpnewline
+とすると、\enquote{\MakeTitlecase[words = first]{some words} \MakeTitlecase[words = all]{some words}}となります。
+
+The input given to these commands is \enquote{expanded} before case changing is
+applied. This means that any commands within the input that convert to pure
+text will be case changed. Mathematical content is automatically excluded, as
+are the arguments to the commands \cs{label}, \cs{ref}, \cs{cite}, \cs{begin}
+and \cs{end}. Additional exclusions can be added using the command
+\cs{AddToNoCaseChangeList}. Input can be excluded from case changing using the
+command \cs{NoCaseChange}.
+\jpnewline
+これらのコマンドに渡される入力は、大文字と小文字の変換が適用される前に「展開」されます。つまり、入力に含まれるコマンドのうち、純粋なテキストに変換されるものは変換の対象となります。数式部分は自動的に除外されるほか、 \cs{label}、\cs{ref}、 \cs{cite}、\cs{begin}、そして\cs{end}といったコマンドの引数も除外されます。\cs{AddToNoCaseChangeList}コマンドを使用すれば、除外対象を追加することも可能です。また、\cs{NoCaseChange}コマンドを使用することで、特定の入力を変換対象から除外できます。
+\begin{flushleft}
+  \begin{tabular}{@{}ll}
+    |\MakeUppercase{Some text $y = mx + c$}|
+      & \MakeUppercase{Some text $y = mx + c$} \\
+    |\MakeUppercase{\NoCaseChange{iPhone}}|
+      & \MakeLowercase{\NoCaseChange{iPhone}} \\
+  \end{tabular}
+\end{flushleft}
+
+Individual words can be excluded globally from case changing using the
+commands \cs{DeclareLowercaseExclusions}, \cs{DeclareTitlecaseExclusions},
+and \cs{DeclareUppercaseExclusions}, each of which take a comma-seperated
+list of words to be excluded. For example, to titlecase in English in the
+manner often seen for book titles, one might use
+\jpnewline
+特定の単語を大文字と小文字変換の対象から一括して除外するには、コマンド\,\cs{DeclareLowercaseExclusions}、\cs{DeclareTitlecaseExclusions}、および \cs{DeclareUppercaseExclusions}を使うことで行えます。これらのコマンドは、いずれも除外対象となる単語をカンマで区切ったリストを引数として受け取ります。例えば、書籍のタイトルなどでよく見られる英語の見出し用大文字表記を適用する場合、
+\begin{verbatim}
+  \DeclareTitlecaseExclusions{a,an,and,on,of,the}
+  \MakeTitlecase[words = all]{Of mice and men}
+  \MakeTitlecase[words = all]{The mill on the floss}
+  \MakeTitlecase[words = all]{The comedy of errors}
+\end{verbatim}
+to obtain
+\jpnewline
+とすると、次のような結果が得られます。
+\begin{flushleft}
+  \DeclareTitlecaseExclusions{a,an,and,on,of,the}%
+  \MakeTitlecase[words = all]{Of mice and men} \\
+  \MakeTitlecase[words = all]{The mill on the floss} \\
+  \MakeTitlecase[words = all]{The comedy of errors}
+\end{flushleft}
+
+To allow robust commands to be used within case changing \emph{and} to produce
+the expected output, two additional control commands are available.
+\cs{CaseSwitch} allows the user to specify the result for the four possible
+cases
+\jpnewline
+大文字と小文字変換の中でも堅牢なコマンドを使い、\jpemph{さらに}期待どおりの出力を得られるようにするために、2~つの追加制御コマンドが用意されています。\cs{CaseSwitch}を使用すると、次の4~つの場合
+\begin{itemize}
+  \item No case changing\jpnewline
+    大文字と小文字の間の変換を行わない
+  \item Uppercasing\jpnewline
+    大文字にする
+  \item Lowercasing\jpnewline
+    小文字にする
+  \item Titlecasing (only applies for the start of the input)v
+   見出し用大文字表記（入力の先頭のみに適用）
+\end{itemize}
+のそれぞれについて結果を指定できます。
+
+The command \cs{DeclareCaseChangeEquivalent} provides a way to substitute a
+command by an alternative version when it is found inside a case changing
+situation. There are three commands for customising the case changing of
+codepoints
+\jpnewline
+コマンド \cs{DeclareCaseChangeEquivalent}は、大文字と小文字との変換が行われる文脈で、あるコマンドを別のバージョンに置き換えるための手段を提供します。コードポイントの大文字と小文字変換をカスタマイズするためのコマンドは3つあります。
+\begin{decl}
+  |\DeclareLowercaseMapping| \oarg{locale} \arg{codepoint} \arg{output} \\
+  |\DeclareTitlecaseMapping| \oarg{locale} \arg{codepoint} \arg{output} \\
+  |\DeclareUppercaseMapping| \oarg{locale} \arg{codepoint} \arg{output}
+\end{decl}
+All three take a \meta{codepoint} (as an integer expression) and will
+result in the \meta{output} being produced under the appropriate case changing
+operation. The optional \meta{locale} can be given if the mapping should only
+apply to a specific one: this is given in BCP-47 format
+(\url{https://en.wikipedia.org/wiki/IETF_language_tag}). For example,
+the kernel customises the mapping for U+01F0 (\v{j}) when uppercasing in
+8-bit engines:
+\jpnewline
+これら3つのコマンドはすべて、引数として\meta{codepoint}（整数式として与える）を受け取り、適切な大文字と小文字との変換の際に\meta{output}を生成します。特定のロケールに対してのみ変換を適用したい場合は、オプションの\meta{locale}を指定できます。この指定にはBCP-47~形式（\url{https://en.wikipedia.org/wiki/IETF_language_tag}）を用います。例えば、8~ビットエンジンで大文字変換を行う際、カーネルはU+01F0 (\v{j})の変換規則を次のようにカスタマイズしています：
+\begin{verbatim}
+   \DeclareUppercaseMapping{"01F0}{\v{J}}
+\end{verbatim}
+zas there is no pre-composed \v{J} character, and this is problematic if
+the engine does not support Unicode natively. Similarly, to set a locale
+\texttt{xx} to behave in the same way as Turkish and retain the difference
+between dotted- and dotless-i, one could use for example
+\jpnewline
+合成済み文字（pre-composed character）の\v{J}は存在しないため、エンジンがUnicodeをネイティブにサポートしていない場合には問題が生じます。同様に、ロケール\texttt{xx}をトルコ語と同様に動作させ、ドット付きのiとドットなしのiの区別を維持したい場合は、例えば次のように設定できます。
+\begin{verbatim}
+   \DeclareLowercaseMapping[xx]{"0049}{\i}
+   \DeclareLowercaseMapping[xx]{"0130}{i}
+   \DeclareUppercaseMapping[xx]{"0069}{\.{I}}
+   \DeclareUppercaseMapping[xx]{"0131}{I}
+\end{verbatim}
+
+\section{Text sub- and superscripts
+テキスト用の下付きと上付き添え字}
+
+\begin{decl}
+  |\textsubscript| \arg{text} \\
+  |\textsuperscript| \arg{text}
+\end{decl}
+Semantically, some sub- and superscripts are clearly text rather than math
+mode, for example footnote markers. To support these textual uses, the commands
+\cs{textsubscript} and \cs{textsuperscript} are available.
+ \jpnewline
+意味の上では、下付きや上付きの中には、明らかに数式モードではなくテキストとして扱うべきものがあります。例えば脚注の番号や記号などです。こうしたテキストとしての用途に対応するため、\cs{textsubscript}および \cs{textsuperscript}というコマンドが用意されています。
+\begin{decl}
+  |\textsubscript@offset|   \\
+  |\textsubscript@space|    \\
+  |\textsuperscript@offset| \\
+  |\textsuperscript@space|
+\end{decl}
+The standard settings for these commands use the same placement parameters as
+\TeX{} would use in math mode.\footnote{This reflects the history of these
+commands: previous versions were implemented using math mode internally for
+placement.} Two aspects of placement can be adjusted by setting the control
+commands to updated values:
+ \jpnewline
+これらのコマンドの標準設定では、\TeX{}が数式モードで用いるのと同じ配置パラメータが使われます。\footnote{これはこれらのコマンドの履歴を反映しています。以前の版では、配置のために内部的に数式モードを用いて実装されていました。}配置に関する次の 2~つの点は、これらの制御コマンドに新しい値を設定することで調整できます：
+\begin{itemize}
+  \item The vertical offset of the sub- or superscript: this is a dimension
+    expression (as described for \cs{dimeval}), stored in a command so that
+    it is evaluated at the time of use. The standard setting
+    uses the font dimensions of the current math font, but for new documents,
+    using a value based on the text font is recommended. For example
+    \jpnewline
+    下付き文字または上付き文字の垂直方向のオフセット：これは寸法を示す式（\cs{dimeval}で説明されているとおり）であり、コマンドに格納されているため、使用時に評価されます。標準設定では、現在の数式フォントに由来する寸法が使用されますが、新規文書では、テキストフォントに基づいた値を使用することをお勧めします。例えば、
+    \begin{Verbatim}[gobble = 6]
+      \renewcommand*\textsuperscript@offset{0.86ex}
+    \end{Verbatim}
+    will set the vertical offset to $86\,\mathrm{\%}$ of the x-height of the
+    current  font.
+    \jpnewline
+   は、垂直方向のオフセットを現在のフォントのxハイトの$86$パーセントに設定します。
+  \item The space added after the sub- or superscript: the standard setting is
+    a space of the same size as would be used in math mode
+    (\cs{scriptspace}); this space will be retained if the script occurs
+    immediately before a linebreak. It may be preferable in new documents
+    to allow the space to be discarded here, setting for example,
+     \jpnewline
+     下付き文字または上付き文字の後に挿入される空白：標準設定では、数式モードで使用される空白（\cs{scriptspace}）と同じ大きさの空白が使用されます。この添え字が改行の直前にある場合、この空白は保持されます。新しい文書では、この空白がここで捨てられるようにしておく方が望ましい場合もあります。例えば、次のように設定できます。
+    \begin{Verbatim}[gobble = 6]
+      \renewcommand*\textsuperscript@space{\hspace{0.5pt}}
+    \end{Verbatim}
+\end{itemize}
+
+\section{Support for problem solving
+問題解決のための手助け}
+
+\begin{decl}
+  |\listfiles| \oarg{options}
+\end{decl}
+
+If this command is placed in the preamble then a list of the files
+read in (as a result of processing the document) will be displayed
+on the terminal (and in the log file) at the end of the run. Where
+possible, a short description will also be produced. These descriptions
+will (hopefully) include the descriptions, dates and version numbers
+for package and class files.
+\jpnewline
+このコマンドをプリアンブルに記述すると、文書の処理終了時に、読み込まれたファイルの一覧が端末（およびログファイル）に表示されます。可能な場合には、簡単な説明も併せて出力されます。この説明には、パッケージファイルやクラスファイルに関する解説、日付、バージョン番号などが（運が良ければ）含まれているでしょう。
+
+Sometimes, it may be that a local edit has been made to a package or
+class file (or rather a copy of such a file). To allow these cases to
+be identified, \cs{listfiles} takes an optional argument which allows
+adjustment of the information printed using a key--value approach
+\jpnewline
+場合によっては、パッケージファイルやクラスファイル（あるいはそのコピー）に対して、ローカルな修正が加えられていることがあります。こうした場合を識別できるように、\cs{listfiles}コマンドにはオプション引数が用意されており、キー--値の形式を用いて出力情報を調整できるようになっています。
+\begin{description}
+  \item[\texttt{hashes}] Adds the MD5 hash for each file to the
+    information printed
+    \jpnewline
+    各ファイルのMD5ハッシュを、表示される情報に追加します
+  \item[\texttt{sizes}] Adds the file size for each file to the
+    information printed
+    \jpnewline
+    各ファイルのファイルサイズを、表示される情報に追加します
+\end{description}
+Note that as Windows and Unix use different line endings (LF \emph{versus} LF
+CR), the hashes and file sizes from the two systems will not be the same. As
+such, you should compare these values between operating systems of the same
+type.
+\jpnewline
+WindowsとUnixでは改行コードが異なるため（LF \jpemph{に対して}LF CR）、ハッシュ値とファイルサイズは一致しません。そのため、これらの値を比較する際は、同じ種類のオペレーティングシステム間で比較するようにしてください。
+
+\emph{Warning}: this command will list only files which were read
+using \LaTeX{} commands such as |\input|\arg{file} or
+|\include|\arg{file}.  If the file was read using the primitive \TeX{}
+syntax |\input |\emph{file} (without |{ }| braces around the file name)
+then it will not be listed; failure to use the \LaTeX{} form with the
+braces can cause more severe problems, possibly leading to overwriting
+important files, so \textbf{always put in the braces}.
+\jpnewline
+\jpemph{警告}：このコマンドは、|\input|\arg{file}や|\include|\arg{file}などの\LaTeX{}コマンドを使用して読み込まれたファイルのみを一覧表示します。ファイルがプリミティブな\TeX{}構文|\input |\emph{file}（ファイル名の周りに|{ }|波括弧がない場合）を使用して読み込まれた場合は、一覧表示されません。波括弧を使用した \LaTeX{}形式を使用しないと、重要なファイルが上書きされるなど、より深刻な問題が発生する可能性があります。そのため、\textbf{必ず波括弧を使用してください}。
+
+\end{document}

@@ -31,9 +31,14 @@ description: "References to the official LaTeX documentation and to documentatio
       <li><a href="#documentation-distributed-with-latex">Distributed LaTeX documentation</a>
         <ul>
 	  <li><a href="#general-documentation">General documentation</a></li>
-	  <li><a href="#documentation-of-the-new-hook-management">Hook management</a></li>
-	  <li><a href="#documentation-of-the-new-mark-mechanism">Page mark management</a></li>
-	  <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
+	  <li><a href="#producing-accessible-output-with-latex">Accessible output</a></li>
+	  <li><a href="#advanced-documentation-about-core-latex">Advanced documentation</a></li>
+            <ul>
+       	      <li><a href="#documentation-of-the-new-hook-management">Hook management</a></li>
+	      <li><a href="#documentation-of-the-new-mark-mechanism">Page mark management</a></li>
+	      <li><a href="#typesetting-complex-mathematics">Typesetting mathematics</a></li>
+            </ul>
+          <li><a href="translations-of-documentation">Translations</a></li>
             <ul>
               <li><a href="#japanese-translations-of-documentation">Japanese translations</a></li>
               <li><a href="#chinese-translation-of-amsldoc">Chinese translation</a></li>
@@ -75,9 +80,24 @@ between the old LaTeX 2.09 and current standard LaTeX2e) is available as well. I
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors --- historic version</a> 
 
 
-
 For more extensive introductory documentation take a look at the [links to
 contributed documentation]({{site.baseurl}}/help/links/) that have their own page.
+
+If you are looking for a good way to learn LaTeX for beginners, try out our online course available in several languages:
+
++ [Learn LaTeX in 16 easy lessons](https://www.learnlatex.org/)
+
+
+### Producing accessible output with LaTeX
+
+How to produce accessible PDFs with LaTeX (i.e., results of the work of the LaTeX Tagged PDF project) has its own web presence:
+
++ [LaTeX Tagged PDF Project landing page](https://latex3.github.io/tagging-project/)
+
+There you find a guide on how to produce accessible PDF documents with LaTeX automatically, many examples that can be tried out online, tables of compatible packages and classes (more than 1000 by now), and many other resources.
+
+
+### Advanced documentation about core LaTeX
 
 More advanced documentation about core LaTeX, which is available via the net includes: 
 
@@ -120,7 +140,7 @@ The LaTeX3 programming layer (which is part of the LaTeX format) is documented i
      onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer interface documentation</a>
 
 
-### Documentation of the new hook management
+#### Documentation of the new hook management
 
 The hook management introduced in 2020 is largely intended for package developers. However, most of the available hooks can also be useful for document authors. The documentation is currently split across several documents:
 
@@ -141,7 +161,7 @@ The hook management introduced in 2020 is largely intended for package developer
      onclick="vgwPixelCall('c6f0abc213674d8bb743d04d8a374786');">Hooks available when processing paragraphs --- `ltpara-doc.pdf`</a>
 
 
-### Documentation of the new mark mechanism
+#### Documentation of the new mark mechanism
 
 The new mark mechanism introduced in 2022 offers arbitrary many independent marks and resolves the issues with LaTeX legacy marks (available through `\markbox` and `\markright`). The old mechanism remains available so that classes using it continue to work without any updates.
 
@@ -150,7 +170,7 @@ The new mark mechanism introduced in 2022 offers arbitrary many independent mark
      onclick="vgwPixelCall('3dd41d35983b4dbdb9ffd4e2bd967235');">Overview of LaTeX's new mark mechanism --- `ltmarks-doc.pdf`</a>
 
 
-### Typesetting complex mathematics
+#### Typesetting complex mathematics
 
 Specifically targeting the typesetting of mathematics is:
 
@@ -160,14 +180,23 @@ Specifically targeting the typesetting of mathematics is:
 
 
 
+### Translations of documentation
+
+
 #### Japanese translations of documentation
 
-Yukitoshi FUJIMURA kindly translated two of the above documents to the Japanese language. These are
+Yukitoshi FUJIMURA kindly translated some of the above documents to the Japanese language. These are
 
++ <a href="{{site.baseurl}}/help/documentation/usrguide_ja_w_annotations.pdf"
+   target="_blank"
+   onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');">著者のための LaTeX 2e</a> (LaTeX2e for authors --- translation in 2026)
+  <a href="{{site.baseurl}}/help/documentation/usrguide_ja_w_annotations.tex"
+   target="_blank"
+   onclick="vgwPixelCall('79adb95dcb47435d8c86b3264660ed22');"> [source]</a>
 + <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者のための LaTeX 2e</a> (LaTeX2e for authors)
-  <a href="{{site.baseurl}}/help/documentation/usrguide_jpn.tex"
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">著者のための LaTeX 2e</a> (LaTeX2e for authors --- historic version (translation in 2018))
+  <a href="{{site.baseurl}}/help/documentation/usrguide-historic_jpn.tex"
    target="_blank"
    onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');"> [source]</a>
 + <a href="{{site.baseurl}}/help/documentation/amsldoc_jpn.pdf"
