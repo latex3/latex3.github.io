@@ -42,6 +42,8 @@
 \tl_set:Nn \contentsname {Contents 目次}
 \ExplSyntaxOff
 \selectfont
+% Following FM's suggestion, I slightly widened the gap between the English and Japanese text.英文と和文の開きを少し広げました。
+\newcommand\jpnewline{\vspace{3pt}\newline}
 %Of course, there is no need to force a replacement of LaTeX2e commands with expl3, but I am currently practicing doing so. もちろんLaTeX2e の命令を expl3 で無理に置き換えなくてよいけど、練習中です。
 %
 \usepackage{luacolor} % lua-ul の色機能に必須
@@ -84,8 +86,6 @@
 \usepackage{csquotes} %
 \usepackage{fancyvrb}% To ensure that `fancyvrb` functions correctly in a Japanese environment, LuaTeX-ja provides a wrapper package named `lltjp-fancyvrb`. Consequently, a warning is issued. luatexjaではfancyvrbの機能を日本語環境で適切に動作させるために、lltjp-fancyvrbという名前のラッパーパッケージを提供しています。したがってワーニングが出ます。
 \usepackage{url}
-
-\newcommand\jpnewline{\unskip\vspace{3pt}\newline}
 
 \title{\LaTeX\ for authors\\ current version \\
 著者のための\LaTeX\\
@@ -2019,12 +2019,19 @@ mode, for example footnote markers. To support these textual uses, the commands
   |\textsuperscript@space|
 \end{decl}
 The standard settings for these commands use the same placement parameters as
-\TeX{} would use in math mode.\footnote{This reflects the history of these
-commands: previous versions were implemented using math mode internally for
-placement.} Two aspects of placement can be adjusted by setting the control
+\TeX{} would use in math mode.\footnotemark\
+%\footnote{This reflects the history of these
+%commands: previous versions were implemented using math mode internally for
+%placement.}%
+\footnotetext{%
+This reflects the history of these commands: previous versions were
+implemented using math mode internally for placement.\\
+これはこれらのコマンドの履歴を反映しています。以前の版では、配置のために内部的に数式モードを用いて実装されていました。}%
+Two aspects of placement can be adjusted by setting the control
 commands to updated values:
  \jpnewline
-これらのコマンドの標準設定では、\TeX{}が数式モードで用いるのと同じ配置パラメータが使われます。\footnote{これはこれらのコマンドの履歴を反映しています。以前の版では、配置のために内部的に数式モードを用いて実装されていました。}配置に関する次の 2~つの点は、これらの制御コマンドに新しい値を設定することで調整できます：
+これらのコマンドの標準設定では、\TeX{}が数式モードで用いるのと同じ配置パラメータが使われます。\footnotemark[\value{footnote}]%\footnote{これはこれらのコマンドの履歴を反映しています。以前の版では、配置のために内部的に数式モードを用いて実装されていました。}%
+配置に関する次の 2~つの点は、これらの制御コマンドに新しい値を設定することで調整できます：
 \begin{itemize}
   \item The vertical offset of the sub- or superscript: this is a dimension
     expression (as described for \cs{dimeval}), stored in a command so that
