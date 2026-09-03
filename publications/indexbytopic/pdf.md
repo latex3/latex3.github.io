@@ -7,6 +7,13 @@ description: "Selection of links to PDF versions of various articles published b
 
 # [Publications by topic]({{ site.baseurl }}/publications/indexbytopic/): PDF, Tagging, Accessibility
 
+<hr class="conference-start">
+
+## ACM Symposium on Document Engineering 2026 (DocEng 2026) Fribourg, Switzerland
+
+{% include _papers/paper_2026-DocEng-workshop.md  %}
+
+<hr class="conference-end">
 
 <hr class="conference-start">
 
