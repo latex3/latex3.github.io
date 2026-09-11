@@ -15,6 +15,17 @@ description: "Selection of links to PDF versions of various articles published b
 
 <hr class="conference-end">
 
+
+<hr class="conference-start">
+
+## TUG conference 2026, Calgary, Canada
+
+{% include _papers/paper_2026-FMi-TUG-tb146mittelbach-accessibleclasses.md  %}
+{% include _papers/paper_2026-UFi-TUG-tb146fischer-tagging26.md  %}
+
+<hr class="conference-end">
+
+
 <hr class="conference-start">
 
 ## PDF Days Europe 2025, Berlin, Germany

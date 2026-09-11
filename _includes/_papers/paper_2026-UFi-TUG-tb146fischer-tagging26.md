@@ -8,6 +8,8 @@
 + Abstract
 > The LaTeX Tagged PDF project was started in spring 2020 and announced to the TeX community by the LaTeX Team at the (online) 2020 TUG conference. This short report describes some news from 2026 of this multiyear project.
 
+There is also a video from the
+[talk given at the TUG conference 2026 at YouTube](https://youtu.be/fOumWbb1amQ?si=R3tlvQinV2lmkWNA) on this topic.
 
 
 ***

@@ -10,6 +10,9 @@
 >
 > The same framework can emulate established customization packages such as geometry, fancyhdr, titlesec, titletoc, and enumitem, making it possible to adapt both legacy and newly written classes without extensive manual intervention. The result is a more maintainable class architecture with accessibility built in from the beginning, building on the broader LaTeX tagged-PDF project.
 
+There is also a video from the
+[talk given at the TUG conference 2026 at YouTube](https://youtu.be/SrCCaSrtVkE?si=w1pbW3LtPhsZO8JH) on this topic.
+
 
 
 
