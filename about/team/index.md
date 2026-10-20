@@ -136,7 +136,7 @@ People currently involved in the LaTeX project are (in more or less chronologica
 
 
 <h2>Former Team Members</h2>
-<p>Former members of the project team were: Denys Duchier, Michael Downes (died, March 2003), Robin Fairbairns (died, February 2022), Morten Høgholm, Alan Jeffrey ([died July 2024](https://www.youtube.com/watch?v=SojRIt_oljE)), Thomas Lotze, Martin Schröder.</p>
+<p markdown="1">Former members of the project team were: Denys Duchier, Michael Downes (died, March 2003), Robin Fairbairns (died, February 2022), Morten Høgholm, Alan Jeffrey (<a href="https://www.youtube.com/watch?v=SojRIt_oljE">died July 2024</a>), Thomas Lotze, Martin Schröder.</p>
 
     
 <div class="row">
