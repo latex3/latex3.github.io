@@ -36,7 +36,7 @@ accessible documents with LaTeX. The highlights are
  - a complete reimplementation of heading templates with enhanced features
    and customization possibilities:
     - these new heading templates have been used to reimplement the headings
-      in the ACM classes (so that they are now correctly tagged without
+      in the AMS classes (so that they are now correctly tagged without
       any layout changes);
     - as a fun project the `fncychap` package has been adjusted to use the
       new templates and thus its `\chapter` designs can now be used in
