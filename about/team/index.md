@@ -129,10 +129,19 @@ People currently involved in the LaTeX project are (in more or less chronologica
       <li><a href="https://github.com/zauguin"><span class="fa fa-github-square"></span>https://github.com/zauguin</a></li>
     </ul>
   </li>
+  <li id="matthew-bertucci">
+    <img src="bertucci_photo.jpg" alt="Matthew Bertucci">
+    <h2>Matthew Bertucci <br><span class="role">LaTeX Team</span></h2>
+    <ul class="team">
+      <li><a href="mailto:bertucci@math.utah.edu"><span class="fa fa-envelope-square"></span>bertucci@math.utah.edu</a></li>
+      <li><a href="https://tex.stackexchange.com/users/208544"><span class="fa fa-stack-exchange"></span>https://tex.stackexchange.com/users/208544</a></li>
+      <li><a href="https://github.com/mbertucci47"><span class="fa fa-github-square"></span>https://github.com/mbertucci47</a></li>
+      <li><a href="https://people.willamette.edu/~mbertucci/"><span class="fa fa-external-link-square"></span>https://people.willamette.edu/~mbertucci/</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </div>
-
 
 
 <h2>Former Team Members</h2>
