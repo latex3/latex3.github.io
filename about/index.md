@@ -9,7 +9,7 @@ description: "An introduction to LaTeX, a document preparation system for high-q
 
 LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
 
-LaTeX is not a word processor! Instead, LaTeX encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content. For example, consider this document: 
+LaTeX is not a word processor! Instead, LaTeX encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content. For example, consider this document:
 
 
 {% highlight text %}
@@ -35,7 +35,7 @@ LaTeX is based on the idea that it is better to leave document design to documen
 \end{document}
 {% endhighlight %}
 
-Or, in English: 
+Or, in English:
 
 + This document is an article.
 + Its title is Cartesian closed categories and the price of eggs.
@@ -55,7 +55,7 @@ Or, in English:
 + Using PostScript or Metafont fonts.
 
 <hr>
-<div class="row">{% include google.adsense.html %}</div><hr> 
+<div class="row">{% include google.adsense.html %}</div><hr>
 <hr>
 <div class="row teaser">
   <section class="col cell1of3">{% include teaser.documentation.html %}</section>

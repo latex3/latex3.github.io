@@ -5,7 +5,7 @@ description: "Home of the LaTeX development code. Obtaining LaTeX development co
 permalink: /latex3/code/
 ---
 
-# LaTeX Development Code 
+# LaTeX Development Code
 
 The base files of LaTeX are managed and developed in a number of GitHub repositories.
 The most important ones are:
@@ -42,7 +42,7 @@ further LaTeX packages that are in general use.
 
 
 
-## l3build 
+## l3build
 
 The LaTeX code is installed and tested using
 [`l3build`](https://github.com/latex3/l3build) configuration

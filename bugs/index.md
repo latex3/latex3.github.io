@@ -156,7 +156,7 @@ to report a bug in LaTeX as follows:
 
 {% highlight text %}
    \RequirePackage{latexbug}    % <- first line
-   
+
    \documentclass{article}      % or some other class
 
    ...                          % code showing the problem
@@ -247,6 +247,6 @@ submit a report, thanks for taking the time!
 
 ***
 
-<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr>
 
 <img src="https://ssl-vg03.met.vgwort.de/na/f3144f6c13e442b499326009da2a7ede" width="1" height="1" alt="">

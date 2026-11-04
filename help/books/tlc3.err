@@ -261,7 +261,7 @@
 
 \renewcommand\erratastartdate{2023/04/01}    % ALL ENTRIES
 %\renewcommand\erratastartdate{2023/05/30}   % for the first digital edition
-%\renewcommand\erratastartdate{2023/09/01}   % 
+%\renewcommand\erratastartdate{2023/09/01}   %
 
 
 % If you own a digital edition (which is more often updated than the
@@ -436,7 +436,7 @@ digital differing only in that respect.
 
 \begin{erratalist}
 
-\CHAPTER{General} 
+\CHAPTER{General}
 
 \erroronpage{}{}{FMi}{2023/07/30}{}
 
@@ -449,7 +449,7 @@ from book to book (and therefore not recorded in this errata) and
 can't be controlled by the authors, unfortunately.
 
 
-\CHAPTER{Front matter (Part I)} 
+\CHAPTER{Front matter (Part I)}
 
 \erroronpage{I-ix\ldots I-xvi}{}{FMi}{2023/04/04}{s}
 Dot leaders have been changed on all sections.
@@ -467,7 +467,7 @@ beyond \> \u{B}eyond
 Dot leaders have been changed on all sections.
 
 
-\CHAPTER{Bibliography (Part I)} 
+\CHAPTER{Bibliography (Part I)}
 
 \erroronpage{I-779}{[24], l.-1}{FMi}{2023/10/28}{s}
 Link should use \texttt{https://}
@@ -498,7 +498,7 @@ In \u{ACM editor} ``Proceedings \> In ``\u{PODC'01: }Proceedings
 In \u{Unicode Consortium, editor} \> In
 
 
-\CHAPTER{Front matter (Part II)} 
+\CHAPTER{Front matter (Part II)}
 
 \erroronpage{II-x\ldots II-xxviii}{}{FMi}{2023/04/04}{s}
 Dot leaders have been changed on all sections.
@@ -519,7 +519,7 @@ beyond \> \u{B}eyond
 
 
 
-\CHAPTER{Bibliography (Part II)} 
+\CHAPTER{Bibliography (Part II)}
 
 \erroronpage{II-799}{[43], l.-2}{FMi}{2023/04/04}{s}
 all \> \u{them} all
@@ -557,7 +557,7 @@ ones.
 %
 %\CHAPTER{Front matter}
 
-\CHAPTER{Bibliography} 
+\CHAPTER{Bibliography}
 
 \erroronpage{II-800}{[50], l.-1}{FMi}{2023/10/28}{s}
 Link should use \texttt{https://}
@@ -651,7 +651,7 @@ Add a marginal note: \u{No warning if another \LaTeX{} run is necessary!}
 Output of example misses the page numbers in acronym list \> Run example 3 times (not only twice---there is no warning)
 
 \erroronpage{I-174}{para3,l. -2}{BeB}{2024/03/17}{s}
-the exponent is always a \u{power} of 3 \> the exponent is always a 
+the exponent is always a \u{power} of 3 \> the exponent is always a
 \u{multiple} of 3
 
 \seriouserroronpage{I-177}{exa 3-3-39}{BeB/FMi}{2024/03/17}{s}
@@ -679,7 +679,7 @@ and \textsf{thmtools} packages\u{,} and \textsf{typed-checklist} helps you write
 
 \erroronpage{I-323}{Table 4.4, left column}{BeB}{2023/07/25}{s}
 Typo: Assembler (\u{N}otorola68k, x86masm) \> \\ Assembler (\u{M}otorola68k, x86masm)
-%  Matlab \> Matlab \u{(empty, 5.1)}  
+%  Matlab \> Matlab \u{(empty, 5.1)}
 % könnte auch aktualisiert werden, steht aber in Version 1.8d nicht drin
 
 \erroronpage{I-344}{exa 4-3-16}{CAR/FMi}{2024/01/29}{s}
@@ -832,7 +832,7 @@ Add table note:
 %
 \textit{\textttu{k} (black) is a nonstandard series name for \textttu{eb} (extra
 bold) or in some families for \textttu{ub} (ultra bold).}
- 
+
 
 \erroronpage{II-40}{table 10.24}{FMi}{2023/08/15}{s}
 In table note:   \textit{Unfortunately, \u{\texttt{sco}}} \> \textit{Unfortunately, \u{\textttu{sco}}}
@@ -847,7 +847,7 @@ Because of problems with the font names, the Cambria family currently requires a
      UprightFont =cambria.ttc,
      BoldFont = cambriab.ttf,
      ItalicFont = cambriai.ttf,
-     BoldItalicFont = cambriaz.ttf}     
+     BoldItalicFont = cambriaz.ttf}
 \end{verbatim}
 Without it, the bold fonts are not correctly set up, which is why
 \textbf{almost anything} is not in bold and \textbf{Fields} is not typeset in
@@ -884,7 +884,7 @@ Table moved to page II-62 for better pagination.
 
 \erroronpage{II-66}{table 10.55}{FMi}{2023/08/03}{s}
  Change:  \u{---no OpenType---}  \> \u{CMU Concrete}
-  
+
   Added line showing: \u{\texttt{b}\qquad\texttt{n, it}}
   and the text \u{---Not available with pdf\TeX, only in Unicode engines---}
 
@@ -907,7 +907,7 @@ Add table note:
 %
 \textit{Unfortunately, \textttu{sco} is a nonstandard shape name for
 \textttu{scsl}; thus, low-level shape commands are needed to access it.}
- 
+
 
 \erroronpage{II-76,77}{both font examples}{BeB}{2023/08/13}{s}
 Helvetica and its clones do not have true italics but instead an
@@ -916,7 +916,7 @@ information claims it is ``italic''). For this reason the blue
 text in both Helvetica examples should be as follows:
 
  \textsl{\bl naïve} vis-à-vis the dæmonic \textit{phœnix's official rôle} \> \\
- \textsl{naïve} vis-à-vis the dæmonic \textit{\bl phœnix's official rôle} 
+ \textsl{naïve} vis-à-vis the dæmonic \textit{\bl phœnix's official rôle}
 
 
 \erroronpage{II-86}{table 10.74, l.4}{FMi}{2023/08/15}{s}
@@ -936,7 +936,7 @@ Add table note:
   naming conventions. It can serve as a replacement for \textttu{m},
   e.g., via \cs{DeclareFontSeriesDefault}.}
 
- 
+
 
 \erroronpage{II-91}{l. -1}{BeB}{2023/08/13}{s}
 In the DejaVu Sans Mono Example add: \texttt{OIl or 011?}
@@ -1140,7 +1140,7 @@ in the description column: \u{array}-symbol-arrow \> \u{arrow}-symbol-arrow
 
 
 
-  
+
 \CHAPTER{Chapter 12 --- Fonts in Formulas}
 
 \erroronpage{II-225}{heading}{FMi}{2023/04/04}{s}
@@ -1270,7 +1270,7 @@ rerunning the example shows the expected behavior.
 
 
 \CHAPTER{Chapter 13 --- Localizing Documents}
- 
+
 \erroronpage{II-297}{heading}{FMi}{2023/04/04}{s}
 Chapter title not properly capitalized.
 
@@ -1282,7 +1282,7 @@ On the other hand, \pkg{tikz} provides a library to overcome these issues.
 \>\\
 In the particular case of \pkg{tikz}, you can use
 \cs{usetikzlibrary}\verb={babel}= instead of \cs{shorthandoff}
-to overcome these issues for all \pkg{tikz} pictures of the document. 
+to overcome these issues for all \pkg{tikz} pictures of the document.
 
 
 
@@ -1295,7 +1295,7 @@ IETF \> the Internet Engineering Task Force (IETF)
      BPD \> BCP
 
 \erroronpage{II-319}{para 2, l.1}{BeB}{2023/08/20}{s}
-Missing word: is described \textit{A History} \> is described \u{in} 
+Missing word: is described \textit{A History} \> is described \u{in}
 \textit{A History}
 
 \erroronpage{II-332}{exa 13-5-2, and above}{FMi}{2023/04/28}{s}
@@ -1305,9 +1305,9 @@ The keyword \texttt{Harf\u{b}uzz} should be spelled
 spelling is \texttt{HarfBuzz}.
 
 \CHAPTER{Chapter 14 --- Index Generation}
- 
-% Das Beispiel von S. II-352 als File wäre schön, dann könnte man das mit 
-% dem Index mal durchspielen.  Das Beispiel 16-7-6 ist zwar mal wieder 
+
+% Das Beispiel von S. II-352 als File wäre schön, dann könnte man das mit
+% dem Index mal durchspielen.  Das Beispiel 16-7-6 ist zwar mal wieder
 % recht eindrucksvoll, berührt die Thematik aber nur so nebenbei.
 % \erroronpage{II-352}{Fig. 14.3}{BeB}{2023/08/31}{}
 % The code shown in Fig. 14.3 now is the Example 14-2-1
@@ -1329,7 +1329,7 @@ Changes the output of example 16-7-31 on page II-560 as well.
 
 % For later:
 %S. II-399: Man könnte in dem biber/biblatex Kasten noch anmerken, dass die
-% Konvertierung auch on-the-fly geht – hatte mir in der Übergangsphase weitergeholfen:  
+% Konvertierung auch on-the-fly geht – hatte mir in der Übergangsphase weitergeholfen:
 %\erroronpage{II-399}{biber/biblatex box}{BeB}{2023/08/31}{}
 %Add: One can do this conversion directly  from a .bib file to a .bbl file by using e.g.
 %\verb+biber --output-encoding=ascii --output-safecharsset=full+
@@ -1418,17 +1418,17 @@ Two further tests should be listed in the syntax box: \verb+\ifVTeX+ \verb+\ifAl
 
 \seriouserroronpage{II-701}{l. 6}{BeB}{2024/03/17}{s}
 Name changed after the book was typeset: \verb+.notif+\>\verb+.ifnot+
- 
+
 \erroronpage{II-701}{para 3, l. 4; para -2, l. 1; and margin}{BeB}{2024/03/17}{s}
 \verb+.notif+\>\verb+.ifnot+
- 
+
 
 
 \CHAPTER{Appendix B --- Tracing and Resolving Problems}
- 
+
 
 \CHAPTER{Appendix C --- Going Beyond}
-  
+
 \erroronpage{II-297}{heading}{FMi}{2023/04/04}{s}
 Appendix title not properly capitalized.
 

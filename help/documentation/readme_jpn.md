@@ -16,7 +16,7 @@ These LaTeX files can create PDF files by using uplatex. The character code is U
 
 
 ---
-Yukitoshi FUjimura   
+Yukitoshi FUjimura
 
 
 <hr>

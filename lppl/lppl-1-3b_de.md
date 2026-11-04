@@ -16,7 +16,7 @@ This is a translation of the LaTeX Project Public License (LPPL) into German. Th
 
 The LaTeX3 Project is not the publisher of this translation and has not approved it as a legal substitute for the authentic LaTeX Project Public License. The translation has not been reviewed carefully by lawyers, and therefore the translator cannot be sure that it exactly represents the legal meaning of the LaTeX Project Public License. If you wish to be sure whether your planned activities are permitted by the LaTeX Project Public License, please refer to the authentic English version.
 
-The LaTeX3 Project strongly urges you not to use this translation as the official distribution terms for your programs; instead, please use the authentic English version published by the LaTeX3 Project. 
+The LaTeX3 Project strongly urges you not to use this translation as the official distribution terms for your programs; instead, please use the authentic English version published by the LaTeX3 Project.
 
 # Inoffizielle deutsche Übersetzung der LaTeX project public license, version 1.3b
 
@@ -29,14 +29,14 @@ The LaTeX3 Project strongly urges you not to use this translation as the officia
 + [BETREUUNG DES WERKES](#betreuung-des-werkes)
 + [OB UND WIE EIN WERK UNTER DIESER LIZENZ VERTEILT WIRD](#ob-und-wie-ein-werk-unter-dieser-lizenz-verteilt-werden-sollte)
 
- LPPL Version 1.3b 2006-01-07 
+ LPPL Version 1.3b 2006-01-07
 
 **Copyright 2002-05 LaTeX3 Project**
 
 Jeder hat das Recht, die Lizenzurkunde und diese Übersetzung zu vervielfältigen und unveränderte Kopien zu verbreiten; Änderungen sind jedoch nicht gestattet.
 
-Diese Übersetzung ist kein rechtskräftiger Ersatz für die englischsprachige Originalversion! 
- 
+Diese Übersetzung ist kein rechtskräftiger Ersatz für die englischsprachige Originalversion!
+
 ## VORWORT
 
 Die LaTeX Project Public License (LPPL) ist die Grundlizenz unter der der LaTeX Kern und die Standard LaTeX Pakete verteilt werden.
@@ -90,14 +90,14 @@ Wir, das LaTeX3 Project, glauben, dass die unten genannten Bedingungen Ihnen die
     1. Wenn Teile des Abgeleiteten Werkes bei Nutzung mit dem Standard-Interpreter eine direkte Ersetzung von Teilen des Werkes sein können, dann muss der Ersetzungs-Teil aus dem Abgeleiteten Werk, wann immer dieser Teil des Werks sich selbst gegenüber dem Anwender bei der interaktiven Verwendung mit dem Standard-Interpreter identifiziert, sich gegenüber dem Anwender klar und unmissverständlich selbst als eine veränderte Version dieses Teils identifizieren.
     2. Jeder Teil des Abgeleiteten Werks enthält einen deutliche Hinweis auf die genaue Natur der Änderungen an diesem Teil oder einen deutlichen Verweis auf eine andere Datei, die als Teil des Abgeleiteten Werks verteilt wird und eine vollständige und genaue Liste der Änderungen enthält.
     3. Das Abgeleitete Werk enthält keine Aussagen aus denen man schliessen kann, dass irgendeine Person, einschließlich (aber nicht beschränkt auf den) des Autors der Original-Version des Werkes, irgendwelche Unterstützung, einschließlich (aber nicht beschränkt auf) Meldung und Behandlung von Fehlern, gegenüber den Empfängern des Abgeleiteten Werkes leistet, solange diese Personen nicht ausdrücklich erklärt haben, dass sie solch eine Unterstützung für das Abgeleitete Werk leisten werden.
-    4. Sie verteilen zusammen mit dem Abgeleiteten Werk mindestens eines der folgenden: 
+    4. Sie verteilen zusammen mit dem Abgeleiteten Werk mindestens eines der folgenden:
         1. Eine vollständige, unveränderte Kopie des Werks; wenn Ihre Verteilung eines veränderten Teils darin besteht, Zugang zum Kopieren eines veränderten Teils von einem bestimmten Ort anzubieten, dann wird diese Bedingung erfüllt, wenn Sie gleichwertigen Zugang zu einer Kopie des Werkes am gleichen oder einem vergleichbaren Ort anbieten, selbst wenn Dritte so nicht gezwungen sind, das Werk zusammen mit dem veränderten Teil zu kopieren.
         2. Informationen, die ausreichen, eine vollständige, unveränderte Kopie des Werks zu erhalten.
     {: list_lower-alpha}
 7. Wenn Sie nicht der Aktuelle Betreuer des Werkes sind, dürfen Sie ein Kompiliertes Werk, das aus einem Abgeleiteten Werk erzeugt wurde, verteilen, solange das Abgeleitete Werk an alle Empfänger des Kompilierten Werkes verteilt wird und solange die Bedingungen aus vorstehender Regel&nbp;6 mit Blick auf das Abgeleitete Werk erfüllt sind.
 8. Die vorstehenden Bedingungen sind nicht dazu gedacht, Veränderungen gleich welcher Weise und welchen Teils zu verhindern, die dazu führen, dass dieser Teil mit einer aktualisierten Version dieses Teiles, wie sie vom Aktuellen Betreuer nach Regel 4 verteilt wird, identisch wird. Die vorstehenden Bedingungen sind daher auf diesen Fall nicht anzuwenden.
 9. Verteilungen des Werkes und jedes Abgeleiteten Werkes in einem alternativen Format, aus dem das Werk oder das abgeleitete Werk (im Ganzen oder in Teilen) dann erzeugt wird, indem irgend ein Prozess auf das Format angewendet wird, schwächt keinen Abschnitt dieser Lizenz ab und hebt keinen Abschnitt dieser Lizenz auf, da sie das Ergebnis der Anwendung dieses Prozesses betreffen.
-10. 
+10.
     {: list_lower-alpha}
     1. Ein Abgeleitetes Werk darf unter einer anderen Lizenz verteilt werden, solange sichergestellt ist, dass diese Lizenz selbst die Bedingungen aus Regel 6 in Bezug auf das Werk beachtet, obgleich sie nicht die restlichen Bedingungen dieser Lizenz zu beachten hat.
     2. Wenn ein Abgeleitetes Werk unter einer anderen Lizenz verteilt wird, muss dieses Abgeleitete Werk genügend Dokumentation als Teil von sich selbst bieten, damit jeder Empfänger dieses Abgeleiteten Werkes die Bedingungen von vorstehender Regel 6, betreffend Änderungen des Werks, beachten kann.
@@ -119,22 +119,22 @@ Das Werk hat den Status `maintained' (betreut), wenn ein Aktueller Betreuer exis
 
 Das Werk wechselt vom Status \`maintained' (betreut) in den Status `unmaintained' (nicht betreut), wenn kein Aktueller Betreuer vorhanden ist oder die Person, die als Aktueller Betreuer des Werks festgelegt ist, für einen Zeitraum von sechs Monaten nicht auf dem bekannten Kommunikationsweg erreichbar ist, und keine anderen Anzeichen einer aktiven Betreuung zu erkennen sind.
 
-Wenn das Werk den Status `unmaintained' hat, können Sie durch die folgenden Schritte zum Aktuelle Betreuer des Werkes werden: 
+Wenn das Werk den Status `unmaintained' hat, können Sie durch die folgenden Schritte zum Aktuelle Betreuer des Werkes werden:
 
 1. Unternehmen Sie vertretbare Anstrengungen, um den Aktuellen Betreuer (und den Rechte-Inhaber, falls dies zwei verschiedene Personen sind) durch Nutzung des Internets und anderer Methoden ausfindig zu machen.
-2. Wenn diese Suche erfolgreich ist, dann erkundigen Sie sich, ob das Werk noch immer betreut wird. 
+2. Wenn diese Suche erfolgreich ist, dann erkundigen Sie sich, ob das Werk noch immer betreut wird.
     {: list_lower-alpha}
     1. Wenn es betreut wird, fragen Sie den Aktuellen Betreuer nach einer Aktualisierung der Kommunikationsdaten innerhalb eines Monats.
     2. Wenn die Suche erfolglos ist oder vom Aktuellen Betreuer nichts unternommen wird, um die aktive Betreuung fortzusetzen oder wiederaufzunehmen, dann zeigen Sie in der zur Sache gehörenden Nutzergemeinschaft Ihren Willen zur Übernahme der Betreuung an. (Wenn das Werk ein LaTeX-Werk ist, kann dies beispielsweise durch eine Mitteilung in comp.text.tex oder de.comp.text.tex erfolgen).
     {: list_lower-alpha}
-3. 
+3.
     {: list_lower-alpha}
     1. Wenn der Aktuelle Betreuer erreichbar ist und der Übergabe der Betreuung an Sie zustimmt, dann hat dies sofortige Wirkung nach Bekanntgabe.
     2. Wenn der Aktuelle Betreuer nicht erreichbar ist und der Rechte-Inhaber einer Übergabe der Betreuung an Sie zustimmt, dann hat sofortige Wirkung nach Bekanntgabe.
     {: list_lower-alpha}
 4. Wenn Sie eine Willens-Bekanntgabe wie oben in 2b beschrieben durchführen und nach drei Monaten Ihr Wunsch weder vom Aktuellen Betreuer noch vom Rechte-Inhaber noch von anderen Personen zurückgewiesen wurde, dann können Sie Verfügungen für das Werk treffen, damit sie als (neuer) Aktueller Betreuer bezeichnet werden.
 5. Wenn der zuvor unerreichbare Aktuelle Betreuer innerhalb weiterer drei Monate nach einer erfolgten Änderung gemäß den Bedingungen von 3b oder 4 erreichbar wird, dann muss dieser Aktuelle Betreuer auf seinen Wunsch wieder der Aktuelle Betreuer werden, wenn er innerhalb eines Monats seine Kommunikationsdaten aktualisiert.
- 
+
 Ein Wechsel des Aktuellen Betreuers allein ändert nichts an der Tatsache, dass das Werk unter der LPPL verteilt wird.
 
 Wenn Sie der Aktuelle Betreuer des Werks werden, sollten Sie unverzüglich das Werk mit einer deutlichen und unmissverständlichen Feststellung über Ihren Status als Aktueller Betreuer versehen. Sie sollten ebenfalls Ihren neuen Status derselben Nutzergemeinschaft bekannt geben wie in oben in 2b.
@@ -147,11 +147,11 @@ Wenn Sie der Aktuelle Betreuer des Werks werden, sollten Sie unverzüglich das W
 
 Wenn Sie für irgend einen Teil Ihres Werkes Bedingungen für die Verteilung benötigen oder wollen, die bedeutsam von dieser Lizenz abweichen, dann sollten Sie sich an keiner Stelle Ihres Werkes auf diese Lizenz beziehen, sondern stattdessen Ihr Werk unter einer anderen Lizenz verteilen. Sie können dann den Text dieser Lizenz als Modell für Ihre eigene Lizenz verwenden, aber Ihre Lizenz sollte sich nicht auf diese Lizenz beziehen, anderenfalls entsteht der Eindruck, dass Ihr Werk unter der LPPL verteilt wird.
 
-Das Dokument \`modguide.tex' in der Standard-LaTeX-Verteilung erklärt die Motivation hinter den Bedingungen dieser Lizenz. Es erklärt beispielsweise, warum die Verteilung von LaTeX unter der GNU General Public License (GPL) als unpassend betrachtet wurde. Selbst wenn Ihr Werk nicht mit LaTeX zu tun hat, kann die Diskussion in `modguide.tex' immer noch relevant sein und Autoren, die beabsichtigen ihr Werk unter irgendeiner Lizenz zu verteilen wird empfohlen es zu lesen. 
+Das Dokument \`modguide.tex' in der Standard-LaTeX-Verteilung erklärt die Motivation hinter den Bedingungen dieser Lizenz. Es erklärt beispielsweise, warum die Verteilung von LaTeX unter der GNU General Public License (GPL) als unpassend betrachtet wurde. Selbst wenn Ihr Werk nicht mit LaTeX zu tun hat, kann die Diskussion in `modguide.tex' immer noch relevant sein und Autoren, die beabsichtigen ihr Werk unter irgendeiner Lizenz zu verteilen wird empfohlen es zu lesen.
 
 ### Eine Empfehlung für Änderungen ohne Verteilung
 
-Es ist klug niemals einen Teil des Werkes zu verändern, auch nicht für die eigene persönliche Verwendung, ohne alle obigen Regeln für die Verteilung des veränderten Teils einzuhalten. Auch wenn Sie beabsichtigen, diesen veränderten Teil niemals zu verteilen, geschieht dies des öfteren versehentlich – Sie könnten vergessen, dass Sie diesen Teil verändert haben; oder es könnte Ihnen nicht bewusst sein, wenn Sie anderen den Zugang zu der veränderten Version erlauben, dass Sie sie damit verteilen und Sie so gegen die Bedingungen dieser Lizenz in einer Weise verstoßen, die rechtliche Implikationen haben und, schlimmer, Probleme in der Nutzergemeinschaft verursachen kann. Es ist daher üblicherweise in Ihrem eigenen Interesse, Ihre eigene Kopie des Werkes identisch mit der öffentlichen Version zu halten. Viele Werke unterstützen Wege, um das Verhalten des Werkes ohne Änderung eines lizensierten Teils zu verändern. 
+Es ist klug niemals einen Teil des Werkes zu verändern, auch nicht für die eigene persönliche Verwendung, ohne alle obigen Regeln für die Verteilung des veränderten Teils einzuhalten. Auch wenn Sie beabsichtigen, diesen veränderten Teil niemals zu verteilen, geschieht dies des öfteren versehentlich – Sie könnten vergessen, dass Sie diesen Teil verändert haben; oder es könnte Ihnen nicht bewusst sein, wenn Sie anderen den Zugang zu der veränderten Version erlauben, dass Sie sie damit verteilen und Sie so gegen die Bedingungen dieser Lizenz in einer Weise verstoßen, die rechtliche Implikationen haben und, schlimmer, Probleme in der Nutzergemeinschaft verursachen kann. Es ist daher üblicherweise in Ihrem eigenen Interesse, Ihre eigene Kopie des Werkes identisch mit der öffentlichen Version zu halten. Viele Werke unterstützen Wege, um das Verhalten des Werkes ohne Änderung eines lizensierten Teils zu verändern.
 
 ### Wie diese Lizenz zu nutzen ist
 
@@ -172,21 +172,21 @@ Hier ist ein Beispiel für solch einen Hinweis und eine Festlegung:
 % version 2005/12/01 or later.
 %
 % This work has the LPPL maintenance status `maintained'.
-% 
+%
 % The Current Maintainer of this work is M. Y. Name.
 %
 % This work consists of the files pig.dtx and pig.ins
 % and the derived file pig.sty.
 {% endhighlight %}
 
-auf Deutsch (Sie sollten den Hinweis und die Festlegung jedoch unbedingt zumindest auch in englischer Sprache aufnehmen): 
+auf Deutsch (Sie sollten den Hinweis und die Festlegung jedoch unbedingt zumindest auch in englischer Sprache aufnehmen):
 
 {% highlight text %}
 %% pig.dtx
 %% Copyright 2005 M. Y. Name
 %
 % Dieses Werk darf nach den Bedingungen der LaTeX Project Public Lizenz,
-% entweder Version 1.3 oder (nach Ihrer Wahl) jede spaetere Version, 
+% entweder Version 1.3 oder (nach Ihrer Wahl) jede spaetere Version,
 % verteilt und/oder verändert werden.
 % Die neuste Version dieser Lizenz ist
 %   http://www.latex-project.org/lppl.txt
@@ -203,7 +203,7 @@ auf Deutsch (Sie sollten den Hinweis und die Festlegung jedoch unbedingt zuminde
 
 Mit solchem Hinweis und Festlegung in einer Datei, sind die Bedingungen dieses Lizenz-Dokuments anzuwenden, wobei das \`Werk' sich auf die drei Dateien \`pig.dtx', \`pig,ins' und \`pig.sty' bezieht (das letzte wird aus \`pig.dtx' unter Verwendung von \`pig.ins' erzeugt), der \`Standard-Interpreter' bezieht sich auf jegliches \`LaTeX-Format' und beide \`Rechte-Inhaber' und \`Aktueller Betreuer' beziehen sich auf die Person `M. Y. Name'.
 
-Wenn Sie nicht wollen, dass der Betreuer-Abschnitt der LPPL auf Ihr Werk anzuwenden ist, ändern Sie oben "maintained" in "author-maintained". Wir empfehlen die Verwendung von "maintained", da der Betreuungs-Abschnitt hinzugefügt wurde um sicherzustellen, dass Ihr Werk für die Nutzergemeinschaft nützlich bleibt, selbst wenn Sie es nicht mehr selbst betreuen und aktualisieren können. 
+Wenn Sie nicht wollen, dass der Betreuer-Abschnitt der LPPL auf Ihr Werk anzuwenden ist, ändern Sie oben "maintained" in "author-maintained". Wir empfehlen die Verwendung von "maintained", da der Betreuungs-Abschnitt hinzugefügt wurde um sicherzustellen, dass Ihr Werk für die Nutzergemeinschaft nützlich bleibt, selbst wenn Sie es nicht mehr selbst betreuen und aktualisieren können.
 
 ### Abgeleitete Werke, die keinen Ersatz darstellen
 

@@ -6,11 +6,11 @@ description: "List of people currently involved in the LaTeX project and a list 
 
 # Team
 
-LaTeX is based on [Donald E. Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)'s TeX typesetting language or certain extensions. LaTeX was first developed in 1985 by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), and is now being maintained and developed by the [LaTeX Project]({{site.baseurl}}/latex3/). 
+LaTeX is based on [Donald E. Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)'s TeX typesetting language or certain extensions. LaTeX was first developed in 1985 by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), and is now being maintained and developed by the [LaTeX Project]({{site.baseurl}}/latex3/).
 
 <h2>Current Team Members</h2>
 
-People currently involved in the LaTeX project are (in more or less chronological order): 
+People currently involved in the LaTeX project are (in more or less chronological order):
 
 <div class="row">
 <div class="col cell1of2">
@@ -147,7 +147,7 @@ People currently involved in the LaTeX project are (in more or less chronologica
 <h2>Former Team Members</h2>
 <p markdown="1">Former members of the project team were: Denys Duchier, Michael Downes (died, March 2003), Robin Fairbairns (died, February 2022), Morten Høgholm, Alan Jeffrey (<a href="https://www.youtube.com/watch?v=SojRIt_oljE">died July 2024</a>), Thomas Lotze, Martin Schröder.</p>
 
-    
+
 <div class="row">
   <div class="col cell1of2">
   </div>

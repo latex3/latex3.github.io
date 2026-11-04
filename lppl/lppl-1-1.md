@@ -6,7 +6,7 @@ description: "The LaTeX project public license (LPPL) version 1.1. LPPL Version 
 
 # The LaTeX project public license (LPPL), version 1.1
 
-The LPPL, version 1.1, is also available as [plain text](../lppl-1-1.txt). 
+The LPPL, version 1.1, is also available as [plain text](../lppl-1-1.txt).
 
 ## Contents
 
@@ -19,7 +19,7 @@ LPPL Version 1.1 1999-07-10
 
 **Copyright 1999 LaTeX3 Project**
 
-Everyone is permitted to copy and distribute verbatim copies of this license document, but modification is not allowed. 
+Everyone is permitted to copy and distribute verbatim copies of this license document, but modification is not allowed.
 
 ## Preamble
 
@@ -51,7 +51,7 @@ You may distribute a modified file of The Program if, and only if, the following
 6. You must change any addresses in the modified file for the reporting of errors in the file or in The Program generally to ensure that reports for files no longer maintained by the original maintainers will be directed to the maintainers of the modified files.
 7. You must distribute the modified file under a license that forbids distribution both of the modified file and of any files derived from the modified file with the filename of the original file.
 8. You must do either (A) or (B):
- 
+
 A
 : distribute a copy of The Program (that is, a complete, unmodified copy of The Program) together with the modified file; if your distribution of the modified file is made by offering access to copy the modified file from a designated place, then offering equivalent access to copy The Program from the same place meets this condition, even though third parties are not compelled to copy The Program along with the modified file;
 
@@ -72,11 +72,11 @@ It is wise never to modify a file of The Program, even for your own personal use
 
 ### Additional Conditions on Individual Files of The Program
 
-An individual file of The Program may bear additional conditions that supplement and/or supersede the conditions in this license if, and only if, such additional conditions exclusively concern modification of the file or distribution of a modified version of the file. The conditions on individual files of The Program therefore may differ only with respect to the kind and extent of modification of those files that is allowed, and with respect to the distribution of modified versions of those files. 
+An individual file of The Program may bear additional conditions that supplement and/or supersede the conditions in this license if, and only if, such additional conditions exclusively concern modification of the file or distribution of a modified version of the file. The conditions on individual files of The Program therefore may differ only with respect to the kind and extent of modification of those files that is allowed, and with respect to the distribution of modified versions of those files.
 
 ### Additional Conditions on LaTeX Software Files
 
-If a file of The Program is intended to be used with LaTeX (that is, if it is a LaTeX software file), then the following additional conditions, which supplement and/or supersede the conditions above, apply to the file according to its filename extension: 
+If a file of The Program is intended to be used with LaTeX (that is, if it is a LaTeX software file), then the following additional conditions, which supplement and/or supersede the conditions above, apply to the file according to its filename extension:
 
 
 + You may not modify any file with filename extension `.ins' since these are installation files containing the legal notices that are placed in the files they generate.
@@ -85,7 +85,7 @@ If a file of The Program is intended to be used with LaTeX (that is, if it is a 
   2. you also distribute the original, unmodified files (TeX input paths can be used to control which set of LaTeX font definition files is actually used by TeX).
 + You may distribute modified versions of files with filename extension `.cfg' (configuration files) with their original names. The Program may (and usually will) specify the range of commands that are allowed in a particular configuration file.
 
-Because of portability and exchangeability issues in LaTeX software, The LaTeX3 Project deprecates the distribution of modified versions of components of LaTeX or of generally available contributed code for them, but such distribution can meet the conditions of this license. 
+Because of portability and exchangeability issues in LaTeX software, The LaTeX3 Project deprecates the distribution of modified versions of components of LaTeX or of generally available contributed code for them, but such distribution can meet the conditions of this license.
 
 ## NO WARRANTY
 
@@ -107,7 +107,7 @@ The document \`modguide.tex' in the base LaTeX distribution explains the motivat
 
 To use this license, place in each of the files of your program both an explicit copyright notice including your name and the year and also a statement that the distribution and/or modification of the file is constrained by the conditions in this license.
 
-Here is an example of such a notice and statement: 
+Here is an example of such a notice and statement:
 
 {% highlight text %}
 %% pig.dtx
@@ -118,19 +118,19 @@ Here is an example of such a notice and statement:
 % of this license or (at your option) any later version.
 % The latest version of this license is in
 %   http://www.latex-project.org/lppl.txt
-% and version 1.1 or later is part of all distributions of LaTeX 
+% and version 1.1 or later is part of all distributions of LaTeX
 % version 1999/06/01 or later.
 %
 % This program consists of the files pig.dtx and pig.ins
 {% endhighlight %}
 
-Given such a notice and statement in a file, the conditions given in this license document would apply, with \`The Program' referring to the two files \`pig.dtx' and \`pig.ins', and \`The Copyright Holder' referring to the person `M. Y. Name'. 
+Given such a notice and statement in a file, the conditions given in this license document would apply, with \`The Program' referring to the two files \`pig.dtx' and \`pig.ins', and \`The Copyright Holder' referring to the person `M. Y. Name'.
 
 ### Important Recommendations
 
 #### Defining What Constitutes The Program
 
-The LPPL requires that distributions of The Program contain all the files of The Program. It is therefore important that you provide a way for the licensee to determine which files constitute The Program. This could, for example, be achieved by explicitly listing all the files of The Program near the copyright notice of each file or by using a line like 
+The LPPL requires that distributions of The Program contain all the files of The Program. It is therefore important that you provide a way for the licensee to determine which files constitute The Program. This could, for example, be achieved by explicitly listing all the files of The Program near the copyright notice of each file or by using a line like
 
 `% This program consists of all files listed in manifest.txt.`
 
@@ -140,4 +140,4 @@ in that place. In the absence of an unequivocal list it might be impossible for 
 
 If The Program contains any files bearing additional conditions on modification, or on distribution of modified versions, of those files (other than those listed in `Additional Conditions on LaTeX Software Files'), then it is recommended that The Program contain a prominent file that defines the exceptional conditions, and either lists the exceptional files or defines one or more categories of exceptional files.
 
-Files containing the text of a license (such as this file) are often examples of files bearing more restrictive conditions on modification. LaTeX configuration files (with filename extension `.cfg') are examples of files bearing less restrictive conditions on the distribution of a modified version of the file. The additional conditions on LaTeX software given above are examples of declaring a category of files bearing exceptional additional conditions. 
+Files containing the text of a license (such as this file) are often examples of files bearing more restrictive conditions on modification. LaTeX configuration files (with filename extension `.cfg') are examples of files bearing less restrictive conditions on the distribution of a modified version of the file. The additional conditions on LaTeX software given above are examples of declaring a category of files bearing exceptional additional conditions.

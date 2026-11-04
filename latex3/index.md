@@ -48,10 +48,10 @@ been introduced in the last few years:
      others).
 
 
-At the TUG conference 2020 we also announced the start of a multi-year 
-project (financially supported in part by Adobe) to provide  LaTeX 
-support for the straightforward production of ‘tagged PDF’.  This form 
-of PDF is required to support "Accessibility" (as in the PDF/UA 
+At the TUG conference 2020 we also announced the start of a multi-year
+project (financially supported in part by Adobe) to provide  LaTeX
+support for the straightforward production of ‘tagged PDF’.  This form
+of PDF is required to support "Accessibility" (as in the PDF/UA
 standard) and other uses of PDF that require structural information.
 
 
@@ -71,7 +71,7 @@ available.
 > typesetting, paragraph breaking, etc., but also in future, the ability to
 > produce structured documents without manual labor --- so stay tuned on
 > the progress.
- 
+
 <div class="row">
   <div class="col cell1of2">
     <h2>LaTeX Project Team</h2>
@@ -81,19 +81,19 @@ available.
   </div>
   <div class="col cell1of2">
     <h2>Support LaTeX Development</h2>
-    
+
     <p>If you want to support LaTeX development, i.e., the <b>maintenance
     efforts for the current version and the work on future release</b>
     by a donation, the best way to do this is donating to the <a
     href="https://www.tug.org/donate.html">TeX Users Group</a>. They
     will make sure that your contribution will be used according to
     your intention (use: LaTeX Project Contribution).</p>
-    
+
   </div>
 </div>
 
 <hr>
-<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr>
 <hr>
 
 <div class="row teaser">

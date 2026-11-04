@@ -6,7 +6,7 @@ description: "The LaTeX project public license (LPPL) version 1.0. LPPL Version 
 
 # The LaTeX project public license (LPPL), version 1.0
 
-The LPPL, version 1.0, is also available as [plain text](../lppl-1-0.txt). 
+The LPPL, version 1.0, is also available as [plain text](../lppl-1-0.txt).
 
 ## Contents
 
@@ -19,7 +19,7 @@ LPPL Version 1.0 1999-03-01
 
 **Copyright 1999 LaTeX3 Project**
 
-Everyone is permitted to copy and distribute verbatim copies of this license document, but modification is not allowed. 
+Everyone is permitted to copy and distribute verbatim copies of this license document, but modification is not allowed.
 
 ## Preamble
 
@@ -29,7 +29,7 @@ It may be particularly suitable if your software is TeX related (such as a LaTeX
 
 To use this license, the files of your distribution should have an explicit copyright notice giving your name and the year, together with a reference to this license.
 
-A typical example would be 
+A typical example would be
 
 {% highlight text %}
 %% pig.sty
@@ -48,13 +48,13 @@ A typical example would be
 
 To see a real example, see the file legal.txt which carries the copyright notice for the base latex distribution.
 
-This license gives terms under which files of The Program may be distributed and modified. Individual files may have specific further constraints on modification, but no file should have restrictions on distribution other than those specified below. This is to ensure that a distributor wishing to distribute a complete unmodified copy of The Program need only check the conditions in this file, and does not need to check every file in The Program for extra restrictions. If you do need to modify the distribution terms of some files, do not refer to this license, instead distribute The Program under a different license. You may use the parts of the text of LPPL as a model for your own license, but your license should not directly refer to the LPPL or otherwise give the impression that The Program is distributed under the LPPL. 
+This license gives terms under which files of The Program may be distributed and modified. Individual files may have specific further constraints on modification, but no file should have restrictions on distribution other than those specified below. This is to ensure that a distributor wishing to distribute a complete unmodified copy of The Program need only check the conditions in this file, and does not need to check every file in The Program for extra restrictions. If you do need to modify the distribution terms of some files, do not refer to this license, instead distribute The Program under a different license. You may use the parts of the text of LPPL as a model for your own license, but your license should not directly refer to the LPPL or otherwise give the impression that The Program is distributed under the LPPL.
 
 ## Warranty
 
 There is no warranty for The Program, to the extent permitted by applicable law. Except when otherwise stated in writing, The Copyright Holder provides The Program `as is' without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the program is with you. Should The Program prove defective, you assume the cost of all necessary servicing, repair or correction.
 
-In no event unless required by applicable law or agreed to in writing will The Copyright Holder, or any of the individual authors named in the source for The Program, be liable to you for damages, including any general, special, incidental or consequential damages arising out of any use of The Program or out of inability to use The Program (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or by third parties as a result of a failure of The Program to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages. 
+In no event unless required by applicable law or agreed to in writing will The Copyright Holder, or any of the individual authors named in the source for The Program, be liable to you for damages, including any general, special, incidental or consequential damages arising out of any use of The Program or out of inability to use The Program (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or by third parties as a result of a failure of The Program to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.
 
 ## Distribution
 
@@ -76,8 +76,8 @@ The distribution of changed versions of certain files included in the The Progra
   + Files with extension `.ins' (installation files): these files may not be modified at all because they contain the legal notices that are placed in the generated files.
   + Files with extension `.fd' (LaTeX font definitions files): these files are allowed to be modified without changing the name, but only to enable use of all available fonts and to prevent attempts to access unavailable fonts. However, modified files are not allowed to be distributed in place of original files.
   + Files with extension `.cfg' (configuration files): these files can be created or modified to enable easy configuration of the system. The documentation in cfgguide.tex in the base LaTeX distribution describes when it makes sense to modify or generate such files.
-  
-The above restrictions are not intended to prohibit, and hence do not apply to, the updating, by any method, of a file so that it becomes identical to the latest version of that file in The Program. 
+
+The above restrictions are not intended to prohibit, and hence do not apply to, the updating, by any method, of a file so that it becomes identical to the latest version of that file in The Program.
 
 ## Notes
 
@@ -85,7 +85,7 @@ We believe that these requirements give you the freedom you to make modification
 
 Because of the portability and exchangeability aspects of systems like LaTeX, The LaTeX3 Project deprecates the distribution of non-standard versions of components of LaTeX or of generally available contributed code for them but such distributions are permitted under the above restrictions.
 
-The document modguide.tex in the base LaTeX distribution details the reasons for the legal requirements detailed above. Even if The Program is unrelated to LaTeX, the argument in modguide.tex may still apply, and should be read before a modified version of The Program is distributed. 
+The document modguide.tex in the base LaTeX distribution details the reasons for the legal requirements detailed above. Even if The Program is unrelated to LaTeX, the argument in modguide.tex may still apply, and should be read before a modified version of The Program is distributed.
 
 ### Conditions on individual files
 
