@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LaTeX 2026-11-01 released and distributed with many updates"
+title: "LaTeX 2026-11-01 release with many updates"
 date: 2026-11-01 00:00:00
 description: "LaTeX 2026-11-01 released and distributed"
 excerpt: "We sent the 2026-11-01 release of the LaTeX kernel to
