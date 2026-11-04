@@ -13,7 +13,7 @@ tags: [latex,accessibility,tagging]
 
 We sent the 2026-11-01 release of the LaTeX kernel to CTAN at the weekend, and its already available in TeX Live (MiKTeX should follow soon).
 
-There has be a lot of activity especially in the tagging project and as a result the <a href="{{site.baseurl}}/news/latex2e-news/ltnews44.pdf">accompanying newsletter</a> has a record length: ten pages---I don't think that has ever happened before.
+There has been a lot of activity, especially in the tagging project, and as a result the <a href="{{site.baseurl}}/news/latex2e-news/ltnews44.pdf">accompanying newsletter</a> has a record length: ten pages---I don't think that has ever happened before.
 
 But there is a lot to report, and fortunately it is all good news. We see more and more use of LaTeX for producing accessible STEM documents including large and complex math books and it is very gratifying to get a lot positive feedback that our work matters and is appreciated.
 
