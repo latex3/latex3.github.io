@@ -4,10 +4,10 @@ Changes to the `master` branch can be viewed at [https://latex3.github.io/](http
 
 ## Branches
 
-**The latex-project.org staging**  
+**The latex-project.org staging**
 [https://latex3.github.io/](https://latex3.github.io/) - `main` branch
 
-**The latex-project.org website**  
+**The latex-project.org website**
 [https://www.latex-project.org/](https://www.latex-project.org/) - `live` branch
 
 ## Contributing (team members only)

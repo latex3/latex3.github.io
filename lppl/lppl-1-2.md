@@ -6,7 +6,7 @@ description: "The LaTeX project public license (LPPL) version 1.2. LPPL Version 
 
 # The LaTeX project public license (LPPL), version 1.2
 
-The LPPL, version 1.2, is also available as [plain text](../lppl-1-2.txt). 
+The LPPL, version 1.2, is also available as [plain text](../lppl-1-2.txt).
 
 ## Contents
 
@@ -19,8 +19,8 @@ LPPL Version 1.2 1999-09-03
 
 **Copyright 1999 LaTeX3 Project**
 
-Everyone is allowed to distribute verbatim copies of this license document, but modification of it is not allowed. 
- 
+Everyone is allowed to distribute verbatim copies of this license document, but modification of it is not allowed.
+
 ## Preamble
 
 The LaTeX Project Public License (LPPL) is the license under which the base LaTeX distribution is distributed.
@@ -41,7 +41,7 @@ You may distribute a complete, unmodified copy of The Program. Distribution of o
 
 You may not modify in any way a file of The Program that bears a legal notice forbidding modification of that file.
 
-You may distribute a modified file of The Program if, and only if, the following eight conditions are met: 
+You may distribute a modified file of The Program if, and only if, the following eight conditions are met:
 
 1. You must meet any additional conditions borne by the file on the distribution of a modified version of the file as described below in the subsection `Additional Conditions on Individual Files of The Program'.
 2. If the file is a LaTeX software file, then you must meet any applicable additional conditions on the distribution of a modified version of the file that are described below in the subsection `Additional Conditions on LaTeX Software Files'.
@@ -51,7 +51,7 @@ You may distribute a modified file of The Program if, and only if, the following
 6. You must change any addresses in the modified file for the reporting of errors in the file or in The Program generally to ensure that reports for files no longer maintained by the original maintainers will be directed to the maintainers of the modified files.
 7. You must distribute the modified file under a license that forbids distribution both of the modified file and of any files derived from the modified file with the filename of the original file.
 8. You must do either (A) or (B):
- 
+
 A
 : distribute a copy of The Program (that is, a complete, unmodified copy of The Program) together with the modified file; if your distribution of the modified file is made by offering access to copy the modified file from a designated place, then offering equivalent access to copy The Program from the same place meets this condition, even though third parties are not compelled to copy The Program along with the modified file;
 
@@ -64,15 +64,15 @@ Changing the name of a file (other than as necessitated by the file conventions 
 
 The distribution conditions in this license do not have to be applied to files that have been modified in accordance with the above conditions. Note, however, that Condition 7. does apply to any such modified file.
 
-The conditions above are not intended to prohibit, and hence do not apply to, the updating, by any method, of a file so that it becomes identical to the latest version of that file of The Program. 
+The conditions above are not intended to prohibit, and hence do not apply to, the updating, by any method, of a file so that it becomes identical to the latest version of that file of The Program.
 
 ### A Recommendation on Modification Without Distribution
 
-It is wise never to modify a file of The Program, even for your own personal use, without also meeting the above eight conditions for distributing the modified file. While you might intend that such modified files will never be distributed, often this will happen by accident - you may forget that you have modified the file; or it may not occur to you when allowing others to access the modified file that you are thus distributing it and violating the conditions of this license. It is usually in your best interest to keep your copy of The Program identical with the public one. Many programs provide ways to control the behavior of that program without altering its licensed files. 
+It is wise never to modify a file of The Program, even for your own personal use, without also meeting the above eight conditions for distributing the modified file. While you might intend that such modified files will never be distributed, often this will happen by accident - you may forget that you have modified the file; or it may not occur to you when allowing others to access the modified file that you are thus distributing it and violating the conditions of this license. It is usually in your best interest to keep your copy of The Program identical with the public one. Many programs provide ways to control the behavior of that program without altering its licensed files.
 
 ### Additional Conditions on Individual Files of The Program
 
-An individual file of The Program may bear additional conditions that supplement and/or supersede the conditions in this license if, and only if, such additional conditions exclusively concern modification of the file or distribution of a modified version of the file. The conditions on individual files of The Program therefore may differ only with respect to the kind and extent of modification of those files that is allowed, and with respect to the distribution of modified versions of those files. 
+An individual file of The Program may bear additional conditions that supplement and/or supersede the conditions in this license if, and only if, such additional conditions exclusively concern modification of the file or distribution of a modified version of the file. The conditions on individual files of The Program therefore may differ only with respect to the kind and extent of modification of those files that is allowed, and with respect to the distribution of modified versions of those files.
 
 ### Additional Conditions on LaTeX Software Files
 
@@ -91,23 +91,23 @@ Because of portability and exchangeability issues in LaTeX software, The LaTeX3 
 
 There is no warranty for The Program. Except when otherwise stated in writing, The Copyright Holder provides The Program `as is', without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of The Program is with you. Should The Program prove defective, you assume the cost of all necessary servicing, repair, or correction.
 
-In no event unless agreed to in writing will The Copyright Holder, or any author named in the files of The Program, or any other party who may distribute and/or modify The Program as permitted above, be liable to you for damages, including any general, special, incidental or consequential damages arising out of any use of The Program or out of inability to use The Program (including, but not limited to, loss of data, data being rendered inaccurate, or losses sustained by anyone as a result of any failure of The Program to operate with any other programs), even if The Copyright Holder or said author or said other party has been advised of the possibility of such damages. 
+In no event unless agreed to in writing will The Copyright Holder, or any author named in the files of The Program, or any other party who may distribute and/or modify The Program as permitted above, be liable to you for damages, including any general, special, incidental or consequential damages arising out of any use of The Program or out of inability to use The Program (including, but not limited to, loss of data, data being rendered inaccurate, or losses sustained by anyone as a result of any failure of The Program to operate with any other programs), even if The Copyright Holder or said author or said other party has been advised of the possibility of such damages.
 
 ## WHETHER AND HOW TO DISTRIBUTE PROGRAMS UNDER THIS LICENSE
 
-This section contains important instructions, examples, and recommendations for authors who are considering distributing their programs under this license. These authors are addressed as `you' in this section. 
+This section contains important instructions, examples, and recommendations for authors who are considering distributing their programs under this license. These authors are addressed as `you' in this section.
 
 ### Choosing This License or Another License
 
 If for any part of your program you want or need to use *distribution* conditions that differ from those in this license, then do not refer to this license anywhere in your program but instead distribute your program under a different license. You may use the text of this license as a model for your own license, but your license should not refer to the LPPL or otherwise give the impression that your program is distributed under the LPPL.
 
-The document \`modguide.tex' in the base LaTeX distribution explains the motivation behind the conditions of this license. It explains, for example, why distributing LaTeX under the GNU General Public License (GPL) was considered inappropriate. Even if your program is unrelated to LaTeX , the discussion in `modguide.tex' may still be relevant, and authors intending to distribute their programs under any license are encouraged to read it. 
+The document \`modguide.tex' in the base LaTeX distribution explains the motivation behind the conditions of this license. It explains, for example, why distributing LaTeX under the GNU General Public License (GPL) was considered inappropriate. Even if your program is unrelated to LaTeX , the discussion in `modguide.tex' may still be relevant, and authors intending to distribute their programs under any license are encouraged to read it.
 
 ### How to Use This License
 
 To use this license, place in each of the files of your program both an explicit copyright notice including your name and the year and also a statement that the distribution and/or modification of the file is constrained by the conditions in this license.
 
-Here is an example of such a notice and statement: 
+Here is an example of such a notice and statement:
 
 {% highlight text %}
 %% pig.dtx
@@ -118,13 +118,13 @@ Here is an example of such a notice and statement:
 % of this license or (at your option) any later version.
 % The latest version of this license is in
 %   http://www.latex-project.org/lppl.txt
-% and version 1.2 or later is part of all distributions of LaTeX 
+% and version 1.2 or later is part of all distributions of LaTeX
 % version 1999/12/01 or later.
 %
 % This program consists of the files pig.dtx and pig.ins
 {% endhighlight %}
 
-Given such a notice and statement in a file, the conditions given in this license document would apply, with \`The Program' referring to the two files \`pig.dtx' and \`pig.ins', and \`The Copyright Holder' referring to the person `M. Y. Name'. 
+Given such a notice and statement in a file, the conditions given in this license document would apply, with \`The Program' referring to the two files \`pig.dtx' and \`pig.ins', and \`The Copyright Holder' referring to the person `M. Y. Name'.
 
 ### Important Recommendations
 

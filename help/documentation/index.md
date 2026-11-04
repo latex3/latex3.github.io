@@ -77,7 +77,7 @@ between the old LaTeX 2.09 and current standard LaTeX2e) is available as well. I
 
 + <a href="{{site.baseurl}}/help/documentation/usrguide-historic.pdf"
    target="_blank"
-   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors --- historic version</a> 
+   onclick="vgwPixelCall('3a9290b87d904071bbd1e07b74f19d1c');">LaTeX2e for authors --- historic version</a>
 
 
 For more extensive introductory documentation take a look at the [links to
@@ -99,7 +99,7 @@ There you find a guide on how to produce accessible PDF documents with LaTeX aut
 
 ### Advanced documentation about core LaTeX
 
-More advanced documentation about core LaTeX, which is available via the net includes: 
+More advanced documentation about core LaTeX, which is available via the net includes:
 
 + <a href="{{site.baseurl}}/help/documentation/clsguide.pdf"
      target="_blank"
@@ -247,7 +247,7 @@ their usage within the kernel is
 + <a href="https://mirrors.ctan.org/macros/latex/required/l3kernel/source3.pdf"
      target="_blank"
      onclick="vgwPixelCall('43ffde81969e49d587ace76424e37318');">The L3 programming layer sources (1000+ pages)</a>
-     
+
 
 As a companion document Martin Scharrer compiled a useful reference
 list with links back into the 2e source document if both are stored in
@@ -289,7 +289,7 @@ There is a lot of documentation in languages other than English. Lists of books 
 
 ### French
 
-+ [French LaTeX documentation maintained by the Francophone TeX Users Group GUTenberg](https://www.gutenberg.eu.org/-TeXniques-)  
++ [French LaTeX documentation maintained by the Francophone TeX Users Group GUTenberg](https://www.gutenberg.eu.org/-TeXniques-)
 + [Tout ce que vous avez toujours voulu savoir sur LaTeX](http://lozzone.free.fr/index.php?vlunch=latex)
 + [A collection of french LaTeX documentation](https://www.framasoft.net/rubrique266.html) maintained by [Framasoft](http://www.framasoft.net/)
 + [Apprends LaTeX!](http://www.babafou.eu.org/Apprends_LaTeX/)

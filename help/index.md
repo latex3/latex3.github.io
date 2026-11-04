@@ -82,4 +82,4 @@ submit a report, thanks for taking the time!
 
 ***
 
-<div class="row">{% include google.adsense.responsive-b.html %}</div><hr> 
+<div class="row">{% include google.adsense.responsive-b.html %}</div><hr>

@@ -81,11 +81,11 @@ be used as indicated below.
   <div class="col cell1of2">
   <h2>Please avoid misrepresentation ...</h2>
   <ul>
-   
+
   <li>Please avoid when naming or describing <em>your projects or
   products</em> anything that implies endorsement by The LaTeX Team unless we have
   explicitly authorized this</li>
-    
+
   <li>In particular, please refrain from using the term "The LaTeX
   Team" or the LaTeX logos except when you are referring
   directly to us or to the software produced by us</li>
@@ -100,11 +100,11 @@ be used as indicated below.
   <ul>
   <li> you want to use these images for a purpose not listed, or
   listed as undesirable, on this page</li>
-    
+
   <li> you want to base your own logo on these images</li>
   </ul>
   <h2>In summary </h2>
-    
+
   <p>In short, the LaTeX logos (with the hummingbird or the head of
   the hummingbird) represent only the work by "The LaTeX Team"
   and should not be used to represent <em>your products,

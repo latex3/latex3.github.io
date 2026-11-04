@@ -13,7 +13,7 @@ Important new information about the L3 programming layer is now covered in the R
 
 A document with all available issues bundled together in their historical order is
 <a href="{{site.baseurl}}/news/latex3-news/l3news.pdf" target="_blank" onclick="vgwPixelCall('06009f5d88d4445cae1ba16872605b92');">`l3news.pdf`</a>.
-In addition the newsletters are individually available below. 
+In addition the newsletters are individually available below.
 
 
 | Release date | LaTeX3 News issue (PDF) | Important Topics covered |

@@ -14,7 +14,7 @@ The article <a href="{{site.baseurl}}/publications/2011-FMi-TUB-tb100mittbach-lp
 
 To use this license, place in each of the components of your work both an explicit copyright notice including your name and the year the work was authored and/or last substantially modified. Include also a statement that the distribution and/or modification of that component is constrained by the conditions in this license.
 
-Here is an example of such a notice and statement: 
+Here is an example of such a notice and statement:
 
 {% highlight text %}
 %% pig.dtx
@@ -29,7 +29,7 @@ Here is an example of such a notice and statement:
 % version 2008 or later.
 %
 % This work has the LPPL maintenance status `maintained'.
-% 
+%
 % The Current Maintainer of this work is M. Y. Name.
 %
 % This work consists of the files pig.dtx and pig.ins
@@ -51,7 +51,7 @@ Given such a notice and statement in a file, the conditions given in this licens
 + [Version 1.1](lppl-1-1/), also as [plain text](lppl-1-1.txt)
 + [Version 1.0](lppl-1-0/), also as [plain text](lppl-1-0.txt)
 
-Previous versions of the 1.3 set of licenses are listed below for reference purposes only; they differ from the current version only in minor ways, where it was necessary to reclarify or correct certain statements in the license. 
+Previous versions of the 1.3 set of licenses are listed below for reference purposes only; they differ from the current version only in minor ways, where it was necessary to reclarify or correct certain statements in the license.
 
 + [Version 1.3b](lppl-1-3b/), also as [plain text](lppl-1-3b.txt)
 + [Version 1.3a](lppl-1-3a/), also as [plain text](lppl-1-3a.txt)

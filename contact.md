@@ -8,8 +8,8 @@ description: "Contact details of Frank Mittelbach and the LaTeX project. Mailing
 
 ## Project Team
 
-Please contact the [LaTeX project team]({{site.baseurl}}/about/team/) at <mailto:project-admin@latex-project.org>. This e-mail address should only be used when you want to: 
- 
+Please contact the [LaTeX project team]({{site.baseurl}}/about/team/) at <mailto:project-admin@latex-project.org>. This e-mail address should only be used when you want to:
+
 + invite us for speaking at conferences
 + become a volunteer helper
 + offer consultancy work
@@ -19,18 +19,18 @@ Unfortunately we do not have the resources to offer individual help on LaTeX pro
 
 ## Website Team
 
-Please send feedback and bug reports concerning the project web site to <mailto:webmaster@latex-project.org>. 
+Please send feedback and bug reports concerning the project web site to <mailto:webmaster@latex-project.org>.
 
 ## Impressum
 
-Frank Mittelbach  
-Zedernweg 62  
-55128 Mainz  
-Germany   
-Tel.:  +49 6131 337274   
+Frank Mittelbach
+Zedernweg 62
+55128 Mainz
+Germany
+Tel.:  +49 6131 337274
 Email: <mailto:frank.mittelbach@latex-project.org>
 
 ### Resposible for the editorial content
 
- - Frank Mittelbach  
+ - Frank Mittelbach
  - [LaTeX project team]({{site.baseurl}}/about/team/)

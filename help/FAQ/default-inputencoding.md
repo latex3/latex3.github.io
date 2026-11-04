@@ -92,7 +92,7 @@ With the April 2018 release, the default encoding for LaTeX files has been
 changed from the "fall through raw" encoding to UTF-8 if used with
 classic TeX or pdfTeX. The implementation is essentially
 the same as the existing UTF-8 support from
-`\usepackage[utf8]{inputenc}`.  
+`\usepackage[utf8]{inputenc}`.
 
 The LuaTeX and XeTeX engines always supported the
 UTF-8 encoding as their native (and only) input encoding, so with
@@ -139,7 +139,7 @@ Possible alternatives are reencoding the file to UTF-8 using a tool
 (such as recode or iconv or an editor) or adding the line
 ```
  \usepackage[encoding]{inputenc}
-``` 
+```
 to the preamble specifying the "encoding" that fits the file
 encoding.  In many cases this will be `latin1` or
 `cp1252`. For other encoding names and their meaning see the

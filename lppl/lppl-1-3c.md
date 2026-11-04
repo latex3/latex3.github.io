@@ -6,7 +6,7 @@ description: "The LaTeX project public license (LPPL) version 1.3c. LPPL Version
 
 # The LaTeX project public license (LPPL), version 1.3c
 
-The LPPL, version 1.3c, is also available as [plain text](../lppl-1-3c.txt). 
+The LPPL, version 1.3c, is also available as [plain text](../lppl-1-3c.txt).
 
 ## Contents
 
@@ -17,12 +17,12 @@ The LPPL, version 1.3c, is also available as [plain text](../lppl-1-3c.txt).
 + [Maintenance of the work](#maintenance-of-the-work)
 + [Whether and how to distribute works under this license](#whether-and-how-to-distribute-works-under-this-license)
 
- LPPL Version 1.3c 2008-05-04 
+ LPPL Version 1.3c 2008-05-04
 
 **Copyright 1999 2002-2008 LaTeX3 Project**
 
-Everyone is allowed to distribute verbatim copies of this license document, but modification of it is not allowed. 
- 
+Everyone is allowed to distribute verbatim copies of this license document, but modification of it is not allowed.
+
 ## Preamble
 
 The LaTeX Project Public License (LPPL) is the primary license under which the LaTeX kernel and the base LaTeX packages are distributed.
@@ -38,7 +38,7 @@ We, the LaTeX3 Project, believe that the conditions below give you the freedom t
 
 ## DEFINITIONS
 
-In this license document the following terms are used: 
+In this license document the following terms are used:
 
 `Work'
 : Any work being distributed under this License.
@@ -63,7 +63,7 @@ In this license document the following terms are used:
 
 `Base Interpreter'
 : A program or process that is normally needed for running or interpreting a part or the whole of the Work.
-: A Base Interpreter may depend on external components but these are not considered part of the Base Interpreter provided that each external component clearly identifies itself whenever it is used interactively. Unless explicitly specified when applying the license to the Work, the only applicable Base Interpreter is a \`LaTeX-Format' or in the case of files belonging to the \`LaTeX-format' a program implementing the `TeX language'. 
+: A Base Interpreter may depend on external components but these are not considered part of the Base Interpreter provided that each external component clearly identifies itself whenever it is used interactively. Unless explicitly specified when applying the license to the Work, the only applicable Base Interpreter is a \`LaTeX-Format' or in the case of files belonging to the \`LaTeX-format' a program implementing the `TeX language'.
 
 ## CONDITIONS ON DISTRIBUTION AND MODIFICATION
 
@@ -84,7 +84,7 @@ In this license document the following terms are used:
 7. If you are not the Current Maintainer of the Work, you may distribute a Compiled Work generated from a Derived Work, as long as the Derived Work is distributed to all recipients of the Compiled Work, and as long as the conditions of Clause 6, above, are met with regard to the Derived Work.
 8. The conditions above are not intended to prohibit, and hence do not apply to, the modification, by any method, of any component so that it becomes identical to an updated version of that component of the Work as it is distributed by the Current Maintainer under Clause 4, above.
 9. Distribution of the Work or any Derived Work in an alternative format, where the Work or that Derived Work (in whole or in part) is then produced by applying some process to that format, does not relax or nullify any sections of this license as they pertain to the results of applying that process.
-10. 
+10.
     {: list_lower-alpha}
     1. A Derived Work may be distributed under a different license provided that license itself honors the conditions listed in Clause 6 above, in regard to the Work, though it does not have to honor the rest of the conditions in this license.
     2. If a Derived Work is distributed under a different license, that Derived Work must provide sufficient documentation as part of itself to allow each recipient of that Derived Work to honor the restrictions in Clause 6 above, concerning changes from the Work.
@@ -116,27 +116,27 @@ If the Work is unmaintained, you can become the Current Maintainer of the Work t
     1. If it is being maintained, then ask the Current Maintainer to update their communication data within one month.
     2. If the search is unsuccessful or no action to resume active maintenance is taken by the Current Maintainer, then announce within the pertinent community your intention to take over maintenance. (If the Work is a LaTeX work, this could be done, for example, by posting to comp.text.tex.)
     {: list_lower-alpha}
-3. 
+3.
     {: list_lower-alpha}
     1. If the Current Maintainer is reachable and agrees to pass maintenance of the Work to you, then this takes effect immediately upon announcement.
     2. If the Current Maintainer is not reachable and the Copyright Holder agrees that maintenance of the Work be passed to you, then this takes effect immediately upon announcement.
     {: list_lower-alpha}
 4. If you make an `intention announcement' as described in 2b. above and after three months your intention is challenged neither by the Current Maintainer nor by the Copyright Holder nor by other people, then you may arrange for the Work to be changed so as to name you as the (new) Current Maintainer.
 5. If the previously unreachable Current Maintainer becomes reachable once more within three months of a change completed under the terms of 3b) or 4), then that Current Maintainer must become or remain the Current Maintainer upon request provided they then update their communication data within one month.
- 
+
 A change in the Current Maintainer does not, of itself, alter the fact that the Work is distributed under the LPPL license.
 
-If you become the Current Maintainer of the Work, you should immediately provide, within the Work, a prominent and unambiguous statement of your status as Current Maintainer. You should also announce your new status to the same pertinent community as in 2b) above. 
+If you become the Current Maintainer of the Work, you should immediately provide, within the Work, a prominent and unambiguous statement of your status as Current Maintainer. You should also announce your new status to the same pertinent community as in 2b) above.
 
 ## WHETHER AND HOW TO DISTRIBUTE WORKS UNDER THIS LICENSE
 
-This section contains important instructions, examples, and recommendations for authors who are considering distributing their works under this license. These authors are addressed as `you' in this section. 
+This section contains important instructions, examples, and recommendations for authors who are considering distributing their works under this license. These authors are addressed as `you' in this section.
 
 ### Choosing This License or Another License
 
 If for any part of your work you want or need to use *distribution* conditions that differ significantly from those in this license, then do not refer to this license anywhere in your work but, instead, distribute your work under a different license. You may use the text of this license as a model for your own license, but your license should not refer to the LPPL or otherwise give the impression that your work is distributed under the LPPL.
 
-The document \`modguide.tex' in the base LaTeX distribution explains the motivation behind the conditions of this license. It explains, for example, why distributing LaTeX under the GNU General Public License (GPL) was considered inappropriate. Even if your work is unrelated to LaTeX, the discussion in `modguide.tex' may still be relevant, and authors intending to distribute their works under any license are encouraged to read it. 
+The document \`modguide.tex' in the base LaTeX distribution explains the motivation behind the conditions of this license. It explains, for example, why distributing LaTeX under the GNU General Public License (GPL) was considered inappropriate. Even if your work is unrelated to LaTeX, the discussion in `modguide.tex' may still be relevant, and authors intending to distribute their works under any license are encouraged to read it.
 
 ### A Recommendation on Modification Without Distribution
 
@@ -146,7 +146,7 @@ It is wise never to modify a component of the Work, even for your own personal u
 
 To use this license, place in each of the components of your work both an explicit copyright notice including your name and the year the work was authored and/or last substantially modified. Include also a statement that the distribution and/or modification of that component is constrained by the conditions in this license.
 
-Here is an example of such a notice and statement: 
+Here is an example of such a notice and statement:
 
 {% highlight text %}
 %% pig.dtx
@@ -161,7 +161,7 @@ Here is an example of such a notice and statement:
 % version 2008 or later.
 %
 % This work has the LPPL maintenance status `maintained'.
-% 
+%
 % The Current Maintainer of this work is M. Y. Name.
 %
 % This work consists of the files pig.dtx and pig.ins
@@ -170,17 +170,17 @@ Here is an example of such a notice and statement:
 
 Given such a notice and statement in a file, the conditions given in this license document would apply, with the \`Work' referring to the three files \`pig.dtx', \`pig.ins', and \`pig.sty' (the last being generated from \`pig.dtx' using \`pig.ins'), the \`Base Interpreter' referring to any \`LaTeX-Format', and both \`Copyright Holder' and \`Current Maintainer' referring to the person `M. Y. Name'.
 
-If you do not want the Maintenance section of LPPL to apply to your Work, change \`maintained' above into \`author-maintained'. However, we recommend that you use `maintained', as the Maintenance section was added in order to ensure that your Work remains useful to the community even when you can no longer maintain and support it yourself. 
+If you do not want the Maintenance section of LPPL to apply to your Work, change \`maintained' above into \`author-maintained'. However, we recommend that you use `maintained', as the Maintenance section was added in order to ensure that your Work remains useful to the community even when you can no longer maintain and support it yourself.
 
 ### Derived Works That Are Not Replacements
 
-Several clauses of the LPPL specify means to provide reliability and stability for the user community. They therefore concern themselves with the case that a Derived Work is intended to be used as a (compatible or incompatible) replacement of the original Work. If this is not the case (e.g., if a few lines of code are reused for a completely different task), then clauses 6b and 6d shall not apply. 
+Several clauses of the LPPL specify means to provide reliability and stability for the user community. They therefore concern themselves with the case that a Derived Work is intended to be used as a (compatible or incompatible) replacement of the original Work. If this is not the case (e.g., if a few lines of code are reused for a completely different task), then clauses 6b and 6d shall not apply.
 
 ### Important Recommendations
 
 #### Defining What Constitutes the Work
 
-The LPPL requires that distributions of the Work contain all the files of the Work. It is therefore important that you provide a way for the licensee to determine which files constitute the Work. This could, for example, be achieved by explicitly listing all the files of the Work near the copyright notice of each file or by using a line such as: 
+The LPPL requires that distributions of the Work contain all the files of the Work. It is therefore important that you provide a way for the licensee to determine which files constitute the Work. This could, for example, be achieved by explicitly listing all the files of the Work near the copyright notice of each file or by using a line such as:
 
 `% This work consists of all files listed in manifest.txt.`
 

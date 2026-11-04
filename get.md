@@ -204,4 +204,4 @@ More historic material can be found at [ftp://ftp.tug.org/historic](ftp://ftp.tu
 
 ***
 
-<div class="row">{% include google.adsense.html %}</div><hr> 
+<div class="row">{% include google.adsense.html %}</div><hr>
